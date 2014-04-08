@@ -1,0 +1,592 @@
+# RDF representation of pubmed9202001.bel as produced by bel2rdf
+# (https://github.com/OpenBEL/bel2rdf):
+
+@base <http://www.selventa.com/bel/> .
+@base <http://www.selventa.com/bel/> .
+@prefix bel: <http://www.selventa.com/bel/> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+belv:Abundance a rdfs:Class .
+
+belv:Evidence a rdfs:Class .
+
+belv:Modification a rdfs:Class .
+
+belv:Process a rdfs:Class .
+
+belv:Statement a rdfs:Class .
+
+belv:Term a rdfs:Class .
+
+belv:relationship a rdfs:Class .
+
+belv:Acetylation rdfs:subClassOf belv:Modification .
+
+belv:CellSecretion rdfs:subClassOf belv:Translocation .
+
+belv:CompositeAbundance rdfs:subClassOf belv:Abundance .
+
+belv:Degradation rdfs:subClassOf belv:Transformation .
+
+belv:Farnesylation rdfs:subClassOf belv:Modification .
+
+belv:GeneAbundance rdfs:subClassOf belv:Abundance .
+
+belv:Glycosylation rdfs:subClassOf belv:Modification .
+
+belv:Hydroxylation rdfs:subClassOf belv:Modification .
+
+belv:Methylation rdfs:subClassOf belv:Modification .
+
+belv:PhosphorylationSerine rdfs:subClassOf belv:Phosphorylation .
+
+belv:PhosphorylationThreonine rdfs:subClassOf belv:Phosphorylation .
+
+belv:PhosphorylationTyrosine rdfs:subClassOf belv:Phosphorylation .
+
+belv:RNAAbundance rdfs:subClassOf belv:Abundance .
+
+belv:Reaction rdfs:subClassOf belv:Transformation .
+
+belv:Ribosylation rdfs:subClassOf belv:Modification .
+
+belv:Sumoylation rdfs:subClassOf belv:Modification .
+
+belv:Ubiquitination rdfs:subClassOf belv:Modification .
+
+belv:association rdfs:subClassOf belv:correlativeRelationship .
+
+belv:directlyDecreases rdfs:subClassOf belv:causalRelationship,
+     belv:negativeRelationship,
+     belv:directRelationship,
+     belv:decreases .
+
+belv:hasComponent rdfs:subClassOf belv:membershipRelationship .
+
+belv:hasMember rdfs:subClassOf belv:membershipRelationship .
+
+belv:hasModificationPosition a rdf:Property .
+
+belv:isA rdfs:subClassOf belv:membershipRelationship .
+
+belv:microRNAAbundance rdfs:subClassOf belv:Abundance .
+
+belv:negativeCorrelation rdfs:subClassOf belv:correlativeRelationship,
+     belv:negativeRelationship .
+
+belv:positiveCorrelation rdfs:subClassOf belv:correlativeRelationship,
+     belv:positiveRelationship .
+
+belv:rateLimitingStepOf rdfs:subClassOf belv:increases,
+     belv:causalRelationship,
+     belv:subProcessOf .
+
+<bp_GO_G1/S_transition_of_mitotic_cell_cycle> a belv:Term,
+     belv:BiologicalProcess;
+   rdfs:label "bp(GO:\"G1/S transition of mitotic cell cycle\")";
+   belv:hasConcept <namespace/go/G1/S%20transition%20of%20mitotic%20cell%20cycle> .
+
+<bp_GO_G2/M_transition_of_mitotic_cell_cycle> a belv:Term,
+     belv:BiologicalProcess;
+   rdfs:label "bp(GO:\"G2/M transition of mitotic cell cycle\")";
+   belv:hasConcept <namespace/go/G2/M%20transition%20of%20mitotic%20cell%20cycle> .
+
+<bp_GO_regulation_of_apoptotic_process> a belv:Term,
+     belv:BiologicalProcess;
+   rdfs:label "bp(GO:\"regulation of apoptotic process\")";
+   belv:hasConcept <namespace/go/regulation%20of%20apoptotic%20process> .
+
+<complex_NCM_p85/p110_PI3Kinase_Complex> a belv:Term,
+     belv:ComplexAbundance;
+   rdfs:label "complex(NCM:\"p85/p110 PI3Kinase Complex\")";
+   belv:hasConcept <namespace/selventa-named-complexes-mouse/p85/p110%20PI3Kinase%20Complex> .
+
+<kin_complex_NCM_p85/p110_PI3Kinase_Complex> a belv:Term,
+     belv:AbundanceActivity;
+   rdfs:label "kin(complex(NCM:\"p85/p110 PI3Kinase Complex\"))";
+   belv:hasActivityType belv:Kinase;
+   belv:hasChild <complex_NCM_p85/p110_PI3Kinase_Complex> .
+
+<kin_p_MGI_Ptk2> a belv:Term,
+     belv:AbundanceActivity;
+   rdfs:label "kin(p(MGI:Ptk2))";
+   belv:hasActivityType belv:Kinase;
+   belv:hasChild <p_MGI_Ptk2> .
+
+<kin_p_PFM_Akt_Family> a belv:Term,
+     belv:AbundanceActivity;
+   rdfs:label "kin(p(PFM:\"Akt Family\"))";
+   belv:hasActivityType belv:Kinase;
+   belv:hasChild <p_PFM_Akt_Family> .
+
+<kin_p_PFM_Mapk_JNK_Family> a belv:Term,
+     belv:AbundanceActivity;
+   rdfs:label "kin(p(PFM:\"Mapk JNK Family\"))";
+   belv:hasActivityType belv:Kinase;
+   belv:hasChild <p_PFM_Mapk_JNK_Family> .
+
+<kin_p_PFM_Mapk_p38_Family> a belv:Term,
+     belv:AbundanceActivity;
+   rdfs:label "kin(p(PFM:\"Mapk p38 Family\"))";
+   belv:hasActivityType belv:Kinase;
+   belv:hasChild <p_PFM_Mapk_p38_Family> .
+
+<p_HGNC_CCNB1> a belv:Term,
+     belv:ProteinAbundance;
+   rdfs:label "p(HGNC:CCNB1)";
+   belv:hasConcept <namespace/hgnc-approved-symbols/CCNB1> .
+
+<p_HGNC_KRAS_sub_G_12_C> a belv:Term,
+     belv:ProteinVariantAbundance;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,C))";
+   belv:hasChild <p_HGNC_KRAS> .
+
+<p_HGNC_KRAS_sub_G_12_C_causesNoChange_path_MESHD_Neoplasms> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,C)) causesNoChange path(MESHD:Neoplasms)";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """We found that the K12V oncogene induces a more aggressive\
+tumorigenic phenotype than the K12D oncogene, whereas K12C does not induce\
+tumors in this model.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_C_causesNoChange_path_MESHD_Neoplasms>];
+   belv:hasObject <path_MESHD_Neoplasms>;
+   belv:hasRelationship belv:causesNoChange;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_C> .
+
+<p_HGNC_KRAS_sub_G_12_D_causesNoChange_complex_p_HGNC_KRAS_p_MGI_Raf1> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,D)) causesNoChange complex(p(HGNC:KRAS),p(MGI:Raf1))";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """Unexpectedly, in tumors induced by the K12D oncogene,\
+the K-Ras mutant protein does not interact with Raf-1 nor activates\
+the Erk canonical pathway.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_D_causesNoChange_complex_p_HGNC_KRAS_p_MGI_Raf1>];
+   belv:hasObject <complex_p_HGNC_KRAS_p_MGI_Raf1>;
+   belv:hasRelationship belv:causesNoChange;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_D> .
+
+<p_HGNC_KRAS_sub_G_12_D_causesNoChange_kin_p_PFM_MAPK_Erk1/3_Family> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,D)) causesNoChange kin(p(PFM:\"MAPK Erk1/3 Family\"))";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """Unexpectedly, in tumors induced by the K12D oncogene,\
+the K-Ras mutant protein does not interact with Raf-1 nor activates\
+the Erk canonical pathway.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_D_causesNoChange_kin_p_PFM_MAPK_Erk1/3_Family>];
+   belv:hasObject <kin_p_PFM_MAPK_Erk1/3_Family>;
+   belv:hasRelationship belv:causesNoChange;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_D> .
+
+<p_HGNC_KRAS_sub_G_12_D_increases_kin_complex_NCM_p85/p110_PI3Kinase_Complex> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(complex(NCM:\"p85/p110 PI3Kinase Complex\"))";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """Instead, it transduces signals through the PI3K/Akt, JNK,
+p38 and FAK pathways.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_D_increases_kin_complex_NCM_p85/p110_PI3Kinase_Complex>];
+   belv:hasObject <kin_complex_NCM_p85/p110_PI3Kinase_Complex>;
+   belv:hasRelationship belv:increases;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_D> .
+
+<p_HGNC_KRAS_sub_G_12_D_increases_kin_p_MGI_Ptk2> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(MGI:Ptk2))";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """Instead, it transduces signals through the PI3K/Akt, JNK,
+p38 and FAK pathways.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_D_increases_kin_p_MGI_Ptk2>];
+   belv:hasObject <kin_p_MGI_Ptk2>;
+   belv:hasRelationship belv:increases;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_D> .
+
+<p_HGNC_KRAS_sub_G_12_D_increases_kin_p_PFM_Akt_Family> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Akt Family\"))";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """Instead, it transduces signals through the PI3K/Akt, JNK,
+p38 and FAK pathways.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_D_increases_kin_p_PFM_Akt_Family>];
+   belv:hasObject <kin_p_PFM_Akt_Family>;
+   belv:hasRelationship belv:increases;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_D> .
+
+<p_HGNC_KRAS_sub_G_12_D_increases_kin_p_PFM_Mapk_JNK_Family> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Mapk JNK Family\"))";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """Instead, it transduces signals through the PI3K/Akt, JNK,
+p38 and FAK pathways.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_D_increases_kin_p_PFM_Mapk_JNK_Family>];
+   belv:hasObject <kin_p_PFM_Mapk_JNK_Family>;
+   belv:hasRelationship belv:increases;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_D> .
+
+<p_HGNC_KRAS_sub_G_12_D_increases_kin_p_PFM_Mapk_p38_Family> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Mapk p38 Family\"))";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """Instead, it transduces signals through the PI3K/Akt, JNK,
+p38 and FAK pathways.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_D_increases_kin_p_PFM_Mapk_p38_Family>];
+   belv:hasObject <kin_p_PFM_Mapk_p38_Family>;
+   belv:hasRelationship belv:increases;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_D> .
+
+<p_HGNC_KRAS_sub_G_12_D_increases_path_MESHD_Neoplasms> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> path(MESHD:Neoplasms)";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """We found that the K12V oncogene induces a more aggressive\
+tumorigenic phenotype than the K12D oncogene, whereas K12C does not induce\
+tumors in this model.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_D_increases_path_MESHD_Neoplasms>];
+   belv:hasObject <path_MESHD_Neoplasms>;
+   belv:hasRelationship belv:increases;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_D> .
+
+<p_HGNC_KRAS_sub_G_12_V_causesNoChange_bp_GO_regulation_of_apoptotic_process> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,V)) causesNoChange bp(GO:\"regulation of apoptotic process\")";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """Finally, the higher growth rate of the K12V tumors associates\
+with enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistent\
+with faster G1/S and G2/M transitions, without alteration of apoptotic\
+regulation.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_V_causesNoChange_bp_GO_regulation_of_apoptotic_process>];
+   belv:hasObject <bp_GO_regulation_of_apoptotic_process>;
+   belv:hasRelationship belv:causesNoChange;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_V> .
+
+<p_HGNC_KRAS_sub_G_12_V_directlyIncreases_complex_p_HGNC_KRAS_p_MGI_Raf1> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,V)) => complex(p(HGNC:KRAS),p(MGI:Raf1))";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """A molecular analysis of the induced tumors shows that\
+the K12V mutant protein interacts with Raf-1 and transduces signals mainly through the Erk pathway.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_V_directlyIncreases_complex_p_HGNC_KRAS_p_MGI_Raf1>];
+   belv:hasObject <complex_p_HGNC_KRAS_p_MGI_Raf1>;
+   belv:hasRelationship belv:directlyIncreases;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_V> .
+
+<p_HGNC_KRAS_sub_G_12_V_increases_bp_GO_G1/S_transition_of_mitotic_cell_cycle> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:\"G1/S transition of mitotic cell cycle\")";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """Finally, the higher growth rate of the K12V tumors associates\
+with enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistent\
+with faster G1/S and G2/M transitions, without alteration of apoptotic\
+regulation.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_V_increases_bp_GO_G1/S_transition_of_mitotic_cell_cycle>];
+   belv:hasObject <bp_GO_G1/S_transition_of_mitotic_cell_cycle>;
+   belv:hasRelationship belv:increases;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_V> .
+
+<p_HGNC_KRAS_sub_G_12_V_increases_bp_GO_G2/M_transition_of_mitotic_cell_cycle> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:\"G2/M transition of mitotic cell cycle\")";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """Finally, the higher growth rate of the K12V tumors associates\
+with enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistent\
+with faster G1/S and G2/M transitions, without alteration of apoptotic\
+regulation.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_V_increases_bp_GO_G2/M_transition_of_mitotic_cell_cycle>];
+   belv:hasObject <bp_GO_G2/M_transition_of_mitotic_cell_cycle>;
+   belv:hasRelationship belv:increases;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_V> .
+
+<p_HGNC_KRAS_sub_G_12_V_increases_kin_p_PFM_MAPK_Erk1/3_Family> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> kin(p(PFM:\"MAPK Erk1/3 Family\"))";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """A molecular analysis of the induced tumors shows that\
+the K12V mutant protein interacts with Raf-1 and transduces signals mainly through the Erk pathway.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_V_increases_kin_p_PFM_MAPK_Erk1/3_Family>];
+   belv:hasObject <kin_p_PFM_MAPK_Erk1/3_Family>;
+   belv:hasRelationship belv:increases;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_V> .
+
+<p_HGNC_KRAS_sub_G_12_V_increases_p_HGNC_CCNB1> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:CCNB1)";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """Finally, the higher growth rate of the K12V tumors associates\
+with enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistent\
+with faster G1/S and G2/M transitions, without alteration of apoptotic\
+regulation.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_V_increases_p_HGNC_CCNB1>];
+   belv:hasObject <p_HGNC_CCNB1>;
+   belv:hasRelationship belv:increases;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_V> .
+
+<p_HGNC_KRAS_sub_G_12_V_increases_p_HGNC_PCNA> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:PCNA)";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """Finally, the higher growth rate of the K12V tumors associates\
+with enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistent\
+with faster G1/S and G2/M transitions, without alteration of apoptotic\
+regulation.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_V_increases_p_HGNC_PCNA>];
+   belv:hasObject <p_HGNC_PCNA>;
+   belv:hasRelationship belv:increases;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_V> .
+
+<p_HGNC_KRAS_sub_G_12_V_increases_p_HGNC_RB1_pmod_P> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:RB1,pmod(P))";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """Finally, the higher growth rate of the K12V tumors associates\
+with enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistent\
+with faster G1/S and G2/M transitions, without alteration of apoptotic\
+regulation.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_V_increases_p_HGNC_RB1_pmod_P>];
+   belv:hasObject <p_HGNC_RB1_pmod_P>;
+   belv:hasRelationship belv:increases;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_V> .
+
+<p_HGNC_KRAS_sub_G_12_V_increases_path_MESHD_Neoplasms> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> path(MESHD:Neoplasms)";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/10090>,
+       <annotation/cell-line/3T3-Swiss%20albino>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """We found that the K12V oncogene induces a more aggressive\
+tumorigenic phenotype than the K12D oncogene, whereas K12C does not induce\
+tumors in this model.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_V_increases_path_MESHD_Neoplasms>];
+   belv:hasObject <path_MESHD_Neoplasms>;
+   belv:hasRelationship belv:increases;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_V> .
+
+<p_HGNC_KRAS_sub_G_12_V_prognosticBiomarkerFor_path_MESHD_Neoplasm_Metastasis> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:\"Neoplasm Metastasis\")";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/9606>,
+       <annotation/disease/Colorectal%20Neoplasms>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """K-Ras Asp12 (K12D) is more prevalent in benign than in\
+malignant human colorectal tumors, whereas K-Ras Val12 (K12V) associates\
+with more advanced and metastatic carcinomas, higher recurrence and\
+decreased survival.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_V_prognosticBiomarkerFor_path_MESHD_Neoplasm_Metastasis>];
+   belv:hasObject <path_MESHD_Neoplasm_Metastasis>;
+   belv:hasRelationship belv:prognosticBiomarkerFor;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_V> .
+
+<p_HGNC_KRAS_sub_G_12_V_prognosticBiomarkerFor_path_MESHD_Recurrence> a belv:Statement;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:Recurrence)";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/species-taxonomy-id/9606>,
+       <annotation/disease/Colorectal%20Neoplasms>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:16679305>;
+     belv:hasEvidenceText """K-Ras Asp12 (K12D) is more prevalent in benign than in\
+malignant human colorectal tumors, whereas K-Ras Val12 (K12V) associates\
+with more advanced and metastatic carcinomas, higher recurrence and\
+decreased survival.""";
+     belv:hasStatement <p_HGNC_KRAS_sub_G_12_V_prognosticBiomarkerFor_path_MESHD_Recurrence>];
+   belv:hasObject <path_MESHD_Recurrence>;
+   belv:hasRelationship belv:prognosticBiomarkerFor;
+   belv:hasSubject <p_HGNC_KRAS_sub_G_12_V> .
+
+<p_HGNC_PCNA> a belv:Term,
+     belv:ProteinAbundance;
+   rdfs:label "p(HGNC:PCNA)";
+   belv:hasConcept <namespace/hgnc-approved-symbols/PCNA> .
+
+<p_HGNC_RB1> a belv:Term,
+     belv:ProteinAbundance;
+   rdfs:label "p(HGNC:RB1)";
+   belv:hasConcept <namespace/hgnc-approved-symbols/RB1> .
+
+<p_HGNC_RB1_pmod_P> a belv:Term,
+     belv:ModifiedProteinAbundance;
+   rdfs:label "p(HGNC:RB1,pmod(P))";
+   belv:hasChild <p_HGNC_RB1>;
+   belv:hasModificationType belv:Phosphorylation .
+
+<p_MGI_Ptk2> a belv:Term,
+     belv:ProteinAbundance;
+   rdfs:label "p(MGI:Ptk2)";
+   belv:hasConcept <namespace/mgi-approved-symbols/Ptk2> .
+
+<p_MGI_Raf1> a belv:Term,
+     belv:ProteinAbundance;
+   rdfs:label "p(MGI:Raf1)";
+   belv:hasConcept <namespace/mgi-approved-symbols/Raf1> .
+
+<p_PFM_Akt_Family> a belv:Term,
+     belv:ProteinAbundance;
+   rdfs:label "p(PFM:\"Akt Family\")";
+   belv:hasConcept <namespace/selventa-protein-families-mouse/Akt%20Family> .
+
+<p_PFM_MAPK_Erk1/3_Family> a belv:Term,
+     belv:ProteinAbundance;
+   rdfs:label "p(PFM:\"MAPK Erk1/3 Family\")";
+   belv:hasConcept <namespace/selventa-protein-families-mouse/MAPK%20Erk1/3%20Family> .
+
+<p_PFM_Mapk_JNK_Family> a belv:Term,
+     belv:ProteinAbundance;
+   rdfs:label "p(PFM:\"Mapk JNK Family\")";
+   belv:hasConcept <namespace/selventa-protein-families-mouse/Mapk%20JNK%20Family> .
+
+<p_PFM_Mapk_p38_Family> a belv:Term,
+     belv:ProteinAbundance;
+   rdfs:label "p(PFM:\"Mapk p38 Family\")";
+   belv:hasConcept <namespace/selventa-protein-families-mouse/Mapk%20p38%20Family> .
+
+<path_MESHD_Neoplasm_Metastasis> a belv:Term,
+     belv:Pathology;
+   rdfs:label "path(MESHD:\"Neoplasm Metastasis\")";
+   belv:hasConcept <namespace/mesh-diseases/Neoplasm%20Metastasis> .
+
+<path_MESHD_Recurrence> a belv:Term,
+     belv:Pathology;
+   rdfs:label "path(MESHD:Recurrence)";
+   belv:hasConcept <namespace/mesh-diseases/Recurrence> .
+
+belv:ModifiedProteinAbundance rdfs:subClassOf belv:ProteinAbundance .
+
+belv:Translocation rdfs:subClassOf belv:Transformation .
+
+belv:biomarkerFor rdfs:subClassOf belv:relationship .
+
+belv:decreases rdfs:subClassOf belv:causalRelationship,
+     belv:negativeRelationship .
+
+belv:directlyIncreases rdfs:subClassOf belv:causalRelationship,
+     belv:positiveRelationship,
+     belv:directRelationship,
+     belv:increases .
+
+belv:hasModificationType a rdf:Property .
+
+belv:subProcessOf rdfs:subClassOf belv:membershipRelationship .
+
+<complex_p_HGNC_KRAS_p_MGI_Raf1> a belv:Term,
+     belv:ComplexAbundance;
+   rdfs:label "complex(p(HGNC:KRAS),p(MGI:Raf1))";
+   belv:hasChild <p_HGNC_KRAS>,
+     <p_MGI_Raf1> .
+
+<kin_p_PFM_MAPK_Erk1/3_Family> a belv:Term,
+     belv:AbundanceActivity;
+   rdfs:label "kin(p(PFM:\"MAPK Erk1/3 Family\"))";
+   belv:hasActivityType belv:Kinase;
+   belv:hasChild <p_PFM_MAPK_Erk1/3_Family> .
+
+belv:ComplexAbundance rdfs:subClassOf belv:Abundance .
+
+belv:directRelationship rdfs:subClassOf belv:relationship .
+
+belv:prognosticBiomarkerFor rdfs:subClassOf belv:biomarkerFor .
+
+<path_MESHD_Neoplasms> a belv:Term,
+     belv:Pathology;
+   rdfs:label "path(MESHD:Neoplasms)";
+   belv:hasConcept <namespace/mesh-diseases/Neoplasms> .
+
+belv:Pathology rdfs:subClassOf belv:BiologicalProcess .
+
+belv:ProteinVariantAbundance rdfs:subClassOf belv:ProteinAbundance .
+
+belv:Transformation rdfs:subClassOf belv:Process .
+
+belv:correlativeRelationship rdfs:subClassOf belv:relationship .
+
+belv:negativeRelationship rdfs:subClassOf belv:relationship .
+
+belv:positiveRelationship rdfs:subClassOf belv:relationship .
+
+<p_HGNC_KRAS> a belv:Term,
+     belv:ProteinAbundance;
+   rdfs:label "p(HGNC:KRAS)";
+   belv:hasConcept <namespace/hgnc-approved-symbols/KRAS> .
+
+belv:BiologicalProcess rdfs:subClassOf belv:Process .
+
+belv:Phosphorylation rdfs:subClassOf belv:Modification .
+
+belv:causesNoChange rdfs:subClassOf belv:causalRelationship .
+
+belv:membershipRelationship rdfs:subClassOf belv:relationship .
+
+belv:AbundanceActivity rdfs:subClassOf belv:Process .
+
+belv:causalRelationship rdfs:subClassOf belv:relationship .
+
+belv:hasActivityType a rdf:Property .
+
+<p_HGNC_KRAS_sub_G_12_D> a belv:Term,
+     belv:ProteinVariantAbundance;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,D))";
+   belv:hasChild <p_HGNC_KRAS> .
+
+<p_HGNC_KRAS_sub_G_12_V> a belv:Term,
+     belv:ProteinVariantAbundance;
+   rdfs:label "p(HGNC:KRAS,sub(G,12,V))";
+   belv:hasChild <p_HGNC_KRAS> .
+
+belv:ProteinAbundance rdfs:subClassOf belv:Abundance .
+
+belv:hasChild a rdf:Property .
+
+belv:increases rdfs:subClassOf belv:causalRelationship,
+     belv:positiveRelationship .
+
+belv:hasConcept a rdf:Property .
+
+belv:hasCitation a rdf:Property .
+
+belv:hasEvidence a rdf:Property .
+
+belv:hasEvidenceText a rdf:Property .
+
+belv:hasObject rdfs:domain belv:Statement;
+   rdfs:range belv:Term;
+   rdfs:subPropertyOf belv:hasChild .
+
+belv:hasRelationship a rdf:Property .
+
+belv:hasStatement a rdf:Property .
+
+belv:hasSubject rdfs:domain belv:Statement;
+   rdfs:range belv:Term;
+   rdfs:subPropertyOf belv:hasChild .
+
+belv:hasAnnotation a rdf:Property .

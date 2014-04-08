@@ -1,0 +1,315 @@
+# RDF representation of pubmed9202001.bel as produced by bel2rdf
+# (https://github.com/OpenBEL/bel2rdf):
+
+@base <http://www.selventa.com/bel/> .
+@base <http://www.selventa.com/bel/> .
+@prefix bel: <http://www.selventa.com/bel/> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+belv:Abundance a rdfs:Class .
+
+belv:Evidence a rdfs:Class .
+
+belv:Modification a rdfs:Class .
+
+belv:Process a rdfs:Class .
+
+belv:Statement a rdfs:Class .
+
+belv:Term a rdfs:Class .
+
+belv:relationship a rdfs:Class .
+
+belv:Acetylation rdfs:subClassOf belv:Modification .
+
+belv:CellSecretion rdfs:subClassOf belv:Translocation .
+
+belv:CompositeAbundance rdfs:subClassOf belv:Abundance .
+
+belv:Degradation rdfs:subClassOf belv:Transformation .
+
+belv:Farnesylation rdfs:subClassOf belv:Modification .
+
+belv:GeneAbundance rdfs:subClassOf belv:Abundance .
+
+belv:Glycosylation rdfs:subClassOf belv:Modification .
+
+belv:Hydroxylation rdfs:subClassOf belv:Modification .
+
+belv:Methylation rdfs:subClassOf belv:Modification .
+
+belv:ModifiedProteinAbundance rdfs:subClassOf belv:ProteinAbundance .
+
+belv:PhosphorylationSerine rdfs:subClassOf belv:Phosphorylation .
+
+belv:PhosphorylationThreonine rdfs:subClassOf belv:Phosphorylation .
+
+belv:PhosphorylationTyrosine rdfs:subClassOf belv:Phosphorylation .
+
+belv:ProteinVariantAbundance rdfs:subClassOf belv:ProteinAbundance .
+
+belv:RNAAbundance rdfs:subClassOf belv:Abundance .
+
+belv:Reaction rdfs:subClassOf belv:Transformation .
+
+belv:Ribosylation rdfs:subClassOf belv:Modification .
+
+belv:Sumoylation rdfs:subClassOf belv:Modification .
+
+belv:Ubiquitination rdfs:subClassOf belv:Modification .
+
+belv:association rdfs:subClassOf belv:correlativeRelationship .
+
+belv:causesNoChange rdfs:subClassOf belv:causalRelationship .
+
+belv:directlyDecreases rdfs:subClassOf belv:causalRelationship,
+     belv:negativeRelationship,
+     belv:directRelationship,
+     belv:decreases .
+
+belv:hasComponent rdfs:subClassOf belv:membershipRelationship .
+
+belv:hasMember rdfs:subClassOf belv:membershipRelationship .
+
+belv:hasModificationPosition a rdf:Property .
+
+belv:hasModificationType a rdf:Property .
+
+belv:isA rdfs:subClassOf belv:membershipRelationship .
+
+belv:microRNAAbundance rdfs:subClassOf belv:Abundance .
+
+belv:negativeCorrelation rdfs:subClassOf belv:correlativeRelationship,
+     belv:negativeRelationship .
+
+belv:prognosticBiomarkerFor rdfs:subClassOf belv:biomarkerFor .
+
+belv:rateLimitingStepOf rdfs:subClassOf belv:increases,
+     belv:causalRelationship,
+     belv:subProcessOf .
+
+<cat_p_HGNC_WRN> a belv:Term,
+     belv:AbundanceActivity;
+   rdfs:label "cat(p(HGNC:WRN))";
+   belv:hasActivityType belv:Catalytic;
+   belv:hasChild <p_HGNC_WRN> .
+
+<complex_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_WRN> a belv:Term,
+     belv:ComplexAbundance;
+   rdfs:label "complex(p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:WRN))";
+   belv:hasChild <p_HGNC_XRCC5>,
+     <p_HGNC_XRCC6>,
+     <p_HGNC_WRN> .
+
+<complex_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_WRN_directlyIncreases_cat_p_HGNC_WRN> a belv:Statement;
+   rdfs:label "complex(p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:WRN)) => cat(p(HGNC:WRN))";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasCitation <http://bio2rdf.org/pubmed:14734561>;
+     belv:hasEvidenceText """We have previously reported that WRN interacts\
+with Ku70/80 and this interaction strongly stimulates WRN\
+exonuclease activity.""";
+     belv:hasStatement <complex_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_WRN_directlyIncreases_cat_p_HGNC_WRN>];
+   belv:hasObject <cat_p_HGNC_WRN>;
+   belv:hasRelationship belv:directlyIncreases;
+   belv:hasSubject <complex_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_WRN> .
+
+<path_MESHD_Aging__Premature> a belv:Term,
+     belv:Pathology;
+   rdfs:label "path(MESHD:\"Aging, Premature\")";
+   belv:hasConcept <namespace/mesh-diseases/Aging,%20Premature> .
+
+<path_MESHD_Genomic_Instability> a belv:Term,
+     belv:Pathology;
+   rdfs:label "path(MESHD:\"Genomic Instability\")";
+   belv:hasConcept <namespace/mesh-diseases/Genomic%20Instability> .
+
+<path_MESHD_Werner_Syndrome_positiveCorrelation_path_MESHD_Aging__Premature> a belv:Statement;
+   rdfs:label "path(MESHD:\"Werner Syndrome\") positiveCorrelation path(MESHD:\"Aging, Premature\")";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasCitation <http://bio2rdf.org/pubmed:14734561>;
+     belv:hasEvidenceText """Werner's syndrome (WS) is an inherited disease\
+characterized by genomic instability and premature aging.""";
+     belv:hasStatement <path_MESHD_Werner_Syndrome_positiveCorrelation_path_MESHD_Aging__Premature>];
+   belv:hasObject <path_MESHD_Aging__Premature>;
+   belv:hasRelationship belv:positiveCorrelation;
+   belv:hasSubject <path_MESHD_Werner_Syndrome> .
+
+<path_MESHD_Werner_Syndrome_positiveCorrelation_path_MESHD_Genomic_Instability> a belv:Statement;
+   rdfs:label "path(MESHD:\"Werner Syndrome\") positiveCorrelation path(MESHD:\"Genomic Instability\")";
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasCitation <http://bio2rdf.org/pubmed:14734561>;
+     belv:hasEvidenceText """Werner's syndrome (WS) is an inherited disease\
+characterized by genomic instability and premature aging.""";
+     belv:hasStatement <path_MESHD_Werner_Syndrome_positiveCorrelation_path_MESHD_Genomic_Instability>];
+   belv:hasObject <path_MESHD_Genomic_Instability>;
+   belv:hasRelationship belv:positiveCorrelation;
+   belv:hasSubject <path_MESHD_Werner_Syndrome> .
+
+belv:AbundanceActivity rdfs:subClassOf belv:Process .
+
+belv:BiologicalProcess rdfs:subClassOf belv:Process .
+
+belv:Translocation rdfs:subClassOf belv:Transformation .
+
+belv:biomarkerFor rdfs:subClassOf belv:relationship .
+
+belv:decreases rdfs:subClassOf belv:causalRelationship,
+     belv:negativeRelationship .
+
+belv:directlyIncreases rdfs:subClassOf belv:causalRelationship,
+     belv:positiveRelationship,
+     belv:directRelationship,
+     belv:increases .
+
+belv:hasActivityType a rdf:Property .
+
+belv:subProcessOf rdfs:subClassOf belv:membershipRelationship .
+
+<complex_p_HGNC_PARP1_p_HGNC_WRN> a belv:Term,
+     belv:ComplexAbundance,
+     belv:Statement;
+   rdfs:label "complex(p(HGNC:PARP1),p(HGNC:WRN))";
+   belv:hasChild <p_HGNC_PARP1>,
+     <p_HGNC_WRN>;
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/cell-structure/Cell%20Nucleus>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:14734561>;
+     belv:hasEvidenceText """To this end, we identified three proteins that are stably\
+associated with WRN in nuclear extracts. Two of these proteins, Ku70 and\
+Ku80, were identified by immunoblot analysis. The third polypeptide,\
+which was identified by mass spectrometry analysis, is identical to\
+poly(ADP-ribose) polymerase-1(PARP-1), a 113-kDa enzyme that functions\
+ as a sensor of DNA damage.""";
+     belv:hasStatement <complex_p_HGNC_PARP1_p_HGNC_WRN>];
+   belv:hasSubject <complex_p_HGNC_PARP1_p_HGNC_WRN> .
+
+<complex_p_HGNC_WRN_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_PARP1> a belv:Term,
+     belv:ComplexAbundance,
+     belv:Statement;
+   rdfs:label "complex(p(HGNC:WRN),p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:PARP1))";
+   belv:hasChild <p_HGNC_WRN>,
+     <p_HGNC_XRCC5>,
+     <p_HGNC_XRCC6>,
+     <p_HGNC_PARP1>;
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasCitation <http://bio2rdf.org/pubmed:14734561>;
+     belv:hasEvidenceText """Protein interaction assays with purified proteins further\
+indicated that PARP-1 binds directly to WRN and assembles in a complex\
+with WRN and Ku70/80.""";
+     belv:hasStatement <complex_p_HGNC_WRN_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_PARP1>];
+   belv:hasSubject <complex_p_HGNC_WRN_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_PARP1> .
+
+<complex_p_HGNC_XRCC5_p_HGNC_WRN> a belv:Term,
+     belv:ComplexAbundance,
+     belv:Statement;
+   rdfs:label "complex(p(HGNC:XRCC5),p(HGNC:WRN))";
+   belv:hasChild <p_HGNC_XRCC5>,
+     <p_HGNC_WRN>;
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/cell-structure/Cell%20Nucleus>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:14734561>;
+     belv:hasEvidenceText """To this end, we identified three proteins that are stably\
+associated with WRN in nuclear extracts. Two of these proteins, Ku70 and\
+Ku80, were identified by immunoblot analysis. The third polypeptide,\
+which was identified by mass spectrometry analysis, is identical to\
+poly(ADP-ribose) polymerase-1(PARP-1), a 113-kDa enzyme that functions\
+ as a sensor of DNA damage.""";
+     belv:hasStatement <complex_p_HGNC_XRCC5_p_HGNC_WRN>];
+   belv:hasSubject <complex_p_HGNC_XRCC5_p_HGNC_WRN> .
+
+<complex_p_HGNC_XRCC6_p_HGNC_WRN> a belv:Term,
+     belv:ComplexAbundance,
+     belv:Statement;
+   rdfs:label "complex(p(HGNC:XRCC6),p(HGNC:WRN))";
+   belv:hasChild <p_HGNC_XRCC6>,
+     <p_HGNC_WRN>;
+   belv:hasEvidence [ a belv:Evidence;
+     belv:hasAnnotation <annotation/cell-structure/Cell%20Nucleus>;
+     belv:hasCitation <http://bio2rdf.org/pubmed:14734561>;
+     belv:hasEvidenceText """To this end, we identified three proteins that are stably\
+associated with WRN in nuclear extracts. Two of these proteins, Ku70 and\
+Ku80, were identified by immunoblot analysis. The third polypeptide,\
+which was identified by mass spectrometry analysis, is identical to\
+poly(ADP-ribose) polymerase-1(PARP-1), a 113-kDa enzyme that functions\
+ as a sensor of DNA damage.""";
+     belv:hasStatement <complex_p_HGNC_XRCC6_p_HGNC_WRN>];
+   belv:hasSubject <complex_p_HGNC_XRCC6_p_HGNC_WRN> .
+
+<p_HGNC_PARP1> a belv:Term,
+     belv:ProteinAbundance;
+   rdfs:label "p(HGNC:PARP1)";
+   belv:hasConcept <namespace/hgnc-approved-symbols/PARP1> .
+
+<path_MESHD_Werner_Syndrome> a belv:Term,
+     belv:Pathology;
+   rdfs:label "path(MESHD:\"Werner Syndrome\")";
+   belv:hasConcept <namespace/mesh-diseases/Werner%20Syndrome> .
+
+belv:directRelationship rdfs:subClassOf belv:relationship .
+
+belv:increases rdfs:subClassOf belv:causalRelationship,
+     belv:positiveRelationship .
+
+belv:positiveCorrelation rdfs:subClassOf belv:correlativeRelationship,
+     belv:positiveRelationship .
+
+<p_HGNC_XRCC5> a belv:Term,
+     belv:ProteinAbundance;
+   rdfs:label "p(HGNC:XRCC5)";
+   belv:hasConcept <namespace/hgnc-approved-symbols/XRCC5> .
+
+<p_HGNC_XRCC6> a belv:Term,
+     belv:ProteinAbundance;
+   rdfs:label "p(HGNC:XRCC6)";
+   belv:hasConcept <namespace/hgnc-approved-symbols/XRCC6> .
+
+belv:Pathology rdfs:subClassOf belv:BiologicalProcess .
+
+belv:Phosphorylation rdfs:subClassOf belv:Modification .
+
+belv:Transformation rdfs:subClassOf belv:Process .
+
+belv:correlativeRelationship rdfs:subClassOf belv:relationship .
+
+belv:hasAnnotation a rdf:Property .
+
+belv:hasObject rdfs:domain belv:Statement;
+   rdfs:range belv:Term;
+   rdfs:subPropertyOf belv:hasChild .
+
+belv:hasRelationship a rdf:Property .
+
+belv:negativeRelationship rdfs:subClassOf belv:relationship .
+
+belv:positiveRelationship rdfs:subClassOf belv:relationship .
+
+belv:membershipRelationship rdfs:subClassOf belv:relationship .
+
+belv:ComplexAbundance rdfs:subClassOf belv:Abundance .
+
+<p_HGNC_WRN> a belv:Term,
+     belv:ProteinAbundance;
+   rdfs:label "p(HGNC:WRN)";
+   belv:hasConcept <namespace/hgnc-approved-symbols/WRN> .
+
+belv:ProteinAbundance rdfs:subClassOf belv:Abundance .
+
+belv:causalRelationship rdfs:subClassOf belv:relationship .
+
+belv:hasCitation a rdf:Property .
+
+belv:hasConcept a rdf:Property .
+
+belv:hasEvidence a rdf:Property .
+
+belv:hasEvidenceText a rdf:Property .
+
+belv:hasStatement a rdf:Property .
+
+belv:hasSubject rdfs:domain belv:Statement;
+   rdfs:range belv:Term;
+   rdfs:subPropertyOf belv:hasChild .
+
+belv:hasChild a rdf:Property .
