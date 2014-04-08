@@ -15,7 +15,7 @@ import org.openbel.framework.common.model.Statement;
 public class Bel2Nanopub {
 
 	public static void main(String[] args) {
-		String belDoc = getResourceAsString("/examples/pubmed9202001.bel");
+		String belDoc = getResourceAsString("/examples/pubmed14734561.bel");
 		System.out.println("INPUT FILE:");
 		System.out.println("---");
 		System.out.println(belDoc);
@@ -32,9 +32,16 @@ public class Bel2Nanopub {
 		for (BELStatementGroup g : result.getDocument().getBelStatementGroups()) {
 			for (BELStatement bst : g.getStatements()) {
 				String s = bst.getStatementSyntax();
-				System.out.println("STATEMENT: " + s);
 				Statement st = BELParser.parseStatement(s);
-				if (st != null) System.out.println("PARSED SUCCESSFULLY.");
+				if (st == null) continue;
+				System.out.println("CODE: " + s);
+				if (st.getRelationshipType() == null) {
+					System.out.println("  TERM:     " + st.getSubject().getFunctionEnum());
+				} else {
+					System.out.println("  SUBJECT:  " + st.getSubject().getFunctionEnum());
+					System.out.println("  REL TYPE: " + st.getRelationshipType());
+					//System.out.println("  OBJECT:   " + st.getObject());
+				}
 			}
 		}
 	}
