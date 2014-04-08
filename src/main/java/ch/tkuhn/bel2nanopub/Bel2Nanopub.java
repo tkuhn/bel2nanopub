@@ -12,7 +12,9 @@ import org.openbel.framework.common.bel.parser.BELParser;
 public class Bel2Nanopub {
 
 	public static void main(String[] args) {
-		String belDoc = getResourceAsString("/examples/pubmed11340296.bel");
+		String belDoc = getResourceAsString("/examples/pubmed9202001.bel");
+		System.out.println(belDoc);
+		System.out.println("---");
 		BELParseResults result = BELParser.parse(belDoc);
 		for (BELParseErrorException ex : result.getSyntaxErrors()) {
 			System.err.println(ex.getMessage());
