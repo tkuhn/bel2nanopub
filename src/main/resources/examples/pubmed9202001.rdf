@@ -1,88 +1,9 @@
 # RDF representation of pubmed9202001.bel as produced by bel2rdf
-# (https://github.com/OpenBEL/bel2rdf):
+# (https://github.com/OpenBEL/bel2rdf) with schema statements removed:
 
 @base <http://www.selventa.com/bel/> .
-@base <http://www.selventa.com/bel/> .
-@prefix bel: <http://www.selventa.com/bel/> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-belv:Abundance a rdfs:Class .
-
-belv:Evidence a rdfs:Class .
-
-belv:Modification a rdfs:Class .
-
-belv:Process a rdfs:Class .
-
-belv:Statement a rdfs:Class .
-
-belv:Term a rdfs:Class .
-
-belv:relationship a rdfs:Class .
-
-belv:Acetylation rdfs:subClassOf belv:Modification .
-
-belv:CellSecretion rdfs:subClassOf belv:Translocation .
-
-belv:ComplexAbundance rdfs:subClassOf belv:Abundance .
-
-belv:CompositeAbundance rdfs:subClassOf belv:Abundance .
-
-belv:Degradation rdfs:subClassOf belv:Transformation .
-
-belv:Farnesylation rdfs:subClassOf belv:Modification .
-
-belv:GeneAbundance rdfs:subClassOf belv:Abundance .
-
-belv:Glycosylation rdfs:subClassOf belv:Modification .
-
-belv:Hydroxylation rdfs:subClassOf belv:Modification .
-
-belv:Methylation rdfs:subClassOf belv:Modification .
-
-belv:Pathology rdfs:subClassOf belv:BiologicalProcess .
-
-belv:PhosphorylationSerine rdfs:subClassOf belv:Phosphorylation .
-
-belv:ProteinVariantAbundance rdfs:subClassOf belv:ProteinAbundance .
-
-belv:RNAAbundance rdfs:subClassOf belv:Abundance .
-
-belv:Reaction rdfs:subClassOf belv:Transformation .
-
-belv:Ribosylation rdfs:subClassOf belv:Modification .
-
-belv:Sumoylation rdfs:subClassOf belv:Modification .
-
-belv:Ubiquitination rdfs:subClassOf belv:Modification .
-
-belv:association rdfs:subClassOf belv:correlativeRelationship .
-
-belv:causesNoChange rdfs:subClassOf belv:causalRelationship .
-
-belv:hasComponent rdfs:subClassOf belv:membershipRelationship .
-
-belv:hasMember rdfs:subClassOf belv:membershipRelationship .
-
-belv:hasModificationPosition a rdf:Property .
-
-belv:isA rdfs:subClassOf belv:membershipRelationship .
-
-belv:microRNAAbundance rdfs:subClassOf belv:Abundance .
-
-belv:negativeCorrelation rdfs:subClassOf belv:correlativeRelationship,
-     belv:negativeRelationship .
-
-belv:positiveCorrelation rdfs:subClassOf belv:correlativeRelationship,
-     belv:positiveRelationship .
-
-belv:prognosticBiomarkerFor rdfs:subClassOf belv:biomarkerFor .
-
-belv:rateLimitingStepOf rdfs:subClassOf belv:increases,
-     belv:causalRelationship,
-     belv:subProcessOf .
 
 <a_CHEBI_phorbol_13-acetate_12-myristate_increases_kin_p_HGNC_MAPK1> a belv:Statement;
    rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> kin(p(HGNC:MAPK1))";
@@ -449,14 +370,6 @@ p38 MAPK in transient transfection studies.""";
    belv:hasActivityType belv:Transcription;
    belv:hasChild <p_HGNC_MYC> .
 
-belv:BiologicalProcess rdfs:subClassOf belv:Process .
-
-belv:Translocation rdfs:subClassOf belv:Transformation .
-
-belv:biomarkerFor rdfs:subClassOf belv:relationship .
-
-belv:subProcessOf rdfs:subClassOf belv:membershipRelationship .
-
 <a_CHEBI_phorbol_13-acetate_12-myristate_increases_p_HGNC_DUSP1> a belv:Statement;
    rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1)";
    belv:hasEvidence [ a belv:Evidence;
@@ -487,27 +400,10 @@ with maximal levels attained after 4 h.""";
    belv:hasActivityType belv:Transcription;
    belv:hasChild <p_HGNC_JUN> .
 
-belv:directRelationship rdfs:subClassOf belv:relationship .
-
 <p_HGNC_DUSP1> a belv:Term,
      belv:ProteinAbundance;
    rdfs:label "p(HGNC:DUSP1)";
    belv:hasConcept <namespace/hgnc-approved-symbols/DUSP1> .
-
-belv:PhosphorylationThreonine rdfs:subClassOf belv:Phosphorylation .
-
-belv:PhosphorylationTyrosine rdfs:subClassOf belv:Phosphorylation .
-
-belv:Transformation rdfs:subClassOf belv:Process .
-
-belv:correlativeRelationship rdfs:subClassOf belv:relationship .
-
-belv:decreases rdfs:subClassOf belv:causalRelationship,
-     belv:negativeRelationship .
-
-belv:negativeRelationship rdfs:subClassOf belv:relationship .
-
-belv:positiveRelationship rdfs:subClassOf belv:relationship .
 
 <kin_p_HGNC_MAPK1> a belv:Term,
      belv:AbundanceActivity;
@@ -537,22 +433,6 @@ belv:positiveRelationship rdfs:subClassOf belv:relationship .
    rdfs:label "p(HGNC:MAPK8)";
    belv:hasConcept <namespace/hgnc-approved-symbols/MAPK8> .
 
-belv:membershipRelationship rdfs:subClassOf belv:relationship .
-
-belv:Phosphorylation rdfs:subClassOf belv:Modification .
-
-belv:causalRelationship rdfs:subClassOf belv:relationship .
-
-belv:directlyDecreases rdfs:subClassOf belv:causalRelationship,
-     belv:negativeRelationship,
-     belv:directRelationship,
-     belv:decreases .
-
-belv:directlyIncreases rdfs:subClassOf belv:causalRelationship,
-     belv:positiveRelationship,
-     belv:directRelationship,
-     belv:increases .
-
 <a_CHEBI_phorbol_13-acetate_12-myristate> a belv:Term,
      belv:Abundance;
    rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\")";
@@ -563,40 +443,3 @@ belv:directlyIncreases rdfs:subClassOf belv:causalRelationship,
    rdfs:label "phos(p(HGNC:DUSP1))";
    belv:hasActivityType belv:Phosphatase;
    belv:hasChild <p_HGNC_DUSP1> .
-
-belv:AbundanceActivity rdfs:subClassOf belv:Process .
-
-belv:hasActivityType a rdf:Property .
-
-belv:ModifiedProteinAbundance rdfs:subClassOf belv:ProteinAbundance .
-
-belv:hasConcept a rdf:Property .
-
-belv:hasModificationType a rdf:Property .
-
-belv:increases rdfs:subClassOf belv:causalRelationship,
-     belv:positiveRelationship .
-
-belv:ProteinAbundance rdfs:subClassOf belv:Abundance .
-
-belv:hasChild a rdf:Property .
-
-belv:hasCitation a rdf:Property .
-
-belv:hasEvidence a rdf:Property .
-
-belv:hasEvidenceText a rdf:Property .
-
-belv:hasObject rdfs:domain belv:Statement;
-   rdfs:range belv:Term;
-   rdfs:subPropertyOf belv:hasChild .
-
-belv:hasRelationship a rdf:Property .
-
-belv:hasStatement a rdf:Property .
-
-belv:hasSubject rdfs:domain belv:Statement;
-   rdfs:range belv:Term;
-   rdfs:subPropertyOf belv:hasChild .
-
-belv:hasAnnotation a rdf:Property .
