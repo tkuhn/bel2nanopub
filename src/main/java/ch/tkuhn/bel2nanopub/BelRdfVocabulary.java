@@ -56,4 +56,47 @@ public class BelRdfVocabulary {
 		return functionMap.get(abbrev);
 	}
 
+	private static Map<String,String> relNormalizeMap = new HashMap<String,String>();
+
+	static {
+		relNormalizeMap.put("analogous", "analogous");
+		relNormalizeMap.put("association", "association");
+		relNormalizeMap.put("--", "association");
+		relNormalizeMap.put("biomarkerFor", "biomarkerFor");
+		relNormalizeMap.put("causesNoChange", "causesNoChange");
+		relNormalizeMap.put("decreases", "decreases");
+		relNormalizeMap.put("-|", "decreases");
+		relNormalizeMap.put("directlyDecreases", "directlyDecreases");
+		relNormalizeMap.put("=|", "directlyDecreases");
+		relNormalizeMap.put("directlyIncreases", "directlyIncreases");
+		relNormalizeMap.put("=>", "directlyIncreases");
+		relNormalizeMap.put("hasComponent", "hasComponent");
+		relNormalizeMap.put("hasComponents", "hasComponents");
+		relNormalizeMap.put("hasMember", "hasMember");
+		relNormalizeMap.put("hasMembers", "hasMembers");
+		relNormalizeMap.put("hasModification", "hasModification");
+		relNormalizeMap.put("hasProduct", "hasProduct");
+		relNormalizeMap.put("hasVariant", "hasVariant");
+		relNormalizeMap.put("includes", "includes");
+		relNormalizeMap.put("increases", "increases");
+		relNormalizeMap.put("->", "increases");
+		relNormalizeMap.put("isA", "isA");
+		relNormalizeMap.put("negativeCorrelation", "negativeCorrelation");
+		relNormalizeMap.put("orthologous", "orthologous");
+		relNormalizeMap.put("positiveCorrelation", "positiveCorrelation");
+		relNormalizeMap.put("prognosticBiomarkerFor", "prognosticBiomarkerFor");
+		relNormalizeMap.put("rateLimitingStepOf", "rateLimitingStepOf");
+		relNormalizeMap.put("reactantIn", "reactantIn");
+		relNormalizeMap.put("subProcessOf", "subProcessOf");
+		relNormalizeMap.put("transcribedTo", "transcribedTo");
+		relNormalizeMap.put(":>", "transcribedTo");
+		relNormalizeMap.put(">>", "translatedTo");
+		relNormalizeMap.put("translatedTo", "translatedTo");
+		relNormalizeMap.put("translocates", "translocates");
+	}
+
+	public static String getNormalizedRel(String rel) {
+		return relNormalizeMap.get(rel);
+	}
+
 }
