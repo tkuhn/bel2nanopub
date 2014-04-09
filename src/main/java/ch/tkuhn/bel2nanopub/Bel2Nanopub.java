@@ -51,24 +51,11 @@ public class Bel2Nanopub {
 
 		for (BELStatementGroup g : result.getDocument().getBelStatementGroups()) {
 			for (BELStatement bst : g.getStatements()) {
-				String s = bst.getStatementSyntax();
-				Statement st = BELParser.parseStatement(s);
-				if (st == null) continue;
-				System.out.println("BEL: " + s);
 				NanopubCreator npCreator = new NanopubCreator("http://www.tkuhn.ch/bel2nanopub/");
 				npCreator.addNamespace("belv", BelRdfVocabulary.BELV_NS);
 				npCreator.addNamespace("np", "http://www.nanopub.org/nschema#");
 				npCreator.addNamespace("rdfs", RDFS.NAMESPACE);
-				BNode topBn = new BNodeImpl("" + bnodeCount++);
-				npCreator.addAssertionStatement(topBn, RDFS.LABEL, new LiteralImpl(s));
-				if (st.getRelationshipType() == null) {
-					npCreator.addAssertionStatement(topBn, RDF.TYPE, BelRdfVocabulary.Term);
-					Term subj = st.getSubject();
-					URI funcUri = BelRdfVocabulary.getFunction(subj.getFunctionEnum().getAbbreviation());
-					npCreator.addAssertionStatement(topBn, RDF.TYPE, funcUri);
-				} else {
-					npCreator.addAssertionStatement(topBn, RDF.TYPE, BelRdfVocabulary.Statement);
-				}
+				processBelStatement(bst, npCreator);
 				try {
 					Nanopub np = TransformNanopub.transform(npCreator.finalizeNanopub());
 					System.out.println("NANOPUB:");
@@ -80,6 +67,54 @@ public class Bel2Nanopub {
 				System.out.println("---");
 			}
 		}
+	}
+
+	private BNode processBelStatement(BELStatement belStatement, NanopubCreator npCreator) {
+		String s = belStatement.getStatementSyntax();
+		Statement st = BELParser.parseStatement(s);
+		System.out.println("BEL: " + s);
+		BNode bn = processBelStatement(st, npCreator);
+		npCreator.addAssertionStatement(bn, RDFS.LABEL, new LiteralImpl(s));
+		return bn;
+	}
+
+	private BNode processBelObject(org.openbel.framework.common.model.Statement.Object obj, NanopubCreator npCreator) {
+		if (obj.getTerm() != null) {
+			return processBelTerm(obj.getTerm(), npCreator);
+		} else {
+			return processBelStatement(obj.getStatement(), npCreator);
+		}
+	}
+
+	private BNode processBelTerm(Term term, NanopubCreator npCreator) {
+		BNode bn = newBNode();
+		npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.term);
+		URI funcUri = BelRdfVocabulary.getFunction(term.getFunctionEnum().getAbbreviation());
+		npCreator.addAssertionStatement(bn, RDF.TYPE, funcUri);
+		// TODO ...
+		return bn;
+	}
+
+	private BNode processBelStatement(Statement statement, NanopubCreator npCreator) {
+		BNode bn = newBNode();
+		if (statement.getRelationshipType() == null) {
+			bn = processBelTerm(statement.getSubject(), npCreator);
+		} else {
+			npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.statement);
+			BNode subj = processBelTerm(statement.getSubject(), npCreator);
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasSubject, subj);
+			// TODO hasRelationship
+			if (statement.getObject() != null) {
+				BNode obj = processBelObject(statement.getObject(), npCreator);
+				npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasObject, obj);
+			}
+			// TODO ...
+		}
+		return bn;
+	}
+
+	private BNode newBNode() {
+		return new BNodeImpl("" + bnodeCount++);
 	}
 
 	public List<Nanopub> getNanopubs() {

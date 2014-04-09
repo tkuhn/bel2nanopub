@@ -17,8 +17,12 @@ public class BelRdfVocabulary {
 
 	public static final URI BELV_NS = new URIImpl("http://www.selventa.com/vocabulary/");
 
-	public static final URI Term = new URIImpl(BELV_NS + "Term");
-	public static final URI Statement = new URIImpl(BELV_NS + "Statement");
+	public static final URI term = new URIImpl(BELV_NS + "Term");
+	public static final URI statement = new URIImpl(BELV_NS + "Statement");
+	public static final URI hasChild = new URIImpl(BELV_NS + "hasChild");
+	public static final URI hasSubject = new URIImpl(BELV_NS + "hasSubject");
+	public static final URI hasRelationship = new URIImpl(BELV_NS + "hasRelationship");
+	public static final URI hasObject = new URIImpl(BELV_NS + "hasObject");
 
 	private static Map<String,URI> functionMap = new HashMap<String,URI>();
 
