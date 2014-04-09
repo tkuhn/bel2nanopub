@@ -5,6 +5,8 @@ import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 import net.trustyuri.rdf.TransformNanopub;
 
@@ -30,10 +32,14 @@ public class Bel2Nanopub {
 
 	public static void main(String[] args) {
 		String belDoc = readFile(args[0]);
-		System.out.println("INPUT FILE:");
-		System.out.println("---");
-		System.out.println(belDoc);
-		System.out.println("---");
+		Bel2Nanopub obj = new Bel2Nanopub(belDoc);
+		System.out.println(obj.getNanopubs().size() + " nanopub(s) created");
+	}
+
+	private int bnodeCount = 0;
+	private List<Nanopub> nanopubs = new ArrayList<Nanopub>();
+
+	public Bel2Nanopub(String belDoc) {
 		BELParseResults result = BELParser.parse(belDoc);
 
 		if (!result.getSyntaxErrors().isEmpty()) {
@@ -42,8 +48,6 @@ public class Bel2Nanopub {
 				System.err.println(ex.getMessage());
 			}
 		}
-
-		int bnodeCount = 0;
 
 		for (BELStatementGroup g : result.getDocument().getBelStatementGroups()) {
 			for (BELStatement bst : g.getStatements()) {
@@ -69,12 +73,17 @@ public class Bel2Nanopub {
 					Nanopub np = TransformNanopub.transform(npCreator.finalizeNanopub());
 					System.out.println("NANOPUB:");
 					NanopubUtils.writeToStream(np, System.out, RDFFormat.TRIG);
+					nanopubs.add(np);
 				} catch (Exception ex) {
 					ex.printStackTrace();
 				}
 				System.out.println("---");
 			}
 		}
+	}
+
+	public List<Nanopub> getNanopubs() {
+		return nanopubs;
 	}
 
 	private static String readFile(String path) {
