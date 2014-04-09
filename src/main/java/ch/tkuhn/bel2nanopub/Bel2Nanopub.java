@@ -5,12 +5,21 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+import net.trustyuri.rdf.TransformNanopub;
+
+import org.nanopub.Nanopub;
+import org.nanopub.NanopubCreator;
+import org.nanopub.NanopubUtils;
 import org.openbel.bel.model.BELParseErrorException;
 import org.openbel.bel.model.BELStatement;
 import org.openbel.bel.model.BELStatementGroup;
 import org.openbel.framework.common.bel.parser.BELParseResults;
 import org.openbel.framework.common.bel.parser.BELParser;
 import org.openbel.framework.common.model.Statement;
+import org.openrdf.model.URI;
+import org.openrdf.model.impl.URIImpl;
+import org.openrdf.model.vocabulary.RDF;
+import org.openrdf.rio.RDFFormat;
 
 public class Bel2Nanopub {
 
@@ -34,14 +43,24 @@ public class Bel2Nanopub {
 				String s = bst.getStatementSyntax();
 				Statement st = BELParser.parseStatement(s);
 				if (st == null) continue;
-				System.out.println("CODE: " + s);
+				System.out.println("BEL: " + s);
 				if (st.getRelationshipType() == null) {
-					System.out.println("  TERM:     " + st.getSubject().getFunctionEnum());
+					NanopubCreator npCreator = new NanopubCreator("http://www.tkuhn.ch/bel2nanopub/");
+					URI termUri = new URIImpl("http://www.tkuhn.ch/bel2nanopub/Term");
+					npCreator.addNamespace("belv", BelRdfVocabulary.BELV_NS);
+					npCreator.addNamespace("np", "http://www.nanopub.org/nschema#");
+					npCreator.addAssertionStatement(termUri, RDF.TYPE, BelRdfVocabulary.Term);
+					try {
+						Nanopub np = TransformNanopub.transform(npCreator.finalizeNanopub());
+						System.out.println("NANOPUB:");
+						NanopubUtils.writeToStream(np, System.out, RDFFormat.TRIG);
+					} catch (Exception ex) {
+						ex.printStackTrace();
+					}
 				} else {
-					System.out.println("  SUBJECT:  " + st.getSubject().getFunctionEnum());
-					System.out.println("  REL TYPE: " + st.getRelationshipType());
-					//System.out.println("  OBJECT:   " + st.getObject());
+					// TODO
 				}
+				System.out.println("---");
 			}
 		}
 	}
