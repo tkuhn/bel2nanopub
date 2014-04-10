@@ -15,15 +15,49 @@ public class BelRdfVocabulary {
 
 	private BelRdfVocabulary() {}  // no instances allowed
 
+	public static final URI BELR_NS = new URIImpl("http://www.selventa.com/bel/");
 	public static final URI BELV_NS = new URIImpl("http://www.selventa.com/vocabulary/");
 
 	public static final URI term = new URIImpl(BELV_NS + "Term");
 	public static final URI statement = new URIImpl(BELV_NS + "Statement");
 	public static final URI hasChild = new URIImpl(BELV_NS + "hasChild");
+	public static final URI hasConcept = new URIImpl(BELV_NS + "hasConcept");
 	public static final URI hasSubject = new URIImpl(BELV_NS + "hasSubject");
 	public static final URI hasRelationship = new URIImpl(BELV_NS + "hasRelationship");
 	public static final URI hasObject = new URIImpl(BELV_NS + "hasObject");
 	public static final URI hasActivityType = new URIImpl(BELV_NS + "hasActivityType");
+
+	private static Map<String,URI> namespaceMap = new HashMap<String,URI>();
+
+	static {
+		namespaceMap.put("EGID", new URIImpl(BELV_NS + "namespace/entrez-gene-ids/"));
+		namespaceMap.put("HGNC", new URIImpl(BELV_NS + "namespace/hgnc-approved-symbols/"));
+		namespaceMap.put("MGI", new URIImpl(BELV_NS + "namespace/mgi-approved-symbols/"));
+		namespaceMap.put("RGD", new URIImpl(BELV_NS + "namespace/rgd-approved-symbols/"));
+		namespaceMap.put("AFFY", new URIImpl(BELV_NS + "namespace/affy-probeset-ids/"));
+		namespaceMap.put("SCOM", new URIImpl(BELV_NS + "namespace/selventa-named-complexes/"));
+		namespaceMap.put("MESHCL", new URIImpl(BELV_NS + "namespace/mesh-cellular-locations/"));
+		namespaceMap.put("SFAM", new URIImpl(BELV_NS + "namespace/selventa-protein-families/"));
+		namespaceMap.put("CHEBI", new URIImpl(BELV_NS + "namespace/chebi-names/"));
+		namespaceMap.put("NCH", new URIImpl(BELV_NS + "namespace/selventa-named-complexes-human/"));
+		namespaceMap.put("NCM", new URIImpl(BELV_NS + "namespace/selventa-named-complexes-mouse/"));
+		namespaceMap.put("NCR", new URIImpl(BELV_NS + "namespace/selventa-named-complexes-rat/"));
+		namespaceMap.put("PFH", new URIImpl(BELV_NS + "namespace/selventa-protein-families-human/"));
+		namespaceMap.put("PFM", new URIImpl(BELV_NS + "namespace/selventa-protein-families-mouse/"));
+		namespaceMap.put("PFR", new URIImpl(BELV_NS + "namespace/selventa-protein-families-rat/"));
+		namespaceMap.put("GO", new URIImpl(BELV_NS + "namespace/go/"));
+		namespaceMap.put("MESHPP", new URIImpl(BELV_NS + "namespace/mesh-processes/"));
+		namespaceMap.put("MESHD", new URIImpl(BELV_NS + "namespace/mesh-diseases/"));
+		namespaceMap.put("SCHEM", new URIImpl(BELV_NS + "namespace/selventa-legacy-chemical-names/"));
+		namespaceMap.put("SDIS", new URIImpl(BELV_NS + "namespace/selventa-legacy-diseases/"));
+		namespaceMap.put("GOBP", new URIImpl(BELV_NS + "namespace/go-biological-processes-names/"));
+		namespaceMap.put("GOCCID", new URIImpl(BELV_NS + "namespace/go-cellular-component-ids/"));
+		namespaceMap.put("GOCC", new URIImpl(BELV_NS + "namespace/go-cellular-component-names/"));
+	}
+
+	public static URI getNamespace(String ns) {
+		return namespaceMap.get(ns);
+	}
 
 	private static Map<String,URI> functionMap = new HashMap<String,URI>();
 

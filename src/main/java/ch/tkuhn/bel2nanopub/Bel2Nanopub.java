@@ -18,12 +18,15 @@ import org.openbel.bel.model.BELStatement;
 import org.openbel.bel.model.BELStatementGroup;
 import org.openbel.framework.common.bel.parser.BELParseResults;
 import org.openbel.framework.common.bel.parser.BELParser;
+import org.openbel.framework.common.model.Parameter;
 import org.openbel.framework.common.model.Statement;
 import org.openbel.framework.common.model.Term;
 import org.openrdf.model.BNode;
 import org.openrdf.model.URI;
+import org.openrdf.model.Value;
 import org.openrdf.model.impl.BNodeImpl;
 import org.openrdf.model.impl.LiteralImpl;
+import org.openrdf.model.impl.URIImpl;
 import org.openrdf.model.vocabulary.RDF;
 import org.openrdf.model.vocabulary.RDFS;
 import org.openrdf.rio.RDFFormat;
@@ -100,6 +103,18 @@ public class Bel2Nanopub {
 		for (Term child : term.getAllTerms()) {
 			BNode ch = processBelTerm(child, npCreator);
 			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasChild, ch);
+		}
+		for (Parameter p : term.getAllParameters()) {
+			Value v;
+			if (p.getNamespace() == null) {
+				v = new LiteralImpl(p.getValue());
+			} else {
+				String prefix = p.getNamespace().getPrefix();
+				URI ns = BelRdfVocabulary.getNamespace(prefix);
+				v = new URIImpl(ns + p.getValue());
+				npCreator.addNamespace(prefix.toLowerCase(), ns);
+			}
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasConcept, v);
 		}
 		// TODO ...
 		npCreator.addAssertionStatement(bn, RDFS.LABEL, new LiteralImpl(term.toBELShortForm()));
