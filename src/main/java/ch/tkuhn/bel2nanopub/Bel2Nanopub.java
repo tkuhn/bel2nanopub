@@ -47,6 +47,7 @@ public class Bel2Nanopub {
 			for (BELParseErrorException ex : result.getSyntaxErrors()) {
 				System.err.println(ex.getMessage());
 			}
+			System.exit(1);
 		}
 
 		for (BELStatementGroup g : result.getDocument().getBelStatementGroups()) {
@@ -89,9 +90,18 @@ public class Bel2Nanopub {
 	private BNode processBelTerm(Term term, NanopubCreator npCreator) {
 		BNode bn = newBNode();
 		npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.term);
-		URI funcUri = BelRdfVocabulary.getFunction(term.getFunctionEnum().getAbbreviation());
+		String funcAbbrev = term.getFunctionEnum().getAbbreviation();
+		URI funcUri = BelRdfVocabulary.getFunction(funcAbbrev);
 		funcUri.toString();  // Raise null pointer exception
 		npCreator.addAssertionStatement(bn, RDF.TYPE, funcUri);
+		URI actUri = BelRdfVocabulary.getActivity(funcAbbrev);
+		if (actUri != null) {
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasActivityType, actUri);
+		}
+		for (Term child : term.getAllTerms()) {
+			BNode ch = processBelTerm(child, npCreator);
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasChild, ch);
+		}
 		// TODO ...
 		return bn;
 	}

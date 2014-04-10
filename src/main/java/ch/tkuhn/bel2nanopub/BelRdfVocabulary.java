@@ -23,6 +23,7 @@ public class BelRdfVocabulary {
 	public static final URI hasSubject = new URIImpl(BELV_NS + "hasSubject");
 	public static final URI hasRelationship = new URIImpl(BELV_NS + "hasRelationship");
 	public static final URI hasObject = new URIImpl(BELV_NS + "hasObject");
+	public static final URI hasActivityType = new URIImpl(BELV_NS + "hasActivityType");
 
 	private static Map<String,URI> functionMap = new HashMap<String,URI>();
 
@@ -50,6 +51,10 @@ public class BelRdfVocabulary {
 		functionMap.put("ribo", new URIImpl(BELV_NS + "AbundanceActivity"));
 		functionMap.put("tscript", new URIImpl(BELV_NS + "AbundanceActivity"));
 		functionMap.put("tport", new URIImpl(BELV_NS + "AbundanceActivity"));
+
+		// additional (not found in bel2rdf):
+		functionMap.put("pmod", new URIImpl(BELV_NS + "ProteinModification"));
+		functionMap.put("sub", new URIImpl(BELV_NS + "Substitution"));
 	}
 
 	public static URI getFunction(String abbrev) {
@@ -121,6 +126,25 @@ public class BelRdfVocabulary {
 
 	public static URI getRel(String rel) {
 		return relMap.get(relNormalizeMap.get(rel));
+	}
+
+	private static Map<String,URI> activityMap = new HashMap<String,URI>();
+
+	static {
+		activityMap.put("cat", new URIImpl(BELV_NS + "Catalytic"));
+		activityMap.put("chap", new URIImpl(BELV_NS + "Chaperone"));
+		activityMap.put("gtp", new URIImpl(BELV_NS + "GtpBound"));
+		activityMap.put("kin", new URIImpl(BELV_NS + "Kinase"));
+		activityMap.put("act", new URIImpl(BELV_NS + "Activity"));
+		activityMap.put("pep", new URIImpl(BELV_NS + "Peptidase"));
+		activityMap.put("phos", new URIImpl(BELV_NS + "Phosphatase"));
+		activityMap.put("ribo", new URIImpl(BELV_NS + "Ribosylase"));
+		activityMap.put("tscript", new URIImpl(BELV_NS + "Transcription"));
+		activityMap.put("tport", new URIImpl(BELV_NS + "Transport"));
+	}
+
+	public static URI getActivity(String activity) {
+		return activityMap.get(activity);
 	}
 
 }
