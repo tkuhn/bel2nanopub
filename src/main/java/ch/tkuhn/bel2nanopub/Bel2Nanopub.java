@@ -90,6 +90,7 @@ public class Bel2Nanopub {
 		BNode bn = newBNode();
 		npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.term);
 		URI funcUri = BelRdfVocabulary.getFunction(term.getFunctionEnum().getAbbreviation());
+		funcUri.toString();  // Raise null pointer exception
 		npCreator.addAssertionStatement(bn, RDF.TYPE, funcUri);
 		// TODO ...
 		return bn;
@@ -103,7 +104,9 @@ public class Bel2Nanopub {
 			npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.statement);
 			BNode subj = processBelTerm(statement.getSubject(), npCreator);
 			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasSubject, subj);
-			// TODO hasRelationship
+			URI rel = BelRdfVocabulary.getRel(statement.getRelationshipType().getDisplayValue());
+			rel.toString();  // Raise null pointer exception
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasRelationship, rel);
 			if (statement.getObject() != null) {
 				BNode obj = processBelObject(statement.getObject(), npCreator);
 				npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasObject, obj);

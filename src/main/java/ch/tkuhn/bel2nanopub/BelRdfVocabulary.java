@@ -99,4 +99,28 @@ public class BelRdfVocabulary {
 		return relNormalizeMap.get(rel);
 	}
 
+	private static Map<String,URI> relMap = new HashMap<String,URI>();
+
+	static {
+		relMap.put("association", new URIImpl(BELV_NS + "correlativeRelationship"));
+		relMap.put("biomarkerFor", new URIImpl(BELV_NS + "biomarkerFor"));
+		relMap.put("causesNoChange", new URIImpl(BELV_NS + "causesNoChange"));
+		relMap.put("decreases", new URIImpl(BELV_NS + "decreases"));
+		relMap.put("directlyDecreases", new URIImpl(BELV_NS + "directlyDecreases"));
+		relMap.put("directlyIncreases", new URIImpl(BELV_NS + "directlyIncreases"));
+		relMap.put("hasComponent", new URIImpl(BELV_NS + "hasComponent"));
+		relMap.put("hasMember", new URIImpl(BELV_NS + "hasMember"));
+		relMap.put("increases", new URIImpl(BELV_NS + "increases"));
+		relMap.put("isA", new URIImpl(BELV_NS + "isA"));
+		relMap.put("negativeCorrelation", new URIImpl(BELV_NS + "negativeCorrelation"));
+		relMap.put("positiveCorrelation", new URIImpl(BELV_NS + "positiveCorrelation"));
+		relMap.put("prognosticBiomarkerFor", new URIImpl(BELV_NS + "prognosticBiomarkerFor"));
+		relMap.put("rateLimitingStepOf", new URIImpl(BELV_NS + "rateLimitingStepOf"));
+		relMap.put("subProcessOf", new URIImpl(BELV_NS + "subProcessOf"));
+	}
+
+	public static URI getRel(String rel) {
+		return relMap.get(relNormalizeMap.get(rel));
+	}
+
 }
