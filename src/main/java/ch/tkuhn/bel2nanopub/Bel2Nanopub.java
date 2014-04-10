@@ -75,7 +75,6 @@ public class Bel2Nanopub {
 		Statement st = BELParser.parseStatement(s);
 		System.out.println("BEL: " + s);
 		BNode bn = processBelStatement(st, npCreator);
-		npCreator.addAssertionStatement(bn, RDFS.LABEL, new LiteralImpl(s));
 		return bn;
 	}
 
@@ -103,6 +102,7 @@ public class Bel2Nanopub {
 			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasChild, ch);
 		}
 		// TODO ...
+		npCreator.addAssertionStatement(bn, RDFS.LABEL, new LiteralImpl(term.toBELShortForm()));
 		return bn;
 	}
 
@@ -123,6 +123,7 @@ public class Bel2Nanopub {
 			}
 			// TODO ...
 		}
+		npCreator.addAssertionStatement(bn, RDFS.LABEL, new LiteralImpl(statement.toBELShortForm()));
 		return bn;
 	}
 
