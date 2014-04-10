@@ -221,4 +221,19 @@ public class BelRdfVocabulary {
 		return modificationMap.get(mod);
 	}
 
+	private static Map<String,String> variantNormalizeMap = new HashMap<String,String>();
+
+	static {
+		variantNormalizeMap.put("fus", "fusion");
+		variantNormalizeMap.put("fusion", "fusion");
+		variantNormalizeMap.put("sub", "substitution");
+		variantNormalizeMap.put("substitution", "substitution");
+		variantNormalizeMap.put("trunc", "truncation");
+		variantNormalizeMap.put("truncation", "truncation");
+	}
+
+	public static String getNormalizedVariant(String rel) {
+		return variantNormalizeMap.get(rel);
+	}
+
 }

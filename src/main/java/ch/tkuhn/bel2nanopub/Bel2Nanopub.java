@@ -146,8 +146,10 @@ public class Bel2Nanopub {
 				URI modUri = BelRdfVocabulary.getModification(m);
 				npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasModificationType, modUri);
 			} else  {
+				String var = BelRdfVocabulary.getNormalizedVariant(modAbbrev);
+				var.toString();  // raise null pointer exception
 				npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.proteinVariantAbundance);
-				// TODO
+				// TODO What to do with protein variants? (they are ignored by bel2rdf)
 			}
 		}
 	}
