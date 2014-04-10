@@ -1,0 +1,874 @@
+BEL: p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:"Neoplasm Metastasis")
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAiSo97bmpIZf--DbI8yHg7UESne0P7kmb32zxHuOpnxg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAiSo97bmpIZf--DbI8yHg7UESne0P7kmb32zxHuOpnxg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAiSo97bmpIZf--DbI8yHg7UESne0P7kmb32zxHuOpnxg..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix meshd: <http://www.selventa.com/bel/namespace/mesh-diseases/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix disease: <http://www.selventa.com/bel/annotation/disease/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation disease:Colorectal%20Neoplasms , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:prognosticBiomarkerFor ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:\"Neoplasm Metastasis\")" .
+	
+	node:2 belv:hasConcept meshd:%22Neoplasm%20Metastasis%22 ;
+		a belv:Pathology , belv:Term ;
+		rdfs:label "path(MESHD:\"Neoplasm Metastasis\")" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:"Recurrence")
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAwgIxzGxm4LWMItGAr9uiyIhTY4MtEh4CyuIbleXPDPU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAwgIxzGxm4LWMItGAr9uiyIhTY4MtEh4CyuIbleXPDPU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAwgIxzGxm4LWMItGAr9uiyIhTY4MtEh4CyuIbleXPDPU..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix meshd: <http://www.selventa.com/bel/namespace/mesh-diseases/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix disease: <http://www.selventa.com/bel/annotation/disease/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation disease:Colorectal%20Neoplasms , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:prognosticBiomarkerFor ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:\"Recurrence\")" .
+	
+	node:2 belv:hasConcept meshd:%22Recurrence%22 ;
+		a belv:Pathology , belv:Term ;
+		rdfs:label "path(MESHD:\"Recurrence\")" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,V)) -> path(MESHD:Neoplasms)
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3V8ZG66Z6Tird5O6afgBFf2QuTIWXpoYObu1IyrhQdY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3V8ZG66Z6Tird5O6afgBFf2QuTIWXpoYObu1IyrhQdY.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA3V8ZG66Z6Tird5O6afgBFf2QuTIWXpoYObu1IyrhQdY..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix meshd: <http://www.selventa.com/bel/namespace/mesh-diseases/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+	
+	node:2 belv:hasConcept meshd:Neoplasms ;
+		a belv:Pathology , belv:Term ;
+		rdfs:label "path(MESHD:Neoplasms)" .
+	
+	node:3 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:4 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> path(MESHD:Neoplasms)" .
+	
+	node:4 belv:hasChild node:1 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,D)) -> path(MESHD:Neoplasms)
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAjnqtJgP0ef69wf1uiccLNCwHW4Eqf4cJDkOF_1xhBIQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAjnqtJgP0ef69wf1uiccLNCwHW4Eqf4cJDkOF_1xhBIQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAjnqtJgP0ef69wf1uiccLNCwHW4Eqf4cJDkOF_1xhBIQ..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix meshd: <http://www.selventa.com/bel/namespace/mesh-diseases/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> path(MESHD:Neoplasms)" .
+	
+	node:2 belv:hasConcept meshd:Neoplasms ;
+		a belv:Pathology , belv:Term ;
+		rdfs:label "path(MESHD:Neoplasms)" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,D))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,C)) causesNoChange path(MESHD:Neoplasms)
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAHmapftrHb2-UORpFLRSy6fna_f-ayNfmvnIixAr8c_0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAHmapftrHb2-UORpFLRSy6fna_f-ayNfmvnIixAr8c_0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAHmapftrHb2-UORpFLRSy6fna_f-ayNfmvnIixAr8c_0..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix meshd: <http://www.selventa.com/bel/namespace/mesh-diseases/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:causesNoChange ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,C)) causesNoChange path(MESHD:Neoplasms)" .
+	
+	node:2 belv:hasConcept meshd:Neoplasms ;
+		a belv:Pathology , belv:Term ;
+		rdfs:label "path(MESHD:Neoplasms)" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,C))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,V)) => complex(p(HGNC:KRAS),p(MGI:Raf1))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA2Lw-nJzcqTq9fNOVVbX_LbmkNlbw7cJ8TvvzIK3co6c> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA2Lw-nJzcqTq9fNOVVbX_LbmkNlbw7cJ8TvvzIK3co6c.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA2Lw-nJzcqTq9fNOVVbX_LbmkNlbw7cJ8TvvzIK3co6c..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix mgi: <http://www.selventa.com/bel/namespace/mgi-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyIncreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) => complex(p(HGNC:KRAS),p(MGI:Raf1))" .
+	
+	node:2 belv:hasChild node:5 , node:6 ;
+		a belv:ComplexAbundance , belv:Term ;
+		rdfs:label "complex(p(HGNC:KRAS),p(MGI:Raf1))" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+	
+	node:5 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+	
+	node:6 belv:hasConcept mgi:Raf1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(MGI:Raf1)" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,V)) -> kin(p(PFM:"MAPK Erk1/3 Family"))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAoIodCAYu4somuGyfGWdfuQbltuQIymffzWNqv_vzrHk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAoIodCAYu4somuGyfGWdfuQbltuQIymffzWNqv_vzrHk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAoIodCAYu4somuGyfGWdfuQbltuQIymffzWNqv_vzrHk..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix pfm: <http://www.selventa.com/bel/namespace/selventa-protein-families-mouse/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+	
+	node:5 belv:hasConcept pfm:%22MAPK%20Erk1%2F3%20Family%22 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(PFM:\"MAPK Erk1/3 Family\")" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,D)) causesNoChange complex(p(HGNC:KRAS),p(MGI:Raf1))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA70Zo3yCavbAzoQ968td761-RJYKOA_E2UX-2YeqMZ2M> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA70Zo3yCavbAzoQ968td761-RJYKOA_E2UX-2YeqMZ2M.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA70Zo3yCavbAzoQ968td761-RJYKOA_E2UX-2YeqMZ2M..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix mgi: <http://www.selventa.com/bel/namespace/mgi-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:causesNoChange ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,D)) causesNoChange complex(p(HGNC:KRAS),p(MGI:Raf1))" .
+	
+	node:2 belv:hasChild node:5 , node:6 ;
+		a belv:ComplexAbundance , belv:Term ;
+		rdfs:label "complex(p(HGNC:KRAS),p(MGI:Raf1))" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,D))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+	
+	node:5 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+	
+	node:6 belv:hasConcept mgi:Raf1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(MGI:Raf1)" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,D)) causesNoChange kin(p(PFM:"MAPK Erk1/3 Family"))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RADWFIXGOQEvr0UE-Bkjy1qtR3yHvSeoFHCY_rf9KMRlQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RADWFIXGOQEvr0UE-Bkjy1qtR3yHvSeoFHCY_rf9KMRlQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RADWFIXGOQEvr0UE-Bkjy1qtR3yHvSeoFHCY_rf9KMRlQ..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix pfm: <http://www.selventa.com/bel/namespace/selventa-protein-families-mouse/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:causesNoChange ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,D)) causesNoChange kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,D))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+	
+	node:5 belv:hasConcept pfm:%22MAPK%20Erk1%2F3%20Family%22 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(PFM:\"MAPK Erk1/3 Family\")" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(complex(NCM:"p85/p110 PI3Kinase Complex"))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAVcMw7r_8AVAEiMKXbt5gI7b-wpYACiKgQG-wqt8zOJg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAVcMw7r_8AVAEiMKXbt5gI7b-wpYACiKgQG-wqt8zOJg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAVcMw7r_8AVAEiMKXbt5gI7b-wpYACiKgQG-wqt8zOJg..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix ncm: <http://www.selventa.com/bel/namespace/selventa-named-complexes-mouse/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(complex(NCM:\"p85/p110 PI3Kinase Complex\"))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(complex(NCM:\"p85/p110 PI3Kinase Complex\"))" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,D))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+	
+	node:5 belv:hasConcept ncm:%22p85%2Fp110%20PI3Kinase%20Complex%22 ;
+		a belv:ComplexAbundance , belv:Term ;
+		rdfs:label "complex(NCM:\"p85/p110 PI3Kinase Complex\")" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:"Akt Family"))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAnMlfE9SSKP_mRiHyls9S8n17M9MyApcr7Qis-GxA5dM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAnMlfE9SSKP_mRiHyls9S8n17M9MyApcr7Qis-GxA5dM.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAnMlfE9SSKP_mRiHyls9S8n17M9MyApcr7Qis-GxA5dM..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix pfm: <http://www.selventa.com/bel/namespace/selventa-protein-families-mouse/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Akt Family\"))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(PFM:\"Akt Family\"))" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,D))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+	
+	node:5 belv:hasConcept pfm:%22Akt%20Family%22 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(PFM:\"Akt Family\")" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:"Mapk JNK Family"))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA5N3S-eigl2wkA61Z47gU05A_hUT_tVwMTMfsGV6LTcE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA5N3S-eigl2wkA61Z47gU05A_hUT_tVwMTMfsGV6LTcE.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA5N3S-eigl2wkA61Z47gU05A_hUT_tVwMTMfsGV6LTcE..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix pfm: <http://www.selventa.com/bel/namespace/selventa-protein-families-mouse/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Mapk JNK Family\"))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(PFM:\"Mapk JNK Family\"))" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,D))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+	
+	node:5 belv:hasConcept pfm:%22Mapk%20JNK%20Family%22 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(PFM:\"Mapk JNK Family\")" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:"Mapk p38 Family"))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAs1-guOpZxflTXHBMA1rz8k6SMj7B1f0jvBIA5EvgqpE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAs1-guOpZxflTXHBMA1rz8k6SMj7B1f0jvBIA5EvgqpE.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAs1-guOpZxflTXHBMA1rz8k6SMj7B1f0jvBIA5EvgqpE..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix pfm: <http://www.selventa.com/bel/namespace/selventa-protein-families-mouse/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Mapk p38 Family\"))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(PFM:\"Mapk p38 Family\"))" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,D))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+	
+	node:5 belv:hasConcept pfm:%22Mapk%20p38%20Family%22 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(PFM:\"Mapk p38 Family\")" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(MGI:Ptk2))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA5W87-t9hXXPLLo9uGpauVx0jgAhCADy24jZHcskG0No> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA5W87-t9hXXPLLo9uGpauVx0jgAhCADy24jZHcskG0No.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA5W87-t9hXXPLLo9uGpauVx0jgAhCADy24jZHcskG0No..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix mgi: <http://www.selventa.com/bel/namespace/mgi-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(MGI:Ptk2))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(MGI:Ptk2))" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,D))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+	
+	node:5 belv:hasConcept mgi:Ptk2 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(MGI:Ptk2)" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:RB1,pmod(P))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAXt2thSlQtdVrFjh_EEuCM-lXiA3dCqr9J3bCAXvZNos> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAXt2thSlQtdVrFjh_EEuCM-lXiA3dCqr9J3bCAXvZNos.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAXt2thSlQtdVrFjh_EEuCM-lXiA3dCqr9J3bCAXvZNos..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:RB1,pmod(P))" .
+	
+	node:2 belv:hasChild node:5 ;
+		belv:hasModificationType belv:Phosphorylation ;
+		a belv:ModifiedProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:RB1,pmod(P))" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+	
+	node:5 belv:hasConcept hgnc:RB1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:RB1)" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:PCNA)
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA004loVgfIXNZbhlmBbsl-WFkKA7boF7vmYIvX5NVeXM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA004loVgfIXNZbhlmBbsl-WFkKA7boF7vmYIvX5NVeXM.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA004loVgfIXNZbhlmBbsl-WFkKA7boF7vmYIvX5NVeXM..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:PCNA)" .
+	
+	node:2 belv:hasConcept hgnc:PCNA ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:PCNA)" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:CCNB1)
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA-KXENJiPX5yjDOpQmwl5dcgcBEuy3hx6GhBkQ-aABUA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA-KXENJiPX5yjDOpQmwl5dcgcBEuy3hx6GhBkQ-aABUA.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA-KXENJiPX5yjDOpQmwl5dcgcBEuy3hx6GhBkQ-aABUA..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:CCNB1)" .
+	
+	node:2 belv:hasConcept hgnc:CCNB1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:CCNB1)" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:"G1/S transition of mitotic cell cycle")
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RATSPgfFDjYsRp_QAbxCHv3w3T_ekK3D8dYw_uvTorpco> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RATSPgfFDjYsRp_QAbxCHv3w3T_ekK3D8dYw_uvTorpco.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RATSPgfFDjYsRp_QAbxCHv3w3T_ekK3D8dYw_uvTorpco..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix go: <http://www.selventa.com/bel/namespace/go/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:\"G1/S transition of mitotic cell cycle\")" .
+	
+	node:2 belv:hasConcept go:%22G1%2FS%20transition%20of%20mitotic%20cell%20cycle%22 ;
+		a belv:BiologicalProcess , belv:Term ;
+		rdfs:label "bp(GO:\"G1/S transition of mitotic cell cycle\")" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:"G2/M transition of mitotic cell cycle")
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1HIy3mnjQXVm_CCb99DWQBwGNz7o49dBa0Z0SMAmNqk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1HIy3mnjQXVm_CCb99DWQBwGNz7o49dBa0Z0SMAmNqk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA1HIy3mnjQXVm_CCb99DWQBwGNz7o49dBa0Z0SMAmNqk..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix go: <http://www.selventa.com/bel/namespace/go/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:\"G2/M transition of mitotic cell cycle\")" .
+	
+	node:2 belv:hasConcept go:%22G2%2FM%20transition%20of%20mitotic%20cell%20cycle%22 ;
+		a belv:BiologicalProcess , belv:Term ;
+		rdfs:label "bp(GO:\"G2/M transition of mitotic cell cycle\")" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+}
+---
+BEL: p(HGNC:KRAS,sub(G,12,V)) causesNoChange bp(GO:"regulation of apoptotic process")
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAflWkj49WxUjaker8EdVr3L6q969Hg7xUJaWzfrPxs4E> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAflWkj49WxUjaker8EdVr3L6q969Hg7xUJaWzfrPxs4E.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAflWkj49WxUjaker8EdVr3L6q969Hg7xUJaWzfrPxs4E..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix go: <http://www.selventa.com/bel/namespace/go/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:causesNoChange ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) causesNoChange bp(GO:\"regulation of apoptotic process\")" .
+	
+	node:2 belv:hasConcept go:%22regulation%20of%20apoptotic%20process%22 ;
+		a belv:BiologicalProcess , belv:Term ;
+		rdfs:label "bp(GO:\"regulation of apoptotic process\")" .
+	
+	node:3 belv:hasChild node:4 ;
+		a belv:ProteinVariantAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+	
+	node:4 belv:hasConcept hgnc:KRAS ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:KRAS)" .
+}
+---
+20 nanopub(s) created

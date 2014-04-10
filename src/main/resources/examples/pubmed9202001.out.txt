@@ -1,0 +1,1032 @@
+BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(HGNC:MAPK1))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RArYTVkSyPphL-yAscZj5ZX-KhlmrUTWYAfGAyu4TiGjA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RArYTVkSyPphL-yAscZj5ZX-KhlmrUTWYAfGAyu4TiGjA.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RArYTVkSyPphL-yAscZj5ZX-KhlmrUTWYAfGAyu4TiGjA..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> kin(p(HGNC:MAPK1))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(HGNC:MAPK1))" .
+	
+	node:3 belv:hasConcept chebi:%22phorbol%2013-acetate%2012-myristate%22 ;
+		a belv:Abundance , belv:Term ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\")" .
+	
+	node:4 belv:hasConcept hgnc:MAPK1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK1)" .
+}
+---
+BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(HGNC:MAPK8))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA81BkIqhrMYyYQanex-SU4ZIEGmESnZB_54JaOrCdfpE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA81BkIqhrMYyYQanex-SU4ZIEGmESnZB_54JaOrCdfpE.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA81BkIqhrMYyYQanex-SU4ZIEGmESnZB_54JaOrCdfpE..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> kin(p(HGNC:MAPK8))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(HGNC:MAPK8))" .
+	
+	node:3 belv:hasConcept chebi:%22phorbol%2013-acetate%2012-myristate%22 ;
+		a belv:Abundance , belv:Term ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\")" .
+	
+	node:4 belv:hasConcept hgnc:MAPK8 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK8)" .
+}
+---
+BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(PFH:"MAPK p38 Family"))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAUribjysemt5_Vv5U-6O2AeZVmdEp8Hz0R3ZczgW7Xz8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAUribjysemt5_Vv5U-6O2AeZVmdEp8Hz0R3ZczgW7Xz8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAUribjysemt5_Vv5U-6O2AeZVmdEp8Hz0R3ZczgW7Xz8..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
+@prefix pfh: <http://www.selventa.com/bel/namespace/selventa-protein-families-human/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:2 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(PFH:\"MAPK p38 Family\"))" .
+	
+	node:2 belv:hasConcept pfh:%22MAPK%20p38%20Family%22 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(PFH:\"MAPK p38 Family\")" .
+	
+	node:3 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:1 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:4 ;
+		a belv:Statement ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> kin(p(PFH:\"MAPK p38 Family\"))" .
+	
+	node:4 belv:hasConcept chebi:%22phorbol%2013-acetate%2012-myristate%22 ;
+		a belv:Abundance , belv:Term ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\")" .
+}
+---
+BEL: p(HGNC:MAPK1,pmod(P,T)) => kin(p(HGNC:MAPK1))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAb5CY-OSGw9eFgP26d3EKQFcO2ZMn7PKCCD8oGkCGHj4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAb5CY-OSGw9eFgP26d3EKQFcO2ZMn7PKCCD8oGkCGHj4.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAb5CY-OSGw9eFgP26d3EKQFcO2ZMn7PKCCD8oGkCGHj4..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyIncreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:MAPK1,pmod(P,T)) => kin(p(HGNC:MAPK1))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(HGNC:MAPK1))" .
+	
+	node:3 belv:hasChild node:4 ;
+		belv:hasModificationType belv:PhosphorylationThreonine ;
+		a belv:ModifiedProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK1,pmod(P,T))" .
+	
+	node:4 belv:hasConcept hgnc:MAPK1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK1)" .
+	
+	node:5 belv:hasConcept hgnc:MAPK1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK1)" .
+}
+---
+BEL: p(HGNC:MAPK1,pmod(P,Y)) => kin(p(HGNC:MAPK1))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA-77YLQ8YSu_2KbwojjUfLt0ZozxrLn1TMDJMSzHpzA8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA-77YLQ8YSu_2KbwojjUfLt0ZozxrLn1TMDJMSzHpzA8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA-77YLQ8YSu_2KbwojjUfLt0ZozxrLn1TMDJMSzHpzA8..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyIncreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:MAPK1,pmod(P,Y)) => kin(p(HGNC:MAPK1))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(HGNC:MAPK1))" .
+	
+	node:3 belv:hasChild node:4 ;
+		belv:hasModificationType belv:PhosphorylationTyrosine ;
+		a belv:ModifiedProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK1,pmod(P,Y))" .
+	
+	node:4 belv:hasConcept hgnc:MAPK1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK1)" .
+	
+	node:5 belv:hasConcept hgnc:MAPK1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK1)" .
+}
+---
+BEL: p(HGNC:MAPK8,pmod(P,T)) => kin(p(HGNC:MAPK8))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAFY6AF40mPLn8dubAjzu5YgFa5SB4s7WRi33aeHaBSy0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAFY6AF40mPLn8dubAjzu5YgFa5SB4s7WRi33aeHaBSy0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAFY6AF40mPLn8dubAjzu5YgFa5SB4s7WRi33aeHaBSy0..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyIncreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:MAPK8,pmod(P,T)) => kin(p(HGNC:MAPK8))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(HGNC:MAPK8))" .
+	
+	node:3 belv:hasChild node:4 ;
+		belv:hasModificationType belv:PhosphorylationThreonine ;
+		a belv:ModifiedProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK8,pmod(P,T))" .
+	
+	node:4 belv:hasConcept hgnc:MAPK8 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK8)" .
+	
+	node:5 belv:hasConcept hgnc:MAPK8 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK8)" .
+}
+---
+BEL: p(HGNC:MAPK8,pmod(P,Y)) => kin(p(HGNC:MAPK8))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAkB7e-G18sdiv7TZd9vf-i2u40CiAw8Xa3fFPbzbgmPM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAkB7e-G18sdiv7TZd9vf-i2u40CiAw8Xa3fFPbzbgmPM.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAkB7e-G18sdiv7TZd9vf-i2u40CiAw8Xa3fFPbzbgmPM..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyIncreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:MAPK8,pmod(P,Y)) => kin(p(HGNC:MAPK8))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(HGNC:MAPK8))" .
+	
+	node:3 belv:hasChild node:4 ;
+		belv:hasModificationType belv:PhosphorylationTyrosine ;
+		a belv:ModifiedProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK8,pmod(P,Y))" .
+	
+	node:4 belv:hasConcept hgnc:MAPK8 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK8)" .
+	
+	node:5 belv:hasConcept hgnc:MAPK8 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK8)" .
+}
+---
+BEL: p(HGNC:MAPK14,pmod(P,T)) => kin(p(PFH:"MAPK p38 Family"))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAKEZQo8_qkt14bqbJqeSqqYrdYYJ3pssNDlpfyPnzNPg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAKEZQo8_qkt14bqbJqeSqqYrdYYJ3pssNDlpfyPnzNPg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAKEZQo8_qkt14bqbJqeSqqYrdYYJ3pssNDlpfyPnzNPg..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix pfh: <http://www.selventa.com/bel/namespace/selventa-protein-families-human/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyIncreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:MAPK14,pmod(P,T)) => kin(p(PFH:\"MAPK p38 Family\"))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(PFH:\"MAPK p38 Family\"))" .
+	
+	node:3 belv:hasChild node:4 ;
+		belv:hasModificationType belv:PhosphorylationThreonine ;
+		a belv:ModifiedProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK14,pmod(P,T))" .
+	
+	node:4 belv:hasConcept hgnc:MAPK14 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK14)" .
+	
+	node:5 belv:hasConcept pfh:%22MAPK%20p38%20Family%22 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(PFH:\"MAPK p38 Family\")" .
+}
+---
+BEL: p(HGNC:MAPK14,pmod(P,Y)) => kin(p(PFH:"MAPK p38 Family"))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_j9U0tGLmgPx6_Xztlju1bkEWh-3qzz-Dj6bcv55HXg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_j9U0tGLmgPx6_Xztlju1bkEWh-3qzz-Dj6bcv55HXg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA_j9U0tGLmgPx6_Xztlju1bkEWh-3qzz-Dj6bcv55HXg..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix pfh: <http://www.selventa.com/bel/namespace/selventa-protein-families-human/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyIncreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:MAPK14,pmod(P,Y)) => kin(p(PFH:\"MAPK p38 Family\"))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(PFH:\"MAPK p38 Family\"))" .
+	
+	node:3 belv:hasChild node:4 ;
+		belv:hasModificationType belv:PhosphorylationTyrosine ;
+		a belv:ModifiedProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK14,pmod(P,Y))" .
+	
+	node:4 belv:hasConcept hgnc:MAPK14 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK14)" .
+	
+	node:5 belv:hasConcept pfh:%22MAPK%20p38%20Family%22 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(PFH:\"MAPK p38 Family\")" .
+}
+---
+BEL: phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK1,pmod(P))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAm5cZYCyHlwq1OWjvlw6oVCD4w8Fmormahnqve1QgJ-E> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAm5cZYCyHlwq1OWjvlw6oVCD4w8Fmormahnqve1QgJ-E.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAm5cZYCyHlwq1OWjvlw6oVCD4w8Fmormahnqve1QgJ-E..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyDecreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK1,pmod(P))" .
+	
+	node:2 belv:hasChild node:5 ;
+		belv:hasModificationType belv:Phosphorylation ;
+		a belv:ModifiedProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK1,pmod(P))" .
+	
+	node:3 belv:hasActivityType belv:Phosphatase ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "phos(p(HGNC:DUSP1))" .
+	
+	node:4 belv:hasConcept hgnc:DUSP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:DUSP1)" .
+	
+	node:5 belv:hasConcept hgnc:MAPK1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK1)" .
+}
+---
+BEL: phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK8,pmod(P))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAWdIQvM4WKYd9EaDIYNnZGmMj0b_DyJoBdVcPg-5Dinw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAWdIQvM4WKYd9EaDIYNnZGmMj0b_DyJoBdVcPg-5Dinw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAWdIQvM4WKYd9EaDIYNnZGmMj0b_DyJoBdVcPg-5Dinw..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyDecreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK8,pmod(P))" .
+	
+	node:2 belv:hasChild node:5 ;
+		belv:hasModificationType belv:Phosphorylation ;
+		a belv:ModifiedProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK8,pmod(P))" .
+	
+	node:3 belv:hasActivityType belv:Phosphatase ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "phos(p(HGNC:DUSP1))" .
+	
+	node:4 belv:hasConcept hgnc:DUSP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:DUSP1)" .
+	
+	node:5 belv:hasConcept hgnc:MAPK8 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK8)" .
+}
+---
+BEL: phos(p(HGNC:DUSP1)) =| p(PFH:"MAPK p38 Family",pmod(P))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9O2PG0orRYmOVhTEmgQ9mE9QnIRtJuBeXiZ91LQpD1A> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9O2PG0orRYmOVhTEmgQ9mE9QnIRtJuBeXiZ91LQpD1A.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA9O2PG0orRYmOVhTEmgQ9mE9QnIRtJuBeXiZ91LQpD1A..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix pfh: <http://www.selventa.com/bel/namespace/selventa-protein-families-human/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyDecreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "phos(p(HGNC:DUSP1)) =| p(PFH:\"MAPK p38 Family\",pmod(P))" .
+	
+	node:2 belv:hasChild node:5 ;
+		belv:hasModificationType belv:Phosphorylation ;
+		a belv:ModifiedProteinAbundance , belv:Term ;
+		rdfs:label "p(PFH:\"MAPK p38 Family\",pmod(P))" .
+	
+	node:3 belv:hasActivityType belv:Phosphatase ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "phos(p(HGNC:DUSP1))" .
+	
+	node:4 belv:hasConcept hgnc:DUSP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:DUSP1)" .
+	
+	node:5 belv:hasConcept pfh:%22MAPK%20p38%20Family%22 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(PFH:\"MAPK p38 Family\")" .
+}
+---
+BEL: phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK1))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAAPidF6U7Qr_PYlBIN0eDLqVsrmS0bZ8cnGSvOq5N2QY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAAPidF6U7Qr_PYlBIN0eDLqVsrmS0bZ8cnGSvOq5N2QY.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAAPidF6U7Qr_PYlBIN0eDLqVsrmS0bZ8cnGSvOq5N2QY..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyDecreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK1))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(HGNC:MAPK1))" .
+	
+	node:3 belv:hasActivityType belv:Phosphatase ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "phos(p(HGNC:DUSP1))" .
+	
+	node:4 belv:hasConcept hgnc:DUSP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:DUSP1)" .
+	
+	node:5 belv:hasConcept hgnc:MAPK1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK1)" .
+}
+---
+BEL: phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK8))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAtyBGFFaAe3_-7aD_Fs1U1hd2C1IWJUJ93PKhkDnEpC8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAtyBGFFaAe3_-7aD_Fs1U1hd2C1IWJUJ93PKhkDnEpC8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAtyBGFFaAe3_-7aD_Fs1U1hd2C1IWJUJ93PKhkDnEpC8..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyDecreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK8))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(HGNC:MAPK8))" .
+	
+	node:3 belv:hasActivityType belv:Phosphatase ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "phos(p(HGNC:DUSP1))" .
+	
+	node:4 belv:hasConcept hgnc:DUSP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:DUSP1)" .
+	
+	node:5 belv:hasConcept hgnc:MAPK8 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK8)" .
+}
+---
+BEL: phos(p(HGNC:DUSP1)) =| kin(p(PFH:"MAPK p38 Family"))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RARxbsRgoAye0_ndtBcwIoTIA5EBisH4G-t_grnzD2cj4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RARxbsRgoAye0_ndtBcwIoTIA5EBisH4G-t_grnzD2cj4.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RARxbsRgoAye0_ndtBcwIoTIA5EBisH4G-t_grnzD2cj4..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix pfh: <http://www.selventa.com/bel/namespace/selventa-protein-families-human/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyDecreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "phos(p(HGNC:DUSP1)) =| kin(p(PFH:\"MAPK p38 Family\"))" .
+	
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(PFH:\"MAPK p38 Family\"))" .
+	
+	node:3 belv:hasActivityType belv:Phosphatase ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "phos(p(HGNC:DUSP1))" .
+	
+	node:4 belv:hasConcept hgnc:DUSP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:DUSP1)" .
+	
+	node:5 belv:hasConcept pfh:%22MAPK%20p38%20Family%22 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(PFH:\"MAPK p38 Family\")" .
+}
+---
+BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1)
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAl7sfi62cgi7IRfV6RpSMJod_6ME9KSdoEbIoguWOjbw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAl7sfi62cgi7IRfV6RpSMJod_6ME9KSdoEbIoguWOjbw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAl7sfi62cgi7IRfV6RpSMJod_6ME9KSdoEbIoguWOjbw..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1)" .
+	
+	node:2 belv:hasConcept hgnc:DUSP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:DUSP1)" .
+	
+	node:3 belv:hasConcept chebi:%22phorbol%2013-acetate%2012-myristate%22 ;
+		a belv:Abundance , belv:Term ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\")" .
+}
+---
+BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:JUN))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAXgRaMAcABXmPagKXaN8J000B8Y5TbhcNwZw7Mb4qkuw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAXgRaMAcABXmPagKXaN8J000B8Y5TbhcNwZw7Mb4qkuw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAXgRaMAcABXmPagKXaN8J000B8Y5TbhcNwZw7Mb4qkuw..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> tscript(p(HGNC:JUN))" .
+	
+	node:2 belv:hasActivityType belv:Transcription ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "tscript(p(HGNC:JUN))" .
+	
+	node:3 belv:hasConcept chebi:%22phorbol%2013-acetate%2012-myristate%22 ;
+		a belv:Abundance , belv:Term ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\")" .
+	
+	node:4 belv:hasConcept hgnc:JUN ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:JUN)" .
+}
+---
+BEL: phos(p(HGNC:DUSP1)) -| tscript(p(HGNC:JUN))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAtVXzdbWM58lZ_dZfLvDjGtvtXoE6xQzvpZNcyjk8R7I> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAtVXzdbWM58lZ_dZfLvDjGtvtXoE6xQzvpZNcyjk8R7I.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAtVXzdbWM58lZ_dZfLvDjGtvtXoE6xQzvpZNcyjk8R7I..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:decreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "phos(p(HGNC:DUSP1)) -| tscript(p(HGNC:JUN))" .
+	
+	node:2 belv:hasActivityType belv:Transcription ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "tscript(p(HGNC:JUN))" .
+	
+	node:3 belv:hasActivityType belv:Phosphatase ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "phos(p(HGNC:DUSP1))" .
+	
+	node:4 belv:hasConcept hgnc:DUSP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:DUSP1)" .
+	
+	node:5 belv:hasConcept hgnc:JUN ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:JUN)" .
+}
+---
+BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:ELK1))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1GGlBVTK21xBT4JexKA6FcFF4AlKv0PG_gjde7xOKxM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1GGlBVTK21xBT4JexKA6FcFF4AlKv0PG_gjde7xOKxM.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA1GGlBVTK21xBT4JexKA6FcFF4AlKv0PG_gjde7xOKxM..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> tscript(p(HGNC:ELK1))" .
+	
+	node:2 belv:hasActivityType belv:Transcription ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "tscript(p(HGNC:ELK1))" .
+	
+	node:3 belv:hasConcept chebi:%22phorbol%2013-acetate%2012-myristate%22 ;
+		a belv:Abundance , belv:Term ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\")" .
+	
+	node:4 belv:hasConcept hgnc:ELK1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:ELK1)" .
+}
+---
+BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:MYC))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAClqXjZkkJM8zLwUHoMdnHSKh6CysVcGwjOuhlhv2wNA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAClqXjZkkJM8zLwUHoMdnHSKh6CysVcGwjOuhlhv2wNA.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAClqXjZkkJM8zLwUHoMdnHSKh6CysVcGwjOuhlhv2wNA..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> tscript(p(HGNC:MYC))" .
+	
+	node:2 belv:hasActivityType belv:Transcription ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "tscript(p(HGNC:MYC))" .
+	
+	node:3 belv:hasConcept chebi:%22phorbol%2013-acetate%2012-myristate%22 ;
+		a belv:Abundance , belv:Term ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\")" .
+	
+	node:4 belv:hasConcept hgnc:MYC ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MYC)" .
+}
+---
+BEL: p(HGNC:DUSP1) -|(a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAqzEngfr2zClLbGW9CdkHVER-Tltj2EPPJnUNr5NVagw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAqzEngfr2zClLbGW9CdkHVER-Tltj2EPPJnUNr5NVagw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAqzEngfr2zClLbGW9CdkHVER-Tltj2EPPJnUNr5NVagw..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:decreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:DUSP1) -| (a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1))" .
+	
+	node:2 belv:hasObject node:4 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:5 ;
+		a belv:Statement ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1)" .
+	
+	node:3 belv:hasConcept hgnc:DUSP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:DUSP1)" .
+	
+	node:4 belv:hasConcept hgnc:DUSP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:DUSP1)" .
+	
+	node:5 belv:hasConcept chebi:%22phorbol%2013-acetate%2012-myristate%22 ;
+		a belv:Abundance , belv:Term ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\")" .
+}
+---
+BEL: kin(p(HGNC:MAPK1)) ->(a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA08w3suV8OC8W_RZ_Bca3b2lqry0dZlb3TzP9Ds1FZQw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA08w3suV8OC8W_RZ_Bca3b2lqry0dZlb3TzP9Ds1FZQw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA08w3suV8OC8W_RZ_Bca3b2lqry0dZlb3TzP9Ds1FZQw..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1)" .
+	
+	node:2 belv:hasConcept hgnc:DUSP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:DUSP1)" .
+	
+	node:3 belv:hasConcept chebi:%22phorbol%2013-acetate%2012-myristate%22 ;
+		a belv:Abundance , belv:Term ;
+		rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\")" .
+	
+	node:4 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:1 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:5 ;
+		a belv:Statement ;
+		rdfs:label "kin(p(HGNC:MAPK1)) -> (a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1))" .
+	
+	node:5 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:6 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(HGNC:MAPK1))" .
+	
+	node:6 belv:hasConcept hgnc:MAPK1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK1)" .
+}
+---
+BEL: kin(p(HGNC:MAPK1)) -> p(HGNC:DUSP1)
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAqpaPxLL1fJU-IurSf1wAn-V0LK-839JtXKuJ-T7cRm4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAqpaPxLL1fJU-IurSf1wAn-V0LK-839JtXKuJ-T7cRm4.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAqpaPxLL1fJU-IurSf1wAn-V0LK-839JtXKuJ-T7cRm4..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix species: <http://www.selventa.com/bel/annotation/species-taxonomy-id/> .
+@prefix cellline: <http://www.selventa.com/bel/annotation/cell-line/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "kin(p(HGNC:MAPK1)) -> p(HGNC:DUSP1)" .
+	
+	node:2 belv:hasConcept hgnc:DUSP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:DUSP1)" .
+	
+	node:3 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "kin(p(HGNC:MAPK1))" .
+	
+	node:4 belv:hasConcept hgnc:MAPK1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:MAPK1)" .
+}
+---
+23 nanopub(s) created

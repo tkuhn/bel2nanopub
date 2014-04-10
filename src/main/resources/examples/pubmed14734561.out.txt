@@ -1,0 +1,629 @@
+BEL: path(MESHD:"Werner Syndrome") positiveCorrelation path(MESHD:"Genomic Instability")
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAMmk4F4UIbCsAUzIYrvAsUogar_M_QmuSi0dnPp8oBX4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAMmk4F4UIbCsAUzIYrvAsUogar_M_QmuSi0dnPp8oBX4.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAMmk4F4UIbCsAUzIYrvAsUogar_M_QmuSi0dnPp8oBX4..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix meshd: <http://www.selventa.com/bel/namespace/mesh-diseases/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasObject node:2 ;
+		belv:hasRelationship belv:positiveCorrelation ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "path(MESHD:\"Werner Syndrome\") positiveCorrelation path(MESHD:\"Genomic Instability\")" .
+	
+	node:2 belv:hasConcept meshd:%22Genomic%20Instability%22 ;
+		a belv:Pathology , belv:Term ;
+		rdfs:label "path(MESHD:\"Genomic Instability\")" .
+	
+	node:3 belv:hasConcept meshd:%22Werner%20Syndrome%22 ;
+		a belv:Pathology , belv:Term ;
+		rdfs:label "path(MESHD:\"Werner Syndrome\")" .
+}
+---
+BEL: path(MESHD:"Werner Syndrome") positiveCorrelation path(MESHD:"Aging, Premature")
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAlD1mgovDI9h7-FaI-HTdyujv5yWuuv0nbKU0U2wUHsg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAlD1mgovDI9h7-FaI-HTdyujv5yWuuv0nbKU0U2wUHsg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAlD1mgovDI9h7-FaI-HTdyujv5yWuuv0nbKU0U2wUHsg..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix meshd: <http://www.selventa.com/bel/namespace/mesh-diseases/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasObject node:2 ;
+		belv:hasRelationship belv:positiveCorrelation ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "path(MESHD:\"Werner Syndrome\") positiveCorrelation path(MESHD:\"Aging, Premature\")" .
+	
+	node:2 belv:hasConcept meshd:%22Aging%2C%20Premature%22 ;
+		a belv:Pathology , belv:Term ;
+		rdfs:label "path(MESHD:\"Aging, Premature\")" .
+	
+	node:3 belv:hasConcept meshd:%22Werner%20Syndrome%22 ;
+		a belv:Pathology , belv:Term ;
+		rdfs:label "path(MESHD:\"Werner Syndrome\")" .
+}
+---
+BEL: complex(p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:WRN)) => cat(p(HGNC:WRN))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8J1B6EazDmafNxgoBlmP4NdLLPAf4xfN4Bc7hgTyBAM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8J1B6EazDmafNxgoBlmP4NdLLPAf4xfN4Bc7hgTyBAM.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA8J1B6EazDmafNxgoBlmP4NdLLPAf4xfN4Bc7hgTyBAM..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasConcept hgnc:WRN ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:WRN)" .
+	
+	node:2 belv:hasActivityType belv:Catalytic ;
+		belv:hasChild node:3 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "cat(p(HGNC:WRN))" .
+	
+	node:3 belv:hasConcept hgnc:WRN ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:WRN)" .
+	
+	node:4 belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyIncreases ;
+		belv:hasSubject node:5 ;
+		a belv:Statement ;
+		rdfs:label "complex(p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:WRN)) => cat(p(HGNC:WRN))" .
+	
+	node:5 belv:hasChild node:1 , node:6 , node:7 ;
+		a belv:ComplexAbundance , belv:Term ;
+		rdfs:label "complex(p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:WRN))" .
+	
+	node:6 belv:hasConcept hgnc:XRCC5 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC5)" .
+	
+	node:7 belv:hasConcept hgnc:XRCC6 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC6)" .
+}
+---
+BEL: complex(p(HGNC:XRCC5),p(HGNC:WRN))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAClcApJfKyZ4pBGLD8wPoeGBF20O_-JJ24mf5eNEKnTc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAClcApJfKyZ4pBGLD8wPoeGBF20O_-JJ24mf5eNEKnTc.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAClcApJfKyZ4pBGLD8wPoeGBF20O_-JJ24mf5eNEKnTc..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix cellstructure: <http://www.selventa.com/bel/annotation/cell-structure/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellstructure:Cell%20Nucleus ;
+		belv:hasChild node:2 , node:3 ;
+		a belv:ComplexAbundance , belv:Term ;
+		rdfs:label "complex(p(HGNC:XRCC5),p(HGNC:WRN))" .
+	
+	node:2 belv:hasConcept hgnc:XRCC5 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC5)" .
+	
+	node:3 belv:hasConcept hgnc:WRN ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:WRN)" .
+}
+---
+BEL: complex(p(HGNC:XRCC6),p(HGNC:WRN))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJnvqzzGAUHcdntT6ovjs2mp94ZWuGjEp5gIL_-MKIBM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJnvqzzGAUHcdntT6ovjs2mp94ZWuGjEp5gIL_-MKIBM.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAJnvqzzGAUHcdntT6ovjs2mp94ZWuGjEp5gIL_-MKIBM..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix cellstructure: <http://www.selventa.com/bel/annotation/cell-structure/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellstructure:Cell%20Nucleus ;
+		belv:hasChild node:2 , node:3 ;
+		a belv:ComplexAbundance , belv:Term ;
+		rdfs:label "complex(p(HGNC:XRCC6),p(HGNC:WRN))" .
+	
+	node:2 belv:hasConcept hgnc:XRCC6 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC6)" .
+	
+	node:3 belv:hasConcept hgnc:WRN ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:WRN)" .
+}
+---
+BEL: complex(p(HGNC:PARP1),p(HGNC:WRN))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAsp5tvmzoqyIqQM8bTizxtohQFFZMEMUxEwwv8awZWnI> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAsp5tvmzoqyIqQM8bTizxtohQFFZMEMUxEwwv8awZWnI.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAsp5tvmzoqyIqQM8bTizxtohQFFZMEMUxEwwv8awZWnI..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix cellstructure: <http://www.selventa.com/bel/annotation/cell-structure/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasAnnotation cellstructure:Cell%20Nucleus ;
+		belv:hasChild node:2 , node:3 ;
+		a belv:ComplexAbundance , belv:Term ;
+		rdfs:label "complex(p(HGNC:PARP1),p(HGNC:WRN))" .
+	
+	node:2 belv:hasConcept hgnc:PARP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:PARP1)" .
+	
+	node:3 belv:hasConcept hgnc:WRN ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:WRN)" .
+}
+---
+BEL: complex(p(HGNC:WRN),p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:PARP1))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAiLNks3omAARCFAN6F85_lmLyXNygf31QwbcIMloFihU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAiLNks3omAARCFAN6F85_lmLyXNygf31QwbcIMloFihU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAiLNks3omAARCFAN6F85_lmLyXNygf31QwbcIMloFihU..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasChild node:2 , node:3 , node:4 , node:5 ;
+		a belv:ComplexAbundance , belv:Term ;
+		rdfs:label "complex(p(HGNC:WRN),p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:PARP1))" .
+	
+	node:2 belv:hasConcept hgnc:WRN ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:WRN)" .
+	
+	node:3 belv:hasConcept hgnc:XRCC5 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC5)" .
+	
+	node:4 belv:hasConcept hgnc:XRCC6 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC6)" .
+	
+	node:5 belv:hasConcept hgnc:PARP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:PARP1)" .
+}
+---
+BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R)))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAOIzcBcOSbVqInUzNTnF47rvvViSbh9cmhmU1Y3Gv49w> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAOIzcBcOSbVqInUzNTnF47rvvViSbh9cmhmU1Y3Gv49w.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAOIzcBcOSbVqInUzNTnF47rvvViSbh9cmhmU1Y3Gv49w..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R)))" .
+	
+	node:2 belv:hasObject node:6 ;
+		belv:hasRelationship belv:directlyIncreases ;
+		belv:hasSubject node:7 ;
+		a belv:Statement ;
+		rdfs:label "ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R))" .
+	
+	node:3 belv:hasChild node:4 , node:5 ;
+		a belv:CompositeAbundance , belv:Term ;
+		rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\"))" .
+	
+	node:4 belv:hasConcept chebi:%22deoxyribonucleic%20acid%22 ;
+		a belv:Abundance , belv:Term ;
+		rdfs:label "a(CHEBI:\"deoxyribonucleic acid\")" .
+	
+	node:5 belv:hasConcept chebi:%22NAD%28%2B%29%22 ;
+		a belv:Abundance , belv:Term ;
+		rdfs:label "a(CHEBI:\"NAD(+)\")" .
+	
+	node:6 belv:hasChild node:9 ;
+		belv:hasModificationType belv:Ribosylation ;
+		a belv:ModifiedProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:PARP1,pmod(R))" .
+	
+	node:7 belv:hasActivityType belv:Ribosylase ;
+		belv:hasChild node:8 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "ribo(p(HGNC:PARP1))" .
+	
+	node:8 belv:hasConcept hgnc:PARP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:PARP1)" .
+	
+	node:9 belv:hasConcept hgnc:PARP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:PARP1)" .
+}
+---
+BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R)))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAmtJmjSOQqOVTnNbZ0FAcvOGdvXI47vpbCOrbpDRYWWE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAmtJmjSOQqOVTnNbZ0FAcvOGdvXI47vpbCOrbpDRYWWE.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAmtJmjSOQqOVTnNbZ0FAcvOGdvXI47vpbCOrbpDRYWWE..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R)))" .
+	
+	node:2 belv:hasObject node:6 ;
+		belv:hasRelationship belv:directlyIncreases ;
+		belv:hasSubject node:7 ;
+		a belv:Statement ;
+		rdfs:label "ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R))" .
+	
+	node:3 belv:hasChild node:4 , node:5 ;
+		a belv:CompositeAbundance , belv:Term ;
+		rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\"))" .
+	
+	node:4 belv:hasConcept chebi:%22deoxyribonucleic%20acid%22 ;
+		a belv:Abundance , belv:Term ;
+		rdfs:label "a(CHEBI:\"deoxyribonucleic acid\")" .
+	
+	node:5 belv:hasConcept chebi:%22NAD%28%2B%29%22 ;
+		a belv:Abundance , belv:Term ;
+		rdfs:label "a(CHEBI:\"NAD(+)\")" .
+	
+	node:6 belv:hasChild node:9 ;
+		belv:hasModificationType belv:Ribosylation ;
+		a belv:ModifiedProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC5,pmod(R))" .
+	
+	node:7 belv:hasActivityType belv:Ribosylase ;
+		belv:hasChild node:8 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "ribo(p(HGNC:PARP1))" .
+	
+	node:8 belv:hasConcept hgnc:PARP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:PARP1)" .
+	
+	node:9 belv:hasConcept hgnc:XRCC5 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC5)" .
+}
+---
+BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R)))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAaoxYC6KQ3uC5utzkCzqnFO6laoIG7WiaLbCEP0F0SUc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAaoxYC6KQ3uC5utzkCzqnFO6laoIG7WiaLbCEP0F0SUc.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAaoxYC6KQ3uC5utzkCzqnFO6laoIG7WiaLbCEP0F0SUc..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasObject node:2 ;
+		belv:hasRelationship belv:increases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R)))" .
+	
+	node:2 belv:hasObject node:6 ;
+		belv:hasRelationship belv:directlyIncreases ;
+		belv:hasSubject node:7 ;
+		a belv:Statement ;
+		rdfs:label "ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R))" .
+	
+	node:3 belv:hasChild node:4 , node:5 ;
+		a belv:CompositeAbundance , belv:Term ;
+		rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\"))" .
+	
+	node:4 belv:hasConcept chebi:%22deoxyribonucleic%20acid%22 ;
+		a belv:Abundance , belv:Term ;
+		rdfs:label "a(CHEBI:\"deoxyribonucleic acid\")" .
+	
+	node:5 belv:hasConcept chebi:%22NAD%28%2B%29%22 ;
+		a belv:Abundance , belv:Term ;
+		rdfs:label "a(CHEBI:\"NAD(+)\")" .
+	
+	node:6 belv:hasChild node:9 ;
+		belv:hasModificationType belv:Ribosylation ;
+		a belv:ModifiedProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC6,pmod(R))" .
+	
+	node:7 belv:hasActivityType belv:Ribosylase ;
+		belv:hasChild node:8 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "ribo(p(HGNC:PARP1))" .
+	
+	node:8 belv:hasConcept hgnc:PARP1 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:PARP1)" .
+	
+	node:9 belv:hasConcept hgnc:XRCC6 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC6)" .
+}
+---
+BEL: p(HGNC:XRCC5,pmod(R)) => complex(a(CHEBI:"deoxyribonucleic acid"),p(HGNC:XRCC5),p(HGNC:XRCC6))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RANyXY6llRPtcGTl7vh2wZTOhYkXnpE3A2zwR6NwoxOyc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RANyXY6llRPtcGTl7vh2wZTOhYkXnpE3A2zwR6NwoxOyc.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RANyXY6llRPtcGTl7vh2wZTOhYkXnpE3A2zwR6NwoxOyc..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyIncreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:XRCC5,pmod(R)) => complex(a(CHEBI:\"deoxyribonucleic acid\"),p(HGNC:XRCC5),p(HGNC:XRCC6))" .
+	
+	node:2 belv:hasChild node:5 , node:6 , node:7 ;
+		a belv:ComplexAbundance , belv:Term ;
+		rdfs:label "complex(a(CHEBI:\"deoxyribonucleic acid\"),p(HGNC:XRCC5),p(HGNC:XRCC6))" .
+	
+	node:3 belv:hasChild node:4 ;
+		belv:hasModificationType belv:Ribosylation ;
+		a belv:ModifiedProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC5,pmod(R))" .
+	
+	node:4 belv:hasConcept hgnc:XRCC5 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC5)" .
+	
+	node:5 belv:hasConcept chebi:%22deoxyribonucleic%20acid%22 ;
+		a belv:Abundance , belv:Term ;
+		rdfs:label "a(CHEBI:\"deoxyribonucleic acid\")" .
+	
+	node:6 belv:hasConcept hgnc:XRCC5 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC5)" .
+	
+	node:7 belv:hasConcept hgnc:XRCC6 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC6)" .
+}
+---
+BEL: p(HGNC:XRCC6,pmod(R)) => complex(a(CHEBI:"deoxyribonucleic acid"),p(HGNC:XRCC5),p(HGNC:XRCC6))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAtQtmL4FbhJY9aK8eXLfbLbLMaBkILIfL3lHJbrgKEYs> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAtQtmL4FbhJY9aK8eXLfbLbLMaBkILIfL3lHJbrgKEYs.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAtQtmL4FbhJY9aK8eXLfbLbLMaBkILIfL3lHJbrgKEYs..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyIncreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:XRCC6,pmod(R)) => complex(a(CHEBI:\"deoxyribonucleic acid\"),p(HGNC:XRCC5),p(HGNC:XRCC6))" .
+	
+	node:2 belv:hasChild node:5 , node:6 , node:7 ;
+		a belv:ComplexAbundance , belv:Term ;
+		rdfs:label "complex(a(CHEBI:\"deoxyribonucleic acid\"),p(HGNC:XRCC5),p(HGNC:XRCC6))" .
+	
+	node:3 belv:hasChild node:4 ;
+		belv:hasModificationType belv:Ribosylation ;
+		a belv:ModifiedProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC6,pmod(R))" .
+	
+	node:4 belv:hasConcept hgnc:XRCC6 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC6)" .
+	
+	node:5 belv:hasConcept chebi:%22deoxyribonucleic%20acid%22 ;
+		a belv:Abundance , belv:Term ;
+		rdfs:label "a(CHEBI:\"deoxyribonucleic acid\")" .
+	
+	node:6 belv:hasConcept hgnc:XRCC5 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC5)" .
+	
+	node:7 belv:hasConcept hgnc:XRCC6 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC6)" .
+}
+---
+BEL: p(HGNC:XRCC5,pmod(R)) => cat(p(HGNC:WRN))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAF4UIddTdIY0gSYPehTLKoKZ8w67KtjSwvJTXw9eKSyw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAF4UIddTdIY0gSYPehTLKoKZ8w67KtjSwvJTXw9eKSyw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAF4UIddTdIY0gSYPehTLKoKZ8w67KtjSwvJTXw9eKSyw..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyIncreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:XRCC5,pmod(R)) => cat(p(HGNC:WRN))" .
+	
+	node:2 belv:hasActivityType belv:Catalytic ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "cat(p(HGNC:WRN))" .
+	
+	node:3 belv:hasChild node:4 ;
+		belv:hasModificationType belv:Ribosylation ;
+		a belv:ModifiedProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC5,pmod(R))" .
+	
+	node:4 belv:hasConcept hgnc:XRCC5 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC5)" .
+	
+	node:5 belv:hasConcept hgnc:WRN ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:WRN)" .
+}
+---
+BEL: p(HGNC:XRCC6,pmod(R)) => cat(p(HGNC:WRN))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAR7yT5Dx00lwFPS2w_PlbILtiyH97HX8SMs5k49xPSdo> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAR7yT5Dx00lwFPS2w_PlbILtiyH97HX8SMs5k49xPSdo.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAR7yT5Dx00lwFPS2w_PlbILtiyH97HX8SMs5k49xPSdo..> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:hasObject node:2 ;
+		belv:hasRelationship belv:directlyIncreases ;
+		belv:hasSubject node:3 ;
+		a belv:Statement ;
+		rdfs:label "p(HGNC:XRCC6,pmod(R)) => cat(p(HGNC:WRN))" .
+	
+	node:2 belv:hasActivityType belv:Catalytic ;
+		belv:hasChild node:5 ;
+		a belv:AbundanceActivity , belv:Term ;
+		rdfs:label "cat(p(HGNC:WRN))" .
+	
+	node:3 belv:hasChild node:4 ;
+		belv:hasModificationType belv:Ribosylation ;
+		a belv:ModifiedProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC6,pmod(R))" .
+	
+	node:4 belv:hasConcept hgnc:XRCC6 ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:XRCC6)" .
+	
+	node:5 belv:hasConcept hgnc:WRN ;
+		a belv:ProteinAbundance , belv:Term ;
+		rdfs:label "p(HGNC:WRN)" .
+}
+---
+14 nanopub(s) created
