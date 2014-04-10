@@ -29,6 +29,8 @@ public class BelRdfVocabulary {
 	public static final URI hasAnnotation = new URIImpl(BELV_NS + "hasAnnotation");
 
 	public static final URI proteinVariantAbundance = new URIImpl(BELV_NS + "ProteinVariantAbundance");
+	public static final URI modifiedProteinAbundance = new URIImpl(BELV_NS + "ModifiedProteinAbundance");
+	public static final URI hasModificationType = new URIImpl(BELV_NS + "hasModificationType");
 
 
 	private static Map<String,URI> namespaceMap = new HashMap<String,URI>();
@@ -196,6 +198,27 @@ public class BelRdfVocabulary {
 
 	public static URI getActivity(String activity) {
 		return activityMap.get(activity);
+	}
+
+	private static Map<String,URI> modificationMap = new HashMap<String,URI>();
+
+	static {
+		modificationMap.put("P,S", new URIImpl(BELV_NS + "PhosphorylationSerine"));
+		modificationMap.put("P,T", new URIImpl(BELV_NS + "PhosphorylationThreonine"));
+		modificationMap.put("P,Y", new URIImpl(BELV_NS + "PhosphorylationTyrosine"));
+		modificationMap.put("A", new URIImpl(BELV_NS + "Acetylation"));
+		modificationMap.put("F", new URIImpl(BELV_NS + "Farnesylation"));
+		modificationMap.put("G", new URIImpl(BELV_NS + "Glycosylation"));
+		modificationMap.put("H", new URIImpl(BELV_NS + "Hydroxylation"));
+		modificationMap.put("M", new URIImpl(BELV_NS + "Methylation"));
+		modificationMap.put("P", new URIImpl(BELV_NS + "Phosphorylation"));
+		modificationMap.put("R", new URIImpl(BELV_NS + "Ribosylation"));
+		modificationMap.put("S", new URIImpl(BELV_NS + "Sumoylation"));
+		modificationMap.put("U", new URIImpl(BELV_NS + "Ubiquitination"));
+	}
+
+	public static URI getModification(String mod) {
+		return modificationMap.get(mod);
 	}
 
 }

@@ -135,8 +135,20 @@ public class Bel2Nanopub {
 		npCreator.addAssertionStatement(n, RDFS.LABEL, new LiteralImpl("p(" + protParam.toBELShortForm() + ")"));
 		npCreator.addAssertionStatement(n, BelRdfVocabulary.hasConcept, pUri);
 		for (Term varTerm : protTerm.getTerms()) {
-			// TODO process variant terms
-			npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.proteinVariantAbundance);
+			String modAbbrev = varTerm.getFunctionEnum().getAbbreviation();
+			if (modAbbrev.equals("pmod")) {
+				npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.modifiedProteinAbundance);
+				String m = "";
+				for (Parameter p : varTerm.getParameters()) {
+					m += "," + p.getValue();
+				}
+				m = m.substring(1);
+				URI modUri = BelRdfVocabulary.getModification(m);
+				npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasModificationType, modUri);
+			} else  {
+				npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.proteinVariantAbundance);
+				// TODO
+			}
 		}
 	}
 
