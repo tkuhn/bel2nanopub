@@ -58,12 +58,14 @@ public class Bel2Nanopub {
 		for (BELStatementGroup g : result.getDocument().getBelStatementGroups()) {
 			for (BELStatement bst : g.getStatements()) {
 				NanopubCreator npCreator = new NanopubCreator("http://www.tkuhn.ch/bel2nanopub/");
-				npCreator.addNamespace("belv", BelRdfVocabulary.BELV_NS);
-				npCreator.addNamespace("np", "http://www.nanopub.org/nschema#");
 				npCreator.addNamespace("rdfs", RDFS.NAMESPACE);
+				npCreator.addNamespace("xsd", "http://www.w3.org/2001/XMLSchema#");
+				npCreator.addNamespace("dc", "http://purl.org/dc/terms/");
+				npCreator.addNamespace("np", "http://www.nanopub.org/nschema#");
+				npCreator.addNamespace("belv", BelRdfVocabulary.BELV_NS);
 				processBelStatement(bst, npCreator);
 				try {
-					Nanopub np = TransformNanopub.transform(npCreator.finalizeNanopub());
+					Nanopub np = TransformNanopub.transform(npCreator.finalizeNanopub(true));
 					System.out.println("NANOPUB:");
 					NanopubUtils.writeToStream(np, System.out, RDFFormat.TRIG);
 					nanopubs.add(np);
