@@ -1,12 +1,12 @@
 package ch.tkuhn.bel2nanopub;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,19 +33,50 @@ import org.openrdf.model.vocabulary.RDF;
 import org.openrdf.model.vocabulary.RDFS;
 import org.openrdf.rio.RDFFormat;
 
+import com.beust.jcommander.JCommander;
+import com.beust.jcommander.ParameterException;
+
 public class Bel2Nanopub {
 
+	@com.beust.jcommander.Parameter(description = "input-bel-files", required = true)
+	private List<File> inputFiles = new ArrayList<File>();
+
+	@com.beust.jcommander.Parameter(names = "-c", description = "Orcid ID of creator")
+	private String creatorId = null;
+
 	public static void main(String[] args) {
-		String belDoc = readFile(args[0]);
-		Bel2Nanopub obj = new Bel2Nanopub(belDoc);
+		Bel2Nanopub obj = new Bel2Nanopub();
+		JCommander jc = new JCommander(obj);
+		try {
+			jc.parse(args);
+		} catch (ParameterException ex) {
+			jc.usage();
+			System.exit(1);
+		}
+		obj.run();
 		System.out.println(obj.getNanopubs().size() + " nanopub(s) created");
 	}
 
 	private int bnodeCount = 0;
 	private List<Nanopub> nanopubs = new ArrayList<Nanopub>();
 
-	public Bel2Nanopub(String belDoc) {
-		BELParseResults result = BELParser.parse(belDoc);
+	public Bel2Nanopub(File... belDocs) {
+		for (File f : belDocs) {
+			inputFiles.add(f);
+		}
+	}
+
+	private Bel2Nanopub() {
+	}
+
+	public void run() {
+		for (File f : inputFiles) {
+			run(f);
+		}
+	}
+
+	private void run(File belDoc) {
+		BELParseResults result = BELParser.parse(readFile(belDoc));
 
 		if (!result.getSyntaxErrors().isEmpty()) {
 			System.err.println("ERRORS:");
@@ -64,6 +95,11 @@ public class Bel2Nanopub {
 				npCreator.addNamespace("np", "http://www.nanopub.org/nschema#");
 				npCreator.addNamespace("belv", BelRdfVocabulary.BELV_NS);
 				processBelStatement(bst, npCreator);
+				if (creatorId != null) {
+					npCreator.addNamespace("pav", "http://swan.mindinformatics.org/ontologies/1.2/pav/");
+					npCreator.addNamespace("orcid", "http://orcid.org/");
+					npCreator.addCreator(creatorId);
+				}
 				try {
 					Nanopub np = TransformNanopub.transform(npCreator.finalizeNanopub(true));
 					System.out.println("NANOPUB:");
@@ -202,9 +238,9 @@ public class Bel2Nanopub {
 		return nanopubs;
 	}
 
-	private static String readFile(String path) {
+	private static String readFile(File file) {
 		try {
-			byte[] encoded = Files.readAllBytes(Paths.get(path));
+			byte[] encoded = Files.readAllBytes(file.toPath());
 			return Charset.forName("UTF-8").decode(ByteBuffer.wrap(encoded)).toString();
 		} catch (IOException ex) {
 			ex.printStackTrace();
