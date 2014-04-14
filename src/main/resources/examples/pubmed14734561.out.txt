@@ -1,12 +1,14 @@
 BEL: path(MESHD:"Werner Syndrome") positiveCorrelation path(MESHD:"Genomic Instability")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAMmk4F4UIbCsAUzIYrvAsUogar_M_QmuSi0dnPp8oBX4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAMmk4F4UIbCsAUzIYrvAsUogar_M_QmuSi0dnPp8oBX4.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAMmk4F4UIbCsAUzIYrvAsUogar_M_QmuSi0dnPp8oBX4..> .
-@prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAibEG6cygj6UnYZEb8GyTSPYRaYeVJuPGPkfUoLfw56w> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAibEG6cygj6UnYZEb8GyTSPYRaYeVJuPGPkfUoLfw56w.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAibEG6cygj6UnYZEb8GyTSPYRaYeVJuPGPkfUoLfw56w..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix meshd: <http://www.selventa.com/bel/namespace/mesh-diseases/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix meshd: <http://resource.belframework.org/belframework/1.0/namespace/mesh-diseases/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -30,16 +32,22 @@ sub:Ass {
 		a belv:Pathology , belv:Term ;
 		rdfs:label "path(MESHD:\"Werner Syndrome\")" .
 }
+
+sub:Info {
+	this: dc:created "2014-04-14T12:03:35.732+02:00"^^xsd:dateTime .
+}
 ---
 BEL: path(MESHD:"Werner Syndrome") positiveCorrelation path(MESHD:"Aging, Premature")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAlD1mgovDI9h7-FaI-HTdyujv5yWuuv0nbKU0U2wUHsg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAlD1mgovDI9h7-FaI-HTdyujv5yWuuv0nbKU0U2wUHsg.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAlD1mgovDI9h7-FaI-HTdyujv5yWuuv0nbKU0U2wUHsg..> .
-@prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA6ERPz2YM-X4Bl64CRddR_fVBoFnAWRbcCvIJvX7oTkg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA6ERPz2YM-X4Bl64CRddR_fVBoFnAWRbcCvIJvX7oTkg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA6ERPz2YM-X4Bl64CRddR_fVBoFnAWRbcCvIJvX7oTkg..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix meshd: <http://www.selventa.com/bel/namespace/mesh-diseases/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix meshd: <http://resource.belframework.org/belframework/1.0/namespace/mesh-diseases/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -63,16 +71,22 @@ sub:Ass {
 		a belv:Pathology , belv:Term ;
 		rdfs:label "path(MESHD:\"Werner Syndrome\")" .
 }
+
+sub:Info {
+	this: dc:created "2014-04-14T12:03:35.850+02:00"^^xsd:dateTime .
+}
 ---
 BEL: complex(p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:WRN)) => cat(p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8J1B6EazDmafNxgoBlmP4NdLLPAf4xfN4Bc7hgTyBAM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8J1B6EazDmafNxgoBlmP4NdLLPAf4xfN4Bc7hgTyBAM.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA8J1B6EazDmafNxgoBlmP4NdLLPAf4xfN4Bc7hgTyBAM..> .
-@prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA86C6fVi4QIfq62ZsLnHtt9zmG0ZveJUBJ84KePrpvLA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA86C6fVi4QIfq62ZsLnHtt9zmG0ZveJUBJ84KePrpvLA.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA86C6fVi4QIfq62ZsLnHtt9zmG0ZveJUBJ84KePrpvLA..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -113,17 +127,23 @@ sub:Ass {
 		a belv:ProteinAbundance , belv:Term ;
 		rdfs:label "p(HGNC:XRCC6)" .
 }
+
+sub:Info {
+	this: dc:created "2014-04-14T12:03:35.867+02:00"^^xsd:dateTime .
+}
 ---
 BEL: complex(p(HGNC:XRCC5),p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAClcApJfKyZ4pBGLD8wPoeGBF20O_-JJ24mf5eNEKnTc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAClcApJfKyZ4pBGLD8wPoeGBF20O_-JJ24mf5eNEKnTc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAClcApJfKyZ4pBGLD8wPoeGBF20O_-JJ24mf5eNEKnTc..> .
-@prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAAdWknaWeGVL0_RkW5JcVc4RyTZQMgfqChe_thI_jdJk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAAdWknaWeGVL0_RkW5JcVc4RyTZQMgfqChe_thI_jdJk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAAdWknaWeGVL0_RkW5JcVc4RyTZQMgfqChe_thI_jdJk..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
-@prefix cellstructure: <http://www.selventa.com/bel/annotation/cell-structure/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix cellstructure: <http://resource.belframework.org/belframework/1.0/annotation/mesh-cell-structure/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -146,17 +166,23 @@ sub:Ass {
 		a belv:ProteinAbundance , belv:Term ;
 		rdfs:label "p(HGNC:WRN)" .
 }
+
+sub:Info {
+	this: dc:created "2014-04-14T12:03:35.888+02:00"^^xsd:dateTime .
+}
 ---
 BEL: complex(p(HGNC:XRCC6),p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJnvqzzGAUHcdntT6ovjs2mp94ZWuGjEp5gIL_-MKIBM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJnvqzzGAUHcdntT6ovjs2mp94ZWuGjEp5gIL_-MKIBM.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAJnvqzzGAUHcdntT6ovjs2mp94ZWuGjEp5gIL_-MKIBM..> .
-@prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAgfi1Zp0wAoetP3ZR7iOhuUIMycidwd5XDvTPkEN4uK4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAgfi1Zp0wAoetP3ZR7iOhuUIMycidwd5XDvTPkEN4uK4.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAgfi1Zp0wAoetP3ZR7iOhuUIMycidwd5XDvTPkEN4uK4..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
-@prefix cellstructure: <http://www.selventa.com/bel/annotation/cell-structure/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix cellstructure: <http://resource.belframework.org/belframework/1.0/annotation/mesh-cell-structure/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -179,17 +205,23 @@ sub:Ass {
 		a belv:ProteinAbundance , belv:Term ;
 		rdfs:label "p(HGNC:WRN)" .
 }
+
+sub:Info {
+	this: dc:created "2014-04-14T12:03:35.901+02:00"^^xsd:dateTime .
+}
 ---
 BEL: complex(p(HGNC:PARP1),p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAsp5tvmzoqyIqQM8bTizxtohQFFZMEMUxEwwv8awZWnI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAsp5tvmzoqyIqQM8bTizxtohQFFZMEMUxEwwv8awZWnI.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAsp5tvmzoqyIqQM8bTizxtohQFFZMEMUxEwwv8awZWnI..> .
-@prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAzvddL0kR0ouERQwGzIyVOhdywuLqKo0QksdnFwRS_s0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAzvddL0kR0ouERQwGzIyVOhdywuLqKo0QksdnFwRS_s0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAzvddL0kR0ouERQwGzIyVOhdywuLqKo0QksdnFwRS_s0..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
-@prefix cellstructure: <http://www.selventa.com/bel/annotation/cell-structure/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix cellstructure: <http://resource.belframework.org/belframework/1.0/annotation/mesh-cell-structure/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -212,16 +244,22 @@ sub:Ass {
 		a belv:ProteinAbundance , belv:Term ;
 		rdfs:label "p(HGNC:WRN)" .
 }
+
+sub:Info {
+	this: dc:created "2014-04-14T12:03:35.908+02:00"^^xsd:dateTime .
+}
 ---
 BEL: complex(p(HGNC:WRN),p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:PARP1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAiLNks3omAARCFAN6F85_lmLyXNygf31QwbcIMloFihU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAiLNks3omAARCFAN6F85_lmLyXNygf31QwbcIMloFihU.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAiLNks3omAARCFAN6F85_lmLyXNygf31QwbcIMloFihU..> .
-@prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RADUrBopIrPhuivIzQu6OznK3SlGFA6Qk33N82II5I3vE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RADUrBopIrPhuivIzQu6OznK3SlGFA6Qk33N82II5I3vE.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RADUrBopIrPhuivIzQu6OznK3SlGFA6Qk33N82II5I3vE..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -251,17 +289,23 @@ sub:Ass {
 		a belv:ProteinAbundance , belv:Term ;
 		rdfs:label "p(HGNC:PARP1)" .
 }
+
+sub:Info {
+	this: dc:created "2014-04-14T12:03:35.915+02:00"^^xsd:dateTime .
+}
 ---
 BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R)))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAOIzcBcOSbVqInUzNTnF47rvvViSbh9cmhmU1Y3Gv49w> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAOIzcBcOSbVqInUzNTnF47rvvViSbh9cmhmU1Y3Gv49w.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAOIzcBcOSbVqInUzNTnF47rvvViSbh9cmhmU1Y3Gv49w..> .
-@prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAOUlmLsHGTmrQmVCLcI6kU5ps1lvejA2HeiljOupHm_Y> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAOUlmLsHGTmrQmVCLcI6kU5ps1lvejA2HeiljOupHm_Y.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAOUlmLsHGTmrQmVCLcI6kU5ps1lvejA2HeiljOupHm_Y..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
-@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
+@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -313,17 +357,23 @@ sub:Ass {
 		a belv:ProteinAbundance , belv:Term ;
 		rdfs:label "p(HGNC:PARP1)" .
 }
+
+sub:Info {
+	this: dc:created "2014-04-14T12:03:35.923+02:00"^^xsd:dateTime .
+}
 ---
 BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R)))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAmtJmjSOQqOVTnNbZ0FAcvOGdvXI47vpbCOrbpDRYWWE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAmtJmjSOQqOVTnNbZ0FAcvOGdvXI47vpbCOrbpDRYWWE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAmtJmjSOQqOVTnNbZ0FAcvOGdvXI47vpbCOrbpDRYWWE..> .
-@prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAhJqk9aGwFRCHP8-6nu9yOeImdg98OupqOM_bW6IB63c> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAhJqk9aGwFRCHP8-6nu9yOeImdg98OupqOM_bW6IB63c.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAhJqk9aGwFRCHP8-6nu9yOeImdg98OupqOM_bW6IB63c..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
-@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
+@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -375,17 +425,23 @@ sub:Ass {
 		a belv:ProteinAbundance , belv:Term ;
 		rdfs:label "p(HGNC:XRCC5)" .
 }
+
+sub:Info {
+	this: dc:created "2014-04-14T12:03:35.939+02:00"^^xsd:dateTime .
+}
 ---
 BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R)))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAaoxYC6KQ3uC5utzkCzqnFO6laoIG7WiaLbCEP0F0SUc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAaoxYC6KQ3uC5utzkCzqnFO6laoIG7WiaLbCEP0F0SUc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAaoxYC6KQ3uC5utzkCzqnFO6laoIG7WiaLbCEP0F0SUc..> .
-@prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAT5UCrIBYeSRO_69zF1HBi96arh1SxeeBjh5nsZn5nuU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAT5UCrIBYeSRO_69zF1HBi96arh1SxeeBjh5nsZn5nuU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAT5UCrIBYeSRO_69zF1HBi96arh1SxeeBjh5nsZn5nuU..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
-@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
+@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -437,17 +493,23 @@ sub:Ass {
 		a belv:ProteinAbundance , belv:Term ;
 		rdfs:label "p(HGNC:XRCC6)" .
 }
+
+sub:Info {
+	this: dc:created "2014-04-14T12:03:35.965+02:00"^^xsd:dateTime .
+}
 ---
 BEL: p(HGNC:XRCC5,pmod(R)) => complex(a(CHEBI:"deoxyribonucleic acid"),p(HGNC:XRCC5),p(HGNC:XRCC6))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RANyXY6llRPtcGTl7vh2wZTOhYkXnpE3A2zwR6NwoxOyc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RANyXY6llRPtcGTl7vh2wZTOhYkXnpE3A2zwR6NwoxOyc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RANyXY6llRPtcGTl7vh2wZTOhYkXnpE3A2zwR6NwoxOyc..> .
-@prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA2BjY21AY1JhBZmFjAvlLOpTUAnBPlRsM7MYq_8hyNWQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA2BjY21AY1JhBZmFjAvlLOpTUAnBPlRsM7MYq_8hyNWQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA2BjY21AY1JhBZmFjAvlLOpTUAnBPlRsM7MYq_8hyNWQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
-@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -488,17 +550,23 @@ sub:Ass {
 		a belv:ProteinAbundance , belv:Term ;
 		rdfs:label "p(HGNC:XRCC6)" .
 }
+
+sub:Info {
+	this: dc:created "2014-04-14T12:03:35.975+02:00"^^xsd:dateTime .
+}
 ---
 BEL: p(HGNC:XRCC6,pmod(R)) => complex(a(CHEBI:"deoxyribonucleic acid"),p(HGNC:XRCC5),p(HGNC:XRCC6))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAtQtmL4FbhJY9aK8eXLfbLbLMaBkILIfL3lHJbrgKEYs> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAtQtmL4FbhJY9aK8eXLfbLbLMaBkILIfL3lHJbrgKEYs.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAtQtmL4FbhJY9aK8eXLfbLbLMaBkILIfL3lHJbrgKEYs..> .
-@prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAnTW6OYjdF_R0M1rXgmXuRG-q5geUfkLzgKBTHxL7O1A> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAnTW6OYjdF_R0M1rXgmXuRG-q5geUfkLzgKBTHxL7O1A.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAnTW6OYjdF_R0M1rXgmXuRG-q5geUfkLzgKBTHxL7O1A..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
-@prefix chebi: <http://www.selventa.com/bel/namespace/chebi-names/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -539,16 +607,22 @@ sub:Ass {
 		a belv:ProteinAbundance , belv:Term ;
 		rdfs:label "p(HGNC:XRCC6)" .
 }
+
+sub:Info {
+	this: dc:created "2014-04-14T12:03:35.984+02:00"^^xsd:dateTime .
+}
 ---
 BEL: p(HGNC:XRCC5,pmod(R)) => cat(p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAF4UIddTdIY0gSYPehTLKoKZ8w67KtjSwvJTXw9eKSyw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAF4UIddTdIY0gSYPehTLKoKZ8w67KtjSwvJTXw9eKSyw.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAF4UIddTdIY0gSYPehTLKoKZ8w67KtjSwvJTXw9eKSyw..> .
-@prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAi-jY5tYesEakgOTI4O-GJfqNaNStECyxaEVwexFPROY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAi-jY5tYesEakgOTI4O-GJfqNaNStECyxaEVwexFPROY.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAi-jY5tYesEakgOTI4O-GJfqNaNStECyxaEVwexFPROY..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -582,16 +656,22 @@ sub:Ass {
 		a belv:ProteinAbundance , belv:Term ;
 		rdfs:label "p(HGNC:WRN)" .
 }
+
+sub:Info {
+	this: dc:created "2014-04-14T12:03:35.993+02:00"^^xsd:dateTime .
+}
 ---
 BEL: p(HGNC:XRCC6,pmod(R)) => cat(p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAR7yT5Dx00lwFPS2w_PlbILtiyH97HX8SMs5k49xPSdo> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAR7yT5Dx00lwFPS2w_PlbILtiyH97HX8SMs5k49xPSdo.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAR7yT5Dx00lwFPS2w_PlbILtiyH97HX8SMs5k49xPSdo..> .
-@prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAeplrs7x0Km3QXk9051EXgQn-KTnyQqFT9GZnyohdCqQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAeplrs7x0Km3QXk9051EXgQn-KTnyQqFT9GZnyohdCqQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAeplrs7x0Km3QXk9051EXgQn-KTnyQqFT9GZnyohdCqQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix hgnc: <http://www.selventa.com/bel/namespace/hgnc-approved-symbols/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -624,6 +704,10 @@ sub:Ass {
 	node:5 belv:hasConcept hgnc:WRN ;
 		a belv:ProteinAbundance , belv:Term ;
 		rdfs:label "p(HGNC:WRN)" .
+}
+
+sub:Info {
+	this: dc:created "2014-04-14T12:03:36.001+02:00"^^xsd:dateTime .
 }
 ---
 14 nanopub(s) created
