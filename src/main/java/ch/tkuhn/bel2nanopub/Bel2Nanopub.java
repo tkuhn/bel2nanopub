@@ -19,7 +19,9 @@ import org.nanopub.NanopubCreator;
 import org.nanopub.NanopubUtils;
 import org.openbel.bel.model.BELAnnotation;
 import org.openbel.bel.model.BELAnnotationDefinition;
+import org.openbel.bel.model.BELCitation;
 import org.openbel.bel.model.BELDocument;
+import org.openbel.bel.model.BELEvidence;
 import org.openbel.bel.model.BELNamespaceDefinition;
 import org.openbel.bel.model.BELParseErrorException;
 import org.openbel.bel.model.BELStatement;
@@ -180,6 +182,20 @@ public class Bel2Nanopub {
 					npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasAnnotation, annUri);
 				}
 			}
+		}
+		BELCitation cit = belStatement.getCitation();
+		if (cit != null) {
+			if (!cit.getType().toLowerCase().equals("pubmed")) {
+				throw new Bel2NanopubException("Unsupported citation type: " + cit.getType());
+			}
+			URI citUri = new URIImpl("http://www.ncbi.nlm.nih.gov/pubmed/" + cit.getReference());
+			npCreator.addProvenanceStatement(BelRdfVocabulary.hasCitation, citUri);
+			npCreator.addNamespace("pubmed", "http://www.ncbi.nlm.nih.gov/pubmed/");
+		}
+		BELEvidence ev = belStatement.getEvidence();
+		if (ev != null) {
+			Literal l = vf.createLiteral(ev.getEvidenceLine());
+			npCreator.addProvenanceStatement(BelRdfVocabulary.hasEvidenceText, l);
 		}
 		return bn;
 	}

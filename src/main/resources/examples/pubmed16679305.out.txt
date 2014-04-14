@@ -1,9 +1,9 @@
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:"Neoplasm Metastasis")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAcD09-V2_SK9XLB6GzTROZWQnIaTRYZfb8Wt3v-cDiLY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAcD09-V2_SK9XLB6GzTROZWQnIaTRYZfb8Wt3v-cDiLY.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAcD09-V2_SK9XLB6GzTROZWQnIaTRYZfb8Wt3v-cDiLY..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAnJ94PlxDCrAO9mtqDcMTQZrqvgFsrrTMpksIRoRkCiQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAnJ94PlxDCrAO9mtqDcMTQZrqvgFsrrTMpksIRoRkCiQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAnJ94PlxDCrAO9mtqDcMTQZrqvgFsrrTMpksIRoRkCiQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -13,6 +13,9 @@ NANOPUB:
 @prefix meshd: <http://resource.belframework.org/belframework/1.0/namespace/mesh-diseases/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix disease: <http://resource.belframework.org/belframework/1.0/annotation/mesh-disease/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -43,15 +46,21 @@ sub:Ass {
 		rdfs:label "p(HGNC:KRAS)" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText "K-Ras Asp12 (K12D) is more prevalent in benign than inmalignant human colorectal tumors, whereas K-Ras Val12 (K12V) associateswith more advanced and metastatic carcinomas, higher recurrence anddecreased survival." .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.331+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:25.952+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:"Recurrence")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAeqXB1EAfc_rhEKrC9u4_QC8jGNkYcD_k_Z_Ur6eMctA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAeqXB1EAfc_rhEKrC9u4_QC8jGNkYcD_k_Z_Ur6eMctA.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAeqXB1EAfc_rhEKrC9u4_QC8jGNkYcD_k_Z_Ur6eMctA..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAK3YdLgAzpV-eVv48tBRajwhtO7woQucboji1R85UfNM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAK3YdLgAzpV-eVv48tBRajwhtO7woQucboji1R85UfNM.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAK3YdLgAzpV-eVv48tBRajwhtO7woQucboji1R85UfNM..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -61,6 +70,9 @@ NANOPUB:
 @prefix meshd: <http://resource.belframework.org/belframework/1.0/namespace/mesh-diseases/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix disease: <http://resource.belframework.org/belframework/1.0/annotation/mesh-disease/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -91,15 +103,21 @@ sub:Ass {
 		rdfs:label "p(HGNC:KRAS)" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText "K-Ras Asp12 (K12D) is more prevalent in benign than inmalignant human colorectal tumors, whereas K-Ras Val12 (K12V) associateswith more advanced and metastatic carcinomas, higher recurrence anddecreased survival." .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.431+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.064+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> path(MESHD:Neoplasms)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RATiY5Y3kunHYX035-JiXWeIoNBOUlI4yDg1lJJHBad_o> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RATiY5Y3kunHYX035-JiXWeIoNBOUlI4yDg1lJJHBad_o.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RATiY5Y3kunHYX035-JiXWeIoNBOUlI4yDg1lJJHBad_o..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RASxsnLPnh5V7Pq49fulrq_g-QB71Ob9lC-q1QDASotns> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RASxsnLPnh5V7Pq49fulrq_g-QB71Ob9lC-q1QDASotns.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RASxsnLPnh5V7Pq49fulrq_g-QB71Ob9lC-q1QDASotns..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -109,6 +127,9 @@ NANOPUB:
 @prefix meshd: <http://resource.belframework.org/belframework/1.0/namespace/mesh-diseases/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -139,15 +160,21 @@ sub:Ass {
 		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText "We found that the K12V oncogene induces a more aggressivetumorigenic phenotype than the K12D oncogene, whereas K12C does not inducetumors in this model." .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.449+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.095+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> path(MESHD:Neoplasms)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RADf3lwE2-xSSUVBX0aVfOdsoUV9OYWlpBJetFuDK2OyM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RADf3lwE2-xSSUVBX0aVfOdsoUV9OYWlpBJetFuDK2OyM.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RADf3lwE2-xSSUVBX0aVfOdsoUV9OYWlpBJetFuDK2OyM..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAhiPKBTPEzXXpPSvn4NMjK5QvUX4XPDVdfzhI5RuwSlM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAhiPKBTPEzXXpPSvn4NMjK5QvUX4XPDVdfzhI5RuwSlM.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAhiPKBTPEzXXpPSvn4NMjK5QvUX4XPDVdfzhI5RuwSlM..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -157,6 +184,9 @@ NANOPUB:
 @prefix meshd: <http://resource.belframework.org/belframework/1.0/namespace/mesh-diseases/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -187,15 +217,21 @@ sub:Ass {
 		rdfs:label "p(HGNC:KRAS)" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText "We found that the K12V oncogene induces a more aggressivetumorigenic phenotype than the K12D oncogene, whereas K12C does not inducetumors in this model." .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.465+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.119+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,C)) causesNoChange path(MESHD:Neoplasms)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAh1TfuzgszKwaHTvaybMQK0NC6fbfL-_MqZDNrcNXTCs> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAh1TfuzgszKwaHTvaybMQK0NC6fbfL-_MqZDNrcNXTCs.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAh1TfuzgszKwaHTvaybMQK0NC6fbfL-_MqZDNrcNXTCs..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RADssYG1uxW9Y_9RoyfIE-DZ-oiy5hzLjjPDTuSZMH40I> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RADssYG1uxW9Y_9RoyfIE-DZ-oiy5hzLjjPDTuSZMH40I.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RADssYG1uxW9Y_9RoyfIE-DZ-oiy5hzLjjPDTuSZMH40I..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -205,6 +241,9 @@ NANOPUB:
 @prefix meshd: <http://resource.belframework.org/belframework/1.0/namespace/mesh-diseases/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -235,15 +274,21 @@ sub:Ass {
 		rdfs:label "p(HGNC:KRAS)" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText "We found that the K12V oncogene induces a more aggressivetumorigenic phenotype than the K12D oncogene, whereas K12C does not inducetumors in this model." .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.481+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.136+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) => complex(p(HGNC:KRAS),p(MGI:Raf1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RALdaKaJvH7ayMTwOOzSmPi-sW3VSzd-JfXk-RFdYCkuw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RALdaKaJvH7ayMTwOOzSmPi-sW3VSzd-JfXk-RFdYCkuw.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RALdaKaJvH7ayMTwOOzSmPi-sW3VSzd-JfXk-RFdYCkuw..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8ISUH6BdasEI-jVtdypStk_Sh95BJjeOt4PJBvS5EPE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8ISUH6BdasEI-jVtdypStk_Sh95BJjeOt4PJBvS5EPE.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA8ISUH6BdasEI-jVtdypStk_Sh95BJjeOt4PJBvS5EPE..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -253,6 +298,9 @@ NANOPUB:
 @prefix mgi: <http://resource.belframework.org/belframework/1.0/namespace/mgi-approved-symbols/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -291,15 +339,21 @@ sub:Ass {
 		rdfs:label "p(MGI:Raf1)" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText "A molecular analysis of the induced tumors shows thatthe K12V mutant protein interacts with Raf-1 and transduces signals mainly through the Erk pathway." .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.496+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.151+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> kin(p(PFM:"MAPK Erk1/3 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8b2pfP5jbkMG3N_BnbiYN8jA35O_Yig1OTdvgY-GOkk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8b2pfP5jbkMG3N_BnbiYN8jA35O_Yig1OTdvgY-GOkk.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA8b2pfP5jbkMG3N_BnbiYN8jA35O_Yig1OTdvgY-GOkk..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3KZFZzc8a5ZvwCJYLebLWeUeLhlCdp-VoYtKXgSJ6Ao> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3KZFZzc8a5ZvwCJYLebLWeUeLhlCdp-VoYtKXgSJ6Ao.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA3KZFZzc8a5ZvwCJYLebLWeUeLhlCdp-VoYtKXgSJ6Ao..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -309,6 +363,9 @@ NANOPUB:
 @prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -344,15 +401,21 @@ sub:Ass {
 		rdfs:label "p(PFM:\"MAPK Erk1/3 Family\")" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText "A molecular analysis of the induced tumors shows thatthe K12V mutant protein interacts with Raf-1 and transduces signals mainly through the Erk pathway." .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.512+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.163+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) causesNoChange complex(p(HGNC:KRAS),p(MGI:Raf1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAt__leUY3qEoIJWRPtPMWsGMUq8byD2x4nszdINBT7Gk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAt__leUY3qEoIJWRPtPMWsGMUq8byD2x4nszdINBT7Gk.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAt__leUY3qEoIJWRPtPMWsGMUq8byD2x4nszdINBT7Gk..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_h49HY484CMY8c94VgVnzbBXgsnOYrH2t5xOCgkWYFU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_h49HY484CMY8c94VgVnzbBXgsnOYrH2t5xOCgkWYFU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA_h49HY484CMY8c94VgVnzbBXgsnOYrH2t5xOCgkWYFU..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -362,6 +425,9 @@ NANOPUB:
 @prefix mgi: <http://resource.belframework.org/belframework/1.0/namespace/mgi-approved-symbols/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -400,15 +466,21 @@ sub:Ass {
 		rdfs:label "p(MGI:Raf1)" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText "Unexpectedly, in tumors induced by the K12D oncogene,the K-Ras mutant protein does not interact with Raf-1 nor activatesthe Erk canonical pathway." .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.524+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.177+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) causesNoChange kin(p(PFM:"MAPK Erk1/3 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAVyI-s8346ao2VuikEBHrtA1emLeHtC2n-TyXJ7E7nwU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAVyI-s8346ao2VuikEBHrtA1emLeHtC2n-TyXJ7E7nwU.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAVyI-s8346ao2VuikEBHrtA1emLeHtC2n-TyXJ7E7nwU..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA72ZM_vs46IJzwQL_w8_1Wm5zY7RmVUaGMXefnTvi2nQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA72ZM_vs46IJzwQL_w8_1Wm5zY7RmVUaGMXefnTvi2nQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA72ZM_vs46IJzwQL_w8_1Wm5zY7RmVUaGMXefnTvi2nQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -418,6 +490,9 @@ NANOPUB:
 @prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -453,15 +528,21 @@ sub:Ass {
 		rdfs:label "p(PFM:\"MAPK Erk1/3 Family\")" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText "Unexpectedly, in tumors induced by the K12D oncogene,the K-Ras mutant protein does not interact with Raf-1 nor activatesthe Erk canonical pathway." .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.545+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.201+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(complex(NCM:"p85/p110 PI3Kinase Complex"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAwMRvn7-S3c2GrdaA8HzfQ45YVyZ06dd2tRdUfyfku7k> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAwMRvn7-S3c2GrdaA8HzfQ45YVyZ06dd2tRdUfyfku7k.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAwMRvn7-S3c2GrdaA8HzfQ45YVyZ06dd2tRdUfyfku7k..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAf52xLHsUWVdJ3uKL4_XBkdom7sGgzqDPuWLQKErFmLc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAf52xLHsUWVdJ3uKL4_XBkdom7sGgzqDPuWLQKErFmLc.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAf52xLHsUWVdJ3uKL4_XBkdom7sGgzqDPuWLQKErFmLc..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -471,6 +552,9 @@ NANOPUB:
 @prefix ncm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-complexes/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -506,15 +590,22 @@ sub:Ass {
 		rdfs:label "complex(NCM:\"p85/p110 PI3Kinase Complex\")" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText """Instead, it transduces signals through the PI3K/Akt, JNK,
+p38 and FAK pathways.""" .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.558+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.209+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:"Akt Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAc1pE5noshT_OpJWu9J4RcVwZYmxoywPxfrzwn8Ng_UY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAc1pE5noshT_OpJWu9J4RcVwZYmxoywPxfrzwn8Ng_UY.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAc1pE5noshT_OpJWu9J4RcVwZYmxoywPxfrzwn8Ng_UY..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAif5PKaSMKDyVxhWRl3H0A1lT_an-geW0pN_Xc52_074> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAif5PKaSMKDyVxhWRl3H0A1lT_an-geW0pN_Xc52_074.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAif5PKaSMKDyVxhWRl3H0A1lT_an-geW0pN_Xc52_074..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -524,6 +615,9 @@ NANOPUB:
 @prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -559,15 +653,22 @@ sub:Ass {
 		rdfs:label "p(PFM:\"Akt Family\")" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText """Instead, it transduces signals through the PI3K/Akt, JNK,
+p38 and FAK pathways.""" .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.566+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.217+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:"Mapk JNK Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAiccnIkcSxYhQiOyKB8fq5a_7H7BfQ7iYafbcMhGDlSQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAiccnIkcSxYhQiOyKB8fq5a_7H7BfQ7iYafbcMhGDlSQ.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAiccnIkcSxYhQiOyKB8fq5a_7H7BfQ7iYafbcMhGDlSQ..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAkkUiGiUSYysr4Zcp8in1AAZ-w9B9_o8kPVMXwPyHXlo> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAkkUiGiUSYysr4Zcp8in1AAZ-w9B9_o8kPVMXwPyHXlo.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAkkUiGiUSYysr4Zcp8in1AAZ-w9B9_o8kPVMXwPyHXlo..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -577,6 +678,9 @@ NANOPUB:
 @prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -612,15 +716,22 @@ sub:Ass {
 		rdfs:label "p(PFM:\"Mapk JNK Family\")" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText """Instead, it transduces signals through the PI3K/Akt, JNK,
+p38 and FAK pathways.""" .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.573+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.225+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:"Mapk p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAZG2azRNIgYMFs3CSgazMuNOb8eoOlohvTmS6aI5YLSI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAZG2azRNIgYMFs3CSgazMuNOb8eoOlohvTmS6aI5YLSI.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAZG2azRNIgYMFs3CSgazMuNOb8eoOlohvTmS6aI5YLSI..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAIjMBVwk7cO0GUT87mXbIym1vItGj2m3x5BOPhELBsrk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAIjMBVwk7cO0GUT87mXbIym1vItGj2m3x5BOPhELBsrk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAIjMBVwk7cO0GUT87mXbIym1vItGj2m3x5BOPhELBsrk..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -630,6 +741,9 @@ NANOPUB:
 @prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -665,15 +779,22 @@ sub:Ass {
 		rdfs:label "p(PFM:\"Mapk p38 Family\")" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText """Instead, it transduces signals through the PI3K/Akt, JNK,
+p38 and FAK pathways.""" .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.583+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.234+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(MGI:Ptk2))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_TAetK2XusfiebIs8GE7EkBu8fNfDxUtWNKa7W-C6L8> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_TAetK2XusfiebIs8GE7EkBu8fNfDxUtWNKa7W-C6L8.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA_TAetK2XusfiebIs8GE7EkBu8fNfDxUtWNKa7W-C6L8..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAACd9y94nyjjurg2VCfzzml6tM-MhiJNUOZBmefQ2uMw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAACd9y94nyjjurg2VCfzzml6tM-MhiJNUOZBmefQ2uMw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAACd9y94nyjjurg2VCfzzml6tM-MhiJNUOZBmefQ2uMw..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -683,6 +804,9 @@ NANOPUB:
 @prefix mgi: <http://resource.belframework.org/belframework/1.0/namespace/mgi-approved-symbols/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -718,15 +842,22 @@ sub:Ass {
 		rdfs:label "p(MGI:Ptk2)" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText """Instead, it transduces signals through the PI3K/Akt, JNK,
+p38 and FAK pathways.""" .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.592+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.241+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:RB1,pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RASSkMsqHzrG7wUnow9v5p8PVJds3rop6pbelMDSkz4Pc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RASSkMsqHzrG7wUnow9v5p8PVJds3rop6pbelMDSkz4Pc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RASSkMsqHzrG7wUnow9v5p8PVJds3rop6pbelMDSkz4Pc..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RANJTJvtTDmuP4zdAwddsmSi7hnifXLI26fKZJsS8m8Aw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RANJTJvtTDmuP4zdAwddsmSi7hnifXLI26fKZJsS8m8Aw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RANJTJvtTDmuP4zdAwddsmSi7hnifXLI26fKZJsS8m8Aw..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -735,6 +866,9 @@ NANOPUB:
 @prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -770,15 +904,21 @@ sub:Ass {
 		rdfs:label "p(HGNC:RB1)" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.599+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.249+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:PCNA)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAIlD-QZkgG_bH-jBhKz3ZhRkpM_w6uvtB3smfkxT5GaM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAIlD-QZkgG_bH-jBhKz3ZhRkpM_w6uvtB3smfkxT5GaM.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAIlD-QZkgG_bH-jBhKz3ZhRkpM_w6uvtB3smfkxT5GaM..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAjqkN6wnSPhXzl1u_aLDrbw-FC3Z-z_uVVcUy11wJqaE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAjqkN6wnSPhXzl1u_aLDrbw-FC3Z-z_uVVcUy11wJqaE.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAjqkN6wnSPhXzl1u_aLDrbw-FC3Z-z_uVVcUy11wJqaE..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -787,6 +927,9 @@ NANOPUB:
 @prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -817,15 +960,21 @@ sub:Ass {
 		rdfs:label "p(HGNC:KRAS)" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.606+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.259+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:CCNB1)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAXLAg2_USwoeE6g-d30baaPS1fiWtfLcjpqyL1aLTnyY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAXLAg2_USwoeE6g-d30baaPS1fiWtfLcjpqyL1aLTnyY.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAXLAg2_USwoeE6g-d30baaPS1fiWtfLcjpqyL1aLTnyY..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAtmAEn-6AY_TOQ0nC_HJM2WGNTLJWtO4QKM5YyCPS0mk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAtmAEn-6AY_TOQ0nC_HJM2WGNTLJWtO4QKM5YyCPS0mk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAtmAEn-6AY_TOQ0nC_HJM2WGNTLJWtO4QKM5YyCPS0mk..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -834,6 +983,9 @@ NANOPUB:
 @prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -864,15 +1016,21 @@ sub:Ass {
 		rdfs:label "p(HGNC:KRAS)" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.614+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.268+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:"G1/S transition of mitotic cell cycle")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RATerrpMY9vIzyiMMgTQgXePWzXEhijlrVh5gIdf7ZBsE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RATerrpMY9vIzyiMMgTQgXePWzXEhijlrVh5gIdf7ZBsE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RATerrpMY9vIzyiMMgTQgXePWzXEhijlrVh5gIdf7ZBsE..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3WU65MFH5etekXxDeKXOdwYaLusANrZOTKSuOV9D2wc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3WU65MFH5etekXxDeKXOdwYaLusANrZOTKSuOV9D2wc.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA3WU65MFH5etekXxDeKXOdwYaLusANrZOTKSuOV9D2wc..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -882,6 +1040,9 @@ NANOPUB:
 @prefix go: <http://resource.belframework.org/belframework/1.0/namespace/go-biological-processes-names/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -912,15 +1073,21 @@ sub:Ass {
 		rdfs:label "p(HGNC:KRAS)" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.623+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.276+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:"G2/M transition of mitotic cell cycle")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAkIXeeUJfitfzi-F2AYVjH0oRh2HSl8_vmSk9gU5MPdE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAkIXeeUJfitfzi-F2AYVjH0oRh2HSl8_vmSk9gU5MPdE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAkIXeeUJfitfzi-F2AYVjH0oRh2HSl8_vmSk9gU5MPdE..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAr-oFeH-EzQVdmBWwbN4SJ99si4qkInaMtkwnrWt6xfU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAr-oFeH-EzQVdmBWwbN4SJ99si4qkInaMtkwnrWt6xfU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAr-oFeH-EzQVdmBWwbN4SJ99si4qkInaMtkwnrWt6xfU..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -930,6 +1097,9 @@ NANOPUB:
 @prefix go: <http://resource.belframework.org/belframework/1.0/namespace/go-biological-processes-names/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -960,15 +1130,21 @@ sub:Ass {
 		rdfs:label "p(HGNC:KRAS)" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.631+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.281+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) causesNoChange bp(GO:"regulation of apoptotic process")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAOpgLhVqqFO3ICGpaztQHnmf3hRYBh8krwFrtosWDVBk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAOpgLhVqqFO3ICGpaztQHnmf3hRYBh8krwFrtosWDVBk.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAOpgLhVqqFO3ICGpaztQHnmf3hRYBh8krwFrtosWDVBk..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAoUvDCCVUnOCFKlER65x2QptHAj5TXx0PsP3E_LFAAkY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAoUvDCCVUnOCFKlER65x2QptHAj5TXx0PsP3E_LFAAkY.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAoUvDCCVUnOCFKlER65x2QptHAj5TXx0PsP3E_LFAAkY..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -978,6 +1154,9 @@ NANOPUB:
 @prefix go: <http://resource.belframework.org/belframework/1.0/namespace/go-biological-processes-names/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix orcid: <http://orcid.org/> .
 
 sub:Head {
 	this: np:hasAssertion sub:Ass ;
@@ -1008,8 +1187,14 @@ sub:Ass {
 		rdfs:label "p(HGNC:KRAS)" .
 }
 
+sub:Prov {
+	sub:Ass belv:hasCitation pubmed:16679305 ;
+		belv:hasEvidenceText "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." .
+}
+
 sub:Info {
-	this: dc:created "2014-04-14T15:43:47.639+02:00"^^xsd:dateTime .
+	this: dc:created "2014-04-14T18:34:26.287+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 20 nanopub(s) created

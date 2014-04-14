@@ -27,6 +27,8 @@ public class BelRdfVocabulary {
 	public static final URI hasObject = new URIImpl(BELV_NS + "hasObject");
 	public static final URI hasActivityType = new URIImpl(BELV_NS + "hasActivityType");
 	public static final URI hasAnnotation = new URIImpl(BELV_NS + "hasAnnotation");
+	public static final URI hasCitation = new URIImpl(BELV_NS + "hasCitation");
+	public static final URI hasEvidenceText = new URIImpl(BELV_NS + "hasEvidenceText");
 
 	// ---
 	// Made up URIs, not used by official BEL tools:
