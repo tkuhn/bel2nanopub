@@ -61,12 +61,15 @@ public class Bel2Nanopub {
 			System.exit(1);
 		}
 		obj.run();
+		System.out.println("---");
 		System.out.println(obj.getNanopubs().size() + " nanopub(s) created");
+		System.out.println(obj.errors + " error(s)");
 	}
 
 	private int bnodeCount = 0;
 	private BELDocument belDoc;
 	private List<Nanopub> nanopubs = new ArrayList<Nanopub>();
+	private int errors = 0;
 
 	private Map<String,URI> namespaceMap = new HashMap<String,URI>();
 	private Map<String,URI> annotationMap = new HashMap<String,URI>();
@@ -106,13 +109,24 @@ public class Bel2Nanopub {
 
 		for (BELStatementGroup g : belDoc.getBelStatementGroups()) {
 			for (BELStatement bst : g.getStatements()) {
+				System.out.println("---");
+				System.out.println("BEL: " + bst.getStatementSyntax());
 				NanopubCreator npCreator = new NanopubCreator("http://www.tkuhn.ch/bel2nanopub/");
 				npCreator.addNamespace("rdfs", RDFS.NAMESPACE);
 				npCreator.addNamespace("xsd", "http://www.w3.org/2001/XMLSchema#");
 				npCreator.addNamespace("dc", "http://purl.org/dc/terms/");
 				npCreator.addNamespace("np", "http://www.nanopub.org/nschema#");
 				npCreator.addNamespace("belv", BelRdfVocabulary.BELV_NS);
-				processBelStatement(bst, npCreator);
+				try {
+					processBelStatement(bst, npCreator);
+				} catch (Bel2NanopubException ex) {
+					errors++;
+					System.err.println(ex.getMessage());
+					continue;
+				} catch (Exception ex) {
+					ex.printStackTrace();
+					System.exit(1);
+				}
 				if (creatorId != null) {
 					npCreator.addNamespace("pav", "http://swan.mindinformatics.org/ontologies/1.2/pav/");
 					npCreator.addNamespace("orcid", "http://orcid.org/");
@@ -125,8 +139,8 @@ public class Bel2Nanopub {
 					nanopubs.add(np);
 				} catch (Exception ex) {
 					ex.printStackTrace();
+					System.exit(1);
 				}
-				System.out.println("---");
 			}
 		}
 	}
@@ -148,10 +162,8 @@ public class Bel2Nanopub {
 		}
 	}
 
-	private BNode processBelStatement(BELStatement belStatement, NanopubCreator npCreator) {
-		String s = belStatement.getStatementSyntax();
-		Statement st = BELParser.parseStatement(s);
-		System.out.println("BEL: " + s);
+	private BNode processBelStatement(BELStatement belStatement, NanopubCreator npCreator) throws Bel2NanopubException {
+		Statement st = BELParser.parseStatement(belStatement.getStatementSyntax());
 		BNode bn = processBelStatement(st, npCreator);
 		for (BELAnnotation ann : belStatement.getAnnotations()) {
 			String annN = ann.getAnnotationDefinition().getName();
@@ -172,7 +184,8 @@ public class Bel2Nanopub {
 		return bn;
 	}
 
-	private BNode processBelObject(org.openbel.framework.common.model.Statement.Object obj, NanopubCreator npCreator) {
+	private BNode processBelObject(org.openbel.framework.common.model.Statement.Object obj, NanopubCreator npCreator)
+			 throws Bel2NanopubException{
 		if (obj.getTerm() != null) {
 			return processBelTerm(obj.getTerm(), npCreator);
 		} else {
@@ -180,14 +193,14 @@ public class Bel2Nanopub {
 		}
 	}
 
-	private BNode processBelTerm(Term term, NanopubCreator npCreator) {
+	private BNode processBelTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
 		BNode bn = newBNode();
 		npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.term);
 		String funcAbbrev = term.getFunctionEnum().getAbbreviation();
+		if (funcAbbrev == null) funcAbbrev = term.getFunctionEnum().getDisplayValue();
 		URI funcUri = BelRdfVocabulary.getFunction(funcAbbrev);
 		if (funcUri == null) {
-			System.err.println("Ignore function: " + funcAbbrev);
-			return bn;
+			throw new Bel2NanopubException("Unknown function: " + funcAbbrev);
 		}
 		URI actUri = BelRdfVocabulary.getActivity(funcAbbrev);
 		if (actUri != null) {
@@ -208,7 +221,7 @@ public class Bel2Nanopub {
 		return (term.getTerms().size() > 0);
 	}
 
-	private void handleProteinVariantTerm(BNode bn, Term protTerm, NanopubCreator npCreator) {
+	private void handleProteinVariantTerm(BNode bn, Term protTerm, NanopubCreator npCreator) throws Bel2NanopubException {
 		Parameter protParam = protTerm.getParameters().get(0);
 		BNode n = newBNode();
 		npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasChild, n);
@@ -230,43 +243,46 @@ public class Bel2Nanopub {
 				m = m.substring(1);
 				URI modUri = BelRdfVocabulary.getModification(m);
 				if (modUri == null) {
-					System.err.println("Ignore modification: " + m);
-					continue;
+					throw new Bel2NanopubException("Unknown modification: " + m);
 				}
 				npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasModificationType, modUri);
 			} else  {
 				String var = BelRdfVocabulary.getNormalizedVariant(modAbbrev);
-				var.toString();  // raise null pointer exception
+				if (var == null) {
+					throw new Bel2NanopubException("Unknown protein variant: " + var);
+				}
 				npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.proteinVariantAbundance);
 				// TODO What to do with protein variants? (they are ignored by bel2rdf)
+				throw new Bel2NanopubException("Protein variants are currently not supported: " + var);
 			}
 		}
 	}
 
-	private void handleNormalTerm(BNode bn, Term term, NanopubCreator npCreator) {
+	private void handleNormalTerm(BNode bn, Term term, NanopubCreator npCreator) throws Bel2NanopubException {
 		for (Term child : term.getTerms()) {
 			BNode ch = processBelTerm(child, npCreator);
 			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasChild, ch);
 		}
 		for (Parameter p : term.getParameters()) {
 			URI cUri = getUriFromParam(p, npCreator);
-			if (cUri == null) continue;
 			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasConcept, cUri);
 		}
 	}
 
-	private URI getUriFromParam(Parameter param, NanopubCreator npCreator) {
+	private URI getUriFromParam(Parameter param, NanopubCreator npCreator) throws Bel2NanopubException {
+		if (param == null || param.getNamespace() == null) {
+			throw new Bel2NanopubException("Invalid parameter: " + param);
+		}
 		String prefix = param.getNamespace().getPrefix();
 		URI ns = namespaceMap.get(prefix);
 		if (ns == null) {
-			System.err.println("Ignore namespace: " + prefix);
-			return null;
+			throw new Bel2NanopubException("Unknown namespace: " + prefix);
 		}
 		npCreator.addNamespace(prefix.toLowerCase(), ns);
 		return new URIImpl(ns + encodeUrlString(param.getValue()));
 	}
 
-	private BNode processBelStatement(Statement statement, NanopubCreator npCreator) {
+	private BNode processBelStatement(Statement statement, NanopubCreator npCreator) throws Bel2NanopubException {
 		BNode bn = newBNode();
 		if (statement.getRelationshipType() == null) {
 			bn = processBelTerm(statement.getSubject(), npCreator);
@@ -277,8 +293,7 @@ public class Bel2Nanopub {
 			String relN = statement.getRelationshipType().getDisplayValue();
 			URI rel = BelRdfVocabulary.getRel(relN);
 			if (rel == null) {
-				System.err.println("Ignore relationship: " + relN);
-				return bn;
+				throw new Bel2NanopubException("Unknown relationship: " + relN);
 			}
 			rel.toString();  // Raise null pointer exception
 			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasRelationship, rel);
