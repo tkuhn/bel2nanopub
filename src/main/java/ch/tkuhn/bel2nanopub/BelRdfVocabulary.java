@@ -28,6 +28,11 @@ public class BelRdfVocabulary {
 	public static final URI hasActivityType = new URIImpl(BELV_NS + "hasActivityType");
 	public static final URI hasAnnotation = new URIImpl(BELV_NS + "hasAnnotation");
 
+	// ---
+	// Made up URIs, not used by official BEL tools:
+	public static final URI hasSubstitution = new URIImpl(BELV_NS + "hasSubstitution");
+	// ---
+
 	public static final URI proteinVariantAbundance = new URIImpl(BELV_NS + "ProteinVariantAbundance");
 	public static final URI modifiedProteinAbundance = new URIImpl(BELV_NS + "ModifiedProteinAbundance");
 	public static final URI hasModificationType = new URIImpl(BELV_NS + "hasModificationType");

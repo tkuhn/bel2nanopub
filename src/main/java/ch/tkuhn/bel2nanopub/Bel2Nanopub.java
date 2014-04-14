@@ -253,7 +253,12 @@ public class Bel2Nanopub {
 				}
 				npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.proteinVariantAbundance);
 				// TODO What to do with protein variants? (they are ignored by bel2rdf)
-				throw new Bel2NanopubException("Protein variants are currently not supported: " + var);
+				if (var.equals(BelRdfVocabulary.getNormalizedVariant("sub"))) {
+					String subString = varTerm.toBELShortForm().replaceFirst("^.*\\((.*)\\).*$", "$1");
+					npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasSubstitution, vf.createLiteral(subString));
+				} else {
+					throw new Bel2NanopubException("Unsupported protein variant: " + var);
+				}
 			}
 		}
 	}
