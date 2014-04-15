@@ -18,13 +18,13 @@ public class BelRdfVocabulary {
 	public static final URI BELR_NS = new URIImpl("http://www.selventa.com/bel/");
 	public static final URI BELV_NS = new URIImpl("http://www.selventa.com/vocabulary/");
 
-	public static final URI term = new URIImpl(BELV_NS + "Term");
-	public static final URI statement = new URIImpl(BELV_NS + "Statement");
+	//public static final URI term = new URIImpl(BELV_NS + "Term");
+	//public static final URI statement = new URIImpl(BELV_NS + "Statement");
 	public static final URI hasChild = new URIImpl(BELV_NS + "hasChild");
 	public static final URI hasConcept = new URIImpl(BELV_NS + "hasConcept");
-	public static final URI hasSubject = new URIImpl(BELV_NS + "hasSubject");
-	public static final URI hasRelationship = new URIImpl(BELV_NS + "hasRelationship");
-	public static final URI hasObject = new URIImpl(BELV_NS + "hasObject");
+	//public static final URI hasSubject = new URIImpl(BELV_NS + "hasSubject");
+	//public static final URI hasRelationship = new URIImpl(BELV_NS + "hasRelationship");
+	//public static final URI hasObject = new URIImpl(BELV_NS + "hasObject");
 	public static final URI hasActivityType = new URIImpl(BELV_NS + "hasActivityType");
 	public static final URI hasAnnotation = new URIImpl(BELV_NS + "hasAnnotation");
 	//public static final URI hasCitation = new URIImpl(BELV_NS + "hasCitation");

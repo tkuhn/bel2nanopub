@@ -1,10 +1,11 @@
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:"Neoplasm Metastasis")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAFoi1qoU96oBxGfb_mpOrMf8SEydkOJYdkvrEq8QF3JI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAFoi1qoU96oBxGfb_mpOrMf8SEydkOJYdkvrEq8QF3JI.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAFoi1qoU96oBxGfb_mpOrMf8SEydkOJYdkvrEq8QF3JI..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RArJOLj1MPyr0ZZjTo6dROuaJs4si1QaW3bFugEjmqNtY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RArJOLj1MPyr0ZZjTo6dROuaJs4si1QaW3bFugEjmqNtY.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RArJOLj1MPyr0ZZjTo6dROuaJs4si1QaW3bFugEjmqNtY..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -27,24 +28,22 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation disease:Colorectal%20Neoplasms , species:9606 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:prognosticBiomarkerFor ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:\"Neoplasm Metastasis\")" .
+		rdf:object node:2 ;
+		rdf:predicate belv:prognosticBiomarkerFor ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasConcept meshd:%22Neoplasm%20Metastasis%22 ;
-		a belv:Pathology , belv:Term ;
-		rdfs:label "path(MESHD:\"Neoplasm Metastasis\")" .
+		a belv:Pathology .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,V" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:\"Neoplasm Metastasis\")" .
 }
 
 sub:Prov {
@@ -56,16 +55,17 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:35.601+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:05.738+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:"Recurrence")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAaFEsnPgeMZdOSHSYxxnEnXHJsd6ceXZxIljBWsdauJc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAaFEsnPgeMZdOSHSYxxnEnXHJsd6ceXZxIljBWsdauJc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAaFEsnPgeMZdOSHSYxxnEnXHJsd6ceXZxIljBWsdauJc..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAzgdGfPFB_F6_GZFOYUfScamXmswgelB1I2YOr6tI7Ik> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAzgdGfPFB_F6_GZFOYUfScamXmswgelB1I2YOr6tI7Ik.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAzgdGfPFB_F6_GZFOYUfScamXmswgelB1I2YOr6tI7Ik..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -88,24 +88,22 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation disease:Colorectal%20Neoplasms , species:9606 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:prognosticBiomarkerFor ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:\"Recurrence\")" .
+		rdf:object node:2 ;
+		rdf:predicate belv:prognosticBiomarkerFor ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasConcept meshd:%22Recurrence%22 ;
-		a belv:Pathology , belv:Term ;
-		rdfs:label "path(MESHD:\"Recurrence\")" .
+		a belv:Pathology .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,V" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:\"Recurrence\")" .
 }
 
 sub:Prov {
@@ -117,16 +115,17 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:35.797+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:05.831+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> path(MESHD:Neoplasms)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAzQyotKCuhJENFVZNWAHCLt-lNjvQ57EPOuBBZ8Gmm9o> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAzQyotKCuhJENFVZNWAHCLt-lNjvQ57EPOuBBZ8Gmm9o.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAzQyotKCuhJENFVZNWAHCLt-lNjvQ57EPOuBBZ8Gmm9o..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA6k_8fdfFGYirTnigjr85YIB_SFqY0f36ZksEsvx7mZs> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA6k_8fdfFGYirTnigjr85YIB_SFqY0f36ZksEsvx7mZs.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA6k_8fdfFGYirTnigjr85YIB_SFqY0f36ZksEsvx7mZs..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -149,24 +148,22 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:increases ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> path(MESHD:Neoplasms)" .
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasConcept meshd:Neoplasms ;
-		a belv:Pathology , belv:Term ;
-		rdfs:label "path(MESHD:Neoplasms)" .
+		a belv:Pathology .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,V" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> path(MESHD:Neoplasms)" .
 }
 
 sub:Prov {
@@ -178,16 +175,17 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:35.870+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:05.850+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> path(MESHD:Neoplasms)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAPquIoBFfRVkHLvBmXO2wP3vRlemywGLZvmZ8JmXPe38> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAPquIoBFfRVkHLvBmXO2wP3vRlemywGLZvmZ8JmXPe38.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAPquIoBFfRVkHLvBmXO2wP3vRlemywGLZvmZ8JmXPe38..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJhyJzMqulSdGA6iKyaq2Tl10x14YNj8SFOIkTq0twBY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJhyJzMqulSdGA6iKyaq2Tl10x14YNj8SFOIkTq0twBY.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAJhyJzMqulSdGA6iKyaq2Tl10x14YNj8SFOIkTq0twBY..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -210,24 +208,22 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:increases ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> path(MESHD:Neoplasms)" .
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasConcept meshd:Neoplasms ;
-		a belv:Pathology , belv:Term ;
-		rdfs:label "path(MESHD:Neoplasms)" .
+		a belv:Pathology .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,D" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,D))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> path(MESHD:Neoplasms)" .
 }
 
 sub:Prov {
@@ -239,16 +235,17 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:35.945+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:05.865+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,C)) causesNoChange path(MESHD:Neoplasms)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA-ioTPq_s1A3-0YUI3UaBuTP6qhgjTiZPfWXL87WMp1A> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA-ioTPq_s1A3-0YUI3UaBuTP6qhgjTiZPfWXL87WMp1A.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA-ioTPq_s1A3-0YUI3UaBuTP6qhgjTiZPfWXL87WMp1A..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAIKtyXmYBxZAyIbOMQ93kRqSukSTyzFRtf3PnN_PLkCQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAIKtyXmYBxZAyIbOMQ93kRqSukSTyzFRtf3PnN_PLkCQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAIKtyXmYBxZAyIbOMQ93kRqSukSTyzFRtf3PnN_PLkCQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -271,24 +268,22 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:causesNoChange ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,C)) causesNoChange path(MESHD:Neoplasms)" .
+		rdf:object node:2 ;
+		rdf:predicate belv:causesNoChange ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasConcept meshd:Neoplasms ;
-		a belv:Pathology , belv:Term ;
-		rdfs:label "path(MESHD:Neoplasms)" .
+		a belv:Pathology .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,C" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,C))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,C)) causesNoChange path(MESHD:Neoplasms)" .
 }
 
 sub:Prov {
@@ -300,16 +295,17 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:36.022+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:05.881+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) => complex(p(HGNC:KRAS),p(MGI:Raf1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA-C8B1ws0epfzNJofpbnenc_tZ3c034yyIbEdkqdQLi0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA-C8B1ws0epfzNJofpbnenc_tZ3c034yyIbEdkqdQLi0.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA-C8B1ws0epfzNJofpbnenc_tZ3c034yyIbEdkqdQLi0..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8-cVCV3TJa9omKX-sCpBtnuhO3UP1NwHyBrcoIllC2o> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8-cVCV3TJa9omKX-sCpBtnuhO3UP1NwHyBrcoIllC2o.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA8-cVCV3TJa9omKX-sCpBtnuhO3UP1NwHyBrcoIllC2o..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -332,32 +328,28 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:directlyIncreases ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) => complex(p(HGNC:KRAS),p(MGI:Raf1))" .
+		rdf:object node:2 ;
+		rdf:predicate belv:directlyIncreases ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasChild node:5 , node:6 ;
-		a belv:ComplexAbundance , belv:Term ;
-		rdfs:label "complex(p(HGNC:KRAS),p(MGI:Raf1))" .
+		a belv:ComplexAbundance .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,V" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
 	
 	node:5 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
 	
 	node:6 belv:hasConcept mgi:Raf1 ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(MGI:Raf1)" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,V)) => complex(p(HGNC:KRAS),p(MGI:Raf1))" .
 }
 
 sub:Prov {
@@ -369,16 +361,17 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:36.100+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:05.897+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> kin(p(PFM:"MAPK Erk1/3 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RARGNgAwj4Qec5I7jU-Gze2fqeFYWTTk1CkJi982zDsJI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RARGNgAwj4Qec5I7jU-Gze2fqeFYWTTk1CkJi982zDsJI.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RARGNgAwj4Qec5I7jU-Gze2fqeFYWTTk1CkJi982zDsJI..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAIruRjKNHdlFRnYdAlLwm5bk_zApb9HSYGL7FE94hQvs> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAIruRjKNHdlFRnYdAlLwm5bk_zApb9HSYGL7FE94hQvs.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAIruRjKNHdlFRnYdAlLwm5bk_zApb9HSYGL7FE94hQvs..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -401,29 +394,26 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:increases ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasActivityType belv:Kinase ;
 		belv:hasChild node:5 ;
-		a belv:AbundanceActivity , belv:Term ;
-		rdfs:label "kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
+		a belv:AbundanceActivity .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,V" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
 	
 	node:5 belv:hasConcept pfm:%22MAPK%20Erk1%2F3%20Family%22 ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(PFM:\"MAPK Erk1/3 Family\")" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
 }
 
 sub:Prov {
@@ -435,16 +425,17 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:36.203+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:05.912+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) causesNoChange complex(p(HGNC:KRAS),p(MGI:Raf1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAdjG2zDYueoPdD4EnkDrFAa5Jxpbs2geP7PvWAjNRPIY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAdjG2zDYueoPdD4EnkDrFAa5Jxpbs2geP7PvWAjNRPIY.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAdjG2zDYueoPdD4EnkDrFAa5Jxpbs2geP7PvWAjNRPIY..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAeHjmRaJWH46IDDVyMGedGXKMBZPgpYG7vg3b3eBE8qU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAeHjmRaJWH46IDDVyMGedGXKMBZPgpYG7vg3b3eBE8qU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAeHjmRaJWH46IDDVyMGedGXKMBZPgpYG7vg3b3eBE8qU..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -467,32 +458,28 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:causesNoChange ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,D)) causesNoChange complex(p(HGNC:KRAS),p(MGI:Raf1))" .
+		rdf:object node:2 ;
+		rdf:predicate belv:causesNoChange ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasChild node:5 , node:6 ;
-		a belv:ComplexAbundance , belv:Term ;
-		rdfs:label "complex(p(HGNC:KRAS),p(MGI:Raf1))" .
+		a belv:ComplexAbundance .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,D" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,D))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
 	
 	node:5 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
 	
 	node:6 belv:hasConcept mgi:Raf1 ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(MGI:Raf1)" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,D)) causesNoChange complex(p(HGNC:KRAS),p(MGI:Raf1))" .
 }
 
 sub:Prov {
@@ -504,16 +491,17 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:36.293+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:05.923+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) causesNoChange kin(p(PFM:"MAPK Erk1/3 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAKzCDIQ_Gaw_MrzYuG9O-iRdqvpCOoN-dMQ3T6-WCzUU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAKzCDIQ_Gaw_MrzYuG9O-iRdqvpCOoN-dMQ3T6-WCzUU.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAKzCDIQ_Gaw_MrzYuG9O-iRdqvpCOoN-dMQ3T6-WCzUU..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAsGxmr4i-vTS5jOIRCsNNIsMSTX0XfceMGkTl299jgic> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAsGxmr4i-vTS5jOIRCsNNIsMSTX0XfceMGkTl299jgic.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAsGxmr4i-vTS5jOIRCsNNIsMSTX0XfceMGkTl299jgic..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -536,29 +524,26 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:causesNoChange ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,D)) causesNoChange kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
+		rdf:object node:2 ;
+		rdf:predicate belv:causesNoChange ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasActivityType belv:Kinase ;
 		belv:hasChild node:5 ;
-		a belv:AbundanceActivity , belv:Term ;
-		rdfs:label "kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
+		a belv:AbundanceActivity .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,D" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,D))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
 	
 	node:5 belv:hasConcept pfm:%22MAPK%20Erk1%2F3%20Family%22 ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(PFM:\"MAPK Erk1/3 Family\")" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,D)) causesNoChange kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
 }
 
 sub:Prov {
@@ -570,16 +555,17 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:36.408+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:05.934+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(complex(NCM:"p85/p110 PI3Kinase Complex"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1AZgyai_TcnGZK08hfhxHA6uE4WvYRiBZZo3GUXtq8M> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1AZgyai_TcnGZK08hfhxHA6uE4WvYRiBZZo3GUXtq8M.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA1AZgyai_TcnGZK08hfhxHA6uE4WvYRiBZZo3GUXtq8M..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAxoF9rCFtsMX3mU9PprpJl6S3ElUdD5XCVdqHcCdKXhM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAxoF9rCFtsMX3mU9PprpJl6S3ElUdD5XCVdqHcCdKXhM.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAxoF9rCFtsMX3mU9PprpJl6S3ElUdD5XCVdqHcCdKXhM..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -602,29 +588,26 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:increases ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(complex(NCM:\"p85/p110 PI3Kinase Complex\"))" .
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasActivityType belv:Kinase ;
 		belv:hasChild node:5 ;
-		a belv:AbundanceActivity , belv:Term ;
-		rdfs:label "kin(complex(NCM:\"p85/p110 PI3Kinase Complex\"))" .
+		a belv:AbundanceActivity .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,D" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,D))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
 	
 	node:5 belv:hasConcept ncm:%22p85%2Fp110%20PI3Kinase%20Complex%22 ;
-		a belv:ComplexAbundance , belv:Term ;
-		rdfs:label "complex(NCM:\"p85/p110 PI3Kinase Complex\")" .
+		a belv:ComplexAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(complex(NCM:\"p85/p110 PI3Kinase Complex\"))" .
 }
 
 sub:Prov {
@@ -637,16 +620,17 @@ p38 and FAK pathways.""" ;
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:36.492+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:05.943+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:"Akt Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA94wi1UkOxcRmIO5V6Ziu3E5japK_EJwXFSPLIY-1t2k> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA94wi1UkOxcRmIO5V6Ziu3E5japK_EJwXFSPLIY-1t2k.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA94wi1UkOxcRmIO5V6Ziu3E5japK_EJwXFSPLIY-1t2k..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAGkSpExXWLlxLSaXigNbifvasyAfDIpygECXsM8guenw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAGkSpExXWLlxLSaXigNbifvasyAfDIpygECXsM8guenw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAGkSpExXWLlxLSaXigNbifvasyAfDIpygECXsM8guenw..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -669,29 +653,26 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:increases ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Akt Family\"))" .
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasActivityType belv:Kinase ;
 		belv:hasChild node:5 ;
-		a belv:AbundanceActivity , belv:Term ;
-		rdfs:label "kin(p(PFM:\"Akt Family\"))" .
+		a belv:AbundanceActivity .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,D" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,D))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
 	
 	node:5 belv:hasConcept pfm:%22Akt%20Family%22 ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(PFM:\"Akt Family\")" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Akt Family\"))" .
 }
 
 sub:Prov {
@@ -704,16 +685,17 @@ p38 and FAK pathways.""" ;
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:36.568+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:05.962+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:"Mapk JNK Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1aVm6dvvqwI5Zquv0tXVh6b05WYwnF0xjEJdb7Aupe4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1aVm6dvvqwI5Zquv0tXVh6b05WYwnF0xjEJdb7Aupe4.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA1aVm6dvvqwI5Zquv0tXVh6b05WYwnF0xjEJdb7Aupe4..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAqSE4K1lxEyVs59GOHVlT5LTZ7xN0cNAEXPPI_VnDPXA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAqSE4K1lxEyVs59GOHVlT5LTZ7xN0cNAEXPPI_VnDPXA.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAqSE4K1lxEyVs59GOHVlT5LTZ7xN0cNAEXPPI_VnDPXA..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -736,29 +718,26 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:increases ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Mapk JNK Family\"))" .
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasActivityType belv:Kinase ;
 		belv:hasChild node:5 ;
-		a belv:AbundanceActivity , belv:Term ;
-		rdfs:label "kin(p(PFM:\"Mapk JNK Family\"))" .
+		a belv:AbundanceActivity .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,D" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,D))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
 	
 	node:5 belv:hasConcept pfm:%22Mapk%20JNK%20Family%22 ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(PFM:\"Mapk JNK Family\")" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Mapk JNK Family\"))" .
 }
 
 sub:Prov {
@@ -771,16 +750,17 @@ p38 and FAK pathways.""" ;
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:36.621+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:05.969+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:"Mapk p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAaR8nUKyNH_QHYZaZhWTJB-XLatb4dXHe13aSxlMzuVY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAaR8nUKyNH_QHYZaZhWTJB-XLatb4dXHe13aSxlMzuVY.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAaR8nUKyNH_QHYZaZhWTJB-XLatb4dXHe13aSxlMzuVY..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAso2jEIlGE5uxuIEwjG4hP33SLAx3eiimlFiQWZQAKMg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAso2jEIlGE5uxuIEwjG4hP33SLAx3eiimlFiQWZQAKMg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAso2jEIlGE5uxuIEwjG4hP33SLAx3eiimlFiQWZQAKMg..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -803,29 +783,26 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:increases ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Mapk p38 Family\"))" .
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasActivityType belv:Kinase ;
 		belv:hasChild node:5 ;
-		a belv:AbundanceActivity , belv:Term ;
-		rdfs:label "kin(p(PFM:\"Mapk p38 Family\"))" .
+		a belv:AbundanceActivity .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,D" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,D))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
 	
 	node:5 belv:hasConcept pfm:%22Mapk%20p38%20Family%22 ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(PFM:\"Mapk p38 Family\")" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Mapk p38 Family\"))" .
 }
 
 sub:Prov {
@@ -838,16 +815,17 @@ p38 and FAK pathways.""" ;
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:36.658+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:05.976+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(MGI:Ptk2))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA13D-lPPUUm5xcZ2xfUyKlOf9D0p3Kv4ZcCVtCPl1pZY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA13D-lPPUUm5xcZ2xfUyKlOf9D0p3Kv4ZcCVtCPl1pZY.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA13D-lPPUUm5xcZ2xfUyKlOf9D0p3Kv4ZcCVtCPl1pZY..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAulK0vaBjbMXzq2-B6SwcjS1fRDj565c8IU6C7wG4gGg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAulK0vaBjbMXzq2-B6SwcjS1fRDj565c8IU6C7wG4gGg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAulK0vaBjbMXzq2-B6SwcjS1fRDj565c8IU6C7wG4gGg..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -870,29 +848,26 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:increases ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(MGI:Ptk2))" .
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasActivityType belv:Kinase ;
 		belv:hasChild node:5 ;
-		a belv:AbundanceActivity , belv:Term ;
-		rdfs:label "kin(p(MGI:Ptk2))" .
+		a belv:AbundanceActivity .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,D" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,D))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
 	
 	node:5 belv:hasConcept mgi:Ptk2 ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(MGI:Ptk2)" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(MGI:Ptk2))" .
 }
 
 sub:Prov {
@@ -905,16 +880,17 @@ p38 and FAK pathways.""" ;
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:36.689+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:05.983+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:RB1,pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJx6rXAhxLfwZlpwHcVsqLKMUqlvV63xMUWZJYqIGbKw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJx6rXAhxLfwZlpwHcVsqLKMUqlvV63xMUWZJYqIGbKw.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAJx6rXAhxLfwZlpwHcVsqLKMUqlvV63xMUWZJYqIGbKw..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAG2E3c46Dh4n8gZpNffnV60zOPXGxnq-AJyGiZnbE3Fs> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAG2E3c46Dh4n8gZpNffnV60zOPXGxnq-AJyGiZnbE3Fs.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAG2E3c46Dh4n8gZpNffnV60zOPXGxnq-AJyGiZnbE3Fs..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -936,30 +912,27 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:increases ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:RB1,pmod(P))" .
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasChild node:5 ;
 		belv:hasModification "P" ;
 		belv:hasModificationType belv:Phosphorylation ;
-		a belv:ModifiedProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:RB1,pmod(P))" .
+		a belv:ModifiedProteinAbundance .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,V" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
 	
 	node:5 belv:hasConcept hgnc:RB1 ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:RB1)" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:RB1,pmod(P))" .
 }
 
 sub:Prov {
@@ -971,16 +944,17 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:36.718+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:05.990+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:PCNA)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAaWOg1N5friiqF7WI04tcm6KamjMD_3iGcgzEv7aLnpQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAaWOg1N5friiqF7WI04tcm6KamjMD_3iGcgzEv7aLnpQ.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAaWOg1N5friiqF7WI04tcm6KamjMD_3iGcgzEv7aLnpQ..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJEdr2FABvDUfTOej_TFWvqROnrXGXPycRasPPLWTP-s> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJEdr2FABvDUfTOej_TFWvqROnrXGXPycRasPPLWTP-s.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAJEdr2FABvDUfTOej_TFWvqROnrXGXPycRasPPLWTP-s..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -1002,24 +976,22 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:increases ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:PCNA)" .
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasConcept hgnc:PCNA ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:PCNA)" .
+		a belv:ProteinAbundance .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,V" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:PCNA)" .
 }
 
 sub:Prov {
@@ -1031,16 +1003,17 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:36.744+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:05.998+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:CCNB1)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAk1G9QLnGM25J82mKSy4ovgup8iEbfz46YkfKFD3OTl8> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAk1G9QLnGM25J82mKSy4ovgup8iEbfz46YkfKFD3OTl8.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAk1G9QLnGM25J82mKSy4ovgup8iEbfz46YkfKFD3OTl8..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RATV89X9-FjbD9o8uazCCkFOCJDQTHDBc2D0c5PBfMvt4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RATV89X9-FjbD9o8uazCCkFOCJDQTHDBc2D0c5PBfMvt4.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RATV89X9-FjbD9o8uazCCkFOCJDQTHDBc2D0c5PBfMvt4..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -1062,24 +1035,22 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:increases ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:CCNB1)" .
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasConcept hgnc:CCNB1 ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:CCNB1)" .
+		a belv:ProteinAbundance .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,V" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:CCNB1)" .
 }
 
 sub:Prov {
@@ -1091,16 +1062,17 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:36.760+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:06.003+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:"G1/S transition of mitotic cell cycle")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA6TtTAwPJkUUNcT6pVA10u671u_BN2HDf_eqaycqJfqA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA6TtTAwPJkUUNcT6pVA10u671u_BN2HDf_eqaycqJfqA.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA6TtTAwPJkUUNcT6pVA10u671u_BN2HDf_eqaycqJfqA..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1baIi5rrbCg-vNcuK0_-y1cpcgoHjJ0VPe7HCyCxhyE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1baIi5rrbCg-vNcuK0_-y1cpcgoHjJ0VPe7HCyCxhyE.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA1baIi5rrbCg-vNcuK0_-y1cpcgoHjJ0VPe7HCyCxhyE..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -1123,24 +1095,22 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasConcept go:%22G1%2FS%20transition%20of%20mitotic%20cell%20cycle%22 ;
-		a belv:BiologicalProcess , belv:Term ;
-		rdfs:label "bp(GO:\"G1/S transition of mitotic cell cycle\")" .
+		a belv:BiologicalProcess .
 	
 	node:2 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:1 ;
-		belv:hasRelationship belv:increases ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:\"G1/S transition of mitotic cell cycle\")" .
+		rdf:object node:1 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,V" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:\"G1/S transition of mitotic cell cycle\")" .
 }
 
 sub:Prov {
@@ -1152,16 +1122,17 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:36.775+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:06.009+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:"G2/M transition of mitotic cell cycle")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAXhqNtts85n1c0oSAbwpZCw6yVwQ95PGdKCENO-0izy4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAXhqNtts85n1c0oSAbwpZCw6yVwQ95PGdKCENO-0izy4.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAXhqNtts85n1c0oSAbwpZCw6yVwQ95PGdKCENO-0izy4..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_pc4-FKqLd4dDYg3YhKD2PKbcLqyBeHtCQMt9SnVKsY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_pc4-FKqLd4dDYg3YhKD2PKbcLqyBeHtCQMt9SnVKsY.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA_pc4-FKqLd4dDYg3YhKD2PKbcLqyBeHtCQMt9SnVKsY..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -1184,24 +1155,22 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:increases ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:\"G2/M transition of mitotic cell cycle\")" .
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasConcept go:%22G2%2FM%20transition%20of%20mitotic%20cell%20cycle%22 ;
-		a belv:BiologicalProcess , belv:Term ;
-		rdfs:label "bp(GO:\"G2/M transition of mitotic cell cycle\")" .
+		a belv:BiologicalProcess .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,V" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:\"G2/M transition of mitotic cell cycle\")" .
 }
 
 sub:Prov {
@@ -1213,16 +1182,17 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:36.786+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:06.015+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) causesNoChange bp(GO:"regulation of apoptotic process")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAPodbq5JqhmbbySvXZyyMmaUgQta21KHtyR3hLbqpGBE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAPodbq5JqhmbbySvXZyyMmaUgQta21KHtyR3hLbqpGBE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAPodbq5JqhmbbySvXZyyMmaUgQta21KHtyR3hLbqpGBE..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAlOb5pCm0Wocaxh9xXVC8d7M37StB9SZ9VaAaKLYf6GQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAlOb5pCm0Wocaxh9xXVC8d7M37StB9SZ9VaAaKLYf6GQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAlOb5pCm0Wocaxh9xXVC8d7M37StB9SZ9VaAaKLYf6GQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -1245,24 +1215,22 @@ sub:Head {
 
 sub:Ass {
 	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
-		belv:hasObject node:2 ;
-		belv:hasRelationship belv:causesNoChange ;
-		belv:hasSubject node:3 ;
-		a belv:Statement ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V)) causesNoChange bp(GO:\"regulation of apoptotic process\")" .
+		rdf:object node:2 ;
+		rdf:predicate belv:causesNoChange ;
+		rdf:subject node:3 ;
+		a rdf:Statement .
 	
 	node:2 belv:hasConcept go:%22regulation%20of%20apoptotic%20process%22 ;
-		a belv:BiologicalProcess , belv:Term ;
-		rdfs:label "bp(GO:\"regulation of apoptotic process\")" .
+		a belv:BiologicalProcess .
 	
 	node:3 belv:hasChild node:4 ;
 		belv:hasSubstitution "G,12,V" ;
-		a belv:ProteinVariantAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS,sub(G,12,V))" .
+		a belv:ProteinVariantAbundance .
 	
 	node:4 belv:hasConcept hgnc:KRAS ;
-		a belv:ProteinAbundance , belv:Term ;
-		rdfs:label "p(HGNC:KRAS)" .
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "p(HGNC:KRAS,sub(G,12,V)) causesNoChange bp(GO:\"regulation of apoptotic process\")" .
 }
 
 sub:Prov {
@@ -1274,7 +1242,7 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T16:39:36.797+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-15T17:23:06.021+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
