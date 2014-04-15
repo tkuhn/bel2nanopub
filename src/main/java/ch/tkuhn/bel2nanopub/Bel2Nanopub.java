@@ -66,6 +66,11 @@ public class Bel2Nanopub {
 		System.out.println(obj.errors + " error(s)");
 	}
 
+	private static final URI provValue = new URIImpl("http://www.w3.org/ns/prov#value");
+	private static final URI provWasQuotedFrom = new URIImpl("http://www.w3.org/ns/prov#wasQuotedFrom");
+	private static final URI provWasDerivedFrom = new URIImpl("http://www.w3.org/ns/prov#wasDerivedFrom");
+	private static final URI provHadPrimarySource = new URIImpl("http://www.w3.org/ns/prov#hadPrimarySource");
+
 	private int bnodeCount = 0;
 	private BELDocument belDoc;
 	private List<Nanopub> nanopubs = new ArrayList<Nanopub>();
@@ -117,6 +122,7 @@ public class Bel2Nanopub {
 				npCreator.addNamespace("dc", "http://purl.org/dc/terms/");
 				npCreator.addNamespace("np", "http://www.nanopub.org/nschema#");
 				npCreator.addNamespace("belv", BelRdfVocabulary.BELV_NS);
+				npCreator.addNamespace("prov", "http://www.w3.org/ns/prov#");
 				try {
 					processBelStatement(bst, npCreator);
 				} catch (Bel2NanopubException ex) {
@@ -182,18 +188,24 @@ public class Bel2Nanopub {
 			}
 		}
 		BELCitation cit = belStatement.getCitation();
+		URI citUri = null;
 		if (cit != null) {
 			if (!cit.getType().toLowerCase().equals("pubmed")) {
 				throw new Bel2NanopubException("Unsupported citation type: " + cit.getType() + " " + cit.getComment());
 			}
-			URI citUri = new URIImpl("http://www.ncbi.nlm.nih.gov/pubmed/" + cit.getReference());
-			npCreator.addProvenanceStatement(BelRdfVocabulary.hasCitation, citUri);
+			citUri = new URIImpl("http://www.ncbi.nlm.nih.gov/pubmed/" + cit.getReference());
+			npCreator.addProvenanceStatement(provHadPrimarySource, citUri);
 			npCreator.addNamespace("pubmed", "http://www.ncbi.nlm.nih.gov/pubmed/");
 		}
 		BELEvidence ev = belStatement.getEvidence();
 		if (ev != null) {
 			Literal l = vf.createLiteral(ev.getEvidenceLine());
-			npCreator.addProvenanceStatement(BelRdfVocabulary.hasEvidenceText, l);
+			BNode q = newBNode();
+			npCreator.addProvenanceStatement(q, provValue, l);
+			npCreator.addProvenanceStatement(provWasDerivedFrom, q);
+			if (citUri != null) {
+				npCreator.addProvenanceStatement(q, provWasQuotedFrom, citUri);
+			}
 		}
 		return bn;
 	}
