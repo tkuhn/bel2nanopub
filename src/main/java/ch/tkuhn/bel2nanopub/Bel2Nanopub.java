@@ -12,8 +12,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import net.trustyuri.rdf.TransformNanopub;
-
 import org.nanopub.Nanopub;
 import org.nanopub.NanopubCreator;
 import org.nanopub.NanopubUtils;
@@ -135,7 +133,7 @@ public class Bel2Nanopub {
 					npCreator.addCreator(creatorId);
 				}
 				try {
-					Nanopub np = TransformNanopub.transform(npCreator.finalizeNanopub(true));
+					Nanopub np = npCreator.finalizeTrustyNanopub(true);
 					System.out.println("NANOPUB:");
 					NanopubUtils.writeToStream(np, System.out, RDFFormat.TRIG);
 					nanopubs.add(np);
@@ -186,7 +184,7 @@ public class Bel2Nanopub {
 		BELCitation cit = belStatement.getCitation();
 		if (cit != null) {
 			if (!cit.getType().toLowerCase().equals("pubmed")) {
-				throw new Bel2NanopubException("Unsupported citation type: " + cit.getType());
+				throw new Bel2NanopubException("Unsupported citation type: " + cit.getType() + " " + cit.getComment());
 			}
 			URI citUri = new URIImpl("http://www.ncbi.nlm.nih.gov/pubmed/" + cit.getReference());
 			npCreator.addProvenanceStatement(BelRdfVocabulary.hasCitation, citUri);
@@ -250,18 +248,14 @@ public class Bel2Nanopub {
 		}
 		for (Term varTerm : protTerm.getTerms()) {
 			String modAbbrev = varTerm.getFunctionEnum().getAbbreviation();
+			String varString = varTerm.toBELShortForm().replaceFirst("^.*\\((.*)\\).*$", "$1");
 			if (modAbbrev.equals("pmod")) {
 				npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.modifiedProteinAbundance);
-				String m = "";
-				for (Parameter p : varTerm.getParameters()) {
-					m += "," + p.getValue();
+				URI modtypeUri = BelRdfVocabulary.getModificationType(varString.substring(0, 1));
+				if (modtypeUri != null) {
+					npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasModificationType, modtypeUri);
 				}
-				m = m.substring(1);
-				URI modUri = BelRdfVocabulary.getModification(m);
-				if (modUri == null) {
-					throw new Bel2NanopubException("Unknown modification: " + m);
-				}
-				npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasModificationType, modUri);
+				npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasModification, vf.createLiteral(varString));
 			} else  {
 				String var = BelRdfVocabulary.getNormalizedVariant(modAbbrev);
 				if (var == null) {
@@ -270,8 +264,7 @@ public class Bel2Nanopub {
 				npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.proteinVariantAbundance);
 				// TODO What to do with protein variants? (they are ignored by bel2rdf)
 				if (var.equals(BelRdfVocabulary.getNormalizedVariant("sub"))) {
-					String subString = varTerm.toBELShortForm().replaceFirst("^.*\\((.*)\\).*$", "$1");
-					npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasSubstitution, vf.createLiteral(subString));
+					npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasSubstitution, vf.createLiteral(varString));
 				} else {
 					throw new Bel2NanopubException("Unsupported protein variant: " + var);
 				}

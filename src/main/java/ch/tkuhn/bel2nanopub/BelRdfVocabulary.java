@@ -33,6 +33,7 @@ public class BelRdfVocabulary {
 	// ---
 	// Made up URIs, not used by official BEL tools:
 	public static final URI hasSubstitution = new URIImpl(BELV_NS + "hasSubstitution");
+	public static final URI hasModification = new URIImpl(BELV_NS + "hasModification");
 	// ---
 
 	public static final URI proteinVariantAbundance = new URIImpl(BELV_NS + "ProteinVariantAbundance");
@@ -66,6 +67,12 @@ public class BelRdfVocabulary {
 		functionMap.put("ribo", new URIImpl(BELV_NS + "AbundanceActivity"));
 		functionMap.put("tscript", new URIImpl(BELV_NS + "AbundanceActivity"));
 		functionMap.put("tport", new URIImpl(BELV_NS + "AbundanceActivity"));
+
+		// Made up URIs, not used by official BEL tools:
+		functionMap.put("reactants", new URIImpl(BELV_NS + "ReactionReactants"));
+		functionMap.put("products", new URIImpl(BELV_NS + "ReactionProducts"));
+		functionMap.put("surf", new URIImpl(BELV_NS + "CellSurfaceExpression"));
+		functionMap.put("list", new URIImpl(BELV_NS + "List"));
 	}
 
 	public static URI getFunction(String abbrev) {
@@ -133,6 +140,13 @@ public class BelRdfVocabulary {
 		relMap.put("prognosticBiomarkerFor", new URIImpl(BELV_NS + "prognosticBiomarkerFor"));
 		relMap.put("rateLimitingStepOf", new URIImpl(BELV_NS + "rateLimitingStepOf"));
 		relMap.put("subProcessOf", new URIImpl(BELV_NS + "subProcessOf"));
+
+		// Made up URIs, not used by official BEL tools:
+		relMap.put("transcribedTo", new URIImpl(BELV_NS + "transcribedTo"));
+		relMap.put("translatedTo", new URIImpl(BELV_NS + "translatedTo"));
+		relMap.put("translocates", new URIImpl(BELV_NS + "translocates"));
+		relMap.put("hasMembers", new URIImpl(BELV_NS + "hasMembers"));
+		relMap.put("hasComponents", new URIImpl(BELV_NS + "hasComponents"));
 	}
 
 	public static URI getRel(String rel) {
@@ -158,25 +172,22 @@ public class BelRdfVocabulary {
 		return activityMap.get(activity);
 	}
 
-	private static Map<String,URI> modificationMap = new HashMap<String,URI>();
+	private static Map<String,URI> modtypeMap = new HashMap<String,URI>();
 
 	static {
-		modificationMap.put("P,S", new URIImpl(BELV_NS + "PhosphorylationSerine"));
-		modificationMap.put("P,T", new URIImpl(BELV_NS + "PhosphorylationThreonine"));
-		modificationMap.put("P,Y", new URIImpl(BELV_NS + "PhosphorylationTyrosine"));
-		modificationMap.put("A", new URIImpl(BELV_NS + "Acetylation"));
-		modificationMap.put("F", new URIImpl(BELV_NS + "Farnesylation"));
-		modificationMap.put("G", new URIImpl(BELV_NS + "Glycosylation"));
-		modificationMap.put("H", new URIImpl(BELV_NS + "Hydroxylation"));
-		modificationMap.put("M", new URIImpl(BELV_NS + "Methylation"));
-		modificationMap.put("P", new URIImpl(BELV_NS + "Phosphorylation"));
-		modificationMap.put("R", new URIImpl(BELV_NS + "Ribosylation"));
-		modificationMap.put("S", new URIImpl(BELV_NS + "Sumoylation"));
-		modificationMap.put("U", new URIImpl(BELV_NS + "Ubiquitination"));
+		modtypeMap.put("A", new URIImpl(BELV_NS + "Acetylation"));
+		modtypeMap.put("F", new URIImpl(BELV_NS + "Farnesylation"));
+		modtypeMap.put("G", new URIImpl(BELV_NS + "Glycosylation"));
+		modtypeMap.put("H", new URIImpl(BELV_NS + "Hydroxylation"));
+		modtypeMap.put("M", new URIImpl(BELV_NS + "Methylation"));
+		modtypeMap.put("P", new URIImpl(BELV_NS + "Phosphorylation"));
+		modtypeMap.put("R", new URIImpl(BELV_NS + "Ribosylation"));
+		modtypeMap.put("S", new URIImpl(BELV_NS + "Sumoylation"));
+		modtypeMap.put("U", new URIImpl(BELV_NS + "Ubiquitination"));
 	}
 
-	public static URI getModification(String mod) {
-		return modificationMap.get(mod);
+	public static URI getModificationType(String modtype) {
+		return modtypeMap.get(modtype);
 	}
 
 	private static Map<String,String> variantNormalizeMap = new HashMap<String,String>();
