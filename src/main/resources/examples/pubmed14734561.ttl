@@ -1,0 +1,193 @@
+# File produced by bel.rb (https://github.com/OpenBEL/bel.rb)
+
+<http://www.openbel.org/bel/path_MESHD_Werner_Syndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Pathology>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "path(MESHD:\"Werner Syndrome\")";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/Werner%20Syndrome> .
+<http://www.openbel.org/bel/path_MESHD_Genomic_Instability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Pathology>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "path(MESHD:\"Genomic Instability\")";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/Genomic%20Instability> .
+<http://www.openbel.org/bel/path_MESHD_Werner_Syndrome_positiveCorrelation_path_MESHD_Genomic_Instability> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/path_MESHD_Werner_Syndrome>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/path_MESHD_Genomic_Instability>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "positiveCorrelation";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "path(MESHD:\"Werner Syndrome\") positiveCorrelation path(MESHD:\"Genomic Instability\")" .
+_:g12065240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/path_MESHD_Werner_Syndrome_positiveCorrelation_path_MESHD_Genomic_Instability> <http://www.openbel.org/vocabulary/hasEvidence> _:g12065240 .
+_:g12065240 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/path_MESHD_Werner_Syndrome_positiveCorrelation_path_MESHD_Genomic_Instability>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:14734561>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """Werner's syndrome (WS) is an inherited disease\
+characterized by genomic instability and premature aging.""" .
+<http://www.openbel.org/bel/path_MESHD_Werner_Syndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Pathology>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "path(MESHD:\"Werner Syndrome\")";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/Werner%20Syndrome> .
+<http://www.openbel.org/bel/path_MESHD_Aging__Premature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Pathology>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "path(MESHD:\"Aging, Premature\")";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/Aging,%20Premature> .
+<http://www.openbel.org/bel/path_MESHD_Werner_Syndrome_positiveCorrelation_path_MESHD_Aging__Premature> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/path_MESHD_Werner_Syndrome>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/path_MESHD_Aging__Premature>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "positiveCorrelation";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "path(MESHD:\"Werner Syndrome\") positiveCorrelation path(MESHD:\"Aging, Premature\")" .
+_:g13360380 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/path_MESHD_Werner_Syndrome_positiveCorrelation_path_MESHD_Aging__Premature> <http://www.openbel.org/vocabulary/hasEvidence> _:g13360380 .
+_:g13360380 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/path_MESHD_Werner_Syndrome_positiveCorrelation_path_MESHD_Aging__Premature>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:14734561>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """Werner's syndrome (WS) is an inherited disease\
+characterized by genomic instability and premature aging.""" .
+<http://www.openbel.org/bel/complex_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_WRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ComplexAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "complex(p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:WRN))";
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_HGNC_XRCC5> .
+<http://www.openbel.org/bel/p_HGNC_XRCC5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:XRCC5)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/XRCC5> .
+<http://www.openbel.org/bel/complex_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_WRN> <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_HGNC_XRCC6> .
+<http://www.openbel.org/bel/p_HGNC_XRCC6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:XRCC6)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/XRCC6> .
+<http://www.openbel.org/bel/complex_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_WRN> <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_HGNC_WRN> .
+<http://www.openbel.org/bel/p_HGNC_WRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:WRN)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/WRN> .
+<http://www.openbel.org/bel/cat_p_HGNC_WRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/AbundanceActivity>;
+ <http://www.openbel.org/vocabulary/hasActivityType> <http://www.openbel.org/vocabulary/Catalytic>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "cat(p(HGNC:WRN))";
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_HGNC_WRN> .
+<http://www.openbel.org/bel/p_HGNC_WRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:WRN)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/WRN> .
+<http://www.openbel.org/bel/complex_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_WRN_directlyIncreases_cat_p_HGNC_WRN> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/complex_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_WRN>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/cat_p_HGNC_WRN>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "directlyIncreases";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "complex(p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:WRN)) => cat(p(HGNC:WRN))" .
+_:g10369600 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/complex_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_WRN_directlyIncreases_cat_p_HGNC_WRN> <http://www.openbel.org/vocabulary/hasEvidence> _:g10369600 .
+_:g10369600 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/complex_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_WRN_directlyIncreases_cat_p_HGNC_WRN>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:14734561>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """We have previously reported that WRN interacts\
+with Ku70/80 and this interaction strongly stimulates WRN\
+exonuclease activity.""" .
+<http://www.openbel.org/bel/complex_p_HGNC_XRCC5_p_HGNC_WRN> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/complex_p_HGNC_XRCC5_p_HGNC_WRN>;
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ComplexAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "complex(p(HGNC:XRCC5),p(HGNC:WRN))";
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_HGNC_XRCC5> .
+<http://www.openbel.org/bel/p_HGNC_XRCC5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:XRCC5)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/XRCC5> .
+<http://www.openbel.org/bel/complex_p_HGNC_XRCC5_p_HGNC_WRN> <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_HGNC_WRN> .
+<http://www.openbel.org/bel/p_HGNC_WRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:WRN)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/WRN> .
+<http://www.openbel.org/bel/complex_p_HGNC_XRCC5_p_HGNC_WRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "complex(p(HGNC:XRCC5),p(HGNC:WRN))" .
+_:g10719080 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/complex_p_HGNC_XRCC5_p_HGNC_WRN> <http://www.openbel.org/vocabulary/hasEvidence> _:g10719080 .
+_:g10719080 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/complex_p_HGNC_XRCC5_p_HGNC_WRN>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:14734561>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """To this end, we identified three proteins that are stably\
+associated with WRN in nuclear extracts. Two of these proteins, Ku70 and\
+Ku80, were identified by immunoblot analysis. The third polypeptide,\
+which was identified by mass spectrometry analysis, is identical to\
+poly(ADP-ribose) polymerase-1(PARP-1), a 113-kDa enzyme that functions\
+ as a sensor of DNA damage.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/cell-structure/Cell%20Nucleus> .
+<http://www.openbel.org/bel/complex_p_HGNC_XRCC6_p_HGNC_WRN> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/complex_p_HGNC_XRCC6_p_HGNC_WRN>;
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ComplexAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "complex(p(HGNC:XRCC6),p(HGNC:WRN))";
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_HGNC_XRCC6> .
+<http://www.openbel.org/bel/p_HGNC_XRCC6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:XRCC6)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/XRCC6> .
+<http://www.openbel.org/bel/complex_p_HGNC_XRCC6_p_HGNC_WRN> <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_HGNC_WRN> .
+<http://www.openbel.org/bel/p_HGNC_WRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:WRN)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/WRN> .
+<http://www.openbel.org/bel/complex_p_HGNC_XRCC6_p_HGNC_WRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "complex(p(HGNC:XRCC6),p(HGNC:WRN))" .
+_:g12397000 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/complex_p_HGNC_XRCC6_p_HGNC_WRN> <http://www.openbel.org/vocabulary/hasEvidence> _:g12397000 .
+_:g12397000 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/complex_p_HGNC_XRCC6_p_HGNC_WRN>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:14734561>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """To this end, we identified three proteins that are stably\
+associated with WRN in nuclear extracts. Two of these proteins, Ku70 and\
+Ku80, were identified by immunoblot analysis. The third polypeptide,\
+which was identified by mass spectrometry analysis, is identical to\
+poly(ADP-ribose) polymerase-1(PARP-1), a 113-kDa enzyme that functions\
+ as a sensor of DNA damage.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/cell-structure/Cell%20Nucleus> .
+<http://www.openbel.org/bel/complex_p_HGNC_PARP1_p_HGNC_WRN> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/complex_p_HGNC_PARP1_p_HGNC_WRN>;
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ComplexAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "complex(p(HGNC:PARP1),p(HGNC:WRN))";
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_HGNC_PARP1> .
+<http://www.openbel.org/bel/p_HGNC_PARP1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:PARP1)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/PARP1> .
+<http://www.openbel.org/bel/complex_p_HGNC_PARP1_p_HGNC_WRN> <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_HGNC_WRN> .
+<http://www.openbel.org/bel/p_HGNC_WRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:WRN)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/WRN> .
+<http://www.openbel.org/bel/complex_p_HGNC_PARP1_p_HGNC_WRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "complex(p(HGNC:PARP1),p(HGNC:WRN))" .
+_:g12484920 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/complex_p_HGNC_PARP1_p_HGNC_WRN> <http://www.openbel.org/vocabulary/hasEvidence> _:g12484920 .
+_:g12484920 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/complex_p_HGNC_PARP1_p_HGNC_WRN>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:14734561>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """To this end, we identified three proteins that are stably\
+associated with WRN in nuclear extracts. Two of these proteins, Ku70 and\
+Ku80, were identified by immunoblot analysis. The third polypeptide,\
+which was identified by mass spectrometry analysis, is identical to\
+poly(ADP-ribose) polymerase-1(PARP-1), a 113-kDa enzyme that functions\
+ as a sensor of DNA damage.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/cell-structure/Cell%20Nucleus> .
+<http://www.openbel.org/bel/complex_p_HGNC_WRN_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_PARP1> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/complex_p_HGNC_WRN_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_PARP1>;
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ComplexAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "complex(p(HGNC:WRN),p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:PARP1))";
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_HGNC_WRN> .
+<http://www.openbel.org/bel/p_HGNC_WRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:WRN)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/WRN> .
+<http://www.openbel.org/bel/complex_p_HGNC_WRN_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_PARP1> <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_HGNC_XRCC5> .
+<http://www.openbel.org/bel/p_HGNC_XRCC5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:XRCC5)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/XRCC5> .
+<http://www.openbel.org/bel/complex_p_HGNC_WRN_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_PARP1> <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_HGNC_XRCC6> .
+<http://www.openbel.org/bel/p_HGNC_XRCC6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:XRCC6)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/XRCC6> .
+<http://www.openbel.org/bel/complex_p_HGNC_WRN_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_PARP1> <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_HGNC_PARP1> .
+<http://www.openbel.org/bel/p_HGNC_PARP1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:PARP1)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/PARP1> .
+<http://www.openbel.org/bel/complex_p_HGNC_WRN_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_PARP1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "complex(p(HGNC:WRN),p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:PARP1))" .
+_:g13145300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/complex_p_HGNC_WRN_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_PARP1> <http://www.openbel.org/vocabulary/hasEvidence> _:g13145300 .
+_:g13145300 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/complex_p_HGNC_WRN_p_HGNC_XRCC5_p_HGNC_XRCC6_p_HGNC_PARP1>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:14734561>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """Protein interaction assays with purified proteins further\
+indicated that PARP-1 binds directly to WRN and assembles in a complex\
+with WRN and Ku70/80."""

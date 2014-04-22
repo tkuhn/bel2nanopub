@@ -1,0 +1,581 @@
+# File produced by bel.rb (https://github.com/OpenBEL/bel.rb)
+
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_V> .
+<http://www.openbel.org/bel/sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,V)" .
+<http://www.openbel.org/bel/path_MESHD_Neoplasm_Metastasis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Pathology>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "path(MESHD:\"Neoplasm Metastasis\")";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/Neoplasm%20Metastasis> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_prognosticBiomarkerFor_path_MESHD_Neoplasm_Metastasis> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/path_MESHD_Neoplasm_Metastasis>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "prognosticBiomarkerFor";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:\"Neoplasm Metastasis\")" .
+_:g7857240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_prognosticBiomarkerFor_path_MESHD_Neoplasm_Metastasis> <http://www.openbel.org/vocabulary/hasEvidence> _:g7857240 .
+_:g7857240 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_prognosticBiomarkerFor_path_MESHD_Neoplasm_Metastasis>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """K-Ras Asp12 (K12D) is more prevalent in benign than in\
+malignant human colorectal tumors, whereas K-Ras Val12 (K12V) associates\
+with more advanced and metastatic carcinomas, higher recurrence and\
+decreased survival.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/9606>,
+  <http://www.openbel.org/bel/annotation/disease/Colorectal%20Neoplasms> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_V> .
+<http://www.openbel.org/bel/sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,V)" .
+<http://www.openbel.org/bel/path_MESHD_Recurrence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Pathology>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "path(MESHD:Recurrence)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/Recurrence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_prognosticBiomarkerFor_path_MESHD_Recurrence> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/path_MESHD_Recurrence>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "prognosticBiomarkerFor";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:Recurrence)" .
+_:g5115540 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_prognosticBiomarkerFor_path_MESHD_Recurrence> <http://www.openbel.org/vocabulary/hasEvidence> _:g5115540 .
+_:g5115540 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_prognosticBiomarkerFor_path_MESHD_Recurrence>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """K-Ras Asp12 (K12D) is more prevalent in benign than in\
+malignant human colorectal tumors, whereas K-Ras Val12 (K12V) associates\
+with more advanced and metastatic carcinomas, higher recurrence and\
+decreased survival.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/9606>,
+  <http://www.openbel.org/bel/annotation/disease/Colorectal%20Neoplasms> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_V> .
+<http://www.openbel.org/bel/sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,V)" .
+<http://www.openbel.org/bel/path_MESHD_Neoplasms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Pathology>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "path(MESHD:Neoplasms)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/Neoplasms> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_path_MESHD_Neoplasms> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/path_MESHD_Neoplasms>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "increases";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V)) -> path(MESHD:Neoplasms)" .
+_:g5684080 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_path_MESHD_Neoplasms> <http://www.openbel.org/vocabulary/hasEvidence> _:g5684080 .
+_:g5684080 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_path_MESHD_Neoplasms>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """We found that the K12V oncogene induces a more aggressive\
+tumorigenic phenotype than the K12D oncogene, whereas K12C does not induce\
+tumors in this model.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,D))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_D> .
+<http://www.openbel.org/bel/sub_G_12_D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,D)" .
+<http://www.openbel.org/bel/path_MESHD_Neoplasms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Pathology>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "path(MESHD:Neoplasms)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/Neoplasms> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_path_MESHD_Neoplasms> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/path_MESHD_Neoplasms>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "increases";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,D)) -> path(MESHD:Neoplasms)" .
+_:g6240380 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_path_MESHD_Neoplasms> <http://www.openbel.org/vocabulary/hasEvidence> _:g6240380 .
+_:g6240380 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_path_MESHD_Neoplasms>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """We found that the K12V oncogene induces a more aggressive\
+tumorigenic phenotype than the K12D oncogene, whereas K12C does not induce\
+tumors in this model.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,C))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_C> .
+<http://www.openbel.org/bel/sub_G_12_C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,C)" .
+<http://www.openbel.org/bel/path_MESHD_Neoplasms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Pathology>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "path(MESHD:Neoplasms)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/Neoplasms> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_C_causesNoChange_path_MESHD_Neoplasms> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_C>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/path_MESHD_Neoplasms>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "causesNoChange";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,C)) causesNoChange path(MESHD:Neoplasms)" .
+_:g7932640 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_C_causesNoChange_path_MESHD_Neoplasms> <http://www.openbel.org/vocabulary/hasEvidence> _:g7932640 .
+_:g7932640 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_C_causesNoChange_path_MESHD_Neoplasms>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """We found that the K12V oncogene induces a more aggressive\
+tumorigenic phenotype than the K12D oncogene, whereas K12C does not induce\
+tumors in this model.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_V> .
+<http://www.openbel.org/bel/sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,V)" .
+<http://www.openbel.org/bel/complex_p_HGNC_KRAS_p_MGI_Raf1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ComplexAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "complex(p(HGNC:KRAS),p(MGI:Raf1))";
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_HGNC_KRAS> .
+<http://www.openbel.org/bel/p_HGNC_KRAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS> .
+<http://www.openbel.org/bel/complex_p_HGNC_KRAS_p_MGI_Raf1> <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_MGI_Raf1> .
+<http://www.openbel.org/bel/p_MGI_Raf1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(MGI:Raf1)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/Raf1> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_directlyIncreases_complex_p_HGNC_KRAS_p_MGI_Raf1> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/complex_p_HGNC_KRAS_p_MGI_Raf1>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "directlyIncreases";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V)) => complex(p(HGNC:KRAS),p(MGI:Raf1))" .
+_:g8644000 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_directlyIncreases_complex_p_HGNC_KRAS_p_MGI_Raf1> <http://www.openbel.org/vocabulary/hasEvidence> _:g8644000 .
+_:g8644000 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_directlyIncreases_complex_p_HGNC_KRAS_p_MGI_Raf1>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """A molecular analysis of the induced tumors shows that\
+the K12V mutant protein interacts with Raf-1 and transduces signals mainly through the Erk pathway.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_V> .
+<http://www.openbel.org/bel/sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,V)" .
+<http://www.openbel.org/bel/kin_p_PFM_MAPK_Erk1/3_Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/AbundanceActivity>;
+ <http://www.openbel.org/vocabulary/hasActivityType> <http://www.openbel.org/vocabulary/Kinase>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "kin(p(PFM:\"MAPK Erk1/3 Family\"))";
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_PFM_MAPK_Erk1/3_Family> .
+<http://www.openbel.org/bel/p_PFM_MAPK_Erk1/3_Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(PFM:\"MAPK Erk1/3 Family\")";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/MAPK%20Erk1/3%20Family> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_kin_p_PFM_MAPK_Erk1/3_Family> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/kin_p_PFM_MAPK_Erk1/3_Family>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "increases";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V)) -> kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
+_:g12032460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_kin_p_PFM_MAPK_Erk1/3_Family> <http://www.openbel.org/vocabulary/hasEvidence> _:g12032460 .
+_:g12032460 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_kin_p_PFM_MAPK_Erk1/3_Family>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """A molecular analysis of the induced tumors shows that\
+the K12V mutant protein interacts with Raf-1 and transduces signals mainly through the Erk pathway.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,D))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_D> .
+<http://www.openbel.org/bel/sub_G_12_D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,D)" .
+<http://www.openbel.org/bel/complex_p_HGNC_KRAS_p_MGI_Raf1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ComplexAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "complex(p(HGNC:KRAS),p(MGI:Raf1))";
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_HGNC_KRAS> .
+<http://www.openbel.org/bel/p_HGNC_KRAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS> .
+<http://www.openbel.org/bel/complex_p_HGNC_KRAS_p_MGI_Raf1> <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_MGI_Raf1> .
+<http://www.openbel.org/bel/p_MGI_Raf1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(MGI:Raf1)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/Raf1> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_causesNoChange_complex_p_HGNC_KRAS_p_MGI_Raf1> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/complex_p_HGNC_KRAS_p_MGI_Raf1>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "causesNoChange";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,D)) causesNoChange complex(p(HGNC:KRAS),p(MGI:Raf1))" .
+_:g12267600 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_causesNoChange_complex_p_HGNC_KRAS_p_MGI_Raf1> <http://www.openbel.org/vocabulary/hasEvidence> _:g12267600 .
+_:g12267600 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_causesNoChange_complex_p_HGNC_KRAS_p_MGI_Raf1>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """Unexpectedly, in tumors induced by the K12D oncogene,\
+the K-Ras mutant protein does not interact with Raf-1 nor activates\
+the Erk canonical pathway.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,D))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_D> .
+<http://www.openbel.org/bel/sub_G_12_D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,D)" .
+<http://www.openbel.org/bel/kin_p_PFM_MAPK_Erk1/3_Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/AbundanceActivity>;
+ <http://www.openbel.org/vocabulary/hasActivityType> <http://www.openbel.org/vocabulary/Kinase>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "kin(p(PFM:\"MAPK Erk1/3 Family\"))";
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_PFM_MAPK_Erk1/3_Family> .
+<http://www.openbel.org/bel/p_PFM_MAPK_Erk1/3_Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(PFM:\"MAPK Erk1/3 Family\")";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/MAPK%20Erk1/3%20Family> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_causesNoChange_kin_p_PFM_MAPK_Erk1/3_Family> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/kin_p_PFM_MAPK_Erk1/3_Family>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "causesNoChange";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,D)) causesNoChange kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
+_:g12387460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_causesNoChange_kin_p_PFM_MAPK_Erk1/3_Family> <http://www.openbel.org/vocabulary/hasEvidence> _:g12387460 .
+_:g12387460 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_causesNoChange_kin_p_PFM_MAPK_Erk1/3_Family>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """Unexpectedly, in tumors induced by the K12D oncogene,\
+the K-Ras mutant protein does not interact with Raf-1 nor activates\
+the Erk canonical pathway.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,D))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_D> .
+<http://www.openbel.org/bel/sub_G_12_D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,D)" .
+<http://www.openbel.org/bel/kin_complex_NCM_p85/p110_PI3Kinase_Complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/AbundanceActivity>;
+ <http://www.openbel.org/vocabulary/hasActivityType> <http://www.openbel.org/vocabulary/Kinase>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "kin(complex(NCM:\"p85/p110 PI3Kinase Complex\"))";
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/complex_NCM_p85/p110_PI3Kinase_Complex> .
+<http://www.openbel.org/bel/complex_NCM_p85/p110_PI3Kinase_Complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ComplexAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "complex(NCM:\"p85/p110 PI3Kinase Complex\")";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/p85/p110%20PI3Kinase%20Complex> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_kin_complex_NCM_p85/p110_PI3Kinase_Complex> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/kin_complex_NCM_p85/p110_PI3Kinase_Complex>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "increases";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,D)) -> kin(complex(NCM:\"p85/p110 PI3Kinase Complex\"))" .
+_:g12543720 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_kin_complex_NCM_p85/p110_PI3Kinase_Complex> <http://www.openbel.org/vocabulary/hasEvidence> _:g12543720 .
+_:g12543720 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_kin_complex_NCM_p85/p110_PI3Kinase_Complex>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """Instead, it transduces signals through the PI3K/Akt, JNK,
+p38 and FAK pathways.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,D))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_D> .
+<http://www.openbel.org/bel/sub_G_12_D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,D)" .
+<http://www.openbel.org/bel/kin_p_PFM_Akt_Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/AbundanceActivity>;
+ <http://www.openbel.org/vocabulary/hasActivityType> <http://www.openbel.org/vocabulary/Kinase>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "kin(p(PFM:\"Akt Family\"))";
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_PFM_Akt_Family> .
+<http://www.openbel.org/bel/p_PFM_Akt_Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(PFM:\"Akt Family\")";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/Akt%20Family> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_kin_p_PFM_Akt_Family> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/kin_p_PFM_Akt_Family>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "increases";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Akt Family\"))" .
+_:g12699760 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_kin_p_PFM_Akt_Family> <http://www.openbel.org/vocabulary/hasEvidence> _:g12699760 .
+_:g12699760 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_kin_p_PFM_Akt_Family>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """Instead, it transduces signals through the PI3K/Akt, JNK,
+p38 and FAK pathways.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,D))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_D> .
+<http://www.openbel.org/bel/sub_G_12_D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,D)" .
+<http://www.openbel.org/bel/kin_p_PFM_Mapk_JNK_Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/AbundanceActivity>;
+ <http://www.openbel.org/vocabulary/hasActivityType> <http://www.openbel.org/vocabulary/Kinase>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "kin(p(PFM:\"Mapk JNK Family\"))";
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_PFM_Mapk_JNK_Family> .
+<http://www.openbel.org/bel/p_PFM_Mapk_JNK_Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(PFM:\"Mapk JNK Family\")";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/Mapk%20JNK%20Family> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_kin_p_PFM_Mapk_JNK_Family> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/kin_p_PFM_Mapk_JNK_Family>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "increases";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Mapk JNK Family\"))" .
+_:g12936020 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_kin_p_PFM_Mapk_JNK_Family> <http://www.openbel.org/vocabulary/hasEvidence> _:g12936020 .
+_:g12936020 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_kin_p_PFM_Mapk_JNK_Family>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """Instead, it transduces signals through the PI3K/Akt, JNK,
+p38 and FAK pathways.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,D))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_D> .
+<http://www.openbel.org/bel/sub_G_12_D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,D)" .
+<http://www.openbel.org/bel/kin_p_PFM_Mapk_p38_Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/AbundanceActivity>;
+ <http://www.openbel.org/vocabulary/hasActivityType> <http://www.openbel.org/vocabulary/Kinase>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "kin(p(PFM:\"Mapk p38 Family\"))";
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_PFM_Mapk_p38_Family> .
+<http://www.openbel.org/bel/p_PFM_Mapk_p38_Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(PFM:\"Mapk p38 Family\")";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/Mapk%20p38%20Family> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_kin_p_PFM_Mapk_p38_Family> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/kin_p_PFM_Mapk_p38_Family>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "increases";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Mapk p38 Family\"))" .
+_:g13065680 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_kin_p_PFM_Mapk_p38_Family> <http://www.openbel.org/vocabulary/hasEvidence> _:g13065680 .
+_:g13065680 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_kin_p_PFM_Mapk_p38_Family>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """Instead, it transduces signals through the PI3K/Akt, JNK,
+p38 and FAK pathways.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,D))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_D> .
+<http://www.openbel.org/bel/sub_G_12_D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,D)" .
+<http://www.openbel.org/bel/kin_p_MGI_Ptk2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/AbundanceActivity>;
+ <http://www.openbel.org/vocabulary/hasActivityType> <http://www.openbel.org/vocabulary/Kinase>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "kin(p(MGI:Ptk2))";
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_MGI_Ptk2> .
+<http://www.openbel.org/bel/p_MGI_Ptk2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(MGI:Ptk2)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/Ptk2> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_kin_p_MGI_Ptk2> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/kin_p_MGI_Ptk2>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "increases";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(MGI:Ptk2))" .
+_:g13175460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_kin_p_MGI_Ptk2> <http://www.openbel.org/vocabulary/hasEvidence> _:g13175460 .
+_:g13175460 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_D_increases_kin_p_MGI_Ptk2>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """Instead, it transduces signals through the PI3K/Akt, JNK,
+p38 and FAK pathways.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_V> .
+<http://www.openbel.org/bel/sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,V)" .
+<http://www.openbel.org/bel/p_HGNC_RB1_pmod_P> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ModifiedProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:RB1,pmod(P))";
+ <http://www.openbel.org/vocabulary/hasModificationType> <http://www.openbel.org/vocabulary/Phosphorylation>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/p_HGNC_RB1> .
+<http://www.openbel.org/bel/p_HGNC_RB1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:RB1)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/RB1> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_p_HGNC_RB1_pmod_P> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/p_HGNC_RB1_pmod_P>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "increases";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:RB1,pmod(P))" .
+_:g13377960 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_p_HGNC_RB1_pmod_P> <http://www.openbel.org/vocabulary/hasEvidence> _:g13377960 .
+_:g13377960 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_p_HGNC_RB1_pmod_P>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """Finally, the higher growth rate of the K12V tumors associates\
+with enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistent\
+with faster G1/S and G2/M transitions, without alteration of apoptotic\
+regulation.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_V> .
+<http://www.openbel.org/bel/sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,V)" .
+<http://www.openbel.org/bel/p_HGNC_PCNA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:PCNA)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/PCNA> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_p_HGNC_PCNA> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/p_HGNC_PCNA>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "increases";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:PCNA)" .
+_:g14021460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_p_HGNC_PCNA> <http://www.openbel.org/vocabulary/hasEvidence> _:g14021460 .
+_:g14021460 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_p_HGNC_PCNA>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """Finally, the higher growth rate of the K12V tumors associates\
+with enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistent\
+with faster G1/S and G2/M transitions, without alteration of apoptotic\
+regulation.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_V> .
+<http://www.openbel.org/bel/sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,V)" .
+<http://www.openbel.org/bel/p_HGNC_CCNB1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:CCNB1)";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/CCNB1> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_p_HGNC_CCNB1> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/p_HGNC_CCNB1>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "increases";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:CCNB1)" .
+_:g14086440 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_p_HGNC_CCNB1> <http://www.openbel.org/vocabulary/hasEvidence> _:g14086440 .
+_:g14086440 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_p_HGNC_CCNB1>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """Finally, the higher growth rate of the K12V tumors associates\
+with enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistent\
+with faster G1/S and G2/M transitions, without alteration of apoptotic\
+regulation.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_V> .
+<http://www.openbel.org/bel/sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,V)" .
+<http://www.openbel.org/bel/bp_GO_G1/S_transition_of_mitotic_cell_cycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/BiologicalProcess>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "bp(GO:\"G1/S transition of mitotic cell cycle\")";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/G1/S%20transition%20of%20mitotic%20cell%20cycle> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_bp_GO_G1/S_transition_of_mitotic_cell_cycle> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/bp_GO_G1/S_transition_of_mitotic_cell_cycle>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "increases";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:\"G1/S transition of mitotic cell cycle\")" .
+_:g14172920 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_bp_GO_G1/S_transition_of_mitotic_cell_cycle> <http://www.openbel.org/vocabulary/hasEvidence> _:g14172920 .
+_:g14172920 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_bp_GO_G1/S_transition_of_mitotic_cell_cycle>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """Finally, the higher growth rate of the K12V tumors associates\
+with enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistent\
+with faster G1/S and G2/M transitions, without alteration of apoptotic\
+regulation.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_V> .
+<http://www.openbel.org/bel/sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,V)" .
+<http://www.openbel.org/bel/bp_GO_G2/M_transition_of_mitotic_cell_cycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/BiologicalProcess>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "bp(GO:\"G2/M transition of mitotic cell cycle\")";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/G2/M%20transition%20of%20mitotic%20cell%20cycle> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_bp_GO_G2/M_transition_of_mitotic_cell_cycle> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/bp_GO_G2/M_transition_of_mitotic_cell_cycle>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "increases";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:\"G2/M transition of mitotic cell cycle\")" .
+_:g14242580 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_bp_GO_G2/M_transition_of_mitotic_cell_cycle> <http://www.openbel.org/vocabulary/hasEvidence> _:g14242580 .
+_:g14242580 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_increases_bp_GO_G2/M_transition_of_mitotic_cell_cycle>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """Finally, the higher growth rate of the K12V tumors associates\
+with enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistent\
+with faster G1/S and G2/M transitions, without alteration of apoptotic\
+regulation.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/ProteinAbundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V))";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/KRAS>;
+ <http://www.openbel.org/vocabulary/hasChild> <http://www.openbel.org/bel/sub_G_12_V> .
+<http://www.openbel.org/bel/sub_G_12_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/Abundance>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "sub(G,12,V)" .
+<http://www.openbel.org/bel/bp_GO_regulation_of_apoptotic_process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Term>,
+  <http://www.openbel.org/vocabulary/BiologicalProcess>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "bp(GO:\"regulation of apoptotic process\")";
+ <http://www.openbel.org/vocabulary/hasConcept> <http://www.openbel.org/bel/namespace/regulation%20of%20apoptotic%20process> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_causesNoChange_bp_GO_regulation_of_apoptotic_process> <http://www.openbel.org/vocabulary/hasSubject> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V>;
+ <http://www.openbel.org/vocabulary/hasObject> <http://www.openbel.org/bel/bp_GO_regulation_of_apoptotic_process>;
+ <http://www.openbel.org/vocabulary/hasRelationship> "causesNoChange";
+ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Statement>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "p(HGNC:KRAS,sub(G,12,V)) causesNoChange bp(GO:\"regulation of apoptotic process\")" .
+_:g14315900 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openbel.org/vocabulary/Evidence> .
+<http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_causesNoChange_bp_GO_regulation_of_apoptotic_process> <http://www.openbel.org/vocabulary/hasEvidence> _:g14315900 .
+_:g14315900 <http://www.openbel.org/vocabulary/hasStatement> <http://www.openbel.org/bel/p_HGNC_KRAS_sub_G_12_V_causesNoChange_bp_GO_regulation_of_apoptotic_process>;
+ <http://www.openbel.org/vocabulary/hasCitation> <http://bio2rdf.org/pubmed:16679305>;
+ <http://www.openbel.org/vocabulary/hasEvidenceText> """Finally, the higher growth rate of the K12V tumors associates\
+with enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistent\
+with faster G1/S and G2/M transitions, without alteration of apoptotic\
+regulation.""";
+ <http://www.openbel.org/vocabulary/hasAnnotation> <http://www.openbel.org/bel/annotation/species-taxonomy-id/10090>,
+  <http://www.openbel.org/bel/annotation/cell-line/3T3-Swiss%20albino>
