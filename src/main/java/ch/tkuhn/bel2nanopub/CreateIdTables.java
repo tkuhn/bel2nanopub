@@ -13,12 +13,12 @@ import org.openrdf.rio.RDFParser;
 import org.openrdf.rio.Rio;
 import org.openrdf.rio.helpers.RDFHandlerBase;
 
-public class CreateIdMaps {
+public class CreateIdTables {
 
 	private static String baseUri = "http://example.org/foo";
 
 	public static void main(String[] args) throws Exception {
-		CreateIdMaps obj = new CreateIdMaps();
+		CreateIdTables obj = new CreateIdTables();
 		obj.run();
 	}
 
@@ -27,7 +27,7 @@ public class CreateIdMaps {
 	private String label;
 	private BufferedWriter writer;
 
-	public CreateIdMaps() throws Exception {
+	public CreateIdTables() throws Exception {
 	}
 
 	public void run() throws Exception {

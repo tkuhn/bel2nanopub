@@ -3,7 +3,7 @@
 # The following environment variable can be used:
 # - JAVA_OPTS: Can be used to set Java command line options
 
-CLASS=ch.tkuhn.bel2nanopub.CreateIdMaps
+CLASS=ch.tkuhn.bel2nanopub.CreateIdTables
 
 DIR=`pwd`
 cd "$( dirname "${BASH_SOURCE[0]}" )"

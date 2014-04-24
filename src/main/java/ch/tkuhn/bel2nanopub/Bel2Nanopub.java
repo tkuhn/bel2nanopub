@@ -2,8 +2,6 @@ package ch.tkuhn.bel2nanopub;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -76,7 +74,7 @@ public class Bel2Nanopub {
 	private List<Nanopub> nanopubs = new ArrayList<Nanopub>();
 	private int errors = 0;
 
-	private Map<String,URI> namespaceMap = new HashMap<String,URI>();
+	private Map<String,String> namespaceMap = new HashMap<String,String>();
 	private Map<String,URI> annotationMap = new HashMap<String,URI>();
 
 	private ValueFactoryImpl vf = new ValueFactoryImpl();
@@ -154,9 +152,7 @@ public class Bel2Nanopub {
 
 	private void readNamespaces() {
 		for (BELNamespaceDefinition d : belDoc.getNamespaceDefinitions()) {
-			String uriString = d.getResourceLocation().replaceFirst("\\.belns$", "");
-			if (!uriString.endsWith("/")) uriString += "/";
-			namespaceMap.put(d.getPrefix(), new URIImpl(uriString));
+			namespaceMap.put(d.getPrefix(), d.getResourceLocation());
 		}
 	}
 
@@ -183,7 +179,7 @@ public class Bel2Nanopub {
 			} else {
 				npCreator.addNamespace(annN.toLowerCase(), annNs);
 				for (String annV : ann.getValues()) {
-					URI annUri = new URIImpl(annNs + encodeUrlString(annV));
+					URI annUri = new URIImpl(annNs + Utils.encodeUrlString(annV));
 					npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasAnnotation, annUri);
 				}
 			}
@@ -297,12 +293,11 @@ public class Bel2Nanopub {
 			throw new Bel2NanopubException("Invalid parameter: " + param);
 		}
 		String prefix = param.getNamespace().getPrefix();
-		URI ns = namespaceMap.get(prefix);
-		if (ns == null) {
+		String belNs = namespaceMap.get(prefix);
+		if (belNs == null) {
 			throw new Bel2NanopubException("Unknown namespace: " + prefix);
 		}
-		npCreator.addNamespace(prefix.toLowerCase(), ns);
-		return new URIImpl(ns + encodeUrlString(param.getValue()));
+		return GeneralVocabulary.makeUri(prefix, belNs, param.getValue(), npCreator);
 	}
 
 	private BNode processBelStatement(Statement statement, NanopubCreator npCreator) throws Bel2NanopubException {
@@ -342,15 +337,6 @@ public class Bel2Nanopub {
 			byte[] encoded = Files.readAllBytes(file.toPath());
 			return Charset.forName("UTF-8").decode(ByteBuffer.wrap(encoded)).toString();
 		} catch (IOException ex) {
-			ex.printStackTrace();
-			return null;
-		}
-	}
-
-	private static String encodeUrlString(String s) {
-		try {
-			return URLEncoder.encode(s, "UTF-8").replace("+", "%20");
-		} catch (UnsupportedEncodingException ex) {
 			ex.printStackTrace();
 			return null;
 		}

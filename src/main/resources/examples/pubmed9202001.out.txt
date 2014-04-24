@@ -1,9 +1,9 @@
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAvcV88cmHP2lc3e57qDTthqIuxACvDMuPFOZOclgMHYU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAvcV88cmHP2lc3e57qDTthqIuxACvDMuPFOZOclgMHYU.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAvcV88cmHP2lc3e57qDTthqIuxACvDMuPFOZOclgMHYU..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA955xiBCwbaXpgMIEjJgcE1YSuwNOgDbFPp3k9pXCMv4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA955xiBCwbaXpgMIEjJgcE1YSuwNOgDbFPp3k9pXCMv4.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA955xiBCwbaXpgMIEjJgcE1YSuwNOgDbFPp3k9pXCMv4..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -12,7 +12,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -40,7 +40,7 @@ sub:Ass {
 	node:3 belv:hasConcept chebi:%22phorbol%2013-acetate%2012-myristate%22 ;
 		a belv:Abundance .
 	
-	node:4 belv:hasConcept hgnc:MAPK1 ;
+	node:4 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> kin(p(HGNC:MAPK1))" .
@@ -55,15 +55,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.488+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.352+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJKx9_uxiDEBOiMMUvLqobZNpqmQ1EewUQ4ix3uabszY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJKx9_uxiDEBOiMMUvLqobZNpqmQ1EewUQ4ix3uabszY.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAJKx9_uxiDEBOiMMUvLqobZNpqmQ1EewUQ4ix3uabszY..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAwIJ0LfgvO6ieNAJ758-UaO_Ve5g95j8LMRVD0nvw8r0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAwIJ0LfgvO6ieNAJ758-UaO_Ve5g95j8LMRVD0nvw8r0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAwIJ0LfgvO6ieNAJ758-UaO_Ve5g95j8LMRVD0nvw8r0..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -72,7 +72,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -100,7 +100,7 @@ sub:Ass {
 	node:3 belv:hasConcept chebi:%22phorbol%2013-acetate%2012-myristate%22 ;
 		a belv:Abundance .
 	
-	node:4 belv:hasConcept hgnc:MAPK8 ;
+	node:4 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> kin(p(HGNC:MAPK8))" .
@@ -115,15 +115,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.614+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.467+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RACX299g5uBVDy5If8AkxV8likabHVqiP35PpOrydDzMk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RACX299g5uBVDy5If8AkxV8likabHVqiP35PpOrydDzMk.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RACX299g5uBVDy5If8AkxV8likabHVqiP35PpOrydDzMk..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RASzjqinEMUGsC2beOusvUiyWYx4WaYm0o9dij_9SwYeY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RASzjqinEMUGsC2beOusvUiyWYx4WaYm0o9dij_9SwYeY.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RASzjqinEMUGsC2beOusvUiyWYx4WaYm0o9dij_9SwYeY..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -175,15 +175,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.629+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.481+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:MAPK1,pmod(P,T)) => kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAwSsTFc3nFXT4HhxCRwRD5nK3fuH0wC--U0Rus1t1z1M> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAwSsTFc3nFXT4HhxCRwRD5nK3fuH0wC--U0Rus1t1z1M.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAwSsTFc3nFXT4HhxCRwRD5nK3fuH0wC--U0Rus1t1z1M..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJJjUwAqZhk1sZ9AnDDxVusoJQt_BFCvXUznTu32lJR8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJJjUwAqZhk1sZ9AnDDxVusoJQt_BFCvXUznTu32lJR8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAJJjUwAqZhk1sZ9AnDDxVusoJQt_BFCvXUznTu32lJR8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -191,7 +191,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -221,10 +221,10 @@ sub:Ass {
 		belv:hasModificationType belv:Phosphorylation ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:MAPK1 ;
+	node:4 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:MAPK1 ;
+	node:5 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "p(HGNC:MAPK1,pmod(P,T)) => kin(p(HGNC:MAPK1))" .
@@ -239,15 +239,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.642+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.495+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:MAPK1,pmod(P,Y)) => kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAg1yz7COoOmn7AW0OpNN14KlS5MFYvZ3IShoWApGnZ1Y> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAg1yz7COoOmn7AW0OpNN14KlS5MFYvZ3IShoWApGnZ1Y.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAg1yz7COoOmn7AW0OpNN14KlS5MFYvZ3IShoWApGnZ1Y..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAvIUKFrFj881AobZtOCLnI1PK_mNFQ0b0fB47-H6Pa_c> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAvIUKFrFj881AobZtOCLnI1PK_mNFQ0b0fB47-H6Pa_c.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAvIUKFrFj881AobZtOCLnI1PK_mNFQ0b0fB47-H6Pa_c..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -255,7 +255,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -285,10 +285,10 @@ sub:Ass {
 		belv:hasModificationType belv:Phosphorylation ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:MAPK1 ;
+	node:4 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:MAPK1 ;
+	node:5 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "p(HGNC:MAPK1,pmod(P,Y)) => kin(p(HGNC:MAPK1))" .
@@ -303,15 +303,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.666+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.513+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:MAPK8,pmod(P,T)) => kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAH3xy1lptNl8iSqhvyDolEL5F32N-bNuJxTYiL4Z_IaI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAH3xy1lptNl8iSqhvyDolEL5F32N-bNuJxTYiL4Z_IaI.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAH3xy1lptNl8iSqhvyDolEL5F32N-bNuJxTYiL4Z_IaI..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAKn-9DZwpNZOkkEeEyeDGZ_ihTpdx0-cGs1MlkhK5Xpk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAKn-9DZwpNZOkkEeEyeDGZ_ihTpdx0-cGs1MlkhK5Xpk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAKn-9DZwpNZOkkEeEyeDGZ_ihTpdx0-cGs1MlkhK5Xpk..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -319,7 +319,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -349,10 +349,10 @@ sub:Ass {
 		belv:hasModificationType belv:Phosphorylation ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:MAPK8 ;
+	node:4 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:MAPK8 ;
+	node:5 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "p(HGNC:MAPK8,pmod(P,T)) => kin(p(HGNC:MAPK8))" .
@@ -367,15 +367,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.689+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.528+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:MAPK8,pmod(P,Y)) => kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RABh6rTYkWPHl4kitcmAdZG2F4eMXuHkB4kCUKjX0cOoI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RABh6rTYkWPHl4kitcmAdZG2F4eMXuHkB4kCUKjX0cOoI.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RABh6rTYkWPHl4kitcmAdZG2F4eMXuHkB4kCUKjX0cOoI..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAsrlmxWNMLJ7mEEZQPEUKI8jaJ0BK3oNz5XxYgm9n2CY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAsrlmxWNMLJ7mEEZQPEUKI8jaJ0BK3oNz5XxYgm9n2CY.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAsrlmxWNMLJ7mEEZQPEUKI8jaJ0BK3oNz5XxYgm9n2CY..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -383,7 +383,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -413,10 +413,10 @@ sub:Ass {
 		belv:hasModificationType belv:Phosphorylation ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:MAPK8 ;
+	node:4 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:MAPK8 ;
+	node:5 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "p(HGNC:MAPK8,pmod(P,Y)) => kin(p(HGNC:MAPK8))" .
@@ -431,15 +431,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.711+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.562+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:MAPK14,pmod(P,T)) => kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAYGNtkET0p9s-dQmXczdJ1uZENdvrSJTWtoN7WiODzHU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAYGNtkET0p9s-dQmXczdJ1uZENdvrSJTWtoN7WiODzHU.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAYGNtkET0p9s-dQmXczdJ1uZENdvrSJTWtoN7WiODzHU..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RADkEv8X6zFV9uHm7yRzhyU3AbCh0vsZEqMk4k-H1UPdE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RADkEv8X6zFV9uHm7yRzhyU3AbCh0vsZEqMk4k-H1UPdE.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RADkEv8X6zFV9uHm7yRzhyU3AbCh0vsZEqMk4k-H1UPdE..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -447,7 +447,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
@@ -478,7 +478,7 @@ sub:Ass {
 		belv:hasModificationType belv:Phosphorylation ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:MAPK14 ;
+	node:4 belv:hasConcept hgnc:6876 ;
 		a belv:ProteinAbundance .
 	
 	node:5 belv:hasConcept pfh:%22MAPK%20p38%20Family%22 ;
@@ -496,15 +496,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.735+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.582+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:MAPK14,pmod(P,Y)) => kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA2zZNJIJNtdOOcNPHDBiVRKjRSqj2uiMiJ7vmymshwwc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA2zZNJIJNtdOOcNPHDBiVRKjRSqj2uiMiJ7vmymshwwc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA2zZNJIJNtdOOcNPHDBiVRKjRSqj2uiMiJ7vmymshwwc..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3rKvpPaUn53KfEq7rDzNzPYihsiM0amkHR3tXAiwFds> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3rKvpPaUn53KfEq7rDzNzPYihsiM0amkHR3tXAiwFds.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA3rKvpPaUn53KfEq7rDzNzPYihsiM0amkHR3tXAiwFds..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -512,7 +512,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
@@ -543,7 +543,7 @@ sub:Ass {
 		belv:hasModificationType belv:Phosphorylation ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:MAPK14 ;
+	node:4 belv:hasConcept hgnc:6876 ;
 		a belv:ProteinAbundance .
 	
 	node:5 belv:hasConcept pfh:%22MAPK%20p38%20Family%22 ;
@@ -561,15 +561,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.753+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.600+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK1,pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAfgm-R4RZbkw3X7CvL6tCvasveZkqF0-NN8ozU89wH8Q> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAfgm-R4RZbkw3X7CvL6tCvasveZkqF0-NN8ozU89wH8Q.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAfgm-R4RZbkw3X7CvL6tCvasveZkqF0-NN8ozU89wH8Q..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAeamhC-NsPWZp6hWT4plmZ4f7gzAJXOrRWvqth-vrUHw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAeamhC-NsPWZp6hWT4plmZ4f7gzAJXOrRWvqth-vrUHw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAeamhC-NsPWZp6hWT4plmZ4f7gzAJXOrRWvqth-vrUHw..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -577,7 +577,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -607,10 +607,10 @@ sub:Ass {
 		belv:hasChild node:4 ;
 		a belv:AbundanceActivity .
 	
-	node:4 belv:hasConcept hgnc:DUSP1 ;
+	node:4 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:MAPK1 ;
+	node:5 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK1,pmod(P))" .
@@ -625,15 +625,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.787+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.613+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK8,pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAEBo78wXXyMWqX2CpwJz19cYhSgGUGNyl6Mdx890lPvo> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAEBo78wXXyMWqX2CpwJz19cYhSgGUGNyl6Mdx890lPvo.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAEBo78wXXyMWqX2CpwJz19cYhSgGUGNyl6Mdx890lPvo..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAYiv3DodOo0AcuUPYchjAcsLsJHuQqtWlg3S9sUglx1I> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAYiv3DodOo0AcuUPYchjAcsLsJHuQqtWlg3S9sUglx1I.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAYiv3DodOo0AcuUPYchjAcsLsJHuQqtWlg3S9sUglx1I..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -641,7 +641,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -671,10 +671,10 @@ sub:Ass {
 		belv:hasChild node:4 ;
 		a belv:AbundanceActivity .
 	
-	node:4 belv:hasConcept hgnc:DUSP1 ;
+	node:4 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:MAPK8 ;
+	node:5 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK8,pmod(P))" .
@@ -689,15 +689,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.799+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.628+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(PFH:"MAPK p38 Family",pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAc-8DvMpcTe3nIu4kBQPGzqEY0u09aMCDCIB23Wq19vE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAc-8DvMpcTe3nIu4kBQPGzqEY0u09aMCDCIB23Wq19vE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAc-8DvMpcTe3nIu4kBQPGzqEY0u09aMCDCIB23Wq19vE..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAx-3mCTzMhU83aWgxZO6ps8bgfkjy590dRPlhHzRKaRg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAx-3mCTzMhU83aWgxZO6ps8bgfkjy590dRPlhHzRKaRg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAx-3mCTzMhU83aWgxZO6ps8bgfkjy590dRPlhHzRKaRg..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -705,7 +705,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
@@ -736,7 +736,7 @@ sub:Ass {
 		belv:hasChild node:4 ;
 		a belv:AbundanceActivity .
 	
-	node:4 belv:hasConcept hgnc:DUSP1 ;
+	node:4 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
 	node:5 belv:hasConcept pfh:%22MAPK%20p38%20Family%22 ;
@@ -754,15 +754,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.808+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.634+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAVfHPPk_VTaYYV-RvFQQ7d9JT9pTbdvX9n9AgVsTl6Ak> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAVfHPPk_VTaYYV-RvFQQ7d9JT9pTbdvX9n9AgVsTl6Ak.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAVfHPPk_VTaYYV-RvFQQ7d9JT9pTbdvX9n9AgVsTl6Ak..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAX8-OtlD9l7du3rPuscJCmjUq-vkFRPrP1TxAOmSu5e8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAX8-OtlD9l7du3rPuscJCmjUq-vkFRPrP1TxAOmSu5e8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAX8-OtlD9l7du3rPuscJCmjUq-vkFRPrP1TxAOmSu5e8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -770,7 +770,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -799,10 +799,10 @@ sub:Ass {
 		belv:hasChild node:4 ;
 		a belv:AbundanceActivity .
 	
-	node:4 belv:hasConcept hgnc:DUSP1 ;
+	node:4 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:MAPK1 ;
+	node:5 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK1))" .
@@ -817,15 +817,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.817+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.641+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJ2xOjaDJBlobnoacBuFNPkhxnfOlxgdFwr1yntvjGzU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJ2xOjaDJBlobnoacBuFNPkhxnfOlxgdFwr1yntvjGzU.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAJ2xOjaDJBlobnoacBuFNPkhxnfOlxgdFwr1yntvjGzU..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAUji6wGOjuIT7jSc3UCALhN7cZrbaKXQ2zOGGEqlEX3Y> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAUji6wGOjuIT7jSc3UCALhN7cZrbaKXQ2zOGGEqlEX3Y.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAUji6wGOjuIT7jSc3UCALhN7cZrbaKXQ2zOGGEqlEX3Y..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -833,7 +833,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -862,10 +862,10 @@ sub:Ass {
 		belv:hasChild node:4 ;
 		a belv:AbundanceActivity .
 	
-	node:4 belv:hasConcept hgnc:DUSP1 ;
+	node:4 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:MAPK8 ;
+	node:5 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK8))" .
@@ -880,15 +880,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.826+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.648+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAIpKCAAyp9DA3H33utQAfbxE1zyzOFLepEWNkJd7VY28> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAIpKCAAyp9DA3H33utQAfbxE1zyzOFLepEWNkJd7VY28.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAIpKCAAyp9DA3H33utQAfbxE1zyzOFLepEWNkJd7VY28..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAbqjYxnOZjVOTYh1Lk52uWc0dpB2Yy9JEXJsZYlRdI9Y> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAbqjYxnOZjVOTYh1Lk52uWc0dpB2Yy9JEXJsZYlRdI9Y.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAbqjYxnOZjVOTYh1Lk52uWc0dpB2Yy9JEXJsZYlRdI9Y..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -896,7 +896,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
@@ -926,7 +926,7 @@ sub:Ass {
 		belv:hasChild node:4 ;
 		a belv:AbundanceActivity .
 	
-	node:4 belv:hasConcept hgnc:DUSP1 ;
+	node:4 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
 	node:5 belv:hasConcept pfh:%22MAPK%20p38%20Family%22 ;
@@ -944,15 +944,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.833+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.655+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA2IQPZ_qtDh7LVHx_N2ccrLTXihHW3rH6_xZ1HokcxHI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA2IQPZ_qtDh7LVHx_N2ccrLTXihHW3rH6_xZ1HokcxHI.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA2IQPZ_qtDh7LVHx_N2ccrLTXihHW3rH6_xZ1HokcxHI..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8qw4bL_EUs3CG2tvdrmDjyJ9PL-6NbWHJ1863puXxdY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8qw4bL_EUs3CG2tvdrmDjyJ9PL-6NbWHJ1863puXxdY.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA8qw4bL_EUs3CG2tvdrmDjyJ9PL-6NbWHJ1863puXxdY..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -961,7 +961,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -982,7 +982,7 @@ sub:Ass {
 		rdf:subject node:3 ;
 		a rdf:Statement .
 	
-	node:2 belv:hasConcept hgnc:DUSP1 ;
+	node:2 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
 	node:3 belv:hasConcept chebi:%22phorbol%2013-acetate%2012-myristate%22 ;
@@ -1000,15 +1000,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.840+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.662+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:JUN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAlp8CNj9aq6WrU3_2g-iQr6gkd5rLy6hXR0pLFrYPSds> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAlp8CNj9aq6WrU3_2g-iQr6gkd5rLy6hXR0pLFrYPSds.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAlp8CNj9aq6WrU3_2g-iQr6gkd5rLy6hXR0pLFrYPSds..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAmWQepClPLPJuavurnSb2KJWVBzzNoEL-wltClgsmVa8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAmWQepClPLPJuavurnSb2KJWVBzzNoEL-wltClgsmVa8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAmWQepClPLPJuavurnSb2KJWVBzzNoEL-wltClgsmVa8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1017,7 +1017,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -1045,7 +1045,7 @@ sub:Ass {
 	node:3 belv:hasConcept chebi:%22phorbol%2013-acetate%2012-myristate%22 ;
 		a belv:Abundance .
 	
-	node:4 belv:hasConcept hgnc:JUN ;
+	node:4 belv:hasConcept hgnc:6204 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> tscript(p(HGNC:JUN))" .
@@ -1060,15 +1060,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.845+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.668+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) -| tscript(p(HGNC:JUN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAKZGobH6Bb476hqD3_h7JkkP78P2mLbSt5N9bgy5k1E0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAKZGobH6Bb476hqD3_h7JkkP78P2mLbSt5N9bgy5k1E0.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAKZGobH6Bb476hqD3_h7JkkP78P2mLbSt5N9bgy5k1E0..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAfPrJxAaXgOwLA_KvhOcfXQQVGtuWe0S_2s4Icv8QLsk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAfPrJxAaXgOwLA_KvhOcfXQQVGtuWe0S_2s4Icv8QLsk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAfPrJxAaXgOwLA_KvhOcfXQQVGtuWe0S_2s4Icv8QLsk..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1076,7 +1076,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -1091,7 +1091,7 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasConcept hgnc:JUN ;
+	node:1 belv:hasConcept hgnc:6204 ;
 		a belv:ProteinAbundance .
 	
 	node:2 belv:hasAnnotation cellline:U-937 , species:9606 ;
@@ -1108,7 +1108,7 @@ sub:Ass {
 		belv:hasChild node:5 ;
 		a belv:AbundanceActivity .
 	
-	node:5 belv:hasConcept hgnc:DUSP1 ;
+	node:5 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "phos(p(HGNC:DUSP1)) -| tscript(p(HGNC:JUN))" .
@@ -1123,15 +1123,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.853+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.673+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:ELK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAz8hIbSQx2U7fV3ZupsoRtB2BECW4XH2RW6VT7KeilE0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAz8hIbSQx2U7fV3ZupsoRtB2BECW4XH2RW6VT7KeilE0.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAz8hIbSQx2U7fV3ZupsoRtB2BECW4XH2RW6VT7KeilE0..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAfA6VPCzdQ8UwfZEoiq4FlywiKfzYcPWvNmUDp6d-Fb0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAfA6VPCzdQ8UwfZEoiq4FlywiKfzYcPWvNmUDp6d-Fb0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAfA6VPCzdQ8UwfZEoiq4FlywiKfzYcPWvNmUDp6d-Fb0..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1140,7 +1140,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -1168,7 +1168,7 @@ sub:Ass {
 	node:3 belv:hasConcept chebi:%22phorbol%2013-acetate%2012-myristate%22 ;
 		a belv:Abundance .
 	
-	node:4 belv:hasConcept hgnc:ELK1 ;
+	node:4 belv:hasConcept hgnc:3321 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> tscript(p(HGNC:ELK1))" .
@@ -1183,15 +1183,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.863+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.682+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:MYC))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAx7XDs83Mbq3f0hVJDgbLFfckYe1jOPivUi1ZpZ5ivNg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAx7XDs83Mbq3f0hVJDgbLFfckYe1jOPivUi1ZpZ5ivNg.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAx7XDs83Mbq3f0hVJDgbLFfckYe1jOPivUi1ZpZ5ivNg..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAh_G-e8otPaWhp6dFmR1mp3Ae9J1CL6iNCS7R7F370Bs> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAh_G-e8otPaWhp6dFmR1mp3Ae9J1CL6iNCS7R7F370Bs.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAh_G-e8otPaWhp6dFmR1mp3Ae9J1CL6iNCS7R7F370Bs..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1200,7 +1200,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -1228,7 +1228,7 @@ sub:Ass {
 	node:3 belv:hasConcept chebi:%22phorbol%2013-acetate%2012-myristate%22 ;
 		a belv:Abundance .
 	
-	node:4 belv:hasConcept hgnc:MYC ;
+	node:4 belv:hasConcept hgnc:7553 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> tscript(p(HGNC:MYC))" .
@@ -1243,15 +1243,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.870+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.689+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:DUSP1) -|(a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA63MjYFRVpzt8SCKFFxgXAw1c_028Wjz9GFXLV_Em54A> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA63MjYFRVpzt8SCKFFxgXAw1c_028Wjz9GFXLV_Em54A.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA63MjYFRVpzt8SCKFFxgXAw1c_028Wjz9GFXLV_Em54A..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RApguGYEm4NG4Q2Qkj_IhT269nggJME3CGoITuC1QAegk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RApguGYEm4NG4Q2Qkj_IhT269nggJME3CGoITuC1QAegk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RApguGYEm4NG4Q2Qkj_IhT269nggJME3CGoITuC1QAegk..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1259,7 +1259,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
@@ -1286,10 +1286,10 @@ sub:Ass {
 		rdf:subject node:5 ;
 		a rdf:Statement .
 	
-	node:3 belv:hasConcept hgnc:DUSP1 ;
+	node:3 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:DUSP1 ;
+	node:4 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
 	node:5 belv:hasConcept chebi:%22phorbol%2013-acetate%2012-myristate%22 ;
@@ -1307,15 +1307,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.878+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.695+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: kin(p(HGNC:MAPK1)) ->(a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAzg3UHhl5cStvhaqEikQjoTxgjDTteUluFvnnEypZsb4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAzg3UHhl5cStvhaqEikQjoTxgjDTteUluFvnnEypZsb4.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAzg3UHhl5cStvhaqEikQjoTxgjDTteUluFvnnEypZsb4..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1pyBlyjucPpruQojRF1oVJjvwTuLnBb9bHrz1BzQwUc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1pyBlyjucPpruQojRF1oVJjvwTuLnBb9bHrz1BzQwUc.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA1pyBlyjucPpruQojRF1oVJjvwTuLnBb9bHrz1BzQwUc..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1323,7 +1323,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
@@ -1354,10 +1354,10 @@ sub:Ass {
 		belv:hasChild node:4 ;
 		a belv:AbundanceActivity .
 	
-	node:4 belv:hasConcept hgnc:MAPK1 ;
+	node:4 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:DUSP1 ;
+	node:5 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
 	node:6 belv:hasConcept chebi:%22phorbol%2013-acetate%2012-myristate%22 ;
@@ -1375,15 +1375,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.884+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.700+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: kin(p(HGNC:MAPK1)) -> p(HGNC:DUSP1)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAOjmeZI3mOcI-bsv43-mwNnhK9P-XMdbDtQWxVUEognc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAOjmeZI3mOcI-bsv43-mwNnhK9P-XMdbDtQWxVUEognc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAOjmeZI3mOcI-bsv43-mwNnhK9P-XMdbDtQWxVUEognc..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAl6n_lnXi38Tlfn8CY0y8knVcf_laACjwVQwycUH3Ytk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAl6n_lnXi38Tlfn8CY0y8knVcf_laACjwVQwycUH3Ytk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAl6n_lnXi38Tlfn8CY0y8knVcf_laACjwVQwycUH3Ytk..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1391,7 +1391,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols/> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -1412,14 +1412,14 @@ sub:Ass {
 		rdf:subject node:3 ;
 		a rdf:Statement .
 	
-	node:2 belv:hasConcept hgnc:DUSP1 ;
+	node:2 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
 	node:3 belv:hasActivityType belv:Kinase ;
 		belv:hasChild node:4 ;
 		a belv:AbundanceActivity .
 	
-	node:4 belv:hasConcept hgnc:MAPK1 ;
+	node:4 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "kin(p(HGNC:MAPK1)) -> p(HGNC:DUSP1)" .
@@ -1434,7 +1434,7 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-15T17:22:58.890+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-24T14:35:42.709+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
