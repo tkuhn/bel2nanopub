@@ -1,9 +1,9 @@
 ---
 BEL: path(MESHD:"Werner Syndrome") positiveCorrelation path(MESHD:"Genomic Instability")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAEYDsdxxNRc3JX5kjRFeXxKqWrykWuLNz9JbQOELwbok> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAEYDsdxxNRc3JX5kjRFeXxKqWrykWuLNz9JbQOELwbok.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAEYDsdxxNRc3JX5kjRFeXxKqWrykWuLNz9JbQOELwbok..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAXptSTun5fjM-gAspD5ZwFS6HkfU49_WAJl-cBQAdHcw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAXptSTun5fjM-gAspD5ZwFS6HkfU49_WAJl-cBQAdHcw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAXptSTun5fjM-gAspD5ZwFS6HkfU49_WAJl-cBQAdHcw..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -29,10 +29,10 @@ sub:Ass {
 		rdf:subject node:3 ;
 		a rdf:Statement .
 	
-	node:2 belv:hasConcept meshd:%22Genomic%20Instability%22 ;
+	node:2 belv:hasConcept meshd:Genomic%20Instability ;
 		a belv:Pathology .
 	
-	node:3 belv:hasConcept meshd:%22Werner%20Syndrome%22 ;
+	node:3 belv:hasConcept meshd:Werner%20Syndrome ;
 		a belv:Pathology .
 	
 	sub:Ass rdfs:label "path(MESHD:\"Werner Syndrome\") positiveCorrelation path(MESHD:\"Genomic Instability\")" .
@@ -47,15 +47,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-24T14:35:45.732+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T11:56:10.267+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: path(MESHD:"Werner Syndrome") positiveCorrelation path(MESHD:"Aging, Premature")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAdbUAZZ83mkhnqv1rrrpHBtKDYEOx8iOD7V7pHSqBTEQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAdbUAZZ83mkhnqv1rrrpHBtKDYEOx8iOD7V7pHSqBTEQ.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAdbUAZZ83mkhnqv1rrrpHBtKDYEOx8iOD7V7pHSqBTEQ..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_08xqKENByoZ9FIrklB-IcS0_tQN_1p5df696eVlcFc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_08xqKENByoZ9FIrklB-IcS0_tQN_1p5df696eVlcFc.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA_08xqKENByoZ9FIrklB-IcS0_tQN_1p5df696eVlcFc..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -81,10 +81,10 @@ sub:Ass {
 		rdf:subject node:3 ;
 		a rdf:Statement .
 	
-	node:2 belv:hasConcept meshd:%22Aging%2C%20Premature%22 ;
+	node:2 belv:hasConcept meshd:Aging%2C%20Premature ;
 		a belv:Pathology .
 	
-	node:3 belv:hasConcept meshd:%22Werner%20Syndrome%22 ;
+	node:3 belv:hasConcept meshd:Werner%20Syndrome ;
 		a belv:Pathology .
 	
 	sub:Ass rdfs:label "path(MESHD:\"Werner Syndrome\") positiveCorrelation path(MESHD:\"Aging, Premature\")" .
@@ -99,15 +99,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-24T14:35:45.828+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T11:56:10.344+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: complex(p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:WRN)) => cat(p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RApqSJhe1qWzmZu10cCpNpxZNKDYXR26c5gwn5Zs7LcVc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RApqSJhe1qWzmZu10cCpNpxZNKDYXR26c5gwn5Zs7LcVc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RApqSJhe1qWzmZu10cCpNpxZNKDYXR26c5gwn5Zs7LcVc..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAosT4U7EdXwmr3uGjK8CeirdKoCLeKipM560k4uZHYi0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAosT4U7EdXwmr3uGjK8CeirdKoCLeKipM560k4uZHYi0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAosT4U7EdXwmr3uGjK8CeirdKoCLeKipM560k4uZHYi0..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -164,15 +164,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-24T14:35:45.914+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T11:56:10.477+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: complex(p(HGNC:XRCC5),p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAbi6QARMyoSg8SJz1uetM7ERw7Kjt_QuTzcHLc9qCO-w> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAbi6QARMyoSg8SJz1uetM7ERw7Kjt_QuTzcHLc9qCO-w.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAbi6QARMyoSg8SJz1uetM7ERw7Kjt_QuTzcHLc9qCO-w..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAzfN5zr409-gj4JPwjHT1pWfjKoeij277ZTXhVxf8vDw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAzfN5zr409-gj4JPwjHT1pWfjKoeij277ZTXhVxf8vDw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAzfN5zr409-gj4JPwjHT1pWfjKoeij277ZTXhVxf8vDw..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -216,15 +216,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-24T14:35:45.929+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T11:56:10.489+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: complex(p(HGNC:XRCC6),p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9acsLgzYU0Qibk_Zx-ONhmVRP_dBdpW0OJk7g7vb2h4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9acsLgzYU0Qibk_Zx-ONhmVRP_dBdpW0OJk7g7vb2h4.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA9acsLgzYU0Qibk_Zx-ONhmVRP_dBdpW0OJk7g7vb2h4..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAe5vmbQyW6G2O3qskgCzj-Ih4x3px7P9iJiOMRP7cmzA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAe5vmbQyW6G2O3qskgCzj-Ih4x3px7P9iJiOMRP7cmzA.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAe5vmbQyW6G2O3qskgCzj-Ih4x3px7P9iJiOMRP7cmzA..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -268,15 +268,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-24T14:35:45.939+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T11:56:10.499+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: complex(p(HGNC:PARP1),p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAEF-MPG5IqmpPs8RGKJ_YOdYIv8SAYaI8cBHnVADGZsA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAEF-MPG5IqmpPs8RGKJ_YOdYIv8SAYaI8cBHnVADGZsA.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAEF-MPG5IqmpPs8RGKJ_YOdYIv8SAYaI8cBHnVADGZsA..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAoNgUOfQEYvFPGUHO2aaHLODKKfqyv7KLZlouG9zkS8M> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAoNgUOfQEYvFPGUHO2aaHLODKKfqyv7KLZlouG9zkS8M.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAoNgUOfQEYvFPGUHO2aaHLODKKfqyv7KLZlouG9zkS8M..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -320,15 +320,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-24T14:35:45.950+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T11:56:10.510+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: complex(p(HGNC:WRN),p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:PARP1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAQGZw1AkaRqQmADCxc2jdLihMMgk1CFIV6IxeQ3yVTGo> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAQGZw1AkaRqQmADCxc2jdLihMMgk1CFIV6IxeQ3yVTGo.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAQGZw1AkaRqQmADCxc2jdLihMMgk1CFIV6IxeQ3yVTGo..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAzsrdSpvpVmQj3hmGPAq6boodF9PXDTiEMtVHbcjSlc8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAzsrdSpvpVmQj3hmGPAq6boodF9PXDTiEMtVHbcjSlc8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAzsrdSpvpVmQj3hmGPAq6boodF9PXDTiEMtVHbcjSlc8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -376,15 +376,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-24T14:35:45.963+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T11:56:10.519+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R)))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_dKufkjBkvNKEV2gdYvFTGK9Wdrq8Io6CjfoS8GNALc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_dKufkjBkvNKEV2gdYvFTGK9Wdrq8Io6CjfoS8GNALc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA_dKufkjBkvNKEV2gdYvFTGK9Wdrq8Io6CjfoS8GNALc..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAELnYJ1Rw71B77GUKbUPMJxNYPrm63wUkWYQzCFqgY6U> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAELnYJ1Rw71B77GUKbUPMJxNYPrm63wUkWYQzCFqgY6U.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAELnYJ1Rw71B77GUKbUPMJxNYPrm63wUkWYQzCFqgY6U..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -392,7 +392,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
+@prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -419,10 +419,10 @@ sub:Ass {
 	node:3 belv:hasChild node:4 , node:5 ;
 		a belv:CompositeAbundance .
 	
-	node:4 belv:hasConcept chebi:%22deoxyribonucleic%20acid%22 ;
+	node:4 belv:hasConcept chebi:4291 ;
 		a belv:Abundance .
 	
-	node:5 belv:hasConcept chebi:%22NAD%28%2B%29%22 ;
+	node:5 belv:hasConcept chebi:7422 ;
 		a belv:Abundance .
 	
 	node:6 belv:hasChild node:9 ;
@@ -452,15 +452,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-24T14:35:45.992+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T11:56:10.557+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R)))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9kutcQND_UYnhsSFS6tgkvF1TCnWhCAfTg9Q7b1HWwk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9kutcQND_UYnhsSFS6tgkvF1TCnWhCAfTg9Q7b1HWwk.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA9kutcQND_UYnhsSFS6tgkvF1TCnWhCAfTg9Q7b1HWwk..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAd9WULwaN55ePru27nu2duVgUMbKosbAR6IfCZTpOruU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAd9WULwaN55ePru27nu2duVgUMbKosbAR6IfCZTpOruU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAd9WULwaN55ePru27nu2duVgUMbKosbAR6IfCZTpOruU..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -468,7 +468,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
+@prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -495,10 +495,10 @@ sub:Ass {
 	node:3 belv:hasChild node:4 , node:5 ;
 		a belv:CompositeAbundance .
 	
-	node:4 belv:hasConcept chebi:%22deoxyribonucleic%20acid%22 ;
+	node:4 belv:hasConcept chebi:4291 ;
 		a belv:Abundance .
 	
-	node:5 belv:hasConcept chebi:%22NAD%28%2B%29%22 ;
+	node:5 belv:hasConcept chebi:7422 ;
 		a belv:Abundance .
 	
 	node:6 belv:hasChild node:9 ;
@@ -528,15 +528,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-24T14:35:46.016+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T11:56:10.580+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R)))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAfMizT9s4pKohX_faq2nPEX7Ru9CpciACvhK5CH7wnNI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAfMizT9s4pKohX_faq2nPEX7Ru9CpciACvhK5CH7wnNI.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAfMizT9s4pKohX_faq2nPEX7Ru9CpciACvhK5CH7wnNI..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAfrG2670GxbOSXbHh4xw-tlvOJaY70O10Lyb8U4N0FSU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAfrG2670GxbOSXbHh4xw-tlvOJaY70O10Lyb8U4N0FSU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAfrG2670GxbOSXbHh4xw-tlvOJaY70O10Lyb8U4N0FSU..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -544,7 +544,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
+@prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -571,10 +571,10 @@ sub:Ass {
 	node:3 belv:hasChild node:4 , node:5 ;
 		a belv:CompositeAbundance .
 	
-	node:4 belv:hasConcept chebi:%22deoxyribonucleic%20acid%22 ;
+	node:4 belv:hasConcept chebi:4291 ;
 		a belv:Abundance .
 	
-	node:5 belv:hasConcept chebi:%22NAD%28%2B%29%22 ;
+	node:5 belv:hasConcept chebi:7422 ;
 		a belv:Abundance .
 	
 	node:6 belv:hasChild node:9 ;
@@ -604,15 +604,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-24T14:35:46.044+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T11:56:10.624+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:XRCC5,pmod(R)) => complex(a(CHEBI:"deoxyribonucleic acid"),p(HGNC:XRCC5),p(HGNC:XRCC6))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAQRoKEz1jU4bBMih-LQ7T_Dea0rYSG0XoKE70uia8K1o> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAQRoKEz1jU4bBMih-LQ7T_Dea0rYSG0XoKE70uia8K1o.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAQRoKEz1jU4bBMih-LQ7T_Dea0rYSG0XoKE70uia8K1o..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAsHJniAvUWaiu7NEHYhmibhAEMSiAhrQ2YmjoHAG71NI> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAsHJniAvUWaiu7NEHYhmibhAEMSiAhrQ2YmjoHAG71NI.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAsHJniAvUWaiu7NEHYhmibhAEMSiAhrQ2YmjoHAG71NI..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -621,7 +621,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
+@prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -650,7 +650,7 @@ sub:Ass {
 	node:4 belv:hasConcept hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept chebi:%22deoxyribonucleic%20acid%22 ;
+	node:5 belv:hasConcept chebi:4291 ;
 		a belv:Abundance .
 	
 	node:6 belv:hasConcept hgnc:12833 ;
@@ -671,15 +671,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-24T14:35:46.071+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T11:56:10.660+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:XRCC6,pmod(R)) => complex(a(CHEBI:"deoxyribonucleic acid"),p(HGNC:XRCC5),p(HGNC:XRCC6))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RABaATYS7IT6FvCMG5j5MHKjhkROc6PenVxPFilx8ssvk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RABaATYS7IT6FvCMG5j5MHKjhkROc6PenVxPFilx8ssvk.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RABaATYS7IT6FvCMG5j5MHKjhkROc6PenVxPFilx8ssvk..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAE0DAMj-hAdxSWu-e4O5yQZ9A-jjDXdA3tMKjAHh6P9Q> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAE0DAMj-hAdxSWu-e4O5yQZ9A-jjDXdA3tMKjAHh6P9Q.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAE0DAMj-hAdxSWu-e4O5yQZ9A-jjDXdA3tMKjAHh6P9Q..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -688,7 +688,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix chebi: <http://resource.belframework.org/belframework/1.0/namespace/chebi-names/> .
+@prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -717,7 +717,7 @@ sub:Ass {
 	node:4 belv:hasConcept hgnc:4055 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept chebi:%22deoxyribonucleic%20acid%22 ;
+	node:5 belv:hasConcept chebi:4291 ;
 		a belv:Abundance .
 	
 	node:6 belv:hasConcept hgnc:12833 ;
@@ -738,15 +738,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-24T14:35:46.091+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T11:56:10.683+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:XRCC5,pmod(R)) => cat(p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAtbNWILXaHZrq4BU9A94ECnkMidMCmL6VKTi0xGNjaWg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAtbNWILXaHZrq4BU9A94ECnkMidMCmL6VKTi0xGNjaWg.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAtbNWILXaHZrq4BU9A94ECnkMidMCmL6VKTi0xGNjaWg..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAD_sG3epbHSFAoNqEAyVSMYR9vppl89l07Lo8pKsdE5k> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAD_sG3epbHSFAoNqEAyVSMYR9vppl89l07Lo8pKsdE5k.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAD_sG3epbHSFAoNqEAyVSMYR9vppl89l07Lo8pKsdE5k..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -799,15 +799,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-24T14:35:46.108+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T11:56:10.705+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:XRCC6,pmod(R)) => cat(p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJ3QbfLi2hf2yz2XVQqh4A6mKt7h_lUWupKRIirD54i0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJ3QbfLi2hf2yz2XVQqh4A6mKt7h_lUWupKRIirD54i0.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAJ3QbfLi2hf2yz2XVQqh4A6mKt7h_lUWupKRIirD54i0..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAAnx14t114N2FVrgwdDFvrKrL-QzlrVBGnnmGLRLtGs8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAAnx14t114N2FVrgwdDFvrKrL-QzlrVBGnnmGLRLtGs8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAAnx14t114N2FVrgwdDFvrKrL-QzlrVBGnnmGLRLtGs8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -860,7 +860,7 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-24T14:35:46.120+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T11:56:10.719+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---

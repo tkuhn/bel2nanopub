@@ -49,6 +49,25 @@ public class IdScheme {
 		sc.setRdfNs("http://www.ncbi.nlm.nih.gov/gene/");
 		list.add(sc);
 
+		// ChEBI (indirect)
+		sc = new IdScheme("chebi");
+		sc.setDirectMapping(false);
+		sc.addBelNs("http://resource.belframework.org/belframework/1.0/namespace/chebi-names.belns");
+		sc.addBelNs("http://resource.belframework.org/belframework/20131211/namespace/chebi.belns");
+		sc.setBelRdfNs("http://www.openbel.org/bel/namespace/chebi/");
+		sc.setRdfNs("http://www.ebi.ac.uk/chebi/searchId.do?chebiId=");
+		list.add(sc);
+
+		// ChEBI (direct)
+		sc = new IdScheme("chebi-ids");
+		sc.setDirectMapping(true);
+		sc.addBelNs("http://resource.belframework.org/belframework/1.0/namespace/chebi-ids.belns");
+		sc.addBelNs("http://resource.belframework.org/belframework/20131211/namespace/chebi-ids.belns");
+		sc.setBelRdfNs("http://www.openbel.org/bel/namespace/chebi/");
+		sc.setRdfPrefix("chebi");
+		sc.setRdfNs("http://www.ebi.ac.uk/chebi/searchId.do?chebiId=");
+		list.add(sc);
+
 		idSchemes = ImmutableList.copyOf(list);
 	}
 
@@ -59,11 +78,19 @@ public class IdScheme {
 	}
 
 	public static URI makeUri(String prefix, String belNs, String belLabel, NanopubCreator npCreator) {
+		if (belLabel.startsWith("\"") && belLabel.endsWith("\"") && belLabel.length() > 1) {
+			belLabel = belLabel.substring(1, belLabel.length()-1);
+		}
 		String uriString = null;
 		for (IdScheme sc : getSchemes()) {
 			if (sc.hasBelNs(belNs)) {
-				npCreator.addNamespace(sc.getName(), sc.getRdfNs());
-				uriString = sc.getRdfNs() + sc.getId(belLabel);
+				npCreator.addNamespace(sc.getRdfPrefix(), sc.getRdfNs());
+				String id = sc.getId(belLabel);
+				if (id == null) {
+					uriString = null;
+				} else {
+					uriString = sc.getRdfNs() + id;
+				}
 				break;
 			}
 		}
@@ -80,12 +107,14 @@ public class IdScheme {
 	private String name;
 	private boolean directMapping = false;
 	private String belRdfNs;
+	private String rdfPrefix;
 	private String rdfNs;
 	private Set<String> belNsSet = new HashSet<String>();
 	private Map<String,String> idMap;
 
 	private IdScheme(String name) {
 		this.name = name;
+		this.rdfPrefix = name;
 	}
 
 	private void loadMap() {
@@ -130,6 +159,14 @@ public class IdScheme {
 
 	public String getRdfNs() {
 		return rdfNs;
+	}
+
+	void setRdfPrefix(String rdfPrefix) {
+		this.rdfPrefix = rdfPrefix;
+	}
+
+	public String getRdfPrefix() {
+		return rdfPrefix;
 	}
 
 	void addBelNs(String belNs) {
