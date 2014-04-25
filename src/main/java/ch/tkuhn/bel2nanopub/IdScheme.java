@@ -18,27 +18,35 @@ import com.google.common.collect.ImmutableList;
 
 public class IdScheme {
 
-	private static final String BELNS_1 = "http://resource.belframework.org/belframework/1.0/namespace/";
-	private static final String BELNS_2 = "http://resource.belframework.org/belframework/20131211/namespace/";
-
 	static {
 		List<IdScheme> list = new ArrayList<IdScheme>();
 		IdScheme sc;
 
 		// HGNC
 		sc = new IdScheme("hgnc");
+		sc.setDirectMapping(false);
+		sc.addBelNs("http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols.belns");
+		sc.addBelNs("http://resource.belframework.org/belframework/20131211/namespace/hgnc-human-genes.belns");
 		sc.setBelRdfNs("http://www.openbel.org/bel/namespace/hgnc-human-genes/");
 		sc.setRdfNs("http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=");
-		sc.addBelNs(BELNS_1 + "hgnc-approved-symbols.belns");
-		sc.addBelNs(BELNS_2 + "hgnc-human-genes.belns");
 		list.add(sc);
 
 		// MGI
 		sc = new IdScheme("mgi");
+		sc.setDirectMapping(false);
+		sc.addBelNs("http://resource.belframework.org/belframework/1.0/namespace/mgi-approved-symbols.belns");
+		sc.addBelNs("http://resource.belframework.org/belframework/20131211/namespace/mgi-mouse-genes.belns");
 		sc.setBelRdfNs("http://www.openbel.org/bel/namespace/mgi-mouse-genes/");
 		sc.setRdfNs("http://www.informatics.jax.org/marker/MGI:");
-		sc.addBelNs(BELNS_1 + "mgi-approved-symbols.belns");
-		sc.addBelNs(BELNS_2 + "mgi-mouse-genes.belns");
+		list.add(sc);
+
+		// Entrez
+		sc = new IdScheme("entrez");
+		sc.setDirectMapping(true);
+		sc.addBelNs("http://resource.belframework.org/belframework/1.0/namespace/entrez-gene-ids-hmr.belns");
+		sc.addBelNs("http://resource.belframework.org/belframework/20131211/namespace/entrez-gene-ids.belns");
+		sc.setBelRdfNs("http://www.openbel.org/bel/namespace/entrez-gene/");
+		sc.setRdfNs("http://www.ncbi.nlm.nih.gov/gene/");
 		list.add(sc);
 
 		idSchemes = ImmutableList.copyOf(list);
@@ -70,17 +78,18 @@ public class IdScheme {
 
 
 	private String name;
+	private boolean directMapping = false;
 	private String belRdfNs;
 	private String rdfNs;
 	private Set<String> belNsSet = new HashSet<String>();
 	private Map<String,String> idMap;
 
-	public IdScheme(String name) {
+	private IdScheme(String name) {
 		this.name = name;
 	}
 
 	private void loadMap() {
-		if (idMap != null) return;
+		if (idMap != null || hasDirectMapping()) return;
 		idMap = new HashMap<String,String>();
 		try {
 			BufferedReader r = new BufferedReader(new FileReader("tables/" + name + ".txt"));
@@ -99,7 +108,15 @@ public class IdScheme {
 		return name;
 	}
 
-	public void setBelRdfNs(String belRdfNs) {
+	void setDirectMapping(boolean directMapping) {
+		this.directMapping = directMapping;
+	}
+
+	public boolean hasDirectMapping() {
+		return directMapping;
+	}
+
+	void setBelRdfNs(String belRdfNs) {
 		this.belRdfNs = belRdfNs;
 	}
 
@@ -107,7 +124,7 @@ public class IdScheme {
 		return belRdfNs;
 	}
 
-	public void setRdfNs(String rdfNs) {
+	void setRdfNs(String rdfNs) {
 		this.rdfNs = rdfNs;
 	}
 
@@ -115,7 +132,7 @@ public class IdScheme {
 		return rdfNs;
 	}
 
-	public void addBelNs(String belNs) {
+	void addBelNs(String belNs) {
 		belNsSet.add(belNs);
 	}
 
@@ -124,8 +141,12 @@ public class IdScheme {
 	}
 
 	public String getId(String belLabel) {
-		loadMap();
-		return idMap.get(belLabel);
+		if (hasDirectMapping()) {
+			return belLabel;
+		} else {
+			loadMap();
+			return idMap.get(belLabel);
+		}
 	}
 
 }

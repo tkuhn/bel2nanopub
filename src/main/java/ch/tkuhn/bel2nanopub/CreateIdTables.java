@@ -35,6 +35,7 @@ public class CreateIdTables {
 
 	public void run() throws Exception {
 		for (IdScheme sc : IdScheme.getSchemes()) {
+			if (sc.hasDirectMapping()) continue;
 			String fileName = "tables/" + sc.getName() + ".txt";
 			BufferedWriter w = new BufferedWriter(new FileWriter(fileName));
 			writers.put(sc.getName(), w);
@@ -77,9 +78,11 @@ public class CreateIdTables {
 			}
 		}
 		for (IdScheme sc : IdScheme.getSchemes()) {
+			if (sc.hasDirectMapping()) continue;
 			if (s.startsWith(sc.getBelRdfNs())) {
 				subjString = s;
 				scheme = sc;
+				break;
 			}
 		}
 		String p = st.getPredicate().stringValue();
