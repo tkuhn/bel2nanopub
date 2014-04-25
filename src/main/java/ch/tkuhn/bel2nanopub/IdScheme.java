@@ -33,6 +33,14 @@ public class IdScheme {
 		sc.addBelNs(BELNS_2 + "hgnc-human-genes.belns");
 		list.add(sc);
 
+		// MGI
+		sc = new IdScheme("mgi");
+		sc.setBelRdfNs("http://www.openbel.org/bel/namespace/mgi-mouse-genes/");
+		sc.setRdfNs("http://www.informatics.jax.org/marker/MGI:");
+		sc.addBelNs(BELNS_1 + "mgi-approved-symbols.belns");
+		sc.addBelNs(BELNS_2 + "mgi-mouse-genes.belns");
+		list.add(sc);
+
 		idSchemes = ImmutableList.copyOf(list);
 	}
 
