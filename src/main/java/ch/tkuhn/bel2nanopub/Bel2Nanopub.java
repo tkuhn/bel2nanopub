@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.nanopub.CustomTrigWriterFactory;
 import org.nanopub.Nanopub;
 import org.nanopub.NanopubCreator;
 import org.nanopub.NanopubUtils;
@@ -37,6 +38,7 @@ import org.openrdf.model.impl.ValueFactoryImpl;
 import org.openrdf.model.vocabulary.RDF;
 import org.openrdf.model.vocabulary.RDFS;
 import org.openrdf.rio.RDFFormat;
+import org.openrdf.rio.RDFWriterRegistry;
 
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.ParameterException;
@@ -58,10 +60,34 @@ public class Bel2Nanopub {
 			jc.usage();
 			System.exit(1);
 		}
-		obj.run();
-		System.out.println("---");
-		System.out.println(obj.getNanopubs().size() + " nanopub(s) created");
-		System.out.println(obj.errors + " error(s)");
+		try {
+			obj.run();
+			if (!obj.getParseExceptions().isEmpty()) {
+				System.err.println("ERRORS:");
+				for (BELParseErrorException ex : obj.getParseExceptions()) {
+					System.err.println(ex.getMessage());
+				}
+				System.exit(1);
+			}
+			RDFWriterRegistry.getInstance().add(new CustomTrigWriterFactory());
+			for (Result r : obj.getResults()) {
+				System.out.println("---");
+				System.out.println("BEL: " + r.getBelStatement().getStatementSyntax());
+				if (r.getException() == null) {
+					System.out.println("NANOPUB:");
+					NanopubUtils.writeToStream(r.getNanopub(), System.out, RDFFormat.TRIG);
+				} else {
+					System.out.println("ERROR:");
+					System.out.println(r.getException().getMessage());
+				}
+			}
+			System.out.println("---");
+			System.out.println(obj.getNanopubs().size() + " nanopub(s) created");
+			System.out.println(obj.getTransformExceptions().size() + " error(s)");
+		} catch (Exception ex) {
+			ex.printStackTrace();
+			System.exit(1);
+		}
 	}
 
 	private static final URI provValue = new URIImpl("http://www.w3.org/ns/prov#value");
@@ -72,7 +98,9 @@ public class Bel2Nanopub {
 	private int bnodeCount = 0;
 	private BELDocument belDoc;
 	private List<Nanopub> nanopubs = new ArrayList<Nanopub>();
-	private int errors = 0;
+	private List<Result> results = new ArrayList<Result>();
+	private List<Bel2NanopubException> transformExceptions = new ArrayList<Bel2NanopubException>();
+	private List<BELParseErrorException> parseExceptions = new ArrayList<BELParseErrorException>();
 
 	private Map<String,String> namespaceMap = new HashMap<String,String>();
 	private Map<String,URI> annotationMap = new HashMap<String,URI>();
@@ -99,11 +127,8 @@ public class Bel2Nanopub {
 		BELParseResults belParse = BELParser.parse(readFile(belFile));
 
 		if (!belParse.getSyntaxErrors().isEmpty()) {
-			System.err.println("ERRORS:");
-			for (BELParseErrorException ex : belParse.getSyntaxErrors()) {
-				System.err.println(ex.getMessage());
-			}
-			System.exit(1);
+			parseExceptions.addAll(belParse.getSyntaxErrors());
+			return;
 		}
 		belDoc = belParse.getDocument();
 
@@ -112,8 +137,6 @@ public class Bel2Nanopub {
 
 		for (BELStatementGroup g : belDoc.getBelStatementGroups()) {
 			for (BELStatement bst : g.getStatements()) {
-				System.out.println("---");
-				System.out.println("BEL: " + bst.getStatementSyntax());
 				NanopubCreator npCreator = new NanopubCreator("http://www.tkuhn.ch/bel2nanopub/");
 				npCreator.addNamespace("rdfs", RDFS.NAMESPACE);
 				npCreator.addNamespace("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
@@ -125,12 +148,9 @@ public class Bel2Nanopub {
 				try {
 					processBelStatement(bst, npCreator);
 				} catch (Bel2NanopubException ex) {
-					errors++;
-					System.err.println(ex.getMessage());
+					transformExceptions.add(ex);
+					results.add(new Result(bst, ex));
 					continue;
-				} catch (Exception ex) {
-					ex.printStackTrace();
-					System.exit(1);
 				}
 				if (creatorId != null) {
 					npCreator.addNamespace("pav", "http://swan.mindinformatics.org/ontologies/1.2/pav/");
@@ -139,12 +159,10 @@ public class Bel2Nanopub {
 				}
 				try {
 					Nanopub np = npCreator.finalizeTrustyNanopub(true);
-					System.out.println("NANOPUB:");
-					NanopubUtils.writeToStream(np, System.out, RDFFormat.TRIG);
 					nanopubs.add(np);
+					results.add(new Result(bst, np));
 				} catch (Exception ex) {
-					ex.printStackTrace();
-					System.exit(1);
+					throw new RuntimeException(ex);
 				}
 			}
 		}
@@ -332,6 +350,18 @@ public class Bel2Nanopub {
 		return nanopubs;
 	}
 
+	public List<Bel2NanopubException> getTransformExceptions() {
+		return transformExceptions;
+	}
+
+	public List<BELParseErrorException> getParseExceptions() {
+		return parseExceptions;
+	}
+
+	public List<Result> getResults() {
+		return results;
+	}
+
 	private static String readFile(File file) {
 		try {
 			byte[] encoded = Files.readAllBytes(file.toPath());
@@ -340,6 +370,38 @@ public class Bel2Nanopub {
 			ex.printStackTrace();
 			return null;
 		}
+	}
+
+
+	public static class Result {
+
+		private final BELStatement belSt;
+		private final Nanopub nanopub;
+		private final Bel2NanopubException exception;
+
+		private Result(BELStatement belSt, Nanopub nanopub) {
+			this.belSt = belSt;
+			this.nanopub = nanopub;
+			this.exception = null;
+		}
+		private Result(BELStatement belSt, Bel2NanopubException exception) {
+			this.belSt = belSt;
+			this.nanopub = null;
+			this.exception = exception;
+		}
+
+		public BELStatement getBelStatement() {
+			return belSt;
+		}
+
+		public Nanopub getNanopub() {
+			return nanopub;
+		}
+
+		public Bel2NanopubException getException() {
+			return exception;
+		}
+
 	}
 
 }
