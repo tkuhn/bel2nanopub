@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.openrdf.model.Statement;
 import org.openrdf.rio.RDFFormat;
@@ -23,15 +25,20 @@ public class CreateIdTables {
 	}
 
 	private String subjString;
+	private IdScheme scheme;
 	private String id;
 	private String label;
-	private BufferedWriter writer;
+	private Map<String,BufferedWriter> writers = new HashMap<String,BufferedWriter>();
 
 	public CreateIdTables() throws Exception {
 	}
 
 	public void run() throws Exception {
-		writer = new BufferedWriter(new FileWriter("tables/hgnc.txt"));
+		for (IdScheme sc : IdScheme.getSchemes()) {
+			String fileName = "tables/" + sc.getName() + ".txt";
+			BufferedWriter w = new BufferedWriter(new FileWriter(fileName));
+			writers.put(sc.getName(), w);
+		}
 		InputStream in = new FileInputStream("downloads/nsmap.ttl");
 		RDFParser p = Rio.createParser(RDFFormat.TURTLE);
 		p.setRDFHandler(new RDFHandlerBase() {
@@ -46,7 +53,9 @@ public class CreateIdTables {
 			p.parse(in, baseUri);
 		} finally {
 			in.close();
-			writer.close();
+			for (BufferedWriter w : writers.values()) {
+				w.close();
+			}
 		}
 	}
 
@@ -57,17 +66,21 @@ public class CreateIdTables {
 				throw new RuntimeException("Couldn't complete entry for " + subjString);
 			} else {
 				try {
-					writer.write(id + " " + label + "\n");
+					writers.get(scheme.getName()).write(id + " " + label + "\n");
 				} catch (IOException ex) {
 					throw new RuntimeException(ex);
 				}
 				subjString = null;
+				scheme = null;
 				id = null;
 				label = null;
 			}
 		}
-		if (s.startsWith("http://www.openbel.org/bel/namespace/hgnc-human-genes/")) {
-			subjString = s;
+		for (IdScheme sc : IdScheme.getSchemes()) {
+			if (s.startsWith(sc.getBelRdfNs())) {
+				subjString = s;
+				scheme = sc;
+			}
 		}
 		String p = st.getPredicate().stringValue();
 		if (p.equals("http://purl.org/dc/terms/identifier")) {
