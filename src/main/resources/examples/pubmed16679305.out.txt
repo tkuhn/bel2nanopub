@@ -1,9 +1,9 @@
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:"Neoplasm Metastasis")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAeRNV-IXdHPsylvEF5ItQ_TF9pqdH0SDcBdS6BXRradQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAeRNV-IXdHPsylvEF5ItQ_TF9pqdH0SDcBdS6BXRradQ.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAeRNV-IXdHPsylvEF5ItQ_TF9pqdH0SDcBdS6BXRradQ..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAOADNgJdl81pENKdbgRhBsHk9sZF82_nvFlrNtlGIStA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAOADNgJdl81pENKdbgRhBsHk9sZF82_nvFlrNtlGIStA.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAOADNgJdl81pENKdbgRhBsHk9sZF82_nvFlrNtlGIStA..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -55,15 +55,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:56:59.734+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:"Recurrence")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAcnDGJIdeuwY_ryEkc8vyIlOyVQU0GAsF2Ek_ADZtg-Y> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAcnDGJIdeuwY_ryEkc8vyIlOyVQU0GAsF2Ek_ADZtg-Y.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAcnDGJIdeuwY_ryEkc8vyIlOyVQU0GAsF2Ek_ADZtg-Y..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RADTD3nY6yeEnDmsGr3qC0YcbLQ-9X00c6I9ch_ve9d6A> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RADTD3nY6yeEnDmsGr3qC0YcbLQ-9X00c6I9ch_ve9d6A.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RADTD3nY6yeEnDmsGr3qC0YcbLQ-9X00c6I9ch_ve9d6A..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -115,15 +115,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:56:59.827+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> path(MESHD:Neoplasms)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAbIxFtFo5CWH3fFG0DHyQ8dy99iDOkoij1PTw-IP5KOc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAbIxFtFo5CWH3fFG0DHyQ8dy99iDOkoij1PTw-IP5KOc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAbIxFtFo5CWH3fFG0DHyQ8dy99iDOkoij1PTw-IP5KOc..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAhnhf-RtUIjMAo2PevdQiIE-C5FkkKxCgNieJGFVvGxc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAhnhf-RtUIjMAo2PevdQiIE-C5FkkKxCgNieJGFVvGxc.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAhnhf-RtUIjMAo2PevdQiIE-C5FkkKxCgNieJGFVvGxc..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -175,15 +175,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:56:59.845+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> path(MESHD:Neoplasms)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAHKHcc2UTtJ6-QjwexeeaemNto5eN8s93N_wqfnv3Jd4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAHKHcc2UTtJ6-QjwexeeaemNto5eN8s93N_wqfnv3Jd4.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAHKHcc2UTtJ6-QjwexeeaemNto5eN8s93N_wqfnv3Jd4..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAUOmY-HbiJmWORQwEAXrgABKQK5HOgP4ufyPh8KyC_ts> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAUOmY-HbiJmWORQwEAXrgABKQK5HOgP4ufyPh8KyC_ts.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAUOmY-HbiJmWORQwEAXrgABKQK5HOgP4ufyPh8KyC_ts..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -235,15 +235,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:56:59.861+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,C)) causesNoChange path(MESHD:Neoplasms)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAIcgkDZL317vSTQDqUF23bscDUoT8RHEm7pIoGTiqrec> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAIcgkDZL317vSTQDqUF23bscDUoT8RHEm7pIoGTiqrec.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAIcgkDZL317vSTQDqUF23bscDUoT8RHEm7pIoGTiqrec..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAFy6rfEuXWIm4CBf5aVmP9DMtvWKSCLtpP9mUfdEcyOM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAFy6rfEuXWIm4CBf5aVmP9DMtvWKSCLtpP9mUfdEcyOM.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAFy6rfEuXWIm4CBf5aVmP9DMtvWKSCLtpP9mUfdEcyOM..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -295,15 +295,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:56:59.876+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) => complex(p(HGNC:KRAS),p(MGI:Raf1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAxfkMzY2karofffRFEKgtu-VKHu9gWSEJwVWxdZHk8WU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAxfkMzY2karofffRFEKgtu-VKHu9gWSEJwVWxdZHk8WU.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAxfkMzY2karofffRFEKgtu-VKHu9gWSEJwVWxdZHk8WU..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA5hyADOQPnCMmVHOqs34tAjo0xIwcySrDwoZBHGyQPBU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA5hyADOQPnCMmVHOqs34tAjo0xIwcySrDwoZBHGyQPBU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA5hyADOQPnCMmVHOqs34tAjo0xIwcySrDwoZBHGyQPBU..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -361,15 +361,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:56:59.905+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> kin(p(PFM:"MAPK Erk1/3 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RACtpWhRTpVDvULICLlBDKW_G6UakpNNNqVX4_LTs7Q9s> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RACtpWhRTpVDvULICLlBDKW_G6UakpNNNqVX4_LTs7Q9s.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RACtpWhRTpVDvULICLlBDKW_G6UakpNNNqVX4_LTs7Q9s..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAZhNur-wKYCbU4IuyKyQGYYT97O8MOK-Lknh9N2STfGM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAZhNur-wKYCbU4IuyKyQGYYT97O8MOK-Lknh9N2STfGM.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAZhNur-wKYCbU4IuyKyQGYYT97O8MOK-Lknh9N2STfGM..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -425,15 +425,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:56:59.919+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) causesNoChange complex(p(HGNC:KRAS),p(MGI:Raf1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAyvZJOnXxmV71sf7Ddgy9HAVCjMwVl1-AMBzwrOGHgZc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAyvZJOnXxmV71sf7Ddgy9HAVCjMwVl1-AMBzwrOGHgZc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAyvZJOnXxmV71sf7Ddgy9HAVCjMwVl1-AMBzwrOGHgZc..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA6fhC13-TtmdhGmlIhzlu0byLfYpHX8JclFDlblyBbWM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA6fhC13-TtmdhGmlIhzlu0byLfYpHX8JclFDlblyBbWM.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA6fhC13-TtmdhGmlIhzlu0byLfYpHX8JclFDlblyBbWM..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -491,15 +491,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:56:59.931+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) causesNoChange kin(p(PFM:"MAPK Erk1/3 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RABg-DOgHidBvyhoDTkHUl2yhC4ll5eWHd8LwAih6-HBM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RABg-DOgHidBvyhoDTkHUl2yhC4ll5eWHd8LwAih6-HBM.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RABg-DOgHidBvyhoDTkHUl2yhC4ll5eWHd8LwAih6-HBM..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA92_YI1nfSLklf7QeLWdojjXtpB3_-lx4YKZmqFsgLN4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA92_YI1nfSLklf7QeLWdojjXtpB3_-lx4YKZmqFsgLN4.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA92_YI1nfSLklf7QeLWdojjXtpB3_-lx4YKZmqFsgLN4..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -555,15 +555,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:56:59.944+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(complex(NCM:"p85/p110 PI3Kinase Complex"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAZCE8tXbwm26cstiUT0b-KaIuBtCiPgKZVAvJV1W8PyI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAZCE8tXbwm26cstiUT0b-KaIuBtCiPgKZVAvJV1W8PyI.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAZCE8tXbwm26cstiUT0b-KaIuBtCiPgKZVAvJV1W8PyI..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RATSj0ySNhNKP4VAz5Z-PssBkweLKqO4dkPOv5-ot2F6Q> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RATSj0ySNhNKP4VAz5Z-PssBkweLKqO4dkPOv5-ot2F6Q.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RATSj0ySNhNKP4VAz5Z-PssBkweLKqO4dkPOv5-ot2F6Q..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -620,15 +620,15 @@ p38 and FAK pathways.""" ;
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:56:59.956+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:"Akt Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RATjCxAoLqLm_pMLhJeGSFe7e8TMV-0zv67fVnQmjLNdM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RATjCxAoLqLm_pMLhJeGSFe7e8TMV-0zv67fVnQmjLNdM.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RATjCxAoLqLm_pMLhJeGSFe7e8TMV-0zv67fVnQmjLNdM..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAPUotJdS5KTwr0YP1c6dCl561kengCoz539kWVmgcGr8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAPUotJdS5KTwr0YP1c6dCl561kengCoz539kWVmgcGr8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAPUotJdS5KTwr0YP1c6dCl561kengCoz539kWVmgcGr8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -685,15 +685,15 @@ p38 and FAK pathways.""" ;
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:56:59.969+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:"Mapk JNK Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA5v2Oc0NzuryInFyZAdEaJp6oRvAFrXW_nJAuAp-MBMA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA5v2Oc0NzuryInFyZAdEaJp6oRvAFrXW_nJAuAp-MBMA.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA5v2Oc0NzuryInFyZAdEaJp6oRvAFrXW_nJAuAp-MBMA..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAK9y1gKmpbRgGBheRJuiXsM45TTfkRAzK3Sa7o6f9T28> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAK9y1gKmpbRgGBheRJuiXsM45TTfkRAzK3Sa7o6f9T28.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAK9y1gKmpbRgGBheRJuiXsM45TTfkRAzK3Sa7o6f9T28..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -750,15 +750,15 @@ p38 and FAK pathways.""" ;
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:56:59.980+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:"Mapk p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAogAGALwBRRmunKt_p-xV3VLZ0ygKh2XSGI0_zq-jV_4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAogAGALwBRRmunKt_p-xV3VLZ0ygKh2XSGI0_zq-jV_4.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAogAGALwBRRmunKt_p-xV3VLZ0ygKh2XSGI0_zq-jV_4..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAWBWTyX7RtRB5Ja_j9QnISG6cLzTYZUeSxsKtISBUY0s> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAWBWTyX7RtRB5Ja_j9QnISG6cLzTYZUeSxsKtISBUY0s.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAWBWTyX7RtRB5Ja_j9QnISG6cLzTYZUeSxsKtISBUY0s..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -815,15 +815,15 @@ p38 and FAK pathways.""" ;
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:56:59.987+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(MGI:Ptk2))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAHKOOUC2u1rfhgAwCfrBeZD8jAAqipXtWq_zUu82znmE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAHKOOUC2u1rfhgAwCfrBeZD8jAAqipXtWq_zUu82znmE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAHKOOUC2u1rfhgAwCfrBeZD8jAAqipXtWq_zUu82znmE..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RArWF-p51a0EwnBSVwndNwgF5zhC1oh1qrpkpRpGj6EZo> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RArWF-p51a0EwnBSVwndNwgF5zhC1oh1qrpkpRpGj6EZo.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RArWF-p51a0EwnBSVwndNwgF5zhC1oh1qrpkpRpGj6EZo..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -880,15 +880,15 @@ p38 and FAK pathways.""" ;
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:56:59.991+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:RB1,pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAzvg4sR2sbEm4LSEfob0YCgNNpJbCBzrm9Ceqb9HmE3Q> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAzvg4sR2sbEm4LSEfob0YCgNNpJbCBzrm9Ceqb9HmE3Q.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAzvg4sR2sbEm4LSEfob0YCgNNpJbCBzrm9Ceqb9HmE3Q..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAp2-c8bI6asadbpRAbs5JAESYR1F4eJFsqhr-xfKfQIA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAp2-c8bI6asadbpRAbs5JAESYR1F4eJFsqhr-xfKfQIA.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAp2-c8bI6asadbpRAbs5JAESYR1F4eJFsqhr-xfKfQIA..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -944,15 +944,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:56:59.997+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:PCNA)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAsC5-eE8kqSQb4lqvRKErPvkZRj2rKaK3TVv4P53TnYk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAsC5-eE8kqSQb4lqvRKErPvkZRj2rKaK3TVv4P53TnYk.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAsC5-eE8kqSQb4lqvRKErPvkZRj2rKaK3TVv4P53TnYk..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_Wp85QE-g_w1WG95iugyj9VjLNkroMQxlhzg85wifn0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_Wp85QE-g_w1WG95iugyj9VjLNkroMQxlhzg85wifn0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA_Wp85QE-g_w1WG95iugyj9VjLNkroMQxlhzg85wifn0..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1003,15 +1003,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:57:00.004+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:CCNB1)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA6fZmMUdPkRmx8omD9ikU1bYLC-8Z-NvuzKoLbwcbMMM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA6fZmMUdPkRmx8omD9ikU1bYLC-8Z-NvuzKoLbwcbMMM.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA6fZmMUdPkRmx8omD9ikU1bYLC-8Z-NvuzKoLbwcbMMM..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAmxMvDsYNt--qXQLkbMISNmLPxfMcfBq2fZyf0AIaplg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAmxMvDsYNt--qXQLkbMISNmLPxfMcfBq2fZyf0AIaplg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAmxMvDsYNt--qXQLkbMISNmLPxfMcfBq2fZyf0AIaplg..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1062,15 +1062,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:57:00.009+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:"G1/S transition of mitotic cell cycle")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7fQpgTlUbHX24oLbfnjuQdbVuIOYmvz93Y5uCwJi7T0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7fQpgTlUbHX24oLbfnjuQdbVuIOYmvz93Y5uCwJi7T0.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA7fQpgTlUbHX24oLbfnjuQdbVuIOYmvz93Y5uCwJi7T0..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAKsj2eWBGsie9l8F4LCMBdhSCeECFhYiWKhDBwbge69Q> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAKsj2eWBGsie9l8F4LCMBdhSCeECFhYiWKhDBwbge69Q.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAKsj2eWBGsie9l8F4LCMBdhSCeECFhYiWKhDBwbge69Q..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1122,15 +1122,15 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:57:00.015+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:"G2/M transition of mitotic cell cycle")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAI-4FY8--ogMamJdsrc3IO8aZF6BXBx9I69gN8j4CPBI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAI-4FY8--ogMamJdsrc3IO8aZF6BXBx9I69gN8j4CPBI.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAI-4FY8--ogMamJdsrc3IO8aZF6BXBx9I69gN8j4CPBI..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAdw6EkwUEaSJuxDjj7blinOexpfPRR6nUoMf4pJAchFA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAdw6EkwUEaSJuxDjj7blinOexpfPRR6nUoMf4pJAchFA.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAdw6EkwUEaSJuxDjj7blinOexpfPRR6nUoMf4pJAchFA..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1182,7 +1182,7 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dc:created "2014-04-25T12:57:00.021+02:00"^^xsd:dateTime ;
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---

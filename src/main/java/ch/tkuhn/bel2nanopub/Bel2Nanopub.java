@@ -10,6 +10,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.xml.bind.DatatypeConverter;
+
 import org.nanopub.CustomTrigWriterFactory;
 import org.nanopub.Nanopub;
 import org.nanopub.NanopubCreator;
@@ -50,6 +52,9 @@ public class Bel2Nanopub {
 
 	@com.beust.jcommander.Parameter(names = "-c", description = "Orcid ID of creator")
 	private String creatorId = null;
+
+	@com.beust.jcommander.Parameter(names = "-t", description = "Timestamp (use only for regression testing)")
+	private String timestamp = null;
 
 	public static void main(String[] args) {
 		Bel2Nanopub obj = new Bel2Nanopub();
@@ -157,8 +162,11 @@ public class Bel2Nanopub {
 					npCreator.addNamespace("orcid", "http://orcid.org/");
 					npCreator.addCreator(creatorId);
 				}
+				if (timestamp != null) {
+					npCreator.addTimestamp(DatatypeConverter.parseDateTime(timestamp).getTime());
+				}
 				try {
-					Nanopub np = npCreator.finalizeTrustyNanopub(true);
+					Nanopub np = npCreator.finalizeTrustyNanopub(timestamp == null);
 					nanopubs.add(np);
 					results.add(new Result(bst, np));
 				} catch (Exception ex) {
