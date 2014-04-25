@@ -34,7 +34,7 @@ public class CreateIdTables {
 	}
 
 	public void run() throws Exception {
-		for (IdScheme sc : IdScheme.getSchemes()) {
+		for (IdScheme sc : IdSchemes.getSchemes()) {
 			if (sc.hasDirectMapping()) continue;
 			String fileName = "tables/" + sc.getName() + ".txt";
 			BufferedWriter w = new BufferedWriter(new FileWriter(fileName));
@@ -77,7 +77,7 @@ public class CreateIdTables {
 				label = null;
 			}
 		}
-		for (IdScheme sc : IdScheme.getSchemes()) {
+		for (IdScheme sc : IdSchemes.getSchemes()) {
 			if (sc.hasDirectMapping()) continue;
 			if (s.startsWith(sc.getBelRdfNs())) {
 				subjString = s;

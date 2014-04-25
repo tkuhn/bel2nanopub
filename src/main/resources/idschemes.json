@@ -1,0 +1,55 @@
+{
+  schemes: [
+    {
+      name: "hgnc",
+      directMapping: false,
+      belNsSet: [
+        "http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/hgnc-human-genes.belns"
+      ],
+      belRdfNs: "http://www.openbel.org/bel/namespace/hgnc-human-genes/",
+      rdfNs: "http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id="
+    },
+    {
+      name: "mgi",
+      directMapping: false,
+      belNsSet: [
+        "http://resource.belframework.org/belframework/1.0/namespace/mgi-approved-symbols.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/mgi-mouse-genes.belns"
+      ],
+      belRdfNs: "http://www.openbel.org/bel/namespace/mgi-mouse-genes/",
+      rdfNs: "http://www.informatics.jax.org/marker/MGI:"
+    },
+    {
+      name: "entrez",
+      directMapping: true,
+      belNsSet: [
+        "http://resource.belframework.org/belframework/1.0/namespace/entrez-gene-ids-hmr.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/entrez-gene-ids.belns"
+      ],
+      belRdfNs: "http://www.openbel.org/bel/namespace/entrez-gene/",
+      rdfNs: "http://www.ncbi.nlm.nih.gov/gene/"
+    },
+    {
+      name: "chebi",
+      directMapping: false,
+      belNsSet: [
+        "http://resource.belframework.org/belframework/1.0/namespace/chebi-names.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/chebi.belns"
+      ],
+      belRdfNs: "http://www.openbel.org/bel/namespace/chebi/",
+      rdfNs: "http://www.ebi.ac.uk/chebi/searchId.do?chebiId="
+    },
+    {
+      name: "chebi-ids",
+      directMapping: true,
+      belNsSet: [
+        "http://resource.belframework.org/belframework/1.0/namespace/chebi-ids.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/chebi-ids.belns"
+      ],
+      belRdfNs: "http://www.openbel.org/bel/namespace/chebi/",
+      rdfPrefix: "chebi",
+      rdfNs: "http://www.ebi.ac.uk/chebi/searchId.do?chebiId="
+    }
+  ]
+}

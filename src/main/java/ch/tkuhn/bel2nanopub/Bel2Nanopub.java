@@ -315,7 +315,7 @@ public class Bel2Nanopub {
 		if (belNs == null) {
 			throw new Bel2NanopubException("Unknown namespace: " + prefix);
 		}
-		return IdScheme.makeUri(prefix, belNs, param.getValue(), npCreator);
+		return IdSchemes.makeUri(prefix, belNs, param.getValue(), npCreator);
 	}
 
 	private BNode processBelStatement(Statement statement, NanopubCreator npCreator) throws Bel2NanopubException {
