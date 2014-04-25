@@ -13,6 +13,9 @@ scripts/Bel2Nanopub.sh -c $ORCID -t $TIMESTAMP src/main/resources/examples/pubme
 scripts/Bel2Nanopub.sh -c $ORCID -t $TIMESTAMP src/main/resources/examples/pubmed14734561.bel > src/main/resources/examples/pubmed14734561.out.txt
 scripts/Bel2Nanopub.sh -c $ORCID -t $TIMESTAMP src/main/resources/examples/pubmed16679305.bel > src/main/resources/examples/pubmed16679305.out.txt
 
+# Comment out to also create the bel.rb files:
+exit
+
 H='# File produced by bel.rb (https://github.com/OpenBEL/bel.rb)'
 
 ( echo $H ; bel2rdf --bel src/main/resources/examples/pubmed9202001.bel -f turtle ) > src/main/resources/examples/pubmed9202001.ttl

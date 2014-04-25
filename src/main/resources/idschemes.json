@@ -50,6 +50,27 @@
       "belRdfNs": "http://www.openbel.org/bel/namespace/chebi/",
       "rdfPrefix": "chebi",
       "rdfNs": "http://www.ebi.ac.uk/chebi/searchId.do?chebiId="
+    },
+    {
+      "name": "uniprot",
+      "directMapping": false,
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/namespace/swissprot-entry-names.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/swissprot.belns"
+      ],
+      "belRdfNs": "http://www.openbel.org/bel/namespace/swissprot/",
+      "rdfNs": "http://purl.uniprot.org/uniprot/"
+    },
+    {
+      "name": "uniprot-ids",
+      "directMapping": true,
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/namespace/swissprot-accession-numbers.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/swissprot-ids.belns"
+      ],
+      "belRdfNs": "http://www.openbel.org/bel/namespace/swissprot/",
+      "rdfPrefix": "uniprot",
+      "rdfNs": "http://purl.uniprot.org/uniprot/"
     }
   ]
 }
