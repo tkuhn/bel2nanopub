@@ -71,6 +71,39 @@
       "belRdfNs": "http://www.openbel.org/bel/namespace/swissprot/",
       "rdfPrefix": "uniprot",
       "rdfNs": "http://purl.uniprot.org/uniprot/"
+    },
+    {
+      "name": "meshpp",
+      "directMapping": false,
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/namespace/mesh-biological-processes.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/mesh-processes.belns"
+      ],
+      "belRdfNs": "http://www.openbel.org/bel/namespace/mesh-processes/",
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "meshcs",
+      "directMapping": false,
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/namespace/mesh-cellular-locations.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/mesh-cellular-structures.belns"
+      ],
+      "belRdfNs": "http://www.openbel.org/bel/namespace/go-cellular-component/",
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "meshd",
+      "directMapping": false,
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/namespace/mesh-diseases.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/mesh-diseases.belns"
+      ],
+      "belRdfNs": "http://www.openbel.org/bel/namespace/mesh-diseases/",
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     }
   ]
 }

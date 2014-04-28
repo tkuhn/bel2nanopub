@@ -1,9 +1,9 @@
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:"Neoplasm Metastasis")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAOADNgJdl81pENKdbgRhBsHk9sZF82_nvFlrNtlGIStA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAOADNgJdl81pENKdbgRhBsHk9sZF82_nvFlrNtlGIStA.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAOADNgJdl81pENKdbgRhBsHk9sZF82_nvFlrNtlGIStA..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAjNY7DxYaXT8YF3qyhiYVcJmHGhGfaG0Ks6MyDFt-ge0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAjNY7DxYaXT8YF3qyhiYVcJmHGhGfaG0Ks6MyDFt-ge0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAjNY7DxYaXT8YF3qyhiYVcJmHGhGfaG0Ks6MyDFt-ge0..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -12,7 +12,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix meshd: <http://resource.belframework.org/belframework/1.0/namespace/mesh-diseases/> .
+@prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix disease: <http://resource.belframework.org/belframework/1.0/annotation/mesh-disease/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -33,7 +33,7 @@ sub:Ass {
 		rdf:subject node:3 ;
 		a rdf:Statement .
 	
-	node:2 belv:hasConcept meshd:Neoplasm%20Metastasis ;
+	node:2 belv:hasConcept mesh:D009362 ;
 		a belv:Pathology .
 	
 	node:3 belv:hasChild node:4 ;
@@ -61,9 +61,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:"Recurrence")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RADTD3nY6yeEnDmsGr3qC0YcbLQ-9X00c6I9ch_ve9d6A> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RADTD3nY6yeEnDmsGr3qC0YcbLQ-9X00c6I9ch_ve9d6A.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RADTD3nY6yeEnDmsGr3qC0YcbLQ-9X00c6I9ch_ve9d6A..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RALy3aW6J9460EiC9sMSgDZToWsS-D_EQST8pmQpi9FWQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RALy3aW6J9460EiC9sMSgDZToWsS-D_EQST8pmQpi9FWQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RALy3aW6J9460EiC9sMSgDZToWsS-D_EQST8pmQpi9FWQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -72,7 +72,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix meshd: <http://resource.belframework.org/belframework/1.0/namespace/mesh-diseases/> .
+@prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix disease: <http://resource.belframework.org/belframework/1.0/annotation/mesh-disease/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -93,7 +93,7 @@ sub:Ass {
 		rdf:subject node:3 ;
 		a rdf:Statement .
 	
-	node:2 belv:hasConcept meshd:Recurrence ;
+	node:2 belv:hasConcept mesh:D012008 ;
 		a belv:Pathology .
 	
 	node:3 belv:hasChild node:4 ;
@@ -121,9 +121,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> path(MESHD:Neoplasms)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAhnhf-RtUIjMAo2PevdQiIE-C5FkkKxCgNieJGFVvGxc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAhnhf-RtUIjMAo2PevdQiIE-C5FkkKxCgNieJGFVvGxc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAhnhf-RtUIjMAo2PevdQiIE-C5FkkKxCgNieJGFVvGxc..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAEh5EvFTqzHAbrZrmA-4CeVD_jwpcDywWWZM5q8q2eyA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAEh5EvFTqzHAbrZrmA-4CeVD_jwpcDywWWZM5q8q2eyA.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAEh5EvFTqzHAbrZrmA-4CeVD_jwpcDywWWZM5q8q2eyA..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -132,7 +132,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix meshd: <http://resource.belframework.org/belframework/1.0/namespace/mesh-diseases/> .
+@prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -153,7 +153,7 @@ sub:Ass {
 		rdf:subject node:3 ;
 		a rdf:Statement .
 	
-	node:2 belv:hasConcept meshd:Neoplasms ;
+	node:2 belv:hasConcept mesh:D009369 ;
 		a belv:Pathology .
 	
 	node:3 belv:hasChild node:4 ;
@@ -181,9 +181,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> path(MESHD:Neoplasms)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAUOmY-HbiJmWORQwEAXrgABKQK5HOgP4ufyPh8KyC_ts> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAUOmY-HbiJmWORQwEAXrgABKQK5HOgP4ufyPh8KyC_ts.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAUOmY-HbiJmWORQwEAXrgABKQK5HOgP4ufyPh8KyC_ts..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1AJ4lX3LY6PNOMg7o6Ai34C07hDrbpXdpvK293dtzIk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1AJ4lX3LY6PNOMg7o6Ai34C07hDrbpXdpvK293dtzIk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA1AJ4lX3LY6PNOMg7o6Ai34C07hDrbpXdpvK293dtzIk..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -192,7 +192,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix meshd: <http://resource.belframework.org/belframework/1.0/namespace/mesh-diseases/> .
+@prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -213,7 +213,7 @@ sub:Ass {
 		rdf:subject node:3 ;
 		a rdf:Statement .
 	
-	node:2 belv:hasConcept meshd:Neoplasms ;
+	node:2 belv:hasConcept mesh:D009369 ;
 		a belv:Pathology .
 	
 	node:3 belv:hasChild node:4 ;
@@ -241,9 +241,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,C)) causesNoChange path(MESHD:Neoplasms)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAFy6rfEuXWIm4CBf5aVmP9DMtvWKSCLtpP9mUfdEcyOM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAFy6rfEuXWIm4CBf5aVmP9DMtvWKSCLtpP9mUfdEcyOM.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAFy6rfEuXWIm4CBf5aVmP9DMtvWKSCLtpP9mUfdEcyOM..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA0bCkdXmeX8MG59hVKyW2Khfywvsa9ZixxWoLD6TYye8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA0bCkdXmeX8MG59hVKyW2Khfywvsa9ZixxWoLD6TYye8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA0bCkdXmeX8MG59hVKyW2Khfywvsa9ZixxWoLD6TYye8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -252,7 +252,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix meshd: <http://resource.belframework.org/belframework/1.0/namespace/mesh-diseases/> .
+@prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -273,7 +273,7 @@ sub:Ass {
 		rdf:subject node:3 ;
 		a rdf:Statement .
 	
-	node:2 belv:hasConcept meshd:Neoplasms ;
+	node:2 belv:hasConcept mesh:D009369 ;
 		a belv:Pathology .
 	
 	node:3 belv:hasChild node:4 ;

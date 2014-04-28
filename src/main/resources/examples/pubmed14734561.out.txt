@@ -1,9 +1,9 @@
 ---
 BEL: path(MESHD:"Werner Syndrome") positiveCorrelation path(MESHD:"Genomic Instability")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAaROdtoPG1kP3kBd7X1DPrswGzbXOhYgxJxJ0W8kgF9s> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAaROdtoPG1kP3kBd7X1DPrswGzbXOhYgxJxJ0W8kgF9s.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAaROdtoPG1kP3kBd7X1DPrswGzbXOhYgxJxJ0W8kgF9s..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAN_ieZwuDZ7_5DnpI0h4efsk7xfv4wVo_pcSSsD4d2M0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAN_ieZwuDZ7_5DnpI0h4efsk7xfv4wVo_pcSSsD4d2M0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAN_ieZwuDZ7_5DnpI0h4efsk7xfv4wVo_pcSSsD4d2M0..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -11,7 +11,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix meshd: <http://resource.belframework.org/belframework/1.0/namespace/mesh-diseases/> .
+@prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -29,10 +29,10 @@ sub:Ass {
 		rdf:subject node:3 ;
 		a rdf:Statement .
 	
-	node:2 belv:hasConcept meshd:Genomic%20Instability ;
+	node:2 belv:hasConcept mesh:D042822 ;
 		a belv:Pathology .
 	
-	node:3 belv:hasConcept meshd:Werner%20Syndrome ;
+	node:3 belv:hasConcept mesh:D014898 ;
 		a belv:Pathology .
 	
 	sub:Ass rdfs:label "path(MESHD:\"Werner Syndrome\") positiveCorrelation path(MESHD:\"Genomic Instability\")" .
@@ -53,9 +53,9 @@ sub:Info {
 ---
 BEL: path(MESHD:"Werner Syndrome") positiveCorrelation path(MESHD:"Aging, Premature")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAoJ0kl7YWX4eozHKDWkzPx-yS2Vv7SlkD10A4uLZugqM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAoJ0kl7YWX4eozHKDWkzPx-yS2Vv7SlkD10A4uLZugqM.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAoJ0kl7YWX4eozHKDWkzPx-yS2Vv7SlkD10A4uLZugqM..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAiU2EHOnh6DDAdDJwr7Y6uUXK_AOkgzn8DDoMAL5NObM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAiU2EHOnh6DDAdDJwr7Y6uUXK_AOkgzn8DDoMAL5NObM.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAiU2EHOnh6DDAdDJwr7Y6uUXK_AOkgzn8DDoMAL5NObM..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -63,7 +63,7 @@ NANOPUB:
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix meshd: <http://resource.belframework.org/belframework/1.0/namespace/mesh-diseases/> .
+@prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -81,10 +81,10 @@ sub:Ass {
 		rdf:subject node:3 ;
 		a rdf:Statement .
 	
-	node:2 belv:hasConcept meshd:Aging%2C%20Premature ;
+	node:2 belv:hasConcept mesh:D019588 ;
 		a belv:Pathology .
 	
-	node:3 belv:hasConcept meshd:Werner%20Syndrome ;
+	node:3 belv:hasConcept mesh:D014898 ;
 		a belv:Pathology .
 	
 	sub:Ass rdfs:label "path(MESHD:\"Werner Syndrome\") positiveCorrelation path(MESHD:\"Aging, Premature\")" .
