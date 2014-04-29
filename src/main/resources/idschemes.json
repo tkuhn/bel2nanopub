@@ -160,6 +160,15 @@
       "belRdfNs": "http://www.openbel.org/bel/namespace/go-cellular-component/",
       "rdfPrefix": "go",
       "rdfNs": "http://amigo.geneontology.org/amigo/term/GO:"
+    },
+    {
+      "name": "species",
+      "directMapping": true,
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id.belanno",
+        "http://resource.belframework.org/belframework/20131211/annotation/species-taxonomy-id.belanno"
+      ],
+      "rdfNs": "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id="
     }
   ]
 }

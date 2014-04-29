@@ -1,9 +1,9 @@
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3ssQWVGsQDj0JFPgUfGAoEpGCYV3PJelD1BEIIFkBBc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3ssQWVGsQDj0JFPgUfGAoEpGCYV3PJelD1BEIIFkBBc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA3ssQWVGsQDj0JFPgUfGAoEpGCYV3PJelD1BEIIFkBBc..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA6fPnT-yLCfqecT6rE7z-Tl_yfO1S1dQAA8vD3_XdaYs> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA6fPnT-yLCfqecT6rE7z-Tl_yfO1S1dQAA8vD3_XdaYs.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA6fPnT-yLCfqecT6rE7z-Tl_yfO1S1dQAA8vD3_XdaYs..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -13,7 +13,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -61,9 +61,9 @@ sub:Info {
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAWpm4mDLSK4lGfsuyxFNHvy276Sp6vVbUqpkYvxdPlzI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAWpm4mDLSK4lGfsuyxFNHvy276Sp6vVbUqpkYvxdPlzI.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAWpm4mDLSK4lGfsuyxFNHvy276Sp6vVbUqpkYvxdPlzI..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RARkiZtEjxuQsB5iE8xvNsZldvPhWnjq9OBAfqBD8HP3Y> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RARkiZtEjxuQsB5iE8xvNsZldvPhWnjq9OBAfqBD8HP3Y.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RARkiZtEjxuQsB5iE8xvNsZldvPhWnjq9OBAfqBD8HP3Y..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -73,7 +73,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -121,9 +121,9 @@ sub:Info {
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAPl-eJDjzF4URWFBQ_r0YA6SGGHA0Fc2xtN-IKcCQGc0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAPl-eJDjzF4URWFBQ_r0YA6SGGHA0Fc2xtN-IKcCQGc0.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAPl-eJDjzF4URWFBQ_r0YA6SGGHA0Fc2xtN-IKcCQGc0..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAOcq9BT9Br6cooakBrJ6DaYlyHbef3uS75HIVdcpYNu8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAOcq9BT9Br6cooakBrJ6DaYlyHbef3uS75HIVdcpYNu8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAOcq9BT9Br6cooakBrJ6DaYlyHbef3uS75HIVdcpYNu8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -133,7 +133,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -181,9 +181,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK1,pmod(P,T)) => kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1BUPmY5eA9XmLIsyFHDcb5UNOYLsVRlTqoT3TJY6YGs> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1BUPmY5eA9XmLIsyFHDcb5UNOYLsVRlTqoT3TJY6YGs.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA1BUPmY5eA9XmLIsyFHDcb5UNOYLsVRlTqoT3TJY6YGs..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAgntt5ApxwuB_1wL7B-Woe2fqLpHZh3ZVQ0NS5-gZ2jA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAgntt5ApxwuB_1wL7B-Woe2fqLpHZh3ZVQ0NS5-gZ2jA.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAgntt5ApxwuB_1wL7B-Woe2fqLpHZh3ZVQ0NS5-gZ2jA..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -192,7 +192,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -245,9 +245,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK1,pmod(P,Y)) => kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAEK3t0yosmqFV_7unnxxUWloW0XjFuJZ8YOLtdogLXds> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAEK3t0yosmqFV_7unnxxUWloW0XjFuJZ8YOLtdogLXds.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAEK3t0yosmqFV_7unnxxUWloW0XjFuJZ8YOLtdogLXds..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RADO4McBZG0xYt_i0bD_tKmI1CnYVPcLIb81MQU_HOUPw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RADO4McBZG0xYt_i0bD_tKmI1CnYVPcLIb81MQU_HOUPw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RADO4McBZG0xYt_i0bD_tKmI1CnYVPcLIb81MQU_HOUPw..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -256,7 +256,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -309,9 +309,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK8,pmod(P,T)) => kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAMW-a0f3oq7pdmKBw5bNP6Cp9X7C3C5I5tIyLpzdQBdI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAMW-a0f3oq7pdmKBw5bNP6Cp9X7C3C5I5tIyLpzdQBdI.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAMW-a0f3oq7pdmKBw5bNP6Cp9X7C3C5I5tIyLpzdQBdI..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAE25t7Z8RyPBLEA828ysvmyPxjVY8gK-UfgDHp5NU-Z8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAE25t7Z8RyPBLEA828ysvmyPxjVY8gK-UfgDHp5NU-Z8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAE25t7Z8RyPBLEA828ysvmyPxjVY8gK-UfgDHp5NU-Z8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -320,7 +320,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -373,9 +373,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK8,pmod(P,Y)) => kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAqtQlIjVZtM2NFdBJINbZiZFVqjkYfFw0SU6edq3mBPA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAqtQlIjVZtM2NFdBJINbZiZFVqjkYfFw0SU6edq3mBPA.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAqtQlIjVZtM2NFdBJINbZiZFVqjkYfFw0SU6edq3mBPA..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJr9gzuWqtj822-w2ip8QTwnvDLWhwxONPP-oggdYzuA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJr9gzuWqtj822-w2ip8QTwnvDLWhwxONPP-oggdYzuA.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAJr9gzuWqtj822-w2ip8QTwnvDLWhwxONPP-oggdYzuA..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -384,7 +384,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -437,9 +437,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK14,pmod(P,T)) => kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RATNWpou-9PwNweJ2f7YXAoNQ_CapWNvj6Efngosrz38U> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RATNWpou-9PwNweJ2f7YXAoNQ_CapWNvj6Efngosrz38U.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RATNWpou-9PwNweJ2f7YXAoNQ_CapWNvj6Efngosrz38U..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAncw41WQ8V3F1ZrwkjGWLl8APZeOUXbKrM6zkBYA2obU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAncw41WQ8V3F1ZrwkjGWLl8APZeOUXbKrM6zkBYA2obU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAncw41WQ8V3F1ZrwkjGWLl8APZeOUXbKrM6zkBYA2obU..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -449,7 +449,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -502,9 +502,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK14,pmod(P,Y)) => kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAt2kNB-TtESxp5DiKTdiNbOGG1bURlOEGpmvs8zpH77U> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAt2kNB-TtESxp5DiKTdiNbOGG1bURlOEGpmvs8zpH77U.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAt2kNB-TtESxp5DiKTdiNbOGG1bURlOEGpmvs8zpH77U..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA5Ii32TIRJQhmjnb9Xj2NNtfjgULxF_FtzdWZ18Imco0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA5Ii32TIRJQhmjnb9Xj2NNtfjgULxF_FtzdWZ18Imco0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA5Ii32TIRJQhmjnb9Xj2NNtfjgULxF_FtzdWZ18Imco0..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -514,7 +514,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -567,9 +567,9 @@ sub:Info {
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK1,pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_C_MGnEcesQrfqOda9fWjlc-hg8nXlSxOIU6UWIM6Fo> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_C_MGnEcesQrfqOda9fWjlc-hg8nXlSxOIU6UWIM6Fo.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA_C_MGnEcesQrfqOda9fWjlc-hg8nXlSxOIU6UWIM6Fo..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RASy1m8aauRtwSpuVIQt2RFGWjyUJ2oIFG_oPNM1Z90gQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RASy1m8aauRtwSpuVIQt2RFGWjyUJ2oIFG_oPNM1Z90gQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RASy1m8aauRtwSpuVIQt2RFGWjyUJ2oIFG_oPNM1Z90gQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -578,7 +578,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -631,9 +631,9 @@ sub:Info {
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK8,pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAupUHL5KCuxkYSJlztZlkJRFYPR_SZSGu1tHfjwld-qQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAupUHL5KCuxkYSJlztZlkJRFYPR_SZSGu1tHfjwld-qQ.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAupUHL5KCuxkYSJlztZlkJRFYPR_SZSGu1tHfjwld-qQ..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAx0zvPx6FYPTQA2CGwv1Ak6_99azBaS3KnrQgVpP_B0Y> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAx0zvPx6FYPTQA2CGwv1Ak6_99azBaS3KnrQgVpP_B0Y.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAx0zvPx6FYPTQA2CGwv1Ak6_99azBaS3KnrQgVpP_B0Y..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -642,7 +642,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -695,9 +695,9 @@ sub:Info {
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(PFH:"MAPK p38 Family",pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA5rJxWP6XLeMNFnHWepG_S6BkGiaAcei7lgAsl-0uuJw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA5rJxWP6XLeMNFnHWepG_S6BkGiaAcei7lgAsl-0uuJw.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA5rJxWP6XLeMNFnHWepG_S6BkGiaAcei7lgAsl-0uuJw..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA0bzpIH1l_2NuT9s2S6ff2BRhbhg24nDaf3X7X9m0vEU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA0bzpIH1l_2NuT9s2S6ff2BRhbhg24nDaf3X7X9m0vEU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA0bzpIH1l_2NuT9s2S6ff2BRhbhg24nDaf3X7X9m0vEU..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -707,7 +707,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -760,9 +760,9 @@ sub:Info {
 ---
 BEL: phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3l1SmoeL6oZOEnLdpnjbeWkZf68nRW8WV4DV9p-SyWw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3l1SmoeL6oZOEnLdpnjbeWkZf68nRW8WV4DV9p-SyWw.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA3l1SmoeL6oZOEnLdpnjbeWkZf68nRW8WV4DV9p-SyWw..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA-W0yhDhx-krUtq1Qfppun7RMx6tsVlX08rD3Gn0kSbU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA-W0yhDhx-krUtq1Qfppun7RMx6tsVlX08rD3Gn0kSbU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA-W0yhDhx-krUtq1Qfppun7RMx6tsVlX08rD3Gn0kSbU..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -771,7 +771,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -823,9 +823,9 @@ sub:Info {
 ---
 BEL: phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAVMd4KZtCS7MOPJry2FA9xkTvtMNs0akHpQAD_aLDW20> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAVMd4KZtCS7MOPJry2FA9xkTvtMNs0akHpQAD_aLDW20.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAVMd4KZtCS7MOPJry2FA9xkTvtMNs0akHpQAD_aLDW20..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAuRxr0yNAVASw_N20masCIAsFTDf2mR4eVe5gcl0qFqI> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAuRxr0yNAVASw_N20masCIAsFTDf2mR4eVe5gcl0qFqI.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAuRxr0yNAVASw_N20masCIAsFTDf2mR4eVe5gcl0qFqI..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -834,7 +834,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -886,9 +886,9 @@ sub:Info {
 ---
 BEL: phos(p(HGNC:DUSP1)) =| kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAmVnhEWMJOt1EAVbbaCN3vcHzpkdil4VZ4CRPchc24Tc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAmVnhEWMJOt1EAVbbaCN3vcHzpkdil4VZ4CRPchc24Tc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAmVnhEWMJOt1EAVbbaCN3vcHzpkdil4VZ4CRPchc24Tc..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAUqRL6gxsWDS6-Ir_qgnauPXnMqzJrEh-TungGaeZr0s> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAUqRL6gxsWDS6-Ir_qgnauPXnMqzJrEh-TungGaeZr0s.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAUqRL6gxsWDS6-Ir_qgnauPXnMqzJrEh-TungGaeZr0s..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -898,7 +898,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -950,9 +950,9 @@ sub:Info {
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RASlJTlOBbUoJGRYhST--2OxB_dg1I7FiHF4ef95wZB4Q> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RASlJTlOBbUoJGRYhST--2OxB_dg1I7FiHF4ef95wZB4Q.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RASlJTlOBbUoJGRYhST--2OxB_dg1I7FiHF4ef95wZB4Q..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAlZu89ZXiP4VTdQoggu-QCFT4c8BoY8i_REjJKK3kdj0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAlZu89ZXiP4VTdQoggu-QCFT4c8BoY8i_REjJKK3kdj0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAlZu89ZXiP4VTdQoggu-QCFT4c8BoY8i_REjJKK3kdj0..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -962,7 +962,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -1006,9 +1006,9 @@ sub:Info {
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:JUN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAMRc7ZYl_4umnG17ABCjXq_Un-p8Q_jueQzP6yYIigmc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAMRc7ZYl_4umnG17ABCjXq_Un-p8Q_jueQzP6yYIigmc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAMRc7ZYl_4umnG17ABCjXq_Un-p8Q_jueQzP6yYIigmc..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAgLNEfVpHZ47aO05izny-C8YhQZ0DpecGm-Ny_lesJNU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAgLNEfVpHZ47aO05izny-C8YhQZ0DpecGm-Ny_lesJNU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAgLNEfVpHZ47aO05izny-C8YhQZ0DpecGm-Ny_lesJNU..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1018,7 +1018,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -1066,9 +1066,9 @@ sub:Info {
 ---
 BEL: phos(p(HGNC:DUSP1)) -| tscript(p(HGNC:JUN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAksBuqC_2myYMBL3W_OfjqaMZ0Qgs5dUU_sboQOsQiXw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAksBuqC_2myYMBL3W_OfjqaMZ0Qgs5dUU_sboQOsQiXw.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAksBuqC_2myYMBL3W_OfjqaMZ0Qgs5dUU_sboQOsQiXw..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAWPUPRPLab7yNj2fPteiN8fdbtgMdbGlrg6kBLILZaNk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAWPUPRPLab7yNj2fPteiN8fdbtgMdbGlrg6kBLILZaNk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAWPUPRPLab7yNj2fPteiN8fdbtgMdbGlrg6kBLILZaNk..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1077,7 +1077,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -1129,9 +1129,9 @@ sub:Info {
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:ELK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAt5Al6HvOKVMScQ1btxXF49HVkouDQw4BeQKNs6C8Rys> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAt5Al6HvOKVMScQ1btxXF49HVkouDQw4BeQKNs6C8Rys.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAt5Al6HvOKVMScQ1btxXF49HVkouDQw4BeQKNs6C8Rys..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAHdHMJHRxjcXYjDoU8GPdkPeQepzE96iAeSCi14789CQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAHdHMJHRxjcXYjDoU8GPdkPeQepzE96iAeSCi14789CQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAHdHMJHRxjcXYjDoU8GPdkPeQepzE96iAeSCi14789CQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1141,7 +1141,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -1189,9 +1189,9 @@ sub:Info {
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:MYC))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAWG-CX07jvOO4EnykHYmLdenFK3hsSZIg_1Rm5lIFj-k> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAWG-CX07jvOO4EnykHYmLdenFK3hsSZIg_1Rm5lIFj-k.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAWG-CX07jvOO4EnykHYmLdenFK3hsSZIg_1Rm5lIFj-k..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJDeG01c_-nRGVZSnSKxFANRjFDAqOU7CgCjgpI8v2r0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJDeG01c_-nRGVZSnSKxFANRjFDAqOU7CgCjgpI8v2r0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAJDeG01c_-nRGVZSnSKxFANRjFDAqOU7CgCjgpI8v2r0..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1201,7 +1201,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -1249,9 +1249,9 @@ sub:Info {
 ---
 BEL: p(HGNC:DUSP1) -|(a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAzlkYOqL8CYhhPbwZFh_De6Bb3doC4Usl3n1j-zJ0n0o> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAzlkYOqL8CYhhPbwZFh_De6Bb3doC4Usl3n1j-zJ0n0o.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAzlkYOqL8CYhhPbwZFh_De6Bb3doC4Usl3n1j-zJ0n0o..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAWE-G_3OuUL-3jVfPsknCStGz-ikCz0NKW23Kq3wjgaQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAWE-G_3OuUL-3jVfPsknCStGz-ikCz0NKW23Kq3wjgaQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAWE-G_3OuUL-3jVfPsknCStGz-ikCz0NKW23Kq3wjgaQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1261,7 +1261,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -1313,9 +1313,9 @@ sub:Info {
 ---
 BEL: kin(p(HGNC:MAPK1)) ->(a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAgTeTlWpZ940yUbq60i19n_QJtim2TVBU9N0pdH8vL_A> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAgTeTlWpZ940yUbq60i19n_QJtim2TVBU9N0pdH8vL_A.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAgTeTlWpZ940yUbq60i19n_QJtim2TVBU9N0pdH8vL_A..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RANHf5jZ4UAUg_DxOq_d5KxMGv0t5XO6Fc78c7WO8x5JU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RANHf5jZ4UAUg_DxOq_d5KxMGv0t5XO6Fc78c7WO8x5JU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RANHf5jZ4UAUg_DxOq_d5KxMGv0t5XO6Fc78c7WO8x5JU..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1325,7 +1325,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -1381,9 +1381,9 @@ sub:Info {
 ---
 BEL: kin(p(HGNC:MAPK1)) -> p(HGNC:DUSP1)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAb0FGnclbtAIggs4LOcO4foqNprFLPSkztVm0mXBXVrE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAb0FGnclbtAIggs4LOcO4foqNprFLPSkztVm0mXBXVrE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAb0FGnclbtAIggs4LOcO4foqNprFLPSkztVm0mXBXVrE..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RALG6FvwubuYHd0_w00UmDdFy2dSvlbVq57Nw_fY6ZGG0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RALG6FvwubuYHd0_w00UmDdFy2dSvlbVq57Nw_fY6ZGG0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RALG6FvwubuYHd0_w00UmDdFy2dSvlbVq57Nw_fY6ZGG0..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1392,7 +1392,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix species: <http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
