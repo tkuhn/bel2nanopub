@@ -189,6 +189,15 @@
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
+      "name": "mesh-cell-structure2",
+      "mappingType": "belanno",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/20131211/annotation/cell-structure.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
       "name": "mesh-body-region",
       "mappingType": "belanno-mesh",
       "belNsSet": [
