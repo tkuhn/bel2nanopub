@@ -21,6 +21,16 @@
       "rdfNs": "http://www.informatics.jax.org/marker/MGI:"
     },
     {
+      "name": "rgd",
+      "directMapping": false,
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/namespace/rgd-approved-symbols.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/rgd-rat-genes.belns"
+      ],
+      "belRdfNs": "http://www.openbel.org/bel/namespace/rgd-rat-genes/",
+      "rdfNs": "http://rgd.mcw.edu/rgdweb/report/gene/main.html?id="
+    },
+    {
       "name": "entrez",
       "directMapping": true,
       "belNsSet": [
