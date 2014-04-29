@@ -47,7 +47,7 @@ public class IdSchemes {
 			}
 		}
 		if (uriString == null) {
-			String ns = belNs.replaceFirst("\\.belns$", "");
+			String ns = belNs.replaceFirst("\\.bel(ns|anno)$", "");
 			if (!ns.endsWith("/")) ns += "/";
 			npCreator.addNamespace(prefix.toLowerCase(), ns);
 			uriString = ns + Utils.encodeUrlString(belLabel);

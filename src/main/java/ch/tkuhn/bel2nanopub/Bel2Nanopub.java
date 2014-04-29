@@ -108,7 +108,7 @@ public class Bel2Nanopub {
 	private List<BELParseErrorException> parseExceptions = new ArrayList<BELParseErrorException>();
 
 	private Map<String,String> namespaceMap = new HashMap<String,String>();
-	private Map<String,URI> annotationMap = new HashMap<String,URI>();
+	private Map<String,String> annotationMap = new HashMap<String,String>();
 
 	private ValueFactoryImpl vf = new ValueFactoryImpl();
 
@@ -185,9 +185,7 @@ public class Bel2Nanopub {
 	private void readAnnotations() {
 		for (BELAnnotationDefinition d : belDoc.getAnnotationDefinitions()) {
 			if (!d.getAnnotationType().getDisplayValue().equals("URL")) continue;
-			String uriString = d.getValue().replaceFirst("\\.belanno$", "");
-			if (!uriString.endsWith("/")) uriString += "/";
-			annotationMap.put(d.getName(), new URIImpl(uriString));
+			annotationMap.put(d.getName(), d.getValue());
 		}
 	}
 
@@ -195,20 +193,7 @@ public class Bel2Nanopub {
 		Statement st = BELParser.parseStatement(belStatement.getStatementSyntax());
 		BNode bn = processBelStatement(st, npCreator);
 		for (BELAnnotation ann : belStatement.getAnnotations()) {
-			String annN = ann.getAnnotationDefinition().getName();
-			URI annNs = annotationMap.get(annN);
-			if (annNs == null) {
-				for (String annV : ann.getValues()) {
-					Literal annL = vf.createLiteral(annV);
-					npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasAnnotation, annL);
-				}
-			} else {
-				npCreator.addNamespace(annN.toLowerCase(), annNs);
-				for (String annV : ann.getValues()) {
-					URI annUri = new URIImpl(annNs + Utils.encodeUrlString(annV));
-					npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasAnnotation, annUri);
-				}
-			}
+			processAnnotation(ann, bn, npCreator);
 		}
 		BELCitation cit = belStatement.getCitation();
 		URI citUri = null;
@@ -324,6 +309,22 @@ public class Bel2Nanopub {
 			throw new Bel2NanopubException("Unknown namespace: " + prefix);
 		}
 		return IdSchemes.makeUri(prefix, belNs, param.getValue(), npCreator);
+	}
+
+	private void processAnnotation(BELAnnotation ann, BNode node, NanopubCreator npCreator) {
+		String annN = ann.getAnnotationDefinition().getName();
+		String annNs = annotationMap.get(annN);
+		if (annNs == null) {
+			for (String annV : ann.getValues()) {
+				Literal annL = vf.createLiteral(annV);
+				npCreator.addAssertionStatement(node, BelRdfVocabulary.hasAnnotation, annL);
+			}
+		} else {
+			for (String annV : ann.getValues()) {
+				URI annUri = IdSchemes.makeUri(annN, annNs, annV, npCreator);
+				npCreator.addAssertionStatement(node, BelRdfVocabulary.hasAnnotation, annUri);
+			}
+		}
 	}
 
 	private BNode processBelStatement(Statement statement, NanopubCreator npCreator) throws Bel2NanopubException {
