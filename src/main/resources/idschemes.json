@@ -90,7 +90,7 @@
         "http://resource.belframework.org/belframework/1.0/namespace/mesh-cellular-locations.belns",
         "http://resource.belframework.org/belframework/20131211/namespace/mesh-cellular-structures.belns"
       ],
-      "belRdfNs": "http://www.openbel.org/bel/namespace/go-cellular-component/",
+      "belRdfNs": "http://www.openbel.org/bel/namespace/mesh-cellular-structures/",
       "rdfPrefix": "mesh",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
@@ -104,6 +104,52 @@
       "belRdfNs": "http://www.openbel.org/bel/namespace/mesh-diseases/",
       "rdfPrefix": "mesh",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "gobp",
+      "directMapping": false,
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/namespace/go-biological-processes-names.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/go-biological-process.belns"
+      ],
+      "belRdfNs": "http://www.openbel.org/bel/namespace/go-biological-process/",
+      "rdfPrefix": "go",
+      "rdfNs": "http://amigo.geneontology.org/amigo/term/GO:"
+    },
+    {
+      "name": "gobp-ids",
+      "directMapping": true,
+      "directMappingPattern": "GO:(.*)",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/namespace/go-biological-processes-accession-numbers.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/go-biological-process-ids.belns"
+      ],
+      "belRdfNs": "http://www.openbel.org/bel/namespace/go-biological-process/",
+      "rdfPrefix": "go",
+      "rdfNs": "http://amigo.geneontology.org/amigo/term/GO:"
+    },
+    {
+      "name": "gocc",
+      "directMapping": false,
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/namespace/go-cellular-component-terms.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/go-cellular-component.belns"
+      ],
+      "belRdfNs": "http://www.openbel.org/bel/namespace/go-cellular-component/",
+      "rdfPrefix": "go",
+      "rdfNs": "http://amigo.geneontology.org/amigo/term/GO:"
+    },
+    {
+      "name": "gocc-ids",
+      "directMapping": true,
+      "directMappingPattern": "GO:(.*)",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/namespace/go-cellular-component-accession-numbers.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/go-cellular-component-ids.belns"
+      ],
+      "belRdfNs": "http://www.openbel.org/bel/namespace/go-cellular-component/",
+      "rdfPrefix": "go",
+      "rdfNs": "http://amigo.geneontology.org/amigo/term/GO:"
     }
   ]
 }

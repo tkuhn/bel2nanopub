@@ -12,6 +12,7 @@ public class IdScheme {
 
 	private String name;
 	private boolean directMapping = false;
+	private String directMappingPattern;
 	private String belRdfNs;
 	private String rdfPrefix;
 	private String rdfNs;
@@ -40,41 +41,26 @@ public class IdScheme {
 		return name;
 	}
 
-	void setDirectMapping(boolean directMapping) {
-		this.directMapping = directMapping;
-	}
-
 	public boolean hasDirectMapping() {
 		return directMapping;
 	}
 
-	void setBelRdfNs(String belRdfNs) {
-		this.belRdfNs = belRdfNs;
+	public String getDirectMappingPattern() {
+		if (directMappingPattern == null) return "(.*)";
+		return directMappingPattern;
 	}
 
 	public String getBelRdfNs() {
 		return belRdfNs;
 	}
 
-	void setRdfNs(String rdfNs) {
-		this.rdfNs = rdfNs;
-	}
-
 	public String getRdfNs() {
 		return rdfNs;
-	}
-
-	void setRdfPrefix(String rdfPrefix) {
-		this.rdfPrefix = rdfPrefix;
 	}
 
 	public String getRdfPrefix() {
 		if (rdfPrefix == null) return name;
 		return rdfPrefix;
-	}
-
-	void addBelNs(String belNs) {
-		belNsSet.add(belNs);
 	}
 
 	public boolean hasBelNs(String belNs) {
@@ -83,7 +69,8 @@ public class IdScheme {
 
 	public String getId(String belLabel) {
 		if (hasDirectMapping()) {
-			return belLabel;
+			String pattern = "^" + getDirectMappingPattern() + "$";
+			return belLabel.replaceFirst(pattern, "$1");
 		} else {
 			loadMap();
 			return idMap.get(belLabel);
