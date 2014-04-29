@@ -170,9 +170,9 @@ sub:Info {
 ---
 BEL: complex(p(HGNC:XRCC5),p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAO0pz7HtZKaZnRSNVpiRS8vUN7e6rSNh5RsLTP-uQI58> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAO0pz7HtZKaZnRSNVpiRS8vUN7e6rSNh5RsLTP-uQI58.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAO0pz7HtZKaZnRSNVpiRS8vUN7e6rSNh5RsLTP-uQI58..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAr5gw5gDQrsrlSk705PXVBXl1CSUZfuazsDaKgzdysTc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAr5gw5gDQrsrlSk705PXVBXl1CSUZfuazsDaKgzdysTc.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAr5gw5gDQrsrlSk705PXVBXl1CSUZfuazsDaKgzdysTc..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -181,7 +181,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix cellstructure: <http://resource.belframework.org/belframework/1.0/annotation/mesh-cell-structure/> .
+@prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -194,7 +194,7 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellstructure:Cell%20Nucleus ;
+	node:1 belv:hasAnnotation mesh:D002467 ;
 		belv:hasChild node:2 , node:3 ;
 		a belv:ComplexAbundance .
 	
@@ -222,9 +222,9 @@ sub:Info {
 ---
 BEL: complex(p(HGNC:XRCC6),p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RASNAgxl9_ogR44XUe-oCuFanNdqXzELFtgenu1HXnGqw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RASNAgxl9_ogR44XUe-oCuFanNdqXzELFtgenu1HXnGqw.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RASNAgxl9_ogR44XUe-oCuFanNdqXzELFtgenu1HXnGqw..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAGrrXwM5yfR1ejmwEypVu-9S3K3iJ6OHfjzcIkZ2j5Hw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAGrrXwM5yfR1ejmwEypVu-9S3K3iJ6OHfjzcIkZ2j5Hw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAGrrXwM5yfR1ejmwEypVu-9S3K3iJ6OHfjzcIkZ2j5Hw..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -233,7 +233,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix cellstructure: <http://resource.belframework.org/belframework/1.0/annotation/mesh-cell-structure/> .
+@prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -246,7 +246,7 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellstructure:Cell%20Nucleus ;
+	node:1 belv:hasAnnotation mesh:D002467 ;
 		belv:hasChild node:2 , node:3 ;
 		a belv:ComplexAbundance .
 	
@@ -274,9 +274,9 @@ sub:Info {
 ---
 BEL: complex(p(HGNC:PARP1),p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAsIo9JxYA-bfDCH36HSmvR1HwBhXnOJE6ehcZfOSHH8c> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAsIo9JxYA-bfDCH36HSmvR1HwBhXnOJE6ehcZfOSHH8c.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAsIo9JxYA-bfDCH36HSmvR1HwBhXnOJE6ehcZfOSHH8c..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA38Eq6vza6UcjvQnV1uhBzW9J62HX5MhZwgAetTkXxCE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA38Eq6vza6UcjvQnV1uhBzW9J62HX5MhZwgAetTkXxCE.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA38Eq6vza6UcjvQnV1uhBzW9J62HX5MhZwgAetTkXxCE..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -285,7 +285,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix cellstructure: <http://resource.belframework.org/belframework/1.0/annotation/mesh-cell-structure/> .
+@prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -298,7 +298,7 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellstructure:Cell%20Nucleus ;
+	node:1 belv:hasAnnotation mesh:D002467 ;
 		belv:hasChild node:2 , node:3 ;
 		a belv:ComplexAbundance .
 	

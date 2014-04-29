@@ -1,9 +1,9 @@
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:"Neoplasm Metastasis")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_HVEVbOhfqv0U0VvlW8tRhJRiAkkfxeVbjc8bO9Dk3A> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_HVEVbOhfqv0U0VvlW8tRhJRiAkkfxeVbjc8bO9Dk3A.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA_HVEVbOhfqv0U0VvlW8tRhJRiAkkfxeVbjc8bO9Dk3A..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAFpNVQJ-a2ibEcFdXpLfTFEqjAn83IPF3wvYyCiOe6uE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAFpNVQJ-a2ibEcFdXpLfTFEqjAn83IPF3wvYyCiOe6uE.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAFpNVQJ-a2ibEcFdXpLfTFEqjAn83IPF3wvYyCiOe6uE..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -14,7 +14,6 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix disease: <http://resource.belframework.org/belframework/1.0/annotation/mesh-disease/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -27,7 +26,7 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation disease:Colorectal%20Neoplasms , species:9606 ;
+	node:1 belv:hasAnnotation mesh:D015179 , species:9606 ;
 		rdf:object node:2 ;
 		rdf:predicate belv:prognosticBiomarkerFor ;
 		rdf:subject node:3 ;
@@ -61,9 +60,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:"Recurrence")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAEmrACO1xAM_l4uaChoWlwIp52PcHHKr1eJaQYTaKNQw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAEmrACO1xAM_l4uaChoWlwIp52PcHHKr1eJaQYTaKNQw.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAEmrACO1xAM_l4uaChoWlwIp52PcHHKr1eJaQYTaKNQw..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAw2tTQsPqe7dffsM0x157i-Xmx3aBvoyg2zwCppzFfAQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAw2tTQsPqe7dffsM0x157i-Xmx3aBvoyg2zwCppzFfAQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAw2tTQsPqe7dffsM0x157i-Xmx3aBvoyg2zwCppzFfAQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -74,7 +73,6 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix disease: <http://resource.belframework.org/belframework/1.0/annotation/mesh-disease/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -87,7 +85,7 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation disease:Colorectal%20Neoplasms , species:9606 ;
+	node:1 belv:hasAnnotation mesh:D015179 , species:9606 ;
 		rdf:object node:2 ;
 		rdf:predicate belv:prognosticBiomarkerFor ;
 		rdf:subject node:3 ;

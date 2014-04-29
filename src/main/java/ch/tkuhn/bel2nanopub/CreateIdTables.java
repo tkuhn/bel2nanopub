@@ -26,11 +26,8 @@ public class CreateIdTables {
 		obj.run();
 	}
 
-	private String subjString;
-	private IdScheme scheme;
-	private String id;
-	private String label;
 	private Map<String,BufferedWriter> writers = new HashMap<String,BufferedWriter>();
+	private Map<String,String> meshTreeMap = new HashMap<String,String>();
 
 	public CreateIdTables() throws Exception {
 	}
@@ -44,6 +41,7 @@ public class CreateIdTables {
 		}
 		try {
 			processNsMap();
+			loadMeshTreeMap();
 			processAnnMaps();
 		} finally {
 			for (BufferedWriter w : writers.values()) {
@@ -69,6 +67,11 @@ public class CreateIdTables {
 			in.close();
 		}
 	}
+
+	private String subjString;
+	private IdScheme scheme;
+	private String id;
+	private String label;
 
 	private void processNsMapStatement(Statement st) {
 		String s = st.getSubject().stringValue();
@@ -103,9 +106,24 @@ public class CreateIdTables {
 		}
 	}
 
+	private void loadMeshTreeMap() throws Exception {
+		BufferedReader r = new BufferedReader(new FileReader("downloads/meshtreemap.csv"));
+		try {
+			String line;
+			while ((line = r.readLine()) != null) {
+				line = line.trim();
+				String id = line.replaceFirst("^\"(.*)\",\"(.*)\"$", "$1");
+				String tree = line.replaceFirst("^\"(.*)\",\"(.*)\"$", "$2");
+				meshTreeMap.put(tree, id);
+			}
+		} finally {
+			r.close();
+		}
+	}
+
 	private void processAnnMaps() throws Exception {
 		for (IdScheme sc : IdSchemes.getSchemes()) {
-			if (!sc.getMappingType().equals("belanno")) continue;
+			if (!sc.getMappingType().startsWith("belanno")) continue;
 			for (String belNs : sc.getBelNsSet()) {
 				String fileName = belNs.replaceFirst("^http://", "downloads/");
 				BufferedReader r = new BufferedReader(new FileReader(fileName));
@@ -125,6 +143,9 @@ public class CreateIdTables {
 						int i = line.indexOf("|");
 						String label = line.substring(0, i);
 						String id = line.substring(i + 1);
+						if (sc.getMappingType().equals("belanno-mesh")) {
+							id = meshTreeMap.get(id).toString();
+						}
 						writers.get(sc.getName()).write(id + " " + label + "\n");
 					}
 				} finally {

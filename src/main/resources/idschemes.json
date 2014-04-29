@@ -187,6 +187,168 @@
       ],
       "rdfPrefix": "mesh",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-body-region",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-body-region.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-cardiovascular-system",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-cardiovascular-system.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-cell-structure",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-cell-structure.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-cell",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-cell.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-digestive-system",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-digestive-system.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-disease",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-disease.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-embryonic-structure",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-embryonic-structure.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-endocrine-system",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-endocrine-system.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-fluid-and-secretion",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-fluid-and-secretion.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-hemic-and-immune-system",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-hemic-and-immune-system.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-integumentary-system",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-integumentary-system.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-musculoskeletal-system",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-musculoskeletal-system.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-nervous-system",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-nervous-system.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-respiratory-system",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-respiratory-system.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-sense-organ",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-sense-organ.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-stomatognathic-system",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-stomatognathic-system.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-tissue",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-tissue.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "mesh-urogenital-system",
+      "mappingType": "belanno-mesh",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/mesh-urogenital-system.belanno"
+      ],
+      "rdfPrefix": "mesh",
+      "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     }
   ]
 }
