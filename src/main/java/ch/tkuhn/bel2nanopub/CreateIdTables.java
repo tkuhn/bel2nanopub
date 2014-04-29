@@ -1,7 +1,9 @@
 package ch.tkuhn.bel2nanopub;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
@@ -40,13 +42,24 @@ public class CreateIdTables {
 			BufferedWriter w = new BufferedWriter(new FileWriter(fileName));
 			writers.put(sc.getName(), w);
 		}
+		try {
+			processNsMap();
+			processAnnMaps();
+		} finally {
+			for (BufferedWriter w : writers.values()) {
+				w.close();
+			}
+		}
+	}
+
+	private void processNsMap() throws Exception {
 		InputStream in = new FileInputStream("downloads/nsmap.ttl");
 		RDFParser p = Rio.createParser(RDFFormat.TURTLE);
 		p.setRDFHandler(new RDFHandlerBase() {
 
 			@Override
 			public void handleStatement(Statement st) throws RDFHandlerException {
-				process(st);
+				processNsMapStatement(st);
 			}
 
 		});
@@ -54,13 +67,10 @@ public class CreateIdTables {
 			p.parse(in, baseUri);
 		} finally {
 			in.close();
-			for (BufferedWriter w : writers.values()) {
-				w.close();
-			}
 		}
 	}
 
-	private void process(Statement st) {
+	private void processNsMapStatement(Statement st) {
 		String s = st.getSubject().stringValue();
 		if (subjString != null && !s.equals(subjString)) {
 			if (id == null || label == null) {
@@ -90,6 +100,37 @@ public class CreateIdTables {
 			id = st.getObject().stringValue();
 		} else if (p.equals("http://www.w3.org/2004/02/skos/core#prefLabel")) {
 			label = st.getObject().stringValue();
+		}
+	}
+
+	private void processAnnMaps() throws Exception {
+		for (IdScheme sc : IdSchemes.getSchemes()) {
+			if (!sc.getMappingType().equals("belanno")) continue;
+			for (String belNs : sc.getBelNsSet()) {
+				String fileName = belNs.replaceFirst("^http://", "downloads/");
+				BufferedReader r = new BufferedReader(new FileReader(fileName));
+				try {
+					boolean started = false;
+					String line;
+					while ((line = r.readLine()) != null) {
+						line = line.trim();
+						if (line.equals("[Values]")) {
+							started = true;
+							continue;
+						}
+						if (!started || line.isEmpty()) continue;
+						if (!line.contains("|")) {
+							throw new RuntimeException("Invalid line in belanno file for " + belNs + ": " + line);
+						}
+						int i = line.indexOf("|");
+						String label = line.substring(0, i);
+						String id = line.substring(i + 1);
+						writers.get(sc.getName()).write(id + " " + label + "\n");
+					}
+				} finally {
+					r.close();
+				}
+			}
 		}
 	}
 

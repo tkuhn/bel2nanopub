@@ -67,6 +67,10 @@ public class IdScheme {
 		return belNsSet.contains(belNs);
 	}
 
+	public Set<String> getBelNsSet() {
+		return belNsSet;
+	}
+
 	public String getId(String belLabel) {
 		if (getMappingType().equals("direct")) {
 			String pattern = "^" + getDirectMappingPattern() + "$";
