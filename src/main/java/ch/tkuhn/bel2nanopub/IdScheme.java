@@ -11,7 +11,7 @@ import java.util.Set;
 public class IdScheme {
 
 	private String name;
-	private boolean directMapping = false;
+	private String mappingType;
 	private String directMappingPattern;
 	private String belRdfNs;
 	private String rdfPrefix;
@@ -22,7 +22,7 @@ public class IdScheme {
 	private IdScheme() {}  // created by GSON
 
 	private void loadMap() {
-		if (idMap != null || hasDirectMapping()) return;
+		if (idMap != null || getMappingType().equals("direct")) return;
 		idMap = new HashMap<String,String>();
 		try {
 			BufferedReader r = new BufferedReader(new FileReader("tables/" + name + ".txt"));
@@ -41,8 +41,8 @@ public class IdScheme {
 		return name;
 	}
 
-	public boolean hasDirectMapping() {
-		return directMapping;
+	public String getMappingType() {
+		return mappingType;
 	}
 
 	public String getDirectMappingPattern() {
@@ -68,7 +68,7 @@ public class IdScheme {
 	}
 
 	public String getId(String belLabel) {
-		if (hasDirectMapping()) {
+		if (getMappingType().equals("direct")) {
 			String pattern = "^" + getDirectMappingPattern() + "$";
 			return belLabel.replaceFirst(pattern, "$1");
 		} else {
