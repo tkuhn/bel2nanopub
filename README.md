@@ -43,15 +43,15 @@ Original BEL document:
 
     DEFINE ANNOTATION CellStructure AS URL "http://resource.belframework.org/belframework/1.0/annotation/mesh-cell-structure.belanno"
     SET CellStructure = "Cell Nucleus"
-    p(FOO) => p(BAR)
+    p(HGNC:XRCC5) => p(HGNC:WRN)
 
 RDF as produced by bel.rb:
 
-    bel:p_FOO_directlyIncreases_p_BAR rdf:type belv:Statement ;
-        belv:hasSubject bel:p_FOO ;
+    bel:p_HGNC_XRCC5_directlyIncreases_p_HGNC_WRN rdf:type belv:Statement ;
+        belv:hasSubject bel:p_HGNC_XRCC5 ;
         belv:hasRelationship "directlyIncreases" ;
-        belv:hasObject bel:p_BAR ;
-        rdfs:label "p(FOO) => p(BAR)" ;
+        belv:hasObject bel:p_HGNC_WRN ;
+        rdfs:label "p(HGNC:XRCC5) -> p(HGNC:WRN)" ;
         belv:hasEvidence _:1 .
     _:1 belv:hasAnnotation <http://www.openbel.org/bel/annotation/cell-structure/Cell%20Nucleus> .
 
@@ -61,7 +61,7 @@ In nanopubs using standard reification:
         rdf:subject node:2 ;
         rdf:predicate belv:directlyIncreases ;
         rdf:object node:3 ;
-        belv:hasAnnotation <http://www.openbel.org/bel/annotation/cell-structure/Cell%20Nucleus> .
+        belv:hasAnnotation <http://purl.bioontology.org/ontology/MSH/D002467> .
 
 
 ### Citation/Evidence
