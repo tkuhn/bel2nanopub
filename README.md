@@ -33,20 +33,65 @@ Installation of latest snapshot of trustyuri-java:
 Mapping
 -------
 
+Below the mapping to RDF and the differences to the mapping by bel.rb are
+described. 
+
+
+### Reification
+
+Original BEL document:
+
+    DEFINE ANNOTATION CellStructure AS URL "http://resource.belframework.org/belframework/1.0/annotation/mesh-cell-structure.belanno"
+    SET CellStructure = "Cell Nucleus"
+    p(FOO) => p(BAR)
+
+RDF as produced by bel.rb:
+
+    bel:p_FOO_directlyIncreases_p_BAR rdf:type belv:Statement ;
+        belv:hasSubject bel:p_FOO ;
+        belv:hasRelationship "directlyIncreases" ;
+        belv:hasObject bel:p_BAR ;
+        rdfs:label "p(FOO) => p(BAR)" ;
+        belv:hasEvidence _:1 .
+    _:1 belv:hasAnnotation <http://www.openbel.org/bel/annotation/cell-structure/Cell%20Nucleus> .
+
+In nanopubs using standard reification:
+
+    node:1 a rdf:Statement ;
+        rdf:subject node:2 ;
+        rdf:predicate belv:directlyIncreases ;
+        rdf:object node:3 ;
+        belv:hasAnnotation <http://www.openbel.org/bel/annotation/cell-structure/Cell%20Nucleus> .
+
+
+### Citation/Evidence
+
+Original BEL document:
+
+    SET Citation = {"PubMed", "Some Journal 2004 Apr 1 234(5)","12345678"}
+    SET Evidence = "Some quoted evidence text."
+
+RDF as produced by bel.rb:
+
+    bel:some_statement belv:hasEvidence _:1 .
+    _:1 belv:hasStatement bel:some_statement ;
+        belv:hasCitation <http://bio2rdf.org/pubmed:12345678> ;
+        belv:hasEvidenceText """Some quoted evidence text.""" .
+
+In nanopubs using PROV:
+
+    sub:Prov {
+        node:1 prov:value "Some quoted evidence text." ;
+            prov:wasQuotedFrom <http://www.ncbi.nlm.nih.gov/pubmed/12345678> .
+        sub:Ass prov:hadPrimarySource <http://www.ncbi.nlm.nih.gov/pubmed/12345678> ;
+            prov:wasDerivedFrom node:1 .
+    }
+
+
+### Third-Party Identifiers
+
 The mapping to third-party identifiers is defined in
 [this JSON file](src/main/resources/idschemes.json).
-
-Still to be mapped:
-
-- http://resource.belframework.org/belframework/1.0/namespace/affy-*.belns
-- http://resource.belframework.org/belframework/20131211/namespace/affy-probeset-ids.belns
-- http://resource.belframework.org/belframework/20131211/namespace/disease-ontology.belns
-- http://resource.belframework.org/belframework/20131211/namespace/disease-ontology-ids.belns
-- http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line.belanno
-- http://resource.belframework.org/belframework/20131211/annotation/anatomy.belanno
-- http://resource.belframework.org/belframework/20131211/annotation/cell-line.belanno
-- http://resource.belframework.org/belframework/20131211/annotation/cell.belanno
-- http://resource.belframework.org/belframework/20131211/annotation/disease.belanno
 
 
 License
