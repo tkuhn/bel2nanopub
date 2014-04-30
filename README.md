@@ -91,7 +91,8 @@ In nanopubs using PROV:
 ### Third-Party Identifiers
 
 The mapping to third-party identifiers is defined in
-[this JSON file](src/main/resources/idschemes.json).
+[this JSON file](src/main/resources/idschemes.json). The tables for the manual
+mappings are in the [tables directory](tables).
 
 
 License
