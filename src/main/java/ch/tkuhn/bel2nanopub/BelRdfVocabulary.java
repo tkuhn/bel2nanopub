@@ -181,7 +181,7 @@ public class BelRdfVocabulary {
 		modtypeMap.put("H", new URIImpl(BELV_NS + "Hydroxylation"));
 		modtypeMap.put("M", new URIImpl(BELV_NS + "Methylation"));
 		modtypeMap.put("P", new URIImpl(BELV_NS + "Phosphorylation"));
-		modtypeMap.put("R", new URIImpl(BELV_NS + "Ribosylation"));
+//		modtypeMap.put("R", new URIImpl(BELV_NS + "Ribosylation"));
 		modtypeMap.put("S", new URIImpl(BELV_NS + "Sumoylation"));
 		modtypeMap.put("U", new URIImpl(BELV_NS + "Ubiquitination"));
 	}

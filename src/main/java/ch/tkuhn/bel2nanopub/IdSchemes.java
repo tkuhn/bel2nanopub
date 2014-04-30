@@ -29,28 +29,35 @@ public class IdSchemes {
 		return singleton.schemes;
 	}
 
-	public static URI makeUri(String prefix, String belNs, String belLabel, NanopubCreator npCreator) throws Bel2NanopubException {
+	public static URI makeUri(String schemeNameOrBelNs, String belLabel, NanopubCreator npCreator) {
+		return makeUri(schemeNameOrBelNs, belLabel, npCreator, null);
+	}
+
+	public static URI makeUri(String schemeNameOrBelNs, String belLabel, NanopubCreator npCreator, String prefix) {
 		if (belLabel.startsWith("\"") && belLabel.endsWith("\"") && belLabel.length() > 1) {
 			belLabel = belLabel.substring(1, belLabel.length()-1);
 		}
 		String uriString = null;
 		for (IdScheme sc : getSchemes()) {
-			if (sc.hasBelNs(belNs)) {
+			if (sc.getName().equals(schemeNameOrBelNs) || sc.hasBelNs(schemeNameOrBelNs)) {
 				npCreator.addNamespace(sc.getRdfPrefix(), sc.getRdfNs());
 				String id = sc.getId(belLabel);
 				if (id == null) {
-					throw new Bel2NanopubException("Cannot resolve entity '" + belLabel + "' in namespace '" + belNs + "'");
+					return null;
 				} else {
 					uriString = sc.getRdfNs() + id;
 				}
 				break;
 			}
 		}
-		if (uriString == null) {
-			String ns = belNs.replaceFirst("\\.bel(ns|anno)$", "");
+		String ns = schemeNameOrBelNs;
+		if (uriString == null && ns.contains("://")) {
+			ns = ns.replaceFirst("\\.bel(ns|anno)$", "");
 			if (!ns.endsWith("/")) ns += "/";
-			npCreator.addNamespace(prefix.toLowerCase(), ns);
 			uriString = ns + Utils.encodeUrlString(belLabel);
+			if (prefix != null) {
+				npCreator.addNamespace(prefix.toLowerCase(), ns);
+			}
 		}
 		return new URIImpl(uriString);
 	}

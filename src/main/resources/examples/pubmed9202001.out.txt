@@ -181,9 +181,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK1,pmod(P,T)) => kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAgntt5ApxwuB_1wL7B-Woe2fqLpHZh3ZVQ0NS5-gZ2jA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAgntt5ApxwuB_1wL7B-Woe2fqLpHZh3ZVQ0NS5-gZ2jA.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAgntt5ApxwuB_1wL7B-Woe2fqLpHZh3ZVQ0NS5-gZ2jA..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7KUxpUczQhd6tT8RI8VO59e_ei7JvW854sIcxhwc35I> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7KUxpUczQhd6tT8RI8VO59e_ei7JvW854sIcxhwc35I.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA7KUxpUczQhd6tT8RI8VO59e_ei7JvW854sIcxhwc35I..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -192,6 +192,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix psimod: <www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -217,8 +218,7 @@ sub:Ass {
 		a belv:AbundanceActivity .
 	
 	node:3 belv:hasChild node:4 ;
-		belv:hasModification "P,T" ;
-		belv:hasModificationType belv:Phosphorylation ;
+		belv:hasModificationType <www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
 	node:4 belv:hasConcept hgnc:6871 ;
@@ -245,9 +245,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK1,pmod(P,Y)) => kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RADO4McBZG0xYt_i0bD_tKmI1CnYVPcLIb81MQU_HOUPw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RADO4McBZG0xYt_i0bD_tKmI1CnYVPcLIb81MQU_HOUPw.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RADO4McBZG0xYt_i0bD_tKmI1CnYVPcLIb81MQU_HOUPw..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_D9KKcEs5YTL-ZRWLXWdbeGev0XLTKhf37PjcqPOfZ8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_D9KKcEs5YTL-ZRWLXWdbeGev0XLTKhf37PjcqPOfZ8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA_D9KKcEs5YTL-ZRWLXWdbeGev0XLTKhf37PjcqPOfZ8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -256,6 +256,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix psimod: <www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -281,8 +282,7 @@ sub:Ass {
 		a belv:AbundanceActivity .
 	
 	node:3 belv:hasChild node:4 ;
-		belv:hasModification "P,Y" ;
-		belv:hasModificationType belv:Phosphorylation ;
+		belv:hasModificationType <www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
 	node:4 belv:hasConcept hgnc:6871 ;
@@ -309,9 +309,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK8,pmod(P,T)) => kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAE25t7Z8RyPBLEA828ysvmyPxjVY8gK-UfgDHp5NU-Z8> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAE25t7Z8RyPBLEA828ysvmyPxjVY8gK-UfgDHp5NU-Z8.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAE25t7Z8RyPBLEA828ysvmyPxjVY8gK-UfgDHp5NU-Z8..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAtBiD63jUFUn8Cy18qOUu-raPO4XTNJM9ibT3_1Z_lvA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAtBiD63jUFUn8Cy18qOUu-raPO4XTNJM9ibT3_1Z_lvA.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAtBiD63jUFUn8Cy18qOUu-raPO4XTNJM9ibT3_1Z_lvA..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -320,6 +320,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix psimod: <www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -345,8 +346,7 @@ sub:Ass {
 		a belv:AbundanceActivity .
 	
 	node:3 belv:hasChild node:4 ;
-		belv:hasModification "P,T" ;
-		belv:hasModificationType belv:Phosphorylation ;
+		belv:hasModificationType <www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
 	node:4 belv:hasConcept hgnc:6881 ;
@@ -373,9 +373,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK8,pmod(P,Y)) => kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJr9gzuWqtj822-w2ip8QTwnvDLWhwxONPP-oggdYzuA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJr9gzuWqtj822-w2ip8QTwnvDLWhwxONPP-oggdYzuA.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAJr9gzuWqtj822-w2ip8QTwnvDLWhwxONPP-oggdYzuA..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAROFlJcTGaaR0SyiYnk9eNP21fHi-I-4st9jj9tH8aI4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAROFlJcTGaaR0SyiYnk9eNP21fHi-I-4st9jj9tH8aI4.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAROFlJcTGaaR0SyiYnk9eNP21fHi-I-4st9jj9tH8aI4..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -384,6 +384,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix psimod: <www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -409,8 +410,7 @@ sub:Ass {
 		a belv:AbundanceActivity .
 	
 	node:3 belv:hasChild node:4 ;
-		belv:hasModification "P,Y" ;
-		belv:hasModificationType belv:Phosphorylation ;
+		belv:hasModificationType <www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
 	node:4 belv:hasConcept hgnc:6881 ;
@@ -437,9 +437,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK14,pmod(P,T)) => kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAncw41WQ8V3F1ZrwkjGWLl8APZeOUXbKrM6zkBYA2obU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAncw41WQ8V3F1ZrwkjGWLl8APZeOUXbKrM6zkBYA2obU.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAncw41WQ8V3F1ZrwkjGWLl8APZeOUXbKrM6zkBYA2obU..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7HieMqf3i9UzP5DouAjcHWKQ9z5a4GVNoUD6AMNQp24> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7HieMqf3i9UzP5DouAjcHWKQ9z5a4GVNoUD6AMNQp24.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA7HieMqf3i9UzP5DouAjcHWKQ9z5a4GVNoUD6AMNQp24..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -448,6 +448,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix psimod: <www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
@@ -474,8 +475,7 @@ sub:Ass {
 		a belv:AbundanceActivity .
 	
 	node:3 belv:hasChild node:4 ;
-		belv:hasModification "P,T" ;
-		belv:hasModificationType belv:Phosphorylation ;
+		belv:hasModificationType <www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
 	node:4 belv:hasConcept hgnc:6876 ;
@@ -502,9 +502,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK14,pmod(P,Y)) => kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA5Ii32TIRJQhmjnb9Xj2NNtfjgULxF_FtzdWZ18Imco0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA5Ii32TIRJQhmjnb9Xj2NNtfjgULxF_FtzdWZ18Imco0.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA5Ii32TIRJQhmjnb9Xj2NNtfjgULxF_FtzdWZ18Imco0..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA0ZCntIQuMNQzfKCSiO51Y38IqY3t6cTeUNRDjj9Db64> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA0ZCntIQuMNQzfKCSiO51Y38IqY3t6cTeUNRDjj9Db64.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA0ZCntIQuMNQzfKCSiO51Y38IqY3t6cTeUNRDjj9Db64..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -513,6 +513,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix psimod: <www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
@@ -539,8 +540,7 @@ sub:Ass {
 		a belv:AbundanceActivity .
 	
 	node:3 belv:hasChild node:4 ;
-		belv:hasModification "P,Y" ;
-		belv:hasModificationType belv:Phosphorylation ;
+		belv:hasModificationType <www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
 	node:4 belv:hasConcept hgnc:6876 ;
@@ -567,9 +567,9 @@ sub:Info {
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK1,pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RASy1m8aauRtwSpuVIQt2RFGWjyUJ2oIFG_oPNM1Z90gQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RASy1m8aauRtwSpuVIQt2RFGWjyUJ2oIFG_oPNM1Z90gQ.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RASy1m8aauRtwSpuVIQt2RFGWjyUJ2oIFG_oPNM1Z90gQ..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAXD3HkFdd2R7-j1ISxjO84V_1QCxnFAdd7FkB65zYKW0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAXD3HkFdd2R7-j1ISxjO84V_1QCxnFAdd7FkB65zYKW0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAXD3HkFdd2R7-j1ISxjO84V_1QCxnFAdd7FkB65zYKW0..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -578,6 +578,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix psimod: <www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -599,8 +600,7 @@ sub:Ass {
 		a rdf:Statement .
 	
 	node:2 belv:hasChild node:5 ;
-		belv:hasModification "P" ;
-		belv:hasModificationType belv:Phosphorylation ;
+		belv:hasModificationType <www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
 	node:3 belv:hasActivityType belv:Phosphatase ;
@@ -631,9 +631,9 @@ sub:Info {
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK8,pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAx0zvPx6FYPTQA2CGwv1Ak6_99azBaS3KnrQgVpP_B0Y> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAx0zvPx6FYPTQA2CGwv1Ak6_99azBaS3KnrQgVpP_B0Y.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAx0zvPx6FYPTQA2CGwv1Ak6_99azBaS3KnrQgVpP_B0Y..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA4-0u3513rBY0ALRHvmHXGAheRA0vyRBOzvsoDY0lN0I> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA4-0u3513rBY0ALRHvmHXGAheRA0vyRBOzvsoDY0lN0I.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA4-0u3513rBY0ALRHvmHXGAheRA0vyRBOzvsoDY0lN0I..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -642,6 +642,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix psimod: <www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -663,8 +664,7 @@ sub:Ass {
 		a rdf:Statement .
 	
 	node:2 belv:hasChild node:5 ;
-		belv:hasModification "P" ;
-		belv:hasModificationType belv:Phosphorylation ;
+		belv:hasModificationType <www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
 	node:3 belv:hasActivityType belv:Phosphatase ;
@@ -695,9 +695,9 @@ sub:Info {
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(PFH:"MAPK p38 Family",pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA0bzpIH1l_2NuT9s2S6ff2BRhbhg24nDaf3X7X9m0vEU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA0bzpIH1l_2NuT9s2S6ff2BRhbhg24nDaf3X7X9m0vEU.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA0bzpIH1l_2NuT9s2S6ff2BRhbhg24nDaf3X7X9m0vEU..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAEUpzBDlG5inQXNDgPXsODzmlQX6Fcm3s0EKuL1gdCP0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAEUpzBDlG5inQXNDgPXsODzmlQX6Fcm3s0EKuL1gdCP0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAEUpzBDlG5inQXNDgPXsODzmlQX6Fcm3s0EKuL1gdCP0..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -707,6 +707,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
+@prefix psimod: <www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -728,8 +729,7 @@ sub:Ass {
 		a rdf:Statement .
 	
 	node:2 belv:hasChild node:5 ;
-		belv:hasModification "P" ;
-		belv:hasModificationType belv:Phosphorylation ;
+		belv:hasModificationType <www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
 	node:3 belv:hasActivityType belv:Phosphatase ;

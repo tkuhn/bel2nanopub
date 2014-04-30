@@ -884,9 +884,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:RB1,pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAI-ftdF78BjbncZmNFp7YSALp6VmarhG-IX3MMtkyQZY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAI-ftdF78BjbncZmNFp7YSALp6VmarhG-IX3MMtkyQZY.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAI-ftdF78BjbncZmNFp7YSALp6VmarhG-IX3MMtkyQZY..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA6lmEESLFTCQ_P1geEQvtYIQMfqrG0rttE6mfyBZD9oQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA6lmEESLFTCQ_P1geEQvtYIQMfqrG0rttE6mfyBZD9oQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA6lmEESLFTCQ_P1geEQvtYIQMfqrG0rttE6mfyBZD9oQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -895,6 +895,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix psimod: <www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -916,8 +917,7 @@ sub:Ass {
 		a rdf:Statement .
 	
 	node:2 belv:hasChild node:5 ;
-		belv:hasModification "P" ;
-		belv:hasModificationType belv:Phosphorylation ;
+		belv:hasModificationType <www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
 	node:3 belv:hasChild node:4 ;

@@ -382,9 +382,9 @@ sub:Info {
 ---
 BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R)))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RApnY6zDmXxQ_6lNgMKCzbWiC6QbJ4yc405eX926JmbOs> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RApnY6zDmXxQ_6lNgMKCzbWiC6QbJ4yc405eX926JmbOs.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RApnY6zDmXxQ_6lNgMKCzbWiC6QbJ4yc405eX926JmbOs..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAujpSmhYoGqMNIXWsqHqhU23wDdTR5fJnvYt8gqyomKs> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAujpSmhYoGqMNIXWsqHqhU23wDdTR5fJnvYt8gqyomKs.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAujpSmhYoGqMNIXWsqHqhU23wDdTR5fJnvYt8gqyomKs..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -394,6 +394,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix psimod: <www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -426,8 +427,7 @@ sub:Ass {
 		a belv:Abundance .
 	
 	node:6 belv:hasChild node:9 ;
-		belv:hasModification "R" ;
-		belv:hasModificationType belv:Ribosylation ;
+		belv:hasModificationType <www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
 	node:7 belv:hasActivityType belv:Ribosylase ;
@@ -458,9 +458,9 @@ sub:Info {
 ---
 BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R)))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAsk63oebHFMjytyPn17GJIdspkEdm2HKmSmvWbpRNYDM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAsk63oebHFMjytyPn17GJIdspkEdm2HKmSmvWbpRNYDM.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAsk63oebHFMjytyPn17GJIdspkEdm2HKmSmvWbpRNYDM..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA11TbGCN1NQCOaGRgJxaL1DXM_wH5ijH2UgRNcgAlKUg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA11TbGCN1NQCOaGRgJxaL1DXM_wH5ijH2UgRNcgAlKUg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA11TbGCN1NQCOaGRgJxaL1DXM_wH5ijH2UgRNcgAlKUg..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -470,6 +470,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix psimod: <www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -502,8 +503,7 @@ sub:Ass {
 		a belv:Abundance .
 	
 	node:6 belv:hasChild node:9 ;
-		belv:hasModification "R" ;
-		belv:hasModificationType belv:Ribosylation ;
+		belv:hasModificationType <www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
 	node:7 belv:hasActivityType belv:Ribosylase ;
@@ -534,9 +534,9 @@ sub:Info {
 ---
 BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R)))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7sLmAJQwB5pms-6iFcGlwluLg06mo4rovgbXdXrmIV0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7sLmAJQwB5pms-6iFcGlwluLg06mo4rovgbXdXrmIV0.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA7sLmAJQwB5pms-6iFcGlwluLg06mo4rovgbXdXrmIV0..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RArgOb-vwkrMkHZC4iRoyAj5wr2nZNvp1iU_FxY4zaATg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RArgOb-vwkrMkHZC4iRoyAj5wr2nZNvp1iU_FxY4zaATg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RArgOb-vwkrMkHZC4iRoyAj5wr2nZNvp1iU_FxY4zaATg..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -546,6 +546,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix psimod: <www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -578,8 +579,7 @@ sub:Ass {
 		a belv:Abundance .
 	
 	node:6 belv:hasChild node:9 ;
-		belv:hasModification "R" ;
-		belv:hasModificationType belv:Ribosylation ;
+		belv:hasModificationType <www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
 	node:7 belv:hasActivityType belv:Ribosylase ;
@@ -610,9 +610,9 @@ sub:Info {
 ---
 BEL: p(HGNC:XRCC5,pmod(R)) => complex(a(CHEBI:"deoxyribonucleic acid"),p(HGNC:XRCC5),p(HGNC:XRCC6))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAeNQ3TDmndeksnOROpG0Ni_pP-NrQSOBSz0WxdXtUD8k> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAeNQ3TDmndeksnOROpG0Ni_pP-NrQSOBSz0WxdXtUD8k.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAeNQ3TDmndeksnOROpG0Ni_pP-NrQSOBSz0WxdXtUD8k..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA-mOCLT_92V0Sbllyrkth_wPzJrOtFjN-qnpHjSw5hRo> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA-mOCLT_92V0Sbllyrkth_wPzJrOtFjN-qnpHjSw5hRo.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA-mOCLT_92V0Sbllyrkth_wPzJrOtFjN-qnpHjSw5hRo..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -621,6 +621,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix psimod: <www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -643,8 +644,7 @@ sub:Ass {
 		a belv:ComplexAbundance .
 	
 	node:3 belv:hasChild node:4 ;
-		belv:hasModification "R" ;
-		belv:hasModificationType belv:Ribosylation ;
+		belv:hasModificationType <www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
 	node:4 belv:hasConcept hgnc:12833 ;
@@ -677,9 +677,9 @@ sub:Info {
 ---
 BEL: p(HGNC:XRCC6,pmod(R)) => complex(a(CHEBI:"deoxyribonucleic acid"),p(HGNC:XRCC5),p(HGNC:XRCC6))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAF1W1Mkc7Dpnzi_4FfxuZW5GGQACRb661ZvmqtOidWYs> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAF1W1Mkc7Dpnzi_4FfxuZW5GGQACRb661ZvmqtOidWYs.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAF1W1Mkc7Dpnzi_4FfxuZW5GGQACRb661ZvmqtOidWYs..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAf7sZc4Z7VTODwYRm7CLFWgKRlduisApAXLpXPJPxz4g> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAf7sZc4Z7VTODwYRm7CLFWgKRlduisApAXLpXPJPxz4g.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAf7sZc4Z7VTODwYRm7CLFWgKRlduisApAXLpXPJPxz4g..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -688,6 +688,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix psimod: <www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
@@ -710,8 +711,7 @@ sub:Ass {
 		a belv:ComplexAbundance .
 	
 	node:3 belv:hasChild node:4 ;
-		belv:hasModification "R" ;
-		belv:hasModificationType belv:Ribosylation ;
+		belv:hasModificationType <www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
 	node:4 belv:hasConcept hgnc:4055 ;
@@ -744,9 +744,9 @@ sub:Info {
 ---
 BEL: p(HGNC:XRCC5,pmod(R)) => cat(p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAsFUZTriI2Wj2rWLQL1lAUFUqCpHbbC-NMMw09ju4Zm4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAsFUZTriI2Wj2rWLQL1lAUFUqCpHbbC-NMMw09ju4Zm4.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAsFUZTriI2Wj2rWLQL1lAUFUqCpHbbC-NMMw09ju4Zm4..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA5HVhEEWqIGPFl3D9mr0ehiEM7fEtLNI1M0CgwcGynOQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA5HVhEEWqIGPFl3D9mr0ehiEM7fEtLNI1M0CgwcGynOQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA5HVhEEWqIGPFl3D9mr0ehiEM7fEtLNI1M0CgwcGynOQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -755,6 +755,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix psimod: <www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -777,8 +778,7 @@ sub:Ass {
 		a belv:AbundanceActivity .
 	
 	node:3 belv:hasChild node:4 ;
-		belv:hasModification "R" ;
-		belv:hasModificationType belv:Ribosylation ;
+		belv:hasModificationType <www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
 	node:4 belv:hasConcept hgnc:12833 ;
@@ -805,9 +805,9 @@ sub:Info {
 ---
 BEL: p(HGNC:XRCC6,pmod(R)) => cat(p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAole142qvgQd5eXo1BDdNosY2umnJQMK87s5sqvQNl0Y> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAole142qvgQd5eXo1BDdNosY2umnJQMK87s5sqvQNl0Y.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAole142qvgQd5eXo1BDdNosY2umnJQMK87s5sqvQNl0Y..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAGiRHX75HvCmwbax9wQS_KF91rLWM-toXeOXb7ZeBFac> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAGiRHX75HvCmwbax9wQS_KF91rLWM-toXeOXb7ZeBFac.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAGiRHX75HvCmwbax9wQS_KF91rLWM-toXeOXb7ZeBFac..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -816,6 +816,7 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix psimod: <www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -838,8 +839,7 @@ sub:Ass {
 		a belv:AbundanceActivity .
 	
 	node:3 belv:hasChild node:4 ;
-		belv:hasModification "R" ;
-		belv:hasModificationType belv:Ribosylation ;
+		belv:hasModificationType <www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
 	node:4 belv:hasConcept hgnc:4055 ;

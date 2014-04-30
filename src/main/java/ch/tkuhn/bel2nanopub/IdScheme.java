@@ -1,6 +1,7 @@
 package ch.tkuhn.bel2nanopub;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
@@ -25,7 +26,7 @@ public class IdScheme {
 		if (idMap != null || getMappingType().equals("direct")) return;
 		idMap = new HashMap<String,String>();
 		try {
-			BufferedReader r = new BufferedReader(new FileReader("tables/" + name + ".txt"));
+			BufferedReader r = new BufferedReader(new FileReader(getTableFileName()));
 			String line;
 			while ((line = r.readLine()) != null) {
 				int i = line.indexOf(" ");
@@ -39,6 +40,14 @@ public class IdScheme {
 
 	public String getName() {
 		return name;
+	}
+
+	public String getTableFileName() {
+		if (getMappingType().equals("direct")) return null;
+		String dir = "tables/";
+		if (!getMappingType().equals("manual")) dir += "generated/";
+		new File(dir).mkdir();
+		return dir + getName() + ".txt";
 	}
 
 	public String getMappingType() {

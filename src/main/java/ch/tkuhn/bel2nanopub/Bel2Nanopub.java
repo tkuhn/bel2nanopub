@@ -267,11 +267,14 @@ public class Bel2Nanopub {
 			String varString = varTerm.toBELShortForm().replaceFirst("^.*\\((.*)\\).*$", "$1");
 			if (modAbbrev.equals("pmod")) {
 				npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.modifiedProteinAbundance);
-				URI modtypeUri = BelRdfVocabulary.getModificationType(varString.substring(0, 1));
+				String v = varString.substring(0, 1);
+				URI modtypeUri = IdSchemes.makeUri("psimod", v, npCreator);
+				if (modtypeUri == null) {
+					throw new Bel2NanopubException("Cannot resolve modifier type '" + v + "'");
+				}
 				if (modtypeUri != null) {
 					npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasModificationType, modtypeUri);
 				}
-				npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasModification, vf.createLiteral(varString));
 			} else  {
 				String var = BelRdfVocabulary.getNormalizedVariant(modAbbrev);
 				if (var == null) {
@@ -308,7 +311,12 @@ public class Bel2Nanopub {
 		if (belNs == null) {
 			throw new Bel2NanopubException("Unknown namespace: " + prefix);
 		}
-		return IdSchemes.makeUri(prefix, belNs, param.getValue(), npCreator);
+		String v = param.getValue();
+		URI uri = IdSchemes.makeUri(belNs, v, npCreator, prefix);
+		if (uri == null) {
+			throw new Bel2NanopubException("Cannot resolve entity '" + v + "' in namespace '" + belNs + "'");
+		}
+		return uri;
 	}
 
 	private void processAnnotation(BELAnnotation ann, BNode node, NanopubCreator npCreator) throws Bel2NanopubException {
@@ -321,7 +329,10 @@ public class Bel2Nanopub {
 			}
 		} else {
 			for (String annV : ann.getValues()) {
-				URI annUri = IdSchemes.makeUri(annN, annNs, annV, npCreator);
+				URI annUri = IdSchemes.makeUri(annNs, annV, npCreator, annN);
+				if (annUri == null) {
+					throw new Bel2NanopubException("Cannot resolve entity '" + annV + "' in namespace '" + annNs + "'");
+				}
 				npCreator.addAssertionStatement(node, BelRdfVocabulary.hasAnnotation, annUri);
 			}
 		}

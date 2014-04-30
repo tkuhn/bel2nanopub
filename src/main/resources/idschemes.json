@@ -358,6 +358,11 @@
       ],
       "rdfPrefix": "mesh",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
+    },
+    {
+      "name": "psimod",
+      "mappingType": "manual",
+      "rdfNs": "www.ebi.ac.uk/ontology-lookup/?termId=MOD:"
     }
   ]
 }
