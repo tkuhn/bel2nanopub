@@ -29,7 +29,7 @@ public class IdSchemes {
 		return singleton.schemes;
 	}
 
-	public static URI makeUri(String prefix, String belNs, String belLabel, NanopubCreator npCreator) {
+	public static URI makeUri(String prefix, String belNs, String belLabel, NanopubCreator npCreator) throws Bel2NanopubException {
 		if (belLabel.startsWith("\"") && belLabel.endsWith("\"") && belLabel.length() > 1) {
 			belLabel = belLabel.substring(1, belLabel.length()-1);
 		}
@@ -39,7 +39,7 @@ public class IdSchemes {
 				npCreator.addNamespace(sc.getRdfPrefix(), sc.getRdfNs());
 				String id = sc.getId(belLabel);
 				if (id == null) {
-					uriString = null;
+					throw new Bel2NanopubException("Cannot resolve entity '" + belLabel + "' in namespace '" + belNs + "'");
 				} else {
 					uriString = sc.getRdfNs() + id;
 				}

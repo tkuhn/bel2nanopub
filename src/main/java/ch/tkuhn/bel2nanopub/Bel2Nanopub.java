@@ -311,7 +311,7 @@ public class Bel2Nanopub {
 		return IdSchemes.makeUri(prefix, belNs, param.getValue(), npCreator);
 	}
 
-	private void processAnnotation(BELAnnotation ann, BNode node, NanopubCreator npCreator) {
+	private void processAnnotation(BELAnnotation ann, BNode node, NanopubCreator npCreator) throws Bel2NanopubException {
 		String annN = ann.getAnnotationDefinition().getName();
 		String annNs = annotationMap.get(annN);
 		if (annNs == null) {
