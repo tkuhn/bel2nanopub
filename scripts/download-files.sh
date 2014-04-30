@@ -38,3 +38,10 @@ wget -O meshtreemap-5.csv 'http://mesh.bio2rdf.org/sparql?query=prefix+m%3A+%3Ch
   cat meshtreemap-4.csv | sed '1d' ;
   cat meshtreemap-5.csv | sed '1d'
 ) > meshtreemap.csv
+
+rm meshtreemap-*.csv
+
+
+# Download mapping from version 1.0 to 20131211:
+
+wget -O change-20131211.json http://resource.belframework.org/belframework/20131211/change_log.json
