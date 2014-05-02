@@ -12,7 +12,6 @@ import java.util.Map;
 
 import javax.xml.bind.DatatypeConverter;
 
-import org.nanopub.CustomTrigWriterFactory;
 import org.nanopub.Nanopub;
 import org.nanopub.NanopubCreator;
 import org.nanopub.NanopubUtils;
@@ -40,7 +39,6 @@ import org.openrdf.model.impl.ValueFactoryImpl;
 import org.openrdf.model.vocabulary.RDF;
 import org.openrdf.model.vocabulary.RDFS;
 import org.openrdf.rio.RDFFormat;
-import org.openrdf.rio.RDFWriterRegistry;
 
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.ParameterException;
@@ -74,7 +72,6 @@ public class Bel2Nanopub {
 				}
 				System.exit(1);
 			}
-			RDFWriterRegistry.getInstance().add(new CustomTrigWriterFactory());
 			for (Result r : obj.getResults()) {
 				System.out.println("---");
 				System.out.println("BEL: " + r.getBelStatement().getStatementSyntax());
@@ -158,7 +155,7 @@ public class Bel2Nanopub {
 					continue;
 				}
 				if (creatorId != null) {
-					npCreator.addNamespace("pav", "http://swan.mindinformatics.org/ontologies/1.2/pav/");
+					npCreator.addNamespace("pav", "http://purl.org/pav/");
 					npCreator.addNamespace("orcid", "http://orcid.org/");
 					npCreator.addCreator(creatorId);
 				}
