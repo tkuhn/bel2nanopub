@@ -51,8 +51,8 @@ public class BelRdfVocabulary {
 		functionMap.put("m", new URIImpl(BELV_NS + "microRNAAbundance"));
 		functionMap.put("complex", new URIImpl(BELV_NS + "ComplexAbundance"));
 		functionMap.put("composite", new URIImpl(BELV_NS + "CompositeAbundance"));
-		functionMap.put("bp", new URIImpl(BELV_NS + "BiologicalProcess"));
-		functionMap.put("path", new URIImpl(BELV_NS + "Pathology"));
+//		functionMap.put("bp", new URIImpl(BELV_NS + "BiologicalProcess"));
+//		functionMap.put("path", new URIImpl(BELV_NS + "Pathology"));
 		functionMap.put("rxn", new URIImpl(BELV_NS + "Reaction"));
 		functionMap.put("tloc", new URIImpl(BELV_NS + "Translocation"));
 		functionMap.put("sec", new URIImpl(BELV_NS + "CellSecretion"));
@@ -172,23 +172,23 @@ public class BelRdfVocabulary {
 		return activityMap.get(activity);
 	}
 
-	private static Map<String,URI> modtypeMap = new HashMap<String,URI>();
-
-	static {
-		modtypeMap.put("A", new URIImpl(BELV_NS + "Acetylation"));
-		modtypeMap.put("F", new URIImpl(BELV_NS + "Farnesylation"));
-		modtypeMap.put("G", new URIImpl(BELV_NS + "Glycosylation"));
-		modtypeMap.put("H", new URIImpl(BELV_NS + "Hydroxylation"));
-		modtypeMap.put("M", new URIImpl(BELV_NS + "Methylation"));
-		modtypeMap.put("P", new URIImpl(BELV_NS + "Phosphorylation"));
+//	private static Map<String,URI> modtypeMap = new HashMap<String,URI>();
+//
+//	static {
+//		modtypeMap.put("A", new URIImpl(BELV_NS + "Acetylation"));
+//		modtypeMap.put("F", new URIImpl(BELV_NS + "Farnesylation"));
+//		modtypeMap.put("G", new URIImpl(BELV_NS + "Glycosylation"));
+//		modtypeMap.put("H", new URIImpl(BELV_NS + "Hydroxylation"));
+//		modtypeMap.put("M", new URIImpl(BELV_NS + "Methylation"));
+//		modtypeMap.put("P", new URIImpl(BELV_NS + "Phosphorylation"));
 //		modtypeMap.put("R", new URIImpl(BELV_NS + "Ribosylation"));
-		modtypeMap.put("S", new URIImpl(BELV_NS + "Sumoylation"));
-		modtypeMap.put("U", new URIImpl(BELV_NS + "Ubiquitination"));
-	}
-
-	public static URI getModificationType(String modtype) {
-		return modtypeMap.get(modtype);
-	}
+//		modtypeMap.put("S", new URIImpl(BELV_NS + "Sumoylation"));
+//		modtypeMap.put("U", new URIImpl(BELV_NS + "Ubiquitination"));
+//	}
+//
+//	public static URI getModificationType(String modtype) {
+//		return modtypeMap.get(modtype);
+//	}
 
 	private static Map<String,String> variantNormalizeMap = new HashMap<String,String>();
 

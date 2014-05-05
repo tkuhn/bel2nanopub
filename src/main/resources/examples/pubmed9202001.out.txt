@@ -1,9 +1,9 @@
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAHYuwaKilJM-M7Z1zkSV3UsfMH9W9NxME7wGwgnXYI6s> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAHYuwaKilJM-M7Z1zkSV3UsfMH9W9NxME7wGwgnXYI6s.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAHYuwaKilJM-M7Z1zkSV3UsfMH9W9NxME7wGwgnXYI6s..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7L9il8WxlmNpdnFxdJxomUeBYOCPkSWV1dcXqw4DlMk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7L9il8WxlmNpdnFxdJxomUeBYOCPkSWV1dcXqw4DlMk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA7L9il8WxlmNpdnFxdJxomUeBYOCPkSWV1dcXqw4DlMk..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -27,21 +27,21 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:increases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Kinase ;
-		belv:hasChild node:4 ;
-		a belv:AbundanceActivity .
-	
-	node:3 belv:hasConcept chebi:746 ;
+	node:1 belv:hasConcept chebi:746 ;
 		a belv:Abundance .
 	
-	node:4 belv:hasConcept hgnc:6871 ;
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:3 ;
+		a belv:AbundanceActivity .
+	
+	node:3 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
+	
+	node:4 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> kin(p(HGNC:MAPK1))" .
 }
@@ -61,9 +61,9 @@ sub:Info {
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA5xU43YZIJzK5Mdt9hkwEaQfcmJw6SqHUIWD-Wbw-m0A> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA5xU43YZIJzK5Mdt9hkwEaQfcmJw6SqHUIWD-Wbw-m0A.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA5xU43YZIJzK5Mdt9hkwEaQfcmJw6SqHUIWD-Wbw-m0A..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAPzgVl-lexGi0Kd_hiWYk4HwwJmxvOQp-Rs_2fogITdM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAPzgVl-lexGi0Kd_hiWYk4HwwJmxvOQp-Rs_2fogITdM.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAPzgVl-lexGi0Kd_hiWYk4HwwJmxvOQp-Rs_2fogITdM..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -87,21 +87,21 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:increases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Kinase ;
-		belv:hasChild node:4 ;
-		a belv:AbundanceActivity .
-	
-	node:3 belv:hasConcept chebi:746 ;
+	node:1 belv:hasConcept chebi:746 ;
 		a belv:Abundance .
 	
-	node:4 belv:hasConcept hgnc:6881 ;
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:3 ;
+		a belv:AbundanceActivity .
+	
+	node:3 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
+	
+	node:4 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> kin(p(HGNC:MAPK8))" .
 }
@@ -121,9 +121,9 @@ sub:Info {
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAoWI41XnsObGm44MLHWwi6iOrZ9hmA2TnoB1CdWAstWY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAoWI41XnsObGm44MLHWwi6iOrZ9hmA2TnoB1CdWAstWY.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAoWI41XnsObGm44MLHWwi6iOrZ9hmA2TnoB1CdWAstWY..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAdaxRLzp9wgQJtzQUuzB5Ml0E-U2GK-q624vfd8fw3Wk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAdaxRLzp9wgQJtzQUuzB5Ml0E-U2GK-q624vfd8fw3Wk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAdaxRLzp9wgQJtzQUuzB5Ml0E-U2GK-q624vfd8fw3Wk..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -147,21 +147,21 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:increases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Kinase ;
-		belv:hasChild node:4 ;
-		a belv:AbundanceActivity .
-	
-	node:3 belv:hasConcept chebi:746 ;
+	node:1 belv:hasConcept chebi:746 ;
 		a belv:Abundance .
 	
-	node:4 belv:hasConcept pfh:MAPK%20p38%20Family ;
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:3 ;
+		a belv:AbundanceActivity .
+	
+	node:3 belv:hasConcept pfh:MAPK%20p38%20Family ;
 		a belv:ProteinAbundance .
+	
+	node:4 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> kin(p(PFH:\"MAPK p38 Family\"))" .
 }
@@ -181,9 +181,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK1,pmod(P,T)) => kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAB53LU2zdn1HEm7zTtEezo7_aD6UbnUGrV5Nt73vhE30> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAB53LU2zdn1HEm7zTtEezo7_aD6UbnUGrV5Nt73vhE30.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAB53LU2zdn1HEm7zTtEezo7_aD6UbnUGrV5Nt73vhE30..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RALPIT8D--_H_qQ1Pty6PperVi-_TU-S2LUR5N4J4eizI> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RALPIT8D--_H_qQ1Pty6PperVi-_TU-S2LUR5N4J4eizI.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RALPIT8D--_H_qQ1Pty6PperVi-_TU-S2LUR5N4J4eizI..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -207,25 +207,25 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:directlyIncreases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Kinase ;
-		belv:hasChild node:5 ;
-		a belv:AbundanceActivity .
-	
-	node:3 belv:hasChild node:4 ;
+	node:1 belv:hasChild node:2 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
+	
+	node:2 belv:hasConcept hgnc:6871 ;
+		a belv:ProteinAbundance .
+	
+	node:3 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity .
 	
 	node:4 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:6871 ;
-		a belv:ProteinAbundance .
+	node:5 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:3 ;
+		rdf:predicate belv:directlyIncreases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "p(HGNC:MAPK1,pmod(P,T)) => kin(p(HGNC:MAPK1))" .
 }
@@ -245,9 +245,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK1,pmod(P,Y)) => kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAX2f2hnuy73P15QVst5NRivyvwmPD5Ysw-llN9_JIKvE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAX2f2hnuy73P15QVst5NRivyvwmPD5Ysw-llN9_JIKvE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAX2f2hnuy73P15QVst5NRivyvwmPD5Ysw-llN9_JIKvE..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8ZWq4cP6QvWV0W-VNYps9ie17BZoF408l0W-n-6fyaQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8ZWq4cP6QvWV0W-VNYps9ie17BZoF408l0W-n-6fyaQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA8ZWq4cP6QvWV0W-VNYps9ie17BZoF408l0W-n-6fyaQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -271,25 +271,25 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:directlyIncreases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Kinase ;
-		belv:hasChild node:5 ;
-		a belv:AbundanceActivity .
-	
-	node:3 belv:hasChild node:4 ;
+	node:1 belv:hasChild node:2 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
+	
+	node:2 belv:hasConcept hgnc:6871 ;
+		a belv:ProteinAbundance .
+	
+	node:3 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity .
 	
 	node:4 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:6871 ;
-		a belv:ProteinAbundance .
+	node:5 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:3 ;
+		rdf:predicate belv:directlyIncreases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "p(HGNC:MAPK1,pmod(P,Y)) => kin(p(HGNC:MAPK1))" .
 }
@@ -309,9 +309,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK8,pmod(P,T)) => kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAVWvcA3cHCqWg4mX-OYxmrhoT0xeE9yjYS3I48JbAUPw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAVWvcA3cHCqWg4mX-OYxmrhoT0xeE9yjYS3I48JbAUPw.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAVWvcA3cHCqWg4mX-OYxmrhoT0xeE9yjYS3I48JbAUPw..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAIfFPWweExDf98cjqhR4ONqcL9ar7FSCq3uGpfFCooKQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAIfFPWweExDf98cjqhR4ONqcL9ar7FSCq3uGpfFCooKQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAIfFPWweExDf98cjqhR4ONqcL9ar7FSCq3uGpfFCooKQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -335,25 +335,25 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:directlyIncreases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Kinase ;
-		belv:hasChild node:5 ;
-		a belv:AbundanceActivity .
-	
-	node:3 belv:hasChild node:4 ;
+	node:1 belv:hasChild node:2 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
+	
+	node:2 belv:hasConcept hgnc:6881 ;
+		a belv:ProteinAbundance .
+	
+	node:3 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity .
 	
 	node:4 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:6881 ;
-		a belv:ProteinAbundance .
+	node:5 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:3 ;
+		rdf:predicate belv:directlyIncreases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "p(HGNC:MAPK8,pmod(P,T)) => kin(p(HGNC:MAPK8))" .
 }
@@ -373,9 +373,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK8,pmod(P,Y)) => kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9PNVF9XodwxzicZI9TVZAYKSzDnhgnysk5FAVjfHaHM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9PNVF9XodwxzicZI9TVZAYKSzDnhgnysk5FAVjfHaHM.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA9PNVF9XodwxzicZI9TVZAYKSzDnhgnysk5FAVjfHaHM..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA5SjIy-5cnaY96bfYXzfjT9kNj34P1h70R9rd-Cf2YEc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA5SjIy-5cnaY96bfYXzfjT9kNj34P1h70R9rd-Cf2YEc.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA5SjIy-5cnaY96bfYXzfjT9kNj34P1h70R9rd-Cf2YEc..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -399,25 +399,25 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:directlyIncreases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Kinase ;
-		belv:hasChild node:5 ;
-		a belv:AbundanceActivity .
-	
-	node:3 belv:hasChild node:4 ;
+	node:1 belv:hasChild node:2 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
+	
+	node:2 belv:hasConcept hgnc:6881 ;
+		a belv:ProteinAbundance .
+	
+	node:3 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity .
 	
 	node:4 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:6881 ;
-		a belv:ProteinAbundance .
+	node:5 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:3 ;
+		rdf:predicate belv:directlyIncreases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "p(HGNC:MAPK8,pmod(P,Y)) => kin(p(HGNC:MAPK8))" .
 }
@@ -437,9 +437,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK14,pmod(P,T)) => kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAqd8OpuEXcvenYnnmQvXghPcHOkvA7F6sjPrHuWECbeA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAqd8OpuEXcvenYnnmQvXghPcHOkvA7F6sjPrHuWECbeA.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAqd8OpuEXcvenYnnmQvXghPcHOkvA7F6sjPrHuWECbeA..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9nzEnotWOb_edDVHTrUZICAN_ms1A5ltwi_b28s_5zY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9nzEnotWOb_edDVHTrUZICAN_ms1A5ltwi_b28s_5zY.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA9nzEnotWOb_edDVHTrUZICAN_ms1A5ltwi_b28s_5zY..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -464,25 +464,25 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:directlyIncreases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Kinase ;
-		belv:hasChild node:5 ;
-		a belv:AbundanceActivity .
-	
-	node:3 belv:hasChild node:4 ;
+	node:1 belv:hasChild node:2 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:6876 ;
+	node:2 belv:hasConcept hgnc:6876 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept pfh:MAPK%20p38%20Family ;
+	node:3 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity .
+	
+	node:4 belv:hasConcept pfh:MAPK%20p38%20Family ;
 		a belv:ProteinAbundance .
+	
+	node:5 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:3 ;
+		rdf:predicate belv:directlyIncreases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "p(HGNC:MAPK14,pmod(P,T)) => kin(p(PFH:\"MAPK p38 Family\"))" .
 }
@@ -502,9 +502,9 @@ sub:Info {
 ---
 BEL: p(HGNC:MAPK14,pmod(P,Y)) => kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAPMU2NHfsXQYmSLKcTfJFsCj2hPjVmrgtBZREBFtlepk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAPMU2NHfsXQYmSLKcTfJFsCj2hPjVmrgtBZREBFtlepk.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAPMU2NHfsXQYmSLKcTfJFsCj2hPjVmrgtBZREBFtlepk..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAzDctZaBT9WWVZslQRLqeFJSIPy7H6JHOJpUoaY8Ao4k> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAzDctZaBT9WWVZslQRLqeFJSIPy7H6JHOJpUoaY8Ao4k.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAzDctZaBT9WWVZslQRLqeFJSIPy7H6JHOJpUoaY8Ao4k..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -529,25 +529,25 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:directlyIncreases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Kinase ;
-		belv:hasChild node:5 ;
-		a belv:AbundanceActivity .
-	
-	node:3 belv:hasChild node:4 ;
+	node:1 belv:hasChild node:2 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:6876 ;
+	node:2 belv:hasConcept hgnc:6876 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept pfh:MAPK%20p38%20Family ;
+	node:3 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity .
+	
+	node:4 belv:hasConcept pfh:MAPK%20p38%20Family ;
 		a belv:ProteinAbundance .
+	
+	node:5 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:3 ;
+		rdf:predicate belv:directlyIncreases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "p(HGNC:MAPK14,pmod(P,Y)) => kin(p(PFH:\"MAPK p38 Family\"))" .
 }
@@ -567,9 +567,9 @@ sub:Info {
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK1,pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA4d87j0hkb26dh1FjCxmMIMq5CNIIjERyEPNHQd5R6gE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA4d87j0hkb26dh1FjCxmMIMq5CNIIjERyEPNHQd5R6gE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA4d87j0hkb26dh1FjCxmMIMq5CNIIjERyEPNHQd5R6gE..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3qCJoKzrVJEOA9k-KEyB6gyDoNKIndgSd47mUMmZN4c> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3qCJoKzrVJEOA9k-KEyB6gyDoNKIndgSd47mUMmZN4c.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA3qCJoKzrVJEOA9k-KEyB6gyDoNKIndgSd47mUMmZN4c..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -593,25 +593,25 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:directlyDecreases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
+	node:1 belv:hasActivityType belv:Phosphatase ;
+		belv:hasChild node:2 ;
+		a belv:AbundanceActivity .
 	
-	node:2 belv:hasChild node:5 ;
+	node:2 belv:hasConcept hgnc:3064 ;
+		a belv:ProteinAbundance .
+	
+	node:3 belv:hasChild node:4 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:3 belv:hasActivityType belv:Phosphatase ;
-		belv:hasChild node:4 ;
-		a belv:AbundanceActivity .
-	
-	node:4 belv:hasConcept hgnc:3064 ;
+	node:4 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:6871 ;
-		a belv:ProteinAbundance .
+	node:5 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:3 ;
+		rdf:predicate belv:directlyDecreases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK1,pmod(P))" .
 }
@@ -631,9 +631,9 @@ sub:Info {
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK8,pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAVs18sZlO9CqWqPxUMz9pHP8fQ4_VzXjCqB5L-zvGCmk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAVs18sZlO9CqWqPxUMz9pHP8fQ4_VzXjCqB5L-zvGCmk.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAVs18sZlO9CqWqPxUMz9pHP8fQ4_VzXjCqB5L-zvGCmk..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7Q2cP_EwxMnuDc7ereM53NJI5VMFik4whqgUIVsENL4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7Q2cP_EwxMnuDc7ereM53NJI5VMFik4whqgUIVsENL4.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA7Q2cP_EwxMnuDc7ereM53NJI5VMFik4whqgUIVsENL4..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -657,25 +657,25 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:directlyDecreases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
+	node:1 belv:hasActivityType belv:Phosphatase ;
+		belv:hasChild node:2 ;
+		a belv:AbundanceActivity .
 	
-	node:2 belv:hasChild node:5 ;
+	node:2 belv:hasConcept hgnc:3064 ;
+		a belv:ProteinAbundance .
+	
+	node:3 belv:hasChild node:4 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:3 belv:hasActivityType belv:Phosphatase ;
-		belv:hasChild node:4 ;
-		a belv:AbundanceActivity .
-	
-	node:4 belv:hasConcept hgnc:3064 ;
+	node:4 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:6881 ;
-		a belv:ProteinAbundance .
+	node:5 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:3 ;
+		rdf:predicate belv:directlyDecreases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK8,pmod(P))" .
 }
@@ -695,9 +695,9 @@ sub:Info {
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(PFH:"MAPK p38 Family",pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAzwvSPe7MHqMGV5mXjqAmHG4K7rspEAbbey_xZZZuEWs> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAzwvSPe7MHqMGV5mXjqAmHG4K7rspEAbbey_xZZZuEWs.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAzwvSPe7MHqMGV5mXjqAmHG4K7rspEAbbey_xZZZuEWs..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAAh7fRYjn_5f200bObUBr9MWkS0p7sYUZW8XQPgEVHKw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAAh7fRYjn_5f200bObUBr9MWkS0p7sYUZW8XQPgEVHKw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAAh7fRYjn_5f200bObUBr9MWkS0p7sYUZW8XQPgEVHKw..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -722,25 +722,25 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:directlyDecreases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
+	node:1 belv:hasActivityType belv:Phosphatase ;
+		belv:hasChild node:2 ;
+		a belv:AbundanceActivity .
 	
-	node:2 belv:hasChild node:5 ;
+	node:2 belv:hasConcept hgnc:3064 ;
+		a belv:ProteinAbundance .
+	
+	node:3 belv:hasChild node:4 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:3 belv:hasActivityType belv:Phosphatase ;
-		belv:hasChild node:4 ;
-		a belv:AbundanceActivity .
-	
-	node:4 belv:hasConcept hgnc:3064 ;
+	node:4 belv:hasConcept pfh:MAPK%20p38%20Family ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept pfh:MAPK%20p38%20Family ;
-		a belv:ProteinAbundance .
+	node:5 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:3 ;
+		rdf:predicate belv:directlyDecreases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "phos(p(HGNC:DUSP1)) =| p(PFH:\"MAPK p38 Family\",pmod(P))" .
 }
@@ -760,9 +760,9 @@ sub:Info {
 ---
 BEL: phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAMHbubiZjUfwepflTkMgYo1KMK6DWtmsL42a4xB3Xk6M> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAMHbubiZjUfwepflTkMgYo1KMK6DWtmsL42a4xB3Xk6M.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAMHbubiZjUfwepflTkMgYo1KMK6DWtmsL42a4xB3Xk6M..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAPWY-r3qJ2FL4u14mzAL0xie2vq4spBrsy7E45_p5BL0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAPWY-r3qJ2FL4u14mzAL0xie2vq4spBrsy7E45_p5BL0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAPWY-r3qJ2FL4u14mzAL0xie2vq4spBrsy7E45_p5BL0..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -785,25 +785,25 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:directlyDecreases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Kinase ;
-		belv:hasChild node:5 ;
+	node:1 belv:hasActivityType belv:Phosphatase ;
+		belv:hasChild node:2 ;
 		a belv:AbundanceActivity .
 	
-	node:3 belv:hasActivityType belv:Phosphatase ;
+	node:2 belv:hasConcept hgnc:3064 ;
+		a belv:ProteinAbundance .
+	
+	node:3 belv:hasActivityType belv:Kinase ;
 		belv:hasChild node:4 ;
 		a belv:AbundanceActivity .
 	
-	node:4 belv:hasConcept hgnc:3064 ;
+	node:4 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:6871 ;
-		a belv:ProteinAbundance .
+	node:5 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:3 ;
+		rdf:predicate belv:directlyDecreases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK1))" .
 }
@@ -823,9 +823,9 @@ sub:Info {
 ---
 BEL: phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA42R9EJCu7ii9nhunWxkRJEG2n4g2rTcshNza2ynPlCE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA42R9EJCu7ii9nhunWxkRJEG2n4g2rTcshNza2ynPlCE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA42R9EJCu7ii9nhunWxkRJEG2n4g2rTcshNza2ynPlCE..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA4ZyyY4U_S21EW6570tHhnHGIQhyE0_d4JBANKLd5-U8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA4ZyyY4U_S21EW6570tHhnHGIQhyE0_d4JBANKLd5-U8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA4ZyyY4U_S21EW6570tHhnHGIQhyE0_d4JBANKLd5-U8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -848,25 +848,25 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:directlyDecreases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Kinase ;
-		belv:hasChild node:5 ;
+	node:1 belv:hasActivityType belv:Phosphatase ;
+		belv:hasChild node:2 ;
 		a belv:AbundanceActivity .
 	
-	node:3 belv:hasActivityType belv:Phosphatase ;
+	node:2 belv:hasConcept hgnc:3064 ;
+		a belv:ProteinAbundance .
+	
+	node:3 belv:hasActivityType belv:Kinase ;
 		belv:hasChild node:4 ;
 		a belv:AbundanceActivity .
 	
-	node:4 belv:hasConcept hgnc:3064 ;
+	node:4 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:6881 ;
-		a belv:ProteinAbundance .
+	node:5 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:3 ;
+		rdf:predicate belv:directlyDecreases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK8))" .
 }
@@ -886,9 +886,9 @@ sub:Info {
 ---
 BEL: phos(p(HGNC:DUSP1)) =| kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAmVjTleLxEHyj4Dt94iHxhftlB4ynpCE0C5J-OXqXD08> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAmVjTleLxEHyj4Dt94iHxhftlB4ynpCE0C5J-OXqXD08.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAmVjTleLxEHyj4Dt94iHxhftlB4ynpCE0C5J-OXqXD08..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAzce9ZYXehF3tR_tOqT7Nlz4zajuMk7XowxoE5ppWYMw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAzce9ZYXehF3tR_tOqT7Nlz4zajuMk7XowxoE5ppWYMw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAzce9ZYXehF3tR_tOqT7Nlz4zajuMk7XowxoE5ppWYMw..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -912,25 +912,25 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:directlyDecreases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Kinase ;
-		belv:hasChild node:5 ;
+	node:1 belv:hasActivityType belv:Phosphatase ;
+		belv:hasChild node:2 ;
 		a belv:AbundanceActivity .
 	
-	node:3 belv:hasActivityType belv:Phosphatase ;
+	node:2 belv:hasConcept hgnc:3064 ;
+		a belv:ProteinAbundance .
+	
+	node:3 belv:hasActivityType belv:Kinase ;
 		belv:hasChild node:4 ;
 		a belv:AbundanceActivity .
 	
-	node:4 belv:hasConcept hgnc:3064 ;
+	node:4 belv:hasConcept pfh:MAPK%20p38%20Family ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept pfh:MAPK%20p38%20Family ;
-		a belv:ProteinAbundance .
+	node:5 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:3 ;
+		rdf:predicate belv:directlyDecreases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "phos(p(HGNC:DUSP1)) =| kin(p(PFH:\"MAPK p38 Family\"))" .
 }
@@ -950,9 +950,9 @@ sub:Info {
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAFKHhp0N_-571hSnXwbnoDqLg0L9B6x0ihxDiDko6Qrw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAFKHhp0N_-571hSnXwbnoDqLg0L9B6x0ihxDiDko6Qrw.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAFKHhp0N_-571hSnXwbnoDqLg0L9B6x0ihxDiDko6Qrw..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAHaOunLz2LVC07veO79_KICJh_7FYDT3xXOmt6iPXbiQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAHaOunLz2LVC07veO79_KICJh_7FYDT3xXOmt6iPXbiQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAHaOunLz2LVC07veO79_KICJh_7FYDT3xXOmt6iPXbiQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -976,17 +976,17 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:increases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
+	node:1 belv:hasConcept chebi:746 ;
+		a belv:Abundance .
 	
 	node:2 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
-	node:3 belv:hasConcept chebi:746 ;
-		a belv:Abundance .
+	node:3 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1)" .
 }
@@ -1006,9 +1006,9 @@ sub:Info {
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:JUN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAcUJNduDjWOuq6L8MnQ6Dqqz3aHfzVzSXe2pfywpiQIo> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAcUJNduDjWOuq6L8MnQ6Dqqz3aHfzVzSXe2pfywpiQIo.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAcUJNduDjWOuq6L8MnQ6Dqqz3aHfzVzSXe2pfywpiQIo..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAK7UsZ71u0OFPryuOinCFMK0FFHiq2OOKw3wtL2auOog> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAK7UsZ71u0OFPryuOinCFMK0FFHiq2OOKw3wtL2auOog.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAK7UsZ71u0OFPryuOinCFMK0FFHiq2OOKw3wtL2auOog..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1032,21 +1032,21 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:increases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Transcription ;
-		belv:hasChild node:4 ;
-		a belv:AbundanceActivity .
-	
-	node:3 belv:hasConcept chebi:746 ;
+	node:1 belv:hasConcept chebi:746 ;
 		a belv:Abundance .
 	
-	node:4 belv:hasConcept hgnc:6204 ;
+	node:2 belv:hasActivityType belv:Transcription ;
+		belv:hasChild node:3 ;
+		a belv:AbundanceActivity .
+	
+	node:3 belv:hasConcept hgnc:6204 ;
 		a belv:ProteinAbundance .
+	
+	node:4 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> tscript(p(HGNC:JUN))" .
 }
@@ -1066,9 +1066,9 @@ sub:Info {
 ---
 BEL: phos(p(HGNC:DUSP1)) -| tscript(p(HGNC:JUN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAUh5EmrB0Jsv_sqUhAMS_jX-_jPN64X2yHvQimF_8SiY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAUh5EmrB0Jsv_sqUhAMS_jX-_jPN64X2yHvQimF_8SiY.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAUh5EmrB0Jsv_sqUhAMS_jX-_jPN64X2yHvQimF_8SiY..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RArvnGlC1TKEqxz_Blqf7Pxe_42RDtMAd6G9_9HaOsehE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RArvnGlC1TKEqxz_Blqf7Pxe_42RDtMAd6G9_9HaOsehE.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RArvnGlC1TKEqxz_Blqf7Pxe_42RDtMAd6G9_9HaOsehE..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1091,24 +1091,24 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasConcept hgnc:6204 ;
-		a belv:ProteinAbundance .
-	
-	node:2 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:3 ;
+	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:2 ;
 		rdf:predicate belv:decreases ;
-		rdf:subject node:4 ;
+		rdf:subject node:3 ;
 		a rdf:Statement .
 	
-	node:3 belv:hasActivityType belv:Transcription ;
-		belv:hasChild node:1 ;
-		a belv:AbundanceActivity .
-	
-	node:4 belv:hasActivityType belv:Phosphatase ;
+	node:2 belv:hasActivityType belv:Transcription ;
 		belv:hasChild node:5 ;
 		a belv:AbundanceActivity .
 	
-	node:5 belv:hasConcept hgnc:3064 ;
+	node:3 belv:hasActivityType belv:Phosphatase ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity .
+	
+	node:4 belv:hasConcept hgnc:3064 ;
+		a belv:ProteinAbundance .
+	
+	node:5 belv:hasConcept hgnc:6204 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "phos(p(HGNC:DUSP1)) -| tscript(p(HGNC:JUN))" .
@@ -1129,9 +1129,9 @@ sub:Info {
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:ELK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAwMWiCoCMksDeNvZdz3vMEk0MV5cuGxxBTtl7dMvyTOw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAwMWiCoCMksDeNvZdz3vMEk0MV5cuGxxBTtl7dMvyTOw.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAwMWiCoCMksDeNvZdz3vMEk0MV5cuGxxBTtl7dMvyTOw..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAB0Zyo6_cVgt55X-pt1avdI0Yvt6W-hpdDW5P4RZOmTA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAB0Zyo6_cVgt55X-pt1avdI0Yvt6W-hpdDW5P4RZOmTA.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAB0Zyo6_cVgt55X-pt1avdI0Yvt6W-hpdDW5P4RZOmTA..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1155,21 +1155,21 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:increases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Transcription ;
-		belv:hasChild node:4 ;
-		a belv:AbundanceActivity .
-	
-	node:3 belv:hasConcept chebi:746 ;
+	node:1 belv:hasConcept chebi:746 ;
 		a belv:Abundance .
 	
-	node:4 belv:hasConcept hgnc:3321 ;
+	node:2 belv:hasActivityType belv:Transcription ;
+		belv:hasChild node:3 ;
+		a belv:AbundanceActivity .
+	
+	node:3 belv:hasConcept hgnc:3321 ;
 		a belv:ProteinAbundance .
+	
+	node:4 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> tscript(p(HGNC:ELK1))" .
 }
@@ -1189,9 +1189,9 @@ sub:Info {
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:MYC))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAeYqw3oX5xdbr--E3DjoqvS3BUsUzKPf8LQbkzvhNSig> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAeYqw3oX5xdbr--E3DjoqvS3BUsUzKPf8LQbkzvhNSig.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAeYqw3oX5xdbr--E3DjoqvS3BUsUzKPf8LQbkzvhNSig..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8Gr3nTatjP-8R-7wme9YWUChFHoGmmH3XyDpMWEdw0o> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8Gr3nTatjP-8R-7wme9YWUChFHoGmmH3XyDpMWEdw0o.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA8Gr3nTatjP-8R-7wme9YWUChFHoGmmH3XyDpMWEdw0o..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1215,21 +1215,21 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:increases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Transcription ;
-		belv:hasChild node:4 ;
-		a belv:AbundanceActivity .
-	
-	node:3 belv:hasConcept chebi:746 ;
+	node:1 belv:hasConcept chebi:746 ;
 		a belv:Abundance .
 	
-	node:4 belv:hasConcept hgnc:7553 ;
+	node:2 belv:hasActivityType belv:Transcription ;
+		belv:hasChild node:3 ;
+		a belv:AbundanceActivity .
+	
+	node:3 belv:hasConcept hgnc:7553 ;
 		a belv:ProteinAbundance .
+	
+	node:4 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> tscript(p(HGNC:MYC))" .
 }
@@ -1249,9 +1249,9 @@ sub:Info {
 ---
 BEL: p(HGNC:DUSP1) -|(a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_9p0uKNsK7fl_hcHiUYrtvwgMiOGU9fR7LIhayY0lyA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_9p0uKNsK7fl_hcHiUYrtvwgMiOGU9fR7LIhayY0lyA.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA_9p0uKNsK7fl_hcHiUYrtvwgMiOGU9fR7LIhayY0lyA..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA-h6xN_RXkUMCaGfltNlLPtAzMW3w3D2zlyXNxeO7H-8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA-h6xN_RXkUMCaGfltNlLPtAzMW3w3D2zlyXNxeO7H-8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA-h6xN_RXkUMCaGfltNlLPtAzMW3w3D2zlyXNxeO7H-8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1275,25 +1275,25 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:decreases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
+	node:1 belv:hasConcept hgnc:3064 ;
+		a belv:ProteinAbundance .
 	
-	node:2 rdf:object node:4 ;
-		rdf:predicate belv:increases ;
-		rdf:subject node:5 ;
-		a rdf:Statement .
+	node:2 belv:hasConcept chebi:746 ;
+		a belv:Abundance .
 	
 	node:3 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:3064 ;
-		a belv:ProteinAbundance .
+	node:4 rdf:object node:3 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:2 ;
+		a rdf:Statement .
 	
-	node:5 belv:hasConcept chebi:746 ;
-		a belv:Abundance .
+	node:5 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:4 ;
+		rdf:predicate belv:decreases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1)" , "p(HGNC:DUSP1) -| (a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1))" .
 }
@@ -1313,9 +1313,9 @@ sub:Info {
 ---
 BEL: kin(p(HGNC:MAPK1)) ->(a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAC0AldTHst1Oi-tZHjeGINeL2rXImsGHJuWKUeY-hyAc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAC0AldTHst1Oi-tZHjeGINeL2rXImsGHJuWKUeY-hyAc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAC0AldTHst1Oi-tZHjeGINeL2rXImsGHJuWKUeY-hyAc..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RALi1t3kSg3aHYWSW2maA30NM38FGmA8pchG1D_ZzwSgU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RALi1t3kSg3aHYWSW2maA30NM38FGmA8pchG1D_ZzwSgU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RALi1t3kSg3aHYWSW2maA30NM38FGmA8pchG1D_ZzwSgU..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1339,29 +1339,29 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
+	node:1 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:2 ;
+		a belv:AbundanceActivity .
+	
+	node:2 belv:hasConcept hgnc:6871 ;
+		a belv:ProteinAbundance .
+	
+	node:3 belv:hasConcept chebi:746 ;
+		a belv:Abundance .
+	
+	node:4 belv:hasConcept hgnc:3064 ;
+		a belv:ProteinAbundance .
+	
+	node:5 rdf:object node:4 ;
 		rdf:predicate belv:increases ;
 		rdf:subject node:3 ;
 		a rdf:Statement .
 	
-	node:2 rdf:object node:5 ;
+	node:6 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:5 ;
 		rdf:predicate belv:increases ;
-		rdf:subject node:6 ;
+		rdf:subject node:1 ;
 		a rdf:Statement .
-	
-	node:3 belv:hasActivityType belv:Kinase ;
-		belv:hasChild node:4 ;
-		a belv:AbundanceActivity .
-	
-	node:4 belv:hasConcept hgnc:6871 ;
-		a belv:ProteinAbundance .
-	
-	node:5 belv:hasConcept hgnc:3064 ;
-		a belv:ProteinAbundance .
-	
-	node:6 belv:hasConcept chebi:746 ;
-		a belv:Abundance .
 	
 	sub:Ass rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1)" , "kin(p(HGNC:MAPK1)) -> (a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1))" .
 }
@@ -1381,9 +1381,9 @@ sub:Info {
 ---
 BEL: kin(p(HGNC:MAPK1)) -> p(HGNC:DUSP1)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAES2Ea8rfJruKEWx8_pnYZ9ELC3Lp_sF_nmh5IBrGfR0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAES2Ea8rfJruKEWx8_pnYZ9ELC3Lp_sF_nmh5IBrGfR0.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAES2Ea8rfJruKEWx8_pnYZ9ELC3Lp_sF_nmh5IBrGfR0..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAiK7BevTat4dJFlUEptQTk2ngG6Bed51Tt76Mr7YqMF0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAiK7BevTat4dJFlUEptQTk2ngG6Bed51Tt76Mr7YqMF0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAiK7BevTat4dJFlUEptQTk2ngG6Bed51Tt76Mr7YqMF0..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1406,21 +1406,21 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:increases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasConcept hgnc:3064 ;
-		a belv:ProteinAbundance .
-	
-	node:3 belv:hasActivityType belv:Kinase ;
-		belv:hasChild node:4 ;
+	node:1 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:2 ;
 		a belv:AbundanceActivity .
 	
-	node:4 belv:hasConcept hgnc:6871 ;
+	node:2 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
+	
+	node:3 belv:hasConcept hgnc:3064 ;
+		a belv:ProteinAbundance .
+	
+	node:4 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:3 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "kin(p(HGNC:MAPK1)) -> p(HGNC:DUSP1)" .
 }

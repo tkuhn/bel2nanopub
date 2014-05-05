@@ -1,9 +1,9 @@
 ---
 BEL: path(MESHD:"Werner Syndrome") positiveCorrelation path(MESHD:"Genomic Instability")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAhkYPcRyy7Agg8bqtWO5kJDv8peerlY0qntyTqiITPYw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAhkYPcRyy7Agg8bqtWO5kJDv8peerlY0qntyTqiITPYw.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAhkYPcRyy7Agg8bqtWO5kJDv8peerlY0qntyTqiITPYw..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAH5lmH8Xl-ZrQzAkR7Jo2q5B-tnZJz6zBB2zK-H9bKd8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAH5lmH8Xl-ZrQzAkR7Jo2q5B-tnZJz6zBB2zK-H9bKd8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAH5lmH8Xl-ZrQzAkR7Jo2q5B-tnZJz6zBB2zK-H9bKd8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -24,26 +24,17 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 rdf:object node:2 ;
-		rdf:predicate belv:positiveCorrelation ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasConcept mesh:D042822 ;
-		a belv:Pathology .
-	
-	node:3 belv:hasConcept mesh:D014898 ;
-		a belv:Pathology .
+	mesh:D014898 belv:positiveCorrelation mesh:D042822 .
 	
 	sub:Ass rdfs:label "path(MESHD:\"Werner Syndrome\") positiveCorrelation path(MESHD:\"Genomic Instability\")" .
 }
 
 sub:Prov {
-	node:4 prov:value "Werner's syndrome (WS) is an inherited diseasecharacterized by genomic instability and premature aging." ;
+	node:1 prov:value "Werner's syndrome (WS) is an inherited diseasecharacterized by genomic instability and premature aging." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
 	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom node:4 .
+		prov:wasDerivedFrom node:1 .
 }
 
 sub:Info {
@@ -53,9 +44,9 @@ sub:Info {
 ---
 BEL: path(MESHD:"Werner Syndrome") positiveCorrelation path(MESHD:"Aging, Premature")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAPnvg5uwl5Tnf-pR1pFHrAZ9c6HO-Fil6ZskiW8CuS-M> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAPnvg5uwl5Tnf-pR1pFHrAZ9c6HO-Fil6ZskiW8CuS-M.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAPnvg5uwl5Tnf-pR1pFHrAZ9c6HO-Fil6ZskiW8CuS-M..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAKLUU3TO_NOQOdvcolp6CWGESx6e-Z0mkFiXPqB_JBVk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAKLUU3TO_NOQOdvcolp6CWGESx6e-Z0mkFiXPqB_JBVk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAKLUU3TO_NOQOdvcolp6CWGESx6e-Z0mkFiXPqB_JBVk..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -76,26 +67,17 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 rdf:object node:2 ;
-		rdf:predicate belv:positiveCorrelation ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasConcept mesh:D019588 ;
-		a belv:Pathology .
-	
-	node:3 belv:hasConcept mesh:D014898 ;
-		a belv:Pathology .
+	mesh:D014898 belv:positiveCorrelation mesh:D019588 .
 	
 	sub:Ass rdfs:label "path(MESHD:\"Werner Syndrome\") positiveCorrelation path(MESHD:\"Aging, Premature\")" .
 }
 
 sub:Prov {
-	node:4 prov:value "Werner's syndrome (WS) is an inherited diseasecharacterized by genomic instability and premature aging." ;
+	node:1 prov:value "Werner's syndrome (WS) is an inherited diseasecharacterized by genomic instability and premature aging." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
 	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom node:4 .
+		prov:wasDerivedFrom node:1 .
 }
 
 sub:Info {
@@ -105,9 +87,9 @@ sub:Info {
 ---
 BEL: complex(p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:WRN)) => cat(p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAIECo2GIdbd6eVXO2D2PLDDJ4zdCUv6ud_zG1PTnPD18> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAIECo2GIdbd6eVXO2D2PLDDJ4zdCUv6ud_zG1PTnPD18.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAIECo2GIdbd6eVXO2D2PLDDJ4zdCUv6ud_zG1PTnPD18..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAr8ojHjh_nl33nOHFgM_CumPPEG-L8Hx3uYhxNcXIN-k> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAr8ojHjh_nl33nOHFgM_CumPPEG-L8Hx3uYhxNcXIN-k.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAr8ojHjh_nl33nOHFgM_CumPPEG-L8Hx3uYhxNcXIN-k..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -116,6 +98,68 @@ NANOPUB:
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix orcid: <http://orcid.org/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Ass ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Ass {
+	node:1 belv:directlyIncreases node:2 ;
+		belv:hasChild node:3 , node:4 , node:5 ;
+		a belv:ComplexAbundance .
+	
+	node:2 belv:hasActivityType belv:Catalytic ;
+		belv:hasChild node:6 ;
+		a belv:AbundanceActivity .
+	
+	node:3 belv:hasConcept hgnc:12833 ;
+		a belv:ProteinAbundance .
+	
+	node:4 belv:hasConcept hgnc:4055 ;
+		a belv:ProteinAbundance .
+	
+	node:5 belv:hasConcept hgnc:12791 ;
+		a belv:ProteinAbundance .
+	
+	node:6 belv:hasConcept hgnc:12791 ;
+		a belv:ProteinAbundance .
+	
+	sub:Ass rdfs:label "complex(p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:WRN)) => cat(p(HGNC:WRN))" .
+}
+
+sub:Prov {
+	node:7 prov:value "We have previously reported that WRN interactswith Ku70/80 and this interaction strongly stimulates WRNexonuclease activity." ;
+		prov:wasQuotedFrom pubmed:14734561 .
+	
+	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
+		prov:wasDerivedFrom node:7 .
+}
+
+sub:Info {
+	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
+}
+---
+BEL: complex(p(HGNC:XRCC5),p(HGNC:WRN))
+NANOPUB:
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RACSoo3myFgnmUxM9sF5MPPKKkDSiDP8D2LERGpsIWE5s> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RACSoo3myFgnmUxM9sF5MPPKKkDSiDP8D2LERGpsIWE5s.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RACSoo3myFgnmUxM9sF5MPPKKkDSiDP8D2LERGpsIWE5s..> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -131,78 +175,12 @@ sub:Ass {
 	node:1 belv:hasConcept hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	node:2 belv:hasConcept hgnc:4055 ;
+	node:2 belv:hasConcept hgnc:12791 ;
 		a belv:ProteinAbundance .
 	
-	node:3 belv:hasConcept hgnc:12791 ;
-		a belv:ProteinAbundance .
-	
-	node:4 belv:hasActivityType belv:Catalytic ;
-		belv:hasChild node:5 ;
-		a belv:AbundanceActivity .
-	
-	node:5 belv:hasConcept hgnc:12791 ;
-		a belv:ProteinAbundance .
-	
-	node:6 rdf:object node:4 ;
-		rdf:predicate belv:directlyIncreases ;
-		rdf:subject node:7 ;
-		a rdf:Statement .
-	
-	node:7 belv:hasChild node:1 , node:2 , node:3 ;
+	node:3 belv:hasAnnotation mesh:D002467 ;
+		belv:hasChild node:1 , node:2 ;
 		a belv:ComplexAbundance .
-	
-	sub:Ass rdfs:label "complex(p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:WRN)) => cat(p(HGNC:WRN))" .
-}
-
-sub:Prov {
-	node:8 prov:value "We have previously reported that WRN interactswith Ku70/80 and this interaction strongly stimulates WRNexonuclease activity." ;
-		prov:wasQuotedFrom pubmed:14734561 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom node:8 .
-}
-
-sub:Info {
-	this: dc:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
-}
----
-BEL: complex(p(HGNC:XRCC5),p(HGNC:WRN))
-NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAsBUQEsH21rzVWDDGkaWtIRFTBq4fI3uJ9UtmoIftgI4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAsBUQEsH21rzVWDDGkaWtIRFTBq4fI3uJ9UtmoIftgI4.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAsBUQEsH21rzVWDDGkaWtIRFTBq4fI3uJ9UtmoIftgI4..> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dc: <http://purl.org/dc/terms/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
-@prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
-@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
-@prefix orcid: <http://orcid.org/> .
-
-sub:Head {
-	this: np:hasAssertion sub:Ass ;
-		np:hasProvenance sub:Prov ;
-		np:hasPublicationInfo sub:Info ;
-		a np:Nanopublication .
-}
-
-sub:Ass {
-	node:1 belv:hasAnnotation mesh:D002467 ;
-		belv:hasChild node:2 , node:3 ;
-		a belv:ComplexAbundance .
-	
-	node:2 belv:hasConcept hgnc:12833 ;
-		a belv:ProteinAbundance .
-	
-	node:3 belv:hasConcept hgnc:12791 ;
-		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "complex(p(HGNC:XRCC5),p(HGNC:WRN))" .
 }
@@ -382,9 +360,9 @@ sub:Info {
 ---
 BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R)))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA2h4IvBoY1_DF077AzWvIN1S6wriVj42TUYEScfT_nQs> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA2h4IvBoY1_DF077AzWvIN1S6wriVj42TUYEScfT_nQs.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA2h4IvBoY1_DF077AzWvIN1S6wriVj42TUYEScfT_nQs..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAL5xViVoG4gY7P-kElrQqPIzcmimtKEF7wB0MviM1Bg8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAL5xViVoG4gY7P-kElrQqPIzcmimtKEF7wB0MviM1Bg8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAL5xViVoG4gY7P-kElrQqPIzcmimtKEF7wB0MviM1Bg8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -407,48 +385,44 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 rdf:object node:2 ;
-		rdf:predicate belv:increases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 rdf:object node:6 ;
-		rdf:predicate belv:directlyIncreases ;
-		rdf:subject node:7 ;
-		a rdf:Statement .
-	
-	node:3 belv:hasChild node:4 , node:5 ;
+	node:1 belv:hasChild node:2 , node:3 ;
+		belv:increases node:4 ;
 		a belv:CompositeAbundance .
 	
-	node:4 belv:hasConcept chebi:4291 ;
+	node:2 belv:hasConcept chebi:4291 ;
 		a belv:Abundance .
 	
-	node:5 belv:hasConcept chebi:7422 ;
+	node:3 belv:hasConcept chebi:7422 ;
 		a belv:Abundance .
 	
-	node:6 belv:hasChild node:9 ;
+	node:4 rdf:object node:7 ;
+		rdf:predicate belv:directlyIncreases ;
+		rdf:subject node:5 ;
+		a rdf:Statement .
+	
+	node:5 belv:hasActivityType belv:Ribosylase ;
+		belv:hasChild node:6 ;
+		a belv:AbundanceActivity .
+	
+	node:6 belv:hasConcept hgnc:270 ;
+		a belv:ProteinAbundance .
+	
+	node:7 belv:hasChild node:8 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:7 belv:hasActivityType belv:Ribosylase ;
-		belv:hasChild node:8 ;
-		a belv:AbundanceActivity .
-	
 	node:8 belv:hasConcept hgnc:270 ;
-		a belv:ProteinAbundance .
-	
-	node:9 belv:hasConcept hgnc:270 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R)))" , "ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R))" .
 }
 
 sub:Prov {
-	node:10 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	node:9 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
 	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom node:10 .
+		prov:wasDerivedFrom node:9 .
 }
 
 sub:Info {
@@ -458,9 +432,9 @@ sub:Info {
 ---
 BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R)))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAhW334gQf6fHBUppxaNuhLIklnTK2gHEw5k9izoiAI2o> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAhW334gQf6fHBUppxaNuhLIklnTK2gHEw5k9izoiAI2o.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAhW334gQf6fHBUppxaNuhLIklnTK2gHEw5k9izoiAI2o..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAQCXmrApcTbAbH-2joiTEnzSR5OWjCLyBtfJqRZKm1f4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAQCXmrApcTbAbH-2joiTEnzSR5OWjCLyBtfJqRZKm1f4.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAQCXmrApcTbAbH-2joiTEnzSR5OWjCLyBtfJqRZKm1f4..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -483,48 +457,44 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 rdf:object node:2 ;
-		rdf:predicate belv:increases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 rdf:object node:6 ;
-		rdf:predicate belv:directlyIncreases ;
-		rdf:subject node:7 ;
-		a rdf:Statement .
-	
-	node:3 belv:hasChild node:4 , node:5 ;
+	node:1 belv:hasChild node:2 , node:3 ;
+		belv:increases node:4 ;
 		a belv:CompositeAbundance .
 	
-	node:4 belv:hasConcept chebi:4291 ;
+	node:2 belv:hasConcept chebi:4291 ;
 		a belv:Abundance .
 	
-	node:5 belv:hasConcept chebi:7422 ;
+	node:3 belv:hasConcept chebi:7422 ;
 		a belv:Abundance .
 	
-	node:6 belv:hasChild node:9 ;
+	node:4 rdf:object node:7 ;
+		rdf:predicate belv:directlyIncreases ;
+		rdf:subject node:5 ;
+		a rdf:Statement .
+	
+	node:5 belv:hasActivityType belv:Ribosylase ;
+		belv:hasChild node:6 ;
+		a belv:AbundanceActivity .
+	
+	node:6 belv:hasConcept hgnc:270 ;
+		a belv:ProteinAbundance .
+	
+	node:7 belv:hasChild node:8 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:7 belv:hasActivityType belv:Ribosylase ;
-		belv:hasChild node:8 ;
-		a belv:AbundanceActivity .
-	
-	node:8 belv:hasConcept hgnc:270 ;
-		a belv:ProteinAbundance .
-	
-	node:9 belv:hasConcept hgnc:12833 ;
+	node:8 belv:hasConcept hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R)))" , "ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R))" .
 }
 
 sub:Prov {
-	node:10 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	node:9 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
 	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom node:10 .
+		prov:wasDerivedFrom node:9 .
 }
 
 sub:Info {
@@ -534,9 +504,9 @@ sub:Info {
 ---
 BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R)))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAIoxTUixD27-D0PPwtcuKCelIQgS64aNFH2mvpHio_Hw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAIoxTUixD27-D0PPwtcuKCelIQgS64aNFH2mvpHio_Hw.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAIoxTUixD27-D0PPwtcuKCelIQgS64aNFH2mvpHio_Hw..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA89NigJ0Pbdg33zCS20UWH6SyHo6w4RmKSHW9UVE1TDk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA89NigJ0Pbdg33zCS20UWH6SyHo6w4RmKSHW9UVE1TDk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA89NigJ0Pbdg33zCS20UWH6SyHo6w4RmKSHW9UVE1TDk..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -559,48 +529,44 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 rdf:object node:2 ;
-		rdf:predicate belv:increases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 rdf:object node:6 ;
-		rdf:predicate belv:directlyIncreases ;
-		rdf:subject node:7 ;
-		a rdf:Statement .
-	
-	node:3 belv:hasChild node:4 , node:5 ;
+	node:1 belv:hasChild node:2 , node:3 ;
+		belv:increases node:4 ;
 		a belv:CompositeAbundance .
 	
-	node:4 belv:hasConcept chebi:4291 ;
+	node:2 belv:hasConcept chebi:4291 ;
 		a belv:Abundance .
 	
-	node:5 belv:hasConcept chebi:7422 ;
+	node:3 belv:hasConcept chebi:7422 ;
 		a belv:Abundance .
 	
-	node:6 belv:hasChild node:9 ;
+	node:4 rdf:object node:7 ;
+		rdf:predicate belv:directlyIncreases ;
+		rdf:subject node:5 ;
+		a rdf:Statement .
+	
+	node:5 belv:hasActivityType belv:Ribosylase ;
+		belv:hasChild node:6 ;
+		a belv:AbundanceActivity .
+	
+	node:6 belv:hasConcept hgnc:270 ;
+		a belv:ProteinAbundance .
+	
+	node:7 belv:hasChild node:8 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:7 belv:hasActivityType belv:Ribosylase ;
-		belv:hasChild node:8 ;
-		a belv:AbundanceActivity .
-	
-	node:8 belv:hasConcept hgnc:270 ;
-		a belv:ProteinAbundance .
-	
-	node:9 belv:hasConcept hgnc:4055 ;
+	node:8 belv:hasConcept hgnc:4055 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R)))" , "ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R))" .
 }
 
 sub:Prov {
-	node:10 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	node:9 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
 	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom node:10 .
+		prov:wasDerivedFrom node:9 .
 }
 
 sub:Info {
@@ -610,9 +576,9 @@ sub:Info {
 ---
 BEL: p(HGNC:XRCC5,pmod(R)) => complex(a(CHEBI:"deoxyribonucleic acid"),p(HGNC:XRCC5),p(HGNC:XRCC6))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAvAAx_21wCi9J-nhlQfyuhLugu4SVzXB72URHble7nrg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAvAAx_21wCi9J-nhlQfyuhLugu4SVzXB72URHble7nrg.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAvAAx_21wCi9J-nhlQfyuhLugu4SVzXB72URHble7nrg..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAi_t1Txm6H0kcFKVW2AEIcqLrbp1k__rX1sMbL11IcCg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAi_t1Txm6H0kcFKVW2AEIcqLrbp1k__rX1sMbL11IcCg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAi_t1Txm6H0kcFKVW2AEIcqLrbp1k__rX1sMbL11IcCg..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -635,39 +601,35 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 rdf:object node:2 ;
-		rdf:predicate belv:directlyIncreases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasChild node:5 , node:6 , node:7 ;
-		a belv:ComplexAbundance .
-	
-	node:3 belv:hasChild node:4 ;
+	node:1 belv:directlyIncreases node:2 ;
+		belv:hasChild node:3 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:12833 ;
+	node:2 belv:hasChild node:4 , node:5 , node:6 ;
+		a belv:ComplexAbundance .
+	
+	node:3 belv:hasConcept hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept chebi:4291 ;
+	node:4 belv:hasConcept chebi:4291 ;
 		a belv:Abundance .
 	
-	node:6 belv:hasConcept hgnc:12833 ;
+	node:5 belv:hasConcept hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	node:7 belv:hasConcept hgnc:4055 ;
+	node:6 belv:hasConcept hgnc:4055 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "p(HGNC:XRCC5,pmod(R)) => complex(a(CHEBI:\"deoxyribonucleic acid\"),p(HGNC:XRCC5),p(HGNC:XRCC6))" .
 }
 
 sub:Prov {
-	node:8 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	node:7 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
 	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom node:8 .
+		prov:wasDerivedFrom node:7 .
 }
 
 sub:Info {
@@ -677,9 +639,9 @@ sub:Info {
 ---
 BEL: p(HGNC:XRCC6,pmod(R)) => complex(a(CHEBI:"deoxyribonucleic acid"),p(HGNC:XRCC5),p(HGNC:XRCC6))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAMWW98adTtVdg8fekmMHxkBd4lfnPqwIg5PS1SXlgOzE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAMWW98adTtVdg8fekmMHxkBd4lfnPqwIg5PS1SXlgOzE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAMWW98adTtVdg8fekmMHxkBd4lfnPqwIg5PS1SXlgOzE..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAhbdz9f1SEvc3D_Xj6KnfzGrlF4N17MKoSHdb9ZgjW20> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAhbdz9f1SEvc3D_Xj6KnfzGrlF4N17MKoSHdb9ZgjW20.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAhbdz9f1SEvc3D_Xj6KnfzGrlF4N17MKoSHdb9ZgjW20..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -702,39 +664,35 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 rdf:object node:2 ;
-		rdf:predicate belv:directlyIncreases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasChild node:5 , node:6 , node:7 ;
-		a belv:ComplexAbundance .
-	
-	node:3 belv:hasChild node:4 ;
+	node:1 belv:directlyIncreases node:2 ;
+		belv:hasChild node:3 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:4055 ;
+	node:2 belv:hasChild node:4 , node:5 , node:6 ;
+		a belv:ComplexAbundance .
+	
+	node:3 belv:hasConcept hgnc:4055 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept chebi:4291 ;
+	node:4 belv:hasConcept chebi:4291 ;
 		a belv:Abundance .
 	
-	node:6 belv:hasConcept hgnc:12833 ;
+	node:5 belv:hasConcept hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	node:7 belv:hasConcept hgnc:4055 ;
+	node:6 belv:hasConcept hgnc:4055 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "p(HGNC:XRCC6,pmod(R)) => complex(a(CHEBI:\"deoxyribonucleic acid\"),p(HGNC:XRCC5),p(HGNC:XRCC6))" .
 }
 
 sub:Prov {
-	node:8 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	node:7 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
 	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom node:8 .
+		prov:wasDerivedFrom node:7 .
 }
 
 sub:Info {
@@ -744,9 +702,9 @@ sub:Info {
 ---
 BEL: p(HGNC:XRCC5,pmod(R)) => cat(p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAD7lusiqTFYi2RNsofDb9TsjN91Q0Yw7lD0ffQ9IZSoM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAD7lusiqTFYi2RNsofDb9TsjN91Q0Yw7lD0ffQ9IZSoM.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAD7lusiqTFYi2RNsofDb9TsjN91Q0Yw7lD0ffQ9IZSoM..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8ku-f44pYc9QsWV3FjRk2Baauhy1z_8OsFNTV20bklA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8ku-f44pYc9QsWV3FjRk2Baauhy1z_8OsFNTV20bklA.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA8ku-f44pYc9QsWV3FjRk2Baauhy1z_8OsFNTV20bklA..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -768,34 +726,30 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 rdf:object node:2 ;
-		rdf:predicate belv:directlyIncreases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Catalytic ;
-		belv:hasChild node:5 ;
-		a belv:AbundanceActivity .
-	
-	node:3 belv:hasChild node:4 ;
+	node:1 belv:directlyIncreases node:2 ;
+		belv:hasChild node:3 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:12833 ;
+	node:2 belv:hasActivityType belv:Catalytic ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity .
+	
+	node:3 belv:hasConcept hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:12791 ;
+	node:4 belv:hasConcept hgnc:12791 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "p(HGNC:XRCC5,pmod(R)) => cat(p(HGNC:WRN))" .
 }
 
 sub:Prov {
-	node:6 prov:value "Significantly, (ADP-ribosyl)ation of Ku70/80reduces the ability of this factor to stimulate WRN exonuclease,suggesting that covalent modification of Ku70/80 by PARP-1 mayplay a role in the regulation of the exonucleolytic activity of WRN." ;
+	node:5 prov:value "Significantly, (ADP-ribosyl)ation of Ku70/80reduces the ability of this factor to stimulate WRN exonuclease,suggesting that covalent modification of Ku70/80 by PARP-1 mayplay a role in the regulation of the exonucleolytic activity of WRN." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
 	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom node:6 .
+		prov:wasDerivedFrom node:5 .
 }
 
 sub:Info {
@@ -805,9 +759,9 @@ sub:Info {
 ---
 BEL: p(HGNC:XRCC6,pmod(R)) => cat(p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAj1x9p2NmeQWJFcGq3yjC3zi94a1XPY1DpDmu7Lhf9Ac> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAj1x9p2NmeQWJFcGq3yjC3zi94a1XPY1DpDmu7Lhf9Ac.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAj1x9p2NmeQWJFcGq3yjC3zi94a1XPY1DpDmu7Lhf9Ac..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3dWOBwZIsrjNDaKfPDE9H5Em2Us3g-arVheB5B8EfJY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3dWOBwZIsrjNDaKfPDE9H5Em2Us3g-arVheB5B8EfJY.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA3dWOBwZIsrjNDaKfPDE9H5Em2Us3g-arVheB5B8EfJY..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -829,34 +783,30 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 rdf:object node:2 ;
-		rdf:predicate belv:directlyIncreases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Catalytic ;
-		belv:hasChild node:5 ;
-		a belv:AbundanceActivity .
-	
-	node:3 belv:hasChild node:4 ;
+	node:1 belv:directlyIncreases node:2 ;
+		belv:hasChild node:3 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:4055 ;
+	node:2 belv:hasActivityType belv:Catalytic ;
+		belv:hasChild node:4 ;
+		a belv:AbundanceActivity .
+	
+	node:3 belv:hasConcept hgnc:4055 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:12791 ;
+	node:4 belv:hasConcept hgnc:12791 ;
 		a belv:ProteinAbundance .
 	
 	sub:Ass rdfs:label "p(HGNC:XRCC6,pmod(R)) => cat(p(HGNC:WRN))" .
 }
 
 sub:Prov {
-	node:6 prov:value "Significantly, (ADP-ribosyl)ation of Ku70/80reduces the ability of this factor to stimulate WRN exonuclease,suggesting that covalent modification of Ku70/80 by PARP-1 mayplay a role in the regulation of the exonucleolytic activity of WRN." ;
+	node:5 prov:value "Significantly, (ADP-ribosyl)ation of Ku70/80reduces the ability of this factor to stimulate WRN exonuclease,suggesting that covalent modification of Ku70/80 by PARP-1 mayplay a role in the regulation of the exonucleolytic activity of WRN." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
 	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom node:6 .
+		prov:wasDerivedFrom node:5 .
 }
 
 sub:Info {
