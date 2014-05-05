@@ -31,6 +31,7 @@ import org.openbel.framework.common.model.Statement;
 import org.openbel.framework.common.model.Term;
 import org.openrdf.model.BNode;
 import org.openrdf.model.Literal;
+import org.openrdf.model.Resource;
 import org.openrdf.model.URI;
 import org.openrdf.model.impl.BNodeImpl;
 import org.openrdf.model.impl.LiteralImpl;
@@ -186,11 +187,11 @@ public class Bel2Nanopub {
 		}
 	}
 
-	private BNode processBelStatement(BELStatement belStatement, NanopubCreator npCreator) throws Bel2NanopubException {
+	private Resource processBelStatement(BELStatement belStatement, NanopubCreator npCreator) throws Bel2NanopubException {
 		Statement st = BELParser.parseStatement(belStatement.getStatementSyntax());
-		BNode bn = processBelStatement(st, npCreator);
+		Resource r = processBelStatement(st, npCreator);
 		for (BELAnnotation ann : belStatement.getAnnotations()) {
-			processAnnotation(ann, bn, npCreator);
+			processAnnotation(ann, r, npCreator);
 		}
 		BELCitation cit = belStatement.getCitation();
 		URI citUri = null;
@@ -212,10 +213,10 @@ public class Bel2Nanopub {
 				npCreator.addProvenanceStatement(q, provWasQuotedFrom, citUri);
 			}
 		}
-		return bn;
+		return r;
 	}
 
-	private BNode processBelObject(org.openbel.framework.common.model.Statement.Object obj, NanopubCreator npCreator)
+	private Resource processBelObject(org.openbel.framework.common.model.Statement.Object obj, NanopubCreator npCreator)
 			 throws Bel2NanopubException{
 		if (obj.getTerm() != null) {
 			return processBelTerm(obj.getTerm(), npCreator);
@@ -224,25 +225,25 @@ public class Bel2Nanopub {
 		}
 	}
 
-	private BNode processBelTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
-		BNode bn = newBNode();
+	private Resource processBelTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
 		String funcAbbrev = term.getFunctionEnum().getAbbreviation();
 		if (funcAbbrev == null) funcAbbrev = term.getFunctionEnum().getDisplayValue();
 		URI funcUri = BelRdfVocabulary.getFunction(funcAbbrev);
 		if (funcUri == null) {
 			throw new Bel2NanopubException("Unknown function: " + funcAbbrev);
 		}
+		Resource r;
+		if (isProteinVariantTerm(funcUri, term)) {
+			r = handleProteinVariantTerm(term, npCreator);
+		} else {
+			r = handleNormalTerm(term, npCreator);
+			npCreator.addAssertionStatement(r, RDF.TYPE, funcUri);
+		}
 		URI actUri = BelRdfVocabulary.getActivity(funcAbbrev);
 		if (actUri != null) {
-			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasActivityType, actUri);
+			npCreator.addAssertionStatement(r, BelRdfVocabulary.hasActivityType, actUri);
 		}
-		if (isProteinVariantTerm(funcUri, term)) {
-			handleProteinVariantTerm(bn, term, npCreator);
-		} else {
-			npCreator.addAssertionStatement(bn, RDF.TYPE, funcUri);
-			handleNormalTerm(bn, term, npCreator);
-		}
-		return bn;
+		return r;
 	}
 
 	private boolean isProteinVariantTerm(URI funcUri, Term term) {
@@ -250,7 +251,8 @@ public class Bel2Nanopub {
 		return (term.getTerms().size() > 0);
 	}
 
-	private void handleProteinVariantTerm(BNode bn, Term protTerm, NanopubCreator npCreator) throws Bel2NanopubException {
+	private Resource handleProteinVariantTerm(Term protTerm, NanopubCreator npCreator) throws Bel2NanopubException {
+		BNode bn = newBNode();
 		Parameter protParam = protTerm.getParameters().get(0);
 		BNode n = newBNode();
 		npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasChild, n);
@@ -286,17 +288,20 @@ public class Bel2Nanopub {
 				}
 			}
 		}
+		return bn;
 	}
 
-	private void handleNormalTerm(BNode bn, Term term, NanopubCreator npCreator) throws Bel2NanopubException {
+	private Resource handleNormalTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
+		BNode bn = newBNode();
 		for (Term child : term.getTerms()) {
-			BNode ch = processBelTerm(child, npCreator);
+			Resource ch = processBelTerm(child, npCreator);
 			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasChild, ch);
 		}
 		for (Parameter p : term.getParameters()) {
 			URI cUri = getUriFromParam(p, npCreator);
 			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasConcept, cUri);
 		}
+		return bn;
 	}
 
 	private URI getUriFromParam(Parameter param, NanopubCreator npCreator) throws Bel2NanopubException {
@@ -316,7 +321,7 @@ public class Bel2Nanopub {
 		return uri;
 	}
 
-	private void processAnnotation(BELAnnotation ann, BNode node, NanopubCreator npCreator) throws Bel2NanopubException {
+	private void processAnnotation(BELAnnotation ann, Resource node, NanopubCreator npCreator) throws Bel2NanopubException {
 		String annN = ann.getAnnotationDefinition().getName();
 		String annNs = annotationMap.get(annN);
 		if (annNs == null) {
@@ -335,28 +340,29 @@ public class Bel2Nanopub {
 		}
 	}
 
-	private BNode processBelStatement(Statement statement, NanopubCreator npCreator) throws Bel2NanopubException {
-		BNode bn = newBNode();
+	private Resource processBelStatement(Statement statement, NanopubCreator npCreator) throws Bel2NanopubException {
+		Resource r;
 		if (statement.getRelationshipType() == null) {
-			bn = processBelTerm(statement.getSubject(), npCreator);
+			r = processBelTerm(statement.getSubject(), npCreator);
 		} else {
-			npCreator.addAssertionStatement(bn, RDF.TYPE, RDF.STATEMENT);
-			BNode subj = processBelTerm(statement.getSubject(), npCreator);
-			npCreator.addAssertionStatement(bn, RDF.SUBJECT, subj);
+			r = newBNode();
+			npCreator.addAssertionStatement(r, RDF.TYPE, RDF.STATEMENT);
+			Resource subj = processBelTerm(statement.getSubject(), npCreator);
+			npCreator.addAssertionStatement(r, RDF.SUBJECT, subj);
 			String relN = statement.getRelationshipType().getDisplayValue();
 			URI rel = BelRdfVocabulary.getRel(relN);
 			if (rel == null) {
 				throw new Bel2NanopubException("Unknown relationship: " + relN);
 			}
-			npCreator.addAssertionStatement(bn, RDF.PREDICATE, rel);
+			npCreator.addAssertionStatement(r, RDF.PREDICATE, rel);
 			if (statement.getObject() != null) {
-				BNode obj = processBelObject(statement.getObject(), npCreator);
-				npCreator.addAssertionStatement(bn, RDF.OBJECT, obj);
+				Resource obj = processBelObject(statement.getObject(), npCreator);
+				npCreator.addAssertionStatement(r, RDF.OBJECT, obj);
 			}
 		}
 		Literal label = new LiteralImpl(statement.toBELShortForm());
 		npCreator.addAssertionStatement(npCreator.getAssertionUri(), RDFS.LABEL, label);
-		return bn;
+		return r;
 	}
 
 	private BNode newBNode() {
