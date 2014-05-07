@@ -38,16 +38,14 @@ public class IdSchemes {
 			belLabel = belLabel.substring(1, belLabel.length()-1);
 		}
 		String uriString = null;
-		for (IdScheme sc : getSchemes()) {
-			if (sc.getName().equals(schemeNameOrBelNs) || sc.hasBelNs(schemeNameOrBelNs)) {
-				npCreator.addNamespace(sc.getRdfPrefix(), sc.getRdfNs());
-				String id = sc.getId(belLabel);
-				if (id == null) {
-					return null;
-				} else {
-					uriString = sc.getRdfNs() + id;
-				}
-				break;
+		IdScheme sc = getScheme(schemeNameOrBelNs);
+		if (sc != null) {
+			npCreator.addNamespace(sc.getRdfPrefix(), sc.getRdfNs());
+			String id = sc.getId(belLabel);
+			if (id == null) {
+				return null;
+			} else {
+				uriString = sc.getRdfNs() + id;
 			}
 		}
 		String ns = schemeNameOrBelNs;
@@ -60,6 +58,15 @@ public class IdSchemes {
 			}
 		}
 		return new URIImpl(uriString);
+	}
+
+	public static IdScheme getScheme(String schemeNameOrBelNs) {
+		for (IdScheme sc : getSchemes()) {
+			if (sc.getName().equals(schemeNameOrBelNs) || sc.hasBelNs(schemeNameOrBelNs)) {
+				return sc;
+			}
+		}
+		return null;
 	}
 
 	private IdSchemes() {}  // created by GSON

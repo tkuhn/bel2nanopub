@@ -340,7 +340,12 @@ public class Bel2Nanopub {
 				if (annUri == null) {
 					throw new Bel2NanopubException("Cannot resolve entity '" + annV + "' in namespace '" + annNs + "'");
 				}
-				npCreator.addAssertionStatement(node, BelRdfVocabulary.hasAnnotation, annUri);
+				IdScheme sc = IdSchemes.getScheme(annNs);
+				if (sc != null && sc.getRdfProperty() != null) {
+					npCreator.addAssertionStatement(node, new URIImpl(sc.getRdfProperty()), annUri);
+				} else {
+					npCreator.addAssertionStatement(node, BelRdfVocabulary.hasAnnotation, annUri);
+				}
 			}
 		}
 	}

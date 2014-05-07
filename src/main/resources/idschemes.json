@@ -222,6 +222,8 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-cell-structure.belanno"
       ],
       "rdfPrefix": "mesh",
+      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
+      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
