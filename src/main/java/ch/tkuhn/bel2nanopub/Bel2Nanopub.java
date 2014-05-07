@@ -44,6 +44,8 @@ import org.openrdf.rio.RDFFormat;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.ParameterException;
 
+import static ch.tkuhn.bel2nanopub.ThirdPartyVocabulary.*;
+
 public class Bel2Nanopub {
 
 	@com.beust.jcommander.Parameter(description = "input-bel-files", required = true)
@@ -92,11 +94,6 @@ public class Bel2Nanopub {
 			System.exit(1);
 		}
 	}
-
-	private static final URI provValue = new URIImpl("http://www.w3.org/ns/prov#value");
-	private static final URI provWasQuotedFrom = new URIImpl("http://www.w3.org/ns/prov#wasQuotedFrom");
-	private static final URI provWasDerivedFrom = new URIImpl("http://www.w3.org/ns/prov#wasDerivedFrom");
-	private static final URI provHadPrimarySource = new URIImpl("http://www.w3.org/ns/prov#hadPrimarySource");
 
 	private int bnodeCount = 0;
 	private BELDocument belDoc;
@@ -200,9 +197,9 @@ public class Bel2Nanopub {
 			if (!cit.getType().toLowerCase().equals("pubmed")) {
 				throw new Bel2NanopubException("Unsupported citation type: " + cit.getType() + " " + cit.getComment());
 			}
-			citUri = new URIImpl("http://www.ncbi.nlm.nih.gov/pubmed/" + cit.getReference());
+			citUri = new URIImpl(pubmedNs + cit.getReference());
 			npCreator.addProvenanceStatement(provHadPrimarySource, citUri);
-			npCreator.addNamespace("pubmed", "http://www.ncbi.nlm.nih.gov/pubmed/");
+			npCreator.addNamespace("pubmed", pubmedNs);
 		}
 		BELEvidence ev = belStatement.getEvidence();
 		if (ev != null) {
