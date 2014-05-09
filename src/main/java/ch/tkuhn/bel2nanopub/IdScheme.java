@@ -16,8 +16,6 @@ public class IdScheme {
 	private String directMappingPattern;
 	private String belRdfNs;
 	private String rdfPrefix;
-	private String rdfProperty;
-	private String rdfPropertyLabel;
 	private String rdfNs;
 	private Set<String> belNsSet = new HashSet<String>();
 	private Map<String,String> idMap;
@@ -72,14 +70,6 @@ public class IdScheme {
 	public String getRdfPrefix() {
 		if (rdfPrefix == null) return name;
 		return rdfPrefix;
-	}
-
-	public String getRdfProperty() {
-		return rdfProperty;
-	}
-
-	public String getRdfPropertyLabel() {
-		return rdfPropertyLabel;
 	}
 
 	public boolean hasBelNs(String belNs) {

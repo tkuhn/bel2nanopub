@@ -389,8 +389,9 @@ public class Bel2Nanopub {
 					throw new Bel2NanopubException("Cannot resolve entity '" + annV + "' in namespace '" + annNs + "'");
 				}
 				IdScheme sc = IdSchemes.getScheme(annNs);
-				if (sc != null && sc.getRdfProperty() != null) {
-					npCreator.addAssertionStatement(node, new URIImpl(sc.getRdfProperty()), annUri);
+				if (sc != null) {
+					npCreator.addNamespace("obo", ThirdPartyVocabulary.oboNs);
+					npCreator.addAssertionStatement(node, ThirdPartyVocabulary.bfoOccursIn, annUri);
 				} else {
 					npCreator.addAssertionStatement(node, BelRdfVocabulary.hasAnnotation, annUri);
 				}

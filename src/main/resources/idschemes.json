@@ -214,8 +214,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line.belanno"
       ],
       "rdfPrefix": "atcc",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://www.lgcstandards-atcc.org/Products/All/ .aspx"
     },
     {
@@ -225,8 +223,6 @@
         "http://resource.belframework.org/belframework/20131211/annotation/mesh-anatomy.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -245,8 +241,6 @@
         "http://resource.belframework.org/belframework/20131211/annotation/cell-structure.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -256,8 +250,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-body-region.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -267,8 +259,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-cardiovascular-system.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -278,8 +268,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-cell-structure.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -289,8 +277,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-cell.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -300,8 +286,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-digestive-system.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -320,8 +304,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-embryonic-structure.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -331,8 +313,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-endocrine-system.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -342,8 +322,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-fluid-and-secretion.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -353,8 +331,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-hemic-and-immune-system.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -364,8 +340,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-integumentary-system.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -375,8 +349,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-musculoskeletal-system.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -386,8 +358,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-nervous-system.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -397,8 +367,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-respiratory-system.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -408,8 +376,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-sense-organ.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -419,8 +385,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-stomatognathic-system.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -430,8 +394,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-tissue.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
@@ -441,8 +403,6 @@
         "http://resource.belframework.org/belframework/1.0/annotation/mesh-urogenital-system.belanno"
       ],
       "rdfPrefix": "mesh",
-      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
-      "rdfPropertyLabel": "occurs in",
       "rdfNs": "http://purl.bioontology.org/ontology/MSH/"
     },
     {
