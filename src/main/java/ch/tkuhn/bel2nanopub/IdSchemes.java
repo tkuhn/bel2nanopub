@@ -40,12 +40,20 @@ public class IdSchemes {
 		String uriString = null;
 		IdScheme sc = getScheme(schemeNameOrBelNs);
 		if (sc != null) {
+			String n = sc.getRdfNs();
+			if (n.contains(" ")) {
+				n = n.substring(0, n.indexOf(" "));
+			}
 			npCreator.addNamespace(sc.getRdfPrefix(), sc.getRdfNs());
 			String id = sc.getId(belLabel);
 			if (id == null) {
 				return null;
 			} else {
-				uriString = sc.getRdfNs() + id;
+				if (sc.getRdfNs().contains(" ")) {
+					uriString = sc.getRdfNs().replaceAll(" ", id);
+				} else {
+					uriString = sc.getRdfNs() + id;
+				}
 			}
 		}
 		String ns = schemeNameOrBelNs;

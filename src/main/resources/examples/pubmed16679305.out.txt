@@ -137,9 +137,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> path(MESHD:Neoplasms)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAAkrU4X8prqUbt42aQ98EHB3K60pcw5vaO3eIzFKV6mo> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAAkrU4X8prqUbt42aQ98EHB3K60pcw5vaO3eIzFKV6mo.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAAkrU4X8prqUbt42aQ98EHB3K60pcw5vaO3eIzFKV6mo..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RALPfoxRx9zf6vEa8IyyCVHullyg1yFFud-NKMFCIbOs8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RALPfoxRx9zf6vEa8IyyCVHullyg1yFFud-NKMFCIbOs8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RALPfoxRx9zf6vEa8IyyCVHullyg1yFFud-NKMFCIbOs8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -151,7 +151,7 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -171,7 +171,8 @@ sub:Ass {
 	node:2 belv:hasConcept hgnc:6407 ;
 		a belv:ProteinAbundance .
 	
-	node:3 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:3 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object mesh:D009369 ;
 		rdf:predicate belv:increases ;
 		rdf:subject node:1 ;
@@ -206,9 +207,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> path(MESHD:Neoplasms)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAl5PFzNcR-aoFMGmw6CpFppMkyLB1zs5MklIXXVzWcNo> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAl5PFzNcR-aoFMGmw6CpFppMkyLB1zs5MklIXXVzWcNo.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAl5PFzNcR-aoFMGmw6CpFppMkyLB1zs5MklIXXVzWcNo..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAUrZWVFr82hP8oX-pTfF4khysBbVsrNUZkoGoyTsAnfc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAUrZWVFr82hP8oX-pTfF4khysBbVsrNUZkoGoyTsAnfc.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAUrZWVFr82hP8oX-pTfF4khysBbVsrNUZkoGoyTsAnfc..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -220,7 +221,7 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -240,7 +241,8 @@ sub:Ass {
 	node:2 belv:hasConcept hgnc:6407 ;
 		a belv:ProteinAbundance .
 	
-	node:3 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:3 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object mesh:D009369 ;
 		rdf:predicate belv:increases ;
 		rdf:subject node:1 ;
@@ -275,9 +277,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,C)) causesNoChange path(MESHD:Neoplasms)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAHCkwWYap_JlVKttiU1KdtQ_xd2F5k5kkMPFkgEDMJ60> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAHCkwWYap_JlVKttiU1KdtQ_xd2F5k5kkMPFkgEDMJ60.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAHCkwWYap_JlVKttiU1KdtQ_xd2F5k5kkMPFkgEDMJ60..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RADoOxiT1BN_Y6PMdPWoIdyJIjO3-o9vjnSC4ZlwS0S1Y> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RADoOxiT1BN_Y6PMdPWoIdyJIjO3-o9vjnSC4ZlwS0S1Y.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RADoOxiT1BN_Y6PMdPWoIdyJIjO3-o9vjnSC4ZlwS0S1Y..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -289,7 +291,7 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -309,7 +311,8 @@ sub:Ass {
 	node:2 belv:hasConcept hgnc:6407 ;
 		a belv:ProteinAbundance .
 	
-	node:3 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:3 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object mesh:D009369 ;
 		rdf:predicate belv:causesNoChange ;
 		rdf:subject node:1 ;
@@ -344,9 +347,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) => complex(p(HGNC:KRAS),p(MGI:Raf1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAY2LfmXp77hdkWaOYHOprl7sEp9aR3i6nxQbAEZX0D6g> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAY2LfmXp77hdkWaOYHOprl7sEp9aR3i6nxQbAEZX0D6g.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAY2LfmXp77hdkWaOYHOprl7sEp9aR3i6nxQbAEZX0D6g..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA4bOD3baLu3-hWQZhhYEcOrAaZiO2P8uTht5gKfCOGl8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA4bOD3baLu3-hWQZhhYEcOrAaZiO2P8uTht5gKfCOGl8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA4bOD3baLu3-hWQZhhYEcOrAaZiO2P8uTht5gKfCOGl8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -358,7 +361,7 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix mgi: <http://www.informatics.jax.org/marker/MGI:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -387,7 +390,8 @@ sub:Ass {
 	node:5 belv:hasConcept <http://www.informatics.jax.org/marker/MGI:97847> ;
 		a belv:ProteinAbundance .
 	
-	node:6 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:6 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object node:3 ;
 		rdf:predicate belv:directlyIncreases ;
 		rdf:subject node:1 ;
@@ -422,9 +426,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> kin(p(PFM:"MAPK Erk1/3 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAPDZnChVoLwXZhLYebYjlkN74c4Sxb43gQ4Zs0952InE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAPDZnChVoLwXZhLYebYjlkN74c4Sxb43gQ4Zs0952InE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAPDZnChVoLwXZhLYebYjlkN74c4Sxb43gQ4Zs0952InE..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAdMAtjc9GI7rP4vatFpY0OQ2qMt7WdfhdvuOPkNTbYec> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAdMAtjc9GI7rP4vatFpY0OQ2qMt7WdfhdvuOPkNTbYec.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAdMAtjc9GI7rP4vatFpY0OQ2qMt7WdfhdvuOPkNTbYec..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -436,7 +440,7 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -463,7 +467,8 @@ sub:Ass {
 	node:4 belv:hasConcept pfm:MAPK%20Erk1%2F3%20Family ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:5 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object node:3 ;
 		rdf:predicate belv:increases ;
 		rdf:subject node:1 ;
@@ -498,9 +503,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) causesNoChange complex(p(HGNC:KRAS),p(MGI:Raf1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8fKhFNAZ63LYYRI8bjhEWaUyO8blcNwmBmR0Q7ajI8o> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8fKhFNAZ63LYYRI8bjhEWaUyO8blcNwmBmR0Q7ajI8o.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA8fKhFNAZ63LYYRI8bjhEWaUyO8blcNwmBmR0Q7ajI8o..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RApT_80AgN_Gd_ibvC6wiOFM1lcjZYGTSz4VCRQLZpDno> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RApT_80AgN_Gd_ibvC6wiOFM1lcjZYGTSz4VCRQLZpDno.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RApT_80AgN_Gd_ibvC6wiOFM1lcjZYGTSz4VCRQLZpDno..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -512,7 +517,7 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix mgi: <http://www.informatics.jax.org/marker/MGI:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -541,7 +546,8 @@ sub:Ass {
 	node:5 belv:hasConcept <http://www.informatics.jax.org/marker/MGI:97847> ;
 		a belv:ProteinAbundance .
 	
-	node:6 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:6 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object node:3 ;
 		rdf:predicate belv:causesNoChange ;
 		rdf:subject node:1 ;
@@ -576,9 +582,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) causesNoChange kin(p(PFM:"MAPK Erk1/3 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RASFCXGalP0AOEsjBD3xrCA9AaPTcHaHRXnruOrhlUaag> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RASFCXGalP0AOEsjBD3xrCA9AaPTcHaHRXnruOrhlUaag.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RASFCXGalP0AOEsjBD3xrCA9AaPTcHaHRXnruOrhlUaag..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAiYEsz30lVru77bVhyHaaddlYLmArih1Dpmw6_bBLwSg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAiYEsz30lVru77bVhyHaaddlYLmArih1Dpmw6_bBLwSg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAiYEsz30lVru77bVhyHaaddlYLmArih1Dpmw6_bBLwSg..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -590,7 +596,7 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -617,7 +623,8 @@ sub:Ass {
 	node:4 belv:hasConcept pfm:MAPK%20Erk1%2F3%20Family ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:5 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object node:3 ;
 		rdf:predicate belv:causesNoChange ;
 		rdf:subject node:1 ;
@@ -652,9 +659,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(complex(NCM:"p85/p110 PI3Kinase Complex"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAhHFsNRNnPgcurP9ljyzFTnUabvqBteJY7amndZfIGig> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAhHFsNRNnPgcurP9ljyzFTnUabvqBteJY7amndZfIGig.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAhHFsNRNnPgcurP9ljyzFTnUabvqBteJY7amndZfIGig..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RASD6JZJHtk7uU4CKi-WAOGdiZJFCGBwi7E5nHf79JZwI> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RASD6JZJHtk7uU4CKi-WAOGdiZJFCGBwi7E5nHf79JZwI.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RASD6JZJHtk7uU4CKi-WAOGdiZJFCGBwi7E5nHf79JZwI..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -666,7 +673,7 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix ncm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-complexes/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -693,7 +700,8 @@ sub:Ass {
 	node:4 belv:hasConcept ncm:p85%2Fp110%20PI3Kinase%20Complex ;
 		a belv:ComplexAbundance .
 	
-	node:5 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:5 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object node:3 ;
 		rdf:predicate belv:increases ;
 		rdf:subject node:1 ;
@@ -729,9 +737,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:"Akt Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAlTsLF1U284Uw-P1dm26xVhVcQFoKtCx5qmsOZNf98jg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAlTsLF1U284Uw-P1dm26xVhVcQFoKtCx5qmsOZNf98jg.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAlTsLF1U284Uw-P1dm26xVhVcQFoKtCx5qmsOZNf98jg..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAjuN_WZCuo1YBVyjZtDaGp4aK_jfYs93e3kwjvHS0Qrw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAjuN_WZCuo1YBVyjZtDaGp4aK_jfYs93e3kwjvHS0Qrw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAjuN_WZCuo1YBVyjZtDaGp4aK_jfYs93e3kwjvHS0Qrw..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -743,7 +751,7 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -770,7 +778,8 @@ sub:Ass {
 	node:4 belv:hasConcept pfm:Akt%20Family ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:5 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object node:3 ;
 		rdf:predicate belv:increases ;
 		rdf:subject node:1 ;
@@ -806,9 +815,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:"Mapk JNK Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAEqwd9ViAoVLcNow9YoSOrftpTJwDURirroLN_ik0_Nk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAEqwd9ViAoVLcNow9YoSOrftpTJwDURirroLN_ik0_Nk.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAEqwd9ViAoVLcNow9YoSOrftpTJwDURirroLN_ik0_Nk..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAYjCZTMrfsn595WIbXTGH7o5kLb1vQNOB9iQLlNQRVkU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAYjCZTMrfsn595WIbXTGH7o5kLb1vQNOB9iQLlNQRVkU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAYjCZTMrfsn595WIbXTGH7o5kLb1vQNOB9iQLlNQRVkU..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -820,7 +829,7 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -847,7 +856,8 @@ sub:Ass {
 	node:4 belv:hasConcept pfm:Mapk%20JNK%20Family ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:5 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object node:3 ;
 		rdf:predicate belv:increases ;
 		rdf:subject node:1 ;
@@ -883,9 +893,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:"Mapk p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAcEK5l-j-38Rcw3tbr02Uck78XKMyRu3mf31iR8zPRls> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAcEK5l-j-38Rcw3tbr02Uck78XKMyRu3mf31iR8zPRls.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAcEK5l-j-38Rcw3tbr02Uck78XKMyRu3mf31iR8zPRls..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAfxmqqQhrZgj9WLwVrYFg23Qkh2hB7vyTp6IfRLjLfEs> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAfxmqqQhrZgj9WLwVrYFg23Qkh2hB7vyTp6IfRLjLfEs.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAfxmqqQhrZgj9WLwVrYFg23Qkh2hB7vyTp6IfRLjLfEs..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -897,7 +907,7 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -924,7 +934,8 @@ sub:Ass {
 	node:4 belv:hasConcept pfm:Mapk%20p38%20Family ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:5 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object node:3 ;
 		rdf:predicate belv:increases ;
 		rdf:subject node:1 ;
@@ -960,9 +971,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,D)) -> kin(p(MGI:Ptk2))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAikY6BcbdUCqdHVIimHS_eK2Yjo_PzBY9S1bAtNq8jFg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAikY6BcbdUCqdHVIimHS_eK2Yjo_PzBY9S1bAtNq8jFg.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAikY6BcbdUCqdHVIimHS_eK2Yjo_PzBY9S1bAtNq8jFg..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RADQWNG0hLXyy_UohH5Umfw-pP6pME7vup2lPxFTawulE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RADQWNG0hLXyy_UohH5Umfw-pP6pME7vup2lPxFTawulE.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RADQWNG0hLXyy_UohH5Umfw-pP6pME7vup2lPxFTawulE..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -974,7 +985,7 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix mgi: <http://www.informatics.jax.org/marker/MGI:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1001,7 +1012,8 @@ sub:Ass {
 	node:4 belv:hasConcept <http://www.informatics.jax.org/marker/MGI:95481> ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:5 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object node:3 ;
 		rdf:predicate belv:increases ;
 		rdf:subject node:1 ;
@@ -1037,9 +1049,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:RB1,pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9s3LlK4FMsghqjmlJhF7clgkzW0EuSkKyvyIdfJjI64> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9s3LlK4FMsghqjmlJhF7clgkzW0EuSkKyvyIdfJjI64.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA9s3LlK4FMsghqjmlJhF7clgkzW0EuSkKyvyIdfJjI64..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAKkENSzOE3bUqpBBD20jNpzy5TqleMrL_bYphCAZXGS8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAKkENSzOE3bUqpBBD20jNpzy5TqleMrL_bYphCAZXGS8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAKkENSzOE3bUqpBBD20jNpzy5TqleMrL_bYphCAZXGS8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1051,7 +1063,7 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1078,7 +1090,8 @@ sub:Ass {
 	node:4 belv:hasConcept hgnc:9884 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:5 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object node:3 ;
 		rdf:predicate belv:increases ;
 		rdf:subject node:1 ;
@@ -1113,9 +1126,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:PCNA)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAdMAcfu5ltI0cWmOQLysB08va6Q7jZdbSbLB1lSCkUTE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAdMAcfu5ltI0cWmOQLysB08va6Q7jZdbSbLB1lSCkUTE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAdMAcfu5ltI0cWmOQLysB08va6Q7jZdbSbLB1lSCkUTE..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RACxIPQ4eg9kna7VgiBrRNEg-sMxkcJaZax_UfdJpD1S8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RACxIPQ4eg9kna7VgiBrRNEg-sMxkcJaZax_UfdJpD1S8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RACxIPQ4eg9kna7VgiBrRNEg-sMxkcJaZax_UfdJpD1S8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1126,7 +1139,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1139,7 +1152,8 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:1 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object node:2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject node:3 ;
@@ -1184,9 +1198,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:CCNB1)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RACxfBNYSx6fyruXBRVAk2cze5eiZaRyKungxIb7FpptQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RACxfBNYSx6fyruXBRVAk2cze5eiZaRyKungxIb7FpptQ.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RACxfBNYSx6fyruXBRVAk2cze5eiZaRyKungxIb7FpptQ..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJMZcxeZN6QCiMYsiPdeKxv5Xl-mYXel5x5Ssgg1BsXo> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJMZcxeZN6QCiMYsiPdeKxv5Xl-mYXel5x5Ssgg1BsXo.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAJMZcxeZN6QCiMYsiPdeKxv5Xl-mYXel5x5Ssgg1BsXo..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1197,7 +1211,7 @@ NANOPUB:
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1220,7 +1234,8 @@ sub:Ass {
 	node:3 belv:hasConcept hgnc:1579 ;
 		a belv:ProteinAbundance .
 	
-	node:4 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:4 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object node:3 ;
 		rdf:predicate belv:increases ;
 		rdf:subject node:1 ;
@@ -1255,9 +1270,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:"G1/S transition of mitotic cell cycle")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJrP3-M-7DJY0CvfX7vfABoms5HpOv0scKDdnb7DptgE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJrP3-M-7DJY0CvfX7vfABoms5HpOv0scKDdnb7DptgE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAJrP3-M-7DJY0CvfX7vfABoms5HpOv0scKDdnb7DptgE..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA6b9eR-FMl63_FGdD8EGcvMQ74bau2zirKW7HzZ0our4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA6b9eR-FMl63_FGdD8EGcvMQ74bau2zirKW7HzZ0our4.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA6b9eR-FMl63_FGdD8EGcvMQ74bau2zirKW7HzZ0our4..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1269,7 +1284,7 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix go: <http://amigo.geneontology.org/amigo/term/GO:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1289,7 +1304,8 @@ sub:Ass {
 	node:2 belv:hasConcept hgnc:6407 ;
 		a belv:ProteinAbundance .
 	
-	node:3 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:3 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object <http://amigo.geneontology.org/amigo/term/GO:0000082> ;
 		rdf:predicate belv:increases ;
 		rdf:subject node:1 ;
@@ -1324,9 +1340,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:"G2/M transition of mitotic cell cycle")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1g-hTC_qF_AseRDVQmqcj64Wu-V3Yvubq9ZWVDf8TQ0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1g-hTC_qF_AseRDVQmqcj64Wu-V3Yvubq9ZWVDf8TQ0.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA1g-hTC_qF_AseRDVQmqcj64Wu-V3Yvubq9ZWVDf8TQ0..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RARwY8EKN01wtrom-lvHe8mB_RTx1r6ZMs9IVoSNGmRoI> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RARwY8EKN01wtrom-lvHe8mB_RTx1r6ZMs9IVoSNGmRoI.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RARwY8EKN01wtrom-lvHe8mB_RTx1r6ZMs9IVoSNGmRoI..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1338,7 +1354,7 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix go: <http://amigo.geneontology.org/amigo/term/GO:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1358,7 +1374,8 @@ sub:Ass {
 	node:2 belv:hasConcept hgnc:6407 ;
 		a belv:ProteinAbundance .
 	
-	node:3 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:3 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object <http://amigo.geneontology.org/amigo/term/GO:0000086> ;
 		rdf:predicate belv:increases ;
 		rdf:subject node:1 ;
@@ -1393,9 +1410,9 @@ sub:Info {
 ---
 BEL: p(HGNC:KRAS,sub(G,12,V)) causesNoChange bp(GO:"regulation of apoptotic process")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAr1Uw_wu87aZsZIRL37JX52X7DasdMcIlBh_DBWLQBLs> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAr1Uw_wu87aZsZIRL37JX52X7DasdMcIlBh_DBWLQBLs.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAr1Uw_wu87aZsZIRL37JX52X7DasdMcIlBh_DBWLQBLs..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8Z-P9gxfUSD93sWSTBdytuy9gc1tqfUkohwd6PM8Da8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8Z-P9gxfUSD93sWSTBdytuy9gc1tqfUkohwd6PM8Da8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA8Z-P9gxfUSD93sWSTBdytuy9gc1tqfUkohwd6PM8Da8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1407,7 +1424,7 @@ NANOPUB:
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix go: <http://amigo.geneontology.org/amigo/term/GO:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix cellline: <http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line/> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1427,7 +1444,8 @@ sub:Ass {
 	node:2 belv:hasConcept hgnc:6407 ;
 		a belv:ProteinAbundance .
 	
-	node:3 belv:hasAnnotation cellline:3T3-Swiss%20albino , species:10090 ;
+	node:3 <http://purl.obolibrary.org/obo/BFO_0000066> <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> ;
+		belv:hasAnnotation species:10090 ;
 		rdf:object <http://amigo.geneontology.org/amigo/term/GO:0042981> ;
 		rdf:predicate belv:causesNoChange ;
 		rdf:subject node:1 ;

@@ -208,6 +208,17 @@
       "rdfNs": "https://www.affymetrix.com/LinkServlet?probeset="
     },
     {
+      "name": "atcc",
+      "mappingType": "belanno",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line.belanno"
+      ],
+      "rdfPrefix": "atcc",
+      "rdfProperty": "http://purl.obolibrary.org/obo/BFO_0000066",
+      "rdfPropertyLabel": "occurs in",
+      "rdfNs": "http://www.lgcstandards-atcc.org/Products/All/ .aspx"
+    },
+    {
       "name": "mesh-anatomy",
       "mappingType": "belanno",
       "belNsSet": [
