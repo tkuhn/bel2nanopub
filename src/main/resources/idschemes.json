@@ -191,6 +191,23 @@
       "rdfNs": "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id="
     },
     {
+      "name": "affy",
+      "mappingType": "direct",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/namespace/affy-hg-u95av2.belns",
+        "http://resource.belframework.org/belframework/1.0/namespace/affy-hg-u133-plus2.belns",
+        "http://resource.belframework.org/belframework/1.0/namespace/affy-hg-u133ab.belns",
+        "http://resource.belframework.org/belframework/1.0/namespace/affy-mg-u74abc.belns",
+        "http://resource.belframework.org/belframework/1.0/namespace/affy-moe430ab.belns",
+        "http://resource.belframework.org/belframework/1.0/namespace/affy-mouse430-2.belns",
+        "http://resource.belframework.org/belframework/1.0/namespace/affy-mouse430a-2.belns",
+        "http://resource.belframework.org/belframework/1.0/namespace/affy-rae230ab-2.belns",
+        "http://resource.belframework.org/belframework/1.0/namespace/affy-rat230-2.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/affy-probeset-ids.belns"
+      ],
+      "rdfNs": "https://www.affymetrix.com/LinkServlet?probeset="
+    },
+    {
       "name": "mesh-anatomy",
       "mappingType": "belanno",
       "belNsSet": [
