@@ -162,6 +162,26 @@
       "rdfNs": "http://amigo.geneontology.org/amigo/term/GO:"
     },
     {
+      "name": "do",
+      "mappingType": "belns",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/20131211/namespace/disease-ontology.belns"
+      ],
+      "belRdfNs": "<http://www.openbel.org/bel/namespace/disease-ontology/",
+      "rdfPrefix": "do",
+      "rdfNs": "http://disease-ontology.org/term/DOID:"
+    },
+    {
+      "name": "do-ids",
+      "mappingType": "direct",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/20131211/namespace/disease-ontology-ids.belns"
+      ],
+      "belRdfNs": "<http://www.openbel.org/bel/namespace/disease-ontology/",
+      "rdfPrefix": "do",
+      "rdfNs": "http://disease-ontology.org/term/DOID:"
+    },
+    {
       "name": "species",
       "mappingType": "direct",
       "belNsSet": [
