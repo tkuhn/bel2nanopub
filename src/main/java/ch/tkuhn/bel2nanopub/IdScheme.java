@@ -82,12 +82,16 @@ public class IdScheme {
 
 	public String getId(String belLabel) {
 		if (getMappingType().equals("direct")) {
-			String pattern = "^" + getDirectMappingPattern() + "$";
-			return belLabel.replaceFirst(pattern, "$1");
+			return applyDirectMappingPattern(belLabel);
 		} else {
 			loadMap();
 			return idMap.get(belLabel);
 		}
+	}
+
+	public String applyDirectMappingPattern(String belLabel) {
+		String pattern = "^" + getDirectMappingPattern() + "$";
+		return belLabel.replaceFirst(pattern, "$1");
 	}
 
 }

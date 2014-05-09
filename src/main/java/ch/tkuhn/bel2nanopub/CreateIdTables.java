@@ -144,6 +144,7 @@ public class CreateIdTables {
 						int i = line.indexOf("|");
 						String label = line.substring(0, i);
 						String id = line.substring(i + 1);
+						id = sc.applyDirectMappingPattern(id);
 						if (sc.getMappingType().equals("belanno-mesh")) {
 							id = meshTreeMap.get(id).toString();
 						}

@@ -167,7 +167,7 @@
       "belNsSet": [
         "http://resource.belframework.org/belframework/20131211/namespace/disease-ontology.belns"
       ],
-      "belRdfNs": "<http://www.openbel.org/bel/namespace/disease-ontology/",
+      "belRdfNs": "http://www.openbel.org/bel/namespace/disease-ontology/",
       "rdfPrefix": "do",
       "rdfNs": "http://disease-ontology.org/term/DOID:"
     },
@@ -177,7 +177,7 @@
       "belNsSet": [
         "http://resource.belframework.org/belframework/20131211/namespace/disease-ontology-ids.belns"
       ],
-      "belRdfNs": "<http://www.openbel.org/bel/namespace/disease-ontology/",
+      "belRdfNs": "http://www.openbel.org/bel/namespace/disease-ontology/",
       "rdfPrefix": "do",
       "rdfNs": "http://disease-ontology.org/term/DOID:"
     },
@@ -215,6 +215,16 @@
       ],
       "rdfPrefix": "atcc",
       "rdfNs": "http://www.lgcstandards-atcc.org/Products/All/ .aspx"
+    },
+    {
+      "name": "do-anno",
+      "mappingType": "belanno",
+      "directMappingPattern": "DOID_(.*)",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/20131211/annotation/disease.belanno"
+      ],
+      "rdfPrefix": "do",
+      "rdfNs": "http://disease-ontology.org/term/DOID:"
     },
     {
       "name": "mesh-anatomy",
