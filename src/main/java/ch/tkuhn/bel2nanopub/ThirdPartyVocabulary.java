@@ -17,4 +17,11 @@ public class ThirdPartyVocabulary {
 	//public static final URI bfoHasPart = new URIImpl("http://purl.obolibrary.org/obo/BFO_0000051");
 	//public static final URI bfoOccursIn = new URIImpl("http://purl.obolibrary.org/obo/BFO_0000066");
 
+	public static final URI dcTitle = new URIImpl("http://purl.org/dc/elements/1.1/title");
+	public static final URI dcRights = new URIImpl("http://purl.org/dc/elements/1.1/rights");
+	public static final URI dcDescription = new URIImpl("http://purl.org/dc/elements/1.1/description");
+	public static final URI dcLicense = new URIImpl("http://purl.org/dc/terms/license");
+
+	public static final URI pavVersion = new URIImpl("http://purl.org/pav/version");
+
 }

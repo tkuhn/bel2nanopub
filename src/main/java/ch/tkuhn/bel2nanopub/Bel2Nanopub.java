@@ -1,5 +1,7 @@
 package ch.tkuhn.bel2nanopub;
 
+import static ch.tkuhn.bel2nanopub.ThirdPartyVocabulary.*;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -15,10 +17,12 @@ import javax.xml.bind.DatatypeConverter;
 import org.nanopub.Nanopub;
 import org.nanopub.NanopubCreator;
 import org.nanopub.NanopubUtils;
+import org.nanopub.NanopubVocab;
 import org.openbel.bel.model.BELAnnotation;
 import org.openbel.bel.model.BELAnnotationDefinition;
 import org.openbel.bel.model.BELCitation;
 import org.openbel.bel.model.BELDocument;
+import org.openbel.bel.model.BELDocumentHeader;
 import org.openbel.bel.model.BELEvidence;
 import org.openbel.bel.model.BELNamespaceDefinition;
 import org.openbel.bel.model.BELParseErrorException;
@@ -43,8 +47,6 @@ import org.openrdf.rio.RDFFormat;
 
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.ParameterException;
-
-import static ch.tkuhn.bel2nanopub.ThirdPartyVocabulary.*;
 
 public class Bel2Nanopub {
 
@@ -141,7 +143,8 @@ public class Bel2Nanopub {
 				npCreator.addNamespace("rdfs", RDFS.NAMESPACE);
 				npCreator.addNamespace("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
 				npCreator.addNamespace("xsd", "http://www.w3.org/2001/XMLSchema#");
-				npCreator.addNamespace("dc", "http://purl.org/dc/terms/");
+				npCreator.addNamespace("dct", "http://purl.org/dc/terms/");
+				npCreator.addNamespace("dce", "http://purl.org/dc/elements/1.1/");
 				npCreator.addNamespace("np", "http://www.nanopub.org/nschema#");
 				npCreator.addNamespace("belv", BelRdfVocabulary.BELV_NS);
 				npCreator.addNamespace("prov", "http://www.w3.org/ns/prov#");
@@ -191,6 +194,11 @@ public class Bel2Nanopub {
 		for (BELAnnotation ann : belStatement.getAnnotations()) {
 			processAnnotation(ann, r, npCreator);
 		}
+		processEvidence(belStatement, npCreator);
+		processDocumentHeader(belStatement, npCreator);
+	}
+
+	private void processEvidence(BELStatement belStatement, NanopubCreator npCreator) throws Bel2NanopubException {
 		BELCitation cit = belStatement.getCitation();
 		URI citUri = null;
 		if (cit != null) {
@@ -209,6 +217,37 @@ public class Bel2Nanopub {
 			npCreator.addProvenanceStatement(provWasDerivedFrom, q);
 			if (citUri != null) {
 				npCreator.addProvenanceStatement(q, provWasQuotedFrom, citUri);
+			}
+		}
+	}
+
+	private void processDocumentHeader(BELStatement belStatement, NanopubCreator npCreator) {
+		BELDocumentHeader h = belDoc.getDocumentHeader();
+		BNode n = newBNode();
+		npCreator.addPubinfoStatement(provWasDerivedFrom, n);
+		if (h.getName() != null) {
+			npCreator.addPubinfoStatement(n, dcTitle, vf.createLiteral(h.getName()));
+		}
+		if (h.getDescription() != null) {
+			npCreator.addPubinfoStatement(n, dcDescription, vf.createLiteral(h.getDescription()));
+		}
+		if (h.getCopyright() != null) {
+			npCreator.addPubinfoStatement(n, dcRights, vf.createLiteral(h.getCopyright()));
+		}
+		if (h.getLicense() != null) {
+			npCreator.addPubinfoStatement(n, dcLicense, vf.createLiteral(h.getLicense()));
+		}
+		if (h.getVersion() != null) {
+			npCreator.addPubinfoStatement(n, pavVersion, vf.createLiteral(h.getVersion()));
+		}
+		if (h.getAuthor() != null || h.getContactInfo() != null) {
+			BNode author = newBNode();
+			npCreator.addPubinfoStatement(n, NanopubVocab.PAV_AUTHOREDBY, author);
+			if (h.getAuthor() != null) {
+				npCreator.addPubinfoStatement(author, RDFS.LABEL, vf.createLiteral(h.getAuthor()));
+			}
+			if (h.getContactInfo() != null) {
+				npCreator.addPubinfoStatement(author, RDFS.COMMENT, vf.createLiteral(h.getContactInfo()));
 			}
 		}
 	}
