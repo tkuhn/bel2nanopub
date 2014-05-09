@@ -227,6 +227,17 @@
       "rdfNs": "http://disease-ontology.org/term/DOID:"
     },
     {
+      "name": "obo",
+      "mappingType": "belanno",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/20131211/annotation/anatomy.belanno",
+        "http://resource.belframework.org/belframework/20131211/annotation/cell-line.belanno",
+        "http://resource.belframework.org/belframework/20131211/annotation/cell.belanno"
+      ],
+      "rdfPrefix": "obo",
+      "rdfNs": "http://purl.obolibrary.org/obo/"
+    },
+    {
       "name": "mesh-anatomy",
       "mappingType": "belanno",
       "belNsSet": [
