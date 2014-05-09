@@ -59,6 +59,9 @@ public class Bel2Nanopub {
 	@com.beust.jcommander.Parameter(names = "-t", description = "Timestamp (use only for regression testing)")
 	private String timestamp = null;
 
+	@com.beust.jcommander.Parameter(names = "-u", description = "URI of the BEL document")
+	private String belDocUri = null;
+
 	public static void main(String[] args) {
 		Bel2Nanopub obj = new Bel2Nanopub();
 		JCommander jc = new JCommander(obj);
@@ -99,6 +102,7 @@ public class Bel2Nanopub {
 
 	private int bnodeCount = 0;
 	private BELDocument belDoc;
+	private Resource belDocResource;
 	private List<Nanopub> nanopubs = new ArrayList<Nanopub>();
 	private List<Result> results = new ArrayList<Result>();
 	private List<Bel2NanopubException> transformExceptions = new ArrayList<Bel2NanopubException>();
@@ -133,6 +137,12 @@ public class Bel2Nanopub {
 			return;
 		}
 		belDoc = belParse.getDocument();
+
+		if (belDocUri != null) {
+			belDocResource = new URIImpl(belDocUri);
+		} else {
+			belDocResource = newBNode();
+		}
 
 		readNamespaces();
 		readAnnotations();
@@ -223,26 +233,25 @@ public class Bel2Nanopub {
 
 	private void processDocumentHeader(BELStatement belStatement, NanopubCreator npCreator) {
 		BELDocumentHeader h = belDoc.getDocumentHeader();
-		BNode n = newBNode();
-		npCreator.addPubinfoStatement(provWasDerivedFrom, n);
+		npCreator.addPubinfoStatement(provWasDerivedFrom, belDocResource);
 		if (h.getName() != null) {
-			npCreator.addPubinfoStatement(n, dcTitle, vf.createLiteral(h.getName()));
+			npCreator.addPubinfoStatement(belDocResource, dcTitle, vf.createLiteral(h.getName()));
 		}
 		if (h.getDescription() != null) {
-			npCreator.addPubinfoStatement(n, dcDescription, vf.createLiteral(h.getDescription()));
+			npCreator.addPubinfoStatement(belDocResource, dcDescription, vf.createLiteral(h.getDescription()));
 		}
 		if (h.getCopyright() != null) {
-			npCreator.addPubinfoStatement(n, dcRights, vf.createLiteral(h.getCopyright()));
+			npCreator.addPubinfoStatement(belDocResource, dcRights, vf.createLiteral(h.getCopyright()));
 		}
 		if (h.getLicense() != null) {
-			npCreator.addPubinfoStatement(n, dcLicense, vf.createLiteral(h.getLicense()));
+			npCreator.addPubinfoStatement(belDocResource, dcLicense, vf.createLiteral(h.getLicense()));
 		}
 		if (h.getVersion() != null) {
-			npCreator.addPubinfoStatement(n, pavVersion, vf.createLiteral(h.getVersion()));
+			npCreator.addPubinfoStatement(belDocResource, pavVersion, vf.createLiteral(h.getVersion()));
 		}
 		if (h.getAuthor() != null || h.getContactInfo() != null) {
 			BNode author = newBNode();
-			npCreator.addPubinfoStatement(n, NanopubVocab.PAV_AUTHOREDBY, author);
+			npCreator.addPubinfoStatement(belDocResource, NanopubVocab.PAV_AUTHOREDBY, author);
 			if (h.getAuthor() != null) {
 				npCreator.addPubinfoStatement(author, RDFS.LABEL, vf.createLiteral(h.getAuthor()));
 			}

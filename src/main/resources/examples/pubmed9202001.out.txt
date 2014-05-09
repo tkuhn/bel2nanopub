@@ -1,9 +1,9 @@
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAx56TwwlTVfFVwRfpPfE8cFUDy6Jeki3dlXWxSzkYA1o> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAx56TwwlTVfFVwRfpPfE8cFUDy6Jeki3dlXWxSzkYA1o.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAx56TwwlTVfFVwRfpPfE8cFUDy6Jeki3dlXWxSzkYA1o..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAsyS2iY0mecDJ814Og-BgOa8BPXLG1HtxVL5qyBamJ4w> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAsyS2iY0mecDJ814Og-BgOa8BPXLG1HtxVL5qyBamJ4w.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAsyS2iY0mecDJ814Og-BgOa8BPXLG1HtxVL5qyBamJ4w..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -56,26 +56,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:6 .
-	
-	node:6 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:7 ;
+		pav:authoredBy node:6 ;
 		pav:version "1.2" .
 	
-	node:7 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAT4xliZsg2cJw5DcYizOxFmPPO40LkWN98DVkD1MUVag> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAT4xliZsg2cJw5DcYizOxFmPPO40LkWN98DVkD1MUVag.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAT4xliZsg2cJw5DcYizOxFmPPO40LkWN98DVkD1MUVag..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAgyJTpFO60DTC_eWEGqwdCgVRpQXMKS3l8S85lYXRR-g> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAgyJTpFO60DTC_eWEGqwdCgVRpQXMKS3l8S85lYXRR-g.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAgyJTpFO60DTC_eWEGqwdCgVRpQXMKS3l8S85lYXRR-g..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -100,21 +100,21 @@ sub:Head {
 }
 
 sub:Ass {
-	node:1 belv:hasAnnotation cellline:U-937 , species:9606 ;
-		rdf:object node:2 ;
-		rdf:predicate belv:increases ;
-		rdf:subject node:3 ;
-		a rdf:Statement .
-	
-	node:2 belv:hasActivityType belv:Kinase ;
-		belv:hasChild node:4 ;
-		a belv:AbundanceActivity .
-	
-	node:3 belv:hasConcept chebi:746 ;
+	node:1 belv:hasConcept chebi:746 ;
 		a belv:Abundance .
 	
-	node:4 belv:hasConcept hgnc:6881 ;
+	node:2 belv:hasActivityType belv:Kinase ;
+		belv:hasChild node:3 ;
+		a belv:AbundanceActivity .
+	
+	node:3 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
+	
+	node:4 belv:hasAnnotation cellline:U-937 , species:9606 ;
+		rdf:object node:2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject node:1 ;
+		a rdf:Statement .
 	
 	sub:Ass rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> kin(p(HGNC:MAPK8))" .
 }
@@ -128,26 +128,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:6 .
-	
-	node:6 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:7 ;
+		pav:authoredBy node:6 ;
 		pav:version "1.2" .
 	
-	node:7 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA-4raRbvbCYlUeY7bTCY2JJcHuZk09X9g0p9CmLLYM2w> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA-4raRbvbCYlUeY7bTCY2JJcHuZk09X9g0p9CmLLYM2w.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA-4raRbvbCYlUeY7bTCY2JJcHuZk09X9g0p9CmLLYM2w..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RANwy4us3GDq-v7wZLlZ7rG4WAvej8Er8j6plRhs3YEOg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RANwy4us3GDq-v7wZLlZ7rG4WAvej8Er8j6plRhs3YEOg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RANwy4us3GDq-v7wZLlZ7rG4WAvej8Er8j6plRhs3YEOg..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -200,26 +200,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:6 .
-	
-	node:6 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:7 ;
+		pav:authoredBy node:6 ;
 		pav:version "1.2" .
 	
-	node:7 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: p(HGNC:MAPK1,pmod(P,T)) => kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RACoBFLJEl3Wc7dL2uK0VOpr6DX0ukDIMIU3LWng8Icbc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RACoBFLJEl3Wc7dL2uK0VOpr6DX0ukDIMIU3LWng8Icbc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RACoBFLJEl3Wc7dL2uK0VOpr6DX0ukDIMIU3LWng8Icbc..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RALnPMQJBrgJRAhb0z6tynO2AnXg5VryrIuLwzBZ8eugY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RALnPMQJBrgJRAhb0z6tynO2AnXg5VryrIuLwzBZ8eugY.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RALnPMQJBrgJRAhb0z6tynO2AnXg5VryrIuLwzBZ8eugY..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -276,26 +276,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:7 .
-	
-	node:7 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:8 ;
+		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	node:8 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: p(HGNC:MAPK1,pmod(P,Y)) => kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAXmhERj7etxjr0kPD4fBg1OpI_IYU15ON5HS4vSc46Lg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAXmhERj7etxjr0kPD4fBg1OpI_IYU15ON5HS4vSc46Lg.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAXmhERj7etxjr0kPD4fBg1OpI_IYU15ON5HS4vSc46Lg..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAeCroZa6HrRWcPIAdbeMSHLaePuUqs1nwJcWgihI4Y0o> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAeCroZa6HrRWcPIAdbeMSHLaePuUqs1nwJcWgihI4Y0o.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAeCroZa6HrRWcPIAdbeMSHLaePuUqs1nwJcWgihI4Y0o..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -352,26 +352,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:7 .
-	
-	node:7 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:8 ;
+		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	node:8 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: p(HGNC:MAPK8,pmod(P,T)) => kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9cPK4yRvVl4Mt62o_qdPHUbD8k7vB9a6pK8csm14s8k> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9cPK4yRvVl4Mt62o_qdPHUbD8k7vB9a6pK8csm14s8k.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA9cPK4yRvVl4Mt62o_qdPHUbD8k7vB9a6pK8csm14s8k..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAxIptr0PG9bvn2AdmwLT4es3hlXNOXESlXWLNR83ZU3E> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAxIptr0PG9bvn2AdmwLT4es3hlXNOXESlXWLNR83ZU3E.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAxIptr0PG9bvn2AdmwLT4es3hlXNOXESlXWLNR83ZU3E..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -428,26 +428,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:7 .
-	
-	node:7 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:8 ;
+		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	node:8 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: p(HGNC:MAPK8,pmod(P,Y)) => kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA4UzWaURCGST--Yabnd2vWQnQSU47dnWqCYj_ylP5q_0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA4UzWaURCGST--Yabnd2vWQnQSU47dnWqCYj_ylP5q_0.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA4UzWaURCGST--Yabnd2vWQnQSU47dnWqCYj_ylP5q_0..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAONznBnX_5b2TxUAQQR3Re1dfGZ8iY9cRNGqrHeJmQVU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAONznBnX_5b2TxUAQQR3Re1dfGZ8iY9cRNGqrHeJmQVU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAONznBnX_5b2TxUAQQR3Re1dfGZ8iY9cRNGqrHeJmQVU..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -504,26 +504,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:7 .
-	
-	node:7 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:8 ;
+		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	node:8 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: p(HGNC:MAPK14,pmod(P,T)) => kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAxOC6UFSdMejWBW3ZtjWhiRna0F4hS0yVcyz0kX2vdBA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAxOC6UFSdMejWBW3ZtjWhiRna0F4hS0yVcyz0kX2vdBA.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAxOC6UFSdMejWBW3ZtjWhiRna0F4hS0yVcyz0kX2vdBA..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA0bvvDL0ZoGWq3nC1iucpFZLK2o_uKDxrwRjt4LdLLSw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA0bvvDL0ZoGWq3nC1iucpFZLK2o_uKDxrwRjt4LdLLSw.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA0bvvDL0ZoGWq3nC1iucpFZLK2o_uKDxrwRjt4LdLLSw..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -581,26 +581,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:7 .
-	
-	node:7 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:8 ;
+		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	node:8 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: p(HGNC:MAPK14,pmod(P,Y)) => kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAtuzpBk820fd0A30ER2AI0wr9whtwcxag9Qp-3ivqDgM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAtuzpBk820fd0A30ER2AI0wr9whtwcxag9Qp-3ivqDgM.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAtuzpBk820fd0A30ER2AI0wr9whtwcxag9Qp-3ivqDgM..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA87DwpyOhOE4KGJWDAXTymA7wlo-2bakJHe3tvmROpQY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA87DwpyOhOE4KGJWDAXTymA7wlo-2bakJHe3tvmROpQY.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA87DwpyOhOE4KGJWDAXTymA7wlo-2bakJHe3tvmROpQY..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -658,26 +658,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:7 .
-	
-	node:7 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:8 ;
+		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	node:8 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK1,pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAz4dvJyjXklv-yF_VKw4sKre1uNhEBdt6yMBD7ZPM0L4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAz4dvJyjXklv-yF_VKw4sKre1uNhEBdt6yMBD7ZPM0L4.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAz4dvJyjXklv-yF_VKw4sKre1uNhEBdt6yMBD7ZPM0L4..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAPinaZ58nduPBqqKJRCF8lCkIlJv-v-xKEiIk1J1b_F8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAPinaZ58nduPBqqKJRCF8lCkIlJv-v-xKEiIk1J1b_F8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAPinaZ58nduPBqqKJRCF8lCkIlJv-v-xKEiIk1J1b_F8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -734,26 +734,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:7 .
-	
-	node:7 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:8 ;
+		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	node:8 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK8,pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAhrB-FJ9tj14mFVNsyBgRHsnCU3DwqY8wsEjt_vcHdOQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAhrB-FJ9tj14mFVNsyBgRHsnCU3DwqY8wsEjt_vcHdOQ.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAhrB-FJ9tj14mFVNsyBgRHsnCU3DwqY8wsEjt_vcHdOQ..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RALgaHD-FhaikuKnCDCqu4255tsubQKLBNKv9HyIF7DpE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RALgaHD-FhaikuKnCDCqu4255tsubQKLBNKv9HyIF7DpE.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RALgaHD-FhaikuKnCDCqu4255tsubQKLBNKv9HyIF7DpE..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -810,26 +810,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:7 .
-	
-	node:7 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:8 ;
+		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	node:8 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(PFH:"MAPK p38 Family",pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAS1N-TZ8h2LeIU4K_x0_GeF9WSju0fUSYwqcsP8HSOBQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAS1N-TZ8h2LeIU4K_x0_GeF9WSju0fUSYwqcsP8HSOBQ.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAS1N-TZ8h2LeIU4K_x0_GeF9WSju0fUSYwqcsP8HSOBQ..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAbWrd9uWnm5Y7lBRa1njrbYUr_d2r0-dRnrXNKMByJk0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAbWrd9uWnm5Y7lBRa1njrbYUr_d2r0-dRnrXNKMByJk0.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAbWrd9uWnm5Y7lBRa1njrbYUr_d2r0-dRnrXNKMByJk0..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -887,26 +887,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:7 .
-	
-	node:7 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:8 ;
+		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	node:8 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RATDMLc1DmNggzFnbO5H72YvqfyLXmZs_sMZOqa3gTliE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RATDMLc1DmNggzFnbO5H72YvqfyLXmZs_sMZOqa3gTliE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RATDMLc1DmNggzFnbO5H72YvqfyLXmZs_sMZOqa3gTliE..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAMbna5UM4DdgABVd1ZJz0KuN3QPRQTytJ6i8vEocLJJ8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAMbna5UM4DdgABVd1ZJz0KuN3QPRQTytJ6i8vEocLJJ8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAMbna5UM4DdgABVd1ZJz0KuN3QPRQTytJ6i8vEocLJJ8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -962,26 +962,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:8 .
-	
-	node:7 rdfs:comment "support@belframework.org" ;
-		rdfs:label "Selventa" .
-	
-	node:8 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
 		pav:authoredBy node:7 ;
 		pav:version "1.2" .
+	
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:7 rdfs:comment "support@belframework.org" ;
+		rdfs:label "Selventa" .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAvRoF7KhITHmzGMQt-lGkBhoFaSgyWW2KutvK8sHZLWs> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAvRoF7KhITHmzGMQt-lGkBhoFaSgyWW2KutvK8sHZLWs.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAvRoF7KhITHmzGMQt-lGkBhoFaSgyWW2KutvK8sHZLWs..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA-WSxsHah5cNp29_jDYWX0_CzxqtrqpTNw3WbNBpsPfg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA-WSxsHah5cNp29_jDYWX0_CzxqtrqpTNw3WbNBpsPfg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA-WSxsHah5cNp29_jDYWX0_CzxqtrqpTNw3WbNBpsPfg..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1037,26 +1037,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:7 .
-	
-	node:7 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:8 ;
+		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	node:8 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJkQlAFLan-mNT77TVS-FkZjsvt2sqUH4Xcg-kbrizpQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJkQlAFLan-mNT77TVS-FkZjsvt2sqUH4Xcg-kbrizpQ.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAJkQlAFLan-mNT77TVS-FkZjsvt2sqUH4Xcg-kbrizpQ..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAvSctLvyvKgx5zLE-IbvTVIdinadjI0W64u64H-wtg3A> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAvSctLvyvKgx5zLE-IbvTVIdinadjI0W64u64H-wtg3A.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAvSctLvyvKgx5zLE-IbvTVIdinadjI0W64u64H-wtg3A..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1113,26 +1113,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:7 .
-	
-	node:7 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:8 ;
+		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	node:8 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAaHXBf-PuDif-wNdd30vIdR_vGsvk_0W-XdgS0BY7XNQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAaHXBf-PuDif-wNdd30vIdR_vGsvk_0W-XdgS0BY7XNQ.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAaHXBf-PuDif-wNdd30vIdR_vGsvk_0W-XdgS0BY7XNQ..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAa3ldrNvNRIRQKxFvp6AMvlwJl29drjKNamLrqmEqy38> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAa3ldrNvNRIRQKxFvp6AMvlwJl29drjKNamLrqmEqy38.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAa3ldrNvNRIRQKxFvp6AMvlwJl29drjKNamLrqmEqy38..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1181,26 +1181,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:5 .
-	
-	node:5 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:6 ;
+		pav:authoredBy node:5 ;
 		pav:version "1.2" .
 	
-	node:6 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:5 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:JUN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3gUJpteUnc_Hi89M6VXwSq9wpkAtZNzkiGk_VpjdZlQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3gUJpteUnc_Hi89M6VXwSq9wpkAtZNzkiGk_VpjdZlQ.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA3gUJpteUnc_Hi89M6VXwSq9wpkAtZNzkiGk_VpjdZlQ..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAVNZpHEjB3ibz9Yee3HBZt2FDfh6K8QHQCYxj4qLVyEc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAVNZpHEjB3ibz9Yee3HBZt2FDfh6K8QHQCYxj4qLVyEc.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAVNZpHEjB3ibz9Yee3HBZt2FDfh6K8QHQCYxj4qLVyEc..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1253,26 +1253,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:6 .
-	
-	node:6 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:7 ;
+		pav:authoredBy node:6 ;
 		pav:version "1.2" .
 	
-	node:7 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) -| tscript(p(HGNC:JUN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAgFWO7hycaHURxt_7KeXDAqW3zQcG24g_Qy0urQBXTto> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAgFWO7hycaHURxt_7KeXDAqW3zQcG24g_Qy0urQBXTto.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAgFWO7hycaHURxt_7KeXDAqW3zQcG24g_Qy0urQBXTto..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAvEMVEp-Jaz726CTm8WcyvGqZ2-XfoEKqVXUQ5xMrLn4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAvEMVEp-Jaz726CTm8WcyvGqZ2-XfoEKqVXUQ5xMrLn4.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAvEMVEp-Jaz726CTm8WcyvGqZ2-XfoEKqVXUQ5xMrLn4..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1328,26 +1328,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:7 .
-	
-	node:7 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:8 ;
+		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	node:8 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:ELK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAnJtZ8UQ-AXxJdA_spt6rZkgWxXxIlH5zZo-HI2re22k> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAnJtZ8UQ-AXxJdA_spt6rZkgWxXxIlH5zZo-HI2re22k.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAnJtZ8UQ-AXxJdA_spt6rZkgWxXxIlH5zZo-HI2re22k..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAh1pxPzfZa9A1rHYgTXbPEXx_J8Mlk5vzmkDX9__A07I> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAh1pxPzfZa9A1rHYgTXbPEXx_J8Mlk5vzmkDX9__A07I.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAh1pxPzfZa9A1rHYgTXbPEXx_J8Mlk5vzmkDX9__A07I..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1400,26 +1400,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:6 .
-	
-	node:6 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:7 ;
+		pav:authoredBy node:6 ;
 		pav:version "1.2" .
 	
-	node:7 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:MYC))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAlaeraOlTZveFMTur796YvnBT7k4z7BlMWBlbbhJOlq0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAlaeraOlTZveFMTur796YvnBT7k4z7BlMWBlbbhJOlq0.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAlaeraOlTZveFMTur796YvnBT7k4z7BlMWBlbbhJOlq0..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8C83q7_m5mSWl6Ym-VlbiIe9VsDl-FYY_DEYBVvS4wU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8C83q7_m5mSWl6Ym-VlbiIe9VsDl-FYY_DEYBVvS4wU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA8C83q7_m5mSWl6Ym-VlbiIe9VsDl-FYY_DEYBVvS4wU..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1472,26 +1472,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:6 .
-	
-	node:6 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:7 ;
+		pav:authoredBy node:6 ;
 		pav:version "1.2" .
 	
-	node:7 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: p(HGNC:DUSP1) -|(a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAVHO4muKfPAlY9x2Vjl1Fl75dqBZrpH39YZntUgvyLmc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAVHO4muKfPAlY9x2Vjl1Fl75dqBZrpH39YZntUgvyLmc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAVHO4muKfPAlY9x2Vjl1Fl75dqBZrpH39YZntUgvyLmc..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAjSF63URd8ZR7DdcBqYcOyV5YlJcb46xwEO1Ggz7t-w8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAjSF63URd8ZR7DdcBqYcOyV5YlJcb46xwEO1Ggz7t-w8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAjSF63URd8ZR7DdcBqYcOyV5YlJcb46xwEO1Ggz7t-w8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1548,26 +1548,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:7 .
-	
-	node:7 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:8 ;
+		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	node:8 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: kin(p(HGNC:MAPK1)) ->(a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAl131wUNx4o6pajUNYzHQTF5QmXf-IMa06MPRRoMz4I0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAl131wUNx4o6pajUNYzHQTF5QmXf-IMa06MPRRoMz4I0.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAl131wUNx4o6pajUNYzHQTF5QmXf-IMa06MPRRoMz4I0..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAj9mDkQGkTQq8YDhUO3gHE8nfjJmm7Mxx6tT4kVmDB4Y> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAj9mDkQGkTQq8YDhUO3gHE8nfjJmm7Mxx6tT4kVmDB4Y.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAj9mDkQGkTQq8YDhUO3gHE8nfjJmm7Mxx6tT4kVmDB4Y..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1628,26 +1628,26 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:8 .
-	
-	node:8 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:9 ;
+		pav:authoredBy node:8 ;
 		pav:version "1.2" .
 	
-	node:9 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:8 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
 BEL: kin(p(HGNC:MAPK1)) -> p(HGNC:DUSP1)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAFUZZpAXwClgzg6oHxgIW-4mHBKkuUAs85ciWpdw1CGE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAFUZZpAXwClgzg6oHxgIW-4mHBKkuUAs85ciWpdw1CGE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAFUZZpAXwClgzg6oHxgIW-4mHBKkuUAs85ciWpdw1CGE..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAz9F11HIT95e3M_hkCGO0nRV2l_voJVDd82Gb-xdlifg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAz9F11HIT95e3M_hkCGO0nRV2l_voJVDd82Gb-xdlifg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAz9F11HIT95e3M_hkCGO0nRV2l_voJVDd82Gb-xdlifg..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1699,18 +1699,18 @@ sub:Prov {
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom node:6 .
-	
-	node:6 dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:7 ;
+		pav:authoredBy node:6 ;
 		pav:version "1.2" .
 	
-	node:7 rdfs:comment "support@belframework.org" ;
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	
+	node:6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 ---
