@@ -233,30 +233,30 @@ public class Bel2Nanopub {
 
 	private void processDocumentHeader(BELStatement belStatement, NanopubCreator npCreator) {
 		BELDocumentHeader h = belDoc.getDocumentHeader();
-		npCreator.addPubinfoStatement(provWasDerivedFrom, belDocResource);
+		npCreator.addProvenanceStatement(provWasDerivedFrom, belDocResource);
 		if (h.getName() != null) {
-			npCreator.addPubinfoStatement(belDocResource, dcTitle, vf.createLiteral(h.getName()));
+			npCreator.addProvenanceStatement(belDocResource, dcTitle, vf.createLiteral(h.getName()));
 		}
 		if (h.getDescription() != null) {
-			npCreator.addPubinfoStatement(belDocResource, dcDescription, vf.createLiteral(h.getDescription()));
+			npCreator.addProvenanceStatement(belDocResource, dcDescription, vf.createLiteral(h.getDescription()));
 		}
 		if (h.getCopyright() != null) {
-			npCreator.addPubinfoStatement(belDocResource, dcRights, vf.createLiteral(h.getCopyright()));
+			npCreator.addProvenanceStatement(belDocResource, dcRights, vf.createLiteral(h.getCopyright()));
 		}
 		if (h.getLicense() != null) {
-			npCreator.addPubinfoStatement(belDocResource, dcLicense, vf.createLiteral(h.getLicense()));
+			npCreator.addProvenanceStatement(belDocResource, dcLicense, vf.createLiteral(h.getLicense()));
 		}
 		if (h.getVersion() != null) {
-			npCreator.addPubinfoStatement(belDocResource, pavVersion, vf.createLiteral(h.getVersion()));
+			npCreator.addProvenanceStatement(belDocResource, pavVersion, vf.createLiteral(h.getVersion()));
 		}
 		if (h.getAuthor() != null || h.getContactInfo() != null) {
 			BNode author = newBNode();
-			npCreator.addPubinfoStatement(belDocResource, NanopubVocab.PAV_AUTHOREDBY, author);
+			npCreator.addProvenanceStatement(belDocResource, NanopubVocab.PAV_AUTHOREDBY, author);
 			if (h.getAuthor() != null) {
-				npCreator.addPubinfoStatement(author, RDFS.LABEL, vf.createLiteral(h.getAuthor()));
+				npCreator.addProvenanceStatement(author, RDFS.LABEL, vf.createLiteral(h.getAuthor()));
 			}
 			if (h.getContactInfo() != null) {
-				npCreator.addPubinfoStatement(author, RDFS.COMMENT, vf.createLiteral(h.getContactInfo()));
+				npCreator.addProvenanceStatement(author, RDFS.COMMENT, vf.createLiteral(h.getContactInfo()));
 			}
 		}
 	}

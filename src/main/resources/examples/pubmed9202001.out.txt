@@ -1,9 +1,9 @@
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_cTVU31NN1Unl0CeYWlzvbSiP5sR3T4uuiIGdxhUeJo> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_cTVU31NN1Unl0CeYWlzvbSiP5sR3T4uuiIGdxhUeJo.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA_cTVU31NN1Unl0CeYWlzvbSiP5sR3T4uuiIGdxhUeJo..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAxWwBJ7jITNToK85qmLEMCUnLjg0KLSuuofXJx03baAk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAxWwBJ7jITNToK85qmLEMCUnLjg0KLSuuofXJx03baAk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAxWwBJ7jITNToK85qmLEMCUnLjg0KLSuuofXJx03baAk..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -49,14 +49,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:5 prov:value "Phorbol ester tumor promoters, such as phorbol12-myristate 13-acetate (PMA), are potent activators ofextracellular signal-regulated kinase 2 (ERK2), stress-activatedprotein kinase (SAPK), and p38 mitogen-activated protein kinase(MAPK) in U937 human leukemic cells." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:5 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -64,19 +56,26 @@ sub:Info {
 		pav:authoredBy node:6 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:5 prov:value "Phorbol ester tumor promoters, such as phorbol12-myristate 13-acetate (PMA), are potent activators ofextracellular signal-regulated kinase 2 (ERK2), stress-activatedprotein kinase (SAPK), and p38 mitogen-activated protein kinase(MAPK) in U937 human leukemic cells." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:5 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1Mvbgde6R2l_RoEWCmd5WD84uWZFIWSwYiIhj3mc11U> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1Mvbgde6R2l_RoEWCmd5WD84uWZFIWSwYiIhj3mc11U.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA1Mvbgde6R2l_RoEWCmd5WD84uWZFIWSwYiIhj3mc11U..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAjw8K-4bO3VH3m384zBiEt5oqnPrzmDd_avLLypk3-tk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAjw8K-4bO3VH3m384zBiEt5oqnPrzmDd_avLLypk3-tk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAjw8K-4bO3VH3m384zBiEt5oqnPrzmDd_avLLypk3-tk..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -122,14 +121,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:5 prov:value "Phorbol ester tumor promoters, such as phorbol12-myristate 13-acetate (PMA), are potent activators ofextracellular signal-regulated kinase 2 (ERK2), stress-activatedprotein kinase (SAPK), and p38 mitogen-activated protein kinase(MAPK) in U937 human leukemic cells." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:5 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -137,19 +128,26 @@ sub:Info {
 		pav:authoredBy node:6 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:5 prov:value "Phorbol ester tumor promoters, such as phorbol12-myristate 13-acetate (PMA), are potent activators ofextracellular signal-regulated kinase 2 (ERK2), stress-activatedprotein kinase (SAPK), and p38 mitogen-activated protein kinase(MAPK) in U937 human leukemic cells." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:5 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAlCP0J4yDfFt1GIWa5cWTirikdEj7OOmHDj1soIqORlU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAlCP0J4yDfFt1GIWa5cWTirikdEj7OOmHDj1soIqORlU.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAlCP0J4yDfFt1GIWa5cWTirikdEj7OOmHDj1soIqORlU..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAKclottur9uopC5BlhIN-0PrwhHSyyk5gAXSj8PBHYqY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAKclottur9uopC5BlhIN-0PrwhHSyyk5gAXSj8PBHYqY.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAKclottur9uopC5BlhIN-0PrwhHSyyk5gAXSj8PBHYqY..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -195,14 +193,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:5 prov:value "Phorbol ester tumor promoters, such as phorbol12-myristate 13-acetate (PMA), are potent activators ofextracellular signal-regulated kinase 2 (ERK2), stress-activatedprotein kinase (SAPK), and p38 mitogen-activated protein kinase(MAPK) in U937 human leukemic cells." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:5 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -210,19 +200,26 @@ sub:Info {
 		pav:authoredBy node:6 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:5 prov:value "Phorbol ester tumor promoters, such as phorbol12-myristate 13-acetate (PMA), are potent activators ofextracellular signal-regulated kinase 2 (ERK2), stress-activatedprotein kinase (SAPK), and p38 mitogen-activated protein kinase(MAPK) in U937 human leukemic cells." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:5 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:MAPK1,pmod(P,T)) => kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAA7cn4UBpFjoH6b4wZQn0jLP71Ecg7lGB_Is0h3pFuxA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAA7cn4UBpFjoH6b4wZQn0jLP71Ecg7lGB_Is0h3pFuxA.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAA7cn4UBpFjoH6b4wZQn0jLP71Ecg7lGB_Is0h3pFuxA..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAKOAjl7dUibL10nBtS28wkoXPzPAS3rSPjrn8ux6I4v8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAKOAjl7dUibL10nBtS28wkoXPzPAS3rSPjrn8ux6I4v8.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAKOAjl7dUibL10nBtS28wkoXPzPAS3rSPjrn8ux6I4v8..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -272,14 +269,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:6 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -287,19 +276,26 @@ sub:Info {
 		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:6 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:MAPK1,pmod(P,Y)) => kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA5_VVVaMUB2fs5LJQTkZ3bsWA5yPl_5rA9e6nExXqDM8> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA5_VVVaMUB2fs5LJQTkZ3bsWA5yPl_5rA9e6nExXqDM8.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA5_VVVaMUB2fs5LJQTkZ3bsWA5yPl_5rA9e6nExXqDM8..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAWgVDdBY3GqF5eai7Gl-W39aKBN4pkANkjho96we-Its> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAWgVDdBY3GqF5eai7Gl-W39aKBN4pkANkjho96we-Its.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAWgVDdBY3GqF5eai7Gl-W39aKBN4pkANkjho96we-Its..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -349,14 +345,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:6 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -364,19 +352,26 @@ sub:Info {
 		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:6 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:MAPK8,pmod(P,T)) => kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAtdLsT9jqdNmsu6seHFgpChyoU78oCUv78SNQLQ8_mLw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAtdLsT9jqdNmsu6seHFgpChyoU78oCUv78SNQLQ8_mLw.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAtdLsT9jqdNmsu6seHFgpChyoU78oCUv78SNQLQ8_mLw..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAjP_7Ev7GZFvwlCQ9RywpwDMg6f_DbZu2S4GCFN8K5rc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAjP_7Ev7GZFvwlCQ9RywpwDMg6f_DbZu2S4GCFN8K5rc.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAjP_7Ev7GZFvwlCQ9RywpwDMg6f_DbZu2S4GCFN8K5rc..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -426,14 +421,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:6 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -441,19 +428,26 @@ sub:Info {
 		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:6 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:MAPK8,pmod(P,Y)) => kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAVP-1uN4gJkAoO9q9jgu91G5UIxBuZgj4_yUZH9hIeA0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAVP-1uN4gJkAoO9q9jgu91G5UIxBuZgj4_yUZH9hIeA0.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAVP-1uN4gJkAoO9q9jgu91G5UIxBuZgj4_yUZH9hIeA0..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RABJfzzDDJ9zTnCmaNi2KFWM5xq64_eNL-yyMGBpi0PWg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RABJfzzDDJ9zTnCmaNi2KFWM5xq64_eNL-yyMGBpi0PWg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RABJfzzDDJ9zTnCmaNi2KFWM5xq64_eNL-yyMGBpi0PWg..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -503,14 +497,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:6 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -518,19 +504,26 @@ sub:Info {
 		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:6 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:MAPK14,pmod(P,T)) => kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_KjqAoIdmaUKtixGyy2-i4vppRr0abBq7-uXhjrrsgE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_KjqAoIdmaUKtixGyy2-i4vppRr0abBq7-uXhjrrsgE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA_KjqAoIdmaUKtixGyy2-i4vppRr0abBq7-uXhjrrsgE..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJv4S42mSncgAguu3gZkqu14ThgI2H9H9xtPL5f5j4co> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJv4S42mSncgAguu3gZkqu14ThgI2H9H9xtPL5f5j4co.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAJv4S42mSncgAguu3gZkqu14ThgI2H9H9xtPL5f5j4co..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -581,14 +574,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:6 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -596,19 +581,26 @@ sub:Info {
 		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:6 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:MAPK14,pmod(P,Y)) => kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RABS9YQRe3logj0tJV-GbHts_S6Ck7QYNkg_vxXf1OjbI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RABS9YQRe3logj0tJV-GbHts_S6Ck7QYNkg_vxXf1OjbI.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RABS9YQRe3logj0tJV-GbHts_S6Ck7QYNkg_vxXf1OjbI..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAAbVa8LhPJ5DDj315Qjn0-akNypY5VwiWQMEfnrUlXdg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAAbVa8LhPJ5DDj315Qjn0-akNypY5VwiWQMEfnrUlXdg.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAAbVa8LhPJ5DDj315Qjn0-akNypY5VwiWQMEfnrUlXdg..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -659,14 +651,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:6 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -674,19 +658,26 @@ sub:Info {
 		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:6 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK1,pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RALPfkkGiH_32k-H1SwnPS7IIINpDxJmAFbAW8mA3naSI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RALPfkkGiH_32k-H1SwnPS7IIINpDxJmAFbAW8mA3naSI.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RALPfkkGiH_32k-H1SwnPS7IIINpDxJmAFbAW8mA3naSI..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RACZGVQTVbnpUm6VNYwjtwEutqsWcMd7KhPq1h6ohHV8E> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RACZGVQTVbnpUm6VNYwjtwEutqsWcMd7KhPq1h6ohHV8E.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RACZGVQTVbnpUm6VNYwjtwEutqsWcMd7KhPq1h6ohHV8E..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -736,14 +727,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:6 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:6 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -751,19 +734,26 @@ sub:Info {
 		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:6 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:6 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK8,pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAD8rJTefi4jh5OUoEUr3ngSsO8Qz2KaZ2kUowDiPHZLg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAD8rJTefi4jh5OUoEUr3ngSsO8Qz2KaZ2kUowDiPHZLg.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAD8rJTefi4jh5OUoEUr3ngSsO8Qz2KaZ2kUowDiPHZLg..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RARRC4GXDfgE7jZ2FGUaFn_n2y8cn__-OSH3yV_DSU6nk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RARRC4GXDfgE7jZ2FGUaFn_n2y8cn__-OSH3yV_DSU6nk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RARRC4GXDfgE7jZ2FGUaFn_n2y8cn__-OSH3yV_DSU6nk..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -813,14 +803,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:6 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:6 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -828,19 +810,26 @@ sub:Info {
 		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:6 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:6 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| p(PFH:"MAPK p38 Family",pmod(P))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAHkgFzoSaEcsSHHz_sJTwmyGjm5vJ7yyFoxkuOVmUa68> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAHkgFzoSaEcsSHHz_sJTwmyGjm5vJ7yyFoxkuOVmUa68.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAHkgFzoSaEcsSHHz_sJTwmyGjm5vJ7yyFoxkuOVmUa68..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAQYydFNOAuxHnoLXrKafN_c0Ty5IBgF_kRDcYYVExY4g> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAQYydFNOAuxHnoLXrKafN_c0Ty5IBgF_kRDcYYVExY4g.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAQYydFNOAuxHnoLXrKafN_c0Ty5IBgF_kRDcYYVExY4g..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -891,14 +880,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:6 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:6 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -906,19 +887,26 @@ sub:Info {
 		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:6 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:6 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAkQHGDPXlBspZdjGCZ7V6dxzQL3kGQwvxoAr6s3mog3A> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAkQHGDPXlBspZdjGCZ7V6dxzQL3kGQwvxoAr6s3mog3A.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAkQHGDPXlBspZdjGCZ7V6dxzQL3kGQwvxoAr6s3mog3A..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA650uazer_YcCdxvob25SEUyFNKOGk995OTtKtuCyh_Y> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA650uazer_YcCdxvob25SEUyFNKOGk995OTtKtuCyh_Y.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA650uazer_YcCdxvob25SEUyFNKOGk995OTtKtuCyh_Y..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -967,14 +955,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:6 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:6 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -982,19 +962,26 @@ sub:Info {
 		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:6 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:6 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK8))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA-_CS0gemQUHXfuEFtxdlwWLp_IBFq2Sja7uuoukK2H4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA-_CS0gemQUHXfuEFtxdlwWLp_IBFq2Sja7uuoukK2H4.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA-_CS0gemQUHXfuEFtxdlwWLp_IBFq2Sja7uuoukK2H4..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAyAYONOxdjeuwwJ-iKRi9SdfacEYDsShCtFXXHaFmMpY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAyAYONOxdjeuwwJ-iKRi9SdfacEYDsShCtFXXHaFmMpY.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAyAYONOxdjeuwwJ-iKRi9SdfacEYDsShCtFXXHaFmMpY..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1043,14 +1030,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:6 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:6 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -1058,19 +1037,26 @@ sub:Info {
 		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:6 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:6 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) =| kin(p(PFH:"MAPK p38 Family"))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAnF25BVsElIVkY_2T6pdL2sjk4EgcxFtsxTJI6SouL7o> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAnF25BVsElIVkY_2T6pdL2sjk4EgcxFtsxTJI6SouL7o.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAnF25BVsElIVkY_2T6pdL2sjk4EgcxFtsxTJI6SouL7o..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAqFsCYt28-zZzyw_RpR6Uwis5iJ_gZMkUvO2QquvvtEE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAqFsCYt28-zZzyw_RpR6Uwis5iJ_gZMkUvO2QquvvtEE.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAqFsCYt28-zZzyw_RpR6Uwis5iJ_gZMkUvO2QquvvtEE..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1120,14 +1106,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:6 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:6 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -1135,19 +1113,26 @@ sub:Info {
 		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:6 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:6 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA2Grmo2FSCtoKBUxbazZvmxnWjVgXb7XJ-yojjuOw3qo> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA2Grmo2FSCtoKBUxbazZvmxnWjVgXb7XJ-yojjuOw3qo.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA2Grmo2FSCtoKBUxbazZvmxnWjVgXb7XJ-yojjuOw3qo..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAfAgnfcjQjtauS1v-GLraSafDWqGfTuXiq2Xf3ZY2MgU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAfAgnfcjQjtauS1v-GLraSafDWqGfTuXiq2Xf3ZY2MgU.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAfAgnfcjQjtauS1v-GLraSafDWqGfTuXiq2Xf3ZY2MgU..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1189,14 +1174,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:4 prov:value "Here we demonstrate that PMA treatment induces MKP-1protein expression in U937 cells, which is detectable within 30 minwith maximal levels attained after 4 h." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:4 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -1204,19 +1181,26 @@ sub:Info {
 		pav:authoredBy node:5 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:4 prov:value "Here we demonstrate that PMA treatment induces MKP-1protein expression in U937 cells, which is detectable within 30 minwith maximal levels attained after 4 h." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:5 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:4 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:JUN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA5V7FBV1IhHsqpspHi2DeNjG4dNWQiSAmBa6N0vrRNTM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA5V7FBV1IhHsqpspHi2DeNjG4dNWQiSAmBa6N0vrRNTM.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA5V7FBV1IhHsqpspHi2DeNjG4dNWQiSAmBa6N0vrRNTM..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RALxnw00Ij0qgjqzz0VDnp22MtLh3QlrzsNTO9bFjkYTQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RALxnw00Ij0qgjqzz0VDnp22MtLh3QlrzsNTO9bFjkYTQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RALxnw00Ij0qgjqzz0VDnp22MtLh3QlrzsNTO9bFjkYTQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1262,14 +1246,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:5 prov:value "This differential substrate specificity of MKP-1 can befunctionally extended to nuclear transcriptional events in that PMAinducedc-Jun transcriptional activity was more sensitive to inhibition by MKP-1than either Elk-1 or c-Myc." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:5 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -1277,19 +1253,26 @@ sub:Info {
 		pav:authoredBy node:6 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:5 prov:value "This differential substrate specificity of MKP-1 can befunctionally extended to nuclear transcriptional events in that PMAinducedc-Jun transcriptional activity was more sensitive to inhibition by MKP-1than either Elk-1 or c-Myc." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:5 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: phos(p(HGNC:DUSP1)) -| tscript(p(HGNC:JUN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAUrZEoWZU8KMTmO6JnsAJZGV9uItA7mdkgSoiPHTlHOE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAUrZEoWZU8KMTmO6JnsAJZGV9uItA7mdkgSoiPHTlHOE.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAUrZEoWZU8KMTmO6JnsAJZGV9uItA7mdkgSoiPHTlHOE..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_UyBVUoOKoFMjXDIGTMX8nRJsajzgtest4jlgMX5qs4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_UyBVUoOKoFMjXDIGTMX8nRJsajzgtest4jlgMX5qs4.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA_UyBVUoOKoFMjXDIGTMX8nRJsajzgtest4jlgMX5qs4..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1338,14 +1321,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:6 prov:value "This differential substrate specificity of MKP-1 can befunctionally extended to nuclear transcriptional events in that PMAinducedc-Jun transcriptional activity was more sensitive to inhibition by MKP-1than either Elk-1 or c-Myc." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:6 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -1353,19 +1328,26 @@ sub:Info {
 		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:6 prov:value "This differential substrate specificity of MKP-1 can befunctionally extended to nuclear transcriptional events in that PMAinducedc-Jun transcriptional activity was more sensitive to inhibition by MKP-1than either Elk-1 or c-Myc." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:6 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:ELK1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAKialey9cWWOlbBASO65LFrZjUVYbOXlq2Zt61VUkl7U> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAKialey9cWWOlbBASO65LFrZjUVYbOXlq2Zt61VUkl7U.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAKialey9cWWOlbBASO65LFrZjUVYbOXlq2Zt61VUkl7U..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RANZMwe69uPRQt1r7N5kvQHUONEWmMLjoGnVdrn7Ezhso> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RANZMwe69uPRQt1r7N5kvQHUONEWmMLjoGnVdrn7Ezhso.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RANZMwe69uPRQt1r7N5kvQHUONEWmMLjoGnVdrn7Ezhso..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1411,14 +1393,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:5 prov:value "This differential substrate specificity of MKP-1 can befunctionally extended to nuclear transcriptional events in that PMAinducedc-Jun transcriptional activity was more sensitive to inhibition by MKP-1than either Elk-1 or c-Myc." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:5 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -1426,19 +1400,26 @@ sub:Info {
 		pav:authoredBy node:6 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:5 prov:value "This differential substrate specificity of MKP-1 can befunctionally extended to nuclear transcriptional events in that PMAinducedc-Jun transcriptional activity was more sensitive to inhibition by MKP-1than either Elk-1 or c-Myc." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:5 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: a(CHEBI:"phorbol 13-acetate 12-myristate") -> tscript(p(HGNC:MYC))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_-2cFFQW2MjKxii9UDtkSBbd4QgR6kL9lv8_zJqDi0E> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_-2cFFQW2MjKxii9UDtkSBbd4QgR6kL9lv8_zJqDi0E.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA_-2cFFQW2MjKxii9UDtkSBbd4QgR6kL9lv8_zJqDi0E..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA4xmqdX0qKaaMesTCSXrMPd3TbuQKKfPyv2dVCknx_CQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA4xmqdX0qKaaMesTCSXrMPd3TbuQKKfPyv2dVCknx_CQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA4xmqdX0qKaaMesTCSXrMPd3TbuQKKfPyv2dVCknx_CQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1484,14 +1465,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:5 prov:value "This differential substrate specificity of MKP-1 can befunctionally extended to nuclear transcriptional events in that PMAinducedc-Jun transcriptional activity was more sensitive to inhibition by MKP-1than either Elk-1 or c-Myc." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:5 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -1499,19 +1472,26 @@ sub:Info {
 		pav:authoredBy node:6 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:5 prov:value "This differential substrate specificity of MKP-1 can befunctionally extended to nuclear transcriptional events in that PMAinducedc-Jun transcriptional activity was more sensitive to inhibition by MKP-1than either Elk-1 or c-Myc." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:5 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:DUSP1) -|(a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAv5EWtNof0Qzx_0xhoPKAkfCbXFa7tfaVhK2Ag8GuwU4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAv5EWtNof0Qzx_0xhoPKAkfCbXFa7tfaVhK2Ag8GuwU4.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAv5EWtNof0Qzx_0xhoPKAkfCbXFa7tfaVhK2Ag8GuwU4..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAWWo-JB702j1dUbT7wtaMm_TxyRx5SqeB1CruSR1a1Vk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAWWo-JB702j1dUbT7wtaMm_TxyRx5SqeB1CruSR1a1Vk.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAWWo-JB702j1dUbT7wtaMm_TxyRx5SqeB1CruSR1a1Vk..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1561,14 +1541,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:6 prov:value "Conditional expression of MKP-1 also abolished theinduction of endogenous MKP-1 protein expression in response toPMA treatment." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:6 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -1576,19 +1548,26 @@ sub:Info {
 		pav:authoredBy node:7 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:6 prov:value "Conditional expression of MKP-1 also abolished theinduction of endogenous MKP-1 protein expression in response toPMA treatment." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:6 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: kin(p(HGNC:MAPK1)) ->(a(CHEBI:"phorbol 13-acetate 12-myristate") -> p(HGNC:DUSP1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAhKsSbtJJEiO2yeyt3fwBa37Pn2QnYCgabr8w6evr44s> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAhKsSbtJJEiO2yeyt3fwBa37Pn2QnYCgabr8w6evr44s.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAhKsSbtJJEiO2yeyt3fwBa37Pn2QnYCgabr8w6evr44s..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAU2nr2W9xCazldoUcJu9u1jhwqLFLQjH6CHH0NTF7RsQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAU2nr2W9xCazldoUcJu9u1jhwqLFLQjH6CHH0NTF7RsQ.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAU2nr2W9xCazldoUcJu9u1jhwqLFLQjH6CHH0NTF7RsQ..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1642,14 +1621,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:7 prov:value "This negative feedback regulatory mechanism is likely due toMKP-1-mediated inhibition of ERK2, as studies utilizing the MEK1/2inhibitor PD98059 suggest that ERK2 activation is required for PMA-induced MKP-1expression." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:7 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -1657,19 +1628,26 @@ sub:Info {
 		pav:authoredBy node:8 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:7 prov:value "This negative feedback regulatory mechanism is likely due toMKP-1-mediated inhibition of ERK2, as studies utilizing the MEK1/2inhibitor PD98059 suggest that ERK2 activation is required for PMA-induced MKP-1expression." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:8 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:7 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: kin(p(HGNC:MAPK1)) -> p(HGNC:DUSP1)
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAcwSN2tn6rNQ8k5PN2FQTisEJQ3ZkjgFPTDibfsLqpP4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAcwSN2tn6rNQ8k5PN2FQTisEJQ3ZkjgFPTDibfsLqpP4.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAcwSN2tn6rNQ8k5PN2FQTisEJQ3ZkjgFPTDibfsLqpP4..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAqio7Re3iaUFyvmG13RqLYFTmR6aRjcsDvk24yl6jz2w> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAqio7Re3iaUFyvmG13RqLYFTmR6aRjcsDvk24yl6jz2w.> .
+@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAqio7Re3iaUFyvmG13RqLYFTmR6aRjcsDvk24yl6jz2w..> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1714,14 +1692,6 @@ sub:Ass {
 }
 
 sub:Prov {
-	node:5 prov:value "This negative feedback regulatory mechanism is likely due toMKP-1-mediated inhibition of ERK2, as studies utilizing the MEK1/2inhibitor PD98059 suggest that ERK2 activation is required for PMA-induced MKP-1expression." ;
-		prov:wasQuotedFrom pubmed:9202001 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom node:5 .
-}
-
-sub:Info {
 	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview. " ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
@@ -1729,12 +1699,19 @@ sub:Info {
 		pav:authoredBy node:6 ;
 		pav:version "1.2" .
 	
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> .
+	node:5 prov:value "This negative feedback regulatory mechanism is likely due toMKP-1-mediated inhibition of ERK2, as studies utilizing the MEK1/2inhibitor PD98059 suggest that ERK2 activation is required for PMA-induced MKP-1expression." ;
+		prov:wasQuotedFrom pubmed:9202001 .
 	
 	node:6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
+	
+	sub:Ass prov:hadPrimarySource pubmed:9202001 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , node:5 .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 23 nanopub(s) created
