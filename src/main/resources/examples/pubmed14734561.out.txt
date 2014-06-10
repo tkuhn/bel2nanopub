@@ -1,9 +1,8 @@
 ---
 BEL: path(MESHD:"Werner Syndrome") positiveCorrelation path(MESHD:"Genomic Instability")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAn03wmfgFfLpCmefij96FiphPKpmGnOKY_cTDo-j7-Ug> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAn03wmfgFfLpCmefij96FiphPKpmGnOKY_cTDo-j7-Ug.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAn03wmfgFfLpCmefij96FiphPKpmGnOKY_cTDo-j7-Ug..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAPKjLQbgYPV2XGLUIRAGP27s4Dndf3RERrKTP3qApgRs> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAPKjLQbgYPV2XGLUIRAGP27s4Dndf3RERrKTP3qApgRs#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -18,16 +17,16 @@ NANOPUB:
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
-	this: np:hasAssertion sub:Ass ;
+	this: np:hasAssertion sub:Assert ;
 		np:hasProvenance sub:Prov ;
 		np:hasPublicationInfo sub:Info ;
 		a np:Nanopublication .
 }
 
-sub:Ass {
+sub:Assert {
 	mesh:D014898 belv:positiveCorrelation mesh:D042822 .
 	
-	sub:Ass rdfs:label "path(MESHD:\"Werner Syndrome\") positiveCorrelation path(MESHD:\"Genomic Instability\")" .
+	sub:Assert rdfs:label "path(MESHD:\"Werner Syndrome\") positiveCorrelation path(MESHD:\"Genomic Instability\")" .
 }
 
 sub:Prov {
@@ -35,29 +34,28 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:2 ;
+		pav:authoredBy sub:_2 ;
 		pav:version "1.2" .
 	
-	node:1 prov:value "Werner's syndrome (WS) is an inherited diseasecharacterized by genomic instability and premature aging." ;
+	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_1 .
+	
+	sub:_1 prov:value "Werner's syndrome (WS) is an inherited diseasecharacterized by genomic instability and premature aging." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	node:2 rdfs:comment "support@belframework.org" ;
+	sub:_2 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
-	
-	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , node:1 .
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+	this: dct:created "2014-04-25T03:57:00.028-07:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: path(MESHD:"Werner Syndrome") positiveCorrelation path(MESHD:"Aging, Premature")
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA4bVetGjbA7EvqlHmf1WBJQoEPiitCCINMfoF0YYm-wM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA4bVetGjbA7EvqlHmf1WBJQoEPiitCCINMfoF0YYm-wM.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA4bVetGjbA7EvqlHmf1WBJQoEPiitCCINMfoF0YYm-wM..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAbFZwHA02ZbgMY_HiDElfiR3fZ6T2JkGp2MB81HEVYA0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAbFZwHA02ZbgMY_HiDElfiR3fZ6T2JkGp2MB81HEVYA0#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -72,16 +70,16 @@ NANOPUB:
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
-	this: np:hasAssertion sub:Ass ;
+	this: np:hasAssertion sub:Assert ;
 		np:hasProvenance sub:Prov ;
 		np:hasPublicationInfo sub:Info ;
 		a np:Nanopublication .
 }
 
-sub:Ass {
+sub:Assert {
 	mesh:D014898 belv:positiveCorrelation mesh:D019588 .
 	
-	sub:Ass rdfs:label "path(MESHD:\"Werner Syndrome\") positiveCorrelation path(MESHD:\"Aging, Premature\")" .
+	sub:Assert rdfs:label "path(MESHD:\"Werner Syndrome\") positiveCorrelation path(MESHD:\"Aging, Premature\")" .
 }
 
 sub:Prov {
@@ -89,29 +87,28 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:2 ;
+		pav:authoredBy sub:_2 ;
 		pav:version "1.2" .
 	
-	node:1 prov:value "Werner's syndrome (WS) is an inherited diseasecharacterized by genomic instability and premature aging." ;
+	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_1 .
+	
+	sub:_1 prov:value "Werner's syndrome (WS) is an inherited diseasecharacterized by genomic instability and premature aging." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	node:2 rdfs:comment "support@belframework.org" ;
+	sub:_2 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
-	
-	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , node:1 .
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+	this: dct:created "2014-04-25T03:57:00.028-07:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: complex(p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:WRN)) => cat(p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAve5grHGo6mRwoXpJpgmYTKKJoj0IPUBtHDxjT-5oGRM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAve5grHGo6mRwoXpJpgmYTKKJoj0IPUBtHDxjT-5oGRM.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAve5grHGo6mRwoXpJpgmYTKKJoj0IPUBtHDxjT-5oGRM..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAVqQKG7fadB4FxKPs_7A5BKPLLr7anfMnHfohG56518o> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAVqQKG7fadB4FxKPs_7A5BKPLLr7anfMnHfohG56518o#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -126,34 +123,34 @@ NANOPUB:
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
-	this: np:hasAssertion sub:Ass ;
+	this: np:hasAssertion sub:Assert ;
 		np:hasProvenance sub:Prov ;
 		np:hasPublicationInfo sub:Info ;
 		a np:Nanopublication .
 }
 
-sub:Ass {
-	node:1 belv:directlyIncreases node:2 ;
-		belv:hasChild node:3 , node:4 , node:5 ;
+sub:Assert {
+	sub:Assert rdfs:label "complex(p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:WRN)) => cat(p(HGNC:WRN))" .
+	
+	sub:_1 belv:directlyIncreases sub:_2 ;
+		belv:hasChild sub:_3 , sub:_4 , sub:_5 ;
 		a belv:ComplexAbundance .
 	
-	node:2 belv:hasActivityType belv:Catalytic ;
-		belv:hasChild node:6 ;
+	sub:_2 belv:hasActivityType belv:Catalytic ;
+		belv:hasChild sub:_6 ;
 		a belv:AbundanceActivity .
 	
-	node:3 belv:hasConcept hgnc:12833 ;
+	sub:_3 belv:hasConcept hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:4055 ;
+	sub:_4 belv:hasConcept hgnc:4055 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:12791 ;
+	sub:_5 belv:hasConcept hgnc:12791 ;
 		a belv:ProteinAbundance .
 	
-	node:6 belv:hasConcept hgnc:12791 ;
+	sub:_6 belv:hasConcept hgnc:12791 ;
 		a belv:ProteinAbundance .
-	
-	sub:Ass rdfs:label "complex(p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:WRN)) => cat(p(HGNC:WRN))" .
 }
 
 sub:Prov {
@@ -161,29 +158,28 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:8 ;
+		pav:authoredBy sub:_8 ;
 		pav:version "1.2" .
 	
-	node:7 prov:value "We have previously reported that WRN interactswith Ku70/80 and this interaction strongly stimulates WRNexonuclease activity." ;
+	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_7 .
+	
+	sub:_7 prov:value "We have previously reported that WRN interactswith Ku70/80 and this interaction strongly stimulates WRNexonuclease activity." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	node:8 rdfs:comment "support@belframework.org" ;
+	sub:_8 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
-	
-	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , node:7 .
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+	this: dct:created "2014-04-25T03:57:00.028-07:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: complex(p(HGNC:XRCC5),p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAnxabs6ZCLQj4o0GFRtBq3cksj90Xt9AGWaBH4_KRKKs> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAnxabs6ZCLQj4o0GFRtBq3cksj90Xt9AGWaBH4_KRKKs.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAnxabs6ZCLQj4o0GFRtBq3cksj90Xt9AGWaBH4_KRKKs..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA0-gMv5kkBLwtNKznutzgb7Kahf2gGp7dllg48Xaz_yw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA0-gMv5kkBLwtNKznutzgb7Kahf2gGp7dllg48Xaz_yw#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -200,24 +196,24 @@ NANOPUB:
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
-	this: np:hasAssertion sub:Ass ;
+	this: np:hasAssertion sub:Assert ;
 		np:hasProvenance sub:Prov ;
 		np:hasPublicationInfo sub:Info ;
 		a np:Nanopublication .
 }
 
-sub:Ass {
-	node:1 obo:BFO_0000066 mesh:D002467 ;
-		belv:hasChild node:2 , node:3 ;
+sub:Assert {
+	sub:Assert rdfs:label "complex(p(HGNC:XRCC5),p(HGNC:WRN))" .
+	
+	sub:_1 obo:BFO_0000066 mesh:D002467 ;
+		belv:hasChild sub:_2 , sub:_3 ;
 		a belv:ComplexAbundance .
 	
-	node:2 belv:hasConcept hgnc:12833 ;
+	sub:_2 belv:hasConcept hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	node:3 belv:hasConcept hgnc:12791 ;
+	sub:_3 belv:hasConcept hgnc:12791 ;
 		a belv:ProteinAbundance .
-	
-	sub:Ass rdfs:label "complex(p(HGNC:XRCC5),p(HGNC:WRN))" .
 }
 
 sub:Prov {
@@ -225,29 +221,28 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:5 ;
+		pav:authoredBy sub:_5 ;
 		pav:version "1.2" .
 	
-	node:4 prov:value "To this end, we identified three proteins that are stablyassociated with WRN in nuclear extracts. Two of these proteins, Ku70 andKu80, were identified by immunoblot analysis. The third polypeptide,which was identified by mass spectrometry analysis, is identical topoly(ADP-ribose) polymerase-1(PARP-1), a 113-kDa enzyme that functions as a sensor of DNA damage." ;
+	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_4 .
+	
+	sub:_4 prov:value "To this end, we identified three proteins that are stablyassociated with WRN in nuclear extracts. Two of these proteins, Ku70 andKu80, were identified by immunoblot analysis. The third polypeptide,which was identified by mass spectrometry analysis, is identical topoly(ADP-ribose) polymerase-1(PARP-1), a 113-kDa enzyme that functions as a sensor of DNA damage." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	node:5 rdfs:comment "support@belframework.org" ;
+	sub:_5 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
-	
-	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , node:4 .
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+	this: dct:created "2014-04-25T03:57:00.028-07:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: complex(p(HGNC:XRCC6),p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAUeCpdMpyY5N0SeJIAr6lhgQrhHbb2CjpDZBBDPbLA2g> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAUeCpdMpyY5N0SeJIAr6lhgQrhHbb2CjpDZBBDPbLA2g.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAUeCpdMpyY5N0SeJIAr6lhgQrhHbb2CjpDZBBDPbLA2g..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA5DZh1J4_MvIxcqCpv3uwjS1oqiFfF-FPtLYvMvknUUE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA5DZh1J4_MvIxcqCpv3uwjS1oqiFfF-FPtLYvMvknUUE#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -264,24 +259,24 @@ NANOPUB:
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
-	this: np:hasAssertion sub:Ass ;
+	this: np:hasAssertion sub:Assert ;
 		np:hasProvenance sub:Prov ;
 		np:hasPublicationInfo sub:Info ;
 		a np:Nanopublication .
 }
 
-sub:Ass {
-	node:1 obo:BFO_0000066 mesh:D002467 ;
-		belv:hasChild node:2 , node:3 ;
+sub:Assert {
+	sub:Assert rdfs:label "complex(p(HGNC:XRCC6),p(HGNC:WRN))" .
+	
+	sub:_1 obo:BFO_0000066 mesh:D002467 ;
+		belv:hasChild sub:_2 , sub:_3 ;
 		a belv:ComplexAbundance .
 	
-	node:2 belv:hasConcept hgnc:4055 ;
+	sub:_2 belv:hasConcept hgnc:4055 ;
 		a belv:ProteinAbundance .
 	
-	node:3 belv:hasConcept hgnc:12791 ;
+	sub:_3 belv:hasConcept hgnc:12791 ;
 		a belv:ProteinAbundance .
-	
-	sub:Ass rdfs:label "complex(p(HGNC:XRCC6),p(HGNC:WRN))" .
 }
 
 sub:Prov {
@@ -289,29 +284,28 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:5 ;
+		pav:authoredBy sub:_5 ;
 		pav:version "1.2" .
 	
-	node:4 prov:value "To this end, we identified three proteins that are stablyassociated with WRN in nuclear extracts. Two of these proteins, Ku70 andKu80, were identified by immunoblot analysis. The third polypeptide,which was identified by mass spectrometry analysis, is identical topoly(ADP-ribose) polymerase-1(PARP-1), a 113-kDa enzyme that functions as a sensor of DNA damage." ;
+	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_4 .
+	
+	sub:_4 prov:value "To this end, we identified three proteins that are stablyassociated with WRN in nuclear extracts. Two of these proteins, Ku70 andKu80, were identified by immunoblot analysis. The third polypeptide,which was identified by mass spectrometry analysis, is identical topoly(ADP-ribose) polymerase-1(PARP-1), a 113-kDa enzyme that functions as a sensor of DNA damage." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	node:5 rdfs:comment "support@belframework.org" ;
+	sub:_5 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
-	
-	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , node:4 .
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+	this: dct:created "2014-04-25T03:57:00.028-07:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: complex(p(HGNC:PARP1),p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA00SwRYpljjdAkJn_gA1gWLD_AuXmvHMb7mv0HR5V11Q> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA00SwRYpljjdAkJn_gA1gWLD_AuXmvHMb7mv0HR5V11Q.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA00SwRYpljjdAkJn_gA1gWLD_AuXmvHMb7mv0HR5V11Q..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAGqywyPEH-ESmv8HNGMzT-_5u9FLl4ZpoqGCCE8wP1XY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAGqywyPEH-ESmv8HNGMzT-_5u9FLl4ZpoqGCCE8wP1XY#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -328,24 +322,24 @@ NANOPUB:
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
-	this: np:hasAssertion sub:Ass ;
+	this: np:hasAssertion sub:Assert ;
 		np:hasProvenance sub:Prov ;
 		np:hasPublicationInfo sub:Info ;
 		a np:Nanopublication .
 }
 
-sub:Ass {
-	node:1 obo:BFO_0000066 mesh:D002467 ;
-		belv:hasChild node:2 , node:3 ;
+sub:Assert {
+	sub:Assert rdfs:label "complex(p(HGNC:PARP1),p(HGNC:WRN))" .
+	
+	sub:_1 obo:BFO_0000066 mesh:D002467 ;
+		belv:hasChild sub:_2 , sub:_3 ;
 		a belv:ComplexAbundance .
 	
-	node:2 belv:hasConcept hgnc:270 ;
+	sub:_2 belv:hasConcept hgnc:270 ;
 		a belv:ProteinAbundance .
 	
-	node:3 belv:hasConcept hgnc:12791 ;
+	sub:_3 belv:hasConcept hgnc:12791 ;
 		a belv:ProteinAbundance .
-	
-	sub:Ass rdfs:label "complex(p(HGNC:PARP1),p(HGNC:WRN))" .
 }
 
 sub:Prov {
@@ -353,29 +347,28 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:5 ;
+		pav:authoredBy sub:_5 ;
 		pav:version "1.2" .
 	
-	node:4 prov:value "To this end, we identified three proteins that are stablyassociated with WRN in nuclear extracts. Two of these proteins, Ku70 andKu80, were identified by immunoblot analysis. The third polypeptide,which was identified by mass spectrometry analysis, is identical topoly(ADP-ribose) polymerase-1(PARP-1), a 113-kDa enzyme that functions as a sensor of DNA damage." ;
+	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_4 .
+	
+	sub:_4 prov:value "To this end, we identified three proteins that are stablyassociated with WRN in nuclear extracts. Two of these proteins, Ku70 andKu80, were identified by immunoblot analysis. The third polypeptide,which was identified by mass spectrometry analysis, is identical topoly(ADP-ribose) polymerase-1(PARP-1), a 113-kDa enzyme that functions as a sensor of DNA damage." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	node:5 rdfs:comment "support@belframework.org" ;
+	sub:_5 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
-	
-	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , node:4 .
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+	this: dct:created "2014-04-25T03:57:00.028-07:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: complex(p(HGNC:WRN),p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:PARP1))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAgIFf1TEtGL4SZiY-qfACj-30eZ6DupZYWYecCWjiA0U> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAgIFf1TEtGL4SZiY-qfACj-30eZ6DupZYWYecCWjiA0U.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAgIFf1TEtGL4SZiY-qfACj-30eZ6DupZYWYecCWjiA0U..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAcXBWBZE2GenJTRoD4eKcC-mKD-ICQ0lBVToC-tbiqKY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAcXBWBZE2GenJTRoD4eKcC-mKD-ICQ0lBVToC-tbiqKY#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -390,29 +383,29 @@ NANOPUB:
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
-	this: np:hasAssertion sub:Ass ;
+	this: np:hasAssertion sub:Assert ;
 		np:hasProvenance sub:Prov ;
 		np:hasPublicationInfo sub:Info ;
 		a np:Nanopublication .
 }
 
-sub:Ass {
-	node:1 belv:hasChild node:2 , node:3 , node:4 , node:5 ;
+sub:Assert {
+	sub:Assert rdfs:label "complex(p(HGNC:WRN),p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:PARP1))" .
+	
+	sub:_1 belv:hasChild sub:_2 , sub:_3 , sub:_4 , sub:_5 ;
 		a belv:ComplexAbundance .
 	
-	node:2 belv:hasConcept hgnc:12791 ;
+	sub:_2 belv:hasConcept hgnc:12791 ;
 		a belv:ProteinAbundance .
 	
-	node:3 belv:hasConcept hgnc:12833 ;
+	sub:_3 belv:hasConcept hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:4055 ;
+	sub:_4 belv:hasConcept hgnc:4055 ;
 		a belv:ProteinAbundance .
 	
-	node:5 belv:hasConcept hgnc:270 ;
+	sub:_5 belv:hasConcept hgnc:270 ;
 		a belv:ProteinAbundance .
-	
-	sub:Ass rdfs:label "complex(p(HGNC:WRN),p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:PARP1))" .
 }
 
 sub:Prov {
@@ -420,29 +413,28 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:7 ;
+		pav:authoredBy sub:_7 ;
 		pav:version "1.2" .
 	
-	node:6 prov:value "Protein interaction assays with purified proteins furtherindicated that PARP-1 binds directly to WRN and assembles in a complexwith WRN and Ku70/80." ;
+	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_6 .
+	
+	sub:_6 prov:value "Protein interaction assays with purified proteins furtherindicated that PARP-1 binds directly to WRN and assembles in a complexwith WRN and Ku70/80." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	node:7 rdfs:comment "support@belframework.org" ;
+	sub:_7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
-	
-	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , node:6 .
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+	this: dct:created "2014-04-25T03:57:00.028-07:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R)))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA4rWT4bJiiarhyoSPVHy-WuuXEv4nqw-XV5KvipwknQw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA4rWT4bJiiarhyoSPVHy-WuuXEv4nqw-XV5KvipwknQw.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RA4rWT4bJiiarhyoSPVHy-WuuXEv4nqw-XV5KvipwknQw..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA5vbT2fDmBzIBHdh94mj1DIFQHfa8v3iu5AVSc4Khnwg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA5vbT2fDmBzIBHdh94mj1DIFQHfa8v3iu5AVSc4Khnwg#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -459,43 +451,43 @@ NANOPUB:
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
-	this: np:hasAssertion sub:Ass ;
+	this: np:hasAssertion sub:Assert ;
 		np:hasProvenance sub:Prov ;
 		np:hasPublicationInfo sub:Info ;
 		a np:Nanopublication .
 }
 
-sub:Ass {
-	node:1 belv:hasChild node:2 , node:3 ;
-		belv:increases node:4 ;
+sub:Assert {
+	sub:Assert rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R)))" , "ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R))" .
+	
+	sub:_1 belv:hasChild sub:_2 , sub:_3 ;
+		belv:increases sub:_4 ;
 		a belv:CompositeAbundance .
 	
-	node:2 belv:hasConcept chebi:4291 ;
+	sub:_2 belv:hasConcept chebi:4291 ;
 		a belv:Abundance .
 	
-	node:3 belv:hasConcept chebi:7422 ;
+	sub:_3 belv:hasConcept chebi:7422 ;
 		a belv:Abundance .
 	
-	node:4 rdf:object node:7 ;
+	sub:_4 rdf:object sub:_7 ;
 		rdf:predicate belv:directlyIncreases ;
-		rdf:subject node:5 ;
+		rdf:subject sub:_5 ;
 		a rdf:Statement .
 	
-	node:5 belv:hasActivityType belv:Ribosylase ;
-		belv:hasChild node:6 ;
+	sub:_5 belv:hasActivityType belv:Ribosylase ;
+		belv:hasChild sub:_6 ;
 		a belv:AbundanceActivity .
 	
-	node:6 belv:hasConcept hgnc:270 ;
+	sub:_6 belv:hasConcept hgnc:270 ;
 		a belv:ProteinAbundance .
 	
-	node:7 belv:hasChild node:8 ;
+	sub:_7 belv:hasChild sub:_8 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:8 belv:hasConcept hgnc:270 ;
+	sub:_8 belv:hasConcept hgnc:270 ;
 		a belv:ProteinAbundance .
-	
-	sub:Ass rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R)))" , "ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R))" .
 }
 
 sub:Prov {
@@ -503,29 +495,28 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:10 ;
+		pav:authoredBy sub:_10 ;
 		pav:version "1.2" .
 	
-	node:10 rdfs:comment "support@belframework.org" ;
+	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_9 .
+	
+	sub:_10 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 	
-	node:9 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	sub:_9 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , node:9 .
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+	this: dct:created "2014-04-25T03:57:00.028-07:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R)))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAVcB1qhL6QFo_LppsUuoi0lMPsBKx5jnIuHr6uvC9FMk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAVcB1qhL6QFo_LppsUuoi0lMPsBKx5jnIuHr6uvC9FMk.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAVcB1qhL6QFo_LppsUuoi0lMPsBKx5jnIuHr6uvC9FMk..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAABnjpUFGX9pDRkDN_7jyGUMr0Cs7FR6TrYyAHJHAyjM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAABnjpUFGX9pDRkDN_7jyGUMr0Cs7FR6TrYyAHJHAyjM#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -542,43 +533,43 @@ NANOPUB:
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
-	this: np:hasAssertion sub:Ass ;
+	this: np:hasAssertion sub:Assert ;
 		np:hasProvenance sub:Prov ;
 		np:hasPublicationInfo sub:Info ;
 		a np:Nanopublication .
 }
 
-sub:Ass {
-	node:1 belv:hasChild node:2 , node:3 ;
-		belv:increases node:4 ;
+sub:Assert {
+	sub:Assert rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R)))" , "ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R))" .
+	
+	sub:_1 belv:hasChild sub:_2 , sub:_3 ;
+		belv:increases sub:_4 ;
 		a belv:CompositeAbundance .
 	
-	node:2 belv:hasConcept chebi:4291 ;
+	sub:_2 belv:hasConcept chebi:4291 ;
 		a belv:Abundance .
 	
-	node:3 belv:hasConcept chebi:7422 ;
+	sub:_3 belv:hasConcept chebi:7422 ;
 		a belv:Abundance .
 	
-	node:4 rdf:object node:7 ;
+	sub:_4 rdf:object sub:_7 ;
 		rdf:predicate belv:directlyIncreases ;
-		rdf:subject node:5 ;
+		rdf:subject sub:_5 ;
 		a rdf:Statement .
 	
-	node:5 belv:hasActivityType belv:Ribosylase ;
-		belv:hasChild node:6 ;
+	sub:_5 belv:hasActivityType belv:Ribosylase ;
+		belv:hasChild sub:_6 ;
 		a belv:AbundanceActivity .
 	
-	node:6 belv:hasConcept hgnc:270 ;
+	sub:_6 belv:hasConcept hgnc:270 ;
 		a belv:ProteinAbundance .
 	
-	node:7 belv:hasChild node:8 ;
+	sub:_7 belv:hasChild sub:_8 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:8 belv:hasConcept hgnc:12833 ;
+	sub:_8 belv:hasConcept hgnc:12833 ;
 		a belv:ProteinAbundance .
-	
-	sub:Ass rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R)))" , "ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R))" .
 }
 
 sub:Prov {
@@ -586,29 +577,28 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:10 ;
+		pav:authoredBy sub:_10 ;
 		pav:version "1.2" .
 	
-	node:10 rdfs:comment "support@belframework.org" ;
+	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_9 .
+	
+	sub:_10 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 	
-	node:9 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	sub:_9 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , node:9 .
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+	this: dct:created "2014-04-25T03:57:00.028-07:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: composite(a(CHEBI:"deoxyribonucleic acid"),a(CHEBI:"NAD(+)")) ->(ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R)))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RARKuURUvAF5kYUFZ7ARR_S87kFazTEqBk8N9pzxDhfrc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RARKuURUvAF5kYUFZ7ARR_S87kFazTEqBk8N9pzxDhfrc.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RARKuURUvAF5kYUFZ7ARR_S87kFazTEqBk8N9pzxDhfrc..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA4vv-GZM86pOtBK_6ai2eRGokH5yAYE8N-aazMcp-9ds> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA4vv-GZM86pOtBK_6ai2eRGokH5yAYE8N-aazMcp-9ds#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -625,43 +615,43 @@ NANOPUB:
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
-	this: np:hasAssertion sub:Ass ;
+	this: np:hasAssertion sub:Assert ;
 		np:hasProvenance sub:Prov ;
 		np:hasPublicationInfo sub:Info ;
 		a np:Nanopublication .
 }
 
-sub:Ass {
-	node:1 belv:hasChild node:2 , node:3 ;
-		belv:increases node:4 ;
+sub:Assert {
+	sub:Assert rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R)))" , "ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R))" .
+	
+	sub:_1 belv:hasChild sub:_2 , sub:_3 ;
+		belv:increases sub:_4 ;
 		a belv:CompositeAbundance .
 	
-	node:2 belv:hasConcept chebi:4291 ;
+	sub:_2 belv:hasConcept chebi:4291 ;
 		a belv:Abundance .
 	
-	node:3 belv:hasConcept chebi:7422 ;
+	sub:_3 belv:hasConcept chebi:7422 ;
 		a belv:Abundance .
 	
-	node:4 rdf:object node:7 ;
+	sub:_4 rdf:object sub:_7 ;
 		rdf:predicate belv:directlyIncreases ;
-		rdf:subject node:5 ;
+		rdf:subject sub:_5 ;
 		a rdf:Statement .
 	
-	node:5 belv:hasActivityType belv:Ribosylase ;
-		belv:hasChild node:6 ;
+	sub:_5 belv:hasActivityType belv:Ribosylase ;
+		belv:hasChild sub:_6 ;
 		a belv:AbundanceActivity .
 	
-	node:6 belv:hasConcept hgnc:270 ;
+	sub:_6 belv:hasConcept hgnc:270 ;
 		a belv:ProteinAbundance .
 	
-	node:7 belv:hasChild node:8 ;
+	sub:_7 belv:hasChild sub:_8 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:8 belv:hasConcept hgnc:4055 ;
+	sub:_8 belv:hasConcept hgnc:4055 ;
 		a belv:ProteinAbundance .
-	
-	sub:Ass rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R)))" , "ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R))" .
 }
 
 sub:Prov {
@@ -669,29 +659,28 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:10 ;
+		pav:authoredBy sub:_10 ;
 		pav:version "1.2" .
 	
-	node:10 rdfs:comment "support@belframework.org" ;
+	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_9 .
+	
+	sub:_10 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 	
-	node:9 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	sub:_9 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
-	
-	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , node:9 .
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+	this: dct:created "2014-04-25T03:57:00.028-07:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:XRCC5,pmod(R)) => complex(a(CHEBI:"deoxyribonucleic acid"),p(HGNC:XRCC5),p(HGNC:XRCC6))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAZU_Wk-sc-GDvzRkGV_I_48sH1ULIYAWARsgh8s9Zqx8> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAZU_Wk-sc-GDvzRkGV_I_48sH1ULIYAWARsgh8s9Zqx8.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAZU_Wk-sc-GDvzRkGV_I_48sH1ULIYAWARsgh8s9Zqx8..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAL1XY01gyAaYR1NYHNOamPCGaTwFsh8yBmCJYiovSCHU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAL1XY01gyAaYR1NYHNOamPCGaTwFsh8yBmCJYiovSCHU#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -708,34 +697,34 @@ NANOPUB:
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
-	this: np:hasAssertion sub:Ass ;
+	this: np:hasAssertion sub:Assert ;
 		np:hasProvenance sub:Prov ;
 		np:hasPublicationInfo sub:Info ;
 		a np:Nanopublication .
 }
 
-sub:Ass {
-	node:1 belv:directlyIncreases node:2 ;
-		belv:hasChild node:3 ;
+sub:Assert {
+	sub:Assert rdfs:label "p(HGNC:XRCC5,pmod(R)) => complex(a(CHEBI:\"deoxyribonucleic acid\"),p(HGNC:XRCC5),p(HGNC:XRCC6))" .
+	
+	sub:_1 belv:directlyIncreases sub:_2 ;
+		belv:hasChild sub:_3 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:2 belv:hasChild node:4 , node:5 , node:6 ;
+	sub:_2 belv:hasChild sub:_4 , sub:_5 , sub:_6 ;
 		a belv:ComplexAbundance .
 	
-	node:3 belv:hasConcept hgnc:12833 ;
+	sub:_3 belv:hasConcept hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	node:4 belv:hasConcept chebi:4291 ;
+	sub:_4 belv:hasConcept chebi:4291 ;
 		a belv:Abundance .
 	
-	node:5 belv:hasConcept hgnc:12833 ;
+	sub:_5 belv:hasConcept hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	node:6 belv:hasConcept hgnc:4055 ;
+	sub:_6 belv:hasConcept hgnc:4055 ;
 		a belv:ProteinAbundance .
-	
-	sub:Ass rdfs:label "p(HGNC:XRCC5,pmod(R)) => complex(a(CHEBI:\"deoxyribonucleic acid\"),p(HGNC:XRCC5),p(HGNC:XRCC6))" .
 }
 
 sub:Prov {
@@ -743,29 +732,28 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:8 ;
+		pav:authoredBy sub:_8 ;
 		pav:version "1.2" .
 	
-	node:7 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_7 .
+	
+	sub:_7 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	node:8 rdfs:comment "support@belframework.org" ;
+	sub:_8 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
-	
-	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , node:7 .
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+	this: dct:created "2014-04-25T03:57:00.028-07:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:XRCC6,pmod(R)) => complex(a(CHEBI:"deoxyribonucleic acid"),p(HGNC:XRCC5),p(HGNC:XRCC6))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAGGbhgim2o8oYr6Qt2bI8mvUXkBkJtUMcz9_YTzR6M_k> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAGGbhgim2o8oYr6Qt2bI8mvUXkBkJtUMcz9_YTzR6M_k.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAGGbhgim2o8oYr6Qt2bI8mvUXkBkJtUMcz9_YTzR6M_k..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAaQK9I55hlPLjpLzTFzYytd4PcIKZshCvh96UvvVGYq0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAaQK9I55hlPLjpLzTFzYytd4PcIKZshCvh96UvvVGYq0#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -782,34 +770,34 @@ NANOPUB:
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
-	this: np:hasAssertion sub:Ass ;
+	this: np:hasAssertion sub:Assert ;
 		np:hasProvenance sub:Prov ;
 		np:hasPublicationInfo sub:Info ;
 		a np:Nanopublication .
 }
 
-sub:Ass {
-	node:1 belv:directlyIncreases node:2 ;
-		belv:hasChild node:3 ;
+sub:Assert {
+	sub:Assert rdfs:label "p(HGNC:XRCC6,pmod(R)) => complex(a(CHEBI:\"deoxyribonucleic acid\"),p(HGNC:XRCC5),p(HGNC:XRCC6))" .
+	
+	sub:_1 belv:directlyIncreases sub:_2 ;
+		belv:hasChild sub:_3 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:2 belv:hasChild node:4 , node:5 , node:6 ;
+	sub:_2 belv:hasChild sub:_4 , sub:_5 , sub:_6 ;
 		a belv:ComplexAbundance .
 	
-	node:3 belv:hasConcept hgnc:4055 ;
+	sub:_3 belv:hasConcept hgnc:4055 ;
 		a belv:ProteinAbundance .
 	
-	node:4 belv:hasConcept chebi:4291 ;
+	sub:_4 belv:hasConcept chebi:4291 ;
 		a belv:Abundance .
 	
-	node:5 belv:hasConcept hgnc:12833 ;
+	sub:_5 belv:hasConcept hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	node:6 belv:hasConcept hgnc:4055 ;
+	sub:_6 belv:hasConcept hgnc:4055 ;
 		a belv:ProteinAbundance .
-	
-	sub:Ass rdfs:label "p(HGNC:XRCC6,pmod(R)) => complex(a(CHEBI:\"deoxyribonucleic acid\"),p(HGNC:XRCC5),p(HGNC:XRCC6))" .
 }
 
 sub:Prov {
@@ -817,29 +805,28 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:8 ;
+		pav:authoredBy sub:_8 ;
 		pav:version "1.2" .
 	
-	node:7 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_7 .
+	
+	sub:_7 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	node:8 rdfs:comment "support@belframework.org" ;
+	sub:_8 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
-	
-	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , node:7 .
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+	this: dct:created "2014-04-25T03:57:00.028-07:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:XRCC5,pmod(R)) => cat(p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAiwuwWm4E0UHT5mrhDkMoBxqV8u4Ql_OMqLGDl4wpu8E> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAiwuwWm4E0UHT5mrhDkMoBxqV8u4Ql_OMqLGDl4wpu8E.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAiwuwWm4E0UHT5mrhDkMoBxqV8u4Ql_OMqLGDl4wpu8E..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAwHwca7nzXQD4l1YRd0i6wPRIa5kGcELQfhL8GD3m5kg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAwHwca7nzXQD4l1YRd0i6wPRIa5kGcELQfhL8GD3m5kg#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -855,29 +842,29 @@ NANOPUB:
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
-	this: np:hasAssertion sub:Ass ;
+	this: np:hasAssertion sub:Assert ;
 		np:hasProvenance sub:Prov ;
 		np:hasPublicationInfo sub:Info ;
 		a np:Nanopublication .
 }
 
-sub:Ass {
-	node:1 belv:directlyIncreases node:2 ;
-		belv:hasChild node:3 ;
+sub:Assert {
+	sub:Assert rdfs:label "p(HGNC:XRCC5,pmod(R)) => cat(p(HGNC:WRN))" .
+	
+	sub:_1 belv:directlyIncreases sub:_2 ;
+		belv:hasChild sub:_3 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:2 belv:hasActivityType belv:Catalytic ;
-		belv:hasChild node:4 ;
+	sub:_2 belv:hasActivityType belv:Catalytic ;
+		belv:hasChild sub:_4 ;
 		a belv:AbundanceActivity .
 	
-	node:3 belv:hasConcept hgnc:12833 ;
+	sub:_3 belv:hasConcept hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:12791 ;
+	sub:_4 belv:hasConcept hgnc:12791 ;
 		a belv:ProteinAbundance .
-	
-	sub:Ass rdfs:label "p(HGNC:XRCC5,pmod(R)) => cat(p(HGNC:WRN))" .
 }
 
 sub:Prov {
@@ -885,29 +872,28 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:6 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
-	node:5 prov:value "Significantly, (ADP-ribosyl)ation of Ku70/80reduces the ability of this factor to stimulate WRN exonuclease,suggesting that covalent modification of Ku70/80 by PARP-1 mayplay a role in the regulation of the exonucleolytic activity of WRN." ;
+	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_5 .
+	
+	sub:_5 prov:value "Significantly, (ADP-ribosyl)ation of Ku70/80reduces the ability of this factor to stimulate WRN exonuclease,suggesting that covalent modification of Ku70/80 by PARP-1 mayplay a role in the regulation of the exonucleolytic activity of WRN." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	node:6 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
-	
-	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , node:5 .
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+	this: dct:created "2014-04-25T03:57:00.028-07:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
 BEL: p(HGNC:XRCC6,pmod(R)) => cat(p(HGNC:WRN))
 NANOPUB:
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAu4-951nLXXrE0HZGbNoVjBMeZwNLnpZqoGcXIKdQT1M> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAu4-951nLXXrE0HZGbNoVjBMeZwNLnpZqoGcXIKdQT1M.> .
-@prefix node: <http://www.tkuhn.ch/bel2nanopub/RAu4-951nLXXrE0HZGbNoVjBMeZwNLnpZqoGcXIKdQT1M..> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RANNqUi9tagn-ndcxWMmPyrddPYty_EYLKgcP3xwP6C0w> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RANNqUi9tagn-ndcxWMmPyrddPYty_EYLKgcP3xwP6C0w#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -923,29 +909,29 @@ NANOPUB:
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
-	this: np:hasAssertion sub:Ass ;
+	this: np:hasAssertion sub:Assert ;
 		np:hasProvenance sub:Prov ;
 		np:hasPublicationInfo sub:Info ;
 		a np:Nanopublication .
 }
 
-sub:Ass {
-	node:1 belv:directlyIncreases node:2 ;
-		belv:hasChild node:3 ;
+sub:Assert {
+	sub:Assert rdfs:label "p(HGNC:XRCC6,pmod(R)) => cat(p(HGNC:WRN))" .
+	
+	sub:_1 belv:directlyIncreases sub:_2 ;
+		belv:hasChild sub:_3 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	node:2 belv:hasActivityType belv:Catalytic ;
-		belv:hasChild node:4 ;
+	sub:_2 belv:hasActivityType belv:Catalytic ;
+		belv:hasChild sub:_4 ;
 		a belv:AbundanceActivity .
 	
-	node:3 belv:hasConcept hgnc:4055 ;
+	sub:_3 belv:hasConcept hgnc:4055 ;
 		a belv:ProteinAbundance .
 	
-	node:4 belv:hasConcept hgnc:12791 ;
+	sub:_4 belv:hasConcept hgnc:12791 ;
 		a belv:ProteinAbundance .
-	
-	sub:Ass rdfs:label "p(HGNC:XRCC6,pmod(R)) => cat(p(HGNC:WRN))" .
 }
 
 sub:Prov {
@@ -953,21 +939,21 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy node:6 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
-	node:5 prov:value "Significantly, (ADP-ribosyl)ation of Ku70/80reduces the ability of this factor to stimulate WRN exonuclease,suggesting that covalent modification of Ku70/80 by PARP-1 mayplay a role in the regulation of the exonucleolytic activity of WRN." ;
+	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_5 .
+	
+	sub:_5 prov:value "Significantly, (ADP-ribosyl)ation of Ku70/80reduces the ability of this factor to stimulate WRN exonuclease,suggesting that covalent modification of Ku70/80 by PARP-1 mayplay a role in the regulation of the exonucleolytic activity of WRN." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	node:6 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
-	
-	sub:Ass prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , node:5 .
 }
 
 sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+	this: dct:created "2014-04-25T03:57:00.028-07:00"^^xsd:dateTime ;
 		pav:createdBy orcid:0000-0002-1267-0234 .
 }
 ---
