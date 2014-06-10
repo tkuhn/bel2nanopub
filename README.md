@@ -6,6 +6,12 @@ Transforming BEL documents into nanopublications.
 *Work in progress...*
 
 
+Examples
+--------
+
+See the [example directory](src/main/resources/examples).
+
+
 Dependencies
 ------------
 
