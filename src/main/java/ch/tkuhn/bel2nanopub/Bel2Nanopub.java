@@ -80,20 +80,21 @@ public class Bel2Nanopub {
 				}
 				System.exit(1);
 			}
+			boolean isFirst = true;
 			for (Result r : obj.getResults()) {
-				System.out.println("---");
-				System.out.println("BEL: " + r.getBelStatement().getStatementSyntax());
+				if (!isFirst) {
+					System.out.print("\n\n");
+				}
+				isFirst = false;
 				if (r.getException() == null) {
-					System.out.println("NANOPUB:");
 					NanopubUtils.writeToStream(r.getNanopub(), System.out, RDFFormat.TRIG);
 				} else {
-					System.out.println("ERROR:");
-					System.out.println(r.getException().getMessage());
+					System.err.println("ERROR:");
+					System.err.println(r.getException().getMessage());
 				}
 			}
-			System.out.println("---");
-			System.out.println(obj.getNanopubs().size() + " nanopub(s) created");
-			System.out.println(obj.getTransformExceptions().size() + " error(s)");
+			System.err.println(obj.getNanopubs().size() + " nanopub(s) created");
+			System.err.println(obj.getTransformExceptions().size() + " error(s)");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 			System.exit(1);
