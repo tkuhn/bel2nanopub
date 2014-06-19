@@ -310,12 +310,9 @@ public class Bel2Nanopub {
 	private Resource handleProteinVariantTerm(Term protTerm, NanopubCreator npCreator) throws Bel2NanopubException {
 		BNode bn = newBNode();
 		Parameter protParam = protTerm.getParameters().get(0);
-		BNode n = newBNode();
-		npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasChild, n);
-		npCreator.addAssertionStatement(n, RDF.TYPE, BelRdfVocabulary.getFunction("p"));
 		URI pUri = getUriFromParam(protParam, npCreator);
 		if (pUri != null) {
-			npCreator.addAssertionStatement(n, BelRdfVocabulary.hasConcept, pUri);
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasConcept, pUri);
 		}
 		for (Term varTerm : protTerm.getTerms()) {
 			String modAbbrev = varTerm.getFunctionEnum().getAbbreviation();

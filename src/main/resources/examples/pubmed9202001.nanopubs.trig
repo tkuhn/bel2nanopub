@@ -208,8 +208,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA__u5yZtP-jCa0_NU0iQ-fsSUU3-2-fsYI_OV6oSc7Qk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA__u5yZtP-jCa0_NU0iQ-fsSUU3-2-fsYI_OV6oSc7Qk#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAQ5c97_Z8We5NtcQ13Jr0chuh1l7VvVImrLs1BMC1SLs> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAQ5c97_Z8We5NtcQ13Jr0chuh1l7VvVImrLs1BMC1SLs#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -237,22 +237,19 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:MAPK1,pmod(P,T)) => kin(p(HGNC:MAPK1))" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6871 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6871 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000051 sub:_4 ;
+	sub:_2 obo:BFO_0000051 sub:_3 ;
 		belv:hasActivityType belv:Kinase ;
 		a belv:AbundanceActivity .
 	
-	sub:_4 belv:hasConcept hgnc:6871 ;
+	sub:_3 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
 	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
-		rdf:object sub:_3 ;
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+		rdf:object sub:_2 ;
 		rdf:predicate belv:directlyIncreases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -263,16 +260,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_5 .
 	
-	sub:_6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
+	sub:_5 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -282,8 +279,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAXM2b9DHAlQv1M4F2D6nn2JaJwI_Bd3SsQ8zshuvjcN0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAXM2b9DHAlQv1M4F2D6nn2JaJwI_Bd3SsQ8zshuvjcN0#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAzDMIAwpq7HjPbvxRT7Satp1QR4xWGGQnQ5JFRyGqOUg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAzDMIAwpq7HjPbvxRT7Satp1QR4xWGGQnQ5JFRyGqOUg#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -311,22 +308,19 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:MAPK1,pmod(P,Y)) => kin(p(HGNC:MAPK1))" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6871 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6871 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000051 sub:_4 ;
+	sub:_2 obo:BFO_0000051 sub:_3 ;
 		belv:hasActivityType belv:Kinase ;
 		a belv:AbundanceActivity .
 	
-	sub:_4 belv:hasConcept hgnc:6871 ;
+	sub:_3 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
 	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
-		rdf:object sub:_3 ;
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+		rdf:object sub:_2 ;
 		rdf:predicate belv:directlyIncreases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -337,16 +331,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_5 .
 	
-	sub:_6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
+	sub:_5 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -356,8 +350,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAZ5H6zhKuDhCqYHfy9U2PtV9OEzasDrzuw6phhhNhNEc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAZ5H6zhKuDhCqYHfy9U2PtV9OEzasDrzuw6phhhNhNEc#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAatnrZ-6aSLFh94SzLVMmDUjqIsrVaWMxaIlRKB7OeNY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAatnrZ-6aSLFh94SzLVMmDUjqIsrVaWMxaIlRKB7OeNY#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -385,22 +379,19 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:MAPK8,pmod(P,T)) => kin(p(HGNC:MAPK8))" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6881 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6881 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000051 sub:_4 ;
+	sub:_2 obo:BFO_0000051 sub:_3 ;
 		belv:hasActivityType belv:Kinase ;
 		a belv:AbundanceActivity .
 	
-	sub:_4 belv:hasConcept hgnc:6881 ;
+	sub:_3 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
 	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
-		rdf:object sub:_3 ;
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+		rdf:object sub:_2 ;
 		rdf:predicate belv:directlyIncreases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -411,16 +402,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_5 .
 	
-	sub:_6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
+	sub:_5 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -430,8 +421,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAZViyRNXZ50402gbC2XWIYNOWt-mbM1Q3szITv0fh_v8> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAZViyRNXZ50402gbC2XWIYNOWt-mbM1Q3szITv0fh_v8#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RASt8OJi4VS7YgE6wYhYEBzmHO_kBFZXV_5LLN0dUkhqs> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RASt8OJi4VS7YgE6wYhYEBzmHO_kBFZXV_5LLN0dUkhqs#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -459,22 +450,19 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:MAPK8,pmod(P,Y)) => kin(p(HGNC:MAPK8))" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6881 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6881 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000051 sub:_4 ;
+	sub:_2 obo:BFO_0000051 sub:_3 ;
 		belv:hasActivityType belv:Kinase ;
 		a belv:AbundanceActivity .
 	
-	sub:_4 belv:hasConcept hgnc:6881 ;
+	sub:_3 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
 	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
-		rdf:object sub:_3 ;
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+		rdf:object sub:_2 ;
 		rdf:predicate belv:directlyIncreases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -485,16 +473,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_5 .
 	
-	sub:_6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
+	sub:_5 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -504,8 +492,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAjDUG-S9BrBTHsCa6Ie0Jg-3gh1545G_UFNqQROaANOY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAjDUG-S9BrBTHsCa6Ie0Jg-3gh1545G_UFNqQROaANOY#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAXSGf0l5dBE84n2oqWbT8fHhz5R9gbufDJkNBgTHJRS4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAXSGf0l5dBE84n2oqWbT8fHhz5R9gbufDJkNBgTHJRS4#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -534,22 +522,19 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:MAPK14,pmod(P,T)) => kin(p(PFH:\"MAPK p38 Family\"))" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6876 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6876 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000051 sub:_4 ;
+	sub:_2 obo:BFO_0000051 sub:_3 ;
 		belv:hasActivityType belv:Kinase ;
 		a belv:AbundanceActivity .
 	
-	sub:_4 belv:hasConcept pfh:MAPK%20p38%20Family ;
+	sub:_3 belv:hasConcept pfh:MAPK%20p38%20Family ;
 		a belv:ProteinAbundance .
 	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
-		rdf:object sub:_3 ;
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+		rdf:object sub:_2 ;
 		rdf:predicate belv:directlyIncreases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -560,16 +545,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_5 .
 	
-	sub:_6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
+	sub:_5 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -579,8 +564,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAXyUEafsJ4NQMbsRcUdj34-K1rE4qdsxBOfE0465Jz18> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAXyUEafsJ4NQMbsRcUdj34-K1rE4qdsxBOfE0465Jz18#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAHjoGPNCKD7zRB_B2BxViULoATxvUEM18tPPYtA_5Vtk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAHjoGPNCKD7zRB_B2BxViULoATxvUEM18tPPYtA_5Vtk#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -609,22 +594,19 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:MAPK14,pmod(P,Y)) => kin(p(PFH:\"MAPK p38 Family\"))" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6876 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6876 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000051 sub:_4 ;
+	sub:_2 obo:BFO_0000051 sub:_3 ;
 		belv:hasActivityType belv:Kinase ;
 		a belv:AbundanceActivity .
 	
-	sub:_4 belv:hasConcept pfh:MAPK%20p38%20Family ;
+	sub:_3 belv:hasConcept pfh:MAPK%20p38%20Family ;
 		a belv:ProteinAbundance .
 	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
-		rdf:object sub:_3 ;
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+		rdf:object sub:_2 ;
 		rdf:predicate belv:directlyIncreases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -635,16 +617,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_5 .
 	
-	sub:_6 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
+	sub:_5 prov:value "These kinases are regulated by the reversible dualphosphorylation of conserved threonine and tyrosine residues." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -654,8 +636,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAWXVDS8g1qJWlPSu-eeq9gR7PikI74u7SLD7WIhc3t6Y> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAWXVDS8g1qJWlPSu-eeq9gR7PikI74u7SLD7WIhc3t6Y#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_iBkdzOVuasRKB-ui8dYJuU834KvgMtj-agvtUVSKMM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_iBkdzOVuasRKB-ui8dYJuU834KvgMtj-agvtUVSKMM#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -690,14 +672,11 @@ sub:Assert {
 	sub:_2 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
-	sub:_3 belv:hasChild sub:_4 ;
+	sub:_3 belv:hasConcept hgnc:6871 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
-	sub:_4 belv:hasConcept hgnc:6871 ;
-		a belv:ProteinAbundance .
-	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
 		rdf:object sub:_3 ;
 		rdf:predicate belv:directlyDecreases ;
 		rdf:subject sub:_1 ;
@@ -709,16 +688,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_5 .
 	
-	sub:_6 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
+	sub:_5 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -728,8 +707,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8Uk4hea-rJC8XwQ_0DAMeERHuAL7TpEzAVOjkgpCZSw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8Uk4hea-rJC8XwQ_0DAMeERHuAL7TpEzAVOjkgpCZSw#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA4ukC0muQ9vRkKurcXbUC1bnqz8ZHJw6oryhLdybcWXA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA4ukC0muQ9vRkKurcXbUC1bnqz8ZHJw6oryhLdybcWXA#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -764,14 +743,11 @@ sub:Assert {
 	sub:_2 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
-	sub:_3 belv:hasChild sub:_4 ;
+	sub:_3 belv:hasConcept hgnc:6881 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
-	sub:_4 belv:hasConcept hgnc:6881 ;
-		a belv:ProteinAbundance .
-	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
 		rdf:object sub:_3 ;
 		rdf:predicate belv:directlyDecreases ;
 		rdf:subject sub:_1 ;
@@ -783,16 +759,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_5 .
 	
-	sub:_6 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
+	sub:_5 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -802,8 +778,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAoautQ6_JpSaNvo0rUwjVKUQSn2zbRPSiTR9gcHyjrk4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAoautQ6_JpSaNvo0rUwjVKUQSn2zbRPSiTR9gcHyjrk4#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAclNJlzAYqLTxRcbtbqhfeRqbfa9Aa0erJ6TlMVk8txc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAclNJlzAYqLTxRcbtbqhfeRqbfa9Aa0erJ6TlMVk8txc#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -839,14 +815,11 @@ sub:Assert {
 	sub:_2 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
-	sub:_3 belv:hasChild sub:_4 ;
+	sub:_3 belv:hasConcept pfh:MAPK%20p38%20Family ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
-	sub:_4 belv:hasConcept pfh:MAPK%20p38%20Family ;
-		a belv:ProteinAbundance .
-	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
 		rdf:object sub:_3 ;
 		rdf:predicate belv:directlyDecreases ;
 		rdf:subject sub:_1 ;
@@ -858,16 +831,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_5 .
 	
-	sub:_6 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
+	sub:_5 prov:value "The dual specificity protein phosphatase MAPKphosphatase-1(MKP-1) has been shown to dephosphorylate and inactivate ERK2, SAPK, andp38 MAPK in transient transfection studies." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -1163,8 +1136,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RACSakz-c0qoHlPCTqgBgiJ3uU3ZTH1N0v4MpBMsd2cKg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RACSakz-c0qoHlPCTqgBgiJ3uU3ZTH1N0v4MpBMsd2cKg#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAw6Jk021kYgZJmATHHXIdMYQmag7knMRTwiIVfGlfvN0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAw6Jk021kYgZJmATHHXIdMYQmag7knMRTwiIVfGlfvN0#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1192,21 +1165,21 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> tscript(p(HGNC:JUN))" .
 	
-	sub:_1 belv:hasConcept chebi:746 ;
-		a belv:Abundance .
+	sub:_1 belv:hasConcept hgnc:6204 ;
+		a belv:ProteinAbundance .
 	
-	sub:_2 obo:BFO_0000051 sub:_3 ;
+	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+		rdf:object sub:_3 ;
+		rdf:predicate belv:increases ;
+		rdf:subject sub:_4 ;
+		a rdf:Statement .
+	
+	sub:_3 obo:BFO_0000051 sub:_1 ;
 		belv:hasActivityType belv:Transcription ;
 		a belv:AbundanceActivity .
 	
-	sub:_3 belv:hasConcept hgnc:6204 ;
-		a belv:ProteinAbundance .
-	
-	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
-		rdf:object sub:_2 ;
-		rdf:predicate belv:increases ;
-		rdf:subject sub:_1 ;
-		a rdf:Statement .
+	sub:_4 belv:hasConcept chebi:746 ;
+		a belv:Abundance .
 }
 
 sub:Prov {

@@ -20,7 +20,7 @@ public class BelRdfVocabulary {
 
 	//public static final URI term = new URIImpl(BELV_NS + "Term");
 	//public static final URI statement = new URIImpl(BELV_NS + "Statement");
-	public static final URI hasChild = new URIImpl(BELV_NS + "hasChild");
+	//public static final URI hasChild = new URIImpl(BELV_NS + "hasChild");
 	public static final URI hasConcept = new URIImpl(BELV_NS + "hasConcept");
 	//public static final URI hasSubject = new URIImpl(BELV_NS + "hasSubject");
 	//public static final URI hasRelationship = new URIImpl(BELV_NS + "hasRelationship");

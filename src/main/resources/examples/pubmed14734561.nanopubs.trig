@@ -425,8 +425,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAaRzn2kFRKatcGAeGJLRXmOtkyVKUNkGZ5EKHaPRSTQA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAaRzn2kFRKatcGAeGJLRXmOtkyVKUNkGZ5EKHaPRSTQA#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAfkRmLqvb_AtvvbPKEISZlkiAjcAvpqIN6T7-w0FGzTs> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAfkRmLqvb_AtvvbPKEISZlkiAjcAvpqIN6T7-w0FGzTs#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -475,12 +475,9 @@ sub:Assert {
 	sub:_6 belv:hasConcept hgnc:270 ;
 		a belv:ProteinAbundance .
 	
-	sub:_7 belv:hasChild sub:_8 ;
+	sub:_7 belv:hasConcept hgnc:270 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
-	
-	sub:_8 belv:hasConcept hgnc:270 ;
-		a belv:ProteinAbundance .
 }
 
 sub:Prov {
@@ -488,17 +485,17 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_10 ;
+		pav:authoredBy sub:_9 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_9 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_8 .
 	
-	sub:_10 rdfs:comment "support@belframework.org" ;
-		rdfs:label "Selventa" .
-	
-	sub:_9 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	sub:_8 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
+	
+	sub:_9 rdfs:comment "support@belframework.org" ;
+		rdfs:label "Selventa" .
 }
 
 sub:Info {
@@ -507,8 +504,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAhSDkrbC5QKdzIUMpbaUvCEmX075_k_ncYcRogBldRKo> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAhSDkrbC5QKdzIUMpbaUvCEmX075_k_ncYcRogBldRKo#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAkHVzaNcEpQOKcAWabhwImWr3PVbkigBCBGisuguDqAc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAkHVzaNcEpQOKcAWabhwImWr3PVbkigBCBGisuguDqAc#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -557,12 +554,9 @@ sub:Assert {
 	sub:_6 belv:hasConcept hgnc:270 ;
 		a belv:ProteinAbundance .
 	
-	sub:_7 belv:hasChild sub:_8 ;
+	sub:_7 belv:hasConcept hgnc:12833 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
-	
-	sub:_8 belv:hasConcept hgnc:12833 ;
-		a belv:ProteinAbundance .
 }
 
 sub:Prov {
@@ -570,17 +564,17 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_10 ;
+		pav:authoredBy sub:_9 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_9 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_8 .
 	
-	sub:_10 rdfs:comment "support@belframework.org" ;
-		rdfs:label "Selventa" .
-	
-	sub:_9 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	sub:_8 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
+	
+	sub:_9 rdfs:comment "support@belframework.org" ;
+		rdfs:label "Selventa" .
 }
 
 sub:Info {
@@ -589,8 +583,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RABFr9dAPtVEzXgRrAVV04SJ3RXZ8YGRT-JoQhhjj8QvI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RABFr9dAPtVEzXgRrAVV04SJ3RXZ8YGRT-JoQhhjj8QvI#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3m4lH6DwoB6qm8fJJiHkZoKUNfOWMCgvtQhJ2vRcYpA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3m4lH6DwoB6qm8fJJiHkZoKUNfOWMCgvtQhJ2vRcYpA#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -639,12 +633,9 @@ sub:Assert {
 	sub:_6 belv:hasConcept hgnc:270 ;
 		a belv:ProteinAbundance .
 	
-	sub:_7 belv:hasChild sub:_8 ;
+	sub:_7 belv:hasConcept hgnc:4055 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
-	
-	sub:_8 belv:hasConcept hgnc:4055 ;
-		a belv:ProteinAbundance .
 }
 
 sub:Prov {
@@ -652,17 +643,17 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_10 ;
+		pav:authoredBy sub:_9 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_9 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_8 .
 	
-	sub:_10 rdfs:comment "support@belframework.org" ;
-		rdfs:label "Selventa" .
-	
-	sub:_9 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	sub:_8 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
+	
+	sub:_9 rdfs:comment "support@belframework.org" ;
+		rdfs:label "Selventa" .
 }
 
 sub:Info {
@@ -671,8 +662,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAKp8QwAKUQjjXWB1UX27qcaxruuNVVdAFBIaeEl14XMI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAKp8QwAKUQjjXWB1UX27qcaxruuNVVdAFBIaeEl14XMI#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RABwAjrJoiQCKmtAZdGkiuUSytcqZJMPcnakWgItJKiTg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RABwAjrJoiQCKmtAZdGkiuUSytcqZJMPcnakWgItJKiTg#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -700,23 +691,20 @@ sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:XRCC5,pmod(R)) => complex(a(CHEBI:\"deoxyribonucleic acid\"),p(HGNC:XRCC5),p(HGNC:XRCC6))" .
 	
 	sub:_1 belv:directlyIncreases sub:_2 ;
-		belv:hasChild sub:_3 ;
+		belv:hasConcept hgnc:12833 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	sub:_2 obo:BFO_0000051 sub:_4 , sub:_5 , sub:_6 ;
+	sub:_2 obo:BFO_0000051 sub:_3 , sub:_4 , sub:_5 ;
 		a belv:ComplexAbundance .
 	
-	sub:_3 belv:hasConcept hgnc:12833 ;
-		a belv:ProteinAbundance .
-	
-	sub:_4 belv:hasConcept chebi:4291 ;
+	sub:_3 belv:hasConcept chebi:4291 ;
 		a belv:Abundance .
 	
-	sub:_5 belv:hasConcept hgnc:12833 ;
+	sub:_4 belv:hasConcept hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	sub:_6 belv:hasConcept hgnc:4055 ;
+	sub:_5 belv:hasConcept hgnc:4055 ;
 		a belv:ProteinAbundance .
 }
 
@@ -725,16 +713,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_8 ;
+		pav:authoredBy sub:_7 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_7 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_6 .
 	
-	sub:_7 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	sub:_6 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	sub:_8 rdfs:comment "support@belframework.org" ;
+	sub:_7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -744,8 +732,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RANWGxfeBKGrmTSMGGPp4exMyN6fQfOwtw9tWDohbcTWc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RANWGxfeBKGrmTSMGGPp4exMyN6fQfOwtw9tWDohbcTWc#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAk1WLTeoSIiJiSxRZgj7F5ihszVzlR-638H2HPfUtVxg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAk1WLTeoSIiJiSxRZgj7F5ihszVzlR-638H2HPfUtVxg#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -773,23 +761,20 @@ sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:XRCC6,pmod(R)) => complex(a(CHEBI:\"deoxyribonucleic acid\"),p(HGNC:XRCC5),p(HGNC:XRCC6))" .
 	
 	sub:_1 belv:directlyIncreases sub:_2 ;
-		belv:hasChild sub:_3 ;
+		belv:hasConcept hgnc:4055 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	sub:_2 obo:BFO_0000051 sub:_4 , sub:_5 , sub:_6 ;
+	sub:_2 obo:BFO_0000051 sub:_3 , sub:_4 , sub:_5 ;
 		a belv:ComplexAbundance .
 	
-	sub:_3 belv:hasConcept hgnc:4055 ;
-		a belv:ProteinAbundance .
-	
-	sub:_4 belv:hasConcept chebi:4291 ;
+	sub:_3 belv:hasConcept chebi:4291 ;
 		a belv:Abundance .
 	
-	sub:_5 belv:hasConcept hgnc:12833 ;
+	sub:_4 belv:hasConcept hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	sub:_6 belv:hasConcept hgnc:4055 ;
+	sub:_5 belv:hasConcept hgnc:4055 ;
 		a belv:ProteinAbundance .
 }
 
@@ -798,16 +783,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_8 ;
+		pav:authoredBy sub:_7 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_7 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_6 .
 	
-	sub:_7 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	sub:_6 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	sub:_8 rdfs:comment "support@belframework.org" ;
+	sub:_7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -817,8 +802,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA0noZOw3GvuWcHV9pqDBH94ZekoKul_-c9XPvIlmEZxQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA0noZOw3GvuWcHV9pqDBH94ZekoKul_-c9XPvIlmEZxQ#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_IZDxc0e2Ck1czI-YoJPrExE6fyjVv_oWfE_u9YmITw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_IZDxc0e2Ck1czI-YoJPrExE6fyjVv_oWfE_u9YmITw#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -845,18 +830,15 @@ sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:XRCC5,pmod(R)) => cat(p(HGNC:WRN))" .
 	
 	sub:_1 belv:directlyIncreases sub:_2 ;
-		belv:hasChild sub:_3 ;
+		belv:hasConcept hgnc:12833 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	sub:_2 obo:BFO_0000051 sub:_4 ;
+	sub:_2 obo:BFO_0000051 sub:_3 ;
 		belv:hasActivityType belv:Catalytic ;
 		a belv:AbundanceActivity .
 	
-	sub:_3 belv:hasConcept hgnc:12833 ;
-		a belv:ProteinAbundance .
-	
-	sub:_4 belv:hasConcept hgnc:12791 ;
+	sub:_3 belv:hasConcept hgnc:12791 ;
 		a belv:ProteinAbundance .
 }
 
@@ -865,16 +847,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_6 ;
+		pav:authoredBy sub:_5 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_5 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_4 .
 	
-	sub:_5 prov:value "Significantly, (ADP-ribosyl)ation of Ku70/80reduces the ability of this factor to stimulate WRN exonuclease,suggesting that covalent modification of Ku70/80 by PARP-1 mayplay a role in the regulation of the exonucleolytic activity of WRN." ;
+	sub:_4 prov:value "Significantly, (ADP-ribosyl)ation of Ku70/80reduces the ability of this factor to stimulate WRN exonuclease,suggesting that covalent modification of Ku70/80 by PARP-1 mayplay a role in the regulation of the exonucleolytic activity of WRN." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	sub:_6 rdfs:comment "support@belframework.org" ;
+	sub:_5 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -884,8 +866,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAuNaXmBtaufUCRq66As-NPuBjloTbgxOqQwwujd2f8uw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAuNaXmBtaufUCRq66As-NPuBjloTbgxOqQwwujd2f8uw#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAD5Rwf2Azb63et4RPy2a0P1_Wx-20qU69KoDJXc0wDQI> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAD5Rwf2Azb63et4RPy2a0P1_Wx-20qU69KoDJXc0wDQI#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -912,18 +894,15 @@ sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:XRCC6,pmod(R)) => cat(p(HGNC:WRN))" .
 	
 	sub:_1 belv:directlyIncreases sub:_2 ;
-		belv:hasChild sub:_3 ;
+		belv:hasConcept hgnc:4055 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		a belv:ModifiedProteinAbundance .
 	
-	sub:_2 obo:BFO_0000051 sub:_4 ;
+	sub:_2 obo:BFO_0000051 sub:_3 ;
 		belv:hasActivityType belv:Catalytic ;
 		a belv:AbundanceActivity .
 	
-	sub:_3 belv:hasConcept hgnc:4055 ;
-		a belv:ProteinAbundance .
-	
-	sub:_4 belv:hasConcept hgnc:12791 ;
+	sub:_3 belv:hasConcept hgnc:12791 ;
 		a belv:ProteinAbundance .
 }
 
@@ -932,16 +911,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_6 ;
+		pav:authoredBy sub:_5 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_5 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_4 .
 	
-	sub:_5 prov:value "Significantly, (ADP-ribosyl)ation of Ku70/80reduces the ability of this factor to stimulate WRN exonuclease,suggesting that covalent modification of Ku70/80 by PARP-1 mayplay a role in the regulation of the exonucleolytic activity of WRN." ;
+	sub:_4 prov:value "Significantly, (ADP-ribosyl)ation of Ku70/80reduces the ability of this factor to stimulate WRN exonuclease,suggesting that covalent modification of Ku70/80 by PARP-1 mayplay a role in the regulation of the exonucleolytic activity of WRN." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	sub:_6 rdfs:comment "support@belframework.org" ;
+	sub:_5 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 

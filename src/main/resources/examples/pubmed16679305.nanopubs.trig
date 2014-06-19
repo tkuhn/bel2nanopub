@@ -1,5 +1,5 @@
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAoml2Kw5MFqZdbdILIDuC7dclS7L-AnX43jI4OwxkaOg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAoml2Kw5MFqZdbdILIDuC7dclS7L-AnX43jI4OwxkaOg#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJnDZKzYA1ccAM8-9GZsfyLbZm1TIxEUfyrXZeKMFkm8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJnDZKzYA1ccAM8-9GZsfyLbZm1TIxEUfyrXZeKMFkm8#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -26,14 +26,11 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:\"Neoplasm Metastasis\")" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6407 ;
 		belv:hasSubstitution "G,12,V" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000066 mesh:D015179 , species:9606 ;
+	sub:_2 obo:BFO_0000066 mesh:D015179 , species:9606 ;
 		rdf:object mesh:D009362 ;
 		rdf:predicate belv:prognosticBiomarkerFor ;
 		rdf:subject sub:_1 ;
@@ -45,16 +42,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_5 ;
+		pav:authoredBy sub:_4 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_4 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_3 .
 	
-	sub:_4 prov:value "K-Ras Asp12 (K12D) is more prevalent in benign than inmalignant human colorectal tumors, whereas K-Ras Val12 (K12V) associateswith more advanced and metastatic carcinomas, higher recurrence anddecreased survival." ;
+	sub:_3 prov:value "K-Ras Asp12 (K12D) is more prevalent in benign than inmalignant human colorectal tumors, whereas K-Ras Val12 (K12V) associateswith more advanced and metastatic carcinomas, higher recurrence anddecreased survival." ;
 		prov:wasQuotedFrom pubmed:16679305 .
 	
-	sub:_5 rdfs:comment "support@belframework.org" ;
+	sub:_4 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -64,8 +61,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAdDmaRMI9Movnfo7hxAuvF9f12U5de3TnLeweu15VxFY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAdDmaRMI9Movnfo7hxAuvF9f12U5de3TnLeweu15VxFY#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAW5Ahy_CeAWgRv0IUdG7CV_SmWFP7As3C3rnSgKQIJb4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAW5Ahy_CeAWgRv0IUdG7CV_SmWFP7As3C3rnSgKQIJb4#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -92,14 +89,11 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:\"Recurrence\")" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6407 ;
 		belv:hasSubstitution "G,12,V" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000066 mesh:D015179 , species:9606 ;
+	sub:_2 obo:BFO_0000066 mesh:D015179 , species:9606 ;
 		rdf:object mesh:D012008 ;
 		rdf:predicate belv:prognosticBiomarkerFor ;
 		rdf:subject sub:_1 ;
@@ -111,16 +105,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_5 ;
+		pav:authoredBy sub:_4 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_4 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_3 .
 	
-	sub:_4 prov:value "K-Ras Asp12 (K12D) is more prevalent in benign than inmalignant human colorectal tumors, whereas K-Ras Val12 (K12V) associateswith more advanced and metastatic carcinomas, higher recurrence anddecreased survival." ;
+	sub:_3 prov:value "K-Ras Asp12 (K12D) is more prevalent in benign than inmalignant human colorectal tumors, whereas K-Ras Val12 (K12V) associateswith more advanced and metastatic carcinomas, higher recurrence anddecreased survival." ;
 		prov:wasQuotedFrom pubmed:16679305 .
 	
-	sub:_5 rdfs:comment "support@belframework.org" ;
+	sub:_4 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -130,8 +124,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA0DH60c0idPcQc97gDOn6_lrcJy3Nvi1wvWpYwQqCfx4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA0DH60c0idPcQc97gDOn6_lrcJy3Nvi1wvWpYwQqCfx4#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAYrb7c3nB0I0l-Nx_h44Ar-zxg2sSQFLMi5cFeD-8MUU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAYrb7c3nB0I0l-Nx_h44Ar-zxg2sSQFLMi5cFeD-8MUU#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -159,14 +153,11 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> path(MESHD:Neoplasms)" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6407 ;
 		belv:hasSubstitution "G,12,V" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object mesh:D009369 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -178,16 +169,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_5 ;
+		pav:authoredBy sub:_4 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_4 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_3 .
 	
-	sub:_4 prov:value "We found that the K12V oncogene induces a more aggressivetumorigenic phenotype than the K12D oncogene, whereas K12C does not inducetumors in this model." ;
+	sub:_3 prov:value "We found that the K12V oncogene induces a more aggressivetumorigenic phenotype than the K12D oncogene, whereas K12C does not inducetumors in this model." ;
 		prov:wasQuotedFrom pubmed:16679305 .
 	
-	sub:_5 rdfs:comment "support@belframework.org" ;
+	sub:_4 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -197,8 +188,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7bA3ULvocHcrmQN_vmlzSnqmwNhfkxlSvnaw-nLixqQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7bA3ULvocHcrmQN_vmlzSnqmwNhfkxlSvnaw-nLixqQ#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAz7UWJMVQZHCmPJYk3BhWwthMsHnN8eDb87AWUSZgCxI> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAz7UWJMVQZHCmPJYk3BhWwthMsHnN8eDb87AWUSZgCxI#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -226,14 +217,11 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> path(MESHD:Neoplasms)" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6407 ;
 		belv:hasSubstitution "G,12,D" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object mesh:D009369 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -245,16 +233,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_5 ;
+		pav:authoredBy sub:_4 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_4 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_3 .
 	
-	sub:_4 prov:value "We found that the K12V oncogene induces a more aggressivetumorigenic phenotype than the K12D oncogene, whereas K12C does not inducetumors in this model." ;
+	sub:_3 prov:value "We found that the K12V oncogene induces a more aggressivetumorigenic phenotype than the K12D oncogene, whereas K12C does not inducetumors in this model." ;
 		prov:wasQuotedFrom pubmed:16679305 .
 	
-	sub:_5 rdfs:comment "support@belframework.org" ;
+	sub:_4 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -264,8 +252,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAEXXltyLJQNtMgghgsu7LWlHErD-HYrP77dxpHJbW7dw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAEXXltyLJQNtMgghgsu7LWlHErD-HYrP77dxpHJbW7dw#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJT0_Z9rR72MmHGJzcGMUBGQHZflXo3mMFEb8R_jp6jA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJT0_Z9rR72MmHGJzcGMUBGQHZflXo3mMFEb8R_jp6jA#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -293,14 +281,11 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,C)) causesNoChange path(MESHD:Neoplasms)" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6407 ;
 		belv:hasSubstitution "G,12,C" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object mesh:D009369 ;
 		rdf:predicate belv:causesNoChange ;
 		rdf:subject sub:_1 ;
@@ -312,16 +297,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_5 ;
+		pav:authoredBy sub:_4 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_4 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_3 .
 	
-	sub:_4 prov:value "We found that the K12V oncogene induces a more aggressivetumorigenic phenotype than the K12D oncogene, whereas K12C does not inducetumors in this model." ;
+	sub:_3 prov:value "We found that the K12V oncogene induces a more aggressivetumorigenic phenotype than the K12D oncogene, whereas K12C does not inducetumors in this model." ;
 		prov:wasQuotedFrom pubmed:16679305 .
 	
-	sub:_5 rdfs:comment "support@belframework.org" ;
+	sub:_4 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -331,8 +316,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA4cXOTxIw0Gzg2-XHAYWMvp-BtAuNVBmu-09BD1K5lK0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA4cXOTxIw0Gzg2-XHAYWMvp-BtAuNVBmu-09BD1K5lK0#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAVk33goPiIr1v4Wa_JkLReB3E_2YG3xRJX2g8qa_89ns> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAVk33goPiIr1v4Wa_JkLReB3E_2YG3xRJX2g8qa_89ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -360,99 +345,22 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) => complex(p(HGNC:KRAS),p(MGI:Raf1))" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6407 ;
 		belv:hasSubstitution "G,12,V" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000051 sub:_4 , sub:_5 ;
+	sub:_2 obo:BFO_0000051 sub:_3 , sub:_4 ;
 		a belv:ComplexAbundance .
 	
-	sub:_4 belv:hasConcept hgnc:6407 ;
+	sub:_3 belv:hasConcept hgnc:6407 ;
 		a belv:ProteinAbundance .
 	
-	sub:_5 belv:hasConcept <http://www.informatics.jax.org/marker/MGI:97847> ;
-		a belv:ProteinAbundance .
-	
-	sub:_6 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
-		rdf:object sub:_3 ;
-		rdf:predicate belv:directlyIncreases ;
-		rdf:subject sub:_1 ;
-		a rdf:Statement .
-}
-
-sub:Prov {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
-		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
-		dce:title "BEL Framework Example 3 Document" ;
-		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_8 ;
-		pav:version "1.2" .
-	
-	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_7 .
-	
-	sub:_7 prov:value "A molecular analysis of the induced tumors shows thatthe K12V mutant protein interacts with Raf-1 and transduces signals mainly through the Erk pathway." ;
-		prov:wasQuotedFrom pubmed:16679305 .
-	
-	sub:_8 rdfs:comment "support@belframework.org" ;
-		rdfs:label "Selventa" .
-}
-
-sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
-}
-
-
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAtyd9jLro9oD1GKw3Gmsh5K7b25-ov7B18T-PTtCeM18> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAtyd9jLro9oD1GKw3Gmsh5K7b25-ov7B18T-PTtCeM18#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix dce: <http://purl.org/dc/elements/1.1/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
-@prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
-@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
-@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
-@prefix orcid: <http://orcid.org/> .
-
-sub:Head {
-	this: np:hasAssertion sub:Assert ;
-		np:hasProvenance sub:Prov ;
-		np:hasPublicationInfo sub:Info ;
-		a np:Nanopublication .
-}
-
-sub:Assert {
-	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
-	
-	sub:_1 belv:hasChild sub:_2 ;
-		belv:hasSubstitution "G,12,V" ;
-		a belv:ProteinVariantAbundance .
-	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000051 sub:_4 ;
-		belv:hasActivityType belv:Kinase ;
-		a belv:AbundanceActivity .
-	
-	sub:_4 belv:hasConcept pfm:MAPK%20Erk1%2F3%20Family ;
+	sub:_4 belv:hasConcept <http://www.informatics.jax.org/marker/MGI:97847> ;
 		a belv:ProteinAbundance .
 	
 	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
-		rdf:object sub:_3 ;
-		rdf:predicate belv:increases ;
+		rdf:object sub:_2 ;
+		rdf:predicate belv:directlyIncreases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
 }
@@ -481,8 +389,79 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA2DkGJLrJ7Jl3tI5S5So9_69IBs-gdoql7AmuvOtWbbU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA2DkGJLrJ7Jl3tI5S5So9_69IBs-gdoql7AmuvOtWbbU#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAaW5RtN9TIReUOHrRaSaUYZG_n_Cy15o3799XLAbMhAQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAaW5RtN9TIReUOHrRaSaUYZG_n_Cy15o3799XLAbMhAQ#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix orcid: <http://orcid.org/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Assert ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Assert {
+	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
+	
+	sub:_1 belv:hasConcept hgnc:6407 ;
+		belv:hasSubstitution "G,12,V" ;
+		a belv:ProteinVariantAbundance .
+	
+	sub:_2 obo:BFO_0000051 sub:_3 ;
+		belv:hasActivityType belv:Kinase ;
+		a belv:AbundanceActivity .
+	
+	sub:_3 belv:hasConcept pfm:MAPK%20Erk1%2F3%20Family ;
+		a belv:ProteinAbundance .
+	
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+		rdf:object sub:_2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject sub:_1 ;
+		a rdf:Statement .
+}
+
+sub:Prov {
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
+		dce:title "BEL Framework Example 3 Document" ;
+		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
+		pav:authoredBy sub:_6 ;
+		pav:version "1.2" .
+	
+	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_5 .
+	
+	sub:_5 prov:value "A molecular analysis of the induced tumors shows thatthe K12V mutant protein interacts with Raf-1 and transduces signals mainly through the Erk pathway." ;
+		prov:wasQuotedFrom pubmed:16679305 .
+	
+	sub:_6 rdfs:comment "support@belframework.org" ;
+		rdfs:label "Selventa" .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
+}
+
+
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAX5-23kWkn3W0gTQ62XevwcuPK5uYU0D01otxnzPj-9c> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAX5-23kWkn3W0gTQ62XevwcuPK5uYU0D01otxnzPj-9c#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -510,98 +489,21 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) causesNoChange complex(p(HGNC:KRAS),p(MGI:Raf1))" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6407 ;
 		belv:hasSubstitution "G,12,D" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000051 sub:_4 , sub:_5 ;
+	sub:_2 obo:BFO_0000051 sub:_3 , sub:_4 ;
 		a belv:ComplexAbundance .
 	
-	sub:_4 belv:hasConcept hgnc:6407 ;
+	sub:_3 belv:hasConcept hgnc:6407 ;
 		a belv:ProteinAbundance .
 	
-	sub:_5 belv:hasConcept <http://www.informatics.jax.org/marker/MGI:97847> ;
-		a belv:ProteinAbundance .
-	
-	sub:_6 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
-		rdf:object sub:_3 ;
-		rdf:predicate belv:causesNoChange ;
-		rdf:subject sub:_1 ;
-		a rdf:Statement .
-}
-
-sub:Prov {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
-		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
-		dce:title "BEL Framework Example 3 Document" ;
-		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_8 ;
-		pav:version "1.2" .
-	
-	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_7 .
-	
-	sub:_7 prov:value "Unexpectedly, in tumors induced by the K12D oncogene,the K-Ras mutant protein does not interact with Raf-1 nor activatesthe Erk canonical pathway." ;
-		prov:wasQuotedFrom pubmed:16679305 .
-	
-	sub:_8 rdfs:comment "support@belframework.org" ;
-		rdfs:label "Selventa" .
-}
-
-sub:Info {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
-}
-
-
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAC26jF3LlrnqHBsVInGEKFJdnaUiXm8xD_URVqkvj9lk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAC26jF3LlrnqHBsVInGEKFJdnaUiXm8xD_URVqkvj9lk#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix dce: <http://purl.org/dc/elements/1.1/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
-@prefix belv: <http://www.selventa.com/vocabulary/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
-@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
-@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
-@prefix orcid: <http://orcid.org/> .
-
-sub:Head {
-	this: np:hasAssertion sub:Assert ;
-		np:hasProvenance sub:Prov ;
-		np:hasPublicationInfo sub:Info ;
-		a np:Nanopublication .
-}
-
-sub:Assert {
-	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) causesNoChange kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
-	
-	sub:_1 belv:hasChild sub:_2 ;
-		belv:hasSubstitution "G,12,D" ;
-		a belv:ProteinVariantAbundance .
-	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000051 sub:_4 ;
-		belv:hasActivityType belv:Kinase ;
-		a belv:AbundanceActivity .
-	
-	sub:_4 belv:hasConcept pfm:MAPK%20Erk1%2F3%20Family ;
+	sub:_4 belv:hasConcept <http://www.informatics.jax.org/marker/MGI:97847> ;
 		a belv:ProteinAbundance .
 	
 	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
-		rdf:object sub:_3 ;
+		rdf:object sub:_2 ;
 		rdf:predicate belv:causesNoChange ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -631,8 +533,79 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RANWBZu7CYcrCpIG3jHoMhjO1oDEFg50yLRkcLIMplFjM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RANWBZu7CYcrCpIG3jHoMhjO1oDEFg50yLRkcLIMplFjM#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8sr9sltl11J6J4uSjOob7trltC_0tvonf4548Qs-W_w> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8sr9sltl11J6J4uSjOob7trltC_0tvonf4548Qs-W_w#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix belv: <http://www.selventa.com/vocabulary/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
+@prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix orcid: <http://orcid.org/> .
+
+sub:Head {
+	this: np:hasAssertion sub:Assert ;
+		np:hasProvenance sub:Prov ;
+		np:hasPublicationInfo sub:Info ;
+		a np:Nanopublication .
+}
+
+sub:Assert {
+	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) causesNoChange kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
+	
+	sub:_1 belv:hasConcept hgnc:6407 ;
+		belv:hasSubstitution "G,12,D" ;
+		a belv:ProteinVariantAbundance .
+	
+	sub:_2 obo:BFO_0000051 sub:_3 ;
+		belv:hasActivityType belv:Kinase ;
+		a belv:AbundanceActivity .
+	
+	sub:_3 belv:hasConcept pfm:MAPK%20Erk1%2F3%20Family ;
+		a belv:ProteinAbundance .
+	
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+		rdf:object sub:_2 ;
+		rdf:predicate belv:causesNoChange ;
+		rdf:subject sub:_1 ;
+		a rdf:Statement .
+}
+
+sub:Prov {
+	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
+		dce:title "BEL Framework Example 3 Document" ;
+		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
+		pav:authoredBy sub:_6 ;
+		pav:version "1.2" .
+	
+	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_5 .
+	
+	sub:_5 prov:value "Unexpectedly, in tumors induced by the K12D oncogene,the K-Ras mutant protein does not interact with Raf-1 nor activatesthe Erk canonical pathway." ;
+		prov:wasQuotedFrom pubmed:16679305 .
+	
+	sub:_6 rdfs:comment "support@belframework.org" ;
+		rdfs:label "Selventa" .
+}
+
+sub:Info {
+	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0002-1267-0234 .
+}
+
+
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RARW3yfAqfcgbUYyoiOYaHaKRMRPQHI5tD-9LYa2tjWNg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RARW3yfAqfcgbUYyoiOYaHaKRMRPQHI5tD-9LYa2tjWNg#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -660,22 +633,19 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(complex(NCM:\"p85/p110 PI3Kinase Complex\"))" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6407 ;
 		belv:hasSubstitution "G,12,D" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000051 sub:_4 ;
+	sub:_2 obo:BFO_0000051 sub:_3 ;
 		belv:hasActivityType belv:Kinase ;
 		a belv:AbundanceActivity .
 	
-	sub:_4 belv:hasConcept ncm:p85%2Fp110%20PI3Kinase%20Complex ;
+	sub:_3 belv:hasConcept ncm:p85%2Fp110%20PI3Kinase%20Complex ;
 		a belv:ComplexAbundance .
 	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
-		rdf:object sub:_3 ;
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -686,17 +656,17 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_5 .
 	
-	sub:_6 prov:value """Instead, it transduces signals through the PI3K/Akt, JNK,
+	sub:_5 prov:value """Instead, it transduces signals through the PI3K/Akt, JNK,
 p38 and FAK pathways.""" ;
 		prov:wasQuotedFrom pubmed:16679305 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -706,8 +676,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAm8mUqzgfG7yKbYOxRorp-AVKehefPnAw1uBNT3UCeyg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAm8mUqzgfG7yKbYOxRorp-AVKehefPnAw1uBNT3UCeyg#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RADFBfg_jFZfI3AC4cWA7lGIJdpx44q4t9NX9qGmDgdXk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RADFBfg_jFZfI3AC4cWA7lGIJdpx44q4t9NX9qGmDgdXk#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -735,22 +705,19 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Akt Family\"))" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6407 ;
 		belv:hasSubstitution "G,12,D" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000051 sub:_4 ;
+	sub:_2 obo:BFO_0000051 sub:_3 ;
 		belv:hasActivityType belv:Kinase ;
 		a belv:AbundanceActivity .
 	
-	sub:_4 belv:hasConcept pfm:Akt%20Family ;
+	sub:_3 belv:hasConcept pfm:Akt%20Family ;
 		a belv:ProteinAbundance .
 	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
-		rdf:object sub:_3 ;
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -761,17 +728,17 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_5 .
 	
-	sub:_6 prov:value """Instead, it transduces signals through the PI3K/Akt, JNK,
+	sub:_5 prov:value """Instead, it transduces signals through the PI3K/Akt, JNK,
 p38 and FAK pathways.""" ;
 		prov:wasQuotedFrom pubmed:16679305 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -781,8 +748,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RALBnPH6RBZgc9qCPEi2Yx0dXCpC5MQBpRxFANJkhm_DA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RALBnPH6RBZgc9qCPEi2Yx0dXCpC5MQBpRxFANJkhm_DA#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAb9gAYEMUQDVnQeX8M6XYlwPt6I68W2qs2z34q6LPrRI> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAb9gAYEMUQDVnQeX8M6XYlwPt6I68W2qs2z34q6LPrRI#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -810,22 +777,19 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Mapk JNK Family\"))" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6407 ;
 		belv:hasSubstitution "G,12,D" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000051 sub:_4 ;
+	sub:_2 obo:BFO_0000051 sub:_3 ;
 		belv:hasActivityType belv:Kinase ;
 		a belv:AbundanceActivity .
 	
-	sub:_4 belv:hasConcept pfm:Mapk%20JNK%20Family ;
+	sub:_3 belv:hasConcept pfm:Mapk%20JNK%20Family ;
 		a belv:ProteinAbundance .
 	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
-		rdf:object sub:_3 ;
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -836,17 +800,17 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_5 .
 	
-	sub:_6 prov:value """Instead, it transduces signals through the PI3K/Akt, JNK,
+	sub:_5 prov:value """Instead, it transduces signals through the PI3K/Akt, JNK,
 p38 and FAK pathways.""" ;
 		prov:wasQuotedFrom pubmed:16679305 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -856,8 +820,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAkQ9SdlL6NuIJUJNjokXckIChWq4cDyB9mRbdw5fGpIw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAkQ9SdlL6NuIJUJNjokXckIChWq4cDyB9mRbdw5fGpIw#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAgsN4tyavVAX45bjAqMlWMzkbQoydKDF8Hf82vxL9npE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAgsN4tyavVAX45bjAqMlWMzkbQoydKDF8Hf82vxL9npE#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -885,22 +849,19 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Mapk p38 Family\"))" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6407 ;
 		belv:hasSubstitution "G,12,D" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000051 sub:_4 ;
+	sub:_2 obo:BFO_0000051 sub:_3 ;
 		belv:hasActivityType belv:Kinase ;
 		a belv:AbundanceActivity .
 	
-	sub:_4 belv:hasConcept pfm:Mapk%20p38%20Family ;
+	sub:_3 belv:hasConcept pfm:Mapk%20p38%20Family ;
 		a belv:ProteinAbundance .
 	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
-		rdf:object sub:_3 ;
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -911,17 +872,17 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_5 .
 	
-	sub:_6 prov:value """Instead, it transduces signals through the PI3K/Akt, JNK,
+	sub:_5 prov:value """Instead, it transduces signals through the PI3K/Akt, JNK,
 p38 and FAK pathways.""" ;
 		prov:wasQuotedFrom pubmed:16679305 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -931,8 +892,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA716A_KEuSuAdaW16zfvD1_f90dyqHZmkHMa9AXmdgak> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA716A_KEuSuAdaW16zfvD1_f90dyqHZmkHMa9AXmdgak#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAM7cp2VuwVunidoZmePE6B0AlkPxQnxhLLFpJ25R5rXE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAM7cp2VuwVunidoZmePE6B0AlkPxQnxhLLFpJ25R5rXE#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -960,22 +921,19 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(MGI:Ptk2))" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6407 ;
 		belv:hasSubstitution "G,12,D" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000051 sub:_4 ;
+	sub:_2 obo:BFO_0000051 sub:_3 ;
 		belv:hasActivityType belv:Kinase ;
 		a belv:AbundanceActivity .
 	
-	sub:_4 belv:hasConcept <http://www.informatics.jax.org/marker/MGI:95481> ;
+	sub:_3 belv:hasConcept <http://www.informatics.jax.org/marker/MGI:95481> ;
 		a belv:ProteinAbundance .
 	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
-		rdf:object sub:_3 ;
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -986,17 +944,17 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_5 .
 	
-	sub:_6 prov:value """Instead, it transduces signals through the PI3K/Akt, JNK,
+	sub:_5 prov:value """Instead, it transduces signals through the PI3K/Akt, JNK,
 p38 and FAK pathways.""" ;
 		prov:wasQuotedFrom pubmed:16679305 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -1006,8 +964,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA2U5YWPWeyz_07PhnyCWiEQjsK-4mJ1f74i18zXKXGZk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA2U5YWPWeyz_07PhnyCWiEQjsK-4mJ1f74i18zXKXGZk#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RARbx9is9HcUsn5HzuOp19sFQZbnlo5sz0oGLXV1GiYas> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RARbx9is9HcUsn5HzuOp19sFQZbnlo5sz0oGLXV1GiYas#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1035,22 +993,16 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:RB1,pmod(P))" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6407 ;
 		belv:hasSubstitution "G,12,V" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 belv:hasChild sub:_4 ;
+	sub:_2 belv:hasConcept hgnc:9884 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		a belv:ModifiedProteinAbundance .
 	
-	sub:_4 belv:hasConcept hgnc:9884 ;
-		a belv:ProteinAbundance .
-	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
-		rdf:object sub:_3 ;
+	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -1061,16 +1013,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_5 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_4 .
 	
-	sub:_6 prov:value "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." ;
+	sub:_4 prov:value "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." ;
 		prov:wasQuotedFrom pubmed:16679305 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_5 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -1080,8 +1032,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAYjfUcdhJCdeSc-OhcbdmNUnBGSDIDcEODqywfWxoPYI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAYjfUcdhJCdeSc-OhcbdmNUnBGSDIDcEODqywfWxoPYI#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1skXpapIHegCxAsVZvMk26U-6j1MOgV37g5hmeFndnY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1skXpapIHegCxAsVZvMk26U-6j1MOgV37g5hmeFndnY#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1108,21 +1060,18 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:PCNA)" .
 	
-	sub:_1 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
-		rdf:object sub:_2 ;
-		rdf:predicate belv:increases ;
-		rdf:subject sub:_3 ;
-		a rdf:Statement .
+	sub:_1 belv:hasConcept hgnc:6407 ;
+		belv:hasSubstitution "G,12,V" ;
+		a belv:ProteinVariantAbundance .
 	
 	sub:_2 belv:hasConcept hgnc:8729 ;
 		a belv:ProteinAbundance .
 	
-	sub:_3 belv:hasChild sub:_4 ;
-		belv:hasSubstitution "G,12,V" ;
-		a belv:ProteinVariantAbundance .
-	
-	sub:_4 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+		rdf:object sub:_2 ;
+		rdf:predicate belv:increases ;
+		rdf:subject sub:_1 ;
+		a rdf:Statement .
 }
 
 sub:Prov {
@@ -1130,16 +1079,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_6 ;
+		pav:authoredBy sub:_5 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_5 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_4 .
 	
-	sub:_5 prov:value "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." ;
+	sub:_4 prov:value "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." ;
 		prov:wasQuotedFrom pubmed:16679305 .
 	
-	sub:_6 rdfs:comment "support@belframework.org" ;
+	sub:_5 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -1149,8 +1098,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAMcaDsPLch76jWPyId_rP3JzbMjb5EZRbzaneCV6bPAM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAMcaDsPLch76jWPyId_rP3JzbMjb5EZRbzaneCV6bPAM#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAou8UXNOcPZt9c_abAKAq1k7491RyxOwhSlz804KpPQY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAou8UXNOcPZt9c_abAKAq1k7491RyxOwhSlz804KpPQY#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1177,18 +1126,15 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:CCNB1)" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6407 ;
 		belv:hasSubstitution "G,12,V" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6407 ;
+	sub:_2 belv:hasConcept hgnc:1579 ;
 		a belv:ProteinAbundance .
 	
-	sub:_3 belv:hasConcept hgnc:1579 ;
-		a belv:ProteinAbundance .
-	
-	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
-		rdf:object sub:_3 ;
+	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -1199,16 +1145,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_6 ;
+		pav:authoredBy sub:_5 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_5 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_4 .
 	
-	sub:_5 prov:value "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." ;
+	sub:_4 prov:value "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." ;
 		prov:wasQuotedFrom pubmed:16679305 .
 	
-	sub:_6 rdfs:comment "support@belframework.org" ;
+	sub:_5 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -1218,8 +1164,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAI7uL0JvpDlTlyUI0iibleFsnqIf2Opr267EBUc8NriQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAI7uL0JvpDlTlyUI0iibleFsnqIf2Opr267EBUc8NriQ#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8BMMawtqsOYzrlzLmBKMmBjv9PRb7VYnlv9FV4JX0I0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8BMMawtqsOYzrlzLmBKMmBjv9PRb7VYnlv9FV4JX0I0#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1247,14 +1193,11 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:\"G1/S transition of mitotic cell cycle\")" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6407 ;
 		belv:hasSubstitution "G,12,V" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object <http://amigo.geneontology.org/amigo/term/GO:0000082> ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -1266,16 +1209,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_5 ;
+		pav:authoredBy sub:_4 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_4 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_3 .
 	
-	sub:_4 prov:value "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." ;
+	sub:_3 prov:value "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." ;
 		prov:wasQuotedFrom pubmed:16679305 .
 	
-	sub:_5 rdfs:comment "support@belframework.org" ;
+	sub:_4 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -1285,8 +1228,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA2sDcPTQZk0WNcL9f8T4szZGoTiUEb5GKVw-7hg_mMDI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA2sDcPTQZk0WNcL9f8T4szZGoTiUEb5GKVw-7hg_mMDI#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9Pe4jzsHEdIWG8RdvZyyuCkYkUvZrzwYYjfqtotG8QM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9Pe4jzsHEdIWG8RdvZyyuCkYkUvZrzwYYjfqtotG8QM#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1314,14 +1257,11 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:\"G2/M transition of mitotic cell cycle\")" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
+	sub:_1 belv:hasConcept hgnc:6407 ;
 		belv:hasSubstitution "G,12,V" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object <http://amigo.geneontology.org/amigo/term/GO:0000086> ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -1333,16 +1273,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_5 ;
+		pav:authoredBy sub:_4 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_4 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_3 .
 	
-	sub:_4 prov:value "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." ;
+	sub:_3 prov:value "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." ;
 		prov:wasQuotedFrom pubmed:16679305 .
 	
-	sub:_5 rdfs:comment "support@belframework.org" ;
+	sub:_4 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -1352,8 +1292,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAvV8w9i-fznlv6o__FDYXwC1tFWAbYQ8O5PDrv5leJig> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAvV8w9i-fznlv6o__FDYXwC1tFWAbYQ8O5PDrv5leJig#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAf_hxbFX5sRfpbTJ4E0wBrNnziWFGiznH7fGy2Ofs_8Q> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAf_hxbFX5sRfpbTJ4E0wBrNnziWFGiznH7fGy2Ofs_8Q#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1381,18 +1321,15 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) causesNoChange bp(GO:\"regulation of apoptotic process\")" .
 	
-	sub:_1 belv:hasChild sub:_2 ;
-		belv:hasSubstitution "G,12,V" ;
-		a belv:ProteinVariantAbundance .
-	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_1 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object <http://amigo.geneontology.org/amigo/term/GO:0042981> ;
 		rdf:predicate belv:causesNoChange ;
-		rdf:subject sub:_1 ;
+		rdf:subject sub:_2 ;
 		a rdf:Statement .
+	
+	sub:_2 belv:hasConcept hgnc:6407 ;
+		belv:hasSubstitution "G,12,V" ;
+		a belv:ProteinVariantAbundance .
 }
 
 sub:Prov {
@@ -1400,16 +1337,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_5 ;
+		pav:authoredBy sub:_4 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_4 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_3 .
 	
-	sub:_4 prov:value "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." ;
+	sub:_3 prov:value "Finally, the higher growth rate of the K12V tumors associateswith enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistentwith faster G1/S and G2/M transitions, without alteration of apoptoticregulation." ;
 		prov:wasQuotedFrom pubmed:16679305 .
 	
-	sub:_5 rdfs:comment "support@belframework.org" ;
+	sub:_4 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
