@@ -326,7 +326,7 @@ public class Bel2Nanopub {
 		Parameter protParam = protTerm.getParameters().get(0);
 		URI pUri = getUriFromParam(protParam, npCreator);
 		if (pUri != null) {
-			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasConcept, pUri);
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.variantOf, pUri);
 		}
 		for (Term varTerm : protTerm.getTerms()) {
 			String modAbbrev = varTerm.getFunctionEnum().getAbbreviation();
@@ -374,7 +374,7 @@ public class Bel2Nanopub {
 				throw new Bel2NanopubException("Expecting only one parameter for: " + term.getFunctionEnum());
 			}
 			URI cUri = getUriFromParam(term.getParameters().get(0), npCreator);
-			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasConcept, cUri);
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.abundanceOf, cUri);
 		} else {
 			throw new Bel2NanopubException("Empty abundance term: " + term.getFunctionEnum());
 		}

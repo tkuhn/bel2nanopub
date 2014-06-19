@@ -21,7 +21,7 @@ public class BelRdfVocabulary {
 	//public static final URI term = new URIImpl(BELV_NS + "Term");
 	//public static final URI statement = new URIImpl(BELV_NS + "Statement");
 	//public static final URI hasChild = new URIImpl(BELV_NS + "hasChild");
-	public static final URI hasConcept = new URIImpl(BELV_NS + "hasConcept");
+	//public static final URI hasConcept = new URIImpl(BELV_NS + "hasConcept");
 	//public static final URI hasSubject = new URIImpl(BELV_NS + "hasSubject");
 	//public static final URI hasRelationship = new URIImpl(BELV_NS + "hasRelationship");
 	//public static final URI hasObject = new URIImpl(BELV_NS + "hasObject");
@@ -35,6 +35,8 @@ public class BelRdfVocabulary {
 	public static final URI hasSubstitution = new URIImpl(BELV_NS + "hasSubstitution");
 	public static final URI hasModification = new URIImpl(BELV_NS + "hasModification");
 	public static final URI activityOf = new URIImpl(BELV_NS + "activityOf");
+	public static final URI abundanceOf = new URIImpl(BELV_NS + "abundanceOf");
+	public static final URI variantOf = new URIImpl(BELV_NS + "variantOf");
 	// ---
 
 	//public static final URI abundanceActivity = new URIImpl(BELV_NS + "AbundanceActivity");

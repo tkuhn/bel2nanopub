@@ -1,5 +1,5 @@
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJnDZKzYA1ccAM8-9GZsfyLbZm1TIxEUfyrXZeKMFkm8> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJnDZKzYA1ccAM8-9GZsfyLbZm1TIxEUfyrXZeKMFkm8#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_nL2QRQZTzuHl2MCrw8Uee2l2twu3sG_qYBeSO4ZlWo> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_nL2QRQZTzuHl2MCrw8Uee2l2twu3sG_qYBeSO4ZlWo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -26,8 +26,8 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:\"Neoplasm Metastasis\")" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,V" ;
+	sub:_1 belv:hasSubstitution "G,12,V" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
 	sub:_2 obo:BFO_0000066 mesh:D015179 , species:9606 ;
@@ -61,8 +61,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAW5Ahy_CeAWgRv0IUdG7CV_SmWFP7As3C3rnSgKQIJb4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAW5Ahy_CeAWgRv0IUdG7CV_SmWFP7As3C3rnSgKQIJb4#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAaymPa5-Yc1qHBmJC9yLkXCbJAvwoMlq_uCpHeIhoILo> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAaymPa5-Yc1qHBmJC9yLkXCbJAvwoMlq_uCpHeIhoILo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -89,8 +89,8 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) prognosticBiomarkerFor path(MESHD:\"Recurrence\")" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,V" ;
+	sub:_1 belv:hasSubstitution "G,12,V" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
 	sub:_2 obo:BFO_0000066 mesh:D015179 , species:9606 ;
@@ -124,8 +124,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAYrb7c3nB0I0l-Nx_h44Ar-zxg2sSQFLMi5cFeD-8MUU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAYrb7c3nB0I0l-Nx_h44Ar-zxg2sSQFLMi5cFeD-8MUU#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAdp2OKCjV0veklWaKXcsbzI_72Q3WEOp01bP13dXF2IU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAdp2OKCjV0veklWaKXcsbzI_72Q3WEOp01bP13dXF2IU#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -153,8 +153,8 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> path(MESHD:Neoplasms)" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,V" ;
+	sub:_1 belv:hasSubstitution "G,12,V" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
 	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
@@ -188,8 +188,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAz7UWJMVQZHCmPJYk3BhWwthMsHnN8eDb87AWUSZgCxI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAz7UWJMVQZHCmPJYk3BhWwthMsHnN8eDb87AWUSZgCxI#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAYtLyhCG0xFL0ebGIg2Q5dHx3wAW9HGc8ijUdmNJOoaA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAYtLyhCG0xFL0ebGIg2Q5dHx3wAW9HGc8ijUdmNJOoaA#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -217,8 +217,8 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> path(MESHD:Neoplasms)" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,D" ;
+	sub:_1 belv:hasSubstitution "G,12,D" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
 	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
@@ -252,8 +252,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJT0_Z9rR72MmHGJzcGMUBGQHZflXo3mMFEb8R_jp6jA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJT0_Z9rR72MmHGJzcGMUBGQHZflXo3mMFEb8R_jp6jA#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9HIY5u4lZwCMYh0iij0ZERXh1PEGabP8fe0N9izk7eU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9HIY5u4lZwCMYh0iij0ZERXh1PEGabP8fe0N9izk7eU#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -281,8 +281,8 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,C)) causesNoChange path(MESHD:Neoplasms)" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,C" ;
+	sub:_1 belv:hasSubstitution "G,12,C" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
 	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
@@ -316,8 +316,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAVk33goPiIr1v4Wa_JkLReB3E_2YG3xRJX2g8qa_89ns> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAVk33goPiIr1v4Wa_JkLReB3E_2YG3xRJX2g8qa_89ns#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA6iV3POBpor-wexjkxmmtRPJmtUy8ffPSf0jNs6P8khk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA6iV3POBpor-wexjkxmmtRPJmtUy8ffPSf0jNs6P8khk#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -345,17 +345,17 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) => complex(p(HGNC:KRAS),p(MGI:Raf1))" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,V" ;
+	sub:_1 belv:hasSubstitution "G,12,V" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
 	sub:_2 obo:BFO_0000051 sub:_3 , sub:_4 ;
 		a belv:ComplexAbundance .
 	
-	sub:_3 belv:hasConcept hgnc:6407 ;
+	sub:_3 belv:abundanceOf hgnc:6407 ;
 		a belv:ProteinAbundance .
 	
-	sub:_4 belv:hasConcept <http://www.informatics.jax.org/marker/MGI:97847> ;
+	sub:_4 belv:abundanceOf <http://www.informatics.jax.org/marker/MGI:97847> ;
 		a belv:ProteinAbundance .
 	
 	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
@@ -389,8 +389,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAouVLv06PuK8rxM_RVzeb0orDnqiuOltDL1twTCyHAmo> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAouVLv06PuK8rxM_RVzeb0orDnqiuOltDL1twTCyHAmo#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAxqtvpHf-cNrz-DDnmtcACULR1gfMqiREwQwQMqVW_sE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAxqtvpHf-cNrz-DDnmtcACULR1gfMqiREwQwQMqVW_sE#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -418,14 +418,14 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,V" ;
+	sub:_1 belv:hasSubstitution "G,12,V" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
 		a belv:KinaseActivity .
 	
-	sub:_3 belv:hasConcept pfm:MAPK%20Erk1%2F3%20Family ;
+	sub:_3 belv:abundanceOf pfm:MAPK%20Erk1%2F3%20Family ;
 		a belv:ProteinAbundance .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
@@ -459,8 +459,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAX5-23kWkn3W0gTQ62XevwcuPK5uYU0D01otxnzPj-9c> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAX5-23kWkn3W0gTQ62XevwcuPK5uYU0D01otxnzPj-9c#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAYA1Yke57gn0CYXeolvMS7bzFT8ZXjZST2_IspWKuoLk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAYA1Yke57gn0CYXeolvMS7bzFT8ZXjZST2_IspWKuoLk#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -488,17 +488,17 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) causesNoChange complex(p(HGNC:KRAS),p(MGI:Raf1))" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,D" ;
+	sub:_1 belv:hasSubstitution "G,12,D" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
 	sub:_2 obo:BFO_0000051 sub:_3 , sub:_4 ;
 		a belv:ComplexAbundance .
 	
-	sub:_3 belv:hasConcept hgnc:6407 ;
+	sub:_3 belv:abundanceOf hgnc:6407 ;
 		a belv:ProteinAbundance .
 	
-	sub:_4 belv:hasConcept <http://www.informatics.jax.org/marker/MGI:97847> ;
+	sub:_4 belv:abundanceOf <http://www.informatics.jax.org/marker/MGI:97847> ;
 		a belv:ProteinAbundance .
 	
 	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
@@ -532,8 +532,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAkTwDZUpLp6P7kvS5F146Bsn2AJ89p0rVGd9bT3U5Q3o> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAkTwDZUpLp6P7kvS5F146Bsn2AJ89p0rVGd9bT3U5Q3o#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA14nLj-DVixFnVoJgYJvRVVoIr4Yiom5RLd8iy6B4wTU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA14nLj-DVixFnVoJgYJvRVVoIr4Yiom5RLd8iy6B4wTU#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -561,14 +561,14 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) causesNoChange kin(p(PFM:\"MAPK Erk1/3 Family\"))" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,D" ;
+	sub:_1 belv:hasSubstitution "G,12,D" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
 		a belv:KinaseActivity .
 	
-	sub:_3 belv:hasConcept pfm:MAPK%20Erk1%2F3%20Family ;
+	sub:_3 belv:abundanceOf pfm:MAPK%20Erk1%2F3%20Family ;
 		a belv:ProteinAbundance .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
@@ -602,8 +602,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAMGMSKfwzxf5YHJM2oZjkrZCcc7gRF0lSnxGHv03-RnA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAMGMSKfwzxf5YHJM2oZjkrZCcc7gRF0lSnxGHv03-RnA#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA28KiOckTgr5iX9xmHvSCbvscUZy1vVsSL6F-w8AxQ-U> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA28KiOckTgr5iX9xmHvSCbvscUZy1vVsSL6F-w8AxQ-U#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -631,14 +631,14 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(complex(NCM:\"p85/p110 PI3Kinase Complex\"))" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,D" ;
+	sub:_1 belv:hasSubstitution "G,12,D" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
 		a belv:KinaseActivity .
 	
-	sub:_3 belv:hasConcept ncm:p85%2Fp110%20PI3Kinase%20Complex ;
+	sub:_3 belv:abundanceOf ncm:p85%2Fp110%20PI3Kinase%20Complex ;
 		a belv:ComplexAbundance .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
@@ -673,8 +673,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAZy_liUDGPG3bTkP3RA3lvi9EZ-lVYXt8xv2udKnWbIs> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAZy_liUDGPG3bTkP3RA3lvi9EZ-lVYXt8xv2udKnWbIs#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAl1P83M2q6Tm4nvYHn2QW4x0JGIMoporHgpTwuaZzmLE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAl1P83M2q6Tm4nvYHn2QW4x0JGIMoporHgpTwuaZzmLE#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -702,14 +702,14 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Akt Family\"))" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,D" ;
+	sub:_1 belv:hasSubstitution "G,12,D" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
 		a belv:KinaseActivity .
 	
-	sub:_3 belv:hasConcept pfm:Akt%20Family ;
+	sub:_3 belv:abundanceOf pfm:Akt%20Family ;
 		a belv:ProteinAbundance .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
@@ -744,8 +744,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAnB2r4i9AXF51v_F2h2TGm_QHoL3jZQrdVIbRkIcNvcw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAnB2r4i9AXF51v_F2h2TGm_QHoL3jZQrdVIbRkIcNvcw#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAWGTCz399vfgbgh-urcSX2hggUT_igGlhApalvxNnrE4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAWGTCz399vfgbgh-urcSX2hggUT_igGlhApalvxNnrE4#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -773,14 +773,14 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Mapk JNK Family\"))" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,D" ;
+	sub:_1 belv:hasSubstitution "G,12,D" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
 		a belv:KinaseActivity .
 	
-	sub:_3 belv:hasConcept pfm:Mapk%20JNK%20Family ;
+	sub:_3 belv:abundanceOf pfm:Mapk%20JNK%20Family ;
 		a belv:ProteinAbundance .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
@@ -815,8 +815,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA94h46tzL2HNA_q68tz2BSDK8-TCd-94vngThnFxHkRA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA94h46tzL2HNA_q68tz2BSDK8-TCd-94vngThnFxHkRA#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJoWc5_xMSYJk73cH4IkN1H445ikl_up54gus6rfZp0c> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJoWc5_xMSYJk73cH4IkN1H445ikl_up54gus6rfZp0c#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -844,14 +844,14 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(PFM:\"Mapk p38 Family\"))" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,D" ;
+	sub:_1 belv:hasSubstitution "G,12,D" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
 		a belv:KinaseActivity .
 	
-	sub:_3 belv:hasConcept pfm:Mapk%20p38%20Family ;
+	sub:_3 belv:abundanceOf pfm:Mapk%20p38%20Family ;
 		a belv:ProteinAbundance .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
@@ -886,8 +886,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAAXyflPRbauob38U4hmO-sEdLJ4MzBL4h7SjnLlq1XAY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAAXyflPRbauob38U4hmO-sEdLJ4MzBL4h7SjnLlq1XAY#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAaX7W7Qf4WChVhOO0YVysafqTwxzKw9RFcTejTBOhTAk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAaX7W7Qf4WChVhOO0YVysafqTwxzKw9RFcTejTBOhTAk#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -915,14 +915,14 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(p(MGI:Ptk2))" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,D" ;
+	sub:_1 belv:hasSubstitution "G,12,D" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
 		a belv:KinaseActivity .
 	
-	sub:_3 belv:hasConcept <http://www.informatics.jax.org/marker/MGI:95481> ;
+	sub:_3 belv:abundanceOf <http://www.informatics.jax.org/marker/MGI:95481> ;
 		a belv:ProteinAbundance .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
@@ -957,8 +957,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RARbx9is9HcUsn5HzuOp19sFQZbnlo5sz0oGLXV1GiYas> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RARbx9is9HcUsn5HzuOp19sFQZbnlo5sz0oGLXV1GiYas#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAAQNJPgzq9rSv9bznUeUWTD0LrS2c7n8l_smm_wjCD-Y> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAAQNJPgzq9rSv9bznUeUWTD0LrS2c7n8l_smm_wjCD-Y#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -986,12 +986,12 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:RB1,pmod(P))" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,V" ;
+	sub:_1 belv:hasSubstitution "G,12,V" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:9884 ;
-		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
+	sub:_2 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
+		belv:variantOf hgnc:9884 ;
 		a belv:ModifiedProteinAbundance .
 	
 	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
@@ -1025,8 +1025,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1skXpapIHegCxAsVZvMk26U-6j1MOgV37g5hmeFndnY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1skXpapIHegCxAsVZvMk26U-6j1MOgV37g5hmeFndnY#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAGCpI6Yb9BnG4ikGu4PVjoCsA-AFX-0CjN3tj29s5nIo> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAGCpI6Yb9BnG4ikGu4PVjoCsA-AFX-0CjN3tj29s5nIo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1053,11 +1053,11 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:PCNA)" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,V" ;
+	sub:_1 belv:hasSubstitution "G,12,V" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:8729 ;
+	sub:_2 belv:abundanceOf hgnc:8729 ;
 		a belv:ProteinAbundance .
 	
 	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
@@ -1091,8 +1091,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAou8UXNOcPZt9c_abAKAq1k7491RyxOwhSlz804KpPQY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAou8UXNOcPZt9c_abAKAq1k7491RyxOwhSlz804KpPQY#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3Uw2w3znTnhJMcSh-TJzi4G4X62T4ST9YsYX2kbFgLg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3Uw2w3znTnhJMcSh-TJzi4G4X62T4ST9YsYX2kbFgLg#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1119,11 +1119,11 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> p(HGNC:CCNB1)" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,V" ;
+	sub:_1 belv:hasSubstitution "G,12,V" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 belv:hasConcept hgnc:1579 ;
+	sub:_2 belv:abundanceOf hgnc:1579 ;
 		a belv:ProteinAbundance .
 	
 	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
@@ -1157,8 +1157,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8BMMawtqsOYzrlzLmBKMmBjv9PRb7VYnlv9FV4JX0I0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8BMMawtqsOYzrlzLmBKMmBjv9PRb7VYnlv9FV4JX0I0#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAkm1GHjuOzJ6I9BqhEqUARAm5x5puDGBCC1LiqJhC-BY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAkm1GHjuOzJ6I9BqhEqUARAm5x5puDGBCC1LiqJhC-BY#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1186,8 +1186,8 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:\"G1/S transition of mitotic cell cycle\")" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,V" ;
+	sub:_1 belv:hasSubstitution "G,12,V" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
 	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
@@ -1221,8 +1221,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9Pe4jzsHEdIWG8RdvZyyuCkYkUvZrzwYYjfqtotG8QM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9Pe4jzsHEdIWG8RdvZyyuCkYkUvZrzwYYjfqtotG8QM#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9UU4X8-gj8pYEdtcdDkXRwG-qI4N8BaZZIvJQfb7Svg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9UU4X8-gj8pYEdtcdDkXRwG-qI4N8BaZZIvJQfb7Svg#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1250,8 +1250,8 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) -> bp(GO:\"G2/M transition of mitotic cell cycle\")" .
 	
-	sub:_1 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,V" ;
+	sub:_1 belv:hasSubstitution "G,12,V" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 	
 	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
@@ -1285,8 +1285,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAf_hxbFX5sRfpbTJ4E0wBrNnziWFGiznH7fGy2Ofs_8Q> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAf_hxbFX5sRfpbTJ4E0wBrNnziWFGiznH7fGy2Ofs_8Q#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAIrnbH3FNEMCMoEnWWNXZqu96q53AabWz9RcLbK5D5WA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAIrnbH3FNEMCMoEnWWNXZqu96q53AabWz9RcLbK5D5WA#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1320,8 +1320,8 @@ sub:Assert {
 		rdf:subject sub:_2 ;
 		a rdf:Statement .
 	
-	sub:_2 belv:hasConcept hgnc:6407 ;
-		belv:hasSubstitution "G,12,V" ;
+	sub:_2 belv:hasSubstitution "G,12,V" ;
+		belv:variantOf hgnc:6407 ;
 		a belv:ProteinVariantAbundance .
 }
 
