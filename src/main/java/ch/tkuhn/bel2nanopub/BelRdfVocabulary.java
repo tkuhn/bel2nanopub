@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.openrdf.model.URI;
 import org.openrdf.model.impl.URIImpl;
+import org.openrdf.model.vocabulary.RDFS;
 
 /**
  * Namespaces and mappings as defined and used by bel2rdf.
@@ -133,7 +134,6 @@ public class BelRdfVocabulary {
 		relMap.put("hasComponent", new URIImpl(BELV_NS + "hasComponent"));
 		relMap.put("hasMember", new URIImpl(BELV_NS + "hasMember"));
 		relMap.put("increases", new URIImpl(BELV_NS + "increases"));
-		relMap.put("isA", new URIImpl(BELV_NS + "isA"));
 		relMap.put("negativeCorrelation", new URIImpl(BELV_NS + "negativeCorrelation"));
 		relMap.put("positiveCorrelation", new URIImpl(BELV_NS + "positiveCorrelation"));
 		relMap.put("prognosticBiomarkerFor", new URIImpl(BELV_NS + "prognosticBiomarkerFor"));
@@ -146,6 +146,9 @@ public class BelRdfVocabulary {
 		relMap.put("translocates", new URIImpl(BELV_NS + "translocates"));
 		relMap.put("hasMembers", new URIImpl(BELV_NS + "hasMembers"));
 		relMap.put("hasComponents", new URIImpl(BELV_NS + "hasComponents"));
+
+		// Mapped to standard vocabulary:
+		relMap.put("isA", RDFS.SUBCLASSOF);
 	}
 
 	public static URI getRel(String rel) {
