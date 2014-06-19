@@ -41,6 +41,7 @@ import org.openrdf.model.impl.BNodeImpl;
 import org.openrdf.model.impl.LiteralImpl;
 import org.openrdf.model.impl.URIImpl;
 import org.openrdf.model.impl.ValueFactoryImpl;
+import org.openrdf.model.vocabulary.DC;
 import org.openrdf.model.vocabulary.DCTERMS;
 import org.openrdf.model.vocabulary.RDF;
 import org.openrdf.model.vocabulary.RDFS;
@@ -237,16 +238,16 @@ public class Bel2Nanopub {
 		BELDocumentHeader h = belDoc.getDocumentHeader();
 		npCreator.addProvenanceStatement(provWasDerivedFrom, belDocResource);
 		if (h.getName() != null) {
-			npCreator.addProvenanceStatement(belDocResource, dcTitle, vf.createLiteral(h.getName()));
+			npCreator.addProvenanceStatement(belDocResource, DC.TITLE, vf.createLiteral(h.getName()));
 		}
 		if (h.getDescription() != null) {
-			npCreator.addProvenanceStatement(belDocResource, dcDescription, vf.createLiteral(h.getDescription()));
+			npCreator.addProvenanceStatement(belDocResource, DC.DESCRIPTION, vf.createLiteral(h.getDescription()));
 		}
 		if (h.getCopyright() != null) {
-			npCreator.addProvenanceStatement(belDocResource, dcRights, vf.createLiteral(h.getCopyright()));
+			npCreator.addProvenanceStatement(belDocResource, DC.RIGHTS, vf.createLiteral(h.getCopyright()));
 		}
 		if (h.getLicense() != null) {
-			npCreator.addProvenanceStatement(belDocResource, dcLicense, vf.createLiteral(h.getLicense()));
+			npCreator.addProvenanceStatement(belDocResource, DCTERMS.LICENSE, vf.createLiteral(h.getLicense()));
 		}
 		if (h.getVersion() != null) {
 			npCreator.addProvenanceStatement(belDocResource, pavVersion, vf.createLiteral(h.getVersion()));
