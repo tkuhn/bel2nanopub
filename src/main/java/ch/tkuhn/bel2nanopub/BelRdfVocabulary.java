@@ -55,11 +55,6 @@ public class BelRdfVocabulary {
 		abundanceFunctionMap.put("composite", new URIImpl(BELV_NS + "CompositeAbundance"));
 //		functionMap.put("bp", new URIImpl(BELV_NS + "BiologicalProcess"));
 //		functionMap.put("path", new URIImpl(BELV_NS + "Pathology"));
-
-		// TODO remove these from here:
-		abundanceFunctionMap.put("reactants", new URIImpl(BELV_NS + "ReactionReactants"));  // (Made up URI, not used by official BEL tools)
-		abundanceFunctionMap.put("products", new URIImpl(BELV_NS + "ReactionProducts"));  // (Made up URI, not used by official BEL tools)
-		abundanceFunctionMap.put("list", new URIImpl(BELV_NS + "List"));  // (Made up URI, not used by official BEL tools)
 	}
 
 	public static URI getAbundanceFunction(String abbrev) {
@@ -74,7 +69,7 @@ public class BelRdfVocabulary {
 		transformFunctionMap.put("tloc", new URIImpl(BELV_NS + "Translocation"));
 		transformFunctionMap.put("sec", new URIImpl(BELV_NS + "CellSecretion"));
 		transformFunctionMap.put("deg", new URIImpl(BELV_NS + "Degradation"));
-		transformFunctionMap.put("surf", new URIImpl(BELV_NS + "CellSurfaceExpression"));  // (Made up URI, not used by official BEL tools)
+		transformFunctionMap.put("surf", new URIImpl(BELV_NS + "CellSurfaceExpression"));  // (Made-up URI, not used by official BEL tools)
 	}
 
 	public static URI getTransformFunction(String abbrev) {

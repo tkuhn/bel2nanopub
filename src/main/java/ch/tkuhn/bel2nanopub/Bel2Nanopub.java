@@ -295,10 +295,20 @@ public class Bel2Nanopub {
 					npCreator.addAssertionStatement(r, RDF.TYPE, abUri);
 				}
 			} else if (trUri != null) {
+				// TODO support this
 				throw new Bel2NanopubException("Transformation functions are not yet supported: " + term);
 			} else if (actUri != null) {
 				r = handleActivityTerm(term, npCreator);
 				npCreator.addAssertionStatement(r, RDF.TYPE, actUri);
+			} else if ("reactants".equals(funcAbbrev)) {
+				// TODO support this
+				throw new Bel2NanopubException("'reactants' function is not yet supported: " + term);
+			} else if ("products".equals(funcAbbrev)) {
+				// TODO support this
+				throw new Bel2NanopubException("'products' function is not yet supported: " + term);
+			} else if ("list".equals(funcAbbrev)) {
+				// TODO support this
+				throw new Bel2NanopubException("'list' function is not yet supported: " + term);
 			} else {
 				throw new Bel2NanopubException("Unknown function: " + funcAbbrev);
 			}
