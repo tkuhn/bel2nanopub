@@ -291,24 +291,24 @@ public class Bel2Nanopub {
 				if (isProteinVariantTerm(abUri, term)) {
 					r = handleProteinVariantTerm(term, npCreator);
 				} else {
-					r = handleNormalTerm(term, npCreator);
+					r = handleAbundanceTerm(term, npCreator);
 					npCreator.addAssertionStatement(r, RDF.TYPE, abUri);
 				}
 			} else if (trUri != null) {
 				// TODO support this
-				throw new Bel2NanopubException("Transformation functions are not yet supported: " + term);
+				throw new Bel2NanopubException("Transformation functions are not yet supported: " + term.getFunctionEnum());
 			} else if (actUri != null) {
 				r = handleActivityTerm(term, npCreator);
 				npCreator.addAssertionStatement(r, RDF.TYPE, actUri);
 			} else if ("reactants".equals(funcAbbrev)) {
 				// TODO support this
-				throw new Bel2NanopubException("'reactants' function is not yet supported: " + term);
+				throw new Bel2NanopubException("'reactants' function is not yet supported");
 			} else if ("products".equals(funcAbbrev)) {
 				// TODO support this
-				throw new Bel2NanopubException("'products' function is not yet supported: " + term);
+				throw new Bel2NanopubException("'products' function is not yet supported");
 			} else if ("list".equals(funcAbbrev)) {
 				// TODO support this
-				throw new Bel2NanopubException("'list' function is not yet supported: " + term);
+				throw new Bel2NanopubException("'list' function is not yet supported");
 			} else {
 				throw new Bel2NanopubException("Unknown function: " + funcAbbrev);
 			}
@@ -358,29 +358,35 @@ public class Bel2Nanopub {
 		return bn;
 	}
 
-	private Resource handleNormalTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
+	private Resource handleAbundanceTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
 		BNode bn = newBNode();
+		if (!term.getTerms().isEmpty() && !term.getParameters().isEmpty()) {
+			throw new Bel2NanopubException("Unexpected presence of both, terms and parameters: " + term.getFunctionEnum());
+		}
 		if (!term.getTerms().isEmpty()) {
 			npCreator.addNamespace("obo", ThirdPartyVocabulary.oboNs);
-		}
-		for (Term child : term.getTerms()) {
-			Resource ch = processBelTerm(child, npCreator);
-			// TODO is this always correct?
-			npCreator.addAssertionStatement(bn, bfoHasPart, ch);
-		}
-		for (Parameter p : term.getParameters()) {
-			URI cUri = getUriFromParam(p, npCreator);
+			for (Term child : term.getTerms()) {
+				Resource ch = processBelTerm(child, npCreator);
+				npCreator.addAssertionStatement(bn, bfoHasPart, ch);
+			}
+		} else if (!term.getParameters().isEmpty()) {
+			if (term.getParameters().size() > 1) {
+				throw new Bel2NanopubException("Expecting only one parameter for: " + term.getFunctionEnum());
+			}
+			URI cUri = getUriFromParam(term.getParameters().get(0), npCreator);
 			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasConcept, cUri);
+		} else {
+			throw new Bel2NanopubException("Empty abundance term: " + term.getFunctionEnum());
 		}
 		return bn;
 	}
 
 	private Resource handleActivityTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
 		if (term.getTerms().size() != 1) {
-			throw new Bel2NanopubException("Expected exactly 1 term for activity: " + term);
+			throw new Bel2NanopubException("Expected exactly 1 term for activity: " + term.getFunctionEnum());
 		}
 		if (term.getParameters().size() > 0) {
-			throw new Bel2NanopubException("Unexpected parameters for activity: " + term);
+			throw new Bel2NanopubException("Unexpected parameters for activity: " + term.getFunctionEnum());
 		}
 		BNode bn = newBNode();
 		Resource ch = processBelTerm(term.getTerms().get(0), npCreator);
