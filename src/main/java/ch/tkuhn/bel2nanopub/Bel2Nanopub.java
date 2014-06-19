@@ -282,8 +282,8 @@ public class Bel2Nanopub {
 	private Resource processBelTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
 		Resource r;
 		String funcAbbrev = getFunctionAbbrev(term);
-		if (funcAbbrev.matches("bp|path")) {
-			// Direct mapping (without "hasConcept")
+		if (BelRdfVocabulary.isProcessFunction(funcAbbrev)) {
+			// Direct mapping
 			if (term.getParameters().size() != 1 || term.getTerms().size() != 0) {
 				throw new Bel2NanopubException("Unexpected parameters or child terms");
 			}

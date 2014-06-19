@@ -56,14 +56,17 @@ public class BelRdfVocabulary {
 		abundanceFunctionMap.put("m", new URIImpl(BELV_NS + "microRNAAbundance"));
 		abundanceFunctionMap.put("complex", new URIImpl(BELV_NS + "ComplexAbundance"));
 		abundanceFunctionMap.put("composite", new URIImpl(BELV_NS + "CompositeAbundance"));
-//		functionMap.put("bp", new URIImpl(BELV_NS + "BiologicalProcess"));
-//		functionMap.put("path", new URIImpl(BELV_NS + "Pathology"));
 	}
 
 	public static URI getAbundanceFunction(String abbrev) {
 		return abundanceFunctionMap.get(abbrev);
 	}
 
+	public static boolean isProcessFunction(String abbrev) {
+		//functionMap.put("bp", new URIImpl(BELV_NS + "BiologicalProcess"));
+		//functionMap.put("path", new URIImpl(BELV_NS + "Pathology"));
+		return "bp".equals(abbrev) || "path".equals(abbrev);
+	}
 
 	private static Map<String,URI> transformFunctionMap = new HashMap<String,URI>();
 
