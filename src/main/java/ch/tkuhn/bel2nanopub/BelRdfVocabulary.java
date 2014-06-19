@@ -43,32 +43,42 @@ public class BelRdfVocabulary {
 	public static final URI hasModificationType = new URIImpl(BELV_NS + "hasModificationType");
 
 
-	private static Map<String,URI> functionMap = new HashMap<String,URI>();
+	private static Map<String,URI> abundanceFunctionMap = new HashMap<String,URI>();
 
 	static {
-		functionMap.put("a", new URIImpl(BELV_NS + "Abundance"));
-		functionMap.put("g", new URIImpl(BELV_NS + "GeneAbundance"));
-		functionMap.put("p", new URIImpl(BELV_NS + "ProteinAbundance"));
-		functionMap.put("r", new URIImpl(BELV_NS + "RNAAbundance"));
-		functionMap.put("m", new URIImpl(BELV_NS + "microRNAAbundance"));
-		functionMap.put("complex", new URIImpl(BELV_NS + "ComplexAbundance"));
-		functionMap.put("composite", new URIImpl(BELV_NS + "CompositeAbundance"));
+		abundanceFunctionMap.put("a", new URIImpl(BELV_NS + "Abundance"));
+		abundanceFunctionMap.put("g", new URIImpl(BELV_NS + "GeneAbundance"));
+		abundanceFunctionMap.put("p", new URIImpl(BELV_NS + "ProteinAbundance"));
+		abundanceFunctionMap.put("r", new URIImpl(BELV_NS + "RNAAbundance"));
+		abundanceFunctionMap.put("m", new URIImpl(BELV_NS + "microRNAAbundance"));
+		abundanceFunctionMap.put("complex", new URIImpl(BELV_NS + "ComplexAbundance"));
+		abundanceFunctionMap.put("composite", new URIImpl(BELV_NS + "CompositeAbundance"));
 //		functionMap.put("bp", new URIImpl(BELV_NS + "BiologicalProcess"));
 //		functionMap.put("path", new URIImpl(BELV_NS + "Pathology"));
-		functionMap.put("rxn", new URIImpl(BELV_NS + "Reaction"));
-		functionMap.put("tloc", new URIImpl(BELV_NS + "Translocation"));
-		functionMap.put("sec", new URIImpl(BELV_NS + "CellSecretion"));
-		functionMap.put("deg", new URIImpl(BELV_NS + "Degradation"));
 
-		// Made up URIs, not used by official BEL tools:
-		functionMap.put("reactants", new URIImpl(BELV_NS + "ReactionReactants"));
-		functionMap.put("products", new URIImpl(BELV_NS + "ReactionProducts"));
-		functionMap.put("surf", new URIImpl(BELV_NS + "CellSurfaceExpression"));
-		functionMap.put("list", new URIImpl(BELV_NS + "List"));
+		// TODO remove these from here:
+		abundanceFunctionMap.put("reactants", new URIImpl(BELV_NS + "ReactionReactants"));  // (Made up URI, not used by official BEL tools)
+		abundanceFunctionMap.put("products", new URIImpl(BELV_NS + "ReactionProducts"));  // (Made up URI, not used by official BEL tools)
+		abundanceFunctionMap.put("list", new URIImpl(BELV_NS + "List"));  // (Made up URI, not used by official BEL tools)
 	}
 
-	public static URI getFunction(String abbrev) {
-		return functionMap.get(abbrev);
+	public static URI getAbundanceFunction(String abbrev) {
+		return abundanceFunctionMap.get(abbrev);
+	}
+
+
+	private static Map<String,URI> transformFunctionMap = new HashMap<String,URI>();
+
+	static {
+		transformFunctionMap.put("rxn", new URIImpl(BELV_NS + "Reaction"));
+		transformFunctionMap.put("tloc", new URIImpl(BELV_NS + "Translocation"));
+		transformFunctionMap.put("sec", new URIImpl(BELV_NS + "CellSecretion"));
+		transformFunctionMap.put("deg", new URIImpl(BELV_NS + "Degradation"));
+		transformFunctionMap.put("surf", new URIImpl(BELV_NS + "CellSurfaceExpression"));  // (Made up URI, not used by official BEL tools)
+	}
+
+	public static URI getTransformFunction(String abbrev) {
+		return transformFunctionMap.get(abbrev);
 	}
 
 	private static Map<String,String> relNormalizeMap = new HashMap<String,String>();

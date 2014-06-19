@@ -284,15 +284,18 @@ public class Bel2Nanopub {
 			}
 			r = getUriFromParam(term.getParameters().get(0), npCreator);
 		} else {
-			URI funcUri = BelRdfVocabulary.getFunction(funcAbbrev);
+			URI abUri = BelRdfVocabulary.getAbundanceFunction(funcAbbrev);
+			URI trUri = BelRdfVocabulary.getTransformFunction(funcAbbrev);
 			URI actUri = BelRdfVocabulary.getActivity(funcAbbrev);
-			if (funcUri != null) {
-				if (isProteinVariantTerm(funcUri, term)) {
+			if (abUri != null) {
+				if (isProteinVariantTerm(abUri, term)) {
 					r = handleProteinVariantTerm(term, npCreator);
 				} else {
 					r = handleNormalTerm(term, npCreator);
-					npCreator.addAssertionStatement(r, RDF.TYPE, funcUri);
+					npCreator.addAssertionStatement(r, RDF.TYPE, abUri);
 				}
+			} else if (trUri != null) {
+				throw new Bel2NanopubException("Transformation functions are not yet supported: " + term);
 			} else if (actUri != null) {
 				r = handleActivityTerm(term, npCreator);
 				npCreator.addAssertionStatement(r, RDF.TYPE, actUri);
@@ -304,7 +307,7 @@ public class Bel2Nanopub {
 	}
 
 	private boolean isProteinVariantTerm(URI funcUri, Term term) {
-		if (!funcUri.equals(BelRdfVocabulary.getFunction("p"))) return false;
+		if (!funcUri.equals(BelRdfVocabulary.getAbundanceFunction("p"))) return false;
 		return (term.getTerms().size() > 0);
 	}
 
