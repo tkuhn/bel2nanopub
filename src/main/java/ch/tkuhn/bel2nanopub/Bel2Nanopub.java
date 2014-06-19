@@ -41,6 +41,7 @@ import org.openrdf.model.impl.BNodeImpl;
 import org.openrdf.model.impl.LiteralImpl;
 import org.openrdf.model.impl.URIImpl;
 import org.openrdf.model.impl.ValueFactoryImpl;
+import org.openrdf.model.vocabulary.DCTERMS;
 import org.openrdf.model.vocabulary.RDF;
 import org.openrdf.model.vocabulary.RDFS;
 import org.openrdf.rio.RDFFormat;
@@ -380,8 +381,12 @@ public class Bel2Nanopub {
 		String annNs = annotationMap.get(annN);
 		if (annNs == null) {
 			for (String annV : ann.getValues()) {
-				Literal annL = vf.createLiteral(annV);
-				npCreator.addAssertionStatement(node, BelRdfVocabulary.hasAnnotation, annL);
+				BNode annBn = newBNode();
+				Literal annType = vf.createLiteral(annN);
+				Literal annValue = vf.createLiteral(annV);
+				npCreator.addAssertionStatement(node, BelRdfVocabulary.hasAnnotation, annBn);
+				npCreator.addAssertionStatement(annBn, DCTERMS.SUBJECT, annType);
+				npCreator.addAssertionStatement(annBn, RDF.VALUE, annValue);
 			}
 		} else {
 			for (String annV : ann.getValues()) {
@@ -394,7 +399,11 @@ public class Bel2Nanopub {
 					npCreator.addNamespace("obo", ThirdPartyVocabulary.oboNs);
 					npCreator.addAssertionStatement(node, ThirdPartyVocabulary.bfoOccursIn, annUri);
 				} else {
-					npCreator.addAssertionStatement(node, BelRdfVocabulary.hasAnnotation, annUri);
+					BNode annBn = newBNode();
+					Literal annType = vf.createLiteral(annN);
+					npCreator.addAssertionStatement(node, BelRdfVocabulary.hasAnnotation, annBn);
+					npCreator.addAssertionStatement(annBn, DCTERMS.SUBJECT, annType);
+					npCreator.addAssertionStatement(annBn, RDF.VALUE, annUri);
 				}
 			}
 		}
