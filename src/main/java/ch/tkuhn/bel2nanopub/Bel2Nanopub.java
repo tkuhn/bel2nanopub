@@ -295,8 +295,7 @@ public class Bel2Nanopub {
 					npCreator.addAssertionStatement(r, RDF.TYPE, abUri);
 				}
 			} else if (trUri != null) {
-				// TODO support this
-				throw new Bel2NanopubException("Transformation functions are not yet supported: " + term.getFunctionEnum());
+				r = handleTransformationTerm(term, npCreator);
 			} else if (actUri != null) {
 				r = handleActivityTerm(term, npCreator);
 				npCreator.addAssertionStatement(r, RDF.TYPE, actUri);
@@ -392,6 +391,47 @@ public class Bel2Nanopub {
 		Resource ch = processBelTerm(term.getTerms().get(0), npCreator);
 		npCreator.addAssertionStatement(bn, BelRdfVocabulary.activityOf, ch);
 		return bn;
+	}
+
+	private Resource handleTransformationTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
+		String funcAbbrev = term.getFunctionEnum().getAbbreviation();
+		int tc = term.getTerms().size();
+		int pc = term.getParameters().size();
+		//BNode bn = newBNode();
+		if ("tloc".equals(funcAbbrev)) {
+			if (tc != 1 || pc != 2) {
+				throw new Bel2NanopubException("Invalid format for 'tloc'");
+			}
+			// TODO support this
+			throw new Bel2NanopubException("Transformation function 'tloc' is not yet supported");
+		} else if ("sec".equals(funcAbbrev)) {
+			if (tc != 1 || pc != 0) {
+				throw new Bel2NanopubException("Invalid format for 'sec'");
+			}
+			// TODO support this
+			throw new Bel2NanopubException("Transformation function 'sec' is not yet supported");
+		} else if ("surf".equals(funcAbbrev)) {
+			if (tc != 1 || pc != 0) {
+				throw new Bel2NanopubException("Invalid format for 'surf'");
+			}
+			// TODO support this
+			throw new Bel2NanopubException("Transformation function 'surf' is not yet supported");
+		} else if ("deg".equals(funcAbbrev)) {
+			if (tc != 1 || pc != 0) {
+				throw new Bel2NanopubException("Invalid format for 'deg'");
+			}
+			// TODO support this
+			throw new Bel2NanopubException("Transformation function 'deg' is not yet supported");
+		} else if ("rxn".equals(funcAbbrev)) {
+			if (tc != 2 || pc != 0) {
+				throw new Bel2NanopubException("Invalid format for 'rxn'");
+			}
+			// TODO support this
+			throw new Bel2NanopubException("Transformation function 'rxn' is not yet supported");
+		} else {
+			throw new Bel2NanopubException("Unexpected unrecognized transformation function: " + funcAbbrev);
+		}
+		//return bn;
 	}
 
 	private URI getUriFromParam(Parameter param, NanopubCreator npCreator) throws Bel2NanopubException {

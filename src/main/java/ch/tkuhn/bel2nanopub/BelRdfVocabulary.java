@@ -67,11 +67,11 @@ public class BelRdfVocabulary {
 	private static Map<String,URI> transformFunctionMap = new HashMap<String,URI>();
 
 	static {
-		transformFunctionMap.put("rxn", new URIImpl(BELV_NS + "Reaction"));
 		transformFunctionMap.put("tloc", new URIImpl(BELV_NS + "Translocation"));
 		transformFunctionMap.put("sec", new URIImpl(BELV_NS + "CellSecretion"));
-		transformFunctionMap.put("deg", new URIImpl(BELV_NS + "Degradation"));
 		transformFunctionMap.put("surf", new URIImpl(BELV_NS + "CellSurfaceExpression"));  // (Made-up URI, not used by official BEL tools)
+		transformFunctionMap.put("deg", new URIImpl(BELV_NS + "Degradation"));
+		transformFunctionMap.put("rxn", new URIImpl(BELV_NS + "Reaction"));
 	}
 
 	public static URI getTransformFunction(String abbrev) {
