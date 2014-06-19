@@ -1,5 +1,5 @@
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RALl42mEz6Gu4sZMpMvuKxNmWq5mUmlhq9PoxBjJxyaLQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RALl42mEz6Gu4sZMpMvuKxNmWq5mUmlhq9PoxBjJxyaLQ#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAWbjDt4ozaAi_Tpa6VmynfKrOkcvBbobleO4YdapfzuI> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAWbjDt4ozaAi_Tpa6VmynfKrOkcvBbobleO4YdapfzuI#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -9,9 +9,9 @@
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -31,7 +31,7 @@ sub:Assert {
 		a belv:Abundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
-		a belv:AbundanceActivity , belv:KinaseActivity .
+		a belv:KinaseActivity .
 	
 	sub:_3 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
@@ -67,8 +67,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAYLnTfgKzpDSsqMvYlD5TGs3mTqEg5sbJ9jU9aqyn7VU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAYLnTfgKzpDSsqMvYlD5TGs3mTqEg5sbJ9jU9aqyn7VU#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAGejkV9kS9yJx1sZ1jVT8i5dVmKhVUJF6-jMQrh2KA_c> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAGejkV9kS9yJx1sZ1jVT8i5dVmKhVUJF6-jMQrh2KA_c#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -78,9 +78,9 @@ sub:Info {
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -100,7 +100,7 @@ sub:Assert {
 		a belv:Abundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
-		a belv:AbundanceActivity , belv:KinaseActivity .
+		a belv:KinaseActivity .
 	
 	sub:_3 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
@@ -136,8 +136,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAYWJAl2oRZkp6BGRsn2KV67fP7PzXOwwRc5z3mugBRYs> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAYWJAl2oRZkp6BGRsn2KV67fP7PzXOwwRc5z3mugBRYs#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RASHUJIUaCgBMSo9ea9xteU2jQDRLWddCs2JWzTwZ4bqA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RASHUJIUaCgBMSo9ea9xteU2jQDRLWddCs2JWzTwZ4bqA#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -147,9 +147,9 @@ sub:Info {
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -169,7 +169,7 @@ sub:Assert {
 		a belv:Abundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
-		a belv:AbundanceActivity , belv:KinaseActivity .
+		a belv:KinaseActivity .
 	
 	sub:_3 belv:hasConcept pfh:MAPK%20p38%20Family ;
 		a belv:ProteinAbundance .
@@ -205,8 +205,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAAgKjmI5h2U1BxBog6-E16P8xLKfJpuFHRDrBcyS5foM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAAgKjmI5h2U1BxBog6-E16P8xLKfJpuFHRDrBcyS5foM#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAQS9dMGDNKP9BuO77zPx-J0htvtDhaOwj1mPTU7e9oUc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAQS9dMGDNKP9BuO77zPx-J0htvtDhaOwj1mPTU7e9oUc#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -217,8 +217,8 @@ sub:Info {
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -239,7 +239,7 @@ sub:Assert {
 		a belv:ModifiedProteinAbundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
-		a belv:AbundanceActivity , belv:KinaseActivity .
+		a belv:KinaseActivity .
 	
 	sub:_3 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
@@ -275,8 +275,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAl4Gu88W0w9Uvj7-x1IOaHirtOysJrLI4gYBilGi-UsE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAl4Gu88W0w9Uvj7-x1IOaHirtOysJrLI4gYBilGi-UsE#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA2soekKzEDHZVy4fxYDt3lV_ZaBjLSL6dSRBptt0i6uk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA2soekKzEDHZVy4fxYDt3lV_ZaBjLSL6dSRBptt0i6uk#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -287,8 +287,8 @@ sub:Info {
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -309,7 +309,7 @@ sub:Assert {
 		a belv:ModifiedProteinAbundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
-		a belv:AbundanceActivity , belv:KinaseActivity .
+		a belv:KinaseActivity .
 	
 	sub:_3 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
@@ -345,8 +345,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7Ybk0ir4B7Ihdx__UEErKCwAq_6hw8WIfVVXDaybnnI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7Ybk0ir4B7Ihdx__UEErKCwAq_6hw8WIfVVXDaybnnI#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1D7G91HpJyoSJ5bNnOuNag6UVXc0WSgyedtLRA-B5PU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1D7G91HpJyoSJ5bNnOuNag6UVXc0WSgyedtLRA-B5PU#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -357,8 +357,8 @@ sub:Info {
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -379,7 +379,7 @@ sub:Assert {
 		a belv:ModifiedProteinAbundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
-		a belv:AbundanceActivity , belv:KinaseActivity .
+		a belv:KinaseActivity .
 	
 	sub:_3 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
@@ -415,8 +415,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAiakvtbB2jjPrDYSeY6N0kCyYlG5zHv8RFdV8bP9I7zA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAiakvtbB2jjPrDYSeY6N0kCyYlG5zHv8RFdV8bP9I7zA#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAuyhlOnQCT7b4diiZQ7mtONGZKKePs86eCLirn6SWMnQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAuyhlOnQCT7b4diiZQ7mtONGZKKePs86eCLirn6SWMnQ#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -427,8 +427,8 @@ sub:Info {
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -449,7 +449,7 @@ sub:Assert {
 		a belv:ModifiedProteinAbundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
-		a belv:AbundanceActivity , belv:KinaseActivity .
+		a belv:KinaseActivity .
 	
 	sub:_3 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
@@ -485,8 +485,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAmWPUpfPU2BpAcGDICuATf7D_0DTKm1MBcUKytknem5k> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAmWPUpfPU2BpAcGDICuATf7D_0DTKm1MBcUKytknem5k#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAibk6S2y23uWKlKRN_UEBqXNOB4bBQ42Pw87GsIXbCL4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAibk6S2y23uWKlKRN_UEBqXNOB4bBQ42Pw87GsIXbCL4#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -497,9 +497,9 @@ sub:Info {
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -520,7 +520,7 @@ sub:Assert {
 		a belv:ModifiedProteinAbundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
-		a belv:AbundanceActivity , belv:KinaseActivity .
+		a belv:KinaseActivity .
 	
 	sub:_3 belv:hasConcept pfh:MAPK%20p38%20Family ;
 		a belv:ProteinAbundance .
@@ -556,8 +556,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RALSa2BgrjG8s_alYyAEUSCcQAs02SgIEzWXUT7tDuvS0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RALSa2BgrjG8s_alYyAEUSCcQAs02SgIEzWXUT7tDuvS0#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA0x-kFLCtEl_GKw31vsTzYQyY3uDyRkqCPXVVTHGU-DI> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA0x-kFLCtEl_GKw31vsTzYQyY3uDyRkqCPXVVTHGU-DI#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -568,9 +568,9 @@ sub:Info {
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -591,7 +591,7 @@ sub:Assert {
 		a belv:ModifiedProteinAbundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
-		a belv:AbundanceActivity , belv:KinaseActivity .
+		a belv:KinaseActivity .
 	
 	sub:_3 belv:hasConcept pfh:MAPK%20p38%20Family ;
 		a belv:ProteinAbundance .
@@ -627,8 +627,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAeJtkTEGz-_00qbh9dvffmeBkoGc-xCCwh6CUUhR8ldc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAeJtkTEGz-_00qbh9dvffmeBkoGc-xCCwh6CUUhR8ldc#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAdkej5OZxxxkdkvuixbiK6_eY7Hnzas7UNWZt70ZOUzU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAdkej5OZxxxkdkvuixbiK6_eY7Hnzas7UNWZt70ZOUzU#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -637,10 +637,10 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -657,7 +657,7 @@ sub:Assert {
 	sub:Assert rdfs:label "phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK1,pmod(P))" .
 	
 	sub:_1 belv:activityOf sub:_2 ;
-		a belv:AbundanceActivity , belv:PhosphataseActivity .
+		a belv:PhosphataseActivity .
 	
 	sub:_2 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
@@ -697,8 +697,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAEDHSAeZaX9zFjDhnD4yfFleQlk7Z7aHqsjdb5qIhSUg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAEDHSAeZaX9zFjDhnD4yfFleQlk7Z7aHqsjdb5qIhSUg#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAmOW7Sb45IA9fJvB6UgRuTofA4rOoPStZTvWlFYTvxps> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAmOW7Sb45IA9fJvB6UgRuTofA4rOoPStZTvWlFYTvxps#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -707,10 +707,10 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -727,7 +727,7 @@ sub:Assert {
 	sub:Assert rdfs:label "phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK8,pmod(P))" .
 	
 	sub:_1 belv:activityOf sub:_2 ;
-		a belv:AbundanceActivity , belv:PhosphataseActivity .
+		a belv:PhosphataseActivity .
 	
 	sub:_2 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
@@ -767,8 +767,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RApkBjWf3TEvctKYDShQYTad_RFEL6zJqHgHR_V6IlaPY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RApkBjWf3TEvctKYDShQYTad_RFEL6zJqHgHR_V6IlaPY#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAvAELytUBthVLl9i9aIpAHK9A9OGhu9oyxByRKf2FDCY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAvAELytUBthVLl9i9aIpAHK9A9OGhu9oyxByRKf2FDCY#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -777,11 +777,11 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -798,7 +798,7 @@ sub:Assert {
 	sub:Assert rdfs:label "phos(p(HGNC:DUSP1)) =| p(PFH:\"MAPK p38 Family\",pmod(P))" .
 	
 	sub:_1 belv:activityOf sub:_2 ;
-		a belv:AbundanceActivity , belv:PhosphataseActivity .
+		a belv:PhosphataseActivity .
 	
 	sub:_2 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
@@ -838,8 +838,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1hCnMixFTxJkE-luZQQX1AX5JQiFsqLaJ1JZBEg_wKE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1hCnMixFTxJkE-luZQQX1AX5JQiFsqLaJ1JZBEg_wKE#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAOBharKmQ0hvMDH6onHTuHgB6W9952zOastMK21MtxOo> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAOBharKmQ0hvMDH6onHTuHgB6W9952zOastMK21MtxOo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -848,9 +848,9 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -867,13 +867,13 @@ sub:Assert {
 	sub:Assert rdfs:label "phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK1))" .
 	
 	sub:_1 belv:activityOf sub:_2 ;
-		a belv:AbundanceActivity , belv:PhosphataseActivity .
+		a belv:PhosphataseActivity .
 	
 	sub:_2 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
 	sub:_3 belv:activityOf sub:_4 ;
-		a belv:AbundanceActivity , belv:KinaseActivity .
+		a belv:KinaseActivity .
 	
 	sub:_4 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
@@ -909,8 +909,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RASi_c9p4Y1uE12SaZd-NC6aLnTd05i4Ub8uBWZRluvYA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RASi_c9p4Y1uE12SaZd-NC6aLnTd05i4Ub8uBWZRluvYA#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAFgz_lPlGSZUXhEF2Odabo79Sw4U9aJ-EDyZLG7F_3VA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAFgz_lPlGSZUXhEF2Odabo79Sw4U9aJ-EDyZLG7F_3VA#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -919,9 +919,9 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -938,13 +938,13 @@ sub:Assert {
 	sub:Assert rdfs:label "phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK8))" .
 	
 	sub:_1 belv:activityOf sub:_2 ;
-		a belv:AbundanceActivity , belv:PhosphataseActivity .
+		a belv:PhosphataseActivity .
 	
 	sub:_2 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
 	sub:_3 belv:activityOf sub:_4 ;
-		a belv:AbundanceActivity , belv:KinaseActivity .
+		a belv:KinaseActivity .
 	
 	sub:_4 belv:hasConcept hgnc:6881 ;
 		a belv:ProteinAbundance .
@@ -980,8 +980,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RArbfWul8_XABxsKD17v6U6BQ-UYC0MY0rMJMoaVzfIOA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RArbfWul8_XABxsKD17v6U6BQ-UYC0MY0rMJMoaVzfIOA#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAg9A_G3AB-wPB2nzxtt4nKc2zp2ruw3oFun7k2T1itqs> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAg9A_G3AB-wPB2nzxtt4nKc2zp2ruw3oFun7k2T1itqs#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -990,10 +990,10 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -1010,13 +1010,13 @@ sub:Assert {
 	sub:Assert rdfs:label "phos(p(HGNC:DUSP1)) =| kin(p(PFH:\"MAPK p38 Family\"))" .
 	
 	sub:_1 belv:activityOf sub:_2 ;
-		a belv:AbundanceActivity , belv:PhosphataseActivity .
+		a belv:PhosphataseActivity .
 	
 	sub:_2 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
 	sub:_3 belv:activityOf sub:_4 ;
-		a belv:AbundanceActivity , belv:KinaseActivity .
+		a belv:KinaseActivity .
 	
 	sub:_4 belv:hasConcept pfh:MAPK%20p38%20Family ;
 		a belv:ProteinAbundance .
@@ -1118,8 +1118,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAjoJMxcG3mh8jer4g17PDnjs27KsNzL93kD13y2tuzPo> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAjoJMxcG3mh8jer4g17PDnjs27KsNzL93kD13y2tuzPo#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RADZ_efwWgddHy57ugplCuJsoT2fDa_a7ytFodmKYXWCE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RADZ_efwWgddHy57ugplCuJsoT2fDa_a7ytFodmKYXWCE#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1129,9 +1129,9 @@ sub:Info {
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -1157,7 +1157,7 @@ sub:Assert {
 		a rdf:Statement .
 	
 	sub:_3 belv:activityOf sub:_1 ;
-		a belv:AbundanceActivity , belv:TranscriptionActivity .
+		a belv:TranscriptionActivity .
 	
 	sub:_4 belv:hasConcept chebi:746 ;
 		a belv:Abundance .
@@ -1187,8 +1187,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RApVTeP09g8OYkGg3VJ63X4QYwpGv73ztL1RiMuTehCs0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RApVTeP09g8OYkGg3VJ63X4QYwpGv73ztL1RiMuTehCs0#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAr5t1CVcPLHN8SMYXI9_abq8ZK9OOzfP5q3VBc69Lp20> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAr5t1CVcPLHN8SMYXI9_abq8ZK9OOzfP5q3VBc69Lp20#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1197,9 +1197,9 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -1216,13 +1216,13 @@ sub:Assert {
 	sub:Assert rdfs:label "phos(p(HGNC:DUSP1)) -| tscript(p(HGNC:JUN))" .
 	
 	sub:_1 belv:activityOf sub:_2 ;
-		a belv:AbundanceActivity , belv:PhosphataseActivity .
+		a belv:PhosphataseActivity .
 	
 	sub:_2 belv:hasConcept hgnc:3064 ;
 		a belv:ProteinAbundance .
 	
 	sub:_3 belv:activityOf sub:_4 ;
-		a belv:AbundanceActivity , belv:TranscriptionActivity .
+		a belv:TranscriptionActivity .
 	
 	sub:_4 belv:hasConcept hgnc:6204 ;
 		a belv:ProteinAbundance .
@@ -1258,8 +1258,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAsFlWnDdHHRUCGdtrm3tBamiaM69KFSBwmMPBvhjsUFI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAsFlWnDdHHRUCGdtrm3tBamiaM69KFSBwmMPBvhjsUFI#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RASaS6XIe9YUDs0EehqtYnrS8z_wnd4ItEo8VxYq9wfOE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RASaS6XIe9YUDs0EehqtYnrS8z_wnd4ItEo8VxYq9wfOE#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1269,9 +1269,9 @@ sub:Info {
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -1291,7 +1291,7 @@ sub:Assert {
 		a belv:Abundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
-		a belv:AbundanceActivity , belv:TranscriptionActivity .
+		a belv:TranscriptionActivity .
 	
 	sub:_3 belv:hasConcept hgnc:3321 ;
 		a belv:ProteinAbundance .
@@ -1327,8 +1327,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAaXnqsMa_9iXAbm1DMtZIznh_U032oqaTcKfhHZ4VOKw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAaXnqsMa_9iXAbm1DMtZIznh_U032oqaTcKfhHZ4VOKw#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAEu-cqlcy6O04Omre6yxOpfTZ2VeedPgl_n0PuQQPh1E> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAEu-cqlcy6O04Omre6yxOpfTZ2VeedPgl_n0PuQQPh1E#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1338,9 +1338,9 @@ sub:Info {
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -1360,7 +1360,7 @@ sub:Assert {
 		a belv:Abundance .
 	
 	sub:_2 belv:activityOf sub:_3 ;
-		a belv:AbundanceActivity , belv:TranscriptionActivity .
+		a belv:TranscriptionActivity .
 	
 	sub:_3 belv:hasConcept hgnc:7553 ;
 		a belv:ProteinAbundance .
@@ -1470,8 +1470,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7pCdnbiYNWqoU2WOkTirgICe9LX89aUxqgxFE6UOP74> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7pCdnbiYNWqoU2WOkTirgICe9LX89aUxqgxFE6UOP74#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAvaMDQUmeLc2wgriGp8Q4FjdwNLUsF-L-nWQFnNndeZs> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAvaMDQUmeLc2wgriGp8Q4FjdwNLUsF-L-nWQFnNndeZs#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1480,10 +1480,10 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -1500,7 +1500,7 @@ sub:Assert {
 	sub:Assert rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1)" , "kin(p(HGNC:MAPK1)) -> (a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1))" .
 	
 	sub:_1 belv:activityOf sub:_2 ;
-		a belv:AbundanceActivity , belv:KinaseActivity .
+		a belv:KinaseActivity .
 	
 	sub:_2 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .
@@ -1547,8 +1547,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAfwHWRR0yjFifybaeRdvygybSAs6A3z1XtRYmwvnJij0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAfwHWRR0yjFifybaeRdvygybSAs6A3z1XtRYmwvnJij0#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAQZRMHteItj5C7T-NHIn33HAzFwEGXV1fbRImHHTbbsw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAQZRMHteItj5C7T-NHIn33HAzFwEGXV1fbRImHHTbbsw#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1557,9 +1557,9 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -1576,7 +1576,7 @@ sub:Assert {
 	sub:Assert rdfs:label "kin(p(HGNC:MAPK1)) -> p(HGNC:DUSP1)" .
 	
 	sub:_1 belv:activityOf sub:_2 ;
-		a belv:AbundanceActivity , belv:KinaseActivity .
+		a belv:KinaseActivity .
 	
 	sub:_2 belv:hasConcept hgnc:6871 ;
 		a belv:ProteinAbundance .

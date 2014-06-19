@@ -37,6 +37,7 @@ public class BelRdfVocabulary {
 	public static final URI activityOf = new URIImpl(BELV_NS + "activityOf");
 	// ---
 
+	//public static final URI abundanceActivity = new URIImpl(BELV_NS + "AbundanceActivity");
 	public static final URI proteinVariantAbundance = new URIImpl(BELV_NS + "ProteinVariantAbundance");
 	public static final URI modifiedProteinAbundance = new URIImpl(BELV_NS + "ModifiedProteinAbundance");
 	public static final URI hasModificationType = new URIImpl(BELV_NS + "hasModificationType");
@@ -58,16 +59,6 @@ public class BelRdfVocabulary {
 		functionMap.put("tloc", new URIImpl(BELV_NS + "Translocation"));
 		functionMap.put("sec", new URIImpl(BELV_NS + "CellSecretion"));
 		functionMap.put("deg", new URIImpl(BELV_NS + "Degradation"));
-		functionMap.put("cat", new URIImpl(BELV_NS + "AbundanceActivity"));
-		functionMap.put("chap", new URIImpl(BELV_NS + "AbundanceActivity"));
-		functionMap.put("gtp", new URIImpl(BELV_NS + "AbundanceActivity"));
-		functionMap.put("kin", new URIImpl(BELV_NS + "AbundanceActivity"));
-		functionMap.put("act", new URIImpl(BELV_NS + "AbundanceActivity"));
-		functionMap.put("pep", new URIImpl(BELV_NS + "AbundanceActivity"));
-		functionMap.put("phos", new URIImpl(BELV_NS + "AbundanceActivity"));
-		functionMap.put("ribo", new URIImpl(BELV_NS + "AbundanceActivity"));
-		functionMap.put("tscript", new URIImpl(BELV_NS + "AbundanceActivity"));
-		functionMap.put("tport", new URIImpl(BELV_NS + "AbundanceActivity"));
 
 		// Made up URIs, not used by official BEL tools:
 		functionMap.put("reactants", new URIImpl(BELV_NS + "ReactionReactants"));

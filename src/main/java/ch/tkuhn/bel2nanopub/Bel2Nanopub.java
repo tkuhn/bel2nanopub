@@ -285,18 +285,19 @@ public class Bel2Nanopub {
 			r = getUriFromParam(term.getParameters().get(0), npCreator);
 		} else {
 			URI funcUri = BelRdfVocabulary.getFunction(funcAbbrev);
-			if (funcUri == null) {
-				throw new Bel2NanopubException("Unknown function: " + funcAbbrev);
-			}
-			if (isProteinVariantTerm(funcUri, term)) {
-				r = handleProteinVariantTerm(term, npCreator);
-			} else {
-				r = handleNormalTerm(term, npCreator);
-				npCreator.addAssertionStatement(r, RDF.TYPE, funcUri);
-			}
 			URI actUri = BelRdfVocabulary.getActivity(funcAbbrev);
-			if (actUri != null) {
+			if (funcUri != null) {
+				if (isProteinVariantTerm(funcUri, term)) {
+					r = handleProteinVariantTerm(term, npCreator);
+				} else {
+					r = handleNormalTerm(term, npCreator);
+					npCreator.addAssertionStatement(r, RDF.TYPE, funcUri);
+				}
+			} else if (actUri != null) {
+				r = handleActivityTerm(term, npCreator);
 				npCreator.addAssertionStatement(r, RDF.TYPE, actUri);
+			} else {
+				throw new Bel2NanopubException("Unknown function: " + funcAbbrev);
 			}
 		}
 		return r;
@@ -349,20 +350,28 @@ public class Bel2Nanopub {
 		if (!term.getTerms().isEmpty()) {
 			npCreator.addNamespace("obo", ThirdPartyVocabulary.oboNs);
 		}
-		String funcAbbrev = term.getFunctionEnum().getAbbreviation();
 		for (Term child : term.getTerms()) {
 			Resource ch = processBelTerm(child, npCreator);
-			if (BelRdfVocabulary.getActivity(funcAbbrev) != null) {
-				npCreator.addAssertionStatement(bn, BelRdfVocabulary.activityOf, ch);
-			} else {
-				// TODO is this always correct?
-				npCreator.addAssertionStatement(bn, bfoHasPart, ch);
-			}
+			// TODO is this always correct?
+			npCreator.addAssertionStatement(bn, bfoHasPart, ch);
 		}
 		for (Parameter p : term.getParameters()) {
 			URI cUri = getUriFromParam(p, npCreator);
 			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasConcept, cUri);
 		}
+		return bn;
+	}
+
+	private Resource handleActivityTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
+		if (term.getTerms().size() != 1) {
+			throw new Bel2NanopubException("Expected exactly 1 term for activity: " + term);
+		}
+		if (term.getParameters().size() > 0) {
+			throw new Bel2NanopubException("Unexpected parameters for activity: " + term);
+		}
+		BNode bn = newBNode();
+		Resource ch = processBelTerm(term.getTerms().get(0), npCreator);
+		npCreator.addAssertionStatement(bn, BelRdfVocabulary.activityOf, ch);
 		return bn;
 	}
 
