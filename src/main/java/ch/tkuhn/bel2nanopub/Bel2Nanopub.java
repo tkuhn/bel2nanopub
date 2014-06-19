@@ -281,8 +281,7 @@ public class Bel2Nanopub {
 
 	private Resource processBelTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
 		Resource r;
-		String funcAbbrev = term.getFunctionEnum().getAbbreviation();
-		if (funcAbbrev == null) funcAbbrev = term.getFunctionEnum().getDisplayValue();
+		String funcAbbrev = getFunctionAbbrev(term);
 		if (funcAbbrev.matches("bp|path")) {
 			// Direct mapping (without "hasConcept")
 			if (term.getParameters().size() != 1 || term.getTerms().size() != 0) {
@@ -495,7 +494,7 @@ public class Bel2Nanopub {
 			List<Resource> objs = new ArrayList<Resource>();
 			if (BelRdfVocabulary.isMultiRel(relN)) {
 				Term term = statement.getObject().getTerm();
-				if (!term.getFunctionEnum().getDisplayValue().equals("list")) {
+				if (!getFunctionAbbrev(term).equals("list")) {
 					throw new Bel2NanopubException("List expected for multi-relation: " + relN);
 				}
 				if (term.getParameters().size() > 0) {
@@ -553,6 +552,12 @@ public class Bel2Nanopub {
 			ex.printStackTrace();
 			return null;
 		}
+	}
+
+	private static String getFunctionAbbrev(Term term) {
+		String funcAbbrev = term.getFunctionEnum().getAbbreviation();
+		if (funcAbbrev == null) funcAbbrev = term.getFunctionEnum().getDisplayValue();
+		return funcAbbrev;
 	}
 
 
