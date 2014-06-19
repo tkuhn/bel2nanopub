@@ -349,9 +349,12 @@ public class Bel2Nanopub {
 
 	private Resource handleNormalTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
 		BNode bn = newBNode();
+		if (!term.getTerms().isEmpty()) {
+			npCreator.addNamespace("obo", ThirdPartyVocabulary.oboNs);
+		}
 		for (Term child : term.getTerms()) {
 			Resource ch = processBelTerm(child, npCreator);
-			npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasChild, ch);
+			npCreator.addAssertionStatement(bn, bfoHasPart, ch);
 		}
 		for (Parameter p : term.getParameters()) {
 			URI cUri = getUriFromParam(p, npCreator);

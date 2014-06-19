@@ -15,7 +15,7 @@ public class ThirdPartyVocabulary {
 	public static final URI provHadPrimarySource = new URIImpl("http://www.w3.org/ns/prov#hadPrimarySource");
 
 	public static final URI oboNs = new URIImpl("http://purl.obolibrary.org/obo/");
-	//public static final URI bfoHasPart = new URIImpl("http://purl.obolibrary.org/obo/BFO_0000051");
+	public static final URI bfoHasPart = new URIImpl("http://purl.obolibrary.org/obo/BFO_0000051");
 	public static final URI bfoOccursIn = new URIImpl("http://purl.obolibrary.org/obo/BFO_0000066");
 
 	public static final URI pavVersion = new URIImpl("http://purl.org/pav/version");
