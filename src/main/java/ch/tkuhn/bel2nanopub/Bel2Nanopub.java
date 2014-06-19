@@ -203,9 +203,11 @@ public class Bel2Nanopub {
 	private void processBelStatement(BELStatement belStatement, NanopubCreator npCreator) throws Bel2NanopubException {
 		Statement st = BELParser.parseStatement(belStatement.getStatementSyntax());
 		boolean reify = !belStatement.getAnnotations().isEmpty();
-		Resource r = processBelStatement(st, npCreator, reify);
-		for (BELAnnotation ann : belStatement.getAnnotations()) {
-			processAnnotation(ann, r, npCreator);
+		List<Resource> resources = processBelStatement(st, npCreator, reify);
+		for (Resource r : resources) {
+			for (BELAnnotation ann : belStatement.getAnnotations()) {
+				processAnnotation(ann, r, npCreator);
+			}
 		}
 		processEvidence(belStatement, npCreator);
 		processDocumentHeader(belStatement, npCreator);
@@ -269,7 +271,11 @@ public class Bel2Nanopub {
 		if (obj.getTerm() != null) {
 			return processBelTerm(obj.getTerm(), npCreator);
 		} else {
-			return processBelStatement(obj.getStatement(), npCreator, true);
+			List<Resource> resources = processBelStatement(obj.getStatement(), npCreator, true);
+			if (resources.size() != 1) {
+				throw new Bel2NanopubException("Exactly one resource expected");
+			}
+			return resources.get(0);
 		}
 	}
 
@@ -299,12 +305,6 @@ public class Bel2Nanopub {
 			} else if (actUri != null) {
 				r = handleActivityTerm(term, npCreator);
 				npCreator.addAssertionStatement(r, RDF.TYPE, actUri);
-			} else if ("list".equals(funcAbbrev)) {
-				if (term.getParameters().size() > 0) {
-					throw new Bel2NanopubException("Invalid format for 'list'");
-				}
-				// TODO support this
-				throw new Bel2NanopubException("'list' function is not yet supported" );
 			} else {
 				throw new Bel2NanopubException("Unknown function: " + funcAbbrev);
 			}
@@ -481,10 +481,10 @@ public class Bel2Nanopub {
 		}
 	}
 
-	private Resource processBelStatement(Statement statement, NanopubCreator npCreator, boolean reify) throws Bel2NanopubException {
-		Resource r;
+	private List<Resource> processBelStatement(Statement statement, NanopubCreator npCreator, boolean reify) throws Bel2NanopubException {
+		List<Resource> r = new ArrayList<Resource>();
 		if (statement.getRelationshipType() == null) {
-			r = processBelTerm(statement.getSubject(), npCreator);
+			r.add(processBelTerm(statement.getSubject(), npCreator));
 		} else {
 			Resource subj = processBelTerm(statement.getSubject(), npCreator);
 			String relN = statement.getRelationshipType().getDisplayValue();
@@ -492,16 +492,32 @@ public class Bel2Nanopub {
 			if (rel == null) {
 				throw new Bel2NanopubException("Unknown relationship: " + relN);
 			}
-			Resource obj = processBelObject(statement.getObject(), npCreator);
-			if (reify) {
-				r = newBNode();
-				npCreator.addAssertionStatement(r, RDF.TYPE, RDF.STATEMENT);
-				npCreator.addAssertionStatement(r, RDF.SUBJECT, subj);
-				npCreator.addAssertionStatement(r, RDF.PREDICATE, rel);
-				npCreator.addAssertionStatement(r, RDF.OBJECT, obj);
+			List<Resource> objs = new ArrayList<Resource>();
+			if (BelRdfVocabulary.isMultiRel(relN)) {
+				Term term = statement.getObject().getTerm();
+				if (!term.getFunctionEnum().getDisplayValue().equals("list")) {
+					throw new Bel2NanopubException("List expected for multi-relation: " + relN);
+				}
+				if (term.getParameters().size() > 0) {
+					throw new Bel2NanopubException("Invalid format for 'list'");
+				}
+				for (Term element : term.getTerms()) {
+					objs.add(processBelTerm(element, npCreator));
+				}
 			} else {
-				r = null;
-				npCreator.addAssertionStatement(subj, rel, obj);
+				objs.add(processBelObject(statement.getObject(), npCreator));
+			}
+			for (Resource obj : objs) {
+				if (reify) {
+					BNode bn = newBNode();
+					npCreator.addAssertionStatement(bn, RDF.TYPE, RDF.STATEMENT);
+					npCreator.addAssertionStatement(bn, RDF.SUBJECT, subj);
+					npCreator.addAssertionStatement(bn, RDF.PREDICATE, rel);
+					npCreator.addAssertionStatement(bn, RDF.OBJECT, obj);
+					r.add(bn);
+				} else {
+					npCreator.addAssertionStatement(subj, rel, obj);
+				}
 			}
 		}
 		Literal label = new LiteralImpl(statement.toBELShortForm());

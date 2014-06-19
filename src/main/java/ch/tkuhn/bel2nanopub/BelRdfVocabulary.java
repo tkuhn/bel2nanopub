@@ -94,9 +94,9 @@ public class BelRdfVocabulary {
 		relNormalizeMap.put("directlyIncreases", "directlyIncreases");
 		relNormalizeMap.put("=>", "directlyIncreases");
 		relNormalizeMap.put("hasComponent", "hasComponent");
-		relNormalizeMap.put("hasComponents", "hasComponents");
+		relNormalizeMap.put("hasComponents", "hasComponent");
 		relNormalizeMap.put("hasMember", "hasMember");
-		relNormalizeMap.put("hasMembers", "hasMembers");
+		relNormalizeMap.put("hasMembers", "hasMember");
 		relNormalizeMap.put("hasModification", "hasModification");
 		relNormalizeMap.put("hasProduct", "hasProduct");
 		relNormalizeMap.put("hasVariant", "hasVariant");
@@ -122,6 +122,10 @@ public class BelRdfVocabulary {
 		return relNormalizeMap.get(rel);
 	}
 
+	public static boolean isMultiRel(String rel) {
+		return "hasMembers".equals(rel) || "hasComponents".equals(rel);
+	}
+
 	private static Map<String,URI> relMap = new HashMap<String,URI>();
 
 	static {
@@ -131,8 +135,6 @@ public class BelRdfVocabulary {
 		relMap.put("decreases", new URIImpl(BELV_NS + "decreases"));
 		relMap.put("directlyDecreases", new URIImpl(BELV_NS + "directlyDecreases"));
 		relMap.put("directlyIncreases", new URIImpl(BELV_NS + "directlyIncreases"));
-		relMap.put("hasComponent", new URIImpl(BELV_NS + "hasComponent"));
-		relMap.put("hasMember", new URIImpl(BELV_NS + "hasMember"));
 		relMap.put("increases", new URIImpl(BELV_NS + "increases"));
 		relMap.put("negativeCorrelation", new URIImpl(BELV_NS + "negativeCorrelation"));
 		relMap.put("positiveCorrelation", new URIImpl(BELV_NS + "positiveCorrelation"));
@@ -144,11 +146,11 @@ public class BelRdfVocabulary {
 		relMap.put("transcribedTo", new URIImpl(BELV_NS + "transcribedTo"));
 		relMap.put("translatedTo", new URIImpl(BELV_NS + "translatedTo"));
 		relMap.put("translocates", new URIImpl(BELV_NS + "translocates"));
-		relMap.put("hasMembers", new URIImpl(BELV_NS + "hasMembers"));
-		relMap.put("hasComponents", new URIImpl(BELV_NS + "hasComponents"));
 
 		// Mapped to standard vocabulary:
 		relMap.put("isA", RDFS.SUBCLASSOF);
+		relMap.put("hasMember", RDFS.MEMBER);
+		relMap.put("hasComponent", ThirdPartyVocabulary.bfoHasPart);
 	}
 
 	public static URI getRel(String rel) {
