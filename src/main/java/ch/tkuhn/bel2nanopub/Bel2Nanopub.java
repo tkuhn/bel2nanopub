@@ -299,15 +299,12 @@ public class Bel2Nanopub {
 			} else if (actUri != null) {
 				r = handleActivityTerm(term, npCreator);
 				npCreator.addAssertionStatement(r, RDF.TYPE, actUri);
-			} else if ("reactants".equals(funcAbbrev)) {
-				// TODO support this
-				throw new Bel2NanopubException("'reactants' function is not yet supported");
-			} else if ("products".equals(funcAbbrev)) {
-				// TODO support this
-				throw new Bel2NanopubException("'products' function is not yet supported");
 			} else if ("list".equals(funcAbbrev)) {
+				if (term.getParameters().size() > 0) {
+					throw new Bel2NanopubException("Invalid format for 'list'");
+				}
 				// TODO support this
-				throw new Bel2NanopubException("'list' function is not yet supported");
+				throw new Bel2NanopubException("'list' function is not yet supported" );
 			} else {
 				throw new Bel2NanopubException("Unknown function: " + funcAbbrev);
 			}
