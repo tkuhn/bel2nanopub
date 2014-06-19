@@ -67,7 +67,7 @@ In nanopubs using standard reification:
         rdf:subject node:2 ;
         rdf:predicate belv:directlyIncreases ;
         rdf:object node:3 ;
-        belv:hasAnnotation <http://purl.bioontology.org/ontology/MSH/D002467> .
+        obo:BFO_0000066 mesh:D002467 .  # occurs in cell nucleus
 
 
 ### Citation/Evidence
