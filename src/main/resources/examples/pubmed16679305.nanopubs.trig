@@ -389,8 +389,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAaW5RtN9TIReUOHrRaSaUYZG_n_Cy15o3799XLAbMhAQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAaW5RtN9TIReUOHrRaSaUYZG_n_Cy15o3799XLAbMhAQ#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAW8EBWGY3Xxheccs3BKdabiOOAdmEwQMHGGmfo1pUE98> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAW8EBWGY3Xxheccs3BKdabiOOAdmEwQMHGGmfo1pUE98#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -422,9 +422,8 @@ sub:Assert {
 		belv:hasSubstitution "G,12,V" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 obo:BFO_0000051 sub:_3 ;
-		belv:hasActivityType belv:Kinase ;
-		a belv:AbundanceActivity .
+	sub:_2 belv:activityOf sub:_3 ;
+		a belv:AbundanceActivity , belv:KinaseActivity .
 	
 	sub:_3 belv:hasConcept pfm:MAPK%20Erk1%2F3%20Family ;
 		a belv:ProteinAbundance .
@@ -533,8 +532,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8sr9sltl11J6J4uSjOob7trltC_0tvonf4548Qs-W_w> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8sr9sltl11J6J4uSjOob7trltC_0tvonf4548Qs-W_w#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAjhX2-BznjLj0uBhv14logAIVUDayaHGrGG26s_aL8c8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAjhX2-BznjLj0uBhv14logAIVUDayaHGrGG26s_aL8c8#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -566,9 +565,8 @@ sub:Assert {
 		belv:hasSubstitution "G,12,D" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 obo:BFO_0000051 sub:_3 ;
-		belv:hasActivityType belv:Kinase ;
-		a belv:AbundanceActivity .
+	sub:_2 belv:activityOf sub:_3 ;
+		a belv:AbundanceActivity , belv:KinaseActivity .
 	
 	sub:_3 belv:hasConcept pfm:MAPK%20Erk1%2F3%20Family ;
 		a belv:ProteinAbundance .
@@ -604,8 +602,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RARW3yfAqfcgbUYyoiOYaHaKRMRPQHI5tD-9LYa2tjWNg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RARW3yfAqfcgbUYyoiOYaHaKRMRPQHI5tD-9LYa2tjWNg#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA0tKcN093Pi3ix6n1c2JAxTs3xty3tyh5MFBY0fd9OEk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA0tKcN093Pi3ix6n1c2JAxTs3xty3tyh5MFBY0fd9OEk#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -637,9 +635,8 @@ sub:Assert {
 		belv:hasSubstitution "G,12,D" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 obo:BFO_0000051 sub:_3 ;
-		belv:hasActivityType belv:Kinase ;
-		a belv:AbundanceActivity .
+	sub:_2 belv:activityOf sub:_3 ;
+		a belv:AbundanceActivity , belv:KinaseActivity .
 	
 	sub:_3 belv:hasConcept ncm:p85%2Fp110%20PI3Kinase%20Complex ;
 		a belv:ComplexAbundance .
@@ -676,8 +673,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RADFBfg_jFZfI3AC4cWA7lGIJdpx44q4t9NX9qGmDgdXk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RADFBfg_jFZfI3AC4cWA7lGIJdpx44q4t9NX9qGmDgdXk#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAXILp2e5ikw79RbmxrAzeYdhxDi37p1xY1gTTv2kPt_c> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAXILp2e5ikw79RbmxrAzeYdhxDi37p1xY1gTTv2kPt_c#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -709,9 +706,8 @@ sub:Assert {
 		belv:hasSubstitution "G,12,D" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 obo:BFO_0000051 sub:_3 ;
-		belv:hasActivityType belv:Kinase ;
-		a belv:AbundanceActivity .
+	sub:_2 belv:activityOf sub:_3 ;
+		a belv:AbundanceActivity , belv:KinaseActivity .
 	
 	sub:_3 belv:hasConcept pfm:Akt%20Family ;
 		a belv:ProteinAbundance .
@@ -748,8 +744,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAb9gAYEMUQDVnQeX8M6XYlwPt6I68W2qs2z34q6LPrRI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAb9gAYEMUQDVnQeX8M6XYlwPt6I68W2qs2z34q6LPrRI#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8MP270nE_PvukRopKwtMsBV0NCXYYzGQoq6QQ3azQTQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8MP270nE_PvukRopKwtMsBV0NCXYYzGQoq6QQ3azQTQ#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -781,9 +777,8 @@ sub:Assert {
 		belv:hasSubstitution "G,12,D" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 obo:BFO_0000051 sub:_3 ;
-		belv:hasActivityType belv:Kinase ;
-		a belv:AbundanceActivity .
+	sub:_2 belv:activityOf sub:_3 ;
+		a belv:AbundanceActivity , belv:KinaseActivity .
 	
 	sub:_3 belv:hasConcept pfm:Mapk%20JNK%20Family ;
 		a belv:ProteinAbundance .
@@ -820,8 +815,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAgsN4tyavVAX45bjAqMlWMzkbQoydKDF8Hf82vxL9npE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAgsN4tyavVAX45bjAqMlWMzkbQoydKDF8Hf82vxL9npE#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA-aav2OuOjIW4Zmv-DLy9iuFCSoDXbsAZxScKJeiZjME> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA-aav2OuOjIW4Zmv-DLy9iuFCSoDXbsAZxScKJeiZjME#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -853,9 +848,8 @@ sub:Assert {
 		belv:hasSubstitution "G,12,D" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 obo:BFO_0000051 sub:_3 ;
-		belv:hasActivityType belv:Kinase ;
-		a belv:AbundanceActivity .
+	sub:_2 belv:activityOf sub:_3 ;
+		a belv:AbundanceActivity , belv:KinaseActivity .
 	
 	sub:_3 belv:hasConcept pfm:Mapk%20p38%20Family ;
 		a belv:ProteinAbundance .
@@ -892,8 +886,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAM7cp2VuwVunidoZmePE6B0AlkPxQnxhLLFpJ25R5rXE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAM7cp2VuwVunidoZmePE6B0AlkPxQnxhLLFpJ25R5rXE#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAZKMzOByxJS9gmegLaYY4CBSC2G688pQiuPd5z23N334> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAZKMzOByxJS9gmegLaYY4CBSC2G688pQiuPd5z23N334#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -925,9 +919,8 @@ sub:Assert {
 		belv:hasSubstitution "G,12,D" ;
 		a belv:ProteinVariantAbundance .
 	
-	sub:_2 obo:BFO_0000051 sub:_3 ;
-		belv:hasActivityType belv:Kinase ;
-		a belv:AbundanceActivity .
+	sub:_2 belv:activityOf sub:_3 ;
+		a belv:AbundanceActivity , belv:KinaseActivity .
 	
 	sub:_3 belv:hasConcept <http://www.informatics.jax.org/marker/MGI:95481> ;
 		a belv:ProteinAbundance .

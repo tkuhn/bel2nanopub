@@ -25,7 +25,7 @@ public class BelRdfVocabulary {
 	//public static final URI hasSubject = new URIImpl(BELV_NS + "hasSubject");
 	//public static final URI hasRelationship = new URIImpl(BELV_NS + "hasRelationship");
 	//public static final URI hasObject = new URIImpl(BELV_NS + "hasObject");
-	public static final URI hasActivityType = new URIImpl(BELV_NS + "hasActivityType");
+	//public static final URI hasActivityType = new URIImpl(BELV_NS + "hasActivityType");
 	public static final URI hasAnnotation = new URIImpl(BELV_NS + "hasAnnotation");
 	//public static final URI hasCitation = new URIImpl(BELV_NS + "hasCitation");
 	//public static final URI hasEvidenceText = new URIImpl(BELV_NS + "hasEvidenceText");
@@ -34,6 +34,7 @@ public class BelRdfVocabulary {
 	// Made up URIs, not used by official BEL tools:
 	public static final URI hasSubstitution = new URIImpl(BELV_NS + "hasSubstitution");
 	public static final URI hasModification = new URIImpl(BELV_NS + "hasModification");
+	public static final URI activityOf = new URIImpl(BELV_NS + "activityOf");
 	// ---
 
 	public static final URI proteinVariantAbundance = new URIImpl(BELV_NS + "ProteinVariantAbundance");
@@ -156,16 +157,17 @@ public class BelRdfVocabulary {
 	private static Map<String,URI> activityMap = new HashMap<String,URI>();
 
 	static {
-		activityMap.put("cat", new URIImpl(BELV_NS + "Catalytic"));
-		activityMap.put("chap", new URIImpl(BELV_NS + "Chaperone"));
-		activityMap.put("gtp", new URIImpl(BELV_NS + "GtpBound"));
-		activityMap.put("kin", new URIImpl(BELV_NS + "Kinase"));
-		activityMap.put("act", new URIImpl(BELV_NS + "Activity"));
-		activityMap.put("pep", new URIImpl(BELV_NS + "Peptidase"));
-		activityMap.put("phos", new URIImpl(BELV_NS + "Phosphatase"));
-		activityMap.put("ribo", new URIImpl(BELV_NS + "Ribosylase"));
-		activityMap.put("tscript", new URIImpl(BELV_NS + "Transcription"));
-		activityMap.put("tport", new URIImpl(BELV_NS + "Transport"));
+		// Added "...Activity":
+		activityMap.put("cat", new URIImpl(BELV_NS + "CatalyticActivity"));
+		activityMap.put("chap", new URIImpl(BELV_NS + "ChaperoneActivity"));
+		activityMap.put("gtp", new URIImpl(BELV_NS + "GtpBoundActivity"));
+		activityMap.put("kin", new URIImpl(BELV_NS + "KinaseActivity"));
+		activityMap.put("act", new URIImpl(BELV_NS + "MolecularActivity"));
+		activityMap.put("pep", new URIImpl(BELV_NS + "PeptidaseActivity"));
+		activityMap.put("phos", new URIImpl(BELV_NS + "PhosphataseActivity"));
+		activityMap.put("ribo", new URIImpl(BELV_NS + "RibosylaseActivity"));
+		activityMap.put("tscript", new URIImpl(BELV_NS + "TranscriptionActivity"));
+		activityMap.put("tport", new URIImpl(BELV_NS + "TransportActivity"));
 	}
 
 	public static URI getActivity(String activity) {

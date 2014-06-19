@@ -296,7 +296,7 @@ public class Bel2Nanopub {
 			}
 			URI actUri = BelRdfVocabulary.getActivity(funcAbbrev);
 			if (actUri != null) {
-				npCreator.addAssertionStatement(r, BelRdfVocabulary.hasActivityType, actUri);
+				npCreator.addAssertionStatement(r, RDF.TYPE, actUri);
 			}
 		}
 		return r;
@@ -349,9 +349,15 @@ public class Bel2Nanopub {
 		if (!term.getTerms().isEmpty()) {
 			npCreator.addNamespace("obo", ThirdPartyVocabulary.oboNs);
 		}
+		String funcAbbrev = term.getFunctionEnum().getAbbreviation();
 		for (Term child : term.getTerms()) {
 			Resource ch = processBelTerm(child, npCreator);
-			npCreator.addAssertionStatement(bn, bfoHasPart, ch);
+			if (BelRdfVocabulary.getActivity(funcAbbrev) != null) {
+				npCreator.addAssertionStatement(bn, BelRdfVocabulary.activityOf, ch);
+			} else {
+				// TODO is this always correct?
+				npCreator.addAssertionStatement(bn, bfoHasPart, ch);
+			}
 		}
 		for (Parameter p : term.getParameters()) {
 			URI cUri = getUriFromParam(p, npCreator);
