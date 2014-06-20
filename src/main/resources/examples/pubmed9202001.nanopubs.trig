@@ -211,8 +211,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAIPhEmSDSaeZ1W5iaaJJKEABoD4uQ_ZNqY4lBAzltu4U> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAIPhEmSDSaeZ1W5iaaJJKEABoD4uQ_ZNqY4lBAzltu4U#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAgvIR3vhB05ad1Qh5PX4ksYes0iG3obTgRhPfpWtdNlg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAgvIR3vhB05ad1Qh5PX4ksYes0iG3obTgRhPfpWtdNlg#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -244,9 +244,8 @@ sub:Head {
 }
 
 sub:assertion {
-	sub:_1 belv:hasModificationType psimod:00696 ;
-		belv:variantOf hgnc:6871 ;
-		a proteinModification: .
+	sub:_1 belv:variantOf hgnc:6871 ;
+		a proteinModification: , psimod:00696 .
 	
 	sub:_2 hasAgent: sub:_3 ;
 		a go:0016301 .
@@ -287,8 +286,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA0BJvYmtVnsb4CPz2yenQ9vW_Ewg74vtdjHYY5X5zskA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA0BJvYmtVnsb4CPz2yenQ9vW_Ewg74vtdjHYY5X5zskA#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_nnpvV7HjZSLfiUJtfRT0pCXWWnWYbFHkTuVrdMttiM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_nnpvV7HjZSLfiUJtfRT0pCXWWnWYbFHkTuVrdMttiM#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -320,9 +319,8 @@ sub:Head {
 }
 
 sub:assertion {
-	sub:_1 belv:hasModificationType psimod:00696 ;
-		belv:variantOf hgnc:6871 ;
-		a proteinModification: .
+	sub:_1 belv:variantOf hgnc:6871 ;
+		a proteinModification: , psimod:00696 .
 	
 	sub:_2 hasAgent: sub:_3 ;
 		a go:0016301 .
@@ -363,8 +361,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7WAxY2IZXhDpQ9ktgKJsGSYHvWvmJskHBq7g0SNdznQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7WAxY2IZXhDpQ9ktgKJsGSYHvWvmJskHBq7g0SNdznQ#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAS_LkrLynDBsiLbToz1c-SZ2hn8yCjfixK4tms4x-hTE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAS_LkrLynDBsiLbToz1c-SZ2hn8yCjfixK4tms4x-hTE#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -396,9 +394,8 @@ sub:Head {
 }
 
 sub:assertion {
-	sub:_1 belv:hasModificationType psimod:00696 ;
-		belv:variantOf hgnc:6881 ;
-		a proteinModification: .
+	sub:_1 belv:variantOf hgnc:6881 ;
+		a proteinModification: , psimod:00696 .
 	
 	sub:_2 hasAgent: sub:_3 ;
 		a go:0016301 .
@@ -439,8 +436,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAXauq3K7fRIA27nV1peh9zEf067HhzQqCNFOvajiTOsM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAXauq3K7fRIA27nV1peh9zEf067HhzQqCNFOvajiTOsM#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAQqs15jIOXKgPHBZ73wyq0COARF6J5IFQI4LxbxvLaaM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAQqs15jIOXKgPHBZ73wyq0COARF6J5IFQI4LxbxvLaaM#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -472,9 +469,8 @@ sub:Head {
 }
 
 sub:assertion {
-	sub:_1 belv:hasModificationType psimod:00696 ;
-		belv:variantOf hgnc:6881 ;
-		a proteinModification: .
+	sub:_1 belv:variantOf hgnc:6881 ;
+		a proteinModification: , psimod:00696 .
 	
 	sub:_2 hasAgent: sub:_3 ;
 		a go:0016301 .
@@ -515,8 +511,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAuLVILGUAde6LiiCxa5PG0OectKqsFpEzwEWQ3SYR3ZY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAuLVILGUAde6LiiCxa5PG0OectKqsFpEzwEWQ3SYR3ZY#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAR5Fwi3ZWaUBjN_JTgi7HJGy1ZXPdq2vdpBMTUfBr5jM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAR5Fwi3ZWaUBjN_JTgi7HJGy1ZXPdq2vdpBMTUfBr5jM#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -549,9 +545,8 @@ sub:Head {
 }
 
 sub:assertion {
-	sub:_1 belv:hasModificationType psimod:00696 ;
-		belv:variantOf hgnc:6876 ;
-		a proteinModification: .
+	sub:_1 belv:variantOf hgnc:6876 ;
+		a proteinModification: , psimod:00696 .
 	
 	sub:_2 hasAgent: sub:_3 ;
 		a go:0016301 .
@@ -592,8 +587,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RABDmVoZ8bCAjmKoxxJDIzDHgKzgOpNoTAAXBNq2TqCB4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RABDmVoZ8bCAjmKoxxJDIzDHgKzgOpNoTAAXBNq2TqCB4#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RABSV1zchYtTpaVammvB7W3ZI_fpBfVA10D9okKGtVE5o> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RABSV1zchYtTpaVammvB7W3ZI_fpBfVA10D9okKGtVE5o#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -626,9 +621,8 @@ sub:Head {
 }
 
 sub:assertion {
-	sub:_1 belv:hasModificationType psimod:00696 ;
-		belv:variantOf hgnc:6876 ;
-		a proteinModification: .
+	sub:_1 belv:variantOf hgnc:6876 ;
+		a proteinModification: , psimod:00696 .
 	
 	sub:_2 hasAgent: sub:_3 ;
 		a go:0016301 .
@@ -669,8 +663,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA2FNZdyXEbVkUZzjbbxBAFfzHhYGM7EOpmXVW7PlYeQA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA2FNZdyXEbVkUZzjbbxBAFfzHhYGM7EOpmXVW7PlYeQA#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAOj-OMGCrk9bjtw1i5RWSZWZKHN2SHVlJFT5LKXXBg9U> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAOj-OMGCrk9bjtw1i5RWSZWZKHN2SHVlJFT5LKXXBg9U#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -708,9 +702,8 @@ sub:assertion {
 	sub:_2 geneProductOf: hgnc:3064 ;
 		a Protein: .
 	
-	sub:_3 belv:hasModificationType psimod:00696 ;
-		belv:variantOf hgnc:6871 ;
-		a proteinModification: .
+	sub:_3 belv:variantOf hgnc:6871 ;
+		a proteinModification: , psimod:00696 .
 	
 	sub:_4 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_3 ;
@@ -745,8 +738,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA-MV3JTshl2aMUA7e4vLOVF3WILq9GwGJXkKkQuITXmY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA-MV3JTshl2aMUA7e4vLOVF3WILq9GwGJXkKkQuITXmY#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA0FLRE0mztF5O1M30kniguBI98NaW3-t8CuSwIPOKE4o> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA0FLRE0mztF5O1M30kniguBI98NaW3-t8CuSwIPOKE4o#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -784,9 +777,8 @@ sub:assertion {
 	sub:_2 geneProductOf: hgnc:3064 ;
 		a Protein: .
 	
-	sub:_3 belv:hasModificationType psimod:00696 ;
-		belv:variantOf hgnc:6881 ;
-		a proteinModification: .
+	sub:_3 belv:variantOf hgnc:6881 ;
+		a proteinModification: , psimod:00696 .
 	
 	sub:_4 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_3 ;
@@ -821,8 +813,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RATtZwTrrBsViPmPCvBf4rD0MCJU3uj-uL5ZJTbEA7IE8> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RATtZwTrrBsViPmPCvBf4rD0MCJU3uj-uL5ZJTbEA7IE8#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RATYspB7OAJhbrcxO_eNVuVLrRURSvb2qSK5p5ycFd1yo> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RATYspB7OAJhbrcxO_eNVuVLrRURSvb2qSK5p5ycFd1yo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -861,9 +853,8 @@ sub:assertion {
 	sub:_2 geneProductOf: hgnc:3064 ;
 		a Protein: .
 	
-	sub:_3 belv:hasModificationType psimod:00696 ;
-		belv:variantOf pfh:MAPK%20p38%20Family ;
-		a proteinModification: .
+	sub:_3 belv:variantOf pfh:MAPK%20p38%20Family ;
+		a proteinModification: , psimod:00696 .
 	
 	sub:_4 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_3 ;

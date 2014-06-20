@@ -44,7 +44,7 @@ public class BelRdfVocabulary {
 //	public static final URI abundanceActivity = new URIImpl(BELV_NS + "AbundanceActivity");
 //	public static final URI proteinVariantAbundance = new URIImpl(BELV_NS + "ProteinVariantAbundance");
 //	public static final URI modifiedProteinAbundance = new URIImpl(BELV_NS + "ModifiedProteinAbundance");
-	public static final URI hasModificationType = new URIImpl(BELV_NS + "hasModificationType");
+//	public static final URI hasModificationType = new URIImpl(BELV_NS + "hasModificationType");
 
 
 //	private static Map<String,URI> abundanceFunctionMap = new HashMap<String,URI>();

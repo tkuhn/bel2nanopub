@@ -1021,8 +1021,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAYgnXSr1WzDVaPF78yR6XYsBtNuQcBvvaFxmC3ffCnOs> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAYgnXSr1WzDVaPF78yR6XYsBtNuQcBvvaFxmC3ffCnOs#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJFgmcy11baLVMICO6OOkkhjW7YWXVp9gwS2F9XqH9gY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJFgmcy11baLVMICO6OOkkhjW7YWXVp9gwS2F9XqH9gY#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1054,9 +1054,8 @@ sub:assertion {
 		belv:variantOf hgnc:6407 ;
 		a proteinModification: .
 	
-	sub:_2 belv:hasModificationType psimod:00696 ;
-		belv:variantOf hgnc:9884 ;
-		a proteinModification: .
+	sub:_2 belv:variantOf hgnc:9884 ;
+		a proteinModification: , psimod:00696 .
 	
 	sub:_3 occursIn: atcc:CCL-92.aspx , species:10090 ;
 		rdf:object sub:_2 ;

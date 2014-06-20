@@ -456,8 +456,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1L0-mKMIIx1myEsiSywjfb78NmRDMR93docbxoE3WZc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1L0-mKMIIx1myEsiSywjfb78NmRDMR93docbxoE3WZc#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAdmw3N3_TCp33rByQYubs30LxCseOJvsiGydW__mWAyk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAdmw3N3_TCp33rByQYubs30LxCseOJvsiGydW__mWAyk#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -503,9 +503,8 @@ sub:assertion {
 	sub:_4 geneProductOf: hgnc:270 ;
 		a Protein: .
 	
-	sub:_5 belv:hasModificationType psimod:00731 ;
-		belv:variantOf hgnc:270 ;
-		a proteinModification: .
+	sub:_5 belv:variantOf hgnc:270 ;
+		a proteinModification: , psimod:00731 .
 	
 	sub:assertion rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R)))" , "ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R))" .
 }
@@ -534,8 +533,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAm6nU6bFejVQGrOfdECWRxmA0GySsqG3JyIRSp3Nwmhw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAm6nU6bFejVQGrOfdECWRxmA0GySsqG3JyIRSp3Nwmhw#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAQRlaOFCrvpMzqI955DOuw6Pn3aTzr7tYTzLSVy5FQjA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAQRlaOFCrvpMzqI955DOuw6Pn3aTzr7tYTzLSVy5FQjA#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -581,9 +580,8 @@ sub:assertion {
 	sub:_4 geneProductOf: hgnc:270 ;
 		a Protein: .
 	
-	sub:_5 belv:hasModificationType psimod:00731 ;
-		belv:variantOf hgnc:12833 ;
-		a proteinModification: .
+	sub:_5 belv:variantOf hgnc:12833 ;
+		a proteinModification: , psimod:00731 .
 	
 	sub:assertion rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R)))" , "ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R))" .
 }
@@ -612,8 +610,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RALFgloH-7WWrLDK5aDc7ktqHRTOOnmRNSowhcyX1x6F0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RALFgloH-7WWrLDK5aDc7ktqHRTOOnmRNSowhcyX1x6F0#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAmfAr30CToqx_DJD-1FLBywmMa2adkCnY1EvfVVWsJFg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAmfAr30CToqx_DJD-1FLBywmMa2adkCnY1EvfVVWsJFg#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -659,9 +657,8 @@ sub:assertion {
 	sub:_4 geneProductOf: hgnc:270 ;
 		a Protein: .
 	
-	sub:_5 belv:hasModificationType psimod:00731 ;
-		belv:variantOf hgnc:4055 ;
-		a proteinModification: .
+	sub:_5 belv:variantOf hgnc:4055 ;
+		a proteinModification: , psimod:00731 .
 	
 	sub:assertion rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R)))" , "ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R))" .
 }
@@ -690,8 +687,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAcM5XdIWNkCb8GwdQmZwqoV2s4N1ARCvFZzLYErZB3Gc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAcM5XdIWNkCb8GwdQmZwqoV2s4N1ARCvFZzLYErZB3Gc#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAwzhYO4Uw04MrHCoD6uG2sogbvXJ9dAYzyJZZwnT_a8M> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAwzhYO4Uw04MrHCoD6uG2sogbvXJ9dAYzyJZZwnT_a8M#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -723,9 +720,8 @@ sub:Head {
 
 sub:assertion {
 	sub:_1 belv:directlyIncreases sub:_2 ;
-		belv:hasModificationType psimod:00731 ;
 		belv:variantOf hgnc:12833 ;
-		a proteinModification: .
+		a proteinModification: , psimod:00731 .
 	
 	sub:_2 hasPart: chebi:4291 , sub:_3 , sub:_4 ;
 		a ProteinComplex: .
@@ -763,8 +759,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA-Mx_Tyqrp4F0QtdFWbLqVI7zGJ-P52AiMVm8uQ4Vhco> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA-Mx_Tyqrp4F0QtdFWbLqVI7zGJ-P52AiMVm8uQ4Vhco#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA4jJcZ9SgcwR5T0ms1NlATZ8patxUc6CKUSC0EuuNWjM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA4jJcZ9SgcwR5T0ms1NlATZ8patxUc6CKUSC0EuuNWjM#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -796,9 +792,8 @@ sub:Head {
 
 sub:assertion {
 	sub:_1 belv:directlyIncreases sub:_2 ;
-		belv:hasModificationType psimod:00731 ;
 		belv:variantOf hgnc:4055 ;
-		a proteinModification: .
+		a proteinModification: , psimod:00731 .
 	
 	sub:_2 hasPart: chebi:4291 , sub:_3 , sub:_4 ;
 		a ProteinComplex: .
@@ -836,8 +831,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8EjTRSk--t1k13QN9c895LUc1xgrU0XopQXaW66ELnw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8EjTRSk--t1k13QN9c895LUc1xgrU0XopQXaW66ELnw#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAbmkkHkQX2BB2gm6fDDN_6zl2850_yMfCUn08qxH_hxo> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAbmkkHkQX2BB2gm6fDDN_6zl2850_yMfCUn08qxH_hxo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -867,9 +862,8 @@ sub:Head {
 
 sub:assertion {
 	sub:_1 belv:directlyIncreases sub:_2 ;
-		belv:hasModificationType psimod:00731 ;
 		belv:variantOf hgnc:12833 ;
-		a proteinModification: .
+		a proteinModification: , psimod:00731 .
 	
 	sub:_2 hasAgent: sub:_3 ;
 		a go:0003824 .
@@ -904,8 +898,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAARuiXvgpG3gkMVqrLZY34lQwqDzH6kJrXaAphjVr44Q> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAARuiXvgpG3gkMVqrLZY34lQwqDzH6kJrXaAphjVr44Q#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RATN6f2MrBXvA-Zccwl7JvzLGAusIO0EMOqnI3p32hXuw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RATN6f2MrBXvA-Zccwl7JvzLGAusIO0EMOqnI3p32hXuw#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -935,9 +929,8 @@ sub:Head {
 
 sub:assertion {
 	sub:_1 belv:directlyIncreases sub:_2 ;
-		belv:hasModificationType psimod:00731 ;
 		belv:variantOf hgnc:4055 ;
-		a proteinModification: .
+		a proteinModification: , psimod:00731 .
 	
 	sub:_2 hasAgent: sub:_3 ;
 		a go:0003824 .

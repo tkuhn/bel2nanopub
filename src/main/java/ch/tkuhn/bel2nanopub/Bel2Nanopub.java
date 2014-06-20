@@ -360,7 +360,7 @@ public class Bel2Nanopub {
 					throw new Bel2NanopubException("Cannot resolve modifier type '" + v + "'");
 				}
 				if (modtypeUri != null) {
-					npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasModificationType, modtypeUri);
+					npCreator.addAssertionStatement(bn, RDF.TYPE, modtypeUri);
 				}
 			} else  {
 				String var = BelRdfVocabulary.getNormalizedVariant(modAbbrev);
