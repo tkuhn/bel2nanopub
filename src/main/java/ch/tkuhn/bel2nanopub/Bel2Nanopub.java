@@ -426,8 +426,8 @@ public class Bel2Nanopub {
 			if (tc != 1 || pc != 0) {
 				throw new Bel2NanopubException("Invalid format for 'deg'");
 			}
-			// TODO support this
-			throw new Bel2NanopubException("Transformation function 'deg' is not yet supported");
+			Resource r = processBelTerm(term.getTerms().get(0), npCreator);
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.degradationOf, r);
 		} else if ("rxn".equals(funcAbbrev)) {
 			if (tc != 2 || pc != 0) {
 				throw new Bel2NanopubException("Invalid format for 'rxn'");
