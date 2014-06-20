@@ -42,6 +42,7 @@ public class BelRdfVocabulary {
 	public static final URI translocationFrom = new URIImpl(BELV_NS + "translocationFrom");
 	public static final URI translocationTo = new URIImpl(BELV_NS + "translocationTo");
 	public static final URI degradationOf = new URIImpl(BELV_NS + "degradationOf");
+	public static final URI reaction = new URIImpl(BELV_NS + "Reaction");
 	// ---
 
 	//public static final URI abundanceActivity = new URIImpl(BELV_NS + "AbundanceActivity");

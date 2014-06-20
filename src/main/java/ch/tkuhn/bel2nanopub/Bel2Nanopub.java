@@ -432,8 +432,15 @@ public class Bel2Nanopub {
 			if (tc != 2 || pc != 0) {
 				throw new Bel2NanopubException("Invalid format for 'rxn'");
 			}
-			// TODO support this
-			throw new Bel2NanopubException("Transformation function 'rxn' is not yet supported");
+			npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.reaction);
+			for (Term reactant : term.getTerms().get(0).getTerms()) {
+				Resource r = processBelTerm(reactant, npCreator);
+				npCreator.addAssertionStatement(bn, ThirdPartyVocabulary.roHasInput, r);
+			}
+			for (Term product : term.getTerms().get(1).getTerms()) {
+				Resource r = processBelTerm(product, npCreator);
+				npCreator.addAssertionStatement(bn, ThirdPartyVocabulary.roHasOutput, r);
+			}
 		} else {
 			throw new Bel2NanopubException("Unexpected unrecognized transformation function: " + funcAbbrev);
 		}

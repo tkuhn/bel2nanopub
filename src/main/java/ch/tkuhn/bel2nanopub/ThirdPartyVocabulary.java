@@ -24,4 +24,7 @@ public class ThirdPartyVocabulary {
 	public static final URI goExtracellularRegion = new URIImpl("http://amigo.geneontology.org/amigo/term/GO:0005576");
 	public static final URI goCellSurface = new URIImpl("http://amigo.geneontology.org/amigo/term/GO:0009986");
 
+	public static final URI roHasInput = new URIImpl("http://purl.obolibrary.org/obo/RO_0002233");
+	public static final URI roHasOutput = new URIImpl("http://purl.obolibrary.org/obo/RO_0002234");
+
 }
