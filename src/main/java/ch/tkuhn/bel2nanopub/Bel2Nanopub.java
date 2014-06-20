@@ -395,13 +395,17 @@ public class Bel2Nanopub {
 		String funcAbbrev = term.getFunctionEnum().getAbbreviation();
 		int tc = term.getTerms().size();
 		int pc = term.getParameters().size();
-		//BNode bn = newBNode();
+		BNode bn = newBNode();
 		if ("tloc".equals(funcAbbrev)) {
 			if (tc != 1 || pc != 2) {
 				throw new Bel2NanopubException("Invalid format for 'tloc'");
 			}
-			// TODO support this
-			throw new Bel2NanopubException("Transformation function 'tloc' is not yet supported");
+			Resource r = processBelTerm(term.getTerms().get(0), npCreator);
+			URI from = getUriFromParam(term.getParameters().get(0), npCreator);
+			URI to = getUriFromParam(term.getParameters().get(1), npCreator);
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.translocationOf, r);
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.translocationFrom, from);
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.translocationTo, to);
 		} else if ("sec".equals(funcAbbrev)) {
 			if (tc != 1 || pc != 0) {
 				throw new Bel2NanopubException("Invalid format for 'sec'");
@@ -429,7 +433,7 @@ public class Bel2Nanopub {
 		} else {
 			throw new Bel2NanopubException("Unexpected unrecognized transformation function: " + funcAbbrev);
 		}
-		//return bn;
+		return bn;
 	}
 
 	private URI getUriFromParam(Parameter param, NanopubCreator npCreator) throws Bel2NanopubException {

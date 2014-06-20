@@ -38,6 +38,9 @@ public class BelRdfVocabulary {
 	public static final URI activityOf = new URIImpl(BELV_NS + "activityOf");
 	public static final URI abundanceOf = new URIImpl(BELV_NS + "abundanceOf");
 	public static final URI variantOf = new URIImpl(BELV_NS + "variantOf");
+	public static final URI translocationOf = new URIImpl(BELV_NS + "translocationOf");
+	public static final URI translocationFrom = new URIImpl(BELV_NS + "translocationFrom");
+	public static final URI translocationTo = new URIImpl(BELV_NS + "translocationTo");
 	// ---
 
 	//public static final URI abundanceActivity = new URIImpl(BELV_NS + "AbundanceActivity");
