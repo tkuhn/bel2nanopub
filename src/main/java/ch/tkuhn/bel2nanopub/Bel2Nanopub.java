@@ -460,6 +460,9 @@ public class Bel2Nanopub {
 			if (tc != 2 || pc != 0) {
 				throw new Bel2NanopubException("Invalid format for 'rxn'");
 			}
+			npCreator.addNamespace("BiochemicalReaction", "http://semanticscience.org/resource/SIO_010036");
+			npCreator.addNamespace("hasInput", "http://semanticscience.org/resource/SIO_000230");
+			npCreator.addNamespace("hasOutput", "http://semanticscience.org/resource/SIO_000229");
 			npCreator.addAssertionStatement(bn, RDF.TYPE, ThirdPartyVocabulary.sioBiochemicalReaction);
 			for (Term reactant : term.getTerms().get(0).getTerms()) {
 				Resource r = processBelTerm(reactant, npCreator);
@@ -536,9 +539,9 @@ public class Bel2Nanopub {
 			URI rel;
 			if (relN.equals("isA")) {
 				rel = RDFS.SUBCLASSOF;
-			} else if (relN.equals("hasMember")) {
+			} else if (relN.matches("hasMember|hasMembers")) {
 				rel = RDFS.MEMBER;
-			} else if (relN.equals("hasComponent")) {
+			} else if (relN.matches("hasComponent|hasComponents")) {
 				rel = ThirdPartyVocabulary.bfoHasPart;
 				npCreator.addNamespace("hasPart", "http://purl.obolibrary.org/obo/BFO_0000051");
 			} else {
