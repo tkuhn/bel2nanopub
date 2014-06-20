@@ -284,7 +284,7 @@ public class Bel2Nanopub {
 	private Resource processBelTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
 		Resource r;
 		String funcAbbrev = Utils.getFunctionAbbrev(term);
-		if (BelRdfVocabulary.isProcessFunction(funcAbbrev)) {
+		if (funcAbbrev.matches("bp|path")) {
 			// Direct mapping
 			if (term.getParameters().size() != 1 || term.getTerms().size() != 0) {
 				throw new Bel2NanopubException("Unexpected parameters or child terms");
@@ -292,7 +292,6 @@ public class Bel2Nanopub {
 			r = getUriFromParam(term.getParameters().get(0), npCreator);
 		} else {
 			URI abUri = BelRdfVocabulary.getAbundanceFunction(funcAbbrev);
-			URI trUri = BelRdfVocabulary.getTransformFunction(funcAbbrev);
 			URI actUri = IdSchemes.makeUri("activity", funcAbbrev, npCreator);
 			if (abUri != null) {
 				if (isProteinVariantTerm(abUri, term)) {
@@ -301,7 +300,7 @@ public class Bel2Nanopub {
 					r = handleAbundanceTerm(term, npCreator);
 					npCreator.addAssertionStatement(r, RDF.TYPE, abUri);
 				}
-			} else if (trUri != null) {
+			} else if (funcAbbrev.matches("tloc|sec|surf|deg|rxn")) {
 				r = handleTransformationTerm(term, npCreator);
 			} else if (actUri != null) {
 				r = handleActivityTerm(term, npCreator);
@@ -504,7 +503,16 @@ public class Bel2Nanopub {
 		} else {
 			Resource subj = processBelTerm(statement.getSubject(), npCreator);
 			String relN = statement.getRelationshipType().getDisplayValue();
-			URI rel = BelRdfVocabulary.getRel(relN);
+			URI rel;
+			if (relN.equals("isA")) {
+				rel = RDFS.SUBCLASSOF;
+			} else if (relN.equals("hasMember")) {
+				rel = RDFS.MEMBER;
+			} else if (relN.equals("hasComponent")) {
+				rel = ThirdPartyVocabulary.bfoHasPart;
+			} else {
+				rel = BelRdfVocabulary.getRel(relN);
+			}
 			if (rel == null) {
 				throw new Bel2NanopubException("Unknown relationship: " + relN);
 			}

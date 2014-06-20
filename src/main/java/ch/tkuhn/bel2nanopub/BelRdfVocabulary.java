@@ -5,7 +5,6 @@ import java.util.Map;
 
 import org.openrdf.model.URI;
 import org.openrdf.model.impl.URIImpl;
-import org.openrdf.model.vocabulary.RDFS;
 
 /**
  * Namespaces and mappings as defined and used by bel2rdf.
@@ -67,25 +66,22 @@ public class BelRdfVocabulary {
 		return abundanceFunctionMap.get(abbrev);
 	}
 
-	public static boolean isProcessFunction(String abbrev) {
-		//functionMap.put("bp", new URIImpl(BELV_NS + "BiologicalProcess"));
-		//functionMap.put("path", new URIImpl(BELV_NS + "Pathology"));
-		return "bp".equals(abbrev) || "path".equals(abbrev);
-	}
+//		functionMap.put("bp", new URIImpl(BELV_NS + "BiologicalProcess"));
+//		functionMap.put("path", new URIImpl(BELV_NS + "Pathology"));
 
-	private static Map<String,URI> transformFunctionMap = new HashMap<String,URI>();
-
-	static {
-		transformFunctionMap.put("tloc", new URIImpl(BELV_NS + "Translocation"));
-		transformFunctionMap.put("sec", new URIImpl(BELV_NS + "CellSecretion"));
-		transformFunctionMap.put("surf", new URIImpl(BELV_NS + "CellSurfaceExpression"));  // (Made-up URI, not used by official BEL tools)
-		transformFunctionMap.put("deg", new URIImpl(BELV_NS + "Degradation"));
-		transformFunctionMap.put("rxn", new URIImpl(BELV_NS + "Reaction"));
-	}
-
-	public static URI getTransformFunction(String abbrev) {
-		return transformFunctionMap.get(abbrev);
-	}
+//	private static Map<String,URI> transformFunctionMap = new HashMap<String,URI>();
+//
+//	static {
+//		transformFunctionMap.put("tloc", new URIImpl(BELV_NS + "Translocation"));
+//		transformFunctionMap.put("sec", new URIImpl(BELV_NS + "CellSecretion"));
+//		transformFunctionMap.put("surf", new URIImpl(BELV_NS + "CellSurfaceExpression"));  // (Made-up URI, not used by official BEL tools)
+//		transformFunctionMap.put("deg", new URIImpl(BELV_NS + "Degradation"));
+//		transformFunctionMap.put("rxn", new URIImpl(BELV_NS + "Reaction"));
+//	}
+//
+//	public static URI getTransformFunction(String abbrev) {
+//		return transformFunctionMap.get(abbrev);
+//	}
 
 	private static Map<String,String> relNormalizeMap = new HashMap<String,String>();
 
@@ -149,16 +145,14 @@ public class BelRdfVocabulary {
 		relMap.put("prognosticBiomarkerFor", new URIImpl(BELV_NS + "prognosticBiomarkerFor"));
 		relMap.put("rateLimitingStepOf", new URIImpl(BELV_NS + "rateLimitingStepOf"));
 		relMap.put("subProcessOf", new URIImpl(BELV_NS + "subProcessOf"));
+//		relMap.put("isA", new URIImpl(BELV_NS + "isA"));
+//		relMap.put("hasMember", new URIImpl(BELV_NS + "hasMember"));
+//		relMap.put("hasComponent", new URIImpl(BELV_NS + "hasComponent"));
 
 		// Made up URIs, not used by official BEL tools:
 		relMap.put("transcribedTo", new URIImpl(BELV_NS + "transcribedTo"));
 		relMap.put("translatedTo", new URIImpl(BELV_NS + "translatedTo"));
 		relMap.put("translocates", new URIImpl(BELV_NS + "translocates"));
-
-		// Mapped to standard vocabulary:
-		relMap.put("isA", RDFS.SUBCLASSOF);
-		relMap.put("hasMember", RDFS.MEMBER);
-		relMap.put("hasComponent", ThirdPartyVocabulary.bfoHasPart);
 	}
 
 	public static URI getRel(String rel) {
