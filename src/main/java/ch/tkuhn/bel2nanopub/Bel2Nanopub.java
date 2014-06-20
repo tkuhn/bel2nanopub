@@ -155,20 +155,6 @@ public class Bel2Nanopub {
 		for (BELStatementGroup g : belDoc.getBelStatementGroups()) {
 			for (BELStatement bst : g.getStatements()) {
 				NanopubCreator npCreator = new NanopubCreator("http://www.tkuhn.ch/bel2nanopub/");
-
-				// Aliases:
-				npCreator.addNamespace("hasPart", "http://purl.obolibrary.org/obo/BFO_0000051");
-				npCreator.addNamespace("occursIn", "http://purl.obolibrary.org/obo/BFO_0000066");
-				npCreator.addNamespace("hasAgent", "http://semanticscience.org/resource/SIO_000139");
-				npCreator.addNamespace("hasAnnotation", "http://semanticscience.org/resource/SIO_000255");
-				npCreator.addNamespace("geneProductOf", "http://purl.obolibrary.org/obo/RO_0002204");
-				npCreator.addNamespace("ProteinComplex", "http://amigo.geneontology.org/amigo/term/GO:0043234");
-				npCreator.addNamespace("Protein", "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080");
-				npCreator.addNamespace("RNA", "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697");
-				npCreator.addNamespace("microRNA", "http://purl.obolibrary.org/obo/SO_0000276");
-				npCreator.addNamespace("proteinModification", "http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000");
-				// TODO only add aliases that are needed for the given nanopub
-
 				npCreator.addNamespace("rdfs", RDFS.NAMESPACE);
 				npCreator.addNamespace("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
 				npCreator.addNamespace("xsd", "http://www.w3.org/2001/XMLSchema#");
@@ -316,6 +302,7 @@ public class Bel2Nanopub {
 				} else {
 					r = handleSimpleAbundanceTerm(term, npCreator);
 				}
+				npCreator.addNamespace("ProteinComplex", "http://amigo.geneontology.org/amigo/term/GO:0043234");
 				npCreator.addAssertionStatement(r, RDF.TYPE, ThirdPartyVocabulary.goProteinComplex);
 			} else if (funcAbbrev.equals("composite")) {
 				r = handleCompoundAbundanceTerm(term, npCreator);
@@ -323,18 +310,24 @@ public class Bel2Nanopub {
 				r = handleSimpleAbundanceTerm(term, npCreator);
 			} else if (funcAbbrev.matches("p")) {
 				r = newBNode();
+				npCreator.addNamespace("Protein", "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080");
 				npCreator.addAssertionStatement(r, RDF.TYPE, ThirdPartyVocabulary.chebiProtein);
 				URI uri = handleSimpleAbundanceTerm(term, npCreator);
+				npCreator.addNamespace("geneProductOf", "http://purl.obolibrary.org/obo/RO_0002204");
 				npCreator.addAssertionStatement(r, ThirdPartyVocabulary.roGeneProductOf, uri);
 			} else if (funcAbbrev.matches("r")) {
 				r = newBNode();
+				npCreator.addNamespace("RNA", "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697");
 				npCreator.addAssertionStatement(r, RDF.TYPE, ThirdPartyVocabulary.chebiRna);
 				URI uri = handleSimpleAbundanceTerm(term, npCreator);
+				npCreator.addNamespace("geneProductOf", "http://purl.obolibrary.org/obo/RO_0002204");
 				npCreator.addAssertionStatement(r, ThirdPartyVocabulary.roGeneProductOf, uri);
 			} else if (funcAbbrev.matches("m")) {
 				r = newBNode();
+				npCreator.addNamespace("microRNA", "http://purl.obolibrary.org/obo/SO_0000276");
 				npCreator.addAssertionStatement(r, RDF.TYPE, ThirdPartyVocabulary.soMicroRna);
 				URI uri = handleSimpleAbundanceTerm(term, npCreator);
+				npCreator.addNamespace("geneProductOf", "http://purl.obolibrary.org/obo/RO_0002204");
 				npCreator.addAssertionStatement(r, ThirdPartyVocabulary.roGeneProductOf, uri);
 			} else if (funcAbbrev.matches("tloc|sec|surf|deg|rxn")) {
 				r = handleTransformationTerm(term, npCreator);
@@ -358,8 +351,9 @@ public class Bel2Nanopub {
 		for (Term varTerm : protTerm.getTerms()) {
 			String modAbbrev = varTerm.getFunctionEnum().getAbbreviation();
 			String varString = varTerm.toBELShortForm().replaceFirst("^.*\\((.*)\\).*$", "$1");
+			npCreator.addNamespace("proteinModification", "http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000");
+			npCreator.addAssertionStatement(bn, RDF.TYPE, ThirdPartyVocabulary.modProteinModification);
 			if (modAbbrev.equals("pmod")) {
-				npCreator.addAssertionStatement(bn, RDF.TYPE, ThirdPartyVocabulary.modProteinModification);
 				String v = varString.substring(0, 1);
 				URI modtypeUri = IdSchemes.makeUri("psimod", v, npCreator);
 				if (modtypeUri == null) {
@@ -373,7 +367,6 @@ public class Bel2Nanopub {
 				if (var == null) {
 					throw new Bel2NanopubException("Unknown protein variant: " + var);
 				}
-				npCreator.addAssertionStatement(bn, RDF.TYPE, ThirdPartyVocabulary.modProteinModification);
 				// TODO What to do with protein variants? (they are ignored by bel2rdf)
 				if (var.equals(BelRdfVocabulary.getNormalizedVariant("sub"))) {
 					npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasSubstitution, vf.createLiteral(varString));
@@ -407,6 +400,7 @@ public class Bel2Nanopub {
 		for (Term child : term.getTerms()) {
 			Resource ch = processBelTerm(child, npCreator);
 			npCreator.addAssertionStatement(bn, bfoHasPart, ch);
+			npCreator.addNamespace("hasPart", "http://purl.obolibrary.org/obo/BFO_0000051");
 		}
 		return bn;
 	}
@@ -420,6 +414,7 @@ public class Bel2Nanopub {
 		}
 		BNode bn = newBNode();
 		Resource ch = processBelTerm(term.getTerms().get(0), npCreator);
+		npCreator.addNamespace("hasAgent", "http://semanticscience.org/resource/SIO_000139");
 		npCreator.addAssertionStatement(bn, ThirdPartyVocabulary.sioHasAgent, ch);
 		return bn;
 	}
@@ -505,6 +500,7 @@ public class Bel2Nanopub {
 				BNode annBn = newBNode();
 				Literal annType = vf.createLiteral(annN);
 				Literal annValue = vf.createLiteral(annV);
+				npCreator.addNamespace("hasAnnotation", "http://semanticscience.org/resource/SIO_000255");
 				npCreator.addAssertionStatement(node, ThirdPartyVocabulary.sioHasAnnotation, annBn);
 				npCreator.addAssertionStatement(annBn, DCTERMS.SUBJECT, annType);
 				npCreator.addAssertionStatement(annBn, RDF.VALUE, annValue);
@@ -517,7 +513,7 @@ public class Bel2Nanopub {
 				}
 				IdScheme sc = IdSchemes.getScheme(annNs);
 				if (sc != null) {
-					npCreator.addNamespace("obo", ThirdPartyVocabulary.oboNs);
+					npCreator.addNamespace("occursIn", "http://purl.obolibrary.org/obo/BFO_0000066");
 					npCreator.addAssertionStatement(node, ThirdPartyVocabulary.bfoOccursIn, annUri);
 				} else {
 					BNode annBn = newBNode();
@@ -544,6 +540,7 @@ public class Bel2Nanopub {
 				rel = RDFS.MEMBER;
 			} else if (relN.equals("hasComponent")) {
 				rel = ThirdPartyVocabulary.bfoHasPart;
+				npCreator.addNamespace("hasPart", "http://purl.obolibrary.org/obo/BFO_0000051");
 			} else {
 				rel = BelRdfVocabulary.getRel(relN);
 			}
