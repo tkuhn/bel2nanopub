@@ -176,7 +176,7 @@ sub:Assert {
 		a Protein: .
 	
 	sub:_5 hasAgent: sub:_6 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0003824> .
+		a go:0003824 .
 	
 	sub:_6 geneProductOf: hgnc:12791 ;
 		a Protein: .
@@ -551,12 +551,12 @@ sub:Assert {
 		a rdf:Statement .
 	
 	sub:_3 hasAgent: sub:_4 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0006471> .
+		a go:0006471 .
 	
 	sub:_4 geneProductOf: hgnc:270 ;
 		a Protein: .
 	
-	sub:_5 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
+	sub:_5 belv:hasModificationType psimod:00731 ;
 		belv:variantOf hgnc:270 ;
 		a proteinModification: .
 }
@@ -634,12 +634,12 @@ sub:Assert {
 		a rdf:Statement .
 	
 	sub:_3 hasAgent: sub:_4 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0006471> .
+		a go:0006471 .
 	
 	sub:_4 geneProductOf: hgnc:270 ;
 		a Protein: .
 	
-	sub:_5 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
+	sub:_5 belv:hasModificationType psimod:00731 ;
 		belv:variantOf hgnc:12833 ;
 		a proteinModification: .
 }
@@ -717,12 +717,12 @@ sub:Assert {
 		a rdf:Statement .
 	
 	sub:_3 hasAgent: sub:_4 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0006471> .
+		a go:0006471 .
 	
 	sub:_4 geneProductOf: hgnc:270 ;
 		a Protein: .
 	
-	sub:_5 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
+	sub:_5 belv:hasModificationType psimod:00731 ;
 		belv:variantOf hgnc:4055 ;
 		a proteinModification: .
 }
@@ -791,7 +791,7 @@ sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:XRCC5,pmod(R)) => complex(a(CHEBI:\"deoxyribonucleic acid\"),p(HGNC:XRCC5),p(HGNC:XRCC6))" .
 	
 	sub:_1 belv:directlyIncreases sub:_2 ;
-		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
+		belv:hasModificationType psimod:00731 ;
 		belv:variantOf hgnc:12833 ;
 		a proteinModification: .
 	
@@ -869,7 +869,7 @@ sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:XRCC6,pmod(R)) => complex(a(CHEBI:\"deoxyribonucleic acid\"),p(HGNC:XRCC5),p(HGNC:XRCC6))" .
 	
 	sub:_1 belv:directlyIncreases sub:_2 ;
-		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
+		belv:hasModificationType psimod:00731 ;
 		belv:variantOf hgnc:4055 ;
 		a proteinModification: .
 	
@@ -946,12 +946,12 @@ sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:XRCC5,pmod(R)) => cat(p(HGNC:WRN))" .
 	
 	sub:_1 belv:directlyIncreases sub:_2 ;
-		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
+		belv:hasModificationType psimod:00731 ;
 		belv:variantOf hgnc:12833 ;
 		a proteinModification: .
 	
 	sub:_2 hasAgent: sub:_3 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0003824> .
+		a go:0003824 .
 	
 	sub:_3 geneProductOf: hgnc:12791 ;
 		a Protein: .
@@ -1020,12 +1020,12 @@ sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:XRCC6,pmod(R)) => cat(p(HGNC:WRN))" .
 	
 	sub:_1 belv:directlyIncreases sub:_2 ;
-		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
+		belv:hasModificationType psimod:00731 ;
 		belv:variantOf hgnc:4055 ;
 		a proteinModification: .
 	
 	sub:_2 hasAgent: sub:_3 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0003824> .
+		a go:0003824 .
 	
 	sub:_3 geneProductOf: hgnc:12791 ;
 		a Protein: .

@@ -24,7 +24,7 @@
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -40,12 +40,12 @@ sub:Assert {
 	sub:Assert rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> kin(p(HGNC:MAPK1))" .
 	
 	sub:_1 hasAgent: sub:_2 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_2 geneProductOf: hgnc:6871 ;
 		a Protein: .
 	
-	sub:_3 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_3 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_1 ;
 		rdf:predicate belv:increases ;
 		rdf:subject chebi:746 ;
@@ -102,7 +102,7 @@ sub:Info {
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -118,12 +118,12 @@ sub:Assert {
 	sub:Assert rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> kin(p(HGNC:MAPK8))" .
 	
 	sub:_1 hasAgent: sub:_2 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_2 geneProductOf: hgnc:6881 ;
 		a Protein: .
 	
-	sub:_3 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_3 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_1 ;
 		rdf:predicate belv:increases ;
 		rdf:subject chebi:746 ;
@@ -180,7 +180,7 @@ sub:Info {
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -196,12 +196,12 @@ sub:Assert {
 	sub:Assert rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> kin(p(PFH:\"MAPK p38 Family\"))" .
 	
 	sub:_1 hasAgent: sub:_2 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_2 geneProductOf: pfh:MAPK%20p38%20Family ;
 		a Protein: .
 	
-	sub:_3 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_3 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_1 ;
 		rdf:predicate belv:increases ;
 		rdf:subject chebi:746 ;
@@ -258,7 +258,7 @@ sub:Info {
 @prefix go: <http://amigo.geneontology.org/amigo/term/GO:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -273,17 +273,17 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:MAPK1,pmod(P,T)) => kin(p(HGNC:MAPK1))" .
 	
-	sub:_1 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
+	sub:_1 belv:hasModificationType psimod:00696 ;
 		belv:variantOf hgnc:6871 ;
 		a proteinModification: .
 	
 	sub:_2 hasAgent: sub:_3 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_3 geneProductOf: hgnc:6871 ;
 		a Protein: .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_4 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:directlyIncreases ;
 		rdf:subject sub:_1 ;
@@ -340,7 +340,7 @@ sub:Info {
 @prefix go: <http://amigo.geneontology.org/amigo/term/GO:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -355,17 +355,17 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:MAPK1,pmod(P,Y)) => kin(p(HGNC:MAPK1))" .
 	
-	sub:_1 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
+	sub:_1 belv:hasModificationType psimod:00696 ;
 		belv:variantOf hgnc:6871 ;
 		a proteinModification: .
 	
 	sub:_2 hasAgent: sub:_3 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_3 geneProductOf: hgnc:6871 ;
 		a Protein: .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_4 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:directlyIncreases ;
 		rdf:subject sub:_1 ;
@@ -422,7 +422,7 @@ sub:Info {
 @prefix go: <http://amigo.geneontology.org/amigo/term/GO:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -437,17 +437,17 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:MAPK8,pmod(P,T)) => kin(p(HGNC:MAPK8))" .
 	
-	sub:_1 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
+	sub:_1 belv:hasModificationType psimod:00696 ;
 		belv:variantOf hgnc:6881 ;
 		a proteinModification: .
 	
 	sub:_2 hasAgent: sub:_3 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_3 geneProductOf: hgnc:6881 ;
 		a Protein: .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_4 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:directlyIncreases ;
 		rdf:subject sub:_1 ;
@@ -504,7 +504,7 @@ sub:Info {
 @prefix go: <http://amigo.geneontology.org/amigo/term/GO:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -519,17 +519,17 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:MAPK8,pmod(P,Y)) => kin(p(HGNC:MAPK8))" .
 	
-	sub:_1 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
+	sub:_1 belv:hasModificationType psimod:00696 ;
 		belv:variantOf hgnc:6881 ;
 		a proteinModification: .
 	
 	sub:_2 hasAgent: sub:_3 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_3 geneProductOf: hgnc:6881 ;
 		a Protein: .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_4 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:directlyIncreases ;
 		rdf:subject sub:_1 ;
@@ -587,7 +587,7 @@ sub:Info {
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -602,17 +602,17 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:MAPK14,pmod(P,T)) => kin(p(PFH:\"MAPK p38 Family\"))" .
 	
-	sub:_1 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
+	sub:_1 belv:hasModificationType psimod:00696 ;
 		belv:variantOf hgnc:6876 ;
 		a proteinModification: .
 	
 	sub:_2 hasAgent: sub:_3 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_3 geneProductOf: pfh:MAPK%20p38%20Family ;
 		a Protein: .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_4 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:directlyIncreases ;
 		rdf:subject sub:_1 ;
@@ -670,7 +670,7 @@ sub:Info {
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -685,17 +685,17 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:MAPK14,pmod(P,Y)) => kin(p(PFH:\"MAPK p38 Family\"))" .
 	
-	sub:_1 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
+	sub:_1 belv:hasModificationType psimod:00696 ;
 		belv:variantOf hgnc:6876 ;
 		a proteinModification: .
 	
 	sub:_2 hasAgent: sub:_3 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_3 geneProductOf: pfh:MAPK%20p38%20Family ;
 		a Protein: .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_4 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:directlyIncreases ;
 		rdf:subject sub:_1 ;
@@ -752,7 +752,7 @@ sub:Info {
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -768,16 +768,16 @@ sub:Assert {
 	sub:Assert rdfs:label "phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK1,pmod(P))" .
 	
 	sub:_1 hasAgent: sub:_2 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016791> .
+		a go:0016791 .
 	
 	sub:_2 geneProductOf: hgnc:3064 ;
 		a Protein: .
 	
-	sub:_3 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
+	sub:_3 belv:hasModificationType psimod:00696 ;
 		belv:variantOf hgnc:6871 ;
 		a proteinModification: .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_4 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_3 ;
 		rdf:predicate belv:directlyDecreases ;
 		rdf:subject sub:_1 ;
@@ -834,7 +834,7 @@ sub:Info {
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -850,16 +850,16 @@ sub:Assert {
 	sub:Assert rdfs:label "phos(p(HGNC:DUSP1)) =| p(HGNC:MAPK8,pmod(P))" .
 	
 	sub:_1 hasAgent: sub:_2 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016791> .
+		a go:0016791 .
 	
 	sub:_2 geneProductOf: hgnc:3064 ;
 		a Protein: .
 	
-	sub:_3 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
+	sub:_3 belv:hasModificationType psimod:00696 ;
 		belv:variantOf hgnc:6881 ;
 		a proteinModification: .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_4 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_3 ;
 		rdf:predicate belv:directlyDecreases ;
 		rdf:subject sub:_1 ;
@@ -917,7 +917,7 @@ sub:Info {
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -933,16 +933,16 @@ sub:Assert {
 	sub:Assert rdfs:label "phos(p(HGNC:DUSP1)) =| p(PFH:\"MAPK p38 Family\",pmod(P))" .
 	
 	sub:_1 hasAgent: sub:_2 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016791> .
+		a go:0016791 .
 	
 	sub:_2 geneProductOf: hgnc:3064 ;
 		a Protein: .
 	
-	sub:_3 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
+	sub:_3 belv:hasModificationType psimod:00696 ;
 		belv:variantOf pfh:MAPK%20p38%20Family ;
 		a proteinModification: .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_4 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_3 ;
 		rdf:predicate belv:directlyDecreases ;
 		rdf:subject sub:_1 ;
@@ -998,7 +998,7 @@ sub:Info {
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1014,18 +1014,18 @@ sub:Assert {
 	sub:Assert rdfs:label "phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK1))" .
 	
 	sub:_1 hasAgent: sub:_2 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016791> .
+		a go:0016791 .
 	
 	sub:_2 geneProductOf: hgnc:3064 ;
 		a Protein: .
 	
 	sub:_3 hasAgent: sub:_4 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_4 geneProductOf: hgnc:6871 ;
 		a Protein: .
 	
-	sub:_5 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_5 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_3 ;
 		rdf:predicate belv:directlyDecreases ;
 		rdf:subject sub:_1 ;
@@ -1081,7 +1081,7 @@ sub:Info {
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1097,18 +1097,18 @@ sub:Assert {
 	sub:Assert rdfs:label "phos(p(HGNC:DUSP1)) =| kin(p(HGNC:MAPK8))" .
 	
 	sub:_1 hasAgent: sub:_2 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016791> .
+		a go:0016791 .
 	
 	sub:_2 geneProductOf: hgnc:3064 ;
 		a Protein: .
 	
 	sub:_3 hasAgent: sub:_4 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_4 geneProductOf: hgnc:6881 ;
 		a Protein: .
 	
-	sub:_5 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_5 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_3 ;
 		rdf:predicate belv:directlyDecreases ;
 		rdf:subject sub:_1 ;
@@ -1165,7 +1165,7 @@ sub:Info {
 @prefix pfh: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1181,18 +1181,18 @@ sub:Assert {
 	sub:Assert rdfs:label "phos(p(HGNC:DUSP1)) =| kin(p(PFH:\"MAPK p38 Family\"))" .
 	
 	sub:_1 hasAgent: sub:_2 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016791> .
+		a go:0016791 .
 	
 	sub:_2 geneProductOf: hgnc:3064 ;
 		a Protein: .
 	
 	sub:_3 hasAgent: sub:_4 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_4 geneProductOf: pfh:MAPK%20p38%20Family ;
 		a Protein: .
 	
-	sub:_5 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_5 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_3 ;
 		rdf:predicate belv:directlyDecreases ;
 		rdf:subject sub:_1 ;
@@ -1248,7 +1248,7 @@ sub:Info {
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1266,7 +1266,7 @@ sub:Assert {
 	sub:_1 geneProductOf: hgnc:3064 ;
 		a Protein: .
 	
-	sub:_2 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_2 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_1 ;
 		rdf:predicate belv:increases ;
 		rdf:subject chebi:746 ;
@@ -1323,7 +1323,7 @@ sub:Info {
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1339,12 +1339,12 @@ sub:Assert {
 	sub:Assert rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> tscript(p(HGNC:JUN))" .
 	
 	sub:_1 hasAgent: sub:_2 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0034062> .
+		a go:0034062 .
 	
 	sub:_2 geneProductOf: hgnc:6204 ;
 		a Protein: .
 	
-	sub:_3 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_3 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_1 ;
 		rdf:predicate belv:increases ;
 		rdf:subject chebi:746 ;
@@ -1400,7 +1400,7 @@ sub:Info {
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1419,19 +1419,19 @@ sub:Assert {
 		a Protein: .
 	
 	sub:_2 hasAgent: sub:_3 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0034062> .
+		a go:0034062 .
 	
 	sub:_3 geneProductOf: hgnc:6204 ;
 		a Protein: .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_4 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:decreases ;
 		rdf:subject sub:_5 ;
 		a rdf:Statement .
 	
 	sub:_5 hasAgent: sub:_1 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016791> .
+		a go:0016791 .
 }
 
 sub:Prov {
@@ -1484,7 +1484,7 @@ sub:Info {
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1500,12 +1500,12 @@ sub:Assert {
 	sub:Assert rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> tscript(p(HGNC:ELK1))" .
 	
 	sub:_1 hasAgent: sub:_2 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0034062> .
+		a go:0034062 .
 	
 	sub:_2 geneProductOf: hgnc:3321 ;
 		a Protein: .
 	
-	sub:_3 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_3 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_1 ;
 		rdf:predicate belv:increases ;
 		rdf:subject chebi:746 ;
@@ -1562,7 +1562,7 @@ sub:Info {
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1578,12 +1578,12 @@ sub:Assert {
 	sub:Assert rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> tscript(p(HGNC:MYC))" .
 	
 	sub:_1 hasAgent: sub:_2 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0034062> .
+		a go:0034062 .
 	
 	sub:_2 geneProductOf: hgnc:7553 ;
 		a Protein: .
 	
-	sub:_3 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_3 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_1 ;
 		rdf:predicate belv:increases ;
 		rdf:subject chebi:746 ;
@@ -1639,7 +1639,7 @@ sub:Info {
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1665,7 +1665,7 @@ sub:Assert {
 		rdf:subject chebi:746 ;
 		a rdf:Statement .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_4 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_3 ;
 		rdf:predicate belv:decreases ;
 		rdf:subject sub:_1 ;
@@ -1722,7 +1722,7 @@ sub:Info {
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1738,7 +1738,7 @@ sub:Assert {
 	sub:Assert rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1)" , "kin(p(HGNC:MAPK1)) -> (a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1))" .
 	
 	sub:_1 hasAgent: sub:_2 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_2 geneProductOf: hgnc:6871 ;
 		a Protein: .
@@ -1751,7 +1751,7 @@ sub:Assert {
 		rdf:subject chebi:746 ;
 		a rdf:Statement .
 	
-	sub:_5 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_5 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_4 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -1807,7 +1807,7 @@ sub:Info {
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1823,7 +1823,7 @@ sub:Assert {
 	sub:Assert rdfs:label "kin(p(HGNC:MAPK1)) -> p(HGNC:DUSP1)" .
 	
 	sub:_1 hasAgent: sub:_2 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_2 geneProductOf: hgnc:6871 ;
 		a Protein: .
@@ -1831,7 +1831,7 @@ sub:Assert {
 	sub:_3 geneProductOf: hgnc:3064 ;
 		a Protein: .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+	sub:_4 occursIn: atcc:CRL-1593.2.aspx , species:9606 ;
 		rdf:object sub:_3 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;

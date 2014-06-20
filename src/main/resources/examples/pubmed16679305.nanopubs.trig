@@ -171,7 +171,7 @@ sub:Info {
 @prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -190,7 +190,7 @@ sub:Assert {
 		belv:variantOf hgnc:6407 ;
 		a proteinModification: .
 	
-	sub:_2 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_2 occursIn: atcc:CCL-92.aspx , species:10090 ;
 		rdf:object mesh:D009369 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -246,7 +246,7 @@ sub:Info {
 @prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -265,7 +265,7 @@ sub:Assert {
 		belv:variantOf hgnc:6407 ;
 		a proteinModification: .
 	
-	sub:_2 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_2 occursIn: atcc:CCL-92.aspx , species:10090 ;
 		rdf:object mesh:D009369 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -321,7 +321,7 @@ sub:Info {
 @prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -340,7 +340,7 @@ sub:Assert {
 		belv:variantOf hgnc:6407 ;
 		a proteinModification: .
 	
-	sub:_2 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_2 occursIn: atcc:CCL-92.aspx , species:10090 ;
 		rdf:object mesh:D009369 ;
 		rdf:predicate belv:causesNoChange ;
 		rdf:subject sub:_1 ;
@@ -396,7 +396,7 @@ sub:Info {
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix mgi: <http://www.informatics.jax.org/marker/MGI:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -421,10 +421,10 @@ sub:Assert {
 	sub:_3 geneProductOf: hgnc:6407 ;
 		a Protein: .
 	
-	sub:_4 geneProductOf: <http://www.informatics.jax.org/marker/MGI:97847> ;
+	sub:_4 geneProductOf: mgi:97847 ;
 		a Protein: .
 	
-	sub:_5 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_5 occursIn: atcc:CCL-92.aspx , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:directlyIncreases ;
 		rdf:subject sub:_1 ;
@@ -481,7 +481,7 @@ sub:Info {
 @prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -501,12 +501,12 @@ sub:Assert {
 		a proteinModification: .
 	
 	sub:_2 hasAgent: sub:_3 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_3 geneProductOf: pfm:MAPK%20Erk1%2F3%20Family ;
 		a Protein: .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_4 occursIn: atcc:CCL-92.aspx , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -562,7 +562,7 @@ sub:Info {
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix mgi: <http://www.informatics.jax.org/marker/MGI:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -587,10 +587,10 @@ sub:Assert {
 	sub:_3 geneProductOf: hgnc:6407 ;
 		a Protein: .
 	
-	sub:_4 geneProductOf: <http://www.informatics.jax.org/marker/MGI:97847> ;
+	sub:_4 geneProductOf: mgi:97847 ;
 		a Protein: .
 	
-	sub:_5 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_5 occursIn: atcc:CCL-92.aspx , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:causesNoChange ;
 		rdf:subject sub:_1 ;
@@ -647,7 +647,7 @@ sub:Info {
 @prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -667,12 +667,12 @@ sub:Assert {
 		a proteinModification: .
 	
 	sub:_2 hasAgent: sub:_3 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_3 geneProductOf: pfm:MAPK%20Erk1%2F3%20Family ;
 		a Protein: .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_4 occursIn: atcc:CCL-92.aspx , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:causesNoChange ;
 		rdf:subject sub:_1 ;
@@ -729,7 +729,7 @@ sub:Info {
 @prefix ncm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-complexes/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -751,9 +751,9 @@ sub:Assert {
 		a proteinModification: .
 	
 	sub:_2 hasAgent: ncm:p85%2Fp110%20PI3Kinase%20Complex ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
-	sub:_3 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_3 occursIn: atcc:CCL-92.aspx , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -811,7 +811,7 @@ sub:Info {
 @prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -831,12 +831,12 @@ sub:Assert {
 		a proteinModification: .
 	
 	sub:_2 hasAgent: sub:_3 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_3 geneProductOf: pfm:Akt%20Family ;
 		a Protein: .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_4 occursIn: atcc:CCL-92.aspx , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -894,7 +894,7 @@ sub:Info {
 @prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -914,12 +914,12 @@ sub:Assert {
 		a proteinModification: .
 	
 	sub:_2 hasAgent: sub:_3 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_3 geneProductOf: pfm:Mapk%20JNK%20Family ;
 		a Protein: .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_4 occursIn: atcc:CCL-92.aspx , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -977,7 +977,7 @@ sub:Info {
 @prefix pfm: <http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families/> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -997,12 +997,12 @@ sub:Assert {
 		a proteinModification: .
 	
 	sub:_2 hasAgent: sub:_3 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
 	sub:_3 geneProductOf: pfm:Mapk%20p38%20Family ;
 		a Protein: .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_4 occursIn: atcc:CCL-92.aspx , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -1060,7 +1060,7 @@ sub:Info {
 @prefix mgi: <http://www.informatics.jax.org/marker/MGI:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1080,12 +1080,12 @@ sub:Assert {
 		a proteinModification: .
 	
 	sub:_2 hasAgent: sub:_3 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
+		a go:0016301 .
 	
-	sub:_3 geneProductOf: <http://www.informatics.jax.org/marker/MGI:95481> ;
+	sub:_3 geneProductOf: mgi:95481 ;
 		a Protein: .
 	
-	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_4 occursIn: atcc:CCL-92.aspx , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -1142,7 +1142,7 @@ sub:Info {
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1161,11 +1161,11 @@ sub:Assert {
 		belv:variantOf hgnc:6407 ;
 		a proteinModification: .
 	
-	sub:_2 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
+	sub:_2 belv:hasModificationType psimod:00696 ;
 		belv:variantOf hgnc:9884 ;
 		a proteinModification: .
 	
-	sub:_3 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_3 occursIn: atcc:CCL-92.aspx , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -1220,7 +1220,7 @@ sub:Info {
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1242,7 +1242,7 @@ sub:Assert {
 	sub:_2 geneProductOf: hgnc:8729 ;
 		a Protein: .
 	
-	sub:_3 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_3 occursIn: atcc:CCL-92.aspx , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -1297,7 +1297,7 @@ sub:Info {
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1319,7 +1319,7 @@ sub:Assert {
 	sub:_2 geneProductOf: hgnc:1579 ;
 		a Protein: .
 	
-	sub:_3 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_3 occursIn: atcc:CCL-92.aspx , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -1375,7 +1375,7 @@ sub:Info {
 @prefix go: <http://amigo.geneontology.org/amigo/term/GO:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1394,8 +1394,8 @@ sub:Assert {
 		belv:variantOf hgnc:6407 ;
 		a proteinModification: .
 	
-	sub:_2 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
-		rdf:object <http://amigo.geneontology.org/amigo/term/GO:0000082> ;
+	sub:_2 occursIn: atcc:CCL-92.aspx , species:10090 ;
+		rdf:object go:0000082 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -1450,7 +1450,7 @@ sub:Info {
 @prefix go: <http://amigo.geneontology.org/amigo/term/GO:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1469,8 +1469,8 @@ sub:Assert {
 		belv:variantOf hgnc:6407 ;
 		a proteinModification: .
 	
-	sub:_2 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
-		rdf:object <http://amigo.geneontology.org/amigo/term/GO:0000086> ;
+	sub:_2 occursIn: atcc:CCL-92.aspx , species:10090 ;
+		rdf:object go:0000086 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -1525,7 +1525,7 @@ sub:Info {
 @prefix go: <http://amigo.geneontology.org/amigo/term/GO:> .
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/ .aspx> .
+@prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
@@ -1544,8 +1544,8 @@ sub:Assert {
 		belv:variantOf hgnc:6407 ;
 		a proteinModification: .
 	
-	sub:_2 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
-		rdf:object <http://amigo.geneontology.org/amigo/term/GO:0042981> ;
+	sub:_2 occursIn: atcc:CCL-92.aspx , species:10090 ;
+		rdf:object go:0042981 ;
 		rdf:predicate belv:causesNoChange ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .

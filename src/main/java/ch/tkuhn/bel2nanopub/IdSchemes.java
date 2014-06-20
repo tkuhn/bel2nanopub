@@ -45,16 +45,20 @@ public class IdSchemes {
 				n = n.substring(0, n.indexOf(" "));
 			}
 			String id = sc.getId(belLabel);
+			String ns;
 			if (id == null) {
 				return null;
 			} else {
-				if (sc.getRdfNs().contains(" ")) {
-					uriString = sc.getRdfNs().replaceAll(" ", id);
+				ns = sc.getRdfNs();
+				if (ns.contains(" ")) {
+					uriString = ns.replaceAll(" ", id);
+					int i = ns.indexOf(" ");
+					ns = ns.substring(0, i);
 				} else {
-					uriString = sc.getRdfNs() + id;
+					uriString = ns + id;
 				}
 			}
-			npCreator.addNamespace(sc.getRdfPrefix(), sc.getRdfNs());
+			npCreator.addNamespace(sc.getRdfPrefix(), ns);
 		}
 		String ns = schemeNameOrBelNs;
 		if (uriString == null && ns.contains("://")) {
