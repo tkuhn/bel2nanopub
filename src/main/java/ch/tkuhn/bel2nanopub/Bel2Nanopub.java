@@ -434,11 +434,11 @@ public class Bel2Nanopub {
 			npCreator.addAssertionStatement(bn, RDF.TYPE, ThirdPartyVocabulary.sioBiochemicalReaction);
 			for (Term reactant : term.getTerms().get(0).getTerms()) {
 				Resource r = processBelTerm(reactant, npCreator);
-				npCreator.addAssertionStatement(bn, ThirdPartyVocabulary.roHasInput, r);
+				npCreator.addAssertionStatement(bn, ThirdPartyVocabulary.sioHasInput, r);
 			}
 			for (Term product : term.getTerms().get(1).getTerms()) {
 				Resource r = processBelTerm(product, npCreator);
-				npCreator.addAssertionStatement(bn, ThirdPartyVocabulary.roHasOutput, r);
+				npCreator.addAssertionStatement(bn, ThirdPartyVocabulary.sioHasOutput, r);
 			}
 		} else {
 			throw new Bel2NanopubException("Unexpected unrecognized transformation function: " + funcAbbrev);

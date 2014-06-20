@@ -24,10 +24,12 @@ public class ThirdPartyVocabulary {
 	public static final URI goExtracellularRegion = new URIImpl("http://amigo.geneontology.org/amigo/term/GO:0005576");
 	public static final URI goCellSurface = new URIImpl("http://amigo.geneontology.org/amigo/term/GO:0009986");
 
-	public static final URI roHasInput = new URIImpl("http://purl.obolibrary.org/obo/RO_0002233");
-	public static final URI roHasOutput = new URIImpl("http://purl.obolibrary.org/obo/RO_0002234");
-
 	public static final URI sioHasAgent = new URIImpl("http://semanticscience.org/resource/SIO_000139");
 	public static final URI sioBiochemicalReaction = new URIImpl("http://semanticscience.org/resource/SIO_010036");
+	public static final URI sioHasInput = new URIImpl("http://semanticscience.org/resource/SIO_000230");
+	public static final URI sioHasOutput = new URIImpl("http://semanticscience.org/resource/SIO_000229");
+	// not yet used:
+	public static final URI sioIsTranscribedInto = new URIImpl("http://semanticscience.org/resource/SIO_010080");
+	public static final URI sioIsTranslatedInto = new URIImpl("http://semanticscience.org/resource/SIO_010082");
 
 }
