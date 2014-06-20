@@ -517,7 +517,7 @@ public class Bel2Nanopub {
 				throw new Bel2NanopubException("Unknown relationship: " + relN);
 			}
 			List<Resource> objs = new ArrayList<Resource>();
-			if (BelRdfVocabulary.isMultiRel(relN)) {
+			if (relN.matches("hasMembers|hasComponents")) {
 				Term term = statement.getObject().getTerm();
 				if (!Utils.getFunctionAbbrev(term).equals("list")) {
 					throw new Bel2NanopubException("List expected for multi-relation: " + relN);

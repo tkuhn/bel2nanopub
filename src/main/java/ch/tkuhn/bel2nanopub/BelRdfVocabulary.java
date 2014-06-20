@@ -83,63 +83,16 @@ public class BelRdfVocabulary {
 //		return transformFunctionMap.get(abbrev);
 //	}
 
-	private static Map<String,String> relNormalizeMap = new HashMap<String,String>();
-
-	static {
-		relNormalizeMap.put("analogous", "analogous");
-		relNormalizeMap.put("association", "association");
-		relNormalizeMap.put("--", "association");
-		relNormalizeMap.put("biomarkerFor", "biomarkerFor");
-		relNormalizeMap.put("causesNoChange", "causesNoChange");
-		relNormalizeMap.put("decreases", "decreases");
-		relNormalizeMap.put("-|", "decreases");
-		relNormalizeMap.put("directlyDecreases", "directlyDecreases");
-		relNormalizeMap.put("=|", "directlyDecreases");
-		relNormalizeMap.put("directlyIncreases", "directlyIncreases");
-		relNormalizeMap.put("=>", "directlyIncreases");
-		relNormalizeMap.put("hasComponent", "hasComponent");
-		relNormalizeMap.put("hasComponents", "hasComponent");
-		relNormalizeMap.put("hasMember", "hasMember");
-		relNormalizeMap.put("hasMembers", "hasMember");
-		relNormalizeMap.put("hasModification", "hasModification");
-		relNormalizeMap.put("hasProduct", "hasProduct");
-		relNormalizeMap.put("hasVariant", "hasVariant");
-		relNormalizeMap.put("includes", "includes");
-		relNormalizeMap.put("increases", "increases");
-		relNormalizeMap.put("->", "increases");
-		relNormalizeMap.put("isA", "isA");
-		relNormalizeMap.put("negativeCorrelation", "negativeCorrelation");
-		relNormalizeMap.put("orthologous", "orthologous");
-		relNormalizeMap.put("positiveCorrelation", "positiveCorrelation");
-		relNormalizeMap.put("prognosticBiomarkerFor", "prognosticBiomarkerFor");
-		relNormalizeMap.put("rateLimitingStepOf", "rateLimitingStepOf");
-		relNormalizeMap.put("reactantIn", "reactantIn");
-		relNormalizeMap.put("subProcessOf", "subProcessOf");
-		relNormalizeMap.put("transcribedTo", "transcribedTo");
-		relNormalizeMap.put(":>", "transcribedTo");
-		relNormalizeMap.put(">>", "translatedTo");
-		relNormalizeMap.put("translatedTo", "translatedTo");
-		relNormalizeMap.put("translocates", "translocates");
-	}
-
-	public static String getNormalizedRel(String rel) {
-		return relNormalizeMap.get(rel);
-	}
-
-	public static boolean isMultiRel(String rel) {
-		return "hasMembers".equals(rel) || "hasComponents".equals(rel);
-	}
-
 	private static Map<String,URI> relMap = new HashMap<String,URI>();
 
 	static {
-		relMap.put("association", new URIImpl(BELV_NS + "correlativeRelationship"));
+		relMap.put("association", new URIImpl(BELV_NS + "correlativeRelationship"));  // synonym: --
 		relMap.put("biomarkerFor", new URIImpl(BELV_NS + "biomarkerFor"));
 		relMap.put("causesNoChange", new URIImpl(BELV_NS + "causesNoChange"));
-		relMap.put("decreases", new URIImpl(BELV_NS + "decreases"));
-		relMap.put("directlyDecreases", new URIImpl(BELV_NS + "directlyDecreases"));
-		relMap.put("directlyIncreases", new URIImpl(BELV_NS + "directlyIncreases"));
-		relMap.put("increases", new URIImpl(BELV_NS + "increases"));
+		relMap.put("decreases", new URIImpl(BELV_NS + "decreases"));  // synonym: -|
+		relMap.put("directlyDecreases", new URIImpl(BELV_NS + "directlyDecreases"));  // synonym: =|
+		relMap.put("directlyIncreases", new URIImpl(BELV_NS + "directlyIncreases"));  // synonym: =>
+		relMap.put("increases", new URIImpl(BELV_NS + "increases"));  // synonym: ->
 		relMap.put("negativeCorrelation", new URIImpl(BELV_NS + "negativeCorrelation"));
 		relMap.put("positiveCorrelation", new URIImpl(BELV_NS + "positiveCorrelation"));
 		relMap.put("prognosticBiomarkerFor", new URIImpl(BELV_NS + "prognosticBiomarkerFor"));
@@ -150,13 +103,13 @@ public class BelRdfVocabulary {
 //		relMap.put("hasComponent", new URIImpl(BELV_NS + "hasComponent"));
 
 		// Made up URIs, not used by official BEL tools:
-		relMap.put("transcribedTo", new URIImpl(BELV_NS + "transcribedTo"));
-		relMap.put("translatedTo", new URIImpl(BELV_NS + "translatedTo"));
+		relMap.put("transcribedTo", new URIImpl(BELV_NS + "transcribedTo"));  // synonym: :>
+		relMap.put("translatedTo", new URIImpl(BELV_NS + "translatedTo"));  // synonym: >>
 		relMap.put("translocates", new URIImpl(BELV_NS + "translocates"));
 	}
 
 	public static URI getRel(String rel) {
-		return relMap.get(relNormalizeMap.get(rel));
+		return relMap.get(rel);
 	}
 
 //	private static Map<String,URI> activityMap = new HashMap<String,URI>();
