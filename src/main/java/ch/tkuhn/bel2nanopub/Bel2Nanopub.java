@@ -410,14 +410,18 @@ public class Bel2Nanopub {
 			if (tc != 1 || pc != 0) {
 				throw new Bel2NanopubException("Invalid format for 'sec'");
 			}
-			// TODO support this
-			throw new Bel2NanopubException("Transformation function 'sec' is not yet supported");
+			Resource r = processBelTerm(term.getTerms().get(0), npCreator);
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.translocationOf, r);
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.translocationFrom, ThirdPartyVocabulary.goIntracellular);
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.translocationTo, ThirdPartyVocabulary.goExtracellularRegion);
 		} else if ("surf".equals(funcAbbrev)) {
 			if (tc != 1 || pc != 0) {
 				throw new Bel2NanopubException("Invalid format for 'surf'");
 			}
-			// TODO support this
-			throw new Bel2NanopubException("Transformation function 'surf' is not yet supported");
+			Resource r = processBelTerm(term.getTerms().get(0), npCreator);
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.translocationOf, r);
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.translocationFrom, ThirdPartyVocabulary.goIntracellular);
+			npCreator.addAssertionStatement(bn, BelRdfVocabulary.translocationTo, ThirdPartyVocabulary.goCellSurface);
 		} else if ("deg".equals(funcAbbrev)) {
 			if (tc != 1 || pc != 0) {
 				throw new Bel2NanopubException("Invalid format for 'deg'");

@@ -20,4 +20,8 @@ public class ThirdPartyVocabulary {
 
 	public static final URI pavVersion = new URIImpl("http://purl.org/pav/version");
 
+	public static final URI goIntracellular = new URIImpl("http://amigo.geneontology.org/amigo/term/GO:0005622");
+	public static final URI goExtracellularRegion = new URIImpl("http://amigo.geneontology.org/amigo/term/GO:0005576");
+	public static final URI goCellSurface = new URIImpl("http://amigo.geneontology.org/amigo/term/GO:0009986");
+
 }
