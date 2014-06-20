@@ -370,7 +370,7 @@ public class Bel2Nanopub {
 				throw new Bel2NanopubException("Expecting only one parameter for: " + term.getFunctionEnum());
 			}
 			URI cUri = getUriFromParam(term.getParameters().get(0), npCreator);
-			npCreator.addAssertionStatement(bn, BelRdfVocabulary.abundanceOf, cUri);
+			npCreator.addAssertionStatement(bn, ThirdPartyVocabulary.sioHasAgent, cUri);
 		} else {
 			throw new Bel2NanopubException("Empty abundance term: " + term.getFunctionEnum());
 		}
@@ -386,7 +386,7 @@ public class Bel2Nanopub {
 		}
 		BNode bn = newBNode();
 		Resource ch = processBelTerm(term.getTerms().get(0), npCreator);
-		npCreator.addAssertionStatement(bn, BelRdfVocabulary.activityOf, ch);
+		npCreator.addAssertionStatement(bn, ThirdPartyVocabulary.sioHasAgent, ch);
 		return bn;
 	}
 

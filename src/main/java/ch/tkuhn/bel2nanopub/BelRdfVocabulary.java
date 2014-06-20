@@ -34,8 +34,6 @@ public class BelRdfVocabulary {
 	// Made up URIs, not used by official BEL tools:
 	public static final URI hasSubstitution = new URIImpl(BELV_NS + "hasSubstitution");
 	public static final URI hasModification = new URIImpl(BELV_NS + "hasModification");
-	public static final URI activityOf = new URIImpl(BELV_NS + "activityOf");
-	public static final URI abundanceOf = new URIImpl(BELV_NS + "abundanceOf");
 	public static final URI variantOf = new URIImpl(BELV_NS + "variantOf");
 	public static final URI translocationOf = new URIImpl(BELV_NS + "translocationOf");
 	public static final URI translocationFrom = new URIImpl(BELV_NS + "translocationFrom");
