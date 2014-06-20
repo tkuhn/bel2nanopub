@@ -293,7 +293,7 @@ public class Bel2Nanopub {
 		} else {
 			URI abUri = BelRdfVocabulary.getAbundanceFunction(funcAbbrev);
 			URI trUri = BelRdfVocabulary.getTransformFunction(funcAbbrev);
-			URI actUri = BelRdfVocabulary.getActivity(funcAbbrev);
+			URI actUri = IdSchemes.makeUri("activity", funcAbbrev, npCreator);
 			if (abUri != null) {
 				if (isProteinVariantTerm(abUri, term)) {
 					r = handleProteinVariantTerm(term, npCreator);

@@ -430,6 +430,12 @@
       "name": "psimod",
       "mappingType": "manual",
       "rdfNs": "http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:"
+    },
+    {
+      "name": "activity",
+      "mappingType": "manual",
+      "rdfPrefix": "go",
+      "rdfNs": "http://amigo.geneontology.org/amigo/term/GO:"
     }
   ]
 }

@@ -160,25 +160,24 @@ public class BelRdfVocabulary {
 		return relMap.get(relNormalizeMap.get(rel));
 	}
 
-	private static Map<String,URI> activityMap = new HashMap<String,URI>();
+//	private static Map<String,URI> activityMap = new HashMap<String,URI>();
+//
+//	static {
+//		activityMap.put("cat", new URIImpl(BELV_NS + "Catalytic"));
+//		activityMap.put("chap", new URIImpl(BELV_NS + "Chaperone"));
+//		activityMap.put("gtp", new URIImpl(BELV_NS + "GtpBound"));
+//		activityMap.put("kin", new URIImpl(BELV_NS + "Kinase"));
+//		activityMap.put("act", new URIImpl(BELV_NS + "Activity"));
+//		activityMap.put("pep", new URIImpl(BELV_NS + "Peptidase"));
+//		activityMap.put("phos", new URIImpl(BELV_NS + "Phosphatase"));
+//		activityMap.put("ribo", new URIImpl(BELV_NS + "Ribosylase"));
+//		activityMap.put("tscript", new URIImpl(BELV_NS + "Transcription"));
+//		activityMap.put("tport", new URIImpl(BELV_NS + "Transport"));
+//	}
 
-	static {
-		// Added "...Activity":
-		activityMap.put("cat", new URIImpl(BELV_NS + "CatalyticActivity"));
-		activityMap.put("chap", new URIImpl(BELV_NS + "ChaperoneActivity"));
-		activityMap.put("gtp", new URIImpl(BELV_NS + "GtpBoundActivity"));
-		activityMap.put("kin", new URIImpl(BELV_NS + "KinaseActivity"));
-		activityMap.put("act", new URIImpl(BELV_NS + "MolecularActivity"));
-		activityMap.put("pep", new URIImpl(BELV_NS + "PeptidaseActivity"));
-		activityMap.put("phos", new URIImpl(BELV_NS + "PhosphataseActivity"));
-		activityMap.put("ribo", new URIImpl(BELV_NS + "RibosylaseActivity"));
-		activityMap.put("tscript", new URIImpl(BELV_NS + "TranscriptionActivity"));
-		activityMap.put("tport", new URIImpl(BELV_NS + "TransportActivity"));
-	}
-
-	public static URI getActivity(String activity) {
-		return activityMap.get(activity);
-	}
+//	public static URI getActivity(String activity) {
+//		return activityMap.get(activity);
+//	}
 
 //	private static Map<String,URI> modtypeMap = new HashMap<String,URI>();
 //
