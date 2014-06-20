@@ -269,7 +269,7 @@ public class Bel2Nanopub {
 	}
 
 	private Resource processBelObject(org.openbel.framework.common.model.Statement.Object obj, NanopubCreator npCreator)
-			 throws Bel2NanopubException{
+			 throws Bel2NanopubException {
 		if (obj.getTerm() != null) {
 			return processBelTerm(obj.getTerm(), npCreator);
 		} else {
