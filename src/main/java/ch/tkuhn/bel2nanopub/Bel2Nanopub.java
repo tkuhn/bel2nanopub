@@ -155,6 +155,19 @@ public class Bel2Nanopub {
 		for (BELStatementGroup g : belDoc.getBelStatementGroups()) {
 			for (BELStatement bst : g.getStatements()) {
 				NanopubCreator npCreator = new NanopubCreator("http://www.tkuhn.ch/bel2nanopub/");
+
+				// Aliases:
+				npCreator.addNamespace("hasPart", "http://purl.obolibrary.org/obo/BFO_0000051");
+				npCreator.addNamespace("occursIn", "http://purl.obolibrary.org/obo/BFO_0000066");
+				npCreator.addNamespace("hasAgent", "http://semanticscience.org/resource/SIO_000139");
+				npCreator.addNamespace("hasAnnotation", "http://semanticscience.org/resource/SIO_000255");
+				npCreator.addNamespace("geneProductOf", "http://purl.obolibrary.org/obo/RO_0002204");
+				npCreator.addNamespace("ProteinComplex", "http://amigo.geneontology.org/amigo/term/GO:0043234");
+				npCreator.addNamespace("Protein", "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080");
+				npCreator.addNamespace("RNA", "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697");
+				npCreator.addNamespace("microRNA", "http://purl.obolibrary.org/obo/SO_0000276");
+				npCreator.addNamespace("proteinModification", "http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000");
+
 				npCreator.addNamespace("rdfs", RDFS.NAMESPACE);
 				npCreator.addNamespace("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
 				npCreator.addNamespace("xsd", "http://www.w3.org/2001/XMLSchema#");

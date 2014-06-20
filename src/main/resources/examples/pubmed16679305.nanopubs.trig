@@ -1,5 +1,15 @@
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RATLsVX7dVwptYoMoYDcWK8QPwoi2_dQZ7ngYEtZymyj0> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RATLsVX7dVwptYoMoYDcWK8QPwoi2_dQZ7ngYEtZymyj0#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -29,9 +39,9 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 obo:BFO_0000066 mesh:D015179 , species:9606 ;
+	sub:_2 occursIn: mesh:D015179 , species:9606 ;
 		rdf:object mesh:D009362 ;
 		rdf:predicate belv:prognosticBiomarkerFor ;
 		rdf:subject sub:_1 ;
@@ -64,6 +74,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAo_U8C4ZW8nsxT62PkBr0G0Owix3l09Ez2fZY4k0Q9sE> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAo_U8C4ZW8nsxT62PkBr0G0Owix3l09Ez2fZY4k0Q9sE#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -93,9 +113,9 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 obo:BFO_0000066 mesh:D015179 , species:9606 ;
+	sub:_2 occursIn: mesh:D015179 , species:9606 ;
 		rdf:object mesh:D012008 ;
 		rdf:predicate belv:prognosticBiomarkerFor ;
 		rdf:subject sub:_1 ;
@@ -128,6 +148,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAp6ES3Hvn_nyG9b18n-ljpLLkrd1OTd-ixH7sp9mJ09k> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAp6ES3Hvn_nyG9b18n-ljpLLkrd1OTd-ixH7sp9mJ09k#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -158,9 +188,9 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_2 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object mesh:D009369 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -193,6 +223,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAGXsTHb1OUnKh29A9JPx4B_H9oIEf_vwhR_NUGxiobEA> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAGXsTHb1OUnKh29A9JPx4B_H9oIEf_vwhR_NUGxiobEA#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -223,9 +263,9 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,D" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_2 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object mesh:D009369 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -258,6 +298,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RA5ykXIF0VBbTt6iyyAT5aF8Be5vd6QI92k0lFDEBep1g> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA5ykXIF0VBbTt6iyyAT5aF8Be5vd6QI92k0lFDEBep1g#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -288,9 +338,9 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,C" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_2 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object mesh:D009369 ;
 		rdf:predicate belv:causesNoChange ;
 		rdf:subject sub:_1 ;
@@ -323,6 +373,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3OJnU1ii2VXbYuWzNbNh6XXTzvkhF8KLtU6dVAymFok> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3OJnU1ii2VXbYuWzNbNh6XXTzvkhF8KLtU6dVAymFok#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -353,18 +413,18 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 obo:BFO_0000051 sub:_3 , sub:_4 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+	sub:_2 hasPart: sub:_3 , sub:_4 ;
+		a ProteinComplex: .
 	
-	sub:_3 obo:RO_0002204 hgnc:6407 ;
-		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+	sub:_3 geneProductOf: hgnc:6407 ;
+		a Protein: .
 	
-	sub:_4 obo:RO_0002204 <http://www.informatics.jax.org/marker/MGI:97847> ;
-		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+	sub:_4 geneProductOf: <http://www.informatics.jax.org/marker/MGI:97847> ;
+		a Protein: .
 	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_5 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:directlyIncreases ;
 		rdf:subject sub:_1 ;
@@ -397,6 +457,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3gW1Yvg5INMqgcbqt5aoZSqJOMUu7sBI9svSSkSg7Ho> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3gW1Yvg5INMqgcbqt5aoZSqJOMUu7sBI9svSSkSg7Ho#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -428,15 +498,15 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 semsc:SIO_000139 sub:_3 ;
+	sub:_2 hasAgent: sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 obo:RO_0002204 pfm:MAPK%20Erk1%2F3%20Family ;
-		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+	sub:_3 geneProductOf: pfm:MAPK%20Erk1%2F3%20Family ;
+		a Protein: .
 	
-	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -469,6 +539,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAf8l3YCUL5OnK2yZ6zGeR0sSVXpTM6WLgSLF2EeosWl8> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAf8l3YCUL5OnK2yZ6zGeR0sSVXpTM6WLgSLF2EeosWl8#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -499,18 +579,18 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,D" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 obo:BFO_0000051 sub:_3 , sub:_4 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+	sub:_2 hasPart: sub:_3 , sub:_4 ;
+		a ProteinComplex: .
 	
-	sub:_3 obo:RO_0002204 hgnc:6407 ;
-		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+	sub:_3 geneProductOf: hgnc:6407 ;
+		a Protein: .
 	
-	sub:_4 obo:RO_0002204 <http://www.informatics.jax.org/marker/MGI:97847> ;
-		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+	sub:_4 geneProductOf: <http://www.informatics.jax.org/marker/MGI:97847> ;
+		a Protein: .
 	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_5 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:causesNoChange ;
 		rdf:subject sub:_1 ;
@@ -543,6 +623,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAS7b4FhK83ezA6UEEEEBnKbqJhs6EEMkCG2FLeE5qWz8> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAS7b4FhK83ezA6UEEEEBnKbqJhs6EEMkCG2FLeE5qWz8#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -574,15 +664,15 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,D" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 semsc:SIO_000139 sub:_3 ;
+	sub:_2 hasAgent: sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 obo:RO_0002204 pfm:MAPK%20Erk1%2F3%20Family ;
-		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+	sub:_3 geneProductOf: pfm:MAPK%20Erk1%2F3%20Family ;
+		a Protein: .
 	
-	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:causesNoChange ;
 		rdf:subject sub:_1 ;
@@ -615,6 +705,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAdTtkqNgmXbMluxMSF3xskdfUfSoppQBqJDFpfVsn4_g> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAdTtkqNgmXbMluxMSF3xskdfUfSoppQBqJDFpfVsn4_g#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -642,18 +742,18 @@ sub:Head {
 }
 
 sub:Assert {
-	ncm:p85%2Fp110%20PI3Kinase%20Complex a <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+	ncm:p85%2Fp110%20PI3Kinase%20Complex a ProteinComplex: .
 	
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(complex(NCM:\"p85/p110 PI3Kinase Complex\"))" .
 	
 	sub:_1 belv:hasSubstitution "G,12,D" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 semsc:SIO_000139 ncm:p85%2Fp110%20PI3Kinase%20Complex ;
+	sub:_2 hasAgent: ncm:p85%2Fp110%20PI3Kinase%20Complex ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_3 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -687,6 +787,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAWXPZoZIuZ4OhxCv_p5bvhTB6-yGXB9i9-fpJlRkjY2E> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAWXPZoZIuZ4OhxCv_p5bvhTB6-yGXB9i9-fpJlRkjY2E#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -718,15 +828,15 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,D" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 semsc:SIO_000139 sub:_3 ;
+	sub:_2 hasAgent: sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 obo:RO_0002204 pfm:Akt%20Family ;
-		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+	sub:_3 geneProductOf: pfm:Akt%20Family ;
+		a Protein: .
 	
-	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -760,6 +870,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAP8q4B2_sydccNOVXLKbWzG24VSziSEXqW0dMow_9K9Y> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAP8q4B2_sydccNOVXLKbWzG24VSziSEXqW0dMow_9K9Y#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -791,15 +911,15 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,D" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 semsc:SIO_000139 sub:_3 ;
+	sub:_2 hasAgent: sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 obo:RO_0002204 pfm:Mapk%20JNK%20Family ;
-		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+	sub:_3 geneProductOf: pfm:Mapk%20JNK%20Family ;
+		a Protein: .
 	
-	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -833,6 +953,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RA4jQQS7RH2b8KpB9hZdor966gGF9KQFLmhkUuNUgjKfM> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA4jQQS7RH2b8KpB9hZdor966gGF9KQFLmhkUuNUgjKfM#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -864,15 +994,15 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,D" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 semsc:SIO_000139 sub:_3 ;
+	sub:_2 hasAgent: sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 obo:RO_0002204 pfm:Mapk%20p38%20Family ;
-		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+	sub:_3 geneProductOf: pfm:Mapk%20p38%20Family ;
+		a Protein: .
 	
-	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -906,6 +1036,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RACpAHpzeH5GUPZbZKGt3-vPXdVwzQ9o2K95VjJWcw03I> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RACpAHpzeH5GUPZbZKGt3-vPXdVwzQ9o2K95VjJWcw03I#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -937,15 +1077,15 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,D" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 semsc:SIO_000139 sub:_3 ;
+	sub:_2 hasAgent: sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 obo:RO_0002204 <http://www.informatics.jax.org/marker/MGI:95481> ;
-		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+	sub:_3 geneProductOf: <http://www.informatics.jax.org/marker/MGI:95481> ;
+		a Protein: .
 	
-	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_4 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -979,6 +1119,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RARa6WJlhBNEyuvnhUYkdOFMKnUEZUBFv3FQrfGsdnXos> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RARa6WJlhBNEyuvnhUYkdOFMKnUEZUBFv3FQrfGsdnXos#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1009,13 +1159,13 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
 	sub:_2 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		belv:variantOf hgnc:9884 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_3 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -1048,6 +1198,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAcy7DpbsqHQpiOxp3VMkzsXmZtdKntAQiJL46pPsnfeM> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAcy7DpbsqHQpiOxp3VMkzsXmZtdKntAQiJL46pPsnfeM#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1077,12 +1237,12 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 obo:RO_0002204 hgnc:8729 ;
-		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+	sub:_2 geneProductOf: hgnc:8729 ;
+		a Protein: .
 	
-	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_3 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -1115,6 +1275,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAD8GRagrEiZHMzR55hVd7MfU7ltaHZ-hejNrp98-RUiU> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAD8GRagrEiZHMzR55hVd7MfU7ltaHZ-hejNrp98-RUiU#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1144,12 +1314,12 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 obo:RO_0002204 hgnc:1579 ;
-		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+	sub:_2 geneProductOf: hgnc:1579 ;
+		a Protein: .
 	
-	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_3 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -1182,6 +1352,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAFRN3zMn3Nrjq72ByeyDbbmn703ae3m9CH1BSy0N1Pnk> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAFRN3zMn3Nrjq72ByeyDbbmn703ae3m9CH1BSy0N1Pnk#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1212,9 +1392,9 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_2 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object <http://amigo.geneontology.org/amigo/term/GO:0000082> ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -1247,6 +1427,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7Axs4wzWPobIkRwtKRI2t95qVygxWcWA-Uiq8DtP1VA> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7Axs4wzWPobIkRwtKRI2t95qVygxWcWA-Uiq8DtP1VA#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1277,9 +1467,9 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_2 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object <http://amigo.geneontology.org/amigo/term/GO:0000086> ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -1312,6 +1502,16 @@ sub:Info {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAPQveS4S1uQXctnPlOaBL29CThDlfxjw6N3PycoUhXd0> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAPQveS4S1uQXctnPlOaBL29CThDlfxjw6N3PycoUhXd0#> .
+@prefix hasPart: <http://purl.obolibrary.org/obo/BFO_0000051> .
+@prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
+@prefix hasAgent: <http://semanticscience.org/resource/SIO_000139> .
+@prefix hasAnnotation: <http://semanticscience.org/resource/SIO_000255> .
+@prefix geneProductOf: <http://purl.obolibrary.org/obo/RO_0002204> .
+@prefix ProteinComplex: <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+@prefix Protein: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
+@prefix RNA: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697> .
+@prefix microRNA: <http://purl.obolibrary.org/obo/SO_0000276> .
+@prefix proteinModification: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1342,9 +1542,9 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+		a proteinModification: .
 	
-	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_2 occursIn: <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object <http://amigo.geneontology.org/amigo/term/GO:0042981> ;
 		rdf:predicate belv:causesNoChange ;
 		rdf:subject sub:_1 ;
