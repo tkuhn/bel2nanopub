@@ -1,12 +1,14 @@
 package ch.tkuhn.bel2nanopub;
 
-import static ch.tkuhn.bel2nanopub.ThirdPartyVocabulary.*;
+import static ch.tkuhn.bel2nanopub.ThirdPartyVocabulary.bfoHasPart;
+import static ch.tkuhn.bel2nanopub.ThirdPartyVocabulary.pavVersion;
+import static ch.tkuhn.bel2nanopub.ThirdPartyVocabulary.provHadPrimarySource;
+import static ch.tkuhn.bel2nanopub.ThirdPartyVocabulary.provValue;
+import static ch.tkuhn.bel2nanopub.ThirdPartyVocabulary.provWasDerivedFrom;
+import static ch.tkuhn.bel2nanopub.ThirdPartyVocabulary.provWasQuotedFrom;
+import static ch.tkuhn.bel2nanopub.ThirdPartyVocabulary.pubmedNs;
 
 import java.io.File;
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -133,7 +135,7 @@ public class Bel2Nanopub {
 	}
 
 	private void run(File belFile) {
-		BELParseResults belParse = BELParser.parse(readFile(belFile));
+		BELParseResults belParse = BELParser.parse(Utils.readFile(belFile));
 
 		if (!belParse.getSyntaxErrors().isEmpty()) {
 			parseExceptions.addAll(belParse.getSyntaxErrors());
@@ -542,16 +544,6 @@ public class Bel2Nanopub {
 
 	public List<Result> getResults() {
 		return results;
-	}
-
-	private static String readFile(File file) {
-		try {
-			byte[] encoded = Files.readAllBytes(file.toPath());
-			return Charset.forName("UTF-8").decode(ByteBuffer.wrap(encoded)).toString();
-		} catch (IOException ex) {
-			ex.printStackTrace();
-			return null;
-		}
 	}
 
 
