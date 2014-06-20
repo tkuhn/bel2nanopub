@@ -297,8 +297,11 @@ public class Bel2Nanopub {
 			if (abUri != null) {
 				if (isProteinVariantTerm(abUri, term)) {
 					r = handleProteinVariantTerm(term, npCreator);
+				} else if (funcAbbrev.matches("complex|composite")) {
+					r = handleCompoundAbundanceTerm(term, npCreator);
+					npCreator.addAssertionStatement(r, RDF.TYPE, abUri);
 				} else {
-					r = handleAbundanceTerm(term, npCreator);
+					r = handleSimpleAbundanceTerm(term, npCreator);
 					npCreator.addAssertionStatement(r, RDF.TYPE, abUri);
 				}
 			} else if (funcAbbrev.matches("tloc|sec|surf|deg|rxn")) {
@@ -355,7 +358,26 @@ public class Bel2Nanopub {
 		return bn;
 	}
 
-	private Resource handleAbundanceTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
+	private Resource handleSimpleAbundanceTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
+		BNode bn = newBNode();
+		if (!term.getTerms().isEmpty() && !term.getParameters().isEmpty()) {
+			throw new Bel2NanopubException("Unexpected presence of both, terms and parameters: " + term.getFunctionEnum());
+		}
+		if (term.getTerms().size() != 1 && term.getParameters().size() != 1) {
+			throw new Bel2NanopubException("Only one term or parameter expected: " + term.getFunctionEnum());
+		}
+		if (!term.getTerms().isEmpty()) {
+			npCreator.addNamespace("obo", ThirdPartyVocabulary.oboNs);
+			Resource ch = processBelTerm(term.getTerms().get(0), npCreator);
+			npCreator.addAssertionStatement(bn, bfoHasPart, ch);
+		} else {
+			URI cUri = getUriFromParam(term.getParameters().get(0), npCreator);
+			npCreator.addAssertionStatement(bn, ThirdPartyVocabulary.sioHasAgent, cUri);
+		}
+		return bn;
+	}
+
+	private Resource handleCompoundAbundanceTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
 		BNode bn = newBNode();
 		if (!term.getTerms().isEmpty() && !term.getParameters().isEmpty()) {
 			throw new Bel2NanopubException("Unexpected presence of both, terms and parameters: " + term.getFunctionEnum());
