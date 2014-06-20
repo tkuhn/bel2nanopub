@@ -167,6 +167,7 @@ public class Bel2Nanopub {
 				npCreator.addNamespace("RNA", "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697");
 				npCreator.addNamespace("microRNA", "http://purl.obolibrary.org/obo/SO_0000276");
 				npCreator.addNamespace("proteinModification", "http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000");
+				// TODO only add aliases that are needed for the given nanopub
 
 				npCreator.addNamespace("rdfs", RDFS.NAMESPACE);
 				npCreator.addNamespace("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
