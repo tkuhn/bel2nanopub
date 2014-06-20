@@ -18,17 +18,17 @@ public class BelRdfVocabulary {
 	public static final URI BELR_NS = new URIImpl("http://www.selventa.com/bel/");
 	public static final URI BELV_NS = new URIImpl("http://www.selventa.com/vocabulary/");
 
-	//public static final URI term = new URIImpl(BELV_NS + "Term");
-	//public static final URI statement = new URIImpl(BELV_NS + "Statement");
-	//public static final URI hasChild = new URIImpl(BELV_NS + "hasChild");
-	//public static final URI hasConcept = new URIImpl(BELV_NS + "hasConcept");
-	//public static final URI hasSubject = new URIImpl(BELV_NS + "hasSubject");
-	//public static final URI hasRelationship = new URIImpl(BELV_NS + "hasRelationship");
-	//public static final URI hasObject = new URIImpl(BELV_NS + "hasObject");
-	//public static final URI hasActivityType = new URIImpl(BELV_NS + "hasActivityType");
-	public static final URI hasAnnotation = new URIImpl(BELV_NS + "hasAnnotation");
-	//public static final URI hasCitation = new URIImpl(BELV_NS + "hasCitation");
-	//public static final URI hasEvidenceText = new URIImpl(BELV_NS + "hasEvidenceText");
+//	public static final URI term = new URIImpl(BELV_NS + "Term");
+//	public static final URI statement = new URIImpl(BELV_NS + "Statement");
+//	public static final URI hasChild = new URIImpl(BELV_NS + "hasChild");
+//	public static final URI hasConcept = new URIImpl(BELV_NS + "hasConcept");
+//	public static final URI hasSubject = new URIImpl(BELV_NS + "hasSubject");
+//	public static final URI hasRelationship = new URIImpl(BELV_NS + "hasRelationship");
+//	public static final URI hasObject = new URIImpl(BELV_NS + "hasObject");
+//	public static final URI hasActivityType = new URIImpl(BELV_NS + "hasActivityType");
+//	public static final URI hasAnnotation = new URIImpl(BELV_NS + "hasAnnotation");
+//	public static final URI hasCitation = new URIImpl(BELV_NS + "hasCitation");
+//	public static final URI hasEvidenceText = new URIImpl(BELV_NS + "hasEvidenceText");
 
 	// ---
 	// Made up URIs, not used by official BEL tools:
@@ -41,7 +41,7 @@ public class BelRdfVocabulary {
 	public static final URI degradationOf = new URIImpl(BELV_NS + "degradationOf");
 	// ---
 
-	//public static final URI abundanceActivity = new URIImpl(BELV_NS + "AbundanceActivity");
+//	public static final URI abundanceActivity = new URIImpl(BELV_NS + "AbundanceActivity");
 	public static final URI proteinVariantAbundance = new URIImpl(BELV_NS + "ProteinVariantAbundance");
 	public static final URI modifiedProteinAbundance = new URIImpl(BELV_NS + "ModifiedProteinAbundance");
 	public static final URI hasModificationType = new URIImpl(BELV_NS + "hasModificationType");

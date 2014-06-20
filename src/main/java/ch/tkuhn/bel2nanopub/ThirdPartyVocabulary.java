@@ -28,6 +28,7 @@ public class ThirdPartyVocabulary {
 	public static final URI sioBiochemicalReaction = new URIImpl("http://semanticscience.org/resource/SIO_010036");
 	public static final URI sioHasInput = new URIImpl("http://semanticscience.org/resource/SIO_000230");
 	public static final URI sioHasOutput = new URIImpl("http://semanticscience.org/resource/SIO_000229");
+	public static final URI sioHasAnnotation = new URIImpl("http://semanticscience.org/resource/SIO_000255");
 	// not yet used:
 	public static final URI sioIsTranscribedInto = new URIImpl("http://semanticscience.org/resource/SIO_010080");
 	public static final URI sioIsTranslatedInto = new URIImpl("http://semanticscience.org/resource/SIO_010082");

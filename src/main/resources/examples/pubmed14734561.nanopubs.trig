@@ -8,6 +8,7 @@
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix semsc: <http://semanticscience.org/resource/> .
 @prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -60,6 +61,7 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix semsc: <http://semanticscience.org/resource/> .
 @prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
 @prefix pav: <http://purl.org/pav/> .
@@ -102,8 +104,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJ3EvoW9CR0UQW2Oer4nY-mCFDejrManIAlY-Ara4XBY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJ3EvoW9CR0UQW2Oer4nY-mCFDejrManIAlY-Ara4XBY#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAQHUURppEfZcBI5cMoAAHa7DPx3TrAS__slpIMHRdto0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAQHUURppEfZcBI5cMoAAHa7DPx3TrAS__slpIMHRdto0#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -112,6 +114,7 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix semsc: <http://semanticscience.org/resource/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix go: <http://amigo.geneontology.org/amigo/term/GO:> .
@@ -133,19 +136,19 @@ sub:Assert {
 		belv:directlyIncreases sub:_5 ;
 		a belv:ComplexAbundance .
 	
-	sub:_2 belv:abundanceOf hgnc:12833 ;
+	sub:_2 semsc:SIO_000139 hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	sub:_3 belv:abundanceOf hgnc:4055 ;
+	sub:_3 semsc:SIO_000139 hgnc:4055 ;
 		a belv:ProteinAbundance .
 	
-	sub:_4 belv:abundanceOf hgnc:12791 ;
+	sub:_4 semsc:SIO_000139 hgnc:12791 ;
 		a belv:ProteinAbundance .
 	
-	sub:_5 belv:activityOf sub:_6 ;
+	sub:_5 semsc:SIO_000139 sub:_6 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0003824> .
 	
-	sub:_6 belv:abundanceOf hgnc:12791 ;
+	sub:_6 semsc:SIO_000139 hgnc:12791 ;
 		a belv:ProteinAbundance .
 }
 
@@ -173,8 +176,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA-toh7_Ik5M0yGIvkR-36-ywI4UOZ5gsG4jTagfzkaxw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA-toh7_Ik5M0yGIvkR-36-ywI4UOZ5gsG4jTagfzkaxw#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJrt8f6nPTOQ_TuZQyCuJHkecitSKjX4yzAFHakwrUto> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJrt8f6nPTOQ_TuZQyCuJHkecitSKjX4yzAFHakwrUto#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -183,6 +186,7 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix semsc: <http://semanticscience.org/resource/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
@@ -204,10 +208,10 @@ sub:Assert {
 		obo:BFO_0000066 mesh:D002467 ;
 		a belv:ComplexAbundance .
 	
-	sub:_2 belv:abundanceOf hgnc:12833 ;
+	sub:_2 semsc:SIO_000139 hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	sub:_3 belv:abundanceOf hgnc:12791 ;
+	sub:_3 semsc:SIO_000139 hgnc:12791 ;
 		a belv:ProteinAbundance .
 }
 
@@ -235,8 +239,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA30Nz-FpCsDMjjCUGaCQ_Z_x5C4Xdhm9EdoMwNxtm5xM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA30Nz-FpCsDMjjCUGaCQ_Z_x5C4Xdhm9EdoMwNxtm5xM#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7PkRkA8bSFnwR6B_phMJfilAG04ncRiGwXMnGVUvZfk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7PkRkA8bSFnwR6B_phMJfilAG04ncRiGwXMnGVUvZfk#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -245,6 +249,7 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix semsc: <http://semanticscience.org/resource/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
@@ -266,10 +271,10 @@ sub:Assert {
 		obo:BFO_0000066 mesh:D002467 ;
 		a belv:ComplexAbundance .
 	
-	sub:_2 belv:abundanceOf hgnc:4055 ;
+	sub:_2 semsc:SIO_000139 hgnc:4055 ;
 		a belv:ProteinAbundance .
 	
-	sub:_3 belv:abundanceOf hgnc:12791 ;
+	sub:_3 semsc:SIO_000139 hgnc:12791 ;
 		a belv:ProteinAbundance .
 }
 
@@ -297,8 +302,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAG8_lFNkczo7vwLa9qvp7Bpeqj2TeQXnAwwcW8Szh4dM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAG8_lFNkczo7vwLa9qvp7Bpeqj2TeQXnAwwcW8Szh4dM#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAHtfiEchqoGUdhlAZYKE_edlvHKMwoaMM31Sa2iPDUPg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAHtfiEchqoGUdhlAZYKE_edlvHKMwoaMM31Sa2iPDUPg#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -307,6 +312,7 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix semsc: <http://semanticscience.org/resource/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix mesh: <http://purl.bioontology.org/ontology/MSH/> .
@@ -328,10 +334,10 @@ sub:Assert {
 		obo:BFO_0000066 mesh:D002467 ;
 		a belv:ComplexAbundance .
 	
-	sub:_2 belv:abundanceOf hgnc:270 ;
+	sub:_2 semsc:SIO_000139 hgnc:270 ;
 		a belv:ProteinAbundance .
 	
-	sub:_3 belv:abundanceOf hgnc:12791 ;
+	sub:_3 semsc:SIO_000139 hgnc:12791 ;
 		a belv:ProteinAbundance .
 }
 
@@ -359,8 +365,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAv7cGaopDM6O2AakJta8UpMGFyIgYT-9rLcV0UPFg6MM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAv7cGaopDM6O2AakJta8UpMGFyIgYT-9rLcV0UPFg6MM#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAvXV_7yRsnC26qcM129BuSLKfhxtm-wSp3D907Wy-M7s> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAvXV_7yRsnC26qcM129BuSLKfhxtm-wSp3D907Wy-M7s#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -369,6 +375,7 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix semsc: <http://semanticscience.org/resource/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
@@ -388,16 +395,16 @@ sub:Assert {
 	sub:_1 obo:BFO_0000051 sub:_2 , sub:_3 , sub:_4 , sub:_5 ;
 		a belv:ComplexAbundance .
 	
-	sub:_2 belv:abundanceOf hgnc:12791 ;
+	sub:_2 semsc:SIO_000139 hgnc:12791 ;
 		a belv:ProteinAbundance .
 	
-	sub:_3 belv:abundanceOf hgnc:12833 ;
+	sub:_3 semsc:SIO_000139 hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	sub:_4 belv:abundanceOf hgnc:4055 ;
+	sub:_4 semsc:SIO_000139 hgnc:4055 ;
 		a belv:ProteinAbundance .
 	
-	sub:_5 belv:abundanceOf hgnc:270 ;
+	sub:_5 semsc:SIO_000139 hgnc:270 ;
 		a belv:ProteinAbundance .
 }
 
@@ -425,8 +432,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAqWbbmJ-Zs92Mvj2fZsJ7NDCIVVwVtAt_bZx9hxZ5q2U> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAqWbbmJ-Zs92Mvj2fZsJ7NDCIVVwVtAt_bZx9hxZ5q2U#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7Vtdqqb9r0uyz03SH1Hamf4BBTomBUC_ESlGpYDCFHQ> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7Vtdqqb9r0uyz03SH1Hamf4BBTomBUC_ESlGpYDCFHQ#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -435,6 +442,7 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix semsc: <http://semanticscience.org/resource/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix go: <http://amigo.geneontology.org/amigo/term/GO:> .
@@ -458,10 +466,10 @@ sub:Assert {
 		belv:increases sub:_4 ;
 		a belv:CompositeAbundance .
 	
-	sub:_2 belv:abundanceOf chebi:4291 ;
+	sub:_2 semsc:SIO_000139 chebi:4291 ;
 		a belv:Abundance .
 	
-	sub:_3 belv:abundanceOf chebi:7422 ;
+	sub:_3 semsc:SIO_000139 chebi:7422 ;
 		a belv:Abundance .
 	
 	sub:_4 rdf:object sub:_7 ;
@@ -469,10 +477,10 @@ sub:Assert {
 		rdf:subject sub:_5 ;
 		a rdf:Statement .
 	
-	sub:_5 belv:activityOf sub:_6 ;
+	sub:_5 semsc:SIO_000139 sub:_6 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0006471> .
 	
-	sub:_6 belv:abundanceOf hgnc:270 ;
+	sub:_6 semsc:SIO_000139 hgnc:270 ;
 		a belv:ProteinAbundance .
 	
 	sub:_7 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
@@ -504,8 +512,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAUpX_SD-_Zv0Gk-E2rs4LVvebHsUnFMdYVL1td0a-m5c> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAUpX_SD-_Zv0Gk-E2rs4LVvebHsUnFMdYVL1td0a-m5c#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAZQj7cvilnLzd7Q07-IlwGu5r8O0kzS61cWRhj9ZK7Fk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAZQj7cvilnLzd7Q07-IlwGu5r8O0kzS61cWRhj9ZK7Fk#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -514,6 +522,7 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix semsc: <http://semanticscience.org/resource/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix go: <http://amigo.geneontology.org/amigo/term/GO:> .
@@ -537,10 +546,10 @@ sub:Assert {
 		belv:increases sub:_4 ;
 		a belv:CompositeAbundance .
 	
-	sub:_2 belv:abundanceOf chebi:4291 ;
+	sub:_2 semsc:SIO_000139 chebi:4291 ;
 		a belv:Abundance .
 	
-	sub:_3 belv:abundanceOf chebi:7422 ;
+	sub:_3 semsc:SIO_000139 chebi:7422 ;
 		a belv:Abundance .
 	
 	sub:_4 rdf:object sub:_7 ;
@@ -548,10 +557,10 @@ sub:Assert {
 		rdf:subject sub:_5 ;
 		a rdf:Statement .
 	
-	sub:_5 belv:activityOf sub:_6 ;
+	sub:_5 semsc:SIO_000139 sub:_6 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0006471> .
 	
-	sub:_6 belv:abundanceOf hgnc:270 ;
+	sub:_6 semsc:SIO_000139 hgnc:270 ;
 		a belv:ProteinAbundance .
 	
 	sub:_7 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
@@ -583,8 +592,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAUCSHqZ3TSlAY_-MjpQImczHukIfcPSRswAKN1F1D9w0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAUCSHqZ3TSlAY_-MjpQImczHukIfcPSRswAKN1F1D9w0#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9n_KOc3E1u_mHWGZbJU910tl3VxqgFOOMxxZLwPUyvc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9n_KOc3E1u_mHWGZbJU910tl3VxqgFOOMxxZLwPUyvc#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -593,6 +602,7 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix semsc: <http://semanticscience.org/resource/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix chebi: <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=> .
 @prefix go: <http://amigo.geneontology.org/amigo/term/GO:> .
@@ -616,10 +626,10 @@ sub:Assert {
 		belv:increases sub:_4 ;
 		a belv:CompositeAbundance .
 	
-	sub:_2 belv:abundanceOf chebi:4291 ;
+	sub:_2 semsc:SIO_000139 chebi:4291 ;
 		a belv:Abundance .
 	
-	sub:_3 belv:abundanceOf chebi:7422 ;
+	sub:_3 semsc:SIO_000139 chebi:7422 ;
 		a belv:Abundance .
 	
 	sub:_4 rdf:object sub:_7 ;
@@ -627,10 +637,10 @@ sub:Assert {
 		rdf:subject sub:_5 ;
 		a rdf:Statement .
 	
-	sub:_5 belv:activityOf sub:_6 ;
+	sub:_5 semsc:SIO_000139 sub:_6 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0006471> .
 	
-	sub:_6 belv:abundanceOf hgnc:270 ;
+	sub:_6 semsc:SIO_000139 hgnc:270 ;
 		a belv:ProteinAbundance .
 	
 	sub:_7 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
@@ -662,8 +672,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAn1Pt5cxfr6DboqSCAfSwctpyGRmq0CQfT4JlgijypbM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAn1Pt5cxfr6DboqSCAfSwctpyGRmq0CQfT4JlgijypbM#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA6JMRlMjAUGw3QGYEx5jDZSydkvEy2vLUsOyPHhus3a0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA6JMRlMjAUGw3QGYEx5jDZSydkvEy2vLUsOyPHhus3a0#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -672,6 +682,7 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix semsc: <http://semanticscience.org/resource/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
@@ -698,13 +709,13 @@ sub:Assert {
 	sub:_2 obo:BFO_0000051 sub:_3 , sub:_4 , sub:_5 ;
 		a belv:ComplexAbundance .
 	
-	sub:_3 belv:abundanceOf chebi:4291 ;
+	sub:_3 semsc:SIO_000139 chebi:4291 ;
 		a belv:Abundance .
 	
-	sub:_4 belv:abundanceOf hgnc:12833 ;
+	sub:_4 semsc:SIO_000139 hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	sub:_5 belv:abundanceOf hgnc:4055 ;
+	sub:_5 semsc:SIO_000139 hgnc:4055 ;
 		a belv:ProteinAbundance .
 }
 
@@ -732,8 +743,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAy6JrkxAqlHeZ-WjuuH9ilGMvPgvk4NN5Xgb9_dSvoZc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAy6JrkxAqlHeZ-WjuuH9ilGMvPgvk4NN5Xgb9_dSvoZc#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAwjrxE9teml497BuyNoqNDSdP1ZHuX-udNksuVEDGM90> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAwjrxE9teml497BuyNoqNDSdP1ZHuX-udNksuVEDGM90#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -742,6 +753,7 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix semsc: <http://semanticscience.org/resource/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
@@ -768,13 +780,13 @@ sub:Assert {
 	sub:_2 obo:BFO_0000051 sub:_3 , sub:_4 , sub:_5 ;
 		a belv:ComplexAbundance .
 	
-	sub:_3 belv:abundanceOf chebi:4291 ;
+	sub:_3 semsc:SIO_000139 chebi:4291 ;
 		a belv:Abundance .
 	
-	sub:_4 belv:abundanceOf hgnc:12833 ;
+	sub:_4 semsc:SIO_000139 hgnc:12833 ;
 		a belv:ProteinAbundance .
 	
-	sub:_5 belv:abundanceOf hgnc:4055 ;
+	sub:_5 semsc:SIO_000139 hgnc:4055 ;
 		a belv:ProteinAbundance .
 }
 
@@ -802,8 +814,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAGYpHoQPzrN-_nAxD71ahDBuI0kp-DS0mBFpK4kniM90> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAGYpHoQPzrN-_nAxD71ahDBuI0kp-DS0mBFpK4kniM90#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAbG7i1gLG5i4eOGdFnL2QlPbASGJxP7AH7o2YarYlKgA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAbG7i1gLG5i4eOGdFnL2QlPbASGJxP7AH7o2YarYlKgA#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -812,6 +824,7 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix semsc: <http://semanticscience.org/resource/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix go: <http://amigo.geneontology.org/amigo/term/GO:> .
@@ -834,10 +847,10 @@ sub:Assert {
 		belv:variantOf hgnc:12833 ;
 		a belv:ModifiedProteinAbundance .
 	
-	sub:_2 belv:activityOf sub:_3 ;
+	sub:_2 semsc:SIO_000139 sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0003824> .
 	
-	sub:_3 belv:abundanceOf hgnc:12791 ;
+	sub:_3 semsc:SIO_000139 hgnc:12791 ;
 		a belv:ProteinAbundance .
 }
 
@@ -865,8 +878,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAjuXsFpBrGrXVAz1kvgmuVFAgTgFUBVPK6G59A-z0w_I> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAjuXsFpBrGrXVAz1kvgmuVFAgTgFUBVPK6G59A-z0w_I#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RASsSiWnk9LI9sSS5SXT7Pqqp5HSv_R5RhlqNZe2V1ZZo> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RASsSiWnk9LI9sSS5SXT7Pqqp5HSv_R5RhlqNZe2V1ZZo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -875,6 +888,7 @@ sub:Info {
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix semsc: <http://semanticscience.org/resource/> .
 @prefix hgnc: <http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=> .
 @prefix psimod: <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:> .
 @prefix go: <http://amigo.geneontology.org/amigo/term/GO:> .
@@ -897,10 +911,10 @@ sub:Assert {
 		belv:variantOf hgnc:4055 ;
 		a belv:ModifiedProteinAbundance .
 	
-	sub:_2 belv:activityOf sub:_3 ;
+	sub:_2 semsc:SIO_000139 sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0003824> .
 	
-	sub:_3 belv:abundanceOf hgnc:12791 ;
+	sub:_3 semsc:SIO_000139 hgnc:12791 ;
 		a belv:ProteinAbundance .
 }
 

@@ -163,6 +163,7 @@ public class Bel2Nanopub {
 				npCreator.addNamespace("np", "http://www.nanopub.org/nschema#");
 				npCreator.addNamespace("belv", BelRdfVocabulary.BELV_NS);
 				npCreator.addNamespace("prov", "http://www.w3.org/ns/prov#");
+				npCreator.addNamespace("semsc", "http://semanticscience.org/resource/");
 				try {
 					processBelStatement(bst, npCreator);
 				} catch (Bel2NanopubException ex) {
@@ -471,7 +472,7 @@ public class Bel2Nanopub {
 				BNode annBn = newBNode();
 				Literal annType = vf.createLiteral(annN);
 				Literal annValue = vf.createLiteral(annV);
-				npCreator.addAssertionStatement(node, BelRdfVocabulary.hasAnnotation, annBn);
+				npCreator.addAssertionStatement(node, ThirdPartyVocabulary.sioHasAnnotation, annBn);
 				npCreator.addAssertionStatement(annBn, DCTERMS.SUBJECT, annType);
 				npCreator.addAssertionStatement(annBn, RDF.VALUE, annValue);
 			}
@@ -488,7 +489,7 @@ public class Bel2Nanopub {
 				} else {
 					BNode annBn = newBNode();
 					Literal annType = vf.createLiteral(annN);
-					npCreator.addAssertionStatement(node, BelRdfVocabulary.hasAnnotation, annBn);
+					npCreator.addAssertionStatement(node, ThirdPartyVocabulary.sioHasAnnotation, annBn);
 					npCreator.addAssertionStatement(annBn, DCTERMS.SUBJECT, annType);
 					npCreator.addAssertionStatement(annBn, RDF.VALUE, annUri);
 				}
