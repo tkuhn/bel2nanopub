@@ -42,26 +42,26 @@ public class BelRdfVocabulary {
 	// ---
 
 //	public static final URI abundanceActivity = new URIImpl(BELV_NS + "AbundanceActivity");
-	public static final URI proteinVariantAbundance = new URIImpl(BELV_NS + "ProteinVariantAbundance");
-	public static final URI modifiedProteinAbundance = new URIImpl(BELV_NS + "ModifiedProteinAbundance");
+//	public static final URI proteinVariantAbundance = new URIImpl(BELV_NS + "ProteinVariantAbundance");
+//	public static final URI modifiedProteinAbundance = new URIImpl(BELV_NS + "ModifiedProteinAbundance");
 	public static final URI hasModificationType = new URIImpl(BELV_NS + "hasModificationType");
 
 
-	private static Map<String,URI> abundanceFunctionMap = new HashMap<String,URI>();
-
-	static {
-		abundanceFunctionMap.put("a", new URIImpl(BELV_NS + "Abundance"));
-		abundanceFunctionMap.put("g", new URIImpl(BELV_NS + "GeneAbundance"));
-		abundanceFunctionMap.put("p", new URIImpl(BELV_NS + "ProteinAbundance"));
-		abundanceFunctionMap.put("r", new URIImpl(BELV_NS + "RNAAbundance"));
-		abundanceFunctionMap.put("m", new URIImpl(BELV_NS + "microRNAAbundance"));
-		abundanceFunctionMap.put("complex", new URIImpl(BELV_NS + "ComplexAbundance"));
-		abundanceFunctionMap.put("composite", new URIImpl(BELV_NS + "CompositeAbundance"));
-	}
-
-	public static URI getAbundanceFunction(String abbrev) {
-		return abundanceFunctionMap.get(abbrev);
-	}
+//	private static Map<String,URI> abundanceFunctionMap = new HashMap<String,URI>();
+//
+//	static {
+//		abundanceFunctionMap.put("a", new URIImpl(BELV_NS + "Abundance"));
+//		abundanceFunctionMap.put("g", new URIImpl(BELV_NS + "GeneAbundance"));
+//		abundanceFunctionMap.put("p", new URIImpl(BELV_NS + "ProteinAbundance"));
+//		abundanceFunctionMap.put("r", new URIImpl(BELV_NS + "RNAAbundance"));
+//		abundanceFunctionMap.put("m", new URIImpl(BELV_NS + "microRNAAbundance"));
+//		abundanceFunctionMap.put("complex", new URIImpl(BELV_NS + "ComplexAbundance"));
+//		abundanceFunctionMap.put("composite", new URIImpl(BELV_NS + "CompositeAbundance"));
+//	}
+//
+//	public static URI getAbundanceFunction(String abbrev) {
+//		return abundanceFunctionMap.get(abbrev);
+//	}
 
 //		functionMap.put("bp", new URIImpl(BELV_NS + "BiologicalProcess"));
 //		functionMap.put("path", new URIImpl(BELV_NS + "Pathology"));

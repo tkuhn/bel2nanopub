@@ -292,18 +292,36 @@ public class Bel2Nanopub {
 			}
 			r = getUriFromParam(term.getParameters().get(0), npCreator);
 		} else {
-			URI abUri = BelRdfVocabulary.getAbundanceFunction(funcAbbrev);
 			URI actUri = IdSchemes.makeUri("activity", funcAbbrev, npCreator);
-			if (abUri != null) {
-				if (isProteinVariantTerm(abUri, term)) {
-					r = handleProteinVariantTerm(term, npCreator);
-				} else if (funcAbbrev.matches("complex|composite")) {
+			if (funcAbbrev.equals("p") && term.getTerms().size() > 0) {
+				// protein variant
+				r = handleProteinVariantTerm(term, npCreator);
+			} else if (funcAbbrev.equals("complex")) {
+				if (term.getTerms().size() > 0) {
 					r = handleCompoundAbundanceTerm(term, npCreator);
-					npCreator.addAssertionStatement(r, RDF.TYPE, abUri);
 				} else {
 					r = handleSimpleAbundanceTerm(term, npCreator);
-					npCreator.addAssertionStatement(r, RDF.TYPE, abUri);
 				}
+				npCreator.addAssertionStatement(r, RDF.TYPE, ThirdPartyVocabulary.goProteinComplex);
+			} else if (funcAbbrev.equals("composite")) {
+				r = handleCompoundAbundanceTerm(term, npCreator);
+			} else if (funcAbbrev.matches("a|g")) {
+				r = handleSimpleAbundanceTerm(term, npCreator);
+			} else if (funcAbbrev.matches("p")) {
+				r = newBNode();
+				npCreator.addAssertionStatement(r, RDF.TYPE, ThirdPartyVocabulary.chebiProtein);
+				URI uri = handleSimpleAbundanceTerm(term, npCreator);
+				npCreator.addAssertionStatement(r, ThirdPartyVocabulary.roGeneProductOf, uri);
+			} else if (funcAbbrev.matches("r")) {
+				r = newBNode();
+				npCreator.addAssertionStatement(r, RDF.TYPE, ThirdPartyVocabulary.chebiRna);
+				URI uri = handleSimpleAbundanceTerm(term, npCreator);
+				npCreator.addAssertionStatement(r, ThirdPartyVocabulary.roGeneProductOf, uri);
+			} else if (funcAbbrev.matches("m")) {
+				r = newBNode();
+				npCreator.addAssertionStatement(r, RDF.TYPE, ThirdPartyVocabulary.soMicroRna);
+				URI uri = handleSimpleAbundanceTerm(term, npCreator);
+				npCreator.addAssertionStatement(r, ThirdPartyVocabulary.roGeneProductOf, uri);
 			} else if (funcAbbrev.matches("tloc|sec|surf|deg|rxn")) {
 				r = handleTransformationTerm(term, npCreator);
 			} else if (actUri != null) {
@@ -314,11 +332,6 @@ public class Bel2Nanopub {
 			}
 		}
 		return r;
-	}
-
-	private boolean isProteinVariantTerm(URI funcUri, Term term) {
-		if (!funcUri.equals(BelRdfVocabulary.getAbundanceFunction("p"))) return false;
-		return (term.getTerms().size() > 0);
 	}
 
 	private Resource handleProteinVariantTerm(Term protTerm, NanopubCreator npCreator) throws Bel2NanopubException {
@@ -332,7 +345,7 @@ public class Bel2Nanopub {
 			String modAbbrev = varTerm.getFunctionEnum().getAbbreviation();
 			String varString = varTerm.toBELShortForm().replaceFirst("^.*\\((.*)\\).*$", "$1");
 			if (modAbbrev.equals("pmod")) {
-				npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.modifiedProteinAbundance);
+				npCreator.addAssertionStatement(bn, RDF.TYPE, ThirdPartyVocabulary.modProteinModification);
 				String v = varString.substring(0, 1);
 				URI modtypeUri = IdSchemes.makeUri("psimod", v, npCreator);
 				if (modtypeUri == null) {
@@ -346,7 +359,7 @@ public class Bel2Nanopub {
 				if (var == null) {
 					throw new Bel2NanopubException("Unknown protein variant: " + var);
 				}
-				npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.proteinVariantAbundance);
+				npCreator.addAssertionStatement(bn, RDF.TYPE, ThirdPartyVocabulary.modProteinModification);
 				// TODO What to do with protein variants? (they are ignored by bel2rdf)
 				if (var.equals(BelRdfVocabulary.getNormalizedVariant("sub"))) {
 					npCreator.addAssertionStatement(bn, BelRdfVocabulary.hasSubstitution, vf.createLiteral(varString));
@@ -358,44 +371,28 @@ public class Bel2Nanopub {
 		return bn;
 	}
 
-	private Resource handleSimpleAbundanceTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
-		BNode bn = newBNode();
-		if (!term.getTerms().isEmpty() && !term.getParameters().isEmpty()) {
-			throw new Bel2NanopubException("Unexpected presence of both, terms and parameters: " + term.getFunctionEnum());
-		}
-		if (term.getTerms().size() != 1 && term.getParameters().size() != 1) {
-			throw new Bel2NanopubException("Only one term or parameter expected: " + term.getFunctionEnum());
-		}
+	private URI handleSimpleAbundanceTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
 		if (!term.getTerms().isEmpty()) {
-			npCreator.addNamespace("obo", ThirdPartyVocabulary.oboNs);
-			Resource ch = processBelTerm(term.getTerms().get(0), npCreator);
-			npCreator.addAssertionStatement(bn, bfoHasPart, ch);
-		} else {
-			URI cUri = getUriFromParam(term.getParameters().get(0), npCreator);
-			npCreator.addAssertionStatement(bn, ThirdPartyVocabulary.sioHasAgent, cUri);
+			throw new Bel2NanopubException("Unexpected presence of sub-terms: " + term.getFunctionEnum());
 		}
-		return bn;
+		if (term.getParameters().size() != 1) {
+			throw new Bel2NanopubException("Exactly one parameter expected: " + term.getFunctionEnum());
+		}
+		return getUriFromParam(term.getParameters().get(0), npCreator);
 	}
 
 	private Resource handleCompoundAbundanceTerm(Term term, NanopubCreator npCreator) throws Bel2NanopubException {
 		BNode bn = newBNode();
-		if (!term.getTerms().isEmpty() && !term.getParameters().isEmpty()) {
+		if (!term.getParameters().isEmpty()) {
 			throw new Bel2NanopubException("Unexpected presence of both, terms and parameters: " + term.getFunctionEnum());
 		}
-		if (!term.getTerms().isEmpty()) {
-			npCreator.addNamespace("obo", ThirdPartyVocabulary.oboNs);
-			for (Term child : term.getTerms()) {
-				Resource ch = processBelTerm(child, npCreator);
-				npCreator.addAssertionStatement(bn, bfoHasPart, ch);
-			}
-		} else if (!term.getParameters().isEmpty()) {
-			if (term.getParameters().size() > 1) {
-				throw new Bel2NanopubException("Expecting only one parameter for: " + term.getFunctionEnum());
-			}
-			URI cUri = getUriFromParam(term.getParameters().get(0), npCreator);
-			npCreator.addAssertionStatement(bn, ThirdPartyVocabulary.sioHasAgent, cUri);
-		} else {
+		if (term.getTerms().isEmpty()) {
 			throw new Bel2NanopubException("Empty abundance term: " + term.getFunctionEnum());
+		}
+		npCreator.addNamespace("obo", ThirdPartyVocabulary.oboNs);
+		for (Term child : term.getTerms()) {
+			Resource ch = processBelTerm(child, npCreator);
+			npCreator.addAssertionStatement(bn, bfoHasPart, ch);
 		}
 		return bn;
 	}

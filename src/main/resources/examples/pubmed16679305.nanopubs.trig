@@ -1,5 +1,5 @@
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_nL2QRQZTzuHl2MCrw8Uee2l2twu3sG_qYBeSO4ZlWo> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_nL2QRQZTzuHl2MCrw8Uee2l2twu3sG_qYBeSO4ZlWo#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RATLsVX7dVwptYoMoYDcWK8QPwoi2_dQZ7ngYEtZymyj0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RATLsVX7dVwptYoMoYDcWK8QPwoi2_dQZ7ngYEtZymyj0#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -29,7 +29,7 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 obo:BFO_0000066 mesh:D015179 , species:9606 ;
 		rdf:object mesh:D009362 ;
@@ -62,8 +62,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAaymPa5-Yc1qHBmJC9yLkXCbJAvwoMlq_uCpHeIhoILo> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAaymPa5-Yc1qHBmJC9yLkXCbJAvwoMlq_uCpHeIhoILo#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAo_U8C4ZW8nsxT62PkBr0G0Owix3l09Ez2fZY4k0Q9sE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAo_U8C4ZW8nsxT62PkBr0G0Owix3l09Ez2fZY4k0Q9sE#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -93,7 +93,7 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 obo:BFO_0000066 mesh:D015179 , species:9606 ;
 		rdf:object mesh:D012008 ;
@@ -126,8 +126,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAdp2OKCjV0veklWaKXcsbzI_72Q3WEOp01bP13dXF2IU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAdp2OKCjV0veklWaKXcsbzI_72Q3WEOp01bP13dXF2IU#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAp6ES3Hvn_nyG9b18n-ljpLLkrd1OTd-ixH7sp9mJ09k> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAp6ES3Hvn_nyG9b18n-ljpLLkrd1OTd-ixH7sp9mJ09k#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -158,7 +158,7 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object mesh:D009369 ;
@@ -191,8 +191,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAYtLyhCG0xFL0ebGIg2Q5dHx3wAW9HGc8ijUdmNJOoaA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAYtLyhCG0xFL0ebGIg2Q5dHx3wAW9HGc8ijUdmNJOoaA#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAGXsTHb1OUnKh29A9JPx4B_H9oIEf_vwhR_NUGxiobEA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAGXsTHb1OUnKh29A9JPx4B_H9oIEf_vwhR_NUGxiobEA#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -223,7 +223,7 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,D" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object mesh:D009369 ;
@@ -256,8 +256,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9HIY5u4lZwCMYh0iij0ZERXh1PEGabP8fe0N9izk7eU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9HIY5u4lZwCMYh0iij0ZERXh1PEGabP8fe0N9izk7eU#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA5ykXIF0VBbTt6iyyAT5aF8Be5vd6QI92k0lFDEBep1g> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA5ykXIF0VBbTt6iyyAT5aF8Be5vd6QI92k0lFDEBep1g#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -288,7 +288,7 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,C" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object mesh:D009369 ;
@@ -321,8 +321,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA6SAWZju7CU2bxz9zVPCUGGyPjKmWWScu90hFOTysw3A> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA6SAWZju7CU2bxz9zVPCUGGyPjKmWWScu90hFOTysw3A#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3OJnU1ii2VXbYuWzNbNh6XXTzvkhF8KLtU6dVAymFok> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3OJnU1ii2VXbYuWzNbNh6XXTzvkhF8KLtU6dVAymFok#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -353,16 +353,16 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 obo:BFO_0000051 sub:_3 , sub:_4 ;
-		a belv:ComplexAbundance .
+		a <http://amigo.geneontology.org/amigo/term/GO:0043234> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:6407 ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 hgnc:6407 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
-	sub:_4 semsc:SIO_000139 <http://www.informatics.jax.org/marker/MGI:97847> ;
-		a belv:ProteinAbundance .
+	sub:_4 obo:RO_0002204 <http://www.informatics.jax.org/marker/MGI:97847> ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
@@ -395,8 +395,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RARpEIHNowAbnJgbN5NTbb68yVVFg_FWvNstm6QufMZQY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RARpEIHNowAbnJgbN5NTbb68yVVFg_FWvNstm6QufMZQY#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3gW1Yvg5INMqgcbqt5aoZSqJOMUu7sBI9svSSkSg7Ho> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3gW1Yvg5INMqgcbqt5aoZSqJOMUu7sBI9svSSkSg7Ho#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -428,13 +428,13 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 semsc:SIO_000139 sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 semsc:SIO_000139 pfm:MAPK%20Erk1%2F3%20Family ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 pfm:MAPK%20Erk1%2F3%20Family ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
@@ -467,8 +467,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAwnmDtsP6m8Pd9ksrXaQO8hyoARAYoxel1GQToKOcIXU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAwnmDtsP6m8Pd9ksrXaQO8hyoARAYoxel1GQToKOcIXU#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAf8l3YCUL5OnK2yZ6zGeR0sSVXpTM6WLgSLF2EeosWl8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAf8l3YCUL5OnK2yZ6zGeR0sSVXpTM6WLgSLF2EeosWl8#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -499,16 +499,16 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,D" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 obo:BFO_0000051 sub:_3 , sub:_4 ;
-		a belv:ComplexAbundance .
+		a <http://amigo.geneontology.org/amigo/term/GO:0043234> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:6407 ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 hgnc:6407 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
-	sub:_4 semsc:SIO_000139 <http://www.informatics.jax.org/marker/MGI:97847> ;
-		a belv:ProteinAbundance .
+	sub:_4 obo:RO_0002204 <http://www.informatics.jax.org/marker/MGI:97847> ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
@@ -541,8 +541,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA2BlyuuDEN_iBlyOKTidm0lQAnxrYhaM667b2LMHYWS0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA2BlyuuDEN_iBlyOKTidm0lQAnxrYhaM667b2LMHYWS0#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAS7b4FhK83ezA6UEEEEBnKbqJhs6EEMkCG2FLeE5qWz8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAS7b4FhK83ezA6UEEEEBnKbqJhs6EEMkCG2FLeE5qWz8#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -574,13 +574,13 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,D" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 semsc:SIO_000139 sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 semsc:SIO_000139 pfm:MAPK%20Erk1%2F3%20Family ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 pfm:MAPK%20Erk1%2F3%20Family ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
@@ -613,8 +613,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAiYunvXQEMwUrJNduiZwiJvNz16d067p1N1Ab6vi3fRU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAiYunvXQEMwUrJNduiZwiJvNz16d067p1N1Ab6vi3fRU#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAdTtkqNgmXbMluxMSF3xskdfUfSoppQBqJDFpfVsn4_g> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAdTtkqNgmXbMluxMSF3xskdfUfSoppQBqJDFpfVsn4_g#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -642,19 +642,18 @@ sub:Head {
 }
 
 sub:Assert {
+	ncm:p85%2Fp110%20PI3Kinase%20Complex a <http://amigo.geneontology.org/amigo/term/GO:0043234> .
+	
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,D)) -> kin(complex(NCM:\"p85/p110 PI3Kinase Complex\"))" .
 	
 	sub:_1 belv:hasSubstitution "G,12,D" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
-	sub:_2 semsc:SIO_000139 sub:_3 ;
+	sub:_2 semsc:SIO_000139 ncm:p85%2Fp110%20PI3Kinase%20Complex ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 semsc:SIO_000139 ncm:p85%2Fp110%20PI3Kinase%20Complex ;
-		a belv:ComplexAbundance .
-	
-	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
@@ -666,17 +665,17 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_6 ;
+		pav:authoredBy sub:_5 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_5 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_4 .
 	
-	sub:_5 prov:value """Instead, it transduces signals through the PI3K/Akt, JNK,
+	sub:_4 prov:value """Instead, it transduces signals through the PI3K/Akt, JNK,
 p38 and FAK pathways.""" ;
 		prov:wasQuotedFrom pubmed:16679305 .
 	
-	sub:_6 rdfs:comment "support@belframework.org" ;
+	sub:_5 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -686,8 +685,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAUPQavOsxF07J1HJlpfgDpmsVoFE6nCqnAhQ9Avjbu84> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAUPQavOsxF07J1HJlpfgDpmsVoFE6nCqnAhQ9Avjbu84#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAWXPZoZIuZ4OhxCv_p5bvhTB6-yGXB9i9-fpJlRkjY2E> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAWXPZoZIuZ4OhxCv_p5bvhTB6-yGXB9i9-fpJlRkjY2E#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -719,13 +718,13 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,D" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 semsc:SIO_000139 sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 semsc:SIO_000139 pfm:Akt%20Family ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 pfm:Akt%20Family ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
@@ -759,8 +758,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAIR6nQcdXpOrk48cIpqDs4aN602LEwXaAuO8yN7Vot4w> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAIR6nQcdXpOrk48cIpqDs4aN602LEwXaAuO8yN7Vot4w#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAP8q4B2_sydccNOVXLKbWzG24VSziSEXqW0dMow_9K9Y> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAP8q4B2_sydccNOVXLKbWzG24VSziSEXqW0dMow_9K9Y#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -792,13 +791,13 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,D" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 semsc:SIO_000139 sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 semsc:SIO_000139 pfm:Mapk%20JNK%20Family ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 pfm:Mapk%20JNK%20Family ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
@@ -832,8 +831,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAgIRyKN4oSjGzo-rFMTNztmsLHbfoNWrQfOjbIfvDR94> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAgIRyKN4oSjGzo-rFMTNztmsLHbfoNWrQfOjbIfvDR94#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA4jQQS7RH2b8KpB9hZdor966gGF9KQFLmhkUuNUgjKfM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA4jQQS7RH2b8KpB9hZdor966gGF9KQFLmhkUuNUgjKfM#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -865,13 +864,13 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,D" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 semsc:SIO_000139 sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 semsc:SIO_000139 pfm:Mapk%20p38%20Family ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 pfm:Mapk%20p38%20Family ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
@@ -905,8 +904,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAzqHt_gLP3sqs_MTNq6PUZz47au0US_eSKrsLg1zfOiU> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAzqHt_gLP3sqs_MTNq6PUZz47au0US_eSKrsLg1zfOiU#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RACpAHpzeH5GUPZbZKGt3-vPXdVwzQ9o2K95VjJWcw03I> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RACpAHpzeH5GUPZbZKGt3-vPXdVwzQ9o2K95VjJWcw03I#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -938,13 +937,13 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,D" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 semsc:SIO_000139 sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 semsc:SIO_000139 <http://www.informatics.jax.org/marker/MGI:95481> ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 <http://www.informatics.jax.org/marker/MGI:95481> ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
@@ -978,8 +977,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAAQNJPgzq9rSv9bznUeUWTD0LrS2c7n8l_smm_wjCD-Y> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAAQNJPgzq9rSv9bznUeUWTD0LrS2c7n8l_smm_wjCD-Y#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RARa6WJlhBNEyuvnhUYkdOFMKnUEZUBFv3FQrfGsdnXos> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RARa6WJlhBNEyuvnhUYkdOFMKnUEZUBFv3FQrfGsdnXos#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1010,11 +1009,11 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		belv:variantOf hgnc:9884 ;
-		a belv:ModifiedProteinAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
@@ -1047,8 +1046,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RADCnxiUEK80vLpiYSHRmhcNConW7khPM15A5phcBc0Rs> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RADCnxiUEK80vLpiYSHRmhcNConW7khPM15A5phcBc0Rs#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAcy7DpbsqHQpiOxp3VMkzsXmZtdKntAQiJL46pPsnfeM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAcy7DpbsqHQpiOxp3VMkzsXmZtdKntAQiJL46pPsnfeM#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1078,10 +1077,10 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
-	sub:_2 semsc:SIO_000139 hgnc:8729 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:8729 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
@@ -1114,8 +1113,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAyus1QdX-yGo-1AuMGyzFBFqVe_xatno8TUMNSMfYpoA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAyus1QdX-yGo-1AuMGyzFBFqVe_xatno8TUMNSMfYpoA#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAD8GRagrEiZHMzR55hVd7MfU7ltaHZ-hejNrp98-RUiU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAD8GRagrEiZHMzR55hVd7MfU7ltaHZ-hejNrp98-RUiU#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1145,10 +1144,10 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
-	sub:_2 semsc:SIO_000139 hgnc:1579 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:1579 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object sub:_2 ;
@@ -1181,8 +1180,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAkm1GHjuOzJ6I9BqhEqUARAm5x5puDGBCC1LiqJhC-BY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAkm1GHjuOzJ6I9BqhEqUARAm5x5puDGBCC1LiqJhC-BY#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAFRN3zMn3Nrjq72ByeyDbbmn703ae3m9CH1BSy0N1Pnk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAFRN3zMn3Nrjq72ByeyDbbmn703ae3m9CH1BSy0N1Pnk#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1213,7 +1212,7 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object <http://amigo.geneontology.org/amigo/term/GO:0000082> ;
@@ -1246,8 +1245,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9UU4X8-gj8pYEdtcdDkXRwG-qI4N8BaZZIvJQfb7Svg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9UU4X8-gj8pYEdtcdDkXRwG-qI4N8BaZZIvJQfb7Svg#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7Axs4wzWPobIkRwtKRI2t95qVygxWcWA-Uiq8DtP1VA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7Axs4wzWPobIkRwtKRI2t95qVygxWcWA-Uiq8DtP1VA#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1278,7 +1277,7 @@ sub:Assert {
 	
 	sub:_1 belv:hasSubstitution "G,12,V" ;
 		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object <http://amigo.geneontology.org/amigo/term/GO:0000086> ;
@@ -1311,8 +1310,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAIrnbH3FNEMCMoEnWWNXZqu96q53AabWz9RcLbK5D5WA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAIrnbH3FNEMCMoEnWWNXZqu96q53AabWz9RcLbK5D5WA#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAPQveS4S1uQXctnPlOaBL29CThDlfxjw6N3PycoUhXd0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAPQveS4S1uQXctnPlOaBL29CThDlfxjw6N3PycoUhXd0#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1341,15 +1340,15 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "p(HGNC:KRAS,sub(G,12,V)) causesNoChange bp(GO:\"regulation of apoptotic process\")" .
 	
-	sub:_1 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
+	sub:_1 belv:hasSubstitution "G,12,V" ;
+		belv:variantOf hgnc:6407 ;
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
+	
+	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CCL-92.aspx> , species:10090 ;
 		rdf:object <http://amigo.geneontology.org/amigo/term/GO:0042981> ;
 		rdf:predicate belv:causesNoChange ;
-		rdf:subject sub:_2 ;
+		rdf:subject sub:_1 ;
 		a rdf:Statement .
-	
-	sub:_2 belv:hasSubstitution "G,12,V" ;
-		belv:variantOf hgnc:6407 ;
-		a belv:ProteinVariantAbundance .
 }
 
 sub:Prov {

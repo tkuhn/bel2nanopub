@@ -104,8 +104,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAQHUURppEfZcBI5cMoAAHa7DPx3TrAS__slpIMHRdto0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAQHUURppEfZcBI5cMoAAHa7DPx3TrAS__slpIMHRdto0#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAd688g1pvmdQQkM47gaGDV-t_61maKppMgMIA6robw-U> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAd688g1pvmdQQkM47gaGDV-t_61maKppMgMIA6robw-U#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -134,22 +134,22 @@ sub:Assert {
 	
 	sub:_1 obo:BFO_0000051 sub:_2 , sub:_3 , sub:_4 ;
 		belv:directlyIncreases sub:_5 ;
-		a belv:ComplexAbundance .
+		a <http://amigo.geneontology.org/amigo/term/GO:0043234> .
 	
-	sub:_2 semsc:SIO_000139 hgnc:12833 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:12833 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:4055 ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 hgnc:4055 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
-	sub:_4 semsc:SIO_000139 hgnc:12791 ;
-		a belv:ProteinAbundance .
+	sub:_4 obo:RO_0002204 hgnc:12791 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_5 semsc:SIO_000139 sub:_6 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0003824> .
 	
-	sub:_6 semsc:SIO_000139 hgnc:12791 ;
-		a belv:ProteinAbundance .
+	sub:_6 obo:RO_0002204 hgnc:12791 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 }
 
 sub:Prov {
@@ -176,8 +176,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJrt8f6nPTOQ_TuZQyCuJHkecitSKjX4yzAFHakwrUto> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJrt8f6nPTOQ_TuZQyCuJHkecitSKjX4yzAFHakwrUto#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAWFJj2Nc4vJrBxLbFoDnQ3AAQHmVs4m0PTOHQHO3ix3Q> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAWFJj2Nc4vJrBxLbFoDnQ3AAQHmVs4m0PTOHQHO3ix3Q#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -206,13 +206,13 @@ sub:Assert {
 	
 	sub:_1 obo:BFO_0000051 sub:_2 , sub:_3 ;
 		obo:BFO_0000066 mesh:D002467 ;
-		a belv:ComplexAbundance .
+		a <http://amigo.geneontology.org/amigo/term/GO:0043234> .
 	
-	sub:_2 semsc:SIO_000139 hgnc:12833 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:12833 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:12791 ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 hgnc:12791 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 }
 
 sub:Prov {
@@ -239,8 +239,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7PkRkA8bSFnwR6B_phMJfilAG04ncRiGwXMnGVUvZfk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7PkRkA8bSFnwR6B_phMJfilAG04ncRiGwXMnGVUvZfk#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAHEBMDNLgKE7ZMjv6LSDaLVqvnpUA3ZuZh9NHkWcVlyw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAHEBMDNLgKE7ZMjv6LSDaLVqvnpUA3ZuZh9NHkWcVlyw#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -269,13 +269,13 @@ sub:Assert {
 	
 	sub:_1 obo:BFO_0000051 sub:_2 , sub:_3 ;
 		obo:BFO_0000066 mesh:D002467 ;
-		a belv:ComplexAbundance .
+		a <http://amigo.geneontology.org/amigo/term/GO:0043234> .
 	
-	sub:_2 semsc:SIO_000139 hgnc:4055 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:4055 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:12791 ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 hgnc:12791 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 }
 
 sub:Prov {
@@ -302,8 +302,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAHtfiEchqoGUdhlAZYKE_edlvHKMwoaMM31Sa2iPDUPg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAHtfiEchqoGUdhlAZYKE_edlvHKMwoaMM31Sa2iPDUPg#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RArp29FDcSdloQg9ZKHYQBN4YFCLXN26Xit4M-DsqKb6Q> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RArp29FDcSdloQg9ZKHYQBN4YFCLXN26Xit4M-DsqKb6Q#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -332,13 +332,13 @@ sub:Assert {
 	
 	sub:_1 obo:BFO_0000051 sub:_2 , sub:_3 ;
 		obo:BFO_0000066 mesh:D002467 ;
-		a belv:ComplexAbundance .
+		a <http://amigo.geneontology.org/amigo/term/GO:0043234> .
 	
-	sub:_2 semsc:SIO_000139 hgnc:270 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:270 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:12791 ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 hgnc:12791 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 }
 
 sub:Prov {
@@ -365,8 +365,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAvXV_7yRsnC26qcM129BuSLKfhxtm-wSp3D907Wy-M7s> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAvXV_7yRsnC26qcM129BuSLKfhxtm-wSp3D907Wy-M7s#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RATsp2SH90zBerFekzph1K1mfOAjO3g1J4s6eeXOHEeek> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RATsp2SH90zBerFekzph1K1mfOAjO3g1J4s6eeXOHEeek#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -393,19 +393,19 @@ sub:Assert {
 	sub:Assert rdfs:label "complex(p(HGNC:WRN),p(HGNC:XRCC5),p(HGNC:XRCC6),p(HGNC:PARP1))" .
 	
 	sub:_1 obo:BFO_0000051 sub:_2 , sub:_3 , sub:_4 , sub:_5 ;
-		a belv:ComplexAbundance .
+		a <http://amigo.geneontology.org/amigo/term/GO:0043234> .
 	
-	sub:_2 semsc:SIO_000139 hgnc:12791 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:12791 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:12833 ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 hgnc:12833 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
-	sub:_4 semsc:SIO_000139 hgnc:4055 ;
-		a belv:ProteinAbundance .
+	sub:_4 obo:RO_0002204 hgnc:4055 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
-	sub:_5 semsc:SIO_000139 hgnc:270 ;
-		a belv:ProteinAbundance .
+	sub:_5 obo:RO_0002204 hgnc:270 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 }
 
 sub:Prov {
@@ -432,8 +432,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7Vtdqqb9r0uyz03SH1Hamf4BBTomBUC_ESlGpYDCFHQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7Vtdqqb9r0uyz03SH1Hamf4BBTomBUC_ESlGpYDCFHQ#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3QaWk45NpHCjANuHzmHN-xQhszwjatB9P6-nEPTlGcM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3QaWk45NpHCjANuHzmHN-xQhszwjatB9P6-nEPTlGcM#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -462,30 +462,23 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R)))" , "ribo(p(HGNC:PARP1)) => p(HGNC:PARP1,pmod(R))" .
 	
-	sub:_1 obo:BFO_0000051 sub:_2 , sub:_3 ;
-		belv:increases sub:_4 ;
-		a belv:CompositeAbundance .
+	sub:_1 obo:BFO_0000051 chebi:4291 , chebi:7422 ;
+		belv:increases sub:_2 .
 	
-	sub:_2 semsc:SIO_000139 chebi:4291 ;
-		a belv:Abundance .
-	
-	sub:_3 semsc:SIO_000139 chebi:7422 ;
-		a belv:Abundance .
-	
-	sub:_4 rdf:object sub:_7 ;
+	sub:_2 rdf:object sub:_5 ;
 		rdf:predicate belv:directlyIncreases ;
-		rdf:subject sub:_5 ;
+		rdf:subject sub:_3 ;
 		a rdf:Statement .
 	
-	sub:_5 semsc:SIO_000139 sub:_6 ;
+	sub:_3 semsc:SIO_000139 sub:_4 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0006471> .
 	
-	sub:_6 semsc:SIO_000139 hgnc:270 ;
-		a belv:ProteinAbundance .
+	sub:_4 obo:RO_0002204 hgnc:270 ;
+		a chebi:CHEBI_36080 .
 	
-	sub:_7 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
+	sub:_5 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		belv:variantOf hgnc:270 ;
-		a belv:ModifiedProteinAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 }
 
 sub:Prov {
@@ -493,16 +486,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_9 ;
+		pav:authoredBy sub:_7 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_8 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_6 .
 	
-	sub:_8 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	sub:_6 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	sub:_9 rdfs:comment "support@belframework.org" ;
+	sub:_7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -512,8 +505,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAZQj7cvilnLzd7Q07-IlwGu5r8O0kzS61cWRhj9ZK7Fk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAZQj7cvilnLzd7Q07-IlwGu5r8O0kzS61cWRhj9ZK7Fk#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAyRX53g7oItMDibVtUwtIl-CIpsT1mDNJY0GDmeFMEY0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAyRX53g7oItMDibVtUwtIl-CIpsT1mDNJY0GDmeFMEY0#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -542,30 +535,23 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R)))" , "ribo(p(HGNC:PARP1)) => p(HGNC:XRCC5,pmod(R))" .
 	
-	sub:_1 obo:BFO_0000051 sub:_2 , sub:_3 ;
-		belv:increases sub:_4 ;
-		a belv:CompositeAbundance .
+	sub:_1 obo:BFO_0000051 chebi:4291 , chebi:7422 ;
+		belv:increases sub:_2 .
 	
-	sub:_2 semsc:SIO_000139 chebi:4291 ;
-		a belv:Abundance .
-	
-	sub:_3 semsc:SIO_000139 chebi:7422 ;
-		a belv:Abundance .
-	
-	sub:_4 rdf:object sub:_7 ;
+	sub:_2 rdf:object sub:_5 ;
 		rdf:predicate belv:directlyIncreases ;
-		rdf:subject sub:_5 ;
+		rdf:subject sub:_3 ;
 		a rdf:Statement .
 	
-	sub:_5 semsc:SIO_000139 sub:_6 ;
+	sub:_3 semsc:SIO_000139 sub:_4 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0006471> .
 	
-	sub:_6 semsc:SIO_000139 hgnc:270 ;
-		a belv:ProteinAbundance .
+	sub:_4 obo:RO_0002204 hgnc:270 ;
+		a chebi:CHEBI_36080 .
 	
-	sub:_7 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
+	sub:_5 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		belv:variantOf hgnc:12833 ;
-		a belv:ModifiedProteinAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 }
 
 sub:Prov {
@@ -573,16 +559,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_9 ;
+		pav:authoredBy sub:_7 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_8 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_6 .
 	
-	sub:_8 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	sub:_6 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	sub:_9 rdfs:comment "support@belframework.org" ;
+	sub:_7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -592,8 +578,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9n_KOc3E1u_mHWGZbJU910tl3VxqgFOOMxxZLwPUyvc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9n_KOc3E1u_mHWGZbJU910tl3VxqgFOOMxxZLwPUyvc#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAUp2JDp0tc6urwCVSoh3D3EQu96a6WjxSV96sHG2Pxg0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAUp2JDp0tc6urwCVSoh3D3EQu96a6WjxSV96sHG2Pxg0#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -622,30 +608,23 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "composite(a(CHEBI:\"deoxyribonucleic acid\"),a(CHEBI:\"NAD(+)\")) -> (ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R)))" , "ribo(p(HGNC:PARP1)) => p(HGNC:XRCC6,pmod(R))" .
 	
-	sub:_1 obo:BFO_0000051 sub:_2 , sub:_3 ;
-		belv:increases sub:_4 ;
-		a belv:CompositeAbundance .
+	sub:_1 obo:BFO_0000051 chebi:4291 , chebi:7422 ;
+		belv:increases sub:_2 .
 	
-	sub:_2 semsc:SIO_000139 chebi:4291 ;
-		a belv:Abundance .
-	
-	sub:_3 semsc:SIO_000139 chebi:7422 ;
-		a belv:Abundance .
-	
-	sub:_4 rdf:object sub:_7 ;
+	sub:_2 rdf:object sub:_5 ;
 		rdf:predicate belv:directlyIncreases ;
-		rdf:subject sub:_5 ;
+		rdf:subject sub:_3 ;
 		a rdf:Statement .
 	
-	sub:_5 semsc:SIO_000139 sub:_6 ;
+	sub:_3 semsc:SIO_000139 sub:_4 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0006471> .
 	
-	sub:_6 semsc:SIO_000139 hgnc:270 ;
-		a belv:ProteinAbundance .
+	sub:_4 obo:RO_0002204 hgnc:270 ;
+		a chebi:CHEBI_36080 .
 	
-	sub:_7 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
+	sub:_5 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		belv:variantOf hgnc:4055 ;
-		a belv:ModifiedProteinAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 }
 
 sub:Prov {
@@ -653,16 +632,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_9 ;
+		pav:authoredBy sub:_7 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_8 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_6 .
 	
-	sub:_8 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	sub:_6 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	sub:_9 rdfs:comment "support@belframework.org" ;
+	sub:_7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -672,8 +651,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA6JMRlMjAUGw3QGYEx5jDZSydkvEy2vLUsOyPHhus3a0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA6JMRlMjAUGw3QGYEx5jDZSydkvEy2vLUsOyPHhus3a0#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAFqIU3HZRtOeNgcIxgAy3JJBXS2Qjf5UvLFnheD4w0_8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAFqIU3HZRtOeNgcIxgAy3JJBXS2Qjf5UvLFnheD4w0_8#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -704,19 +683,16 @@ sub:Assert {
 	sub:_1 belv:directlyIncreases sub:_2 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		belv:variantOf hgnc:12833 ;
-		a belv:ModifiedProteinAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
-	sub:_2 obo:BFO_0000051 sub:_3 , sub:_4 , sub:_5 ;
-		a belv:ComplexAbundance .
+	sub:_2 obo:BFO_0000051 chebi:4291 , sub:_3 , sub:_4 ;
+		a <http://amigo.geneontology.org/amigo/term/GO:0043234> .
 	
-	sub:_3 semsc:SIO_000139 chebi:4291 ;
-		a belv:Abundance .
+	sub:_3 obo:RO_0002204 hgnc:12833 ;
+		a chebi:CHEBI_36080 .
 	
-	sub:_4 semsc:SIO_000139 hgnc:12833 ;
-		a belv:ProteinAbundance .
-	
-	sub:_5 semsc:SIO_000139 hgnc:4055 ;
-		a belv:ProteinAbundance .
+	sub:_4 obo:RO_0002204 hgnc:4055 ;
+		a chebi:CHEBI_36080 .
 }
 
 sub:Prov {
@@ -724,16 +700,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_5 .
 	
-	sub:_6 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	sub:_5 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -743,8 +719,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAwjrxE9teml497BuyNoqNDSdP1ZHuX-udNksuVEDGM90> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAwjrxE9teml497BuyNoqNDSdP1ZHuX-udNksuVEDGM90#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAYg2lng_4fm14ottEWaZtPVWuqBtiBYNiiDcbw04do_w> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAYg2lng_4fm14ottEWaZtPVWuqBtiBYNiiDcbw04do_w#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -775,19 +751,16 @@ sub:Assert {
 	sub:_1 belv:directlyIncreases sub:_2 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		belv:variantOf hgnc:4055 ;
-		a belv:ModifiedProteinAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
-	sub:_2 obo:BFO_0000051 sub:_3 , sub:_4 , sub:_5 ;
-		a belv:ComplexAbundance .
+	sub:_2 obo:BFO_0000051 chebi:4291 , sub:_3 , sub:_4 ;
+		a <http://amigo.geneontology.org/amigo/term/GO:0043234> .
 	
-	sub:_3 semsc:SIO_000139 chebi:4291 ;
-		a belv:Abundance .
+	sub:_3 obo:RO_0002204 hgnc:12833 ;
+		a chebi:CHEBI_36080 .
 	
-	sub:_4 semsc:SIO_000139 hgnc:12833 ;
-		a belv:ProteinAbundance .
-	
-	sub:_5 semsc:SIO_000139 hgnc:4055 ;
-		a belv:ProteinAbundance .
+	sub:_4 obo:RO_0002204 hgnc:4055 ;
+		a chebi:CHEBI_36080 .
 }
 
 sub:Prov {
@@ -795,16 +768,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 2 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:14734561 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> , sub:_5 .
 	
-	sub:_6 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
+	sub:_5 prov:value "In the presence of DNA and NAD(+), PARP-1poly(ADP-ribosyl)ates itself and Ku70/80 but not WRN, andgel-shift assays showed that poly-(ADP-ribosyl)ation ofKu70/80 decreases the DNA-binding affinity of this factor." ;
 		prov:wasQuotedFrom pubmed:14734561 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -814,8 +787,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAbG7i1gLG5i4eOGdFnL2QlPbASGJxP7AH7o2YarYlKgA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAbG7i1gLG5i4eOGdFnL2QlPbASGJxP7AH7o2YarYlKgA#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAS8Or2krWgDNOfz3gPlzsaMkEx0dtIlsI9JK1MuKSJdM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAS8Or2krWgDNOfz3gPlzsaMkEx0dtIlsI9JK1MuKSJdM#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -845,13 +818,13 @@ sub:Assert {
 	sub:_1 belv:directlyIncreases sub:_2 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		belv:variantOf hgnc:12833 ;
-		a belv:ModifiedProteinAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 semsc:SIO_000139 sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0003824> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:12791 ;
-		a belv:ProteinAbundance .
+	sub:_3 <http://purl.obolibrary.org/obo/RO_0002204> hgnc:12791 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 }
 
 sub:Prov {
@@ -878,8 +851,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RASsSiWnk9LI9sSS5SXT7Pqqp5HSv_R5RhlqNZe2V1ZZo> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RASsSiWnk9LI9sSS5SXT7Pqqp5HSv_R5RhlqNZe2V1ZZo#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAgh6LXvrvXu6hUCyV2kfSmhDd4kZ7jRKTzPIFtnNW5Mw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAgh6LXvrvXu6hUCyV2kfSmhDd4kZ7jRKTzPIFtnNW5Mw#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -909,13 +882,13 @@ sub:Assert {
 	sub:_1 belv:directlyIncreases sub:_2 ;
 		belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00731> ;
 		belv:variantOf hgnc:4055 ;
-		a belv:ModifiedProteinAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 semsc:SIO_000139 sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0003824> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:12791 ;
-		a belv:ProteinAbundance .
+	sub:_3 <http://purl.obolibrary.org/obo/RO_0002204> hgnc:12791 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 }
 
 sub:Prov {

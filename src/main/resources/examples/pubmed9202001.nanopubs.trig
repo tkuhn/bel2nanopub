@@ -1,5 +1,5 @@
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAzjmY2d_FBzcKnix5S4Flenq4Ag3zI9eSNfBJuVF1Z0Q> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAzjmY2d_FBzcKnix5S4Flenq4Ag3zI9eSNfBJuVF1Z0Q#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9qqDx0W1KD9o5iHJcDbOWiabU_dky7W6gF-zaBMe-4A> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9qqDx0W1KD9o5iHJcDbOWiabU_dky7W6gF-zaBMe-4A#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -29,19 +29,16 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> kin(p(HGNC:MAPK1))" .
 	
-	sub:_1 semsc:SIO_000139 chebi:746 ;
-		a belv:Abundance .
-	
-	sub:_2 semsc:SIO_000139 sub:_3 ;
+	sub:_1 semsc:SIO_000139 sub:_2 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:6871 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:6871 ;
+		a chebi:CHEBI_36080 .
 	
-	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
-		rdf:object sub:_2 ;
+	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+		rdf:object sub:_1 ;
 		rdf:predicate belv:increases ;
-		rdf:subject sub:_1 ;
+		rdf:subject chebi:746 ;
 		a rdf:Statement .
 }
 
@@ -50,16 +47,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_6 ;
+		pav:authoredBy sub:_5 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_5 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_4 .
 	
-	sub:_5 prov:value "Phorbol ester tumor promoters, such as phorbol12-myristate 13-acetate (PMA), are potent activators ofextracellular signal-regulated kinase 2 (ERK2), stress-activatedprotein kinase (SAPK), and p38 mitogen-activated protein kinase(MAPK) in U937 human leukemic cells." ;
+	sub:_4 prov:value "Phorbol ester tumor promoters, such as phorbol12-myristate 13-acetate (PMA), are potent activators ofextracellular signal-regulated kinase 2 (ERK2), stress-activatedprotein kinase (SAPK), and p38 mitogen-activated protein kinase(MAPK) in U937 human leukemic cells." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_6 rdfs:comment "support@belframework.org" ;
+	sub:_5 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -69,8 +66,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAA5djXM7iSGdyAsUiLTO7HgacP-HeF61zwqZ2Lvqdhvs> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAA5djXM7iSGdyAsUiLTO7HgacP-HeF61zwqZ2Lvqdhvs#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3hQpeqPNwgmVSJDNHiyXYTT1a4WdSe1c9f5NY94L7gM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3hQpeqPNwgmVSJDNHiyXYTT1a4WdSe1c9f5NY94L7gM#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -100,19 +97,16 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> kin(p(HGNC:MAPK8))" .
 	
-	sub:_1 semsc:SIO_000139 chebi:746 ;
-		a belv:Abundance .
-	
-	sub:_2 semsc:SIO_000139 sub:_3 ;
+	sub:_1 semsc:SIO_000139 sub:_2 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:6881 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:6881 ;
+		a chebi:CHEBI_36080 .
 	
-	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
-		rdf:object sub:_2 ;
+	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+		rdf:object sub:_1 ;
 		rdf:predicate belv:increases ;
-		rdf:subject sub:_1 ;
+		rdf:subject chebi:746 ;
 		a rdf:Statement .
 }
 
@@ -121,16 +115,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_6 ;
+		pav:authoredBy sub:_5 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_5 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_4 .
 	
-	sub:_5 prov:value "Phorbol ester tumor promoters, such as phorbol12-myristate 13-acetate (PMA), are potent activators ofextracellular signal-regulated kinase 2 (ERK2), stress-activatedprotein kinase (SAPK), and p38 mitogen-activated protein kinase(MAPK) in U937 human leukemic cells." ;
+	sub:_4 prov:value "Phorbol ester tumor promoters, such as phorbol12-myristate 13-acetate (PMA), are potent activators ofextracellular signal-regulated kinase 2 (ERK2), stress-activatedprotein kinase (SAPK), and p38 mitogen-activated protein kinase(MAPK) in U937 human leukemic cells." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_6 rdfs:comment "support@belframework.org" ;
+	sub:_5 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -140,8 +134,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAZ3M_TvbC0hx6Z49Viks7yteN_hTz042kRr_XNIjjHxg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAZ3M_TvbC0hx6Z49Viks7yteN_hTz042kRr_XNIjjHxg#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAcsB1AZ32ufmzZ7xE560P5j2xzOhEUFiwkzkJGustv84> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAcsB1AZ32ufmzZ7xE560P5j2xzOhEUFiwkzkJGustv84#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -171,19 +165,16 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> kin(p(PFH:\"MAPK p38 Family\"))" .
 	
-	sub:_1 semsc:SIO_000139 chebi:746 ;
-		a belv:Abundance .
-	
-	sub:_2 semsc:SIO_000139 sub:_3 ;
+	sub:_1 semsc:SIO_000139 sub:_2 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 semsc:SIO_000139 pfh:MAPK%20p38%20Family ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 pfh:MAPK%20p38%20Family ;
+		a chebi:CHEBI_36080 .
 	
-	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
-		rdf:object sub:_2 ;
+	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+		rdf:object sub:_1 ;
 		rdf:predicate belv:increases ;
-		rdf:subject sub:_1 ;
+		rdf:subject chebi:746 ;
 		a rdf:Statement .
 }
 
@@ -192,16 +183,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_6 ;
+		pav:authoredBy sub:_5 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_5 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_4 .
 	
-	sub:_5 prov:value "Phorbol ester tumor promoters, such as phorbol12-myristate 13-acetate (PMA), are potent activators ofextracellular signal-regulated kinase 2 (ERK2), stress-activatedprotein kinase (SAPK), and p38 mitogen-activated protein kinase(MAPK) in U937 human leukemic cells." ;
+	sub:_4 prov:value "Phorbol ester tumor promoters, such as phorbol12-myristate 13-acetate (PMA), are potent activators ofextracellular signal-regulated kinase 2 (ERK2), stress-activatedprotein kinase (SAPK), and p38 mitogen-activated protein kinase(MAPK) in U937 human leukemic cells." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_6 rdfs:comment "support@belframework.org" ;
+	sub:_5 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -211,8 +202,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9HRx55zKbi6Gk-ZkOOjjIlLm8ppr1OiZeYX783qgtL4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9HRx55zKbi6Gk-ZkOOjjIlLm8ppr1OiZeYX783qgtL4#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJYtjZijRUgcJKqk1_kxphLGFHBH3q0VV6I4tW1-U9nk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJYtjZijRUgcJKqk1_kxphLGFHBH3q0VV6I4tW1-U9nk#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -244,13 +235,13 @@ sub:Assert {
 	
 	sub:_1 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		belv:variantOf hgnc:6871 ;
-		a belv:ModifiedProteinAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 semsc:SIO_000139 sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:6871 ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 hgnc:6871 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
 		rdf:object sub:_2 ;
@@ -283,8 +274,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RApwKKA2vak0MA6MT5Pd5kUs9Kh79eCbK0bhjGLyS6uSg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RApwKKA2vak0MA6MT5Pd5kUs9Kh79eCbK0bhjGLyS6uSg#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAglWV5W3fQDG2-8LjxxpoeORXGWgFln1kf5C5-kAKPIM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAglWV5W3fQDG2-8LjxxpoeORXGWgFln1kf5C5-kAKPIM#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -316,13 +307,13 @@ sub:Assert {
 	
 	sub:_1 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		belv:variantOf hgnc:6871 ;
-		a belv:ModifiedProteinAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 semsc:SIO_000139 sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:6871 ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 hgnc:6871 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
 		rdf:object sub:_2 ;
@@ -355,8 +346,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAl6l3FHn7nUZo3JZ0CgQ1gyGSz5M8oBH0vjEXIBlY0sk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAl6l3FHn7nUZo3JZ0CgQ1gyGSz5M8oBH0vjEXIBlY0sk#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAt1TMNhT3xfluKcCYYYmDBfGxsOd88MDNjR8VgGkUMtE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAt1TMNhT3xfluKcCYYYmDBfGxsOd88MDNjR8VgGkUMtE#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -388,13 +379,13 @@ sub:Assert {
 	
 	sub:_1 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		belv:variantOf hgnc:6881 ;
-		a belv:ModifiedProteinAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 semsc:SIO_000139 sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:6881 ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 hgnc:6881 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
 		rdf:object sub:_2 ;
@@ -427,8 +418,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAFuj7O8MLI_Gb6DhEEY1S8IWm6MOn_mX7Lskcyc_U5jQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAFuj7O8MLI_Gb6DhEEY1S8IWm6MOn_mX7Lskcyc_U5jQ#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3aKwx97eny1dp5WRtzhKh6tg-9ATTrmcMrvmv0kkQR8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3aKwx97eny1dp5WRtzhKh6tg-9ATTrmcMrvmv0kkQR8#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -460,13 +451,13 @@ sub:Assert {
 	
 	sub:_1 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		belv:variantOf hgnc:6881 ;
-		a belv:ModifiedProteinAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 semsc:SIO_000139 sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:6881 ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 hgnc:6881 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
 		rdf:object sub:_2 ;
@@ -499,8 +490,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RABZd0GbMIop4--XsahmktwE9HV1L3bx2P4NSkPVl86wQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RABZd0GbMIop4--XsahmktwE9HV1L3bx2P4NSkPVl86wQ#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RARRe6BFtc4QG7NvlIArTGk8cmr-2vIHA5VHrqu8JPkNM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RARRe6BFtc4QG7NvlIArTGk8cmr-2vIHA5VHrqu8JPkNM#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -533,13 +524,13 @@ sub:Assert {
 	
 	sub:_1 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		belv:variantOf hgnc:6876 ;
-		a belv:ModifiedProteinAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 semsc:SIO_000139 sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 semsc:SIO_000139 pfh:MAPK%20p38%20Family ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 pfh:MAPK%20p38%20Family ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
 		rdf:object sub:_2 ;
@@ -572,8 +563,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RACQ6l4_DUOrsWApoaTJFkLR8aOydcJc8WpLNIzE12a80> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RACQ6l4_DUOrsWApoaTJFkLR8aOydcJc8WpLNIzE12a80#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAg6jiyQUKMcG0_3txbM4O4jynZV0fzlNeE3AD9DHCTLo> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAg6jiyQUKMcG0_3txbM4O4jynZV0fzlNeE3AD9DHCTLo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -606,13 +597,13 @@ sub:Assert {
 	
 	sub:_1 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		belv:variantOf hgnc:6876 ;
-		a belv:ModifiedProteinAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_2 semsc:SIO_000139 sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_3 semsc:SIO_000139 pfh:MAPK%20p38%20Family ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 pfh:MAPK%20p38%20Family ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
 		rdf:object sub:_2 ;
@@ -645,8 +636,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9E5Q-1kr-dSo_clr19KucAojslkgXgI9QcQdIsxnvdc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9E5Q-1kr-dSo_clr19KucAojslkgXgI9QcQdIsxnvdc#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA2PMImdGtQgcU9ILnpp80-dLGZ_DiRb8slPhBgYf_DFg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA2PMImdGtQgcU9ILnpp80-dLGZ_DiRb8slPhBgYf_DFg#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -679,12 +670,12 @@ sub:Assert {
 	sub:_1 semsc:SIO_000139 sub:_2 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016791> .
 	
-	sub:_2 semsc:SIO_000139 hgnc:3064 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:3064 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_3 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		belv:variantOf hgnc:6871 ;
-		a belv:ModifiedProteinAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
 		rdf:object sub:_3 ;
@@ -717,8 +708,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RArLCkZHEQJ9UDWOkr8xL0BAvbeOQ3kCVJYxvsq6I6FKY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RArLCkZHEQJ9UDWOkr8xL0BAvbeOQ3kCVJYxvsq6I6FKY#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RATdI_I-_6jeQlMiD7xihqNlzzaDPKKqZDGlzEEePvC4Q> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RATdI_I-_6jeQlMiD7xihqNlzzaDPKKqZDGlzEEePvC4Q#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -751,12 +742,12 @@ sub:Assert {
 	sub:_1 semsc:SIO_000139 sub:_2 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016791> .
 	
-	sub:_2 semsc:SIO_000139 hgnc:3064 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:3064 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_3 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		belv:variantOf hgnc:6881 ;
-		a belv:ModifiedProteinAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
 		rdf:object sub:_3 ;
@@ -789,8 +780,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAGSQwNEOIk2C8WvUgQflj0QhF22hHoTFJHZk4kMsSwvs> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAGSQwNEOIk2C8WvUgQflj0QhF22hHoTFJHZk4kMsSwvs#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAtHld0I0p66SSM_-f3vNBubOMPYb53U-tBFoIksbK-xo> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAtHld0I0p66SSM_-f3vNBubOMPYb53U-tBFoIksbK-xo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -824,12 +815,12 @@ sub:Assert {
 	sub:_1 semsc:SIO_000139 sub:_2 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016791> .
 	
-	sub:_2 semsc:SIO_000139 hgnc:3064 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:3064 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_3 belv:hasModificationType <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00696> ;
 		belv:variantOf pfh:MAPK%20p38%20Family ;
-		a belv:ModifiedProteinAbundance .
+		a <http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000> .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
 		rdf:object sub:_3 ;
@@ -862,8 +853,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAQrI5nHzM6y72l2gs5dfqS9n_MJEFMcscAAWdwJW6bpc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAQrI5nHzM6y72l2gs5dfqS9n_MJEFMcscAAWdwJW6bpc#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAXFW2pZzKhvQhYXT2a89y-_780uheET1nhOVs2rBkXv8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAXFW2pZzKhvQhYXT2a89y-_780uheET1nhOVs2rBkXv8#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -895,14 +886,14 @@ sub:Assert {
 	sub:_1 semsc:SIO_000139 sub:_2 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016791> .
 	
-	sub:_2 semsc:SIO_000139 hgnc:3064 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:3064 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_3 semsc:SIO_000139 sub:_4 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_4 semsc:SIO_000139 hgnc:6871 ;
-		a belv:ProteinAbundance .
+	sub:_4 obo:RO_0002204 hgnc:6871 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
 		rdf:object sub:_3 ;
@@ -935,8 +926,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAI5IfGLEZBA9QMFlbOXNw6St-MVwKZN6l0EY7osXSmZc> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAI5IfGLEZBA9QMFlbOXNw6St-MVwKZN6l0EY7osXSmZc#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAUBiptEKqKs_iI111ZEAjH9TMutmT1MZgVRlAzY1oYuc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAUBiptEKqKs_iI111ZEAjH9TMutmT1MZgVRlAzY1oYuc#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -968,14 +959,14 @@ sub:Assert {
 	sub:_1 semsc:SIO_000139 sub:_2 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016791> .
 	
-	sub:_2 semsc:SIO_000139 hgnc:3064 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:3064 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_3 semsc:SIO_000139 sub:_4 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_4 semsc:SIO_000139 hgnc:6881 ;
-		a belv:ProteinAbundance .
+	sub:_4 obo:RO_0002204 hgnc:6881 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
 		rdf:object sub:_3 ;
@@ -1008,8 +999,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RANBcGx1e-0Qw-uMmhvGu4lP7sxC_6ldAPPLVEAg_t62U> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RANBcGx1e-0Qw-uMmhvGu4lP7sxC_6ldAPPLVEAg_t62U#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAWIgO-yAlmY7raSvS5aDKePUb9J_cQswC_8-VjjSZtdY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAWIgO-yAlmY7raSvS5aDKePUb9J_cQswC_8-VjjSZtdY#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1042,14 +1033,14 @@ sub:Assert {
 	sub:_1 semsc:SIO_000139 sub:_2 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016791> .
 	
-	sub:_2 semsc:SIO_000139 hgnc:3064 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:3064 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_3 semsc:SIO_000139 sub:_4 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_4 semsc:SIO_000139 pfh:MAPK%20p38%20Family ;
-		a belv:ProteinAbundance .
+	sub:_4 obo:RO_0002204 pfh:MAPK%20p38%20Family ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
 		rdf:object sub:_3 ;
@@ -1082,8 +1073,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA5ldl0vwpgbf3pjrjaJ6gOYRKC6eta4yRSqxrC5JaH7Q> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA5ldl0vwpgbf3pjrjaJ6gOYRKC6eta4yRSqxrC5JaH7Q#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAp4x7qPcRqXXQxM-EdAwD35SdLNcTtjQ1rZ3-b33jCE0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAp4x7qPcRqXXQxM-EdAwD35SdLNcTtjQ1rZ3-b33jCE0#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1112,16 +1103,13 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1)" .
 	
-	sub:_1 semsc:SIO_000139 chebi:746 ;
-		a belv:Abundance .
+	sub:_1 obo:RO_0002204 hgnc:3064 ;
+		a chebi:CHEBI_36080 .
 	
-	sub:_2 semsc:SIO_000139 hgnc:3064 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
-		rdf:object sub:_2 ;
+	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+		rdf:object sub:_1 ;
 		rdf:predicate belv:increases ;
-		rdf:subject sub:_1 ;
+		rdf:subject chebi:746 ;
 		a rdf:Statement .
 }
 
@@ -1130,16 +1118,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_5 ;
+		pav:authoredBy sub:_4 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_4 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_3 .
 	
-	sub:_4 prov:value "Here we demonstrate that PMA treatment induces MKP-1protein expression in U937 cells, which is detectable within 30 minwith maximal levels attained after 4 h." ;
+	sub:_3 prov:value "Here we demonstrate that PMA treatment induces MKP-1protein expression in U937 cells, which is detectable within 30 minwith maximal levels attained after 4 h." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_5 rdfs:comment "support@belframework.org" ;
+	sub:_4 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -1149,8 +1137,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7m8xX7JWN84aQuXQ9pjsNlhOKPnqkQyZhCk2LmgFZWI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7m8xX7JWN84aQuXQ9pjsNlhOKPnqkQyZhCk2LmgFZWI#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1uRiOrhimdfUSGZhYfeA4Tuk7eZgu2wPsjljJfNE27A> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1uRiOrhimdfUSGZhYfeA4Tuk7eZgu2wPsjljJfNE27A#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1180,20 +1168,17 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> tscript(p(HGNC:JUN))" .
 	
-	sub:_1 semsc:SIO_000139 hgnc:6204 ;
-		a belv:ProteinAbundance .
-	
-	sub:_2 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
-		rdf:object sub:_3 ;
-		rdf:predicate belv:increases ;
-		rdf:subject sub:_4 ;
-		a rdf:Statement .
-	
-	sub:_3 semsc:SIO_000139 sub:_1 ;
+	sub:_1 semsc:SIO_000139 sub:_2 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0034062> .
 	
-	sub:_4 semsc:SIO_000139 chebi:746 ;
-		a belv:Abundance .
+	sub:_2 obo:RO_0002204 hgnc:6204 ;
+		a chebi:CHEBI_36080 .
+	
+	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+		rdf:object sub:_1 ;
+		rdf:predicate belv:increases ;
+		rdf:subject chebi:746 ;
+		a rdf:Statement .
 }
 
 sub:Prov {
@@ -1201,16 +1186,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_6 ;
+		pav:authoredBy sub:_5 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_5 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_4 .
 	
-	sub:_5 prov:value "This differential substrate specificity of MKP-1 can befunctionally extended to nuclear transcriptional events in that PMAinducedc-Jun transcriptional activity was more sensitive to inhibition by MKP-1than either Elk-1 or c-Myc." ;
+	sub:_4 prov:value "This differential substrate specificity of MKP-1 can befunctionally extended to nuclear transcriptional events in that PMAinducedc-Jun transcriptional activity was more sensitive to inhibition by MKP-1than either Elk-1 or c-Myc." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_6 rdfs:comment "support@belframework.org" ;
+	sub:_5 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -1220,8 +1205,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAaFShuhuvDLgRxUJZSaImSDB1KvemMVIRnTYMYf8tpyM> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAaFShuhuvDLgRxUJZSaImSDB1KvemMVIRnTYMYf8tpyM#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA_49pZaewOaGD1V3lx6rF5Q0COBNAChJcZNRXDREwZ8A> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA_49pZaewOaGD1V3lx6rF5Q0COBNAChJcZNRXDREwZ8A#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1250,23 +1235,23 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "phos(p(HGNC:DUSP1)) -| tscript(p(HGNC:JUN))" .
 	
-	sub:_1 semsc:SIO_000139 sub:_2 ;
-		a <http://amigo.geneontology.org/amigo/term/GO:0016791> .
+	sub:_1 obo:RO_0002204 hgnc:3064 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
-	sub:_2 semsc:SIO_000139 hgnc:3064 ;
-		a belv:ProteinAbundance .
-	
-	sub:_3 semsc:SIO_000139 sub:_4 ;
+	sub:_2 semsc:SIO_000139 sub:_3 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0034062> .
 	
-	sub:_4 semsc:SIO_000139 hgnc:6204 ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 hgnc:6204 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
-		rdf:object sub:_3 ;
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+		rdf:object sub:_2 ;
 		rdf:predicate belv:decreases ;
-		rdf:subject sub:_1 ;
+		rdf:subject sub:_5 ;
 		a rdf:Statement .
+	
+	sub:_5 semsc:SIO_000139 sub:_1 ;
+		a <http://amigo.geneontology.org/amigo/term/GO:0016791> .
 }
 
 sub:Prov {
@@ -1293,8 +1278,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAZgAwuj568lXCRPQ7WBF1MURzT4TXuvxpvXroEFzt0Zw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAZgAwuj568lXCRPQ7WBF1MURzT4TXuvxpvXroEFzt0Zw#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RABse23Z3-xxVawssVfqJDxSc0t3SXcU9BA1F6OYIs6ig> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RABse23Z3-xxVawssVfqJDxSc0t3SXcU9BA1F6OYIs6ig#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1324,19 +1309,16 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> tscript(p(HGNC:ELK1))" .
 	
-	sub:_1 semsc:SIO_000139 chebi:746 ;
-		a belv:Abundance .
-	
-	sub:_2 semsc:SIO_000139 sub:_3 ;
+	sub:_1 semsc:SIO_000139 sub:_2 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0034062> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:3321 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:3321 ;
+		a chebi:CHEBI_36080 .
 	
-	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
-		rdf:object sub:_2 ;
+	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+		rdf:object sub:_1 ;
 		rdf:predicate belv:increases ;
-		rdf:subject sub:_1 ;
+		rdf:subject chebi:746 ;
 		a rdf:Statement .
 }
 
@@ -1345,16 +1327,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_6 ;
+		pav:authoredBy sub:_5 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_5 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_4 .
 	
-	sub:_5 prov:value "This differential substrate specificity of MKP-1 can befunctionally extended to nuclear transcriptional events in that PMAinducedc-Jun transcriptional activity was more sensitive to inhibition by MKP-1than either Elk-1 or c-Myc." ;
+	sub:_4 prov:value "This differential substrate specificity of MKP-1 can befunctionally extended to nuclear transcriptional events in that PMAinducedc-Jun transcriptional activity was more sensitive to inhibition by MKP-1than either Elk-1 or c-Myc." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_6 rdfs:comment "support@belframework.org" ;
+	sub:_5 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -1364,8 +1346,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAc-_XiQNUSz_FJY4M0uyeX3XtkY-z_i-oHSvTUuQCjWg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAc-_XiQNUSz_FJY4M0uyeX3XtkY-z_i-oHSvTUuQCjWg#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAWvarZyg8chJXhQ3oEaD1zqplmgv6lvDja-ACMtbJZCg> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAWvarZyg8chJXhQ3oEaD1zqplmgv6lvDja-ACMtbJZCg#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1395,19 +1377,16 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> tscript(p(HGNC:MYC))" .
 	
-	sub:_1 semsc:SIO_000139 chebi:746 ;
-		a belv:Abundance .
-	
-	sub:_2 semsc:SIO_000139 sub:_3 ;
+	sub:_1 semsc:SIO_000139 sub:_2 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0034062> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:7553 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:7553 ;
+		a chebi:CHEBI_36080 .
 	
-	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
-		rdf:object sub:_2 ;
+	sub:_3 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+		rdf:object sub:_1 ;
 		rdf:predicate belv:increases ;
-		rdf:subject sub:_1 ;
+		rdf:subject chebi:746 ;
 		a rdf:Statement .
 }
 
@@ -1416,16 +1395,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_6 ;
+		pav:authoredBy sub:_5 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_5 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_4 .
 	
-	sub:_5 prov:value "This differential substrate specificity of MKP-1 can befunctionally extended to nuclear transcriptional events in that PMAinducedc-Jun transcriptional activity was more sensitive to inhibition by MKP-1than either Elk-1 or c-Myc." ;
+	sub:_4 prov:value "This differential substrate specificity of MKP-1 can befunctionally extended to nuclear transcriptional events in that PMAinducedc-Jun transcriptional activity was more sensitive to inhibition by MKP-1than either Elk-1 or c-Myc." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_6 rdfs:comment "support@belframework.org" ;
+	sub:_5 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -1435,8 +1414,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAThnykLmRPtfEk8ED8hOM6o_fBzRldYVWzhj1cCYX9Dw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAThnykLmRPtfEk8ED8hOM6o_fBzRldYVWzhj1cCYX9Dw#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAab_sX5po_r-Jc_GoxNiL37X6XTTaqDfdVa-bvUrObGk> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAab_sX5po_r-Jc_GoxNiL37X6XTTaqDfdVa-bvUrObGk#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1465,22 +1444,19 @@ sub:Head {
 sub:Assert {
 	sub:Assert rdfs:label "a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1)" , "p(HGNC:DUSP1) -| (a(CHEBI:\"phorbol 13-acetate 12-myristate\") -> p(HGNC:DUSP1))" .
 	
-	sub:_1 semsc:SIO_000139 hgnc:3064 ;
-		a belv:ProteinAbundance .
+	sub:_1 obo:RO_0002204 hgnc:3064 ;
+		a chebi:CHEBI_36080 .
 	
-	sub:_2 semsc:SIO_000139 chebi:746 ;
-		a belv:Abundance .
+	sub:_2 obo:RO_0002204 hgnc:3064 ;
+		a chebi:CHEBI_36080 .
 	
-	sub:_3 semsc:SIO_000139 hgnc:3064 ;
-		a belv:ProteinAbundance .
-	
-	sub:_4 rdf:object sub:_3 ;
+	sub:_3 rdf:object sub:_2 ;
 		rdf:predicate belv:increases ;
-		rdf:subject sub:_2 ;
+		rdf:subject chebi:746 ;
 		a rdf:Statement .
 	
-	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
-		rdf:object sub:_4 ;
+	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+		rdf:object sub:_3 ;
 		rdf:predicate belv:decreases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -1491,16 +1467,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_7 ;
+		pav:authoredBy sub:_6 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_6 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_5 .
 	
-	sub:_6 prov:value "Conditional expression of MKP-1 also abolished theinduction of endogenous MKP-1 protein expression in response toPMA treatment." ;
+	sub:_5 prov:value "Conditional expression of MKP-1 also abolished theinduction of endogenous MKP-1 protein expression in response toPMA treatment." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_7 rdfs:comment "support@belframework.org" ;
+	sub:_6 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -1510,8 +1486,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAosBkIp77z0zg00Z19GSPFT_onvGr_jE6IaHyPCCrgCQ> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAosBkIp77z0zg00Z19GSPFT_onvGr_jE6IaHyPCCrgCQ#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAjp11xXJHITCPbQtu5Zj1JzGFTNsnanH7J6rqnJmfYD4> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAjp11xXJHITCPbQtu5Zj1JzGFTNsnanH7J6rqnJmfYD4#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1544,22 +1520,19 @@ sub:Assert {
 	sub:_1 semsc:SIO_000139 sub:_2 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_2 semsc:SIO_000139 hgnc:6871 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:6871 ;
+		a chebi:CHEBI_36080 .
 	
-	sub:_3 semsc:SIO_000139 chebi:746 ;
-		a belv:Abundance .
+	sub:_3 obo:RO_0002204 hgnc:3064 ;
+		a chebi:CHEBI_36080 .
 	
-	sub:_4 semsc:SIO_000139 hgnc:3064 ;
-		a belv:ProteinAbundance .
-	
-	sub:_5 rdf:object sub:_4 ;
+	sub:_4 rdf:object sub:_3 ;
 		rdf:predicate belv:increases ;
-		rdf:subject sub:_3 ;
+		rdf:subject chebi:746 ;
 		a rdf:Statement .
 	
-	sub:_6 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
-		rdf:object sub:_5 ;
+	sub:_5 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
+		rdf:object sub:_4 ;
 		rdf:predicate belv:increases ;
 		rdf:subject sub:_1 ;
 		a rdf:Statement .
@@ -1570,16 +1543,16 @@ sub:Prov {
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 1 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
-		pav:authoredBy sub:_8 ;
+		pav:authoredBy sub:_7 ;
 		pav:version "1.2" .
 	
 	sub:Assert prov:hadPrimarySource pubmed:9202001 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_7 .
+		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract1.bel> , sub:_6 .
 	
-	sub:_7 prov:value "This negative feedback regulatory mechanism is likely due toMKP-1-mediated inhibition of ERK2, as studies utilizing the MEK1/2inhibitor PD98059 suggest that ERK2 activation is required for PMA-induced MKP-1expression." ;
+	sub:_6 prov:value "This negative feedback regulatory mechanism is likely due toMKP-1-mediated inhibition of ERK2, as studies utilizing the MEK1/2inhibitor PD98059 suggest that ERK2 activation is required for PMA-induced MKP-1expression." ;
 		prov:wasQuotedFrom pubmed:9202001 .
 	
-	sub:_8 rdfs:comment "support@belframework.org" ;
+	sub:_7 rdfs:comment "support@belframework.org" ;
 		rdfs:label "Selventa" .
 }
 
@@ -1589,8 +1562,8 @@ sub:Info {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8xToLOpj2c77g3KiH4i9bLnim5LBwkC1psrfxM542kI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8xToLOpj2c77g3KiH4i9bLnim5LBwkC1psrfxM542kI#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAc7ecDIcuD9AvI4ACBzolQC8coqZhNrXHrdJAXtT8onA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAc7ecDIcuD9AvI4ACBzolQC8coqZhNrXHrdJAXtT8onA#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1622,11 +1595,11 @@ sub:Assert {
 	sub:_1 semsc:SIO_000139 sub:_2 ;
 		a <http://amigo.geneontology.org/amigo/term/GO:0016301> .
 	
-	sub:_2 semsc:SIO_000139 hgnc:6871 ;
-		a belv:ProteinAbundance .
+	sub:_2 obo:RO_0002204 hgnc:6871 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
-	sub:_3 semsc:SIO_000139 hgnc:3064 ;
-		a belv:ProteinAbundance .
+	sub:_3 obo:RO_0002204 hgnc:3064 ;
+		a <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080> .
 	
 	sub:_4 obo:BFO_0000066 <http://www.lgcstandards-atcc.org/Products/All/CRL-1593.2.aspx> , species:9606 ;
 		rdf:object sub:_3 ;
