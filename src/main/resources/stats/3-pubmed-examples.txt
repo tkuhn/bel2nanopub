@@ -1,0 +1,26 @@
+STATEMENT COUNT: 57
+RELATIONS:
+  increases: 27
+  directlyIncreases: 15
+  directlyDecreases: 6
+  causesNoChange: 4
+  decreases: 2
+  prognosticBiomarkerFor: 2
+  positiveCorrelation: 2
+FUNCTIONS:
+  p: 44
+  kin: 21
+  complex: 9
+  a: 9
+  path: 9
+  phos: 7
+  tscript: 4
+  bp: 3
+  cat: 3
+  composite: 3
+  ribo: 3
+ANNOTATIONS:
+  Species: 43
+  CellLine: 41
+  CellStructure: 3
+  Disease: 2
