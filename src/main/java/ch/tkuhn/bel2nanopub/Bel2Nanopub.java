@@ -431,7 +431,7 @@ public class Bel2Nanopub {
 			if (tc != 2 || pc != 0) {
 				throw new Bel2NanopubException("Invalid format for 'rxn'");
 			}
-			npCreator.addAssertionStatement(bn, RDF.TYPE, BelRdfVocabulary.reaction);
+			npCreator.addAssertionStatement(bn, RDF.TYPE, ThirdPartyVocabulary.sioBiochemicalReaction);
 			for (Term reactant : term.getTerms().get(0).getTerms()) {
 				Resource r = processBelTerm(reactant, npCreator);
 				npCreator.addAssertionStatement(bn, ThirdPartyVocabulary.roHasInput, r);

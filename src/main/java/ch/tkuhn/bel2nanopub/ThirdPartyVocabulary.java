@@ -27,4 +27,6 @@ public class ThirdPartyVocabulary {
 	public static final URI roHasInput = new URIImpl("http://purl.obolibrary.org/obo/RO_0002233");
 	public static final URI roHasOutput = new URIImpl("http://purl.obolibrary.org/obo/RO_0002234");
 
+	public static final URI sioBiochemicalReaction = new URIImpl("http://semanticscience.org/resource/SIO_010036");
+
 }
