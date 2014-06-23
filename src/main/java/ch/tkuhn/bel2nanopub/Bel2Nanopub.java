@@ -155,6 +155,9 @@ public class Bel2Nanopub {
 		for (BELStatementGroup g : belDoc.getBelStatementGroups()) {
 			for (BELStatement bst : g.getStatements()) {
 				NanopubCreator npCreator = new NanopubCreator("http://www.tkuhn.ch/bel2nanopub/");
+				if (belDocUri != null) {
+					npCreator.addNamespace("beldoc", belDocUri);
+				}
 				npCreator.addNamespace("rdfs", RDFS.NAMESPACE);
 				npCreator.addNamespace("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
 				npCreator.addNamespace("xsd", "http://www.w3.org/2001/XMLSchema#");

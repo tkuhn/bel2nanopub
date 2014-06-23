@@ -1,5 +1,6 @@
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAOKf2qffbunGJ-9o961wMjvg3thgwGhMa5t89p_5m8uo> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAOKf2qffbunGJ-9o961wMjvg3thgwGhMa5t89p_5m8uo#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -40,7 +41,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -54,7 +55,7 @@ sub:provenance {
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_3 .
+		prov:wasDerivedFrom beldoc: , sub:_3 .
 }
 
 sub:pubinfo {
@@ -65,6 +66,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RANlGpxNzFF6n9UTmFpPxfoWT4X8tty88vuZpFgxwUNzA> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RANlGpxNzFF6n9UTmFpPxfoWT4X8tty88vuZpFgxwUNzA#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -105,7 +107,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -119,7 +121,7 @@ sub:provenance {
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_3 .
+		prov:wasDerivedFrom beldoc: , sub:_3 .
 }
 
 sub:pubinfo {
@@ -130,6 +132,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAnpzDlKwdtpX2p8xk2m2UgwHWIimocxVK609ReII_WK4> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAnpzDlKwdtpX2p8xk2m2UgwHWIimocxVK609ReII_WK4#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -171,7 +174,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -185,7 +188,7 @@ sub:provenance {
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_3 .
+		prov:wasDerivedFrom beldoc: , sub:_3 .
 }
 
 sub:pubinfo {
@@ -196,6 +199,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAdqxSnINPXMoV9XlOl_mtTvscHQiZB3rNVx2w23O2Cp8> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAdqxSnINPXMoV9XlOl_mtTvscHQiZB3rNVx2w23O2Cp8#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -237,7 +241,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -251,7 +255,7 @@ sub:provenance {
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_3 .
+		prov:wasDerivedFrom beldoc: , sub:_3 .
 }
 
 sub:pubinfo {
@@ -262,6 +266,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RA4FZ2a5Cz7Nsp5EjQqNqUmhssG0bVxHIVpOTs2o3G5vk> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA4FZ2a5Cz7Nsp5EjQqNqUmhssG0bVxHIVpOTs2o3G5vk#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -303,7 +308,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -317,7 +322,7 @@ sub:provenance {
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_3 .
+		prov:wasDerivedFrom beldoc: , sub:_3 .
 }
 
 sub:pubinfo {
@@ -328,6 +333,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3TAjjDXB0ueRa4qSkwTXr0lkvV6yoZtAARJ36ZIgBjI> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3TAjjDXB0ueRa4qSkwTXr0lkvV6yoZtAARJ36ZIgBjI#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -383,7 +389,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -397,7 +403,7 @@ sub:provenance {
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_6 .
+		prov:wasDerivedFrom beldoc: , sub:_6 .
 }
 
 sub:pubinfo {
@@ -408,6 +414,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAxJuRPQS-TO7jrpQjIw5wuOFZuTPqHWfA8K2wDARwzx0> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAxJuRPQS-TO7jrpQjIw5wuOFZuTPqHWfA8K2wDARwzx0#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -459,7 +466,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -473,7 +480,7 @@ sub:provenance {
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_5 .
+		prov:wasDerivedFrom beldoc: , sub:_5 .
 }
 
 sub:pubinfo {
@@ -484,6 +491,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAib5rxNeC04YuSpSCbeyQG_IAXfLGxXXIDotJ_SHr7zE> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAib5rxNeC04YuSpSCbeyQG_IAXfLGxXXIDotJ_SHr7zE#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -539,7 +547,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -553,7 +561,7 @@ sub:provenance {
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_6 .
+		prov:wasDerivedFrom beldoc: , sub:_6 .
 }
 
 sub:pubinfo {
@@ -564,6 +572,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RApHsnA-3pxRm8ovAlLKHHPxwA3TFREc0q4PMfHF7HvmA> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RApHsnA-3pxRm8ovAlLKHHPxwA3TFREc0q4PMfHF7HvmA#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -615,7 +624,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -629,7 +638,7 @@ sub:provenance {
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_5 .
+		prov:wasDerivedFrom beldoc: , sub:_5 .
 }
 
 sub:pubinfo {
@@ -640,6 +649,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAzAvjHBMMA_yKyawH49MajS6nsnW49poAWIZjTIu2_Kg> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAzAvjHBMMA_yKyawH49MajS6nsnW49poAWIZjTIu2_Kg#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -689,7 +699,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -704,7 +714,7 @@ p38 and FAK pathways.""" ;
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_4 .
+		prov:wasDerivedFrom beldoc: , sub:_4 .
 }
 
 sub:pubinfo {
@@ -715,6 +725,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1Ls2iCEzEpXD9iSeXMYeyLizZDY9eD39hcioRSzGFkY> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1Ls2iCEzEpXD9iSeXMYeyLizZDY9eD39hcioRSzGFkY#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -766,7 +777,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -781,7 +792,7 @@ p38 and FAK pathways.""" ;
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_5 .
+		prov:wasDerivedFrom beldoc: , sub:_5 .
 }
 
 sub:pubinfo {
@@ -792,6 +803,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RANdTAKt9_cggyZdbRNmbRxJi25Q8LLpO5YzDGLpMBvA0> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RANdTAKt9_cggyZdbRNmbRxJi25Q8LLpO5YzDGLpMBvA0#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -843,7 +855,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -858,7 +870,7 @@ p38 and FAK pathways.""" ;
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_5 .
+		prov:wasDerivedFrom beldoc: , sub:_5 .
 }
 
 sub:pubinfo {
@@ -869,6 +881,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RALvjRxby8-SJp4IqKIFkdjEAzQMI_MoidAM0f8I-2fRs> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RALvjRxby8-SJp4IqKIFkdjEAzQMI_MoidAM0f8I-2fRs#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -920,7 +933,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -935,7 +948,7 @@ p38 and FAK pathways.""" ;
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_5 .
+		prov:wasDerivedFrom beldoc: , sub:_5 .
 }
 
 sub:pubinfo {
@@ -946,6 +959,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8YaIxvaNLiqNAqrRPaLRZxPb4gLy2-GGOm5wOQtUSgw> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8YaIxvaNLiqNAqrRPaLRZxPb4gLy2-GGOm5wOQtUSgw#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -997,7 +1011,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -1012,7 +1026,7 @@ p38 and FAK pathways.""" ;
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_5 .
+		prov:wasDerivedFrom beldoc: , sub:_5 .
 }
 
 sub:pubinfo {
@@ -1023,6 +1037,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJFgmcy11baLVMICO6OOkkhjW7YWXVp9gwS2F9XqH9gY> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJFgmcy11baLVMICO6OOkkhjW7YWXVp9gwS2F9XqH9gY#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1067,7 +1082,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -1081,7 +1096,7 @@ sub:provenance {
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_4 .
+		prov:wasDerivedFrom beldoc: , sub:_4 .
 }
 
 sub:pubinfo {
@@ -1092,6 +1107,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAFLURZQ6A9jnmze9v1isePlnHhHaMig9--BTNWCYIU2A> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAFLURZQ6A9jnmze9v1isePlnHhHaMig9--BTNWCYIU2A#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1137,7 +1153,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -1151,7 +1167,7 @@ sub:provenance {
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_4 .
+		prov:wasDerivedFrom beldoc: , sub:_4 .
 }
 
 sub:pubinfo {
@@ -1162,6 +1178,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAbuXRVQSH8MAfe_CH-481zdSssfb27uDvCs_yKQkd764> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAbuXRVQSH8MAfe_CH-481zdSssfb27uDvCs_yKQkd764#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1207,7 +1224,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -1221,7 +1238,7 @@ sub:provenance {
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_4 .
+		prov:wasDerivedFrom beldoc: , sub:_4 .
 }
 
 sub:pubinfo {
@@ -1232,6 +1249,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAT-VpSugo5NrtVhY4qv2CQ8V6_jbUKarl4mKy4ngnQ0g> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAT-VpSugo5NrtVhY4qv2CQ8V6_jbUKarl4mKy4ngnQ0g#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1273,7 +1291,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -1287,7 +1305,7 @@ sub:provenance {
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_3 .
+		prov:wasDerivedFrom beldoc: , sub:_3 .
 }
 
 sub:pubinfo {
@@ -1298,6 +1316,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RANllOalfnJykIijl0MOuYgmEUBqzH4mNZq0Xz8_yMfVY> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RANllOalfnJykIijl0MOuYgmEUBqzH4mNZq0Xz8_yMfVY#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1339,7 +1358,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -1353,7 +1372,7 @@ sub:provenance {
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_3 .
+		prov:wasDerivedFrom beldoc: , sub:_3 .
 }
 
 sub:pubinfo {
@@ -1364,6 +1383,7 @@ sub:pubinfo {
 
 @prefix this: <http://www.tkuhn.ch/bel2nanopub/RAHDgtD2thvZ_5BkaxrY12Dx187nBFhp1WDVZGS9TBfco> .
 @prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAHDgtD2thvZ_5BkaxrY12Dx187nBFhp1WDVZGS9TBfco#> .
+@prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1405,7 +1425,7 @@ sub:assertion {
 }
 
 sub:provenance {
-	<http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
+	beldoc: dce:description "Example of modeling a full abstract taken from the BEL V1.0 Language Overview." ;
 		dce:rights "Copyright (c) 2011, Selventa. All Rights Reserved." ;
 		dce:title "BEL Framework Example 3 Document" ;
 		dct:license "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License" ;
@@ -1419,7 +1439,7 @@ sub:provenance {
 		rdfs:label "Selventa" .
 	
 	sub:assertion prov:hadPrimarySource pubmed:16679305 ;
-		prov:wasDerivedFrom <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> , sub:_3 .
+		prov:wasDerivedFrom beldoc: , sub:_3 .
 }
 
 sub:pubinfo {
