@@ -15,6 +15,7 @@ import org.openbel.bel.model.BELStatement;
 import org.openbel.bel.model.BELStatementGroup;
 import org.openbel.framework.common.bel.parser.BELParseResults;
 import org.openbel.framework.common.bel.parser.BELParser;
+import org.openbel.framework.common.model.Parameter;
 import org.openbel.framework.common.model.Statement;
 import org.openbel.framework.common.model.Term;
 
@@ -25,6 +26,9 @@ public class BelStats {
 
 	@com.beust.jcommander.Parameter(description = "input-bel-files", required = true)
 	private List<File> inputFiles = new ArrayList<File>();
+
+	@com.beust.jcommander.Parameter(names = "-m", description = "Maximum number of terms to be shown")
+	private int maxTerms = 1000;
 
 	public static void main(String[] args) {
 		BelStats obj = new BelStats();
@@ -38,14 +42,16 @@ public class BelStats {
 		obj.run();
 		System.out.println("STATEMENT COUNT: " + obj.getStatementCount());
 		System.out.println("RELATIONS:");
-		printStats(obj.getRelations());
+		obj.printStats(obj.getRelations());
 		System.out.println("FUNCTIONS:");
-		printStats(obj.getFunctions());
+		obj.printStats(obj.getFunctions());
 		System.out.println("ANNOTATIONS:");
-		printStats(obj.getAnnotations());
+		obj.printStats(obj.getAnnotations());
+		System.out.println("PARAMETERS:");
+		obj.printStats(obj.getParams());
 	}
 
-	public static void printStats(final Map<String,Integer> map) {
+	public void printStats(final Map<String,Integer> map) {
 		List<String> list = new ArrayList<String>(map.keySet());
 		Collections.sort(list, new Comparator<String>() {
 			@Override
@@ -53,8 +59,14 @@ public class BelStats {
 				return map.get(o2) - map.get(o1);
 			}
 		});
+		int c = 0;
 		for (String k : list) {
-			System.out.println("  " + k + ": " + map.get(k));
+			c++;
+			if (c > maxTerms) {
+				System.out.println("  (and more ...)");
+				break;
+			}
+			System.out.println("  " + map.get(k) + "  " + k);
 		}
 	}
 
@@ -64,6 +76,7 @@ public class BelStats {
 	private Map<String,Integer> relations = new HashMap<String,Integer>();
 	private Map<String,Integer> functions = new HashMap<String,Integer>();
 	private Map<String,Integer> annotations = new HashMap<String,Integer>();
+	private Map<String,Integer> params = new HashMap<String,Integer>();
 
 
 	public BelStats(File... belDocs) {
@@ -133,6 +146,16 @@ public class BelStats {
 	private void processBelTerm(Term term) {
 		String funcAbbrev = Utils.getFunctionAbbrev(term);
 		increase(functions, funcAbbrev);
+		for (Parameter p : term.getParameters()) {
+			String s = "";
+			if (p.getNamespace() != null && p.getNamespace().getPrefix() != null) {
+				s += p.getNamespace().getPrefix() + ":";
+			}
+			if (p.getValue() != null) {
+				s += p.getValue();
+			}
+			increase(params, s);
+		}
 	}
 
 	private void processAnnotation(BELAnnotation ann) {
@@ -154,6 +177,10 @@ public class BelStats {
 
 	public Map<String,Integer> getAnnotations() {
 		return annotations;
+	}
+
+	public Map<String,Integer> getParams() {
+		return params;
 	}
 
 	private static void increase(Map<String,Integer> map, String key) {

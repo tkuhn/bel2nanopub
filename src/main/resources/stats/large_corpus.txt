@@ -1,54 +1,1056 @@
 STATEMENT COUNT: 75581
 RELATIONS:
-  increases: 50235
-  decreases: 20520
-  directlyIncreases: 5944
-  directlyDecreases: 1199
-  positiveCorrelation: 402
-  negativeCorrelation: 243
-  hasComponent: 52
-  association: 8
-  rateLimitingStepOf: 2
-  translatedTo: 1
-  transcribedTo: 1
+  50235  increases
+  20520  decreases
+  5944  directlyIncreases
+  1199  directlyDecreases
+  402  positiveCorrelation
+  243  negativeCorrelation
+  52  hasComponent
+  8  association
+  2  rateLimitingStepOf
+  1  translatedTo
+  1  transcribedTo
 FUNCTIONS:
-  p: 34582
-  r: 32401
-  a: 22769
-  kin: 14786
-  bp: 14733
-  tscript: 12776
-  cat: 7385
-  path: 5214
-  complex: 4339
-  gtp: 1465
-  m: 970
-  sec: 737
-  phos: 692
-  tloc: 393
-  composite: 326
-  surf: 281
-  tport: 164
-  pep: 65
-  deg: 42
-  rxn: 32
-  chap: 18
-  g: 12
-  act: 4
-  ribo: 2
+  34582  p
+  32401  r
+  22769  a
+  14786  kin
+  14733  bp
+  12776  tscript
+  7385  cat
+  5214  path
+  4339  complex
+  1465  gtp
+  970  m
+  737  sec
+  692  phos
+  393  tloc
+  326  composite
+  281  surf
+  164  tport
+  65  pep
+  42  deg
+  32  rxn
+  18  chap
+  12  g
+  4  act
+  2  ribo
 ANNOTATIONS:
-  Species: 75581
-  Cell: 18542
-  CellLine: 14626
-  Tissue: 10296
-  BodyRegion: 5710
-  DigestiveSystem: 3703
-  Disease: 3526
-  RespiratorySystem: 3011
-  CellStructure: 2101
-  CardiovascularSystem: 1766
-  UrogenitalSystem: 1444
-  NervousSystem: 822
-  IntegumentarySystem: 504
-  HemicAndImmuneSystem: 425
-  FluidAndSecretion: 168
+  75581  Species
+  18542  Cell
+  14626  CellLine
+  10296  Tissue
+  5710  BodyRegion
+  3703  DigestiveSystem
+  3526  Disease
+  3011  RespiratorySystem
+  2101  CellStructure
+  1766  CardiovascularSystem
+  1444  UrogenitalSystem
+  822  NervousSystem
+  504  IntegumentarySystem
+  425  HemicAndImmuneSystem
+  168  FluidAndSecretion
+PARAMETERS:
+  2876  GO:"response to hypoxia"
+  1859  MESHPP:Apoptosis
+  1479  HGNC:EGF
+  1265  CHEBI:lipopolysaccharide
+  1140  GO:"cell proliferation"
+  904  HGNC:TNF
+  882  SCHEM:"serum insulin"
+  800  CHEBI:"reactive oxygen species"
+  744  CHEBI:"hydrogen peroxide"
+  654  SCHEM:"Oxidized Low Density Lipoprotein"
+  624  SCHEM:"serum glucose"
+  584  SCHEM:"cyclic AMP"
+  523  GO:angiogenesis
+  522  CHEBI:estradiol
+  498  CHEBI:"nitric oxide"
+  487  SCHEM:Tretinoin
+  481  SCHEM:"Tetradecanoylphorbol acetate"
+  479  SCHEM:Calcium
+  446  HGNC:TGFB1
+  418  MESHD:Ischemia
+  418  HGNC:IL6
+  399  CHEBI:nicotine
+  396  MESHPP:Obesity
+  386  CHEBI:androgen
+  380  SDIS:"bacterial infection"
+  378  SDIS:"food intake"
+  373  SDIS:"tissue damage"
+  359  HGNC:VEGFA
+  355  HGNC:IL1B
+  340  HGNC:TP53
+  335  GO:"response to heat"
+  329  GO:"cell growth"
+  325  CHEBI:calcitriol
+  324  MGI:Tnf
+  324  GOCCACC:"GO:0005737"
+  319  SDIS:"viral infection"
+  292  GO:aging
+  292  CHEBI:progesterone
+  290  CHEBI:gefitinib
+  284  GO:"cell adhesion"
+  280  SDIS:"laminar shear stress"
+  280  GO:"response to oxidative stress"
+  278  GO:"cell migration"
+  269  HGNC:IL8
+  263  GO:"inflammatory response"
+  262  GO:"replicative cell aging"
+  261  SCHEM:Dinoprostone
+  257  CHEBI:glucocorticoid
+  254  SCHEM:Stanolone
+  250  SCHEM:Hydrocortisone
+  250  GO:"myoblast differentiation"
+  248  HGNC:IFNG
+  241  MESHPP:Exercise
+  235  HGNC:CDKN1A
+  231  HGNC:IGF1
+  220  SCHEM:Colforsin
+  214  SDIS:"mechanical strain"
+  205  GO:"cell differentiation"
+  205  GO:"microtubule polymerization"
+  205  GOCCACC:"GO:0005634"
+  203  EGID:183
+  200  CHEBI:ceramide
+  196  CHEBI:mifepristone
+  196  SCHEM:CD437
+  196  SCHEM:Thiazolidinedione
+  194  CHEBI:clofibrate
+  194  CHEBI:"trichostatin A"
+  193  SCHEM:"serum leptin"
+  191  HGNC:HGF
+  189  HGNC:FGF2
+  189  CHEBI:rosiglitazone
+  182  HGNC:MAPK1
+  179  SCHEM:"Nutlin 3"
+  178  SCHEM:"D-Glucose, anhydrous"
+  177  MESHPP:"Insulin Resistance"
+  176  GO:"neuron differentiation"
+  172  MESHD:Hyperoxia
+  172  SDIS:"monocyte adherence"
+  171  MGI:Tgfb1
+  169  HGNC:MAPK3
+  166  GO:"cell death"
+  166  HGNC:EGFR
+  165  SDIS:"tumor growth"
+  161  MGI:Il6
+  160  GO:"cell cycle"
+  160  GO:"response to starvation"
+  159  HGNC:NGF
+  157  CHEBI:cholesterol
+  156  GO:"response to DNA damage stimulus"
+  156  HGNC:IL4
+  154  CHEBI:lapatinib
+  153  HGNC:"MIR124-1"
+  153  HGNC:IRS1
+  150  GO:"response to UV"
+  148  CHEBI:resveratrol
+  148  HGNC:IL18
+  144  CHEBI:camptothecin
+  143  EGID:3630
+  143  CHEBI:"angiotensin II"
+  143  CHEBI:cisplatin
+  143  CHEBI:ciprofibrate
+  141  HGNC:STAT3
+  141  HGNC:CCL2
+  139  HGNC:CCND1
+  139  SCHEM:Allergens
+  137  SCHEM:"Low Density Lipoprotein"
+  136  HGNC:CXCL12
+  135  HGNC:RB1
+  135  CHEBI:insulin
+  135  SCHEM:Sirolimus
+  134  SCHEM:"Enzastaurin Hydrochloride"
+  134  HGNC:NRG1
+  134  SCHEM:Dronabinol
+  133  HGNC:BCL2
+  133  GO:"response to endoplasmic reticulum stress"
+  131  PFH:"AKT Family"
+  130  HGNC:CDKN1B
+  129  EGID:24179
+  127  CHEBI:aldosterone
+  127  HGNC:JUN
+  126  SDIS:"mitochondrial DNA damage"
+  126  HGNC:MYC
+  126  CHEBI:omeprazole
+  125  CHEBI:"arachidonic acid"
+  125  GO:"DNA methylation"
+  124  GO:"response to osmotic stress"
+  123  HGNC:CTNNB1
+  122  SDIS:"mechanical stress"
+  121  GO:"muscle contraction"
+  121  PFM:"Ifna Family"
+  121  SDIS:"high-fat diet"
+  119  HGNC:PTGS2
+  118  CHEBI:histamine
+  116  MGI:Ifng
+  115  HGNC:PTK2
+  114  SDIS:"lung adenocarcinoma"
+  111  GO:"hyperosmotic response"
+  110  HGNC:CSF2
+  109  HGNC:MIR106B
+  108  SCHEM:"Helicobacter pylori infection"
+  108  HGNC:FN1
+  107  HGNC:HMOX1
+  106  CHEBI:"lysophosphatidic acid"
+  106  CHEBI:simvastatin
+  106  CHEBI:erlotinib
+  106  MGI:Dysf
+  105  HGNC:HIF1A
+  105  HGNC:NFKBIA
+  105  SCHEM:Isoproterenol
+  105  GOCCACC:"GO:0005886"
+  105  NCM:"Luteinizing Hormone Complex"
+  104  SCHEM:"Adenosine triphosphate"
+  103  SCHEM:"Cyclic GMP"
+  101  MESHPP:"Menstrual Cycle"
+  101  HGNC:MIR106A
+  101  RGD:Tnf
+  100  SCHEM:"trans10,cis12-Octadecadienoate"
+  100  HGNC:IL1A
+  98  HGNC:THAP1
+  97  GO:"neutrophil chemotaxis"
+  97  SCHEM:"Oxidized High Density Lipoprotein"
+  97  CHEBI:testosterone
+  96  HGNC:F2
+  95  SDIS:"muscle glucose import"
+  94  CHEBI:"vitamin E"
+  94  CHEBI:melatonin
+  93  CHEBI:"cholic acid"
+  92  SCHEM:Pravastatin
+  92  SCHEM:Norepinephrine
+  92  HGNC:ICAM1
+  92  HGNC:IL13
+  91  EGID:3845
+  91  CHEBI:hemin
+  90  CHEBI:fenofibrate
+  89  HGNC:GSK3B
+  89  GO:"macrophage activation"
+  89  HGNC:IL2
+  88  PFH:"HDAC Family"
+  88  HGNC:AKT1
+  88  HGNC:MET
+  87  HGNC:SERPINE1
+  87  MESHPP:"Liver Regeneration"
+  86  HGNC:CREB1
+  86  SCHEM:Iloprost
+  86  MGI:Hist1h1t
+  85  HGNC:IFNA1
+  84  MGI:Hist1h1a
+  84  CHEBI:fulvestrant
+  83  MGI:Il1b
+  82  HGNC:IL10
+  81  PFH:"TGFB Family"
+  80  MGI:Hoxa13
+  80  SCHEM:"LY 294002"
+  79  CHEBI:oxandrolone
+  79  HGNC:TNFSF10
+  79  HGNC:RAF1
+  79  MGI:Il13
+  78  SCHEM:Oxidopamine
+  78  HGNC:VCAM1
+  78  GO:"response to cold"
+  78  CHEBI:"leukotriene B4"
+  77  HGNC:IGFBP3
+  77  HGNC:MIRLET7B
+  76  GO:"response to radiation"
+  76  MESHD:Fibrosis
+  76  SCHEM:"Retinol acetate"
+  76  HGNC:BAD
+  76  HGNC:FOS
+  75  HGNC:CD40LG
+  75  CHEBI:troglitazone
+  75  HGNC:MIR21
+  75  CHEBI:raloxifene
+  75  HGNC:FAS
+  74  HGNC:SHC1
+  73  MGI:Il4
+  73  CHEBI:paclitaxel
+  72  SDIS:"turbulent shear stress"
+  72  CHEBI:"hyaluronic acid"
+  72  HGNC:MMP9
+  72  CHEBI:"okadaic acid"
+  72  CHEBI:thapsigargin
+  72  MGI:Gcm1
+  71  HGNC:THBS1
+  70  MGI:Cln5
+  70  MGI:Ccl2
+  70  MGI:Cdkn1a
+  70  SCHEM:Epinephrine
+  70  HGNC:CCL5
+  70  GO:"response to UV-B"
+  69  HGNC:"MIR1-1"
+  69  HGNC:ERBB2
+  69  SCHEM:"Dietary Lipid"
+  69  CHEBI:"palmitic acid"
+  69  HGNC:CAV1
+  68  RGD:Egf
+  68  HGNC:CD40
+  67  HGNC:SPP1
+  67  HGNC:ESR1
+  67  HGNC:SMAD2
+  67  HGNC:CREBBP
+  67  HGNC:INSR
+  66  SCHEM:"Hemoglobin A"
+  66  SDIS:"Partial Pancreatectomy"
+  66  HGNC:DUSP1
+  66  HGNC:NOS3
+  65  HGNC:BRCA1
+  65  GO:"response to stress"
+  65  SDIS:Diabetes
+  65  HGNC:HRAS
+  65  HGNC:KRAS
+  65  RGD:Ngf
+  64  MGI:Gyk
+  64  HGNC:EP300
+  64  CHEBI:lovastatin
+  64  HGNC:STAT1
+  64  HGNC:FGF1
+  64  SCHEM:"High Density Lipoprotein"
+  63  CHEBI:metformin
+  63  HGNC:EIF4EBP1
+  63  HGNC:NCOA1
+  62  CHEBI:taurine
+  62  SCHEM:Metribolone
+  62  GO:"G2 phase of mitotic cell cycle"
+  62  PFH:"VEGF Family"
+  62  PFH:"IFNA Family"
+  61  SCHEM:Telomestatin
+  61  RGD:Il1b
+  60  MGI:Myc
+  60  MGI:Igf1
+  59  HGNC:MDM2
+  59  HGNC:RPS6KB1
+  59  HGNC:FOXO1
+  59  GO:"regulation of vascular permeability"
+  59  SDIS:"Type II diabetes"
+  58  HGNC:IGF1R
+  58  HGNC:CST6
+  58  MGI:Spp1
+  58  HGNC:HBEGF
+  58  SDIS:"burn injury"
+  57  GO:phagocytosis
+  57  CHEBI:celecoxib
+  57  HGNC:AHNAK
+  57  MGI:Il10
+  57  GO:"insulin secretion"
+  57  SCHEM:"Mycobacterium tuberculosis, ext."
+  56  HGNC:GAB1
+  56  SCHEM:Estrogens
+  56  CHEBI:glutathione
+  56  MGI:Lep
+  56  HGNC:CXCL1
+  56  HGNC:TGFA
+  56  HGNC:CDKN2A
+  55  HGNC:GADD45A
+  55  HGNC:EGR1
+  55  SDIS:denervation
+  55  HGNC:EDN1
+  55  MGI:Vegfa
+  54  HGNC:MMP1
+  54  HGNC:ATF2
+  54  MGI:"Mir133a-2"
+  54  MGI:"Mir133a-1"
+  54  RGD:Tgfb1
+  54  SCHEM:Cholecalciferol
+  54  HGNC:LEP
+  53  HGNC:SELE
+  53  CHEBI:wortmannin
+  53  HGNC:PDGFB
+  53  PFR:"Ifna Family"
+  53  GO:chemotaxis
+  53  HGNC:SOCS3
+  53  EGID:387202
+  53  RGD:Il6
+  53  HGNC:CCL3
+  53  HGNC:PTEN
+  53  CHEBI:flutamide
+  53  MGI:Irs1
+  53  MGI:Gh
+  52  MGI:Arx
+  52  HGNC:SRC
+  52  SDIS:metastasis
+  52  HGNC:PLCG1
+  51  HGNC:BCL2L1
+  51  HGNC:DYSF
+  51  HGNC:F3
+  51  MGI:Ccnd1
+  50  HGNC:CTGF
+  50  MGI:Lpl
+  50  HGNC:IRS2
+  49  SDIS:"adipocyte lipolysis"
+  49  HGNC:NOX1
+  49  GO:"skeletal muscle hypertrophy"
+  49  HGNC:CXCL2
+  49  MGI:Cftr
+  49  HGNC:ITGB1
+  49  HGNC:MAP2K1
+  48  CHEBI:paricalcitol
+  48  CHEBI:staurosporine
+  48  HGNC:RELA
+  48  MGI:Notch1
+  48  HGNC:BAX
+  48  CHEBI:lipid
+  48  HGNC:KDR
+  47  MGI:Mapk1
+  47  CHEBI:"folic acid"
+  47  HGNC:NDRG1
+  47  SCHEM:Superoxides
+  47  HGNC:NOS2
+  47  MGI:Trp53
+  47  SCHEM:"PD 98,059"
+  47  SCHEM:"Very Low Density Lipoprotein"
+  47  HGNC:INS
+  46  HGNC:AR
+  46  HGNC:E2F1
+  46  SCHEM:"Advanced Glycation End Product"
+  46  GO:"G1/S transition of mitotic cell cycle"
+  46  HGNC:ID1
+  45  RGD:Spp1
+  45  HGNC:PLAU
+  45  HGNC:PXN
+  45  HGNC:CTNND1
+  45  RGD:Igf1
+  45  HGNC:XIAP
+  45  HGNC:CRP
+  44  MGI:Mir140
+  44  SDIS:"Atherosclerotic lesion"
+  44  GO:"gastric acid secretion"
+  44  MESHD:Atherosclerosis
+  44  HGNC:CXCR4
+  44  HGNC:MAPK14
+  44  HGNC:CDH1
+  44  MGI:Adipoq
+  43  SCHEM:Aspirin
+  43  CHEBI:bortezomib
+  43  CHEBI:atorvastatin
+  43  HGNC:JAK2
+  43  MGI:Ptgs2
+  43  HGNC:BNIP3
+  43  HGNC:JUNB
+  43  HGNC:AREG
+  42  SDIS:"cyclic stretch"
+  42  HGNC:FOXO3
+  42  HGNC:BIRC5
+  41  SCHEM:FSH
+  41  CHEBI:"bile salt"
+  41  SDIS:"cardiomyocyte hypertrophy"
+  41  CHEBI:coumarin
+  41  HGNC:MUC1
+  41  MGI:Serpinb8
+  41  CHEBI:dopamine
+  41  HGNC:TXNIP
+  41  HGNC:IFNB1
+  41  MGI:Stat1
+  40  SCHEM:Triacylglycerol
+  40  MGI:Jun
+  40  HGNC:IL17A
+  40  HGNC:CCL11
+  40  HGNC:PDGFA
+  40  HGNC:BMP2
+  40  SDIS:"acute phase reaction"
+  40  GO:vasoconstriction
+  40  HGNC:BHLHE40
+  39  HGNC:STAT5B
+  39  EGID:5424
+  39  HGNC:PPARG
+  39  HGNC:ELANE
+  39  HGNC:GH1
+  38  HGNC:PRL
+  38  SCHEM:fibrate
+  38  HGNC:ELK1
+  38  HGNC:MMP2
+  38  SDIS:"response to shear stress"
+  38  PFM:"Pdgf Family"
+  38  HGNC:MIF
+  38  GO:"muscle atrophy"
+  38  GO:vasodilation
+  37  GO:"DNA replication"
+  37  HGNC:PLAG1
+  37  HGNC:IGF2
+  37  MGI:Apoe
+  37  MGI:Rb1
+  37  GO:"histone acetylation"
+  37  HGNC:SOCS1
+  37  HGNC:COL1A1
+  37  RGD:Jun
+  37  HGNC:CXCL10
+  37  MGI:Stat3
+  37  PFH:"PDGF Family"
+  37  MGI:Abcb1a
+  36  GO:"satellite cell activation"
+  36  RGD:Mapk1
+  36  GO:gluconeogenesis
+  36  MGI:Pparg
+  35  MGI:Cxcl1
+  35  MGI:Egf
+  35  SDIS:"Photo-oxidative Stress"
+  35  HGNC:CSF1
+  35  MGI:Fos
+  35  MESHD:Hypertrophy
+  35  HGNC:CBL
+  35  MGI:Kras
+  35  MGI:Angptl4
+  35  HGNC:ID2
+  35  SCHEM:"SB-203580"
+  34  MGI:Il6st
+  34  CHEBI:"polyunsaturated fatty acid"
+  34  GO:necrosis
+  34  HGNC:CCND3
+  34  EGID:16847
+  34  SDIS:"Cisplatin resistance"
+  34  HGNC:PAWR
+  34  MGI:Lpin1
+  34  HGNC:TIMP1
+  34  CHEBI:"carbon monoxide"
+  34  MGI:Nos2
+  34  HGNC:CEBPB
+  34  HGNC:FASLG
+  34  HGNC:LIF
+  34  HGNC:PRKCA
+  33  SCHEM:cytokine
+  33  HGNC:OSM
+  33  HGNC:CCND2
+  33  CHEBI:etoposide
+  33  MGI:Mmp12
+  33  CHEBI:pioglitazone
+  33  CHEBI:acetylcysteine
+  33  MGI:Fgf2
+  33  HGNC:NR4A1
+  33  HGNC:HNF1A
+  33  MGI:Slc2a4
+  33  HGNC:MAPK8
+  33  MGI:Cebpb
+  32  HGNC:SOD2
+  32  HGNC:PLAUR
+  32  MGI:Mapk3
+  32  MGI:Mxd1
+  32  HGNC:SGK1
+  32  HGNC:BRAF
+  32  HGNC:WNT5A
+  32  GO:"smooth muscle contraction"
+  32  HGNC:SMAD3
+  32  HGNC:SMAD7
+  32  HGNC:EPO
+  31  HGNC:HSPB1
+  31  HGNC:APOE
+  31  PFM:"Il1 Family"
+  31  MGI:Scarb1
+  31  HGNC:ENO1
+  31  MGI:Mt1
+  31  HGNC:TSC2
+  31  HGNC:PIK3R1
+  31  HGNC:ANXA2
+  31  HGNC:ATF3
+  31  HGNC:NEDD9
+  31  HGNC:BNIP3L
+  31  PFM:"Akt Family"
+  30  SCHEM:Ciglitazone
+  30  GO:"glucose import"
+  30  GO:"fatty acid oxidation"
+  30  HGNC:NANOG
+  30  GOCCACC:"GO:0043510"
+  30  MGI:Cav1
+  30  HGNC:WNT3A
+  30  HGNC:BCAR1
+  30  HGNC:ADM
+  30  MGI:Nfkbia
+  30  MGI:Il18
+  30  HGNC:APP
+  30  HGNC:NR3C1
+  30  MGI:Ucp1
+  30  MGI:Hras1
+  30  HGNC:DDIT3
+  30  MGI:Fasn
+  30  SDIS:"Oncogene induced senescence"
+  29  HGNC:BCL2A1
+  29  HGNC:IER3
+  29  SCHEM:"SU 11274"
+  29  HGNC:BDNF
+  29  MGI:Sod2
+  29  RGD:Nos2
+  29  SDIS:"cell senescence"
+  29  HGNC:S1PR1
+  29  MGI:Tnni3
+  29  MGI:Cdkn1b
+  29  HGNC:COL1A2
+  29  SCHEM:"Suberoylanilide hydroxamic acid"
+  29  MGI:Egr1
+  29  HGNC:BTC
+  29  HGNC:CD36
+  29  HGNC:CCR2
+  29  GO:"insulin receptor signaling pathway"
+  29  GO:"stress-induced premature senescence"
+  29  HGNC:LYN
+  28  MGI:Il3
+  28  SDIS:"oncogenic transformation"
+  28  HGNC:OLR1
+  28  HGNC:LDLR
+  28  MGI:Scd1
+  28  HGNC:MMP13
+  28  HGNC:NPPA
+  28  HGNC:ACTA2
+  28  HGNC:STMN1
+  28  HGNC:TIMP3
+  28  HGNC:PPARA
+  28  HGNC:RAC1
+  28  SCHEM:Sorbitol
+  28  HGNC:PARP1
+  28  HGNC:ANXA1
+  28  CHEBI:caffeine
+  28  MGI:Cxcl10
+  28  RGD:Icam1
+  28  CHEBI:gemcitabine
+  28  HGNC:PRKCD
+  27  HGNC:CYR61
+  27  MGI:Cxcl2
+  27  HGNC:SP1
+  27  MGI:Cntf
+  27  HGNC:MCL1
+  27  GO:"monocyte activation"
+  27  HGNC:TRIM28
+  27  HGNC:TNKS1BP1
+  27  HGNC:JAK1
+  27  HGNC:PPARGC1A
+  27  GO:glycolysis
+  27  MGI:Klf7
+  27  MESHD:Sepsis
+  27  CHEBI:adenosine
+  27  MGI:Bmp2
+  26  MGI:Thbs1
+  26  NCR:"Ngf Complex"
+  26  GO:"response to virus"
+  26  MGI:Vcam1
+  26  GO:"hypotonic response"
+  26  RGD:Mapk3
+  26  SDIS:"bile duct ligation"
+  26  HGNC:CTTN
+  26  RGD:Fgf2
+  26  HGNC:ETS2
+  26  HGNC:MSR1
+  26  MGI:Il12b
+  26  CHEBI:corticotropin
+  26  MGI:Ccr2
+  26  HGNC:RGS2
+  26  HGNC:RETN
+  26  SCHEM:"LDL(-)"
+  26  MGI:Hif1a
+  26  MGI:Nmu
+  26  SCHEM:Lysophosphatidylcholines
+  26  MGI:Cxcl12
+  26  HGNC:ADIPOQ
+  26  HGNC:SALL4
+  26  HGNC:PTK2B
+  26  GO:"osteoblast differentiation"
+  26  MESHPP:"Protein Biosynthesis"
+  26  HGNC:PRKCB
+  25  SDIS:"adipose glucose import"
+  25  HGNC:HSPA5
+  25  MGI:Ctnnb1
+  25  GO:"muscle cell differentiation"
+  25  GO:"macrophage differentiation"
+  25  HGNC:CSF3
+  25  RGD:Dusp1
+  25  HGNC:"MIR16-1"
+  25  MGI:Cd44
+  25  RGD:Edn1
+  25  HGNC:MUC5AC
+  25  MGI:Hnf1a
+  25  MGI:Bcl2
+  25  HGNC:IKBKB
+  25  HGNC:GJA1
+  25  HGNC:GRN
+  25  HGNC:IL3
+  25  HGNC:DDIT4
+  25  HGNC:TSC22D3
+  25  HGNC:FASN
+  25  HGNC:ZBTB17
+  24  MGI:Retn
+  24  GO:"platelet activation"
+  24  CHEBI:homocysteine
+  24  HGNC:STAT5A
+  24  HGNC:CCNE1
+  24  HGNC:CCNB1
+  24  HGNC:TGFB2
+  24  MGI:Hmox1
+  24  MGI:"Mir16-1"
+  24  CHEBI:"ascorbic acid"
+  24  HGNC:C3
+  24  HGNC:HNRNPK
+  24  CHEBI:"butyric acid"
+  24  MGI:Cd36
+  24  HGNC:AKT2
+  24  HGNC:HSP90AA1
+  24  HGNC:BMP4
+  24  HGNC:TNFSF13B
+  24  SDIS:"tissue repair"
+  24  SCHEM:"Phosphatidylinositol-3,4,5-trisphosphate"
+  24  PFH:"IL1 Family"
+  24  HGNC:TFRC
+  24  HGNC:FGF7
+  24  GO:"myoblast fusion"
+  24  RGD:Irs1
+  24  SDIS:"systemic acute phase reaction"
+  24  MGI:Ppara
+  24  HGNC:ITGB4
+  24  CHEBI:hydroquinone
+  24  HGNC:SPARC
+  24  HGNC:KIT
+  24  MGI:Socs3
+  23  MGI:Il2
+  23  MGI:Hgf
+  23  HGNC:TP73
+  23  GOCCACC:"GO:0043509"
+  23  HGNC:GSK3A
+  23  HGNC:VIM
+  23  HGNC:GADD45B
+  23  HGNC:ZNF175
+  23  NCH:"Nfkb Complex"
+  23  MESHD:Hypertension
+  23  CHEBI:bexarotene
+  23  HGNC:IL1RN
+  23  HGNC:EREG
+  23  MGI:Mif
+  23  HGNC:ANGPT2
+  23  MGI:Mapk14
+  23  HGNC:IGFBP5
+  23  SDIS:"tumor cell invasion"
+  23  HGNC:BIRC3
+  23  CHEBI:prednisolone
+  23  MGI:Irs2
+  23  HGNC:PRKCZ
+  22  MGI:Rela
+  22  MGI:Id2
+  22  HGNC:PTN
+  22  HGNC:CCNA2
+  22  HGNC:INSIG1
+  22  HGNC:STC1
+  22  HGNC:RPS6
+  22  MGI:Tlr4
+  22  SCHEM:"Benzyloxycarbonylleucyl-leucyl-leucine aldehyde"
+  22  HGNC:MEF2A
+  22  HGNC:ANGPT1
+  22  CHEBI:"cholesterol ester"
+  22  RGD:Fos
+  22  HGNC:FRS2
+  22  HGNC:CHEK1
+  22  HGNC:INHBA
+  22  MGI:Nppa
+  22  HGNC:SMAD1
+  22  MGI:Pomc
+  22  HGNC:FOXO4
+  22  HGNC:CDK2
+  22  HGNC:CD14
+  22  HGNC:BLVRA
+  22  HGNC:NAMPT
+  22  GOCCACC:"GO:0005739"
+  22  HGNC:NCOR2
+  22  HGNC:BTG1
+  22  GO:"oxidative phosphorylation"
+  22  GO:"monocyte extravasation"
+  22  HGNC:ZBTB16
+  22  MGI:Ptk2
+  22  HGNC:MAP2K2
+  22  HGNC:FADD
+  21  HGNC:IL6ST
+  21  MGI:Il5
+  21  HGNC:PGR
+  21  HGNC:PLAT
+  21  SCHEM:"Inositol 1,4,5-trisphosphate"
+  21  HGNC:SFN
+  21  HGNC:SHB
+  21  HGNC:TXN
+  21  HGNC:PEBP1
+  21  EGID:653509
+  21  GO:"fatty acid beta-oxidation"
+  21  HGNC:SLC2A1
+  21  MGI:Col3a1
+  21  SCHEM:"1-Alkyl-2-acetyl-sn-glycero-3-phosphocholine"
+  21  MGI:Ngf
+  21  HGNC:TRAF2
+  21  HGNC:IRF1
+  21  HGNC:CFB
+  21  MGI:Serpine1
+  21  HGNC:TFF1
+  21  MGI:Vim
+  21  HGNC:BCL2L11
+  21  HGNC:IL15
+  21  HGNC:NCOA3
+  21  HGNC:HK2
+  21  HGNC:HES1
+  20  MGI:Fabp4
+  20  MGI:Csf2
+  20  MGI:Csf3
+  20  GO:"epithelial to mesenchymal transition"
+  20  HGNC:PTPN11
+  20  MGI:Phox2b
+  20  HGNC:HSPD1
+  20  MESHCL:Cytoplasm
+  20  HGNC:CASP9
+  20  MGI:Casp3
+  20  RGD:Pdgfb
+  20  HGNC:S100A9
+  20  GO:"myoblast proliferation"
+  20  HGNC:PLA2G4A
+  20  SCHEM:Tunicamycin
+  20  HGNC:NRAS
+  20  SDIS:"TLR signaling"
+  20  SCHEM:Prostratin
+  20  HGNC:ERBB3
+  20  MGI:Ccl5
+  20  HGNC:PCNA
+  20  HGNC:IGFBP1
+  20  MGI:Cdkn2a
+  20  HGNC:PDGFRA
+  20  CHEBI:haloperidol
+  20  HGNC:CITED2
+  20  MGI:Icam1
+  20  EGID:6046
+  20  SCHEM:Elastase
+  20  HGNC:MXI1
+  20  HGNC:CYBB
+  20  HGNC:HSPA1A
+  20  MGI:Junb
+  20  HGNC:ITGB3
+  20  MGI:Cd40lg
+  20  HGNC:UCP2
+  20  SCHEM:Diacylglycerol
+  20  HGNC:KRT18
+  20  MGI:Bmp4
+  19  MGI:Csf1
+  19  EGID:2475
+  19  MGI:Errfi1
+  19  MGI:Pck1
+  19  MGI:Tnfsf11
+  19  HGNC:SUMO1
+  19  MGI:Bax
+  19  NCH:"CD3 Complex"
+  19  MESHD:Neoplasms
+  19  HGNC:NFE2L2
+  19  HGNC:PDE3A
+  19  MGI:Myog
+  19  RGD:Egfr
+  19  MGI:Foxo1
+  19  MGI:Jdp2
+  19  GO:autophagy
+  19  MGI:Lif
+  19  HGNC:SKP2
+  19  RGD:Ccnd1
+  19  RGD:Vegfa
+  19  HGNC:TRAF1
+  19  HGNC:SOCS2
+  19  SDIS:"anchorage-independent growth"
+  19  HGNC:ALB
+  19  PFH:"Histone H3 Family"
+  19  HGNC:CEBPA
+  19  HGNC:NR4A2
+  19  MGI:Ccl11
+  19  HGNC:ATF4
+  19  MGI:Ucp2
+  19  RGD:Ctgf
+  19  HGNC:EZR
+  19  HGNC:IL7
+  19  HGNC:MAPT
+  19  RGD:Ptgs2
+  19  GO:"glucose transport"
+  18  HGNC:SERPINA1
+  18  HGNC:NPY
+  18  MGI:Id1
+  18  HGNC:CRKL
+  18  HGNC:PTGIS
+  18  HGNC:ABCA1
+  18  HGNC:ABCB1
+  18  HGNC:ALAS1
+  18  MGI:Nfe2l2
+  18  HGNC:THBD
+  18  GO:"cardioblast differentiation"
+  18  SCHEM:Prasterone
+  18  HGNC:S100A8
+  18  PFH:"PRKC Family"
+  18  MGI:Fas
+  18  HGNC:ENPP1
+  18  HGNC:PDCD4
+  18  CHEBI:"linoleic acid"
+  18  RGD:Egr1
+  18  CHEBI:dexamethasone
+  18  MGI:Ccl3
+  18  MGI:Ccr5
+  18  MGI:Ybx2
+  18  MGI:Cd40
+  18  RGD:Hmox1
+  18  HGNC:ARRB2
+  18  HGNC:SREBF1
+  18  MGI:Osm
+  18  HGNC:LGALS1
+  18  HGNC:SLC7A11
+  18  HGNC:CDC42
+  18  CHEBI:toremifene
+  18  HGNC:RASSF1
+  18  HGNC:CFLAR
+  18  GO:"response to unfolded protein"
+  18  HGNC:STAT6
+  18  HGNC:TNFRSF1A
+  18  HGNC:ADRB2
+  18  HGNC:CD44
+  18  CHEBI:bezafibrate
+  18  GO:"cellular extravasation"
+  18  HGNC:FYN
+  18  HGNC:FST
+  18  HGNC:PTPN6
+  18  HGNC:COPS5
+  18  HGNC:BTG2
+  18  MGI:Mdm2
+  18  HGNC:LOX
+  18  MGI:Myod1
+  17  SCHEM:"serum fatty acid"
+  17  HGNC:TLR2
+  17  HGNC:HBP1
+  17  HGNC:PEA15
+  17  HGNC:TOP2A
+  17  MGI:Taf4a
+  17  MGI:Taf4b
+  17  HGNC:GAB2
+  17  MGI:Ctgf
+  17  MGI:Cxcl9
+  17  HGNC:MYD88
+  17  HGNC:S100A4
+  17  HGNC:TJP1
+  17  GO:"endothelial cell activation"
+  17  MGI:Cyp7a1
+  17  CHEBI:"prostaglandin D2"
+  17  HGNC:HP
+  17  HGNC:HNRNPU
+  17  RGD:Nos3
+  17  HGNC:RBL2
+  17  HGNC:G6PC
+  17  HGNC:IL12B
+  17  HGNC:MEF2C
+  17  HGNC:PCM1
+  17  HGNC:EFNA1
+  17  HGNC:FGFR1
+  17  HGNC:KITLG
+  17  SCHEM:"alpha-Bungarotoxin"
+  17  HGNC:CXCL9
+  17  HGNC:MMP3
+  17  HGNC:MARCKS
+  17  MGI:Pawr
+  17  HGNC:HSF1
+  17  HGNC:NFKB2
+  17  HGNC:VEGFC
+  17  MGI:Il1a
+  17  HGNC:TFF3
+  17  HGNC:CDH5
+  17  HGNC:SAT1
+  17  SCHEM:"N-Methylaspartate"
+  17  MGI:Mmp9
+  17  MGI:Ucp3
+  17  HGNC:TGFBR2
+  17  HGNC:EPHA2
+  17  GO:"Wnt receptor signaling pathway"
+  17  HGNC:PFKFB3
+  17  MGI:Ppargc1a
+  17  HGNC:MAP3K5
+  17  GO:mitosis
+  17  HGNC:WNT1
+  17  HGNC:GDF15
+  17  GO:"S phase of mitotic cell cycle"
+  17  MGI:Socs1
+  16  MGI:Id3
+  16  HGNC:HSP90B1
+  16  HGNC:CCDC50
+  16  MGI:Adm
+  16  MGI:Per1
+  16  MGI:Itgb1
+  16  HGNC:CCNG2
+  16  HGNC:CASP8
+  16  HGNC:THPO
+  16  HGNC:IRAK1
+  16  HGNC:VHL
+  16  HGNC:GAPDH
+  16  MGI:Dusp1
+  16  GO:"histone deacetylation"
+  16  HGNC:RARA
+  16  RGD:Gsk3b
+  16  GO:spermatogenesis
+  16  MGI:Foxl1
+  16  HGNC:DKK3
+  16  MGI:Cd14
+  16  MGI:Mt2
+  16  EGID:123
+  16  MGI:S100a8
+  16  HGNC:SREBF2
+  16  RGD:Hspb1
+  16  HGNC:ELF3
+  16  HGNC:BCAR3
+  16  MGI:Sox6
+  16  MGI:Sparc
+  16  HGNC:GNRH1
+  16  HGNC:MAPK10
+  16  HGNC:KLF10
+  16  RGD:Fosl1
+  16  EGID:5243
+  16  HGNC:KRT8
+  16  EGID:29760
+  16  MGI:Anxa2
+  16  EGID:5351
+  16  HGNC:NFKBIB
+  16  HGNC:TERT
+  16  RGD:Cebpb
+  16  HGNC:PMAIP1
+  16  HGNC:CRK
+  16  HGNC:SDC4
+  16  MGI:Slc2a1
+  16  HGNC:BAG1
+  16  HGNC:MAFF
+  16  HGNC:BHLHE41
+  16  SCHEM:Epoprostenol
+  16  HGNC:ITGA6
+  16  HGNC:MYOD1
+  16  CHEBI:peptidoglycan
+  16  HGNC:H2AFX
+  16  MGI:Bcl2l11
+  16  GO:"immune response"
+  16  MGI:Hp
+  16  HGNC:MAPK9
+  16  MGI:Gsk3b
+  16  MGI:Cebpd
+  16  HGNC:PRKD1
+  15  HGNC:SERPINA3
+  15  HGNC:TLR4
+  15  HGNC:PGF
+  15  SCHEM:"Smoke extract, cigarette"
+  15  CHEBI:"vitamin A"
+  15  HGNC:PML
+  15  CHEBI:"prostaglandin A1"
+  15  HGNC:RET
+  15  MGI:Bcar1
+  15  MGI:Wnt3a
+  15  SCHEM:"Concanavalin A"
+  15  HGNC:ACTB
+  15  MGI:Expi
+  15  HGNC:ABL1
+  15  HGNC:STC2
+  15  HGNC:PGK1
+  15  MGI:Isg15
+  15  HGNC:THBS2
+  15  HGNC:CTSD
+  15  HGNC:CHUK
+  15  RGD:Col1a1
+  15  MGI:Jak2
+  15  RGD:Stat3
+  15  HGNC:WT1
+  15  RGD:Ifng
+  15  SCHEM:"SB-202190"
+  15  EGID:122953
+  15  HGNC:DLC1
+  15  HGNC:NOS1
+  15  HGNC:DKK1
+  15  HGNC:SLC2A4
+  15  HGNC:IL1R1
+  15  MGI:Pik3r1
+  15  HGNC:AKT3
+  15  SCHEM:"Epigallocatechin gallate"
+  (and more ...)

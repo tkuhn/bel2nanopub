@@ -1,26 +1,49 @@
 STATEMENT COUNT: 57
 RELATIONS:
-  increases: 27
-  directlyIncreases: 15
-  directlyDecreases: 6
-  causesNoChange: 4
-  decreases: 2
-  prognosticBiomarkerFor: 2
-  positiveCorrelation: 2
+  27  increases
+  15  directlyIncreases
+  6  directlyDecreases
+  4  causesNoChange
+  2  decreases
+  2  prognosticBiomarkerFor
+  2  positiveCorrelation
 FUNCTIONS:
-  p: 44
-  kin: 21
-  complex: 9
-  a: 9
-  path: 9
-  phos: 7
-  tscript: 4
-  bp: 3
-  cat: 3
-  composite: 3
-  ribo: 3
+  44  p
+  21  kin
+  9  complex
+  9  a
+  9  path
+  7  phos
+  4  tscript
+  3  bp
+  3  cat
+  3  composite
+  3  ribo
 ANNOTATIONS:
-  Species: 43
-  CellLine: 41
-  CellStructure: 3
-  Disease: 2
+  43  Species
+  41  CellLine
+  3  CellStructure
+  2  Disease
+PARAMETERS:
+  20  HGNC:KRAS
+  9  CHEBI:"phorbol 13-acetate 12-myristate"
+  5  HGNC:DUSP1
+  3  MESHD:Neoplasms
+  3  HGNC:MAPK1
+  3  HGNC:XRCC5
+  3  HGNC:XRCC6
+  3  HGNC:MAPK8
+  2  HGNC:MAPK14
+  2  MESHD:"Werner Syndrome"
+  1  HGNC:PCNA
+  1  MESHD:"Neoplasm Metastasis"
+  1  HGNC:CCNB1
+  1  GO:"regulation of apoptotic process"
+  1  MESHD:"Recurrence"
+  1  GO:"G2/M transition of mitotic cell cycle"
+  1  MESHD:"Genomic Instability"
+  1  PFH:"MAPK p38 Family"
+  1  GO:"G1/S transition of mitotic cell cycle"
+  1  HGNC:RB1
+  1  MESHD:"Aging, Premature"
+  1  HGNC:PARP1
