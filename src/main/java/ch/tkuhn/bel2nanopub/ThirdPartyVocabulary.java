@@ -23,7 +23,7 @@ public class ThirdPartyVocabulary {
 	public static final URI goIntracellular = new URIImpl("http://amigo.geneontology.org/amigo/term/GO:0005622");
 	public static final URI goExtracellularRegion = new URIImpl("http://amigo.geneontology.org/amigo/term/GO:0005576");
 	public static final URI goCellSurface = new URIImpl("http://amigo.geneontology.org/amigo/term/GO:0009986");
-	public static final URI goProteinComplex = new URIImpl("http://amigo.geneontology.org/amigo/term/GO:0043234");  // TO BE USED...
+	public static final URI goProteinComplex = new URIImpl("http://amigo.geneontology.org/amigo/term/GO:0043234");
 
 	public static final URI sioHasAgent = new URIImpl("http://semanticscience.org/resource/SIO_000139");
 	public static final URI sioBiochemicalReaction = new URIImpl("http://semanticscience.org/resource/SIO_010036");
@@ -37,17 +37,17 @@ public class ThirdPartyVocabulary {
 	public static final URI sioHasTarget = new URIImpl("http://semanticscience.org/resource/SIO_000292");  // "target" is passive; "agent" is active
 	// )
 
-	public static final URI roGeneProductOf = new URIImpl("http://purl.obolibrary.org/obo/RO_0002204");  // TO BE USED...
+	public static final URI roGeneProductOf = new URIImpl("http://purl.obolibrary.org/obo/RO_0002204");
 	// ( currently not used:
 	public static final URI roHasInput = new URIImpl("http://purl.obolibrary.org/obo/RO_0002233");
 	public static final URI roHasOutput = new URIImpl("http://purl.obolibrary.org/obo/RO_0002234");
 	// )
 
-	public static final URI chebiProtein = new URIImpl("http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080");  // TO BE USED...
-	public static final URI chebiRna = new URIImpl("http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697");  // TO BE USED...
+	public static final URI chebiProtein = new URIImpl("http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_36080");
+	public static final URI chebiRna = new URIImpl("http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_33697");
 
-	public static final URI soMicroRna = new URIImpl("http://purl.obolibrary.org/obo/SO_0000276");  // TO BE USED...
+	public static final URI soMicroRna = new URIImpl("http://purl.obolibrary.org/obo/SO_0000276");
 
-	public static final URI modProteinModification = new URIImpl("http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000");  // TO BE USED...
+	public static final URI modProteinModification = new URIImpl("http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00000");
 
 }
