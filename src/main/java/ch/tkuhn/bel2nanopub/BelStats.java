@@ -42,16 +42,18 @@ public class BelStats {
 		obj.run();
 		System.out.println("STATEMENT COUNT: " + obj.getStatementCount());
 		System.out.println("RELATIONS:");
-		obj.printStats(obj.getRelations());
+		obj.printStats(obj.getRelations(), false);
 		System.out.println("FUNCTIONS:");
-		obj.printStats(obj.getFunctions());
+		obj.printStats(obj.getFunctions(), false);
 		System.out.println("ANNOTATIONS:");
-		obj.printStats(obj.getAnnotations());
+		obj.printStats(obj.getAnnotations(), false);
 		System.out.println("PARAMETERS:");
-		obj.printStats(obj.getParams());
+		obj.printStats(obj.getParams(), false);
+		System.out.println("STATEMENT PATTERNS:");
+		obj.printStats(obj.getPatterns(), true);
 	}
 
-	public void printStats(final Map<String,Integer> map) {
+	public void printStats(final Map<String,Integer> map, boolean dropUnique) {
 		List<String> list = new ArrayList<String>(map.keySet());
 		Collections.sort(list, new Comparator<String>() {
 			@Override
@@ -66,6 +68,7 @@ public class BelStats {
 				System.out.println("  (and more ...)");
 				break;
 			}
+			if (dropUnique && map.get(k) < 2) continue;
 			System.out.println("  " + map.get(k) + "  " + k);
 		}
 	}
@@ -77,6 +80,7 @@ public class BelStats {
 	private Map<String,Integer> functions = new HashMap<String,Integer>();
 	private Map<String,Integer> annotations = new HashMap<String,Integer>();
 	private Map<String,Integer> params = new HashMap<String,Integer>();
+	private Map<String,Integer> patterns = new HashMap<String,Integer>();
 
 
 	public BelStats(File... belDocs) {
@@ -126,21 +130,33 @@ public class BelStats {
 
 	private void processBelStatement(Statement statement) {
 		if (statement.getRelationshipType() == null) {
-			processBelTerm(statement.getSubject());
+			Term subj = statement.getSubject();
+			processBelTerm(subj);
+			increase(patterns, Utils.getFunctionAbbrev(subj) + "(...)");
 		} else {
+			Term subj = statement.getSubject();
 			processBelTerm(statement.getSubject());
 			String relN = statement.getRelationshipType().getDisplayValue();
 			increase(relations, relN);
-			processBelObject(statement.getObject());
+			Term obj = processBelObject(statement.getObject());
+			increase(patterns, "... " + relN + " ...");
+			increase(patterns, Utils.getFunctionAbbrev(subj) + "(...) " + relN + " ...");
+			if (obj != null) {
+				increase(patterns, "... " + relN + " " + Utils.getFunctionAbbrev(obj) + "(...)");
+				increase(patterns, Utils.getFunctionAbbrev(subj) + "(...) " + relN + " " + Utils.getFunctionAbbrev(obj) + "(...)");
+			}
 		}
 	}
 
-	private void processBelObject(org.openbel.framework.common.model.Statement.Object obj) {
-		if (obj.getTerm() != null) {
-			processBelTerm(obj.getTerm());
+	private Term processBelObject(org.openbel.framework.common.model.Statement.Object obj) {
+		Term term = obj.getTerm();
+		if (term != null) {
+			processBelTerm(term);
 		} else {
-			processBelStatement(obj.getStatement());
+			// ignore nested statements
+			//processBelStatement(obj.getStatement());
 		}
+		return term;
 	}
 
 	private void processBelTerm(Term term) {
@@ -181,6 +197,10 @@ public class BelStats {
 
 	public Map<String,Integer> getParams() {
 		return params;
+	}
+
+	public Map<String,Integer> getPatterns() {
+		return patterns;
 	}
 
 	private static void increase(Map<String,Integer> map, String key) {

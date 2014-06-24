@@ -1,24 +1,23 @@
 STATEMENT COUNT: 57
 RELATIONS:
-  27  increases
-  15  directlyIncreases
+  25  increases
+  12  directlyIncreases
   6  directlyDecreases
   4  causesNoChange
   2  decreases
   2  prognosticBiomarkerFor
   2  positiveCorrelation
 FUNCTIONS:
-  44  p
+  39  p
   21  kin
   9  complex
-  9  a
   9  path
+  7  a
   7  phos
   4  tscript
   3  bp
   3  cat
   3  composite
-  3  ribo
 ANNOTATIONS:
   43  Species
   41  CellLine
@@ -26,14 +25,14 @@ ANNOTATIONS:
   2  Disease
 PARAMETERS:
   20  HGNC:KRAS
-  9  CHEBI:"phorbol 13-acetate 12-myristate"
-  5  HGNC:DUSP1
+  7  CHEBI:"phorbol 13-acetate 12-myristate"
   3  MESHD:Neoplasms
   3  HGNC:MAPK1
-  3  HGNC:XRCC5
-  3  HGNC:XRCC6
+  3  HGNC:DUSP1
   3  HGNC:MAPK8
+  2  HGNC:XRCC5
   2  HGNC:MAPK14
+  2  HGNC:XRCC6
   2  MESHD:"Werner Syndrome"
   1  HGNC:PCNA
   1  MESHD:"Neoplasm Metastasis"
@@ -46,4 +45,46 @@ PARAMETERS:
   1  GO:"G1/S transition of mitotic cell cycle"
   1  HGNC:RB1
   1  MESHD:"Aging, Premature"
-  1  HGNC:PARP1
+PATTERNS:
+  25  ... increases ...
+  13  p(...) increases ...
+  12  ... directlyIncreases ...
+  11  p(...) directlyIncreases ...
+  9  ... increases kin(...)
+  7  a(...) increases ...
+  6  p(...) increases kin(...)
+  6  phos(...) directlyDecreases ...
+  6  p(...) directlyIncreases kin(...)
+  6  ... directlyIncreases kin(...)
+  6  ... directlyDecreases ...
+  5  ... increases p(...)
+  4  ... causesNoChange ...
+  4  p(...) causesNoChange ...
+  4  complex(...)
+  3  p(...) increases p(...)
+  3  phos(...) directlyDecreases kin(...)
+  3  ... directlyIncreases complex(...)
+  3  phos(...) directlyDecreases p(...)
+  3  ... directlyDecreases p(...)
+  3  p(...) directlyIncreases complex(...)
+  3  a(...) increases kin(...)
+  3  ... increases tscript(...)
+  3  composite(...) increases ...
+  3  a(...) increases tscript(...)
+  3  ... directlyDecreases kin(...)
+  3  ... directlyIncreases cat(...)
+  2  p(...) prognosticBiomarkerFor path(...)
+  2  p(...) directlyIncreases cat(...)
+  2  path(...) positiveCorrelation ...
+  2  p(...) increases path(...)
+  2  ... decreases ...
+  2  ... increases path(...)
+  2  path(...) positiveCorrelation path(...)
+  2  ... positiveCorrelation path(...)
+  2  p(...) increases bp(...)
+  2  ... prognosticBiomarkerFor ...
+  2  ... increases bp(...)
+  2  kin(...) increases ...
+  2  ... prognosticBiomarkerFor path(...)
+  2  p(...) prognosticBiomarkerFor ...
+  2  ... positiveCorrelation ...
