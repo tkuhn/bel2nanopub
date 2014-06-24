@@ -463,8 +463,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAdmw3N3_TCp33rByQYubs30LxCseOJvsiGydW__mWAyk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAdmw3N3_TCp33rByQYubs30LxCseOJvsiGydW__mWAyk#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9Upgc5bRZPrAPYtF95Adt2CvAZxFKSZCOq50zIxx5ZM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9Upgc5bRZPrAPYtF95Adt2CvAZxFKSZCOq50zIxx5ZM#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -506,7 +506,7 @@ sub:assertion {
 		a rdf:Statement .
 	
 	sub:_3 hasAgent: sub:_4 ;
-		a go:0006471 .
+		a go:1990404 .
 	
 	sub:_4 geneProductOf: hgnc:270 ;
 		a Protein: .
@@ -541,8 +541,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAQRlaOFCrvpMzqI955DOuw6Pn3aTzr7tYTzLSVy5FQjA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAQRlaOFCrvpMzqI955DOuw6Pn3aTzr7tYTzLSVy5FQjA#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAsLsFnIIZzc9Hf8m67N6OYUgaDltUslJQ5FPkgn7V0EI> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAsLsFnIIZzc9Hf8m67N6OYUgaDltUslJQ5FPkgn7V0EI#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -584,7 +584,7 @@ sub:assertion {
 		a rdf:Statement .
 	
 	sub:_3 hasAgent: sub:_4 ;
-		a go:0006471 .
+		a go:1990404 .
 	
 	sub:_4 geneProductOf: hgnc:270 ;
 		a Protein: .
@@ -619,8 +619,8 @@ sub:pubinfo {
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAmfAr30CToqx_DJD-1FLBywmMa2adkCnY1EvfVVWsJFg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAmfAr30CToqx_DJD-1FLBywmMa2adkCnY1EvfVVWsJFg#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAPZqEThM7s0uROw3_z98TC8RDx8tk5Tz9xwBrCAGtXEM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAPZqEThM7s0uROw3_z98TC8RDx8tk5Tz9xwBrCAGtXEM#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract2.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -662,7 +662,7 @@ sub:assertion {
 		a rdf:Statement .
 	
 	sub:_3 hasAgent: sub:_4 ;
-		a go:0006471 .
+		a go:1990404 .
 	
 	sub:_4 geneProductOf: hgnc:270 ;
 		a Protein: .
