@@ -163,6 +163,7 @@ public class Bel2Nanopub {
 				npCreator.addNamespace("xsd", "http://www.w3.org/2001/XMLSchema#");
 				npCreator.addNamespace("dct", "http://purl.org/dc/terms/");
 				npCreator.addNamespace("dce", "http://purl.org/dc/elements/1.1/");
+				npCreator.addNamespace("pav", "http://purl.org/pav/");
 				npCreator.addNamespace("np", "http://www.nanopub.org/nschema#");
 				npCreator.addNamespace("belv", BelRdfVocabulary.BELV_NS);
 				npCreator.addNamespace("prov", "http://www.w3.org/ns/prov#");
@@ -221,14 +222,37 @@ public class Bel2Nanopub {
 
 	private void processEvidence(BELStatement belStatement, NanopubCreator npCreator) throws Bel2NanopubException {
 		BELCitation cit = belStatement.getCitation();
-		URI citUri = null;
+		Resource citRes = null;
 		if (cit != null) {
-			if (!cit.getType().toLowerCase().equals("pubmed")) {
-				throw new Bel2NanopubException("Unsupported citation type: " + cit.getType() + " " + cit.getComment());
+			if (cit.getType().toLowerCase().equals("pubmed")) {
+				citRes = new URIImpl(pubmedNs + cit.getReference());
+				npCreator.addNamespace("pubmed", pubmedNs);
+			} else {
+				citRes = newBNode();
+				if (cit.getType() != null && !cit.getType().isEmpty()) {
+					npCreator.addProvenanceStatement(citRes, DC.TYPE, vf.createLiteral(cit.getType()));
+				}
+				if (cit.getName() != null && !cit.getName().isEmpty()) {
+					npCreator.addProvenanceStatement(citRes, DC.TITLE, vf.createLiteral(cit.getName()));
+				}
+				if (cit.getComment() != null && !cit.getComment().isEmpty()) {
+					npCreator.addProvenanceStatement(citRes, DC.DESCRIPTION, vf.createLiteral(cit.getComment()));
+				}
+				if (cit.getAuthors() != null) {
+					for (String author : cit.getAuthors()) {
+						BNode authBn = newBNode();
+						npCreator.addProvenanceStatement(citRes, NanopubVocab.PAV_AUTHOREDBY, authBn);
+						npCreator.addProvenanceStatement(authBn, RDFS.LABEL, vf.createLiteral(author));
+					}
+				}
+				if (cit.getReference() != null && !cit.getReference().isEmpty()) {
+					npCreator.addProvenanceStatement(citRes, DC.IDENTIFIER, vf.createLiteral(cit.getReference()));
+				}
+				if (cit.getPublicationDate() != null) {
+					npCreator.addProvenanceStatement(citRes, NanopubVocab.DCT_CREATED, vf.createLiteral(cit.getPublicationDate()));
+				}
 			}
-			citUri = new URIImpl(pubmedNs + cit.getReference());
-			npCreator.addProvenanceStatement(provHadPrimarySource, citUri);
-			npCreator.addNamespace("pubmed", pubmedNs);
+			npCreator.addProvenanceStatement(provHadPrimarySource, citRes);
 		}
 		BELEvidence ev = belStatement.getEvidence();
 		if (ev != null) {
@@ -236,8 +260,8 @@ public class Bel2Nanopub {
 			BNode q = newBNode();
 			npCreator.addProvenanceStatement(q, provValue, l);
 			npCreator.addProvenanceStatement(provWasDerivedFrom, q);
-			if (citUri != null) {
-				npCreator.addProvenanceStatement(q, provWasQuotedFrom, citUri);
+			if (citRes != null) {
+				npCreator.addProvenanceStatement(q, provWasQuotedFrom, citRes);
 			}
 		}
 	}
