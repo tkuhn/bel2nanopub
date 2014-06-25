@@ -47,7 +47,9 @@ public class IdSchemes {
 			String id = sc.getId(belLabel);
 			String ns;
 			if (id == null) {
-				return null;
+				if (!sc.getMappingType().endsWith("partial")) {
+					return null;
+				}
 			} else {
 				ns = sc.getRdfNs();
 				if (ns.contains(" ")) {
@@ -57,8 +59,8 @@ public class IdSchemes {
 				} else {
 					uriString = ns + id;
 				}
+				npCreator.addNamespace(sc.getRdfPrefix(), ns);
 			}
-			npCreator.addNamespace(sc.getRdfPrefix(), ns);
 		}
 		String ns = schemeNameOrBelNs;
 		if (uriString == null && ns.contains("://")) {

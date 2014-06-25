@@ -34,7 +34,7 @@ public class CreateIdTables {
 
 	public void run() throws Exception {
 		for (IdScheme sc : IdSchemes.getSchemes()) {
-			if (sc.getMappingType().equals("direct") || sc.getMappingType().equals("manual")) {
+			if (sc.getMappingType().equals("direct") || sc.getMappingType().startsWith("manual")) {
 				continue;
 			}
 			BufferedWriter w = new BufferedWriter(new FileWriter(sc.getTableFileName()));

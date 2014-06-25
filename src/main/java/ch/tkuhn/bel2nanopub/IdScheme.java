@@ -45,7 +45,7 @@ public class IdScheme {
 	public String getTableFileName() {
 		if (getMappingType().equals("direct")) return null;
 		String dir = "tables/";
-		if (!getMappingType().equals("manual")) dir += "generated/";
+		if (!getMappingType().startsWith("manual")) dir += "generated/";
 		new File(dir).mkdir();
 		return dir + getName() + ".txt";
 	}

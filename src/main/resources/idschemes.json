@@ -436,6 +436,15 @@
       "mappingType": "manual",
       "rdfPrefix": "go",
       "rdfNs": "http://amigo.geneontology.org/amigo/term/GO:"
+    },
+    {
+      "name": "schem",
+      "mappingType": "manual-partial",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/namespace/selventa-legacy-chemical-names.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/selventa-legacy-chemicals.belns"
+      ],
+      "rdfNs": ""
     }
   ]
 }
