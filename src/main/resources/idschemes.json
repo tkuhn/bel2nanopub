@@ -445,6 +445,15 @@
         "http://resource.belframework.org/belframework/20131211/namespace/selventa-legacy-chemicals.belns"
       ],
       "rdfNs": ""
+    },
+    {
+      "name": "sdis",
+      "mappingType": "manual-partial",
+      "belNsSet": [
+        "http://resource.belframework.org/belframework/1.0/namespace/selventa-legacy-diseases.belns",
+        "http://resource.belframework.org/belframework/20131211/namespace/selventa-legacy-diseases.belns"
+      ],
+      "rdfNs": ""
     }
   ]
 }

@@ -1,0 +1,2 @@
+http://bioportal.bioontology.org/ontologies/MSH/D001424 bacterial infection
+http://bioportal.bioontology.org/ontologies/MSH/D004435 food intake
