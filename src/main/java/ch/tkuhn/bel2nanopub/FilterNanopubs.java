@@ -60,7 +60,7 @@ public class FilterNanopubs {
 						}
 						try {
 							NanopubUtils.writeToStream(np, System.out, RDFFormat.TRIG);
-							System.out.println();
+							System.out.print("\n\n");
 							npOutput++;
 							break;
 						} catch (Exception ex) {

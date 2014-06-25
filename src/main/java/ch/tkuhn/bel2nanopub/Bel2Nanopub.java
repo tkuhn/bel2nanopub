@@ -176,7 +176,6 @@ public class Bel2Nanopub {
 					continue;
 				}
 				if (creatorId != null) {
-					npCreator.addNamespace("pav", "http://purl.org/pav/");
 					npCreator.addNamespace("orcid", "http://orcid.org/");
 					npCreator.addCreator(creatorId);
 				}

@@ -6,6 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -16,7 +17,6 @@
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -72,6 +72,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -82,7 +83,6 @@ sub:pubinfo {
 @prefix species: <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=> .
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -138,6 +138,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -149,7 +150,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -205,6 +205,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -216,7 +217,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -272,6 +272,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -283,7 +284,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -339,6 +339,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -355,7 +356,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -420,6 +420,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -435,7 +436,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -497,6 +497,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -513,7 +514,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -578,6 +578,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -593,7 +594,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -655,6 +655,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -669,7 +670,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -731,6 +731,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -746,7 +747,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -809,6 +809,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -824,7 +825,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -887,6 +887,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -902,7 +903,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -965,6 +965,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -980,7 +981,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -1043,6 +1043,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -1054,7 +1055,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -1113,6 +1113,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -1125,7 +1126,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -1184,6 +1184,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -1196,7 +1197,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -1255,6 +1255,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -1266,7 +1267,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -1322,6 +1322,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -1333,7 +1334,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
@@ -1389,6 +1389,7 @@ sub:pubinfo {
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix belv: <http://www.selventa.com/vocabulary/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -1400,7 +1401,6 @@ sub:pubinfo {
 @prefix occursIn: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix atcc: <http://www.lgcstandards-atcc.org/Products/All/> .
 @prefix pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix orcid: <http://orcid.org/> .
 
 sub:Head {
