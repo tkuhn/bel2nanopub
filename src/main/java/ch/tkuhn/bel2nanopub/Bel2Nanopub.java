@@ -89,9 +89,9 @@ public class Bel2Nanopub {
 				if (!isFirst) {
 					System.out.print("\n\n");
 				}
-				isFirst = false;
 				if (r.getException() == null) {
 					NanopubUtils.writeToStream(r.getNanopub(), System.out, RDFFormat.TRIG);
+					isFirst = false;
 				} else {
 					System.err.println("ERROR:");
 					System.err.println(r.getException().getMessage());
