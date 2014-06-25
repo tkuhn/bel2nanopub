@@ -1,2 +1,5 @@
 http://www.ebi.ac.uk/chebi/searchId.do?chebiId=15551 Dinoprostone
 http://www.ebi.ac.uk/chebi/searchId.do?chebiId=46742 Nutlin 3
+http://www.ebi.ac.uk/chebi/searchId.do?chebiId=16330 Stanolone
+http://www.ebi.ac.uk/chebi/searchId.do?chebiId=66964 Dronabinol
+http://www.ebi.ac.uk/chebi/searchId.do?chebiId=9168 Sirolimus
