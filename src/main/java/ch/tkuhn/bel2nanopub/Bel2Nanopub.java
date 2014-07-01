@@ -58,7 +58,7 @@ public class Bel2Nanopub {
 	private List<File> inputFiles = new ArrayList<File>();
 
 	@com.beust.jcommander.Parameter(names = "-c", description = "Orcid ID of creator")
-	private String creatorId = null;
+	private List<String> creatorIds = new ArrayList<String>();
 
 	@com.beust.jcommander.Parameter(names = "-t", description = "Timestamp (use only for regression testing)")
 	private String timestamp = null;
@@ -175,7 +175,7 @@ public class Bel2Nanopub {
 					results.add(new Result(bst, ex));
 					continue;
 				}
-				if (creatorId != null) {
+				for (String creatorId : creatorIds) {
 					npCreator.addNamespace("orcid", "http://orcid.org/");
 					npCreator.addCreator(creatorId);
 				}

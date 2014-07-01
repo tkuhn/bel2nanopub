@@ -1,5 +1,5 @@
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAOKf2qffbunGJ-9o961wMjvg3thgwGhMa5t89p_5m8uo> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAOKf2qffbunGJ-9o961wMjvg3thgwGhMa5t89p_5m8uo#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAg9r49LR3mZATbETL5NMySaKvxDUnt13ogQsaD8btp6A> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAg9r49LR3mZATbETL5NMySaKvxDUnt13ogQsaD8btp6A#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -59,13 +59,13 @@ sub:provenance {
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RANlGpxNzFF6n9UTmFpPxfoWT4X8tty88vuZpFgxwUNzA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RANlGpxNzFF6n9UTmFpPxfoWT4X8tty88vuZpFgxwUNzA#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAQe6QaFgTVWx-nRc1VCX3OlV_DlvgAfRVB63YlJpUZcU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAQe6QaFgTVWx-nRc1VCX3OlV_DlvgAfRVB63YlJpUZcU#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -125,13 +125,13 @@ sub:provenance {
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAnpzDlKwdtpX2p8xk2m2UgwHWIimocxVK609ReII_WK4> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAnpzDlKwdtpX2p8xk2m2UgwHWIimocxVK609ReII_WK4#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA7SKo3Vps5-Zxl4s7KQsTWrlk7Rv0ow1h9ccBYN3h4qU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA7SKo3Vps5-Zxl4s7KQsTWrlk7Rv0ow1h9ccBYN3h4qU#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -192,13 +192,13 @@ sub:provenance {
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAdqxSnINPXMoV9XlOl_mtTvscHQiZB3rNVx2w23O2Cp8> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAdqxSnINPXMoV9XlOl_mtTvscHQiZB3rNVx2w23O2Cp8#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA2KFZ3OeUOAZ12QbAfw2MqFjnLqEfWTHLegV819dkuEo> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA2KFZ3OeUOAZ12QbAfw2MqFjnLqEfWTHLegV819dkuEo#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -259,13 +259,13 @@ sub:provenance {
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA4FZ2a5Cz7Nsp5EjQqNqUmhssG0bVxHIVpOTs2o3G5vk> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA4FZ2a5Cz7Nsp5EjQqNqUmhssG0bVxHIVpOTs2o3G5vk#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAa-bGIiWggtIT7CjFaivJl3TdA4bPi3y8b5FBFi22qZo> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAa-bGIiWggtIT7CjFaivJl3TdA4bPi3y8b5FBFi22qZo#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -326,13 +326,13 @@ sub:provenance {
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA3TAjjDXB0ueRa4qSkwTXr0lkvV6yoZtAARJ36ZIgBjI> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA3TAjjDXB0ueRa4qSkwTXr0lkvV6yoZtAARJ36ZIgBjI#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAFtTfrRvTtm8b7xL27A5IouA6q7uliAbqTZBR1GINPZc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAFtTfrRvTtm8b7xL27A5IouA6q7uliAbqTZBR1GINPZc#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -407,13 +407,13 @@ sub:provenance {
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAxJuRPQS-TO7jrpQjIw5wuOFZuTPqHWfA8K2wDARwzx0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAxJuRPQS-TO7jrpQjIw5wuOFZuTPqHWfA8K2wDARwzx0#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAnffOKJh0hkWZzj1aTGiBvbbRIyao1uBIvTNtJkP60qc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAnffOKJh0hkWZzj1aTGiBvbbRIyao1uBIvTNtJkP60qc#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -484,13 +484,13 @@ sub:provenance {
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAib5rxNeC04YuSpSCbeyQG_IAXfLGxXXIDotJ_SHr7zE> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAib5rxNeC04YuSpSCbeyQG_IAXfLGxXXIDotJ_SHr7zE#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RALR-v-nnjXq3B4IC4zxAhXdQC1kcAxwe1jKh76b4hEp0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RALR-v-nnjXq3B4IC4zxAhXdQC1kcAxwe1jKh76b4hEp0#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -565,13 +565,13 @@ sub:provenance {
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RApHsnA-3pxRm8ovAlLKHHPxwA3TFREc0q4PMfHF7HvmA> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RApHsnA-3pxRm8ovAlLKHHPxwA3TFREc0q4PMfHF7HvmA#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAgpDIMIu2gyF-wgZFlJYnIoxcNRMXzuaFzmH9KkCquRE> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAgpDIMIu2gyF-wgZFlJYnIoxcNRMXzuaFzmH9KkCquRE#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -642,13 +642,13 @@ sub:provenance {
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAzAvjHBMMA_yKyawH49MajS6nsnW49poAWIZjTIu2_Kg> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAzAvjHBMMA_yKyawH49MajS6nsnW49poAWIZjTIu2_Kg#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RASTYyGNtwu9e43JisX6TuOFG12-ST9TzgF4em_yBcKAY> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RASTYyGNtwu9e43JisX6TuOFG12-ST9TzgF4em_yBcKAY#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -718,13 +718,13 @@ p38 and FAK pathways.""" ;
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA1Ls2iCEzEpXD9iSeXMYeyLizZDY9eD39hcioRSzGFkY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA1Ls2iCEzEpXD9iSeXMYeyLizZDY9eD39hcioRSzGFkY#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9b8-VsihpwVcLn0VrpBgbj4Gzfws3n48AzSLrpO9hMw> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9b8-VsihpwVcLn0VrpBgbj4Gzfws3n48AzSLrpO9hMw#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -796,13 +796,13 @@ p38 and FAK pathways.""" ;
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RANdTAKt9_cggyZdbRNmbRxJi25Q8LLpO5YzDGLpMBvA0> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RANdTAKt9_cggyZdbRNmbRxJi25Q8LLpO5YzDGLpMBvA0#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAwMfuPzQlbcOhEGnWfhrvueluRCi97ZEO4Gq7efkkfX8> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAwMfuPzQlbcOhEGnWfhrvueluRCi97ZEO4Gq7efkkfX8#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -874,13 +874,13 @@ p38 and FAK pathways.""" ;
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RALvjRxby8-SJp4IqKIFkdjEAzQMI_MoidAM0f8I-2fRs> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RALvjRxby8-SJp4IqKIFkdjEAzQMI_MoidAM0f8I-2fRs#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAYDe0YhGqOelJk48qJ1ejNwpUHdBmXEpiyTnyMKudzuU> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAYDe0YhGqOelJk48qJ1ejNwpUHdBmXEpiyTnyMKudzuU#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -952,13 +952,13 @@ p38 and FAK pathways.""" ;
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA8YaIxvaNLiqNAqrRPaLRZxPb4gLy2-GGOm5wOQtUSgw> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA8YaIxvaNLiqNAqrRPaLRZxPb4gLy2-GGOm5wOQtUSgw#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA0vxZZ3w5WGrMhe_1LIfPhNUBUlka8X36ZBLY1MdgUtA> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA0vxZZ3w5WGrMhe_1LIfPhNUBUlka8X36ZBLY1MdgUtA#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -1030,13 +1030,13 @@ p38 and FAK pathways.""" ;
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAJFgmcy11baLVMICO6OOkkhjW7YWXVp9gwS2F9XqH9gY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAJFgmcy11baLVMICO6OOkkhjW7YWXVp9gwS2F9XqH9gY#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RA9QFPNn1ikYbPlPJ2OaR-gcGpiK_0xwK9p3BWihj1G3U> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RA9QFPNn1ikYbPlPJ2OaR-gcGpiK_0xwK9p3BWihj1G3U#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -1100,13 +1100,13 @@ sub:provenance {
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAFLURZQ6A9jnmze9v1isePlnHhHaMig9--BTNWCYIU2A> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAFLURZQ6A9jnmze9v1isePlnHhHaMig9--BTNWCYIU2A#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAlvr755_A8Yy3yxMJSVAB9kEbta2Igt_aTJtGGDhbwO0> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAlvr755_A8Yy3yxMJSVAB9kEbta2Igt_aTJtGGDhbwO0#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -1171,13 +1171,13 @@ sub:provenance {
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAbuXRVQSH8MAfe_CH-481zdSssfb27uDvCs_yKQkd764> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAbuXRVQSH8MAfe_CH-481zdSssfb27uDvCs_yKQkd764#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RADHCx6zaPkY4qijYq7k6_WvuzbWY5RlPeqftUBCm3T7o> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RADHCx6zaPkY4qijYq7k6_WvuzbWY5RlPeqftUBCm3T7o#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -1242,13 +1242,13 @@ sub:provenance {
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAT-VpSugo5NrtVhY4qv2CQ8V6_jbUKarl4mKy4ngnQ0g> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAT-VpSugo5NrtVhY4qv2CQ8V6_jbUKarl4mKy4ngnQ0g#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAdmbBatMKFoLdXJU0aBkAeccqnYZb2rtWmyRxSbaTMKc> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAdmbBatMKFoLdXJU0aBkAeccqnYZb2rtWmyRxSbaTMKc#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -1309,13 +1309,13 @@ sub:provenance {
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RANllOalfnJykIijl0MOuYgmEUBqzH4mNZq0Xz8_yMfVY> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RANllOalfnJykIijl0MOuYgmEUBqzH4mNZq0Xz8_yMfVY#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAL-JzZboVMwnJ8HwJoF3SoxokMKuvIl2-AmCoBqgSbUI> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAL-JzZboVMwnJ8HwJoF3SoxokMKuvIl2-AmCoBqgSbUI#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -1376,13 +1376,13 @@ sub:provenance {
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
 
 
-@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAHDgtD2thvZ_5BkaxrY12Dx187nBFhp1WDVZGS9TBfco> .
-@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAHDgtD2thvZ_5BkaxrY12Dx187nBFhp1WDVZGS9TBfco#> .
+@prefix this: <http://www.tkuhn.ch/bel2nanopub/RAqJgJMe4PMZN9NOM1u-UOn_Q15gm7pTgEVtkgemosPPM> .
+@prefix sub: <http://www.tkuhn.ch/bel2nanopub/RAqJgJMe4PMZN9NOM1u-UOn_Q15gm7pTgEVtkgemosPPM#> .
 @prefix beldoc: <http://resource.belframework.org/belframework/1.0/knowledge/full_abstract3.bel> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -1443,6 +1443,6 @@ sub:provenance {
 }
 
 sub:pubinfo {
-	this: dct:created "2014-04-25T12:57:00.028+02:00"^^xsd:dateTime ;
-		pav:createdBy orcid:0000-0002-1267-0234 .
+	this: dct:created "2014-07-01T15:39:00.028+02:00"^^xsd:dateTime ;
+		pav:createdBy orcid:0000-0001-6818-334X , orcid:0000-0002-1267-0234 .
 }
