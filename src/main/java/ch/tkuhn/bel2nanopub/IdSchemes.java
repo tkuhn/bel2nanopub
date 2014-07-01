@@ -59,7 +59,9 @@ public class IdSchemes {
 				} else {
 					uriString = ns + id;
 				}
-				npCreator.addNamespace(sc.getRdfPrefix(), ns);
+				if (!ns.isEmpty()) {
+					npCreator.addNamespace(sc.getRdfPrefix(), ns);
+				}
 			}
 		}
 		String ns = schemeNameOrBelNs;
