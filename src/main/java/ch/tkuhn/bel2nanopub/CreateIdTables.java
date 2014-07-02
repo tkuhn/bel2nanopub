@@ -113,8 +113,8 @@ public class CreateIdTables {
 			String line;
 			while ((line = r.readLine()) != null) {
 				line = line.trim();
-				String id = line.replaceFirst("^\"(.*)\",\"http://bio2rdf\\.org/mesh:(.*)\"$", "$1");
-				String tree = line.replaceFirst("^\"(.*)\",\"http://bio2rdf\\.org/mesh:(.*)\"$", "$2");
+				String id = line.replaceFirst("^(.*),(.*)$", "$1");
+				String tree = line.replaceFirst("^(.*),(.*)$", "$2");
 				meshTreeMap.put(tree, id);
 			}
 		} finally {

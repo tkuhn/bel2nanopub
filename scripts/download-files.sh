@@ -37,7 +37,7 @@ wget -O meshtreemap-5.csv 'http://mesh.bio2rdf.org/sparql?query=SELECT+%3Fi+%3Ft
   cat meshtreemap-3.csv | sed '1d' ;
   cat meshtreemap-4.csv | sed '1d' ;
   cat meshtreemap-5.csv | sed '1d'
-) > meshtreemap.csv
+) | sed sed 's/"\(.*\)","http:\/\/bio2rdf\.org\/mesh:\(.*\)"/\1,\2/' > meshtreemap.csv
 
 rm meshtreemap-*.csv
 
