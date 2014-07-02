@@ -99,7 +99,7 @@ public class BelRdfVocabulary {
 //		relMap.put("hasMember", new URIImpl(BELV_NS + "hasMember"));
 //		relMap.put("hasComponent", new URIImpl(BELV_NS + "hasComponent"));
 
-		// Made up URIs, not used by official BEL tools:
+		// Made-up URIs, not used by official BEL tools:
 		relMap.put("transcribedTo", new URIImpl(BELV_NS + "transcribedTo"));  // synonym: :>
 		relMap.put("translatedTo", new URIImpl(BELV_NS + "translatedTo"));  // synonym: >>
 		relMap.put("translocates", new URIImpl(BELV_NS + "translocates"));
