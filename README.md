@@ -21,9 +21,20 @@ have to be built:
     $ scripts/download-files.sh
     $ scripts/CreateIdTables.sh
 
+Alternatively to the two commands above, pre-built tables can be downloaded from the release
+page (https://github.com/tkuhn/bel2nanopub/releases/) and placed in `tables/generated`.
+
 Then BEL documents can be transformed as follows:
 
     $ scripts/Bel2Nanopub.sh doc1.bel doc2.bel > output.nanopubs.trig
+
+Run the examples:
+
+    $ scripts/run-examples.sh
+
+Run the corpora provided by OpenBEL ("small corpus" and "large corpus"):
+
+    $ scripts/run-bel-corpora.sh
 
 
 Examples
