@@ -3,8 +3,6 @@ BEL2nanopub
 
 Transforming BEL documents into nanopublications.
 
-*Work in progress...*
-
 
 Examples
 --------
@@ -27,12 +25,6 @@ Installation of latest snapshot of nanopub-java:
 
     $ git clone git@github.com:Nanopublication/nanopub-java.git
     $ cd nanopub-java
-    $ mvn install
-
-Installation of latest snapshot of trustyuri-java:
-
-    $ git clone git@github.com:trustyuri/trustyuri-java.git
-    $ cd trustyuri-java
     $ mvn install
 
 
@@ -63,11 +55,11 @@ RDF as produced by bel.rb:
 
 In nanopubs using standard reification:
 
-    node:1 a rdf:Statement ;
-        rdf:subject node:2 ;
+    sub:_3 a rdf:Statement ;
+        rdf:subject sub:_1 ;
         rdf:predicate belv:directlyIncreases ;
-        rdf:object node:3 ;
-        obo:BFO_0000066 mesh:D002467 .  # occurs in cell nucleus
+        rdf:object sub:_2 ;
+        occursIn: mesh:D002467 .
 
 
 ### Citation/Evidence
@@ -86,11 +78,11 @@ RDF as produced by bel.rb:
 
 In nanopubs using PROV:
 
-    sub:Prov {
-        node:1 prov:value "Some quoted evidence text." ;
-            prov:wasQuotedFrom <http://www.ncbi.nlm.nih.gov/pubmed/12345678> .
-        sub:Ass prov:hadPrimarySource <http://www.ncbi.nlm.nih.gov/pubmed/12345678> ;
-            prov:wasDerivedFrom node:1 .
+    sub:provenance {
+        sub:_1 prov:value "Some quoted evidence text." ;
+            prov:wasQuotedFrom pubmed:12345678 .
+        sub:assertion prov:hadPrimarySource pubmed:12345678 ;
+            prov:wasDerivedFrom sub:_1 .
     }
 
 
