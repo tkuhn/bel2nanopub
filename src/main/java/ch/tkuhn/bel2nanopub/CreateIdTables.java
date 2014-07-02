@@ -113,8 +113,8 @@ public class CreateIdTables {
 			String line;
 			while ((line = r.readLine()) != null) {
 				line = line.trim();
-				String id = line.replaceFirst("^\"(.*)\",\"(.*)\"$", "$1");
-				String tree = line.replaceFirst("^\"(.*)\",\"(.*)\"$", "$2");
+				String id = line.replaceFirst("^\"(.*)\",\"http://bio2rdf\\.org/mesh:(.*)\"$", "$1");
+				String tree = line.replaceFirst("^\"(.*)\",\"http://bio2rdf\\.org/mesh:(.*)\"$", "$2");
 				meshTreeMap.put(tree, id);
 			}
 		} finally {
@@ -146,6 +146,10 @@ public class CreateIdTables {
 						String id = line.substring(i + 1);
 						id = sc.applyDirectMappingPattern(id);
 						if (sc.getMappingType().equals("belanno-mesh")) {
+							if (!meshTreeMap.containsKey(id)) {
+								System.err.println("Cannot map Mesh id: " + id);
+								continue;
+							}
 							id = meshTreeMap.get(id).toString();
 						}
 						writers.get(sc.getName()).write(id + " " + label + "\n");

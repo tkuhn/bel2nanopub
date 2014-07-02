@@ -1,0 +1,10 @@
+*~
+/.*
+/classpath.txt
+/target
+/downloads
+/tables/generated
+/scratch
+/output
+local
+*.bak

@@ -1,7 +1,29 @@
 BEL2nanopub
 ===========
 
-Transforming BEL documents into nanopublications.
+This code base transforms BEL documents into nanopublications. In contrast to the mapping to RDF
+defined by bel.rb (https://github.com/OpenBEL/bel.rb), we are here trying to use as much as
+possible standard URIs of existing vocabularies and ontologies.
+
+
+Execution
+---------
+
+Maven has to be installed and the latest snapshot of nanopub-java:
+
+    $ git clone git@github.com:Nanopublication/nanopub-java.git
+    $ cd nanopub-java
+    $ mvn install
+
+Before the transformation can be run, some resource files have to be downloaded and mapping tables
+have to be built:
+
+    $ scripts/download-files.sh
+    $ scripts/CreateIdTables.sh
+
+Then BEL documents can be transformed as follows:
+
+    $ scripts/Bel2Nanopub.sh doc1.bel doc2.bel > output.nanopubs.trig
 
 
 Examples
@@ -10,29 +32,10 @@ Examples
 See the [example directory](src/main/resources/examples).
 
 
-Dependencies
-------------
-
-Maven has to be installed.
-
-Installation of OpenBEL:
-
-    $ git clone git@github.com:OpenBEL/openbel-framework.git
-    $ cd openbel-framework/org.openbel.framework.common
-    $ mvn install
-
-Installation of latest snapshot of nanopub-java:
-
-    $ git clone git@github.com:Nanopublication/nanopub-java.git
-    $ cd nanopub-java
-    $ mvn install
-
-
 Mapping
 -------
 
-Below the mapping to RDF and the differences to the mapping by bel.rb are
-described. 
+Below the mapping to RDF and the differences to the mapping by bel.rb are described. 
 
 
 ### Reification
@@ -86,11 +89,18 @@ In nanopubs using PROV:
     }
 
 
-### Third-Party Identifiers
+### Third-Party Vocabularies
 
-The mapping to third-party identifiers is defined in
-[this JSON file](src/main/resources/idschemes.json). The tables for the manual
-mappings are in the [tables directory](tables).
+The mapping to identifiers of third-party vocabularies is defined in
+[this JSON file](src/main/resources/idschemes.json). The tables for the manual mappings are in the
+[tables directory](tables).
+
+
+### Identifiers with BEL Namespace
+
+The general relations defined by BEL like 'directlyIncreases' are currently not mapped to other
+existing vocabularies or ontologies, but we are using URIs in the BEL namespace (the same ones used
+by bel.rb, except for some cases where we had to make up new ones).
 
 
 License
