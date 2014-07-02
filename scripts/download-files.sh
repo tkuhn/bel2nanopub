@@ -45,3 +45,27 @@ rm meshtreemap-*.csv
 # Download mapping from version 1.0 to 20131211:
 
 wget -O change-20131211.json http://resource.belframework.org/belframework/20131211/change_log.json
+
+
+# Download small/large corpus for version 1.0
+
+URL=http://resource.belframework.org/belframework/1.0/knowledge
+
+wget -O downloads/small_corpus-1.0-original.bel $URL/small_corpus.bel
+wget -O downloads/large_corpus-1.0-original.bel $URL/large_corpus.bel
+
+
+# Download small/large corpus for version 20131211
+
+URL=http://resource.belframework.org/belframework/20131211/knowledge
+
+wget -O downloads/small_corpus-20131211-original.bel $URL/small_corpus.bel
+wget -O downloads/large_corpus-20131211-original.bel $URL/large_corpus.bel
+
+
+# Remove carriage return characters from BEL documents
+
+cat downloads/small_corpus-1.0-original.bel | sed 's/\r//' > downloads/small_corpus-1.0.bel
+cat downloads/large_corpus-1.0-original.bel | sed 's/\r//' > downloads/large_corpus-1.0.bel
+cat downloads/small_corpus-20131211-original.bel | sed 's/\r//' > downloads/small_corpus-20131211.bel
+cat downloads/large_corpus-20131211-original.bel | sed 's/\r//' > downloads/large_corpus-20131211.bel

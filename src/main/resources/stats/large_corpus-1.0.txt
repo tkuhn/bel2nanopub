@@ -1,0 +1,1692 @@
+STATEMENT COUNT: 75581
+RELATIONS:
+  46432  increases
+  20038  decreases
+  5728  directlyIncreases
+  1160  directlyDecreases
+  402  positiveCorrelation
+  243  negativeCorrelation
+  52  hasComponent
+  8  association
+  2  rateLimitingStepOf
+  1  translatedTo
+  1  transcribedTo
+FUNCTIONS:
+  32006  p
+  31585  r
+  21185  a
+  13755  kin
+  13493  bp
+  12049  tscript
+  6902  cat
+  4962  path
+  4240  complex
+  1382  gtp
+  969  m
+  678  phos
+  656  sec
+  371  tloc
+  314  composite
+  246  surf
+  149  tport
+  64  pep
+  35  deg
+  32  rxn
+  17  chap
+  12  g
+  4  act
+  2  ribo
+ANNOTATIONS:
+  75581  Species
+  18542  Cell
+  14626  CellLine
+  10296  Tissue
+  5710  BodyRegion
+  3703  DigestiveSystem
+  3526  Disease
+  3011  RespiratorySystem
+  2101  CellStructure
+  1766  CardiovascularSystem
+  1444  UrogenitalSystem
+  822  NervousSystem
+  504  IntegumentarySystem
+  425  HemicAndImmuneSystem
+  168  FluidAndSecretion
+PARAMETERS:
+  2778  GO:"response to hypoxia"
+  1524  MESHPP:Apoptosis
+  1403  HGNC:EGF
+  979  GO:"cell proliferation"
+  966  CHEBI:lipopolysaccharide
+  724  SCHEM:"serum insulin"
+  723  CHEBI:"reactive oxygen species"
+  709  HGNC:TNF
+  655  CHEBI:"hydrogen peroxide"
+  622  SCHEM:"Oxidized Low Density Lipoprotein"
+  559  SCHEM:"serum glucose"
+  555  SCHEM:"cyclic AMP"
+  507  CHEBI:estradiol
+  507  GO:angiogenesis
+  468  SCHEM:Tretinoin
+  462  CHEBI:"nitric oxide"
+  421  SCHEM:Calcium
+  399  SCHEM:"Tetradecanoylphorbol acetate"
+  398  MESHD:Ischemia
+  395  MESHPP:Obesity
+  385  CHEBI:androgen
+  381  HGNC:TGFB1
+  380  SDIS:"bacterial infection"
+  373  SDIS:"food intake"
+  355  HGNC:IL6
+  350  CHEBI:nicotine
+  347  SDIS:"tissue damage"
+  334  HGNC:VEGFA
+  322  GO:"response to heat"
+  319  CHEBI:calcitriol
+  319  SDIS:"viral infection"
+  306  HGNC:TP53
+  303  GOCCACC:"GO:0005737"
+  294  GO:"cell growth"
+  292  GO:aging
+  289  HGNC:IL1B
+  287  CHEBI:progesterone
+  287  CHEBI:gefitinib
+  274  GO:"response to oxidative stress"
+  268  SDIS:"laminar shear stress"
+  266  MGI:Tnf
+  264  GO:"cell adhesion"
+  262  GO:"replicative cell aging"
+  252  SCHEM:Stanolone
+  250  SCHEM:Hydrocortisone
+  248  GO:"inflammatory response"
+  243  CHEBI:glucocorticoid
+  242  GO:"myoblast differentiation"
+  238  MESHPP:Exercise
+  233  HGNC:IL8
+  225  GO:"cell migration"
+  225  HGNC:IFNG
+  218  SCHEM:Dinoprostone
+  214  SDIS:"mechanical strain"
+  214  HGNC:CDKN1A
+  210  SCHEM:Colforsin
+  199  HGNC:IGF1
+  199  GO:"cell differentiation"
+  196  CHEBI:ceramide
+  196  SCHEM:CD437
+  195  CHEBI:mifepristone
+  193  CHEBI:clofibrate
+  193  SCHEM:Thiazolidinedione
+  191  CHEBI:"trichostatin A"
+  186  CHEBI:rosiglitazone
+  185  GOCCACC:"GO:0005634"
+  180  EGID:183
+  179  SCHEM:"Nutlin 3"
+  175  SCHEM:"serum leptin"
+  175  GO:"neuron differentiation"
+  174  HGNC:FGF2
+  172  MESHPP:"Insulin Resistance"
+  164  SCHEM:"D-Glucose, anhydrous"
+  164  HGNC:HGF
+  164  HGNC:MAPK1
+  163  SDIS:"monocyte adherence"
+  159  HGNC:NGF
+  157  HGNC:EGFR
+  154  CHEBI:lapatinib
+  153  HGNC:"MIR124-1"
+  151  MESHD:Hyperoxia
+  151  CHEBI:cholesterol
+  147  SDIS:"tumor growth"
+  144  GO:"cell cycle"
+  143  GO:"response to starvation"
+  143  CHEBI:ciprofibrate
+  143  CHEBI:camptothecin
+  142  HGNC:MAPK3
+  141  CHEBI:resveratrol
+  141  MGI:Tgfb1
+  138  CHEBI:"angiotensin II"
+  138  SCHEM:Allergens
+  137  GO:"response to DNA damage stimulus"
+  137  HGNC:IL4
+  135  HGNC:IRS1
+  134  SCHEM:"Enzastaurin Hydrochloride"
+  134  SCHEM:Dronabinol
+  134  SCHEM:Sirolimus
+  133  HGNC:CCND1
+  133  GO:"response to UV"
+  131  HGNC:STAT3
+  130  HGNC:BCL2
+  129  MGI:Il6
+  127  HGNC:RB1
+  127  HGNC:IL18
+  126  SDIS:"mitochondrial DNA damage"
+  126  HGNC:NRG1
+  126  HGNC:CXCL12
+  126  CHEBI:insulin
+  125  HGNC:JUN
+  124  GO:"DNA methylation"
+  123  CHEBI:"arachidonic acid"
+  123  HGNC:CDKN1B
+  123  CHEBI:omeprazole
+  122  EGID:3630
+  122  PFH:"AKT Family"
+  121  SCHEM:"Low Density Lipoprotein"
+  121  SDIS:"high-fat diet"
+  121  HGNC:CCL2
+  121  HGNC:MYC
+  120  CHEBI:aldosterone
+  119  EGID:24179
+  118  HGNC:CTNNB1
+  117  SDIS:"mechanical stress"
+  116  GO:"muscle contraction"
+  116  CHEBI:cisplatin
+  115  GO:"response to endoplasmic reticulum stress"
+  114  SDIS:"lung adenocarcinoma"
+  114  GO:"response to osmotic stress"
+  113  GO:"microtubule polymerization"
+  110  CHEBI:histamine
+  109  HGNC:MIR106B
+  108  SCHEM:"Helicobacter pylori infection"
+  108  HGNC:PTK2
+  106  MGI:Dysf
+  105  PFM:"Ifna Family"
+  105  NCM:"Luteinizing Hormone Complex"
+  104  GOCCACC:"GO:0005886"
+  104  CHEBI:erlotinib
+  103  GO:"cell death"
+  103  CHEBI:simvastatin
+  102  SCHEM:"Cyclic GMP"
+  101  MESHPP:"Menstrual Cycle"
+  101  HGNC:MIR106A
+  100  SCHEM:"trans10,cis12-Octadecadienoate"
+  99  HGNC:PTGS2
+  99  SCHEM:"Adenosine triphosphate"
+  98  GO:"hyperosmotic response"
+  98  HGNC:THAP1
+  97  HGNC:HMOX1
+  97  SCHEM:"Oxidized High Density Lipoprotein"
+  96  HGNC:HIF1A
+  96  HGNC:NFKBIA
+  96  MGI:Ifng
+  96  CHEBI:testosterone
+  96  HGNC:FN1
+  95  HGNC:CSF2
+  94  CHEBI:melatonin
+  93  CHEBI:"cholic acid"
+  92  SCHEM:Pravastatin
+  92  CHEBI:"vitamin E"
+  91  EGID:3845
+  89  GO:"macrophage activation"
+  89  GO:"neutrophil chemotaxis"
+  89  CHEBI:hemin
+  88  HGNC:ICAM1
+  88  CHEBI:fenofibrate
+  88  RGD:Tnf
+  87  PFH:"HDAC Family"
+  86  MESHPP:"Liver Regeneration"
+  86  SCHEM:Iloprost
+  86  MGI:Hist1h1t
+  85  SCHEM:Norepinephrine
+  84  HGNC:CREB1
+  84  HGNC:IL2
+  84  MGI:Hist1h1a
+  84  CHEBI:fulvestrant
+  82  HGNC:GSK3B
+  81  HGNC:SERPINE1
+  81  HGNC:AKT1
+  80  MGI:Hoxa13
+  80  HGNC:IL1A
+  80  HGNC:IL13
+  79  CHEBI:oxandrolone
+  79  CHEBI:"lysophosphatidic acid"
+  79  HGNC:IL10
+  77  SCHEM:Oxidopamine
+  77  SCHEM:"LY 294002"
+  77  HGNC:MIRLET7B
+  77  HGNC:MET
+  76  SCHEM:"Retinol acetate"
+  76  HGNC:FOS
+  75  PFH:"TGFB Family"
+  75  HGNC:CD40LG
+  75  HGNC:IGFBP3
+  75  CHEBI:raloxifene
+  74  GO:"response to radiation"
+  74  MESHD:Fibrosis
+  74  HGNC:MIR21
+  74  HGNC:IFNA1
+  74  GO:"response to cold"
+  73  HGNC:F2
+  72  CHEBI:troglitazone
+  72  MGI:Gcm1
+  71  CHEBI:"hyaluronic acid"
+  71  HGNC:RAF1
+  71  CHEBI:"okadaic acid"
+  70  HGNC:SHC1
+  70  MGI:Cln5
+  69  HGNC:THBS1
+  69  HGNC:"MIR1-1"
+  69  SCHEM:"Dietary Lipid"
+  69  GO:"response to UV-B"
+  68  SDIS:"turbulent shear stress"
+  68  MGI:Cdkn1a
+  68  CHEBI:"palmitic acid"
+  67  HGNC:SPP1
+  67  HGNC:BAD
+  67  HGNC:CD40
+  67  HGNC:CAV1
+  67  HGNC:INSR
+  66  SCHEM:"Hemoglobin A"
+  66  SDIS:"Partial Pancreatectomy"
+  66  MGI:Ccl2
+  66  MGI:Il1b
+  66  HGNC:VCAM1
+  65  HGNC:ERBB2
+  65  SDIS:"muscle glucose import"
+  65  SDIS:Diabetes
+  65  HGNC:FAS
+  64  MGI:Gyk
+  64  HGNC:EP300
+  64  HGNC:NOS3
+  64  HGNC:CREBBP
+  64  HGNC:STAT1
+  63  CHEBI:metformin
+  63  HGNC:BRCA1
+  63  HGNC:ESR1
+  63  HGNC:KRAS
+  63  RGD:Ngf
+  62  MGI:Il4
+  62  CHEBI:taurine
+  62  SCHEM:Metribolone
+  62  HGNC:FGF1
+  62  HGNC:CCL5
+  62  CHEBI:thapsigargin
+  61  GO:"response to stress"
+  61  HGNC:EIF4EBP1
+  61  SCHEM:Telomestatin
+  61  HGNC:TNFSF10
+  61  SCHEM:"High Density Lipoprotein"
+  60  SCHEM:Epinephrine
+  60  CHEBI:lovastatin
+  60  GO:"G2 phase of mitotic cell cycle"
+  60  PFH:"IFNA Family"
+  59  HGNC:MDM2
+  59  SDIS:"Type II diabetes"
+  59  HGNC:NCOA1
+  58  HGNC:CST6
+  58  SCHEM:Isoproterenol
+  58  SDIS:"burn injury"
+  57  HGNC:IGF1R
+  57  CHEBI:celecoxib
+  57  HGNC:AHNAK
+  57  MGI:Spp1
+  57  HGNC:MMP9
+  57  CHEBI:paclitaxel
+  57  MGI:Igf1
+  57  SCHEM:"Mycobacterium tuberculosis, ext."
+  56  HGNC:GAB1
+  56  MGI:Lep
+  56  HGNC:SMAD2
+  56  HGNC:HBEGF
+  56  HGNC:CDKN2A
+  56  CHEBI:"leukotriene B4"
+  55  MGI:Il13
+  55  SDIS:denervation
+  54  SCHEM:Estrogens
+  54  HGNC:DUSP1
+  54  MGI:Myc
+  54  MGI:"Mir133a-2"
+  54  MGI:"Mir133a-1"
+  53  CHEBI:glutathione
+  53  PFR:"Ifna Family"
+  53  HGNC:RPS6KB1
+  53  EGID:387202
+  53  HGNC:TGFA
+  53  HGNC:EDN1
+  53  CHEBI:flutamide
+  53  SCHEM:Cholecalciferol
+  52  GO:phagocytosis
+  52  MGI:Arx
+  52  HGNC:SRC
+  52  CHEBI:wortmannin
+  52  HGNC:FOXO1
+  52  MGI:Il10
+  52  HGNC:CCL3
+  51  HGNC:DYSF
+  51  HGNC:EGR1
+  51  HGNC:PTEN
+  50  HGNC:IRS2
+  50  HGNC:SOCS3
+  50  MGI:Ccnd1
+  50  PFH:"VEGF Family"
+  50  HGNC:LEP
+  49  HGNC:GADD45A
+  49  HGNC:F3
+  49  HGNC:NOX1
+  49  HGNC:SELE
+  49  MGI:Lpl
+  49  MGI:Vegfa
+  49  MGI:Gh
+  49  HGNC:PLCG1
+  48  CHEBI:paricalcitol
+  48  HGNC:MMP1
+  48  MGI:Notch1
+  48  CHEBI:lipid
+  48  HGNC:ATF2
+  47  HGNC:PDGFB
+  47  HGNC:CXCL1
+  47  SCHEM:"PD 98,059"
+  47  HGNC:HRAS
+  47  GO:"regulation of vascular permeability"
+  47  HGNC:ITGB1
+  47  HGNC:KDR
+  46  HGNC:BCL2L1
+  46  CHEBI:staurosporine
+  46  HGNC:NDRG1
+  46  SDIS:"adipocyte lipolysis"
+  46  HGNC:RELA
+  46  RGD:Il1b
+  46  HGNC:CXCL2
+  46  HGNC:ID1
+  45  HGNC:CTNND1
+  45  CHEBI:"folic acid"
+  45  SDIS:metastasis
+  45  RGD:Egf
+  45  GO:"insulin secretion"
+  45  HGNC:INS
+  45  MGI:Irs1
+  44  HGNC:PLAU
+  44  HGNC:PXN
+  44  MGI:Mir140
+  44  HGNC:CTGF
+  44  GO:"gastric acid secretion"
+  44  HGNC:AR
+  44  RGD:Igf1
+  44  GO:chemotaxis
+  44  HGNC:E2F1
+  44  HGNC:BAX
+  44  HGNC:CDH1
+  44  HGNC:MAP2K1
+  43  SCHEM:Aspirin
+  43  CHEBI:bortezomib
+  43  MESHD:Atherosclerosis
+  43  HGNC:NOS2
+  43  HGNC:CXCR4
+  43  HGNC:JUNB
+  43  GO:"G1/S transition of mitotic cell cycle"
+  43  HGNC:XIAP
+  43  MGI:Adipoq
+  43  RGD:Tgfb1
+  42  RGD:Spp1
+  42  GO:"skeletal muscle hypertrophy"
+  42  CHEBI:atorvastatin
+  42  HGNC:JAK2
+  42  MGI:Ptgs2
+  41  SCHEM:FSH
+  41  MGI:Mapk1
+  41  CHEBI:coumarin
+  41  HGNC:MAPK14
+  41  RGD:Il6
+  41  MGI:Serpinb8
+  41  CHEBI:dopamine
+  41  HGNC:IFNB1
+  41  SCHEM:"Very Low Density Lipoprotein"
+  40  MGI:Jun
+  40  CHEBI:"bile salt"
+  40  HGNC:MUC1
+  40  HGNC:AREG
+  40  SDIS:"acute phase reaction"
+  39  EGID:5424
+  39  HGNC:BMP2
+  38  SCHEM:Triacylglycerol
+  38  SCHEM:fibrate
+  38  HGNC:PDGFA
+  38  HGNC:BNIP3
+  38  SCHEM:"Advanced Glycation End Product"
+  38  HGNC:BIRC5
+  38  SDIS:"response to shear stress"
+  38  HGNC:BHLHE40
+  38  HGNC:MIF
+  37  HGNC:STAT5B
+  37  HGNC:PLAG1
+  37  HGNC:IGF2
+  37  MGI:Trp53
+  37  HGNC:PPARG
+  37  HGNC:SOCS1
+  37  HGNC:CXCL10
+  37  HGNC:CRP
+  37  GO:vasoconstriction
+  37  HGNC:GH1
+  37  MGI:Stat1
+  37  PFM:"Pdgf Family"
+  37  MGI:Abcb1a
+  36  GO:"satellite cell activation"
+  36  MGI:Rb1
+  36  GO:"histone acetylation"
+  36  SDIS:"cyclic stretch"
+  36  HGNC:ELK1
+  36  HGNC:MMP2
+  36  HGNC:FOXO3
+  36  HGNC:TXNIP
+  36  GO:"muscle atrophy"
+  36  GO:vasodilation
+  35  HGNC:PRL
+  35  SDIS:"Photo-oxidative Stress"
+  35  HGNC:CSF1
+  35  HGNC:IL17A
+  35  SDIS:"cardiomyocyte hypertrophy"
+  35  HGNC:COL1A1
+  35  GO:gluconeogenesis
+  35  HGNC:CBL
+  35  PFH:"PDGF Family"
+  35  SCHEM:"SB-203580"
+  34  GO:"DNA replication"
+  34  HGNC:CCND3
+  34  MGI:Fos
+  34  SDIS:"Atherosclerotic lesion"
+  34  SDIS:"Cisplatin resistance"
+  34  SCHEM:Superoxides
+  34  RGD:Jun
+  34  HGNC:CEBPB
+  34  MGI:Pparg
+  33  CHEBI:"polyunsaturated fatty acid"
+  33  RGD:Mapk1
+  33  EGID:16847
+  33  CHEBI:pioglitazone
+  33  HGNC:CCL11
+  33  CHEBI:acetylcysteine
+  33  CHEBI:"carbon monoxide"
+  33  MGI:Kras
+  33  HGNC:HNF1A
+  33  MGI:Slc2a4
+  33  HGNC:MAPK8
+  33  MGI:Cebpb
+  32  GO:necrosis
+  32  MGI:Mxd1
+  32  HGNC:BRAF
+  32  HGNC:SMAD7
+  32  MGI:Angptl4
+  32  HGNC:LIF
+  31  HGNC:SOD2
+  31  HGNC:PLAUR
+  31  HGNC:CCND2
+  31  HGNC:HSPB1
+  31  MGI:Mmp12
+  31  MGI:Scarb1
+  31  HGNC:ENO1
+  31  HGNC:TIMP1
+  31  HGNC:TSC2
+  31  HGNC:WNT5A
+  31  HGNC:SMAD3
+  31  HGNC:NR4A1
+  31  HGNC:FASLG
+  31  HGNC:PRKCA
+  30  MGI:Il6st
+  30  HGNC:NANOG
+  30  GOCCACC:"GO:0043510"
+  30  HGNC:APOE
+  30  HGNC:SGK1
+  30  MGI:Lpin1
+  30  HGNC:BCAR1
+  30  HGNC:ADM
+  30  HGNC:APP
+  30  HGNC:ANXA2
+  30  HGNC:EPO
+  30  HGNC:NR3C1
+  30  HGNC:ID2
+  29  SCHEM:cytokine
+  29  HGNC:OSM
+  29  MGI:Cxcl1
+  29  GO:"fatty acid oxidation"
+  29  SCHEM:"SU 11274"
+  29  MGI:Cav1
+  29  MGI:Sod2
+  29  RGD:Nos2
+  29  HGNC:PAWR
+  29  HGNC:S1PR1
+  29  GO:"smooth muscle contraction"
+  29  MGI:Cftr
+  29  MGI:Fgf2
+  29  SCHEM:"Suberoylanilide hydroxamic acid"
+  29  MGI:Il18
+  29  HGNC:ELANE
+  29  MGI:Stat3
+  29  HGNC:BNIP3L
+  29  HGNC:DDIT3
+  29  GO:"insulin receptor signaling pathway"
+  29  HGNC:LYN
+  28  SCHEM:Ciglitazone
+  28  HGNC:BCL2A1
+  28  MGI:Mapk3
+  28  HGNC:BDNF
+  28  SDIS:"cell senescence"
+  28  HGNC:WNT3A
+  28  MGI:Cdkn1b
+  28  HGNC:RAC1
+  28  HGNC:COL1A2
+  28  HGNC:BTC
+  28  HGNC:NEDD9
+  28  PFM:"Akt Family"
+  28  CHEBI:gemcitabine
+  27  HGNC:OLR1
+  27  HGNC:CYR61
+  27  HGNC:SP1
+  27  MGI:Apoe
+  27  HGNC:TNKS1BP1
+  27  HGNC:STMN1
+  27  MGI:Mt1
+  27  HGNC:JAK1
+  27  HGNC:PPARGC1A
+  27  GO:glycolysis
+  27  HGNC:PPARA
+  27  MGI:Nfkbia
+  27  MGI:Klf7
+  27  MESHD:Sepsis
+  27  HGNC:ANXA1
+  27  CHEBI:caffeine
+  27  HGNC:CD36
+  27  HGNC:CCR2
+  27  MGI:Cxcl10
+  27  HGNC:ATF3
+  27  MGI:Hras1
+  27  SDIS:"Oncogene induced senescence"
+  27  GO:"stress-induced premature senescence"
+  26  MGI:Scd1
+  26  CHEBI:etoposide
+  26  MGI:Cntf
+  26  SDIS:"bile duct ligation"
+  26  HGNC:CTTN
+  26  HGNC:MSR1
+  26  HGNC:NPPA
+  26  MGI:Ccr2
+  26  MGI:Tnni3
+  26  SCHEM:Lysophosphatidylcholines
+  26  MGI:Egr1
+  26  CHEBI:adenosine
+  26  MGI:Cxcl12
+  26  HGNC:ADIPOQ
+  26  HGNC:SALL4
+  26  GO:"osteoblast differentiation"
+  26  MGI:Fasn
+  26  MGI:Bmp2
+  26  HGNC:PRKCD
+  25  MGI:Il3
+  25  HGNC:IER3
+  25  NCR:"Ngf Complex"
+  25  GO:"response to virus"
+  25  MGI:Ctnnb1
+  25  HGNC:MCL1
+  25  GO:"muscle cell differentiation"
+  25  HGNC:CSF3
+  25  RGD:Dusp1
+  25  HGNC:"MIR16-1"
+  25  GO:"monocyte activation"
+  25  PFM:"Il1 Family"
+  25  HGNC:ETS2
+  25  MESHD:Hypertrophy
+  25  MGI:Hnf1a
+  25  HGNC:PIK3R1
+  25  HGNC:GJA1
+  25  MGI:Ucp1
+  25  HGNC:DDIT4
+  25  HGNC:TSC22D3
+  25  HGNC:ZBTB17
+  25  HGNC:PRKCB
+  24  HGNC:STAT5A
+  24  HGNC:LDLR
+  24  HGNC:CCNE1
+  24  HGNC:MMP13
+  24  MGI:Thbs1
+  24  MGI:Cxcl2
+  24  MGI:Egf
+  24  MGI:"Mir16-1"
+  24  GO:"macrophage differentiation"
+  24  CHEBI:"ascorbic acid"
+  24  HGNC:HNRNPK
+  24  CHEBI:corticotropin
+  24  MGI:Cd44
+  24  HGNC:TIMP3
+  24  HGNC:AKT2
+  24  HGNC:RETN
+  24  MGI:Nos2
+  24  HGNC:TNFSF13B
+  24  HGNC:TFRC
+  24  MGI:Bcl2
+  24  SDIS:"systemic acute phase reaction"
+  24  HGNC:GRN
+  24  MGI:Ppara
+  24  HGNC:ITGB4
+  24  CHEBI:hydroquinone
+  24  HGNC:KIT
+  24  MESHPP:"Protein Biosynthesis"
+  24  HGNC:FASN
+  23  MGI:Retn
+  23  MGI:Hgf
+  23  GO:"glucose import"
+  23  HGNC:CCNB1
+  23  HGNC:TGFB2
+  23  GOCCACC:"GO:0043509"
+  23  HGNC:GSK3A
+  23  HGNC:VIM
+  23  HGNC:ZNF175
+  23  MESHD:Hypertension
+  23  RGD:Fgf2
+  23  CHEBI:bexarotene
+  23  MGI:Il12b
+  23  HGNC:ACTA2
+  23  HGNC:EREG
+  23  MGI:Cd36
+  23  MGI:Mif
+  23  HGNC:ANGPT2
+  23  HGNC:HSP90AA1
+  23  HGNC:IGFBP5
+  23  MGI:Hif1a
+  23  MGI:Nmu
+  23  SDIS:"tumor cell invasion"
+  23  HGNC:BIRC3
+  23  HGNC:FGF7
+  23  GO:"myoblast fusion"
+  23  HGNC:IKBKB
+  23  CHEBI:prednisolone
+  23  HGNC:SPARC
+  23  HGNC:PTK2B
+  22  GO:"platelet activation"
+  22  MGI:Rela
+  22  MGI:Id2
+  22  CHEBI:homocysteine
+  22  HGNC:PTN
+  22  HGNC:CCNA2
+  22  MGI:Hmox1
+  22  MGI:Vcam1
+  22  HGNC:STC1
+  22  GO:"hypotonic response"
+  22  HGNC:GADD45B
+  22  NCH:"Nfkb Complex"
+  22  SCHEM:"Benzyloxycarbonylleucyl-leucyl-leucine aldehyde"
+  22  HGNC:MEF2A
+  22  HGNC:RGS2
+  22  HGNC:FRS2
+  22  HGNC:INHBA
+  22  SCHEM:"Phosphatidylinositol-3,4,5-trisphosphate"
+  22  HGNC:CD14
+  22  RGD:Irs1
+  22  HGNC:NAMPT
+  22  GOCCACC:"GO:0005739"
+  22  HGNC:BTG1
+  22  HGNC:MAP2K2
+  22  HGNC:PRKCZ
+  22  HGNC:FADD
+  21  HGNC:IL6ST
+  21  MGI:Il2
+  21  HGNC:PGR
+  21  SDIS:"adipose glucose import"
+  21  HGNC:PLAT
+  21  HGNC:TP73
+  21  RGD:Mapk3
+  21  HGNC:PEBP1
+  21  EGID:653509
+  21  GO:"fatty acid beta-oxidation"
+  21  HGNC:ANGPT1
+  21  MGI:Col3a1
+  21  MGI:Mapk14
+  21  SCHEM:"LDL(-)"
+  21  SCHEM:"1-Alkyl-2-acetyl-sn-glycero-3-phosphocholine"
+  21  RGD:Fos
+  21  HGNC:BMP4
+  21  MGI:Ngf
+  21  HGNC:SMAD1
+  21  SCHEM:Sorbitol
+  21  HGNC:PARP1
+  21  MGI:Vim
+  21  HGNC:CDK2
+  21  HGNC:NCOR2
+  21  HGNC:HK2
+  21  HGNC:HES1
+  21  GO:"oxidative phosphorylation"
+  21  MGI:Socs3
+  20  MGI:Fabp4
+  20  SDIS:"oncogenic transformation"
+  20  HGNC:PTPN11
+  20  MGI:Phox2b
+  20  MESHCL:Cytoplasm
+  20  HGNC:SHB
+  20  HGNC:CASP9
+  20  HGNC:INSIG1
+  20  HGNC:TXN
+  20  GO:"myoblast proliferation"
+  20  HGNC:RPS6
+  20  SCHEM:Tunicamycin
+  20  HGNC:C3
+  20  SCHEM:Prostratin
+  20  CHEBI:"butyric acid"
+  20  HGNC:ERBB3
+  20  HGNC:PCNA
+  20  HGNC:SLC2A1
+  20  HGNC:IL1RN
+  20  CHEBI:"cholesterol ester"
+  20  HGNC:IRF1
+  20  CHEBI:haloperidol
+  20  HGNC:FOXO4
+  20  SDIS:"tissue repair"
+  20  EGID:6046
+  20  HGNC:MXI1
+  20  HGNC:BCL2L11
+  20  HGNC:IL15
+  20  HGNC:HSPA1A
+  20  HGNC:BLVRA
+  20  MGI:Junb
+  20  HGNC:NCOA3
+  20  MGI:Cd40lg
+  20  HGNC:UCP2
+  20  MGI:Irs2
+  20  SCHEM:Diacylglycerol
+  20  GO:"monocyte extravasation"
+  19  MGI:Csf1
+  19  MGI:Il5
+  19  EGID:2475
+  19  GO:"epithelial to mesenchymal transition"
+  19  MGI:Errfi1
+  19  HGNC:SUMO1
+  19  MGI:Bax
+  19  HGNC:SFN
+  19  HGNC:HSPD1
+  19  MGI:Casp3
+  19  HGNC:S100A9
+  19  HGNC:TRIM28
+  19  HGNC:NFE2L2
+  19  SDIS:"TLR signaling"
+  19  MGI:Myog
+  19  MGI:Foxo1
+  19  MGI:Jdp2
+  19  HGNC:SKP2
+  19  RGD:Vegfa
+  19  HGNC:MUC5AC
+  19  HGNC:TRAF1
+  19  HGNC:ALB
+  19  HGNC:CITED2
+  19  MGI:Serpine1
+  19  HGNC:CEBPA
+  19  HGNC:ATF4
+  19  MGI:Ucp2
+  19  RGD:Ctgf
+  19  HGNC:EZR
+  19  HGNC:IL7
+  18  HGNC:SERPINA1
+  18  MGI:Csf3
+  18  MGI:Id1
+  18  HGNC:ABCB1
+  18  HGNC:THBD
+  18  GO:"cardioblast differentiation"
+  18  NCH:"CD3 Complex"
+  18  SCHEM:Prasterone
+  18  HGNC:S100A8
+  18  HGNC:PLA2G4A
+  18  MGI:Fas
+  18  HGNC:PDCD4
+  18  CHEBI:"linoleic acid"
+  18  CHEBI:dexamethasone
+  18  MGI:Ccl5
+  18  MGI:Ccr5
+  18  RGD:Egfr
+  18  MGI:Ybx2
+  18  HGNC:ARRB2
+  18  HGNC:SREBF1
+  18  HGNC:IGFBP1
+  18  MGI:Osm
+  18  HGNC:CHEK1
+  18  HGNC:PDGFRA
+  18  HGNC:SLC7A11
+  18  HGNC:SOCS2
+  18  CHEBI:toremifene
+  18  SDIS:"anchorage-independent growth"
+  18  HGNC:CFLAR
+  18  PFH:"Histone H3 Family"
+  18  GO:"response to unfolded protein"
+  18  HGNC:TFF1
+  18  HGNC:TNFRSF1A
+  18  HGNC:CD44
+  18  CHEBI:bezafibrate
+  18  HGNC:FYN
+  18  HGNC:FST
+  18  HGNC:BTG2
+  18  HGNC:KRT18
+  18  HGNC:ZBTB16
+  18  MGI:Ptk2
+  18  MGI:Bmp4
+  18  HGNC:LOX
+  17  MGI:Csf2
+  17  HGNC:HBP1
+  17  HGNC:PEA15
+  17  MGI:Pck1
+  17  HGNC:TOP2A
+  17  HGNC:ABCA1
+  17  MGI:Taf4a
+  17  MGI:Taf4b
+  17  MGI:Ctgf
+  17  MGI:Cxcl9
+  17  MGI:Nfe2l2
+  17  HGNC:HSPA5
+  17  RGD:Pdgfb
+  17  HGNC:S100A4
+  17  HGNC:TJP1
+  17  MGI:Tlr4
+  17  GO:"endothelial cell activation"
+  17  HGNC:HP
+  17  HGNC:HNRNPU
+  17  HGNC:RBL2
+  17  HGNC:PCM1
+  17  HGNC:EFNA1
+  17  MGI:Cd40
+  17  RGD:Hmox1
+  17  HGNC:FGFR1
+  17  RGD:Ccnd1
+  17  HGNC:KITLG
+  17  MGI:Cdkn2a
+  17  SCHEM:"alpha-Bungarotoxin"
+  17  RGD:Edn1
+  17  HGNC:CXCL9
+  17  HGNC:MMP3
+  17  HGNC:MARCKS
+  17  MGI:Pawr
+  17  HGNC:HSF1
+  17  MGI:Nppa
+  17  HGNC:NFKB2
+  17  MGI:Pomc
+  17  MGI:Icam1
+  17  HGNC:STAT6
+  17  HGNC:SAT1
+  17  GO:"cellular extravasation"
+  17  MGI:Ucp3
+  17  HGNC:CYBB
+  17  HGNC:IL3
+  17  HGNC:PTPN6
+  17  HGNC:PFKFB3
+  17  HGNC:MAP3K5
+  17  MGI:Mdm2
+  17  MGI:Myod1
+  17  MGI:Socs1
+  16  HGNC:TLR2
+  16  MGI:Id3
+  16  HGNC:CRKL
+  16  HGNC:CCDC50
+  16  HGNC:CCNG2
+  16  HGNC:CASP8
+  16  HGNC:THPO
+  16  HGNC:IRAK1
+  16  MESHD:Neoplasms
+  16  PFH:"PRKC Family"
+  16  HGNC:GAPDH
+  16  HGNC:PDE3A
+  16  HGNC:RARA
+  16  RGD:Gsk3b
+  16  HGNC:MEF2C
+  16  MGI:Foxl1
+  16  MGI:Mt2
+  16  EGID:123
+  16  MGI:Lif
+  16  MGI:S100a8
+  16  HGNC:SREBF2
+  16  HGNC:ELF3
+  16  HGNC:LGALS1
+  16  MGI:Sox6
+  16  HGNC:TRAF2
+  16  MGI:Sparc
+  16  HGNC:MAPK10
+  16  HGNC:CDC42
+  16  HGNC:RASSF1
+  16  HGNC:VEGFC
+  16  EGID:5243
+  16  HGNC:KRT8
+  16  EGID:29760
+  16  MGI:Anxa2
+  16  EGID:5351
+  16  MGI:Il1a
+  16  HGNC:TERT
+  16  SCHEM:"N-Methylaspartate"
+  16  HGNC:NR4A2
+  16  MGI:Ccl11
+  16  MGI:Mmp9
+  16  HGNC:PMAIP1
+  16  HGNC:SDC4
+  16  MGI:Slc2a1
+  16  HGNC:TGFBR2
+  16  HGNC:BAG1
+  16  GO:"Wnt receptor signaling pathway"
+  16  HGNC:ITGA6
+  16  CHEBI:peptidoglycan
+  16  MGI:Bcl2l11
+  16  MGI:Ppargc1a
+  16  RGD:Ptgs2
+  16  MGI:Hp
+  16  HGNC:MAPK9
+  16  MGI:Gsk3b
+  16  MGI:Cebpd
+  16  GO:mitosis
+  16  HGNC:WNT1
+  16  HGNC:GDF15
+  16  GO:"S phase of mitotic cell cycle"
+  15  SCHEM:"serum fatty acid"
+  15  HGNC:TLR4
+  15  HGNC:PGF
+  15  SCHEM:"Smoke extract, cigarette"
+  15  HGNC:PTGIS
+  15  CHEBI:"vitamin A"
+  15  MGI:Tnfsf11
+  15  MGI:Adm
+  15  HGNC:GAB2
+  15  HGNC:RET
+  15  MGI:Bcar1
+  15  MGI:Wnt3a
+  15  MGI:Itgb1
+  15  HGNC:ACTB
+  15  MGI:Expi
+  15  HGNC:ABL1
+  15  HGNC:STC2
+  15  HGNC:MYD88
+  15  HGNC:PGK1
+  15  HGNC:VHL
+  15  MGI:Cyp7a1
+  15  HGNC:CHUK
+  15  HGNC:NRAS
+  15  MGI:Jak2
+  15  HGNC:WT1
+  15  GO:"histone deacetylation"
+  15  RGD:Ifng
+  15  SCHEM:"SB-202190"
+  15  EGID:122953
+  15  GO:spermatogenesis
+  15  HGNC:IL12B
+  15  MGI:Ccl3
+  15  HGNC:DKK1
+  15  HGNC:SLC2A4
+  15  HGNC:IL1R1
+  15  MGI:Pik3r1
+  15  SCHEM:"Epigallocatechin gallate"
+  15  HGNC:ARRB1
+  15  HGNC:JAG1
+  15  HGNC:PDGFRB
+  15  HGNC:GNRH1
+  15  HGNC:KLF10
+  15  RGD:Fosl1
+  15  MGI:Nanog
+  15  HGNC:IFT57
+  15  MGI:Fhl2
+  15  HGNC:CFB
+  15  HGNC:FHL2
+  15  RGD:Cebpb
+  15  HGNC:TYMP
+  15  HGNC:CEBPD
+  15  MGI:Ccnd2
+  15  HGNC:ADRB2
+  15  MGI:Foxa3
+  15  HGNC:CX3CL1
+  15  PFM:"Wnt Family"
+  15  HGNC:EPHA2
+  15  CHEBI:budesonide
+  15  HGNC:BHLHE41
+  15  HGNC:ITGB2
+  15  HGNC:HNRNPA1
+  15  HGNC:HGS
+  15  HGNC:COPS5
+  15  HGNC:MYOD1
+  15  MGI:Bcl2l1
+  15  MGI:Map2k1
+  15  HGNC:CHRNA7
+  15  GO:"immune response"
+  15  HGNC:GCLM
+  15  MGI:Srebf1
+  15  HGNC:KRT19
+  15  GO:"mitotic cell cycle"
+  15  HGNC:LPL
+  15  SDIS:castration
+  15  HGNC:U2AF1
+  14  HGNC:SERPINA3
+  14  HGNC:HSP90B1
+  14  MGI:Ctsl
+  14  HGNC:PML
+  14  MGI:Raf1
+  14  MGI:Gpx1
+  14  HGNC:CUX1
+  14  HGNC:SMARCE1
+  14  MGI:Apoa1
+  14  HGNC:THBS2
+  14  HGNC:NOTCH1
+  14  HGNC:AATF
+  14  SDIS:"Paclitaxel resistance"
+  14  HGNC:CTSD
+  14  CHEBI:genistein
+  (and more ...)
+STATEMENT PATTERNS:
+  46432  ... increases ...
+  20209  ... increases r(...)
+  20038  ... decreases ...
+  12955  p(...) increases ...
+  12328  a(...) increases ...
+  9801  ... decreases r(...)
+  7966  a(...) increases r(...)
+  7659  ... increases p(...)
+  6761  a(...) decreases ...
+  5728  ... directlyIncreases ...
+  5281  bp(...) increases ...
+  4773  p(...) decreases ...
+  4391  kin(...) increases ...
+  4118  a(...) decreases r(...)
+  4100  ... increases bp(...)
+  4067  tscript(...) increases ...
+  4013  bp(...) increases r(...)
+  3914  p(...) increases p(...)
+  3738  ... increases kin(...)
+  2932  tscript(...) increases r(...)
+  2908  cat(...) increases ...
+  2843  ... increases tscript(...)
+  2600  kin(...) directlyIncreases ...
+  2368  path(...) increases ...
+  2368  ... directlyIncreases p(...)
+  2305  kin(...) directlyIncreases p(...)
+  2252  ... decreases p(...)
+  2051  p(...) increases r(...)
+  2015  ... decreases bp(...)
+  1851  path(...) increases r(...)
+  1773  tscript(...) decreases ...
+  1746  p(...) increases bp(...)
+  1614  bp(...) decreases ...
+  1587  ... increases cat(...)
+  1514  complex(...)
+  1356  bp(...) decreases r(...)
+  1324  p(...) increases kin(...)
+  1310  p(...) directlyIncreases ...
+  1244  a(...) increases p(...)
+  1206  ... increases a(...)
+  1164  path(...) decreases ...
+  1160  ... directlyDecreases ...
+  1132  kin(...) increases p(...)
+  1117  kin(...) decreases ...
+  1113  tscript(...) decreases r(...)
+  1088  path(...) decreases r(...)
+  1055  p(...) decreases p(...)
+  1040  ... decreases tscript(...)
+  1013  cat(...) decreases ...
+  1003  p(...) increases tscript(...)
+  943  tscript(...) directlyIncreases ...
+  922  complex(...) increases ...
+  921  p(...) decreases bp(...)
+  897  ... directlyIncreases kin(...)
+  884  ... directlyIncreases r(...)
+  865  ... increases path(...)
+  863  tscript(...) directlyIncreases r(...)
+  842  m(...) decreases ...
+  833  p(...) decreases r(...)
+  821  ... directlyIncreases tscript(...)
+  791  kin(...) increases kin(...)
+  743  m(...) decreases r(...)
+  700  ... decreases kin(...)
+  618  ... decreases cat(...)
+  616  kin(...) increases r(...)
+  580  a(...) increases kin(...)
+  562  a(...) increases bp(...)
+  559  p(...) increases cat(...)
+  553  p(...) directlyIncreases kin(...)
+  542  ... increases complex(...)
+  540  a(...) decreases p(...)
+  539  gtp(...) increases ...
+  519  ... increases sec(...)
+  519  ... decreases a(...)
+  511  kin(...) increases tscript(...)
+  476  cat(...) increases kin(...)
+  472  p(...) directlyDecreases ...
+  470  cat(...) increases bp(...)
+  456  complex(...) directlyIncreases ...
+  413  a(...) increases tscript(...)
+  412  p(...) directlyIncreases tscript(...)
+  407  complex(...) decreases ...
+  402  ... positiveCorrelation ...
+  397  p(...) decreases tscript(...)
+  394  ... increases gtp(...)
+  385  p(...) increases path(...)
+  377  a(...) increases cat(...)
+  370  ... directlyDecreases tscript(...)
+  360  kin(...) increases bp(...)
+  360  ... decreases path(...)
+  359  cat(...) increases p(...)
+  345  p(...) increases a(...)
+  344  tscript(...) increases bp(...)
+  330  ... directlyIncreases cat(...)
+  315  bp(...) increases p(...)
+  308  cat(...) increases a(...)
+  300  phos(...) decreases ...
+  300  cat(...) increases tscript(...)
+  292  a(...) increases a(...)
+  284  a(...) decreases bp(...)
+  275  composite(...) increases ...
+  273  tscript(...) increases p(...)
+  273  ... positiveCorrelation r(...)
+  251  bp(...) positiveCorrelation ...
+  250  p(...) directlyDecreases tscript(...)
+  249  composite(...) increases r(...)
+  243  ... negativeCorrelation ...
+  240  ... increases tloc(...)
+  235  p(...) increases complex(...)
+  223  bp(...) increases bp(...)
+  219  tscript(...) increases tscript(...)
+  213  cat(...) increases cat(...)
+  210  complex(...) directlyIncreases tscript(...)
+  210  cat(...) directlyIncreases ...
+  207  cat(...) increases r(...)
+  207  bp(...) increases kin(...)
+  206  kin(...) decreases r(...)
+  202  ... directlyDecreases kin(...)
+  200  p(...) increases sec(...)
+  198  cat(...) decreases bp(...)
+  196  tscript(...) decreases bp(...)
+  190  tscript(...) directlyDecreases ...
+  188  ... directlyDecreases r(...)
+  186  p(...) decreases cat(...)
+  185  ... increases surf(...)
+  184  p(...) decreases kin(...)
+  183  bp(...) positiveCorrelation r(...)
+  183  a(...) decreases kin(...)
+  182  ... decreases complex(...)
+  180  a(...) decreases cat(...)
+  179  p(...) decreases path(...)
+  177  kin(...) increases cat(...)
+  177  kin(...) decreases p(...)
+  176  ... negativeCorrelation r(...)
+  175  kin(...) decreases bp(...)
+  170  path(...) increases p(...)
+  169  bp(...) negativeCorrelation ...
+  166  complex(...) increases bp(...)
+  159  tscript(...) decreases tscript(...)
+  157  p(...) directlyIncreases cat(...)
+  153  p(...) decreases a(...)
+  149  tscript(...) directlyDecreases r(...)
+  148  ... directlyIncreases gtp(...)
+  146  cat(...) decreases a(...)
+  145  complex(...) increases tscript(...)
+  144  phos(...) increases ...
+  144  a(...) decreases a(...)
+  143  bp(...) negativeCorrelation r(...)
+  142  kin(...) directlyIncreases kin(...)
+  141  complex(...) increases r(...)
+  141  a(...) increases path(...)
+  137  cat(...) decreases p(...)
+  136  gtp(...) decreases ...
+  135  a(...) increases sec(...)
+  135  bp(...) increases tscript(...)
+  135  a(...) increases complex(...)
+  133  cat(...) decreases r(...)
+  131  complex(...) directlyIncreases kin(...)
+  129  p(...) increases gtp(...)
+  128  complex(...) increases kin(...)
+  125  kin(...) decreases tscript(...)
+  125  cat(...) increases gtp(...)
+  124  path(...) positiveCorrelation ...
+  122  gtp(...) increases kin(...)
+  116  complex(...) increases p(...)
+  113  phos(...) decreases kin(...)
+  113  a(...) decreases tscript(...)
+  112  kin(...) decreases cat(...)
+  108  cat(...) directlyDecreases ...
+  105  ... directlyDecreases cat(...)
+  103  complex(...) decreases tscript(...)
+  100  ... directlyIncreases complex(...)
+  99  gtp(...) increases r(...)
+  98  ... decreases sec(...)
+  98  a(...) directlyIncreases ...
+  97  cat(...) decreases tscript(...)
+  95  p(...) increases surf(...)
+  92  kin(...) decreases kin(...)
+  89  kin(...) directlyDecreases ...
+  87  complex(...) directlyDecreases ...
+  86  a(...) directlyDecreases ...
+  86  path(...) increases bp(...)
+  85  p(...) directlyDecreases kin(...)
+  83  gtp(...) increases p(...)
+  83  kin(...) directlyIncreases tscript(...)
+  81  tscript(...) decreases p(...)
+  80  path(...) positiveCorrelation r(...)
+  80  bp(...) decreases p(...)
+  80  complex(...) decreases r(...)
+  78  ... directlyDecreases p(...)
+  78  bp(...) increases cat(...)
+  77  p(...) increases tloc(...)
+  77  cat(...) increases path(...)
+  75  kin(...) increases path(...)
+  74  gtp(...) decreases r(...)
+  73  ... increases phos(...)
+  71  phos(...) directlyDecreases ...
+  71  p(...) decreases complex(...)
+  70  bp(...) increases path(...)
+  68  p(...) directlyIncreases gtp(...)
+  68  gtp(...) directlyIncreases ...
+  67  phos(...) decreases bp(...)
+  67  a(...) decreases path(...)
+  65  kin(...) increases gtp(...)
+  64  m(...) decreases p(...)
+  64  cat(...) directlyIncreases gtp(...)
+  64  bp(...) increases a(...)
+  62  kin(...) increases complex(...)
+  61  complex(...) increases cat(...)
+  60  a(...) increases tloc(...)
+  60  complex(...) directlyIncreases cat(...)
+  59  cat(...) decreases cat(...)
+  58  ... directlyIncreases a(...)
+  58  tloc(...) increases ...
+  57  gtp(...) increases bp(...)
+  55  path(...) negativeCorrelation ...
+  55  m(...) increases ...
+  53  p(...) directlyDecreases cat(...)
+  53  tscript(...) directlyIncreases tscript(...)
+  53  ... increases tport(...)
+  52  complex(...) decreases bp(...)
+  52  bp(...) decreases bp(...)
+  52  ... hasComponent ...
+  51  path(...) increases kin(...)
+  50  complex(...) decreases kin(...)
+  49  cat(...) increases sec(...)
+  49  ... decreases gtp(...)
+  48  cat(...) decreases kin(...)
+  48  ... decreases phos(...)
+  48  bp(...) increases sec(...)
+  47  a(...) directlyDecreases kin(...)
+  47  ... decreases surf(...)
+  44  phos(...) increases r(...)
+  44  tscript(...) increases cat(...)
+  44  ... directlyDecreases a(...)
+  43  tscript(...) increases path(...)
+  43  p(...) directlyIncreases complex(...)
+  43  cat(...) directlyIncreases a(...)
+  42  ... directlyDecreases gtp(...)
+  41  complex(...) directlyDecreases tscript(...)
+  41  gtp(...) increases tscript(...)
+  41  a(...) directlyIncreases cat(...)
+  40  path(...) increases a(...)
+  40  ... positiveCorrelation p(...)
+  39  path(...) increases sec(...)
+  39  m(...) directlyDecreases ...
+  38  path(...) increases path(...)
+  38  path(...) increases cat(...)
+  38  cat(...) directlyDecreases a(...)
+  37  kin(...) increases tloc(...)
+  37  kin(...) increases a(...)
+  37  phos(...) directlyDecreases p(...)
+  37  tscript(...) increases a(...)
+  37  composite(...) decreases ...
+  36  m(...) directlyDecreases r(...)
+  36  a(...) decreases complex(...)
+  36  tscript(...) decreases path(...)
+  36  phos(...) decreases p(...)
+  36  a(...) hasComponent ...
+  36  gtp(...) increases a(...)
+  35  ... decreases tloc(...)
+  35  tport(...) increases ...
+  34  complex(...) decreases p(...)
+  33  p(...) decreases sec(...)
+  33  kin(...) decreases complex(...)
+  32  a(...) increases surf(...)
+  31  path(...) decreases p(...)
+  30  sec(...) increases ...
+  30  tscript(...) directlyDecreases tscript(...)
+  29  phos(...) increases tscript(...)
+  29  kin(...) directlyIncreases cat(...)
+  29  tscript(...) decreases a(...)
+  29  kin(...) increases surf(...)
+  29  a(...) decreases sec(...)
+  29  m(...) increases r(...)
+  28  gtp(...) directlyIncreases kin(...)
+  28  kin(...) increases sec(...)
+  28  path(...) negativeCorrelation r(...)
+  28  composite(...) decreases r(...)
+  28  bp(...) increases tloc(...)
+  27  ... decreases tport(...)
+  27  pep(...) decreases ...
+  27  a(...) directlyIncreases tscript(...)
+  27  cat(...) increases complex(...)
+  26  bp(...) decreases cat(...)
+  26  bp(...) decreases path(...)
+  26  a(...) directlyDecreases cat(...)
+  26  r(...) decreases ...
+  26  cat(...) decreases path(...)
+  26  r(...) increases ...
+  25  pep(...) increases ...
+  25  bp(...) increases complex(...)
+  25  ... increases deg(...)
+  25  kin(...) directlyIncreases complex(...)
+  24  gtp(...) directlyIncreases cat(...)
+  24  a(...) hasComponent a(...)
+  24  ... hasComponent a(...)
+  24  kin(...) directlyDecreases kin(...)
+  24  a(...) increases gtp(...)
+  24  complex(...) increases gtp(...)
+  24  phos(...) directlyDecreases kin(...)
+  23  p(...) decreases gtp(...)
+  23  tscript(...) decreases cat(...)
+  23  p(...) positiveCorrelation ...
+  23  pep(...) decreases r(...)
+  23  kin(...) increases phos(...)
+  22  complex(...) increases complex(...)
+  22  a(...) decreases phos(...)
+  22  kin(...) directlyDecreases tscript(...)
+  22  gtp(...) increases cat(...)
+  21  ... positiveCorrelation bp(...)
+  21  p(...) directlyIncreases p(...)
+  21  ... positiveCorrelation a(...)
+  21  a(...) increases tport(...)
+  21  phos(...) increases bp(...)
+  21  phos(...) decreases tscript(...)
+  21  tscript(...) increases kin(...)
+  20  ... hasComponent p(...)
+  20  tloc(...) increases tscript(...)
+  20  cat(...) directlyIncreases tscript(...)
+  20  ... directlyIncreases phos(...)
+  20  path(...) increases tscript(...)
+  20  ... negativeCorrelation p(...)
+  19  bp(...) positiveCorrelation p(...)
+  19  a(...) increases phos(...)
+  19  phos(...) increases kin(...)
+  19  path(...) positiveCorrelation p(...)
+  19  cat(...) directlyIncreases kin(...)
+  19  cat(...) directlyDecreases tscript(...)
+  19  cat(...) directlyDecreases gtp(...)
+  18  tloc(...) increases bp(...)
+  18  gtp(...) increases path(...)
+  18  m(...) decreases bp(...)
+  18  ... directlyDecreases complex(...)
+  18  kin(...) directlyDecreases cat(...)
+  18  tloc(...) decreases ...
+  17  complex(...) increases a(...)
+  17  p(...) decreases surf(...)
+  17  m(...) increases bp(...)
+  17  p(...) directlyIncreases r(...)
+  16  p(...) decreases tloc(...)
+  16  cat(...) directlyIncreases rxn(...)
+  16  complex(...) directlyDecreases kin(...)
+  16  ... directlyIncreases rxn(...)
+  16  complex(...) increases path(...)
+  16  r(...) decreases bp(...)
+  16  cat(...) directlyIncreases cat(...)
+  15  cat(...) directlyIncreases p(...)
+  15  a(...) directlyIncreases kin(...)
+  15  kin(...) decreases path(...)
+  15  gtp(...) increases gtp(...)
+  14  phos(...) increases p(...)
+  14  cat(...) directlyDecreases p(...)
+  14  p(...) hasComponent ...
+  14  cat(...) increases tloc(...)
+  14  complex(...) decreases cat(...)
+  14  p(...) negativeCorrelation ...
+  14  p(...) increases phos(...)
+  14  a(...) decreases tport(...)
+  14  path(...) increases complex(...)
+  13  complex(...) directlyIncreases p(...)
+  13  tscript(...) increases sec(...)
+  13  tport(...) decreases ...
+  13  ... directlyDecreases phos(...)
+  13  ... increases m(...)
+  13  tscript(...) increases complex(...)
+  13  kin(...) decreases a(...)
+  13  ... positiveCorrelation path(...)
+  13  tport(...) increases a(...)
+  12  ... directlyDecreases bp(...)
+  12  p(...) directlyDecreases p(...)
+  12  gtp(...) decreases p(...)
+  12  r(...) increases p(...)
+  12  path(...) decreases bp(...)
+  12  kin(...) decreases phos(...)
+  12  a(...) hasComponent p(...)
+  12  surf(...) increases ...
+  12  a(...) decreases surf(...)
+  11  tport(...) increases bp(...)
+  11  ... directlyIncreases m(...)
+  11  ... directlyIncreases bp(...)
+  11  tscript(...) directlyIncreases m(...)
+  11  composite(...) increases p(...)
+  11  p(...) increases tport(...)
+  11  cat(...) decreases sec(...)
+  11  tscript(...) decreases sec(...)
+  11  gtp(...) directlyIncreases complex(...)
+  10  tscript(...) directlyIncreases p(...)
+  10  bp(...) positiveCorrelation a(...)
+  10  cat(...) decreases complex(...)
+  10  tscript(...) decreases kin(...)
+  10  ... positiveCorrelation kin(...)
+  10  path(...) positiveCorrelation bp(...)
+  10  p(...) decreases phos(...)
+  10  complex(...) directlyIncreases gtp(...)
+  10  tloc(...) increases kin(...)
+  10  p(...) positiveCorrelation r(...)
+  10  ... negativeCorrelation bp(...)
+  10  bp(...) decreases tscript(...)
+  10  ... negativeCorrelation kin(...)
+  9  tport(...) directlyIncreases a(...)
+  9  ... positiveCorrelation cat(...)
+  9  tport(...) directlyIncreases ...
+  9  path(...) decreases a(...)
+  9  rxn(...) directlyIncreases ...
+  9  bp(...) negativeCorrelation p(...)
+  9  path(...) negativeCorrelation p(...)
+  9  bp(...) positiveCorrelation kin(...)
+  9  kin(...) increases tport(...)
+  9  tloc(...) decreases tscript(...)
+  9  p(...) directlyDecreases gtp(...)
+  9  path(...) positiveCorrelation a(...)
+  9  p(...) directlyDecreases phos(...)
+  9  tscript(...) decreases complex(...)
+  9  tloc(...) directlyIncreases tscript(...)
+  9  tloc(...) directlyIncreases ...
+  9  bp(...) positiveCorrelation bp(...)
+  9  kin(...) directlyDecreases complex(...)
+  8  ... association ...
+  8  cat(...) increases deg(...)
+  8  ... hasComponent complex(...)
+  8  ... negativeCorrelation path(...)
+  8  a(...) directlyIncreases complex(...)
+  8  m(...) increases p(...)
+  8  tscript(...) increases surf(...)
+  8  ... decreases m(...)
+  8  bp(...) increases surf(...)
+  8  complex(...) directlyDecreases p(...)
+  8  tloc(...) directlyDecreases ...
+  8  kin(...) decreases tloc(...)
+  8  phos(...) decreases complex(...)
+  7  composite(...) increases a(...)
+  7  path(...) increases tloc(...)
+  7  gtp(...) decreases bp(...)
+  7  p(...) hasComponent complex(...)
+  7  gtp(...) increases complex(...)
+  7  gtp(...) decreases a(...)
+  7  bp(...) positiveCorrelation cat(...)
+  7  bp(...) increases gtp(...)
+  7  p(...) directlyIncreases bp(...)
+  7  g(...) increases ...
+  7  ... negativeCorrelation cat(...)
+  7  tloc(...) directlyDecreases gtp(...)
+  7  path(...) decreases cat(...)
+  7  r(...) increases bp(...)
+  7  p(...) hasComponent p(...)
+  7  bp(...) decreases kin(...)
+  7  kin(...) decreases gtp(...)
+  7  kin(...) decreases surf(...)
+  7  bp(...) decreases complex(...)
+  7  p(...) association ...
+  7  g(...) increases r(...)
+  7  chap(...) decreases ...
+  6  phos(...) directlyIncreases ...
+  6  gtp(...) decreases kin(...)
+  6  complex(...) increases sec(...)
+  6  ... increases rxn(...)
+  6  bp(...) negativeCorrelation kin(...)
+  6  cat(...) directlyIncreases complex(...)
+  6  bp(...) decreases sec(...)
+  6  a(...) decreases tloc(...)
+  6  complex(...) directlyIncreases phos(...)
+  6  cat(...) increases phos(...)
+  6  ... directlyDecreases tport(...)
+  6  p(...) increases deg(...)
+  6  phos(...) directlyDecreases a(...)
+  6  a(...) increases deg(...)
+  6  cat(...) increases surf(...)
+  6  gtp(...) directlyDecreases ...
+  6  ... decreases deg(...)
+  5  chap(...) decreases bp(...)
+  5  complex(...) decreases gtp(...)
+  5  a(...) decreases m(...)
+  5  p(...) negativeCorrelation r(...)
+  5  a(...) increases m(...)
+  5  kin(...) increases deg(...)
+  5  ... positiveCorrelation sec(...)
+  5  gtp(...) decreases cat(...)
+  5  tloc(...) decreases bp(...)
+  5  sec(...) increases p(...)
+  5  gtp(...) increases tloc(...)
+  5  bp(...) directlyIncreases ...
+  5  complex(...) directlyDecreases gtp(...)
+  5  bp(...) decreases a(...)
+  5  bp(...) increases tport(...)
+  5  kin(...) directlyDecreases tport(...)
+  5  cat(...) decreases gtp(...)
+  5  sec(...) increases bp(...)
+  5  ... decreases pep(...)
+  5  a(...) directlyDecreases tscript(...)
+  5  ... increases pep(...)
+  5  p(...) positiveCorrelation path(...)
+  5  bp(...) positiveCorrelation sec(...)
+  5  sec(...) increases kin(...)
+  5  kin(...) directlyDecreases p(...)
+  5  p(...) decreases tport(...)
+  5  kin(...) decreases tport(...)
+  5  rxn(...) directlyIncreases kin(...)
+  5  path(...) decreases kin(...)
+  4  rxn(...) directlyIncreases phos(...)
+  4  complex(...) directlyIncreases complex(...)
+  4  gtp(...) decreases complex(...)
+  4  bp(...) positiveCorrelation path(...)
+  4  sec(...) increases cat(...)
+  4  r(...) increases tscript(...)
+  4  phos(...) decreases path(...)
+  4  cat(...) directlyDecreases cat(...)
+  4  bp(...) negativeCorrelation cat(...)
+  4  p(...) directlyDecreases complex(...)
+  4  bp(...) increases phos(...)
+  4  tloc(...) increases cat(...)
+  4  tport(...) decreases a(...)
+  4  sec(...) increases a(...)
+  4  kin(...) directlyIncreases phos(...)
+  4  path(...) negativeCorrelation kin(...)
+  4  surf(...) increases bp(...)
+  4  gtp(...) increases surf(...)
+  4  g(...) decreases ...
+  4  ... directlyIncreases tport(...)
+  4  tscript(...) increases tloc(...)
+  4  p(...) increases m(...)
+  4  chap(...) increases ...
+  4  tport(...) decreases bp(...)
+  4  kin(...) directlyIncreases tport(...)
+  3  cat(...) directlyDecreases kin(...)
+  3  phos(...) directlyIncreases tscript(...)
+  3  ... decreases chap(...)
+  3  tscript(...) directlyIncreases complex(...)
+  3  p(...) negativeCorrelation bp(...)
+  3  path(...) negativeCorrelation cat(...)
+  3  tloc(...) increases a(...)
+  3  cat(...) decreases surf(...)
+  3  cat(...) positiveCorrelation path(...)
+  3  cat(...) positiveCorrelation ...
+  3  bp(...) increases rxn(...)
+  3  tscript(...) increases phos(...)
+  3  a(...) decreases gtp(...)
+  3  a(...) decreases pep(...)
+  3  path(...) negativeCorrelation bp(...)
+  3  cat(...) increases tport(...)
+  3  phos(...) directlyIncreases kin(...)
+  3  phos(...) decreases cat(...)
+  3  surf(...) increases cat(...)
+  3  gtp(...) decreases surf(...)
+  3  tscript(...) decreases m(...)
+  3  gtp(...) decreases gtp(...)
+  3  bp(...) directlyDecreases ...
+  3  tscript(...) decreases surf(...)
+  3  tscript(...) increases m(...)
+  3  complex(...) decreases sec(...)
+  3  tscript(...) directlyDecreases bp(...)
+  3  cat(...) directlyDecreases bp(...)
+  3  path(...) increases rxn(...)
+  3  composite(...) increases bp(...)
+  3  phos(...) decreases r(...)
+  3  tscript(...) directlyDecreases complex(...)
+  3  complex(...) directlyDecreases cat(...)
+  3  ... negativeCorrelation a(...)
+  3  p(...) directlyIncreases phos(...)
+  3  sec(...) decreases ...
+  3  complex(...) decreases path(...)
+  3  g(...) decreases r(...)
+  3  phos(...) increases a(...)
+  3  complex(...) increases tloc(...)
+  3  bp(...) decreases tloc(...)
+  3  pep(...) increases tloc(...)
+  3  ... increases chap(...)
+  3  gtp(...) directlyIncreases gtp(...)
+  2  path(...) increases gtp(...)
+  2  ... rateLimitingStepOf ...
+  2  p(...) positiveCorrelation bp(...)
+  2  a(...) directlyIncreases gtp(...)
+  2  complex(...) decreases a(...)
+  2  bp(...) decreases phos(...)
+  2  path(...) decreases sec(...)
+  2  kin(...) decreases sec(...)
+  2  cat(...) directlyIncreases bp(...)
+  2  act(...) decreases ...
+  2  complex(...) increases phos(...)
+  2  bp(...) directlyDecreases r(...)
+  2  phos(...) increases tloc(...)
+  2  cat(...) rateLimitingStepOf ...
+  2  path(...) positiveCorrelation cat(...)
+  2  bp(...) positiveCorrelation complex(...)
+  2  sec(...) increases r(...)
+  2  ... negativeCorrelation tport(...)
+  2  ... directlyIncreases tloc(...)
+  2  complex(...) increases surf(...)
+  2  p(...) positiveCorrelation p(...)
+  2  a(...) directlyIncreases p(...)
+  2  act(...) decreases bp(...)
+  2  tscript(...) increases gtp(...)
+  2  complex(...) directlyIncreases bp(...)
+  2  surf(...) directlyIncreases cat(...)
+  2  phos(...) directlyDecreases tscript(...)
+  2  p(...) positiveCorrelation a(...)
+  2  bp(...) negativeCorrelation path(...)
+  2  gtp(...) directlyIncreases p(...)
+  2  p(...) directlyDecreases bp(...)
+  2  a(...) increases pep(...)
+  2  path(...) negativeCorrelation a(...)
+  2  p(...) increases pep(...)
+  2  phos(...) increases cat(...)
+  2  p(...) directlyIncreases a(...)
+  2  p(...) decreases deg(...)
+  2  ... directlyIncreases path(...)
+  2  path(...) decreases complex(...)
+  2  r(...) decreases a(...)
+  2  tport(...) increases cat(...)
+  2  chap(...) decreases tscript(...)
+  2  pep(...) decreases a(...)
+  2  bp(...) decreases tport(...)
+  2  bp(...) positiveCorrelation tscript(...)
+  2  bp(...) directlyIncreases a(...)
+  2  ... positiveCorrelation complex(...)
+  2  ... positiveCorrelation tscript(...)
+  2  cat(...) directlyIncreases phos(...)
+  2  ... decreases ribo(...)
+  2  cat(...) negativeCorrelation ...
+  2  p(...) negativeCorrelation p(...)
+  2  a(...) directlyDecreases bp(...)
+  2  complex(...) decreases deg(...)
+  2  surf(...) directlyIncreases ...
+  2  p(...) negativeCorrelation path(...)
+  2  complex(...) directlyDecreases bp(...)
+  2  gtp(...) decreases tscript(...)
+  2  cat(...) decreases tloc(...)
+  2  composite(...) decreases p(...)
+  2  bp(...) directlyIncreases tscript(...)
+  2  path(...) decreases path(...)
+  2  bp(...) negativeCorrelation bp(...)
+  2  complex(...) decreases complex(...)
+  2  cat(...) decreases ribo(...)
+  2  composite(...) increases kin(...)
+  2  gtp(...) directlyDecreases kin(...)

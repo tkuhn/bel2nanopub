@@ -38,25 +38,18 @@ FUNCTIONS:
   2  ribo
 ANNOTATIONS:
   75581  Species
-  18542  Cell
-  14626  CellLine
-  10296  Tissue
-  5710  BodyRegion
-  3703  DigestiveSystem
-  3526  Disease
-  3011  RespiratorySystem
+  22529  Anatomy
+  18565  Cell
+  14428  CellLine
+  3584  Disease
   2101  CellStructure
-  1766  CardiovascularSystem
-  1444  UrogenitalSystem
-  822  NervousSystem
-  504  IntegumentarySystem
-  425  HemicAndImmuneSystem
-  168  FluidAndSecretion
+  439  MeSHAnatomy
+  43  MeSHDisease
 PARAMETERS:
-  2778  GO:"response to hypoxia"
+  2778  GOBP:"response to hypoxia"
   1524  MESHPP:Apoptosis
   1403  HGNC:EGF
-  979  GO:"cell proliferation"
+  979  GOBP:"cell proliferation"
   966  CHEBI:lipopolysaccharide
   724  SCHEM:"serum insulin"
   723  CHEBI:"reactive oxygen species"
@@ -66,7 +59,7 @@ PARAMETERS:
   559  SCHEM:"serum glucose"
   555  SCHEM:"cyclic AMP"
   507  CHEBI:estradiol
-  507  GO:angiogenesis
+  507  GOBP:angiogenesis
   468  SCHEM:Tretinoin
   462  CHEBI:"nitric oxide"
   421  SCHEM:Calcium
@@ -81,36 +74,37 @@ PARAMETERS:
   350  CHEBI:nicotine
   347  SDIS:"tissue damage"
   334  HGNC:VEGFA
-  322  GO:"response to heat"
+  322  GOBP:"response to heat"
   319  CHEBI:calcitriol
   319  SDIS:"viral infection"
   306  HGNC:TP53
-  303  GOCCACC:"GO:0005737"
-  294  GO:"cell growth"
-  292  GO:aging
+  303  GOCCID:0005737
+  294  GOBP:"cell growth"
+  292  GOBP:aging
   289  HGNC:IL1B
   287  CHEBI:progesterone
   287  CHEBI:gefitinib
-  274  GO:"response to oxidative stress"
+  274  GOBP:"response to oxidative stress"
   268  SDIS:"laminar shear stress"
   266  MGI:Tnf
-  264  GO:"cell adhesion"
-  262  GO:"replicative cell aging"
+  264  GOBP:"cell adhesion"
+  262  GOBP:"replicative cell aging"
   252  SCHEM:Stanolone
   250  SCHEM:Hydrocortisone
-  248  GO:"inflammatory response"
+  248  GOBP:"inflammatory response"
   243  CHEBI:glucocorticoid
-  242  GO:"myoblast differentiation"
+  242  GOBP:"myoblast differentiation"
   238  MESHPP:Exercise
   233  HGNC:IL8
-  225  GO:"cell migration"
   225  HGNC:IFNG
+  225  GOBP:"cell migration"
+  218  SFAM:"IFNA Family"
   218  SCHEM:Dinoprostone
   214  SDIS:"mechanical strain"
   214  HGNC:CDKN1A
   210  SCHEM:Colforsin
   199  HGNC:IGF1
-  199  GO:"cell differentiation"
+  199  GOBP:"cell differentiation"
   196  CHEBI:ceramide
   196  SCHEM:CD437
   195  CHEBI:mifepristone
@@ -118,16 +112,17 @@ PARAMETERS:
   193  SCHEM:Thiazolidinedione
   191  CHEBI:"trichostatin A"
   186  CHEBI:rosiglitazone
-  185  GOCCACC:"GO:0005634"
+  185  GOCCID:0005634
   180  EGID:183
   179  SCHEM:"Nutlin 3"
   175  SCHEM:"serum leptin"
-  175  GO:"neuron differentiation"
+  175  GOBP:"neuron differentiation"
   174  HGNC:FGF2
   172  MESHPP:"Insulin Resistance"
   164  SCHEM:"D-Glucose, anhydrous"
   164  HGNC:HGF
   164  HGNC:MAPK1
+  163  SFAM:"AKT Family"
   163  SDIS:"monocyte adherence"
   159  HGNC:NGF
   157  HGNC:EGFR
@@ -136,8 +131,8 @@ PARAMETERS:
   151  MESHD:Hyperoxia
   151  CHEBI:cholesterol
   147  SDIS:"tumor growth"
-  144  GO:"cell cycle"
-  143  GO:"response to starvation"
+  144  GOBP:"cell cycle"
+  143  GOBP:"response to starvation"
   143  CHEBI:ciprofibrate
   143  CHEBI:camptothecin
   142  HGNC:MAPK3
@@ -145,14 +140,14 @@ PARAMETERS:
   141  MGI:Tgfb1
   138  CHEBI:"angiotensin II"
   138  SCHEM:Allergens
-  137  GO:"response to DNA damage stimulus"
+  137  GOBP:"cellular response to DNA damage stimulus"
   137  HGNC:IL4
   135  HGNC:IRS1
   134  SCHEM:"Enzastaurin Hydrochloride"
   134  SCHEM:Dronabinol
   134  SCHEM:Sirolimus
   133  HGNC:CCND1
-  133  GO:"response to UV"
+  133  GOBP:"response to UV"
   131  HGNC:STAT3
   130  HGNC:BCL2
   129  MGI:Il6
@@ -161,14 +156,13 @@ PARAMETERS:
   126  SDIS:"mitochondrial DNA damage"
   126  HGNC:NRG1
   126  HGNC:CXCL12
-  126  CHEBI:insulin
+  126  CHEBI:"insulin (human)"
   125  HGNC:JUN
-  124  GO:"DNA methylation"
+  124  GOBP:"DNA methylation"
   123  CHEBI:"arachidonic acid"
   123  HGNC:CDKN1B
   123  CHEBI:omeprazole
   122  EGID:3630
-  122  PFH:"AKT Family"
   121  SCHEM:"Low Density Lipoprotein"
   121  SDIS:"high-fat diet"
   121  HGNC:CCL2
@@ -177,22 +171,21 @@ PARAMETERS:
   119  EGID:24179
   118  HGNC:CTNNB1
   117  SDIS:"mechanical stress"
-  116  GO:"muscle contraction"
+  116  GOBP:"muscle contraction"
   116  CHEBI:cisplatin
-  115  GO:"response to endoplasmic reticulum stress"
+  115  GOBP:"response to endoplasmic reticulum stress"
   114  SDIS:"lung adenocarcinoma"
-  114  GO:"response to osmotic stress"
-  113  GO:"microtubule polymerization"
+  114  GOBP:"response to osmotic stress"
+  113  GOBP:"microtubule polymerization"
   110  CHEBI:histamine
   109  HGNC:MIR106B
   108  SCHEM:"Helicobacter pylori infection"
   108  HGNC:PTK2
   106  MGI:Dysf
-  105  PFM:"Ifna Family"
-  105  NCM:"Luteinizing Hormone Complex"
-  104  GOCCACC:"GO:0005886"
+  105  SCOMP:"Luteinizing Hormone Complex"
+  104  GOCCID:0005886
   104  CHEBI:erlotinib
-  103  GO:"cell death"
+  103  GOBP:"cell death"
   103  CHEBI:simvastatin
   102  SCHEM:"Cyclic GMP"
   101  MESHPP:"Menstrual Cycle"
@@ -200,8 +193,8 @@ PARAMETERS:
   100  SCHEM:"trans10,cis12-Octadecadienoate"
   99  HGNC:PTGS2
   99  SCHEM:"Adenosine triphosphate"
-  98  GO:"hyperosmotic response"
   98  HGNC:THAP1
+  98  GOBP:"hyperosmotic response"
   97  HGNC:HMOX1
   97  SCHEM:"Oxidized High Density Lipoprotein"
   96  HGNC:HIF1A
@@ -215,13 +208,14 @@ PARAMETERS:
   92  SCHEM:Pravastatin
   92  CHEBI:"vitamin E"
   91  EGID:3845
-  89  GO:"macrophage activation"
-  89  GO:"neutrophil chemotaxis"
+  90  SFAM:"TGFB Family"
+  89  GOBP:"neutrophil chemotaxis"
+  89  GOBP:"macrophage activation"
   89  CHEBI:hemin
   88  HGNC:ICAM1
   88  CHEBI:fenofibrate
+  88  SFAM:"HDAC Family"
   88  RGD:Tnf
-  87  PFH:"HDAC Family"
   86  MESHPP:"Liver Regeneration"
   86  SCHEM:Iloprost
   86  MGI:Hist1h1t
@@ -239,21 +233,21 @@ PARAMETERS:
   79  CHEBI:oxandrolone
   79  CHEBI:"lysophosphatidic acid"
   79  HGNC:IL10
+  79  SFAM:"PDGF Family"
   77  SCHEM:Oxidopamine
   77  SCHEM:"LY 294002"
   77  HGNC:MIRLET7B
   77  HGNC:MET
   76  SCHEM:"Retinol acetate"
   76  HGNC:FOS
-  75  PFH:"TGFB Family"
   75  HGNC:CD40LG
   75  HGNC:IGFBP3
   75  CHEBI:raloxifene
-  74  GO:"response to radiation"
+  74  GOBP:"response to cold"
   74  MESHD:Fibrosis
+  74  GOBP:"response to radiation"
   74  HGNC:MIR21
   74  HGNC:IFNA1
-  74  GO:"response to cold"
   73  HGNC:F2
   72  CHEBI:troglitazone
   72  MGI:Gcm1
@@ -263,9 +257,9 @@ PARAMETERS:
   70  HGNC:SHC1
   70  MGI:Cln5
   69  HGNC:THBS1
+  69  GOBP:"response to UV-B"
   69  HGNC:"MIR1-1"
   69  SCHEM:"Dietary Lipid"
-  69  GO:"response to UV-B"
   68  SDIS:"turbulent shear stress"
   68  MGI:Cdkn1a
   68  CHEBI:"palmitic acid"
@@ -299,18 +293,18 @@ PARAMETERS:
   62  HGNC:FGF1
   62  HGNC:CCL5
   62  CHEBI:thapsigargin
-  61  GO:"response to stress"
   61  HGNC:EIF4EBP1
   61  SCHEM:Telomestatin
   61  HGNC:TNFSF10
+  61  GOBP:"response to stress"
   61  SCHEM:"High Density Lipoprotein"
   60  SCHEM:Epinephrine
+  60  GOBP:"mitotic G2 phase"
   60  CHEBI:lovastatin
-  60  GO:"G2 phase of mitotic cell cycle"
-  60  PFH:"IFNA Family"
   59  HGNC:MDM2
   59  SDIS:"Type II diabetes"
   59  HGNC:NCOA1
+  58  SFAM:"VEGF Family"
   58  HGNC:CST6
   58  SCHEM:Isoproterenol
   58  SDIS:"burn injury"
@@ -336,27 +330,25 @@ PARAMETERS:
   54  MGI:"Mir133a-2"
   54  MGI:"Mir133a-1"
   53  CHEBI:glutathione
-  53  PFR:"Ifna Family"
   53  HGNC:RPS6KB1
   53  EGID:387202
   53  HGNC:TGFA
   53  HGNC:EDN1
   53  CHEBI:flutamide
   53  SCHEM:Cholecalciferol
-  52  GO:phagocytosis
   52  MGI:Arx
   52  HGNC:SRC
   52  CHEBI:wortmannin
   52  HGNC:FOXO1
   52  MGI:Il10
   52  HGNC:CCL3
+  52  GOBP:phagocytosis
   51  HGNC:DYSF
   51  HGNC:EGR1
   51  HGNC:PTEN
   50  HGNC:IRS2
   50  HGNC:SOCS3
   50  MGI:Ccnd1
-  50  PFH:"VEGF Family"
   50  HGNC:LEP
   49  HGNC:GADD45A
   49  HGNC:F3
@@ -371,11 +363,11 @@ PARAMETERS:
   48  MGI:Notch1
   48  CHEBI:lipid
   48  HGNC:ATF2
+  47  GOBP:"regulation of vascular permeability"
   47  HGNC:PDGFB
   47  HGNC:CXCL1
   47  SCHEM:"PD 98,059"
   47  HGNC:HRAS
-  47  GO:"regulation of vascular permeability"
   47  HGNC:ITGB1
   47  HGNC:KDR
   46  HGNC:BCL2L1
@@ -390,17 +382,17 @@ PARAMETERS:
   45  CHEBI:"folic acid"
   45  SDIS:metastasis
   45  RGD:Egf
-  45  GO:"insulin secretion"
   45  HGNC:INS
   45  MGI:Irs1
+  45  GOBP:"insulin secretion"
   44  HGNC:PLAU
+  44  GOBP:chemotaxis
   44  HGNC:PXN
   44  MGI:Mir140
   44  HGNC:CTGF
-  44  GO:"gastric acid secretion"
   44  HGNC:AR
+  44  GOBP:"gastric acid secretion"
   44  RGD:Igf1
-  44  GO:chemotaxis
   44  HGNC:E2F1
   44  HGNC:BAX
   44  HGNC:CDH1
@@ -411,15 +403,15 @@ PARAMETERS:
   43  HGNC:NOS2
   43  HGNC:CXCR4
   43  HGNC:JUNB
-  43  GO:"G1/S transition of mitotic cell cycle"
+  43  GOBP:"G1/S transition of mitotic cell cycle"
   43  HGNC:XIAP
   43  MGI:Adipoq
   43  RGD:Tgfb1
   42  RGD:Spp1
-  42  GO:"skeletal muscle hypertrophy"
   42  CHEBI:atorvastatin
   42  HGNC:JAK2
   42  MGI:Ptgs2
+  42  GOBP:"skeletal muscle hypertrophy"
   41  SCHEM:FSH
   41  MGI:Mapk1
   41  CHEBI:coumarin
@@ -453,32 +445,30 @@ PARAMETERS:
   37  HGNC:SOCS1
   37  HGNC:CXCL10
   37  HGNC:CRP
-  37  GO:vasoconstriction
   37  HGNC:GH1
+  37  GOBP:vasoconstriction
   37  MGI:Stat1
-  37  PFM:"Pdgf Family"
   37  MGI:Abcb1a
-  36  GO:"satellite cell activation"
+  37  SFAM:"IL1 Family"
+  36  GOBP:"satellite cell activation"
+  36  GOBP:"histone acetylation"
   36  MGI:Rb1
-  36  GO:"histone acetylation"
   36  SDIS:"cyclic stretch"
+  36  GOBP:vasodilation
   36  HGNC:ELK1
   36  HGNC:MMP2
   36  HGNC:FOXO3
   36  HGNC:TXNIP
-  36  GO:"muscle atrophy"
-  36  GO:vasodilation
+  36  GOBP:"muscle atrophy"
   35  HGNC:PRL
   35  SDIS:"Photo-oxidative Stress"
   35  HGNC:CSF1
+  35  GOBP:gluconeogenesis
   35  HGNC:IL17A
   35  SDIS:"cardiomyocyte hypertrophy"
   35  HGNC:COL1A1
-  35  GO:gluconeogenesis
   35  HGNC:CBL
-  35  PFH:"PDGF Family"
   35  SCHEM:"SB-203580"
-  34  GO:"DNA replication"
   34  HGNC:CCND3
   34  MGI:Fos
   34  SDIS:"Atherosclerotic lesion"
@@ -486,6 +476,7 @@ PARAMETERS:
   34  SCHEM:Superoxides
   34  RGD:Jun
   34  HGNC:CEBPB
+  34  GOBP:"DNA replication"
   34  MGI:Pparg
   33  CHEBI:"polyunsaturated fatty acid"
   33  RGD:Mapk1
@@ -499,10 +490,10 @@ PARAMETERS:
   33  MGI:Slc2a4
   33  HGNC:MAPK8
   33  MGI:Cebpb
-  32  GO:necrosis
   32  MGI:Mxd1
   32  HGNC:BRAF
   32  HGNC:SMAD7
+  32  GOBP:necrosis
   32  MGI:Angptl4
   32  HGNC:LIF
   31  HGNC:SOD2
@@ -519,9 +510,9 @@ PARAMETERS:
   31  HGNC:NR4A1
   31  HGNC:FASLG
   31  HGNC:PRKCA
+  30  GOCCID:0043510
   30  MGI:Il6st
   30  HGNC:NANOG
-  30  GOCCACC:"GO:0043510"
   30  HGNC:APOE
   30  HGNC:SGK1
   30  MGI:Lpin1
@@ -532,26 +523,27 @@ PARAMETERS:
   30  HGNC:EPO
   30  HGNC:NR3C1
   30  HGNC:ID2
+  30  SCOMP:"Nfkb Complex"
   29  SCHEM:cytokine
   29  HGNC:OSM
   29  MGI:Cxcl1
-  29  GO:"fatty acid oxidation"
   29  SCHEM:"SU 11274"
+  29  GOBP:"smooth muscle contraction"
   29  MGI:Cav1
   29  MGI:Sod2
   29  RGD:Nos2
   29  HGNC:PAWR
   29  HGNC:S1PR1
-  29  GO:"smooth muscle contraction"
+  29  GOBP:"insulin receptor signaling pathway"
   29  MGI:Cftr
   29  MGI:Fgf2
   29  SCHEM:"Suberoylanilide hydroxamic acid"
   29  MGI:Il18
   29  HGNC:ELANE
+  29  GOBP:"fatty acid oxidation"
   29  MGI:Stat3
   29  HGNC:BNIP3L
   29  HGNC:DDIT3
-  29  GO:"insulin receptor signaling pathway"
   29  HGNC:LYN
   28  SCHEM:Ciglitazone
   28  HGNC:BCL2A1
@@ -564,19 +556,20 @@ PARAMETERS:
   28  HGNC:COL1A2
   28  HGNC:BTC
   28  HGNC:NEDD9
-  28  PFM:"Akt Family"
+  28  SCOMP:"Ngf Complex"
   28  CHEBI:gemcitabine
   27  HGNC:OLR1
   27  HGNC:CYR61
   27  HGNC:SP1
   27  MGI:Apoe
   27  HGNC:TNKS1BP1
+  27  GOBP:glycolysis
   27  HGNC:STMN1
   27  MGI:Mt1
   27  HGNC:JAK1
   27  HGNC:PPARGC1A
-  27  GO:glycolysis
   27  HGNC:PPARA
+  27  GOBP:"stress-induced premature senescence"
   27  MGI:Nfkbia
   27  MGI:Klf7
   27  MESHD:Sepsis
@@ -586,9 +579,8 @@ PARAMETERS:
   27  HGNC:CCR2
   27  MGI:Cxcl10
   27  HGNC:ATF3
-  27  MGI:Hras1
+  27  MGI:Hras
   27  SDIS:"Oncogene induced senescence"
-  27  GO:"stress-induced premature senescence"
   26  MGI:Scd1
   26  CHEBI:etoposide
   26  MGI:Cntf
@@ -603,31 +595,30 @@ PARAMETERS:
   26  CHEBI:adenosine
   26  MGI:Cxcl12
   26  HGNC:ADIPOQ
+  26  GOBP:"osteoblast differentiation"
   26  HGNC:SALL4
-  26  GO:"osteoblast differentiation"
   26  MGI:Fasn
   26  MGI:Bmp2
   26  HGNC:PRKCD
   25  MGI:Il3
   25  HGNC:IER3
-  25  NCR:"Ngf Complex"
-  25  GO:"response to virus"
+  25  GOBP:"response to virus"
   25  MGI:Ctnnb1
   25  HGNC:MCL1
-  25  GO:"muscle cell differentiation"
   25  HGNC:CSF3
   25  RGD:Dusp1
   25  HGNC:"MIR16-1"
-  25  GO:"monocyte activation"
-  25  PFM:"Il1 Family"
+  25  GOBP:"monocyte activation"
   25  HGNC:ETS2
   25  MESHD:Hypertrophy
   25  MGI:Hnf1a
   25  HGNC:PIK3R1
+  25  SFAM:"PRKC Family"
   25  HGNC:GJA1
   25  MGI:Ucp1
   25  HGNC:DDIT4
   25  HGNC:TSC22D3
+  25  GOBP:"muscle cell differentiation"
   25  HGNC:ZBTB17
   25  HGNC:PRKCB
   24  HGNC:STAT5A
@@ -638,7 +629,6 @@ PARAMETERS:
   24  MGI:Cxcl2
   24  MGI:Egf
   24  MGI:"Mir16-1"
-  24  GO:"macrophage differentiation"
   24  CHEBI:"ascorbic acid"
   24  HGNC:HNRNPK
   24  CHEBI:corticotropin
@@ -648,6 +638,7 @@ PARAMETERS:
   24  HGNC:RETN
   24  MGI:Nos2
   24  HGNC:TNFSF13B
+  24  GOBP:"macrophage differentiation"
   24  HGNC:TFRC
   24  MGI:Bcl2
   24  SDIS:"systemic acute phase reaction"
@@ -659,11 +650,11 @@ PARAMETERS:
   24  MESHPP:"Protein Biosynthesis"
   24  HGNC:FASN
   23  MGI:Retn
+  23  GOCCID:0043509
   23  MGI:Hgf
-  23  GO:"glucose import"
+  23  GOBP:"myoblast fusion"
   23  HGNC:CCNB1
   23  HGNC:TGFB2
-  23  GOCCACC:"GO:0043509"
   23  HGNC:GSK3A
   23  HGNC:VIM
   23  HGNC:ZNF175
@@ -672,6 +663,7 @@ PARAMETERS:
   23  CHEBI:bexarotene
   23  MGI:Il12b
   23  HGNC:ACTA2
+  23  GOBP:"glucose import"
   23  HGNC:EREG
   23  MGI:Cd36
   23  MGI:Mif
@@ -681,49 +673,52 @@ PARAMETERS:
   23  MGI:Hif1a
   23  MGI:Nmu
   23  SDIS:"tumor cell invasion"
+  23  SFAM:"FGF Family"
+  23  SCOMP:"CD3 Complex"
   23  HGNC:BIRC3
   23  HGNC:FGF7
-  23  GO:"myoblast fusion"
   23  HGNC:IKBKB
   23  CHEBI:prednisolone
   23  HGNC:SPARC
   23  HGNC:PTK2B
-  22  GO:"platelet activation"
   22  MGI:Rela
   22  MGI:Id2
   22  CHEBI:homocysteine
   22  HGNC:PTN
+  22  GOCCID:0005739
   22  HGNC:CCNA2
   22  MGI:Hmox1
   22  MGI:Vcam1
   22  HGNC:STC1
-  22  GO:"hypotonic response"
   22  HGNC:GADD45B
-  22  NCH:"Nfkb Complex"
+  22  SFAM:"STAT5 Family"
   22  SCHEM:"Benzyloxycarbonylleucyl-leucyl-leucine aldehyde"
   22  HGNC:MEF2A
   22  HGNC:RGS2
   22  HGNC:FRS2
   22  HGNC:INHBA
+  22  GOBP:"hypotonic response"
   22  SCHEM:"Phosphatidylinositol-3,4,5-trisphosphate"
   22  HGNC:CD14
   22  RGD:Irs1
   22  HGNC:NAMPT
-  22  GOCCACC:"GO:0005739"
   22  HGNC:BTG1
+  22  GOBP:"platelet activation"
   22  HGNC:MAP2K2
   22  HGNC:PRKCZ
   22  HGNC:FADD
   21  HGNC:IL6ST
   21  MGI:Il2
   21  HGNC:PGR
+  21  GOBP:"fatty acid beta-oxidation"
   21  SDIS:"adipose glucose import"
   21  HGNC:PLAT
   21  HGNC:TP73
+  21  SFAM:"RAS Family"
   21  RGD:Mapk3
   21  HGNC:PEBP1
   21  EGID:653509
-  21  GO:"fatty acid beta-oxidation"
+  21  GOBP:"oxidative phosphorylation"
   21  HGNC:ANGPT1
   21  MGI:Col3a1
   21  MGI:Mapk14
@@ -732,6 +727,7 @@ PARAMETERS:
   21  RGD:Fos
   21  HGNC:BMP4
   21  MGI:Ngf
+  21  SFAM:"Histone H3 Family"
   21  HGNC:SMAD1
   21  SCHEM:Sorbitol
   21  HGNC:PARP1
@@ -740,18 +736,17 @@ PARAMETERS:
   21  HGNC:NCOR2
   21  HGNC:HK2
   21  HGNC:HES1
-  21  GO:"oxidative phosphorylation"
   21  MGI:Socs3
   20  MGI:Fabp4
   20  SDIS:"oncogenic transformation"
+  20  GOBP:"monocyte extravasation"
   20  HGNC:PTPN11
   20  MGI:Phox2b
-  20  MESHCL:Cytoplasm
   20  HGNC:SHB
   20  HGNC:CASP9
   20  HGNC:INSIG1
+  20  MESHCS:Cytoplasm
   20  HGNC:TXN
-  20  GO:"myoblast proliferation"
   20  HGNC:RPS6
   20  SCHEM:Tunicamycin
   20  HGNC:C3
@@ -761,6 +756,7 @@ PARAMETERS:
   20  HGNC:PCNA
   20  HGNC:SLC2A1
   20  HGNC:IL1RN
+  20  GOBP:"myoblast proliferation"
   20  CHEBI:"cholesterol ester"
   20  HGNC:IRF1
   20  CHEBI:haloperidol
@@ -778,13 +774,12 @@ PARAMETERS:
   20  HGNC:UCP2
   20  MGI:Irs2
   20  SCHEM:Diacylglycerol
-  20  GO:"monocyte extravasation"
   19  MGI:Csf1
   19  MGI:Il5
   19  EGID:2475
-  19  GO:"epithelial to mesenchymal transition"
   19  MGI:Errfi1
   19  HGNC:SUMO1
+  19  GOBP:"epithelial to mesenchymal transition"
   19  MGI:Bax
   19  HGNC:SFN
   19  HGNC:HSPD1
@@ -810,23 +805,25 @@ PARAMETERS:
   19  HGNC:EZR
   19  HGNC:IL7
   18  HGNC:SERPINA1
+  18  GOBP:"cardioblast differentiation"
   18  MGI:Csf3
   18  MGI:Id1
   18  HGNC:ABCB1
   18  HGNC:THBD
-  18  GO:"cardioblast differentiation"
-  18  NCH:"CD3 Complex"
   18  SCHEM:Prasterone
   18  HGNC:S100A8
   18  HGNC:PLA2G4A
   18  MGI:Fas
+  18  SFAM:"MAPK p38 Family"
   18  HGNC:PDCD4
+  18  GOBP:"response to unfolded protein"
   18  CHEBI:"linoleic acid"
   18  CHEBI:dexamethasone
   18  MGI:Ccl5
   18  MGI:Ccr5
   18  RGD:Egfr
   18  MGI:Ybx2
+  18  SFAM:"WNT Family"
   18  HGNC:ARRB2
   18  HGNC:SREBF1
   18  HGNC:IGFBP1
@@ -838,8 +835,6 @@ PARAMETERS:
   18  CHEBI:toremifene
   18  SDIS:"anchorage-independent growth"
   18  HGNC:CFLAR
-  18  PFH:"Histone H3 Family"
-  18  GO:"response to unfolded protein"
   18  HGNC:TFF1
   18  HGNC:TNFRSF1A
   18  HGNC:CD44
@@ -868,7 +863,7 @@ PARAMETERS:
   17  HGNC:S100A4
   17  HGNC:TJP1
   17  MGI:Tlr4
-  17  GO:"endothelial cell activation"
+  17  GOBP:"cellular extravasation"
   17  HGNC:HP
   17  HGNC:HNRNPU
   17  HGNC:RBL2
@@ -893,7 +888,7 @@ PARAMETERS:
   17  MGI:Icam1
   17  HGNC:STAT6
   17  HGNC:SAT1
-  17  GO:"cellular extravasation"
+  17  GOBP:"endothelial cell activation"
   17  MGI:Ucp3
   17  HGNC:CYBB
   17  HGNC:IL3
@@ -912,13 +907,13 @@ PARAMETERS:
   16  HGNC:THPO
   16  HGNC:IRAK1
   16  MESHD:Neoplasms
-  16  PFH:"PRKC Family"
   16  HGNC:GAPDH
   16  HGNC:PDE3A
   16  HGNC:RARA
   16  RGD:Gsk3b
   16  HGNC:MEF2C
   16  MGI:Foxl1
+  16  GOBP:"mitotic S phase"
   16  MGI:Mt2
   16  EGID:123
   16  MGI:Lif
@@ -941,6 +936,7 @@ PARAMETERS:
   16  MGI:Il1a
   16  HGNC:TERT
   16  SCHEM:"N-Methylaspartate"
+  16  GOBP:"Wnt receptor signaling pathway"
   16  HGNC:NR4A2
   16  MGI:Ccl11
   16  MGI:Mmp9
@@ -949,25 +945,24 @@ PARAMETERS:
   16  MGI:Slc2a1
   16  HGNC:TGFBR2
   16  HGNC:BAG1
-  16  GO:"Wnt receptor signaling pathway"
   16  HGNC:ITGA6
   16  CHEBI:peptidoglycan
   16  MGI:Bcl2l11
   16  MGI:Ppargc1a
   16  RGD:Ptgs2
+  16  GOBP:mitosis
   16  MGI:Hp
   16  HGNC:MAPK9
   16  MGI:Gsk3b
   16  MGI:Cebpd
-  16  GO:mitosis
   16  HGNC:WNT1
   16  HGNC:GDF15
-  16  GO:"S phase of mitotic cell cycle"
   15  SCHEM:"serum fatty acid"
   15  HGNC:TLR4
   15  HGNC:PGF
   15  SCHEM:"Smoke extract, cigarette"
   15  HGNC:PTGIS
+  15  SCOMP:"Follicle Stimulating Hormone Complex"
   15  CHEBI:"vitamin A"
   15  MGI:Tnfsf11
   15  MGI:Adm
@@ -977,22 +972,20 @@ PARAMETERS:
   15  MGI:Wnt3a
   15  MGI:Itgb1
   15  HGNC:ACTB
-  15  MGI:Expi
   15  HGNC:ABL1
   15  HGNC:STC2
   15  HGNC:MYD88
   15  HGNC:PGK1
   15  HGNC:VHL
   15  MGI:Cyp7a1
+  15  MGI:Kal1
   15  HGNC:CHUK
   15  HGNC:NRAS
   15  MGI:Jak2
   15  HGNC:WT1
-  15  GO:"histone deacetylation"
   15  RGD:Ifng
   15  SCHEM:"SB-202190"
   15  EGID:122953
-  15  GO:spermatogenesis
   15  HGNC:IL12B
   15  MGI:Ccl3
   15  HGNC:DKK1
@@ -1001,13 +994,17 @@ PARAMETERS:
   15  MGI:Pik3r1
   15  SCHEM:"Epigallocatechin gallate"
   15  HGNC:ARRB1
+  15  GOBP:"immune response"
   15  HGNC:JAG1
+  15  GOBP:"mitotic cell cycle"
   15  HGNC:PDGFRB
+  15  GOBP:spermatogenesis
   15  HGNC:GNRH1
   15  HGNC:KLF10
   15  RGD:Fosl1
   15  MGI:Nanog
   15  HGNC:IFT57
+  15  GOBP:"histone deacetylation"
   15  MGI:Fhl2
   15  HGNC:CFB
   15  HGNC:FHL2
@@ -1018,7 +1015,6 @@ PARAMETERS:
   15  HGNC:ADRB2
   15  MGI:Foxa3
   15  HGNC:CX3CL1
-  15  PFM:"Wnt Family"
   15  HGNC:EPHA2
   15  CHEBI:budesonide
   15  HGNC:BHLHE41
@@ -1030,11 +1026,9 @@ PARAMETERS:
   15  MGI:Bcl2l1
   15  MGI:Map2k1
   15  HGNC:CHRNA7
-  15  GO:"immune response"
   15  HGNC:GCLM
   15  MGI:Srebf1
   15  HGNC:KRT19
-  15  GO:"mitotic cell cycle"
   15  HGNC:LPL
   15  SDIS:castration
   15  HGNC:U2AF1
@@ -1052,9 +1046,8 @@ PARAMETERS:
   14  HGNC:AATF
   14  SDIS:"Paclitaxel resistance"
   14  HGNC:CTSD
-  14  CHEBI:genistein
   (and more ...)
-PATTERNS:
+STATEMENT PATTERNS:
   46432  ... increases ...
   20209  ... increases r(...)
   20038  ... decreases ...

@@ -1,0 +1,1055 @@
+STATEMENT COUNT: 2063
+RELATIONS:
+  993  increases
+  353  decreases
+  317  directlyIncreases
+  103  directlyDecreases
+  74  positiveCorrelation
+  55  causesNoChange
+  24  negativeCorrelation
+  10  association
+  4  subProcessOf
+  2  prognosticBiomarkerFor
+  2  isA
+  2  hasComponent
+  1  hasMembers
+  1  hasComponents
+FUNCTIONS:
+  1013  p
+  580  a
+  507  kin
+  446  bp
+  247  complex
+  157  r
+  123  path
+  120  cat
+  119  tscript
+  108  act
+  83  gtp
+  52  composite
+  47  tloc
+  35  m
+  29  deg
+  29  surf
+  26  pep
+  17  rxn
+  17  phos
+  13  sec
+  4  g
+  2  list
+  2  tport
+ANNOTATIONS:
+  1986  TextLocation
+  1744  Species
+  967  Cell
+  620  CellLine
+  547  MeSHAnatomy
+  533  CellStructure
+  521  Disease
+  511  Anatomy
+PARAMETERS:
+  38  MESHCS:Cytoplasm
+  37  SFAM:"AKT Family"
+  36  HGNC:HIF1A
+  32  GOBP:"apoptotic process"
+  30  HGNC:IL6
+  28  HGNC:TNF
+  27  MESHCS:"Cell Nucleus"
+  26  SCHEM:"Smoke, cigarette"
+  24  SCHEM:"PD 98,059"
+  24  CHEBI:"nitric oxide"
+  23  HGNC:VEGFA
+  21  SCHEM:"LY 294002"
+  21  SFAM:"VEGF Family"
+  20  HGNC:VHL
+  20  SCHEM:"Smoke extract, cigarette"
+  20  GOBP:"cell proliferation"
+  20  MGI:Hck
+  19  HGNC:RAF1
+  19  MGI:Ppargc1a
+  18  HGNC:LRIG1
+  18  GOBP:"cell migration"
+  18  GOBP:"cell-matrix adhesion"
+  17  HGNC:GSK3A
+  17  CHEBI:glucosamine
+  17  HGNC:GSK3B
+  17  CHEBI:"reactive oxygen species"
+  17  MESHPP:"Cell Proliferation"
+  16  HGNC:IGF1
+  16  GOBP:"response to hypoxia"
+  15  SCHEM:"smoke condensate, cigarette (gas phase)"
+  14  HGNC:PAWR
+  14  CHEBI:forskolin
+  14  GOBP:angiogenesis
+  14  MESHCS:"Cell Membrane"
+  13  HGNC:AKT1
+  12  SCHEM:Tripterine
+  12  HGNC:IL1B
+  12  HGNC:SELE
+  12  SCHEM:Gefitinib
+  12  RGD:Igf1
+  12  CHEBIID:59826
+  11  HGNC:PRKACA
+  11  GOBP:"cell differentiation"
+  11  CHEBI:"3',5'-cyclic AMP"
+  11  HGNC:CCND1
+  11  MGI:Pgf
+  11  HGNC:HBP1
+  10  SDIS:"tumor growth"
+  10  GOBP:"Wnt receptor signaling pathway"
+  10  MGI:Akt1
+  10  MESHD:Neoplasms
+  10  HGNC:F2
+  10  HGNC:INS
+  10  MESHD:"Carcinoma, Squamous Cell"
+  10  CHEBI:dioxygen
+  9  HGNC:IRS2
+  9  GOBP:"cellular response to electrical stimulus"
+  9  GOBP:"response to oxidative stress"
+  9  GOBP:"regulation of mitochondrial membrane permeability"
+  9  SFAM:"COL1 Family"
+  9  MGI:Bmp4
+  9  MGI:Mir203
+  9  SFAM:"WNT Family"
+  9  HGNC:RB1
+  9  MESHPP:"Platelet Adhesiveness"
+  9  HGNC:TP63
+  9  CHEBI:superoxide
+  9  MGI:Mir145
+  9  GOBP:"platelet aggregation"
+  9  HGNC:EGFR
+  9  GOBP:"fatty acid beta-oxidation"
+  9  GOBP:"G1/S transition of mitotic cell cycle"
+  9  HGNC:DKK1
+  8  HGNC:CDKN1B
+  8  HGNC:CDKN1A
+  8  HGNC:RIN1
+  8  GOBP:"cell growth"
+  8  CHEBI:"3',5'-cyclic GMP"
+  8  SCHEM:"Oxidized Low Density Lipoprotein"
+  8  CHEBI:wortmannin
+  8  HGNC:KDR
+  8  HGNC:CAV1
+  8  SCHEM:Isoproterenol
+  8  CHEBI:"iron(2+)"
+  8  HGNC:FOS
+  8  HGNC:MYC
+  8  HGNC:ERBB3
+  8  HGNC:CTNNB1
+  8  CHEBI:"calcium(2+)"
+  7  HGNC:MIR143
+  7  HGNC:MIR145
+  7  CHEBIID:50864
+  7  HGNC:SLC2A4
+  7  MESHCS:"Intracellular Space"
+  7  HGNC:NOS3
+  7  SCHEM:Ionomycin
+  7  GOBP:"response to fluid shear stress"
+  7  SCHEM:"SU 5416"
+  7  HGNC:UCP1
+  7  HGNC:NR2F1
+  7  HGNC:IRAK1
+  7  SCHEM:Tetrachlorodibenzodioxin
+  7  GOBP:"heterotypic cell-cell adhesion"
+  7  MGI:Mycn
+  6  HGNC:IRS1
+  6  HGNC:EGF
+  6  CHEBI:"arachidonic acid"
+  6  SCHEM:"SB-203580"
+  6  SFAM:"IL1 Family"
+  6  MGI:Ctnnb1
+  6  MGI:Cdkn1b
+  6  HGNC:TGFA
+  6  SDIS:Steatosis
+  6  MGI:Irs1
+  6  SFAM:"PDGF Family"
+  6  HGNC:CYP1A1
+  6  MGI:Mapkap1
+  6  HGNC:MMP14
+  6  CHEBI:"hydrogen peroxide"
+  6  GOBP:mitosis
+  6  CHEBI:glucose
+  6  CHEBI:"prostaglandin E2"
+  5  GOBP:"blood coagulation"
+  5  SFAM:"STAT5 Family"
+  5  GOBP:"regulation of oxidative phosphorylation uncoupler activity"
+  5  HGNC:WNT5A
+  5  SCHEM:Azaserine
+  5  SCHEM:"Calyculin A"
+  5  SCHEM:Thiazolidinedione
+  5  GOBP:"vasculature development"
+  5  MGI:Dkk1
+  5  MESHD:Edema
+  5  CHEBI:"oxidised LDL"
+  5  HGNC:ANGPT1
+  5  CHEBI:histamine
+  5  SCHEM:"N(6)-Benzoyl-cyclic amp"
+  5  SCHEM:"Pertussis toxins"
+  5  SCHEM:Estradiol
+  5  GOBP:"positive regulation of mitochondrial membrane permeability"
+  5  MGI:Trp63
+  5  MESHCS:Mitochondria
+  5  SCHEM:SP600125
+  5  SDIS:"tissue damage"
+  5  MGI:Mir143
+  5  SDIS:"mitochondrial DNA damage"
+  5  HGNC:ITGB1
+  5  MESHD:Atherosclerosis
+  5  MESHD:"Carcinoma, Non-Small-Cell Lung"
+  5  GOBP:"cellular response to starvation"
+  5  SFAM:"FOXO Family"
+  5  GOBP:"skeletal muscle hypertrophy"
+  5  HGNC:HDAC4
+  5  MESHPP:"Transendothelial and Transepithelial Migration"
+  5  CHEBIID:52289
+  4  SCHEM:"lysophosphatidic acid"
+  4  MGI:Eif4ebp1
+  4  CHEBI:lipopolysaccharide
+  4  CHEBI:"phosphatidyl-L-serine"
+  4  SCHEM:"8-Bromo cyclic adenosine monophosphate"
+  4  HGNC:DCN
+  4  HGNC:MIR203
+  4  CHEBI:"fatty acid"
+  4  HGNC:PLK1
+  4  HGNC:EDN1
+  4  HGNC:MAP3K11
+  4  GOBP:"keratinocyte differentiation"
+  4  MESHD:Thrombosis
+  4  GOBP:"mitochondrial respiratory chain complex assembly"
+  4  HGNC:MYD88
+  4  CHEBI:bradykinin
+  4  CHEBI:tamoxifen
+  4  HGNC:VWF
+  4  HGNC:EPO
+  4  MESHD:"Breast Neoplasms"
+  4  SCOMP:"NADPH Oxidase Complex"
+  4  GOBP:"regulation of vascular permeability"
+  4  SCHEM:"8-(4-chloro-phenylthio)-2'-O-methyladenosine-3'-5'-cyclic monophosphate"
+  4  RGD:Chuk
+  4  CHEBIID:16810
+  4  GOBP:necrosis
+  4  HGNC:PTK2B
+  4  HGNC:STAT5A
+  4  RGD:Irs1
+  4  CHEBI:amiodarone
+  4  HGNC:ERBB2
+  4  RGD:Myog
+  4  CHEBI:glutathione
+  4  HGNC:JUN
+  4  GOBP:"cell cycle arrest"
+  4  HGNC:CDC27
+  4  CHEBI:"okadaic acid"
+  4  RGD:Ikbkb
+  4  HGNC:IFNB1
+  4  CHEBI:"2-oxoglutarate(2-)"
+  4  HGNC:PRPF4B
+  4  MGI:Foxo3
+  4  MGI:Foxo1
+  3  HGNC:CNTF
+  3  CHEBI:lipid
+  3  MESHD:"Diabetes Mellitus, Type 2"
+  3  HGNC:FLT1
+  3  HGNC:LIF
+  3  GOBP:"relaxation of vascular smooth muscle"
+  3  GOBP:"lung epithelium development"
+  3  HGNC:SHC1
+  3  HGNC:FASN
+  3  HGNC:MET
+  3  SCHEM:Lipopolysaccharide
+  3  MGI:Acta2
+  3  SFAM:"MAPK JNK Family"
+  3  SCHEM:"AG-490"
+  3  SFAM:"MAPK p38 Family"
+  3  SFAM:"PIK3R Class IA Family"
+  3  SCHEM:"PP1 tyrosine kinase inhibitor"
+  3  SCHEM:"ML 9"
+  3  SCHEM:"KN 62"
+  3  HGNC:ANGPT2
+  3  HGNC:CYP2E1
+  3  MGI:Nox1
+  3  GOBP:"tricarboxylic acid cycle"
+  3  GOBP:"cytokine production"
+  3  CHEBI:ceramide
+  3  HGNC:MAP3K7
+  3  HGNC:TFF1
+  3  HGNC:STAT5B
+  3  SCHEM:"Benzyloxycarbonylleucyl-leucyl-leucine aldehyde"
+  3  HGNC:PRKCD
+  3  SDIS:"mitochondrial damage"
+  3  HGNC:FGF2
+  3  MGI:Angpt1
+  3  HGNC:OSM
+  3  MESHD:"Reye Syndrome"
+  3  HGNC:ANAPC1
+  3  MESHD:"Pulmonary Eosinophilia"
+  3  CHEBI:ATP
+  3  SFAM:"RAS Family"
+  3  CHEBI:peroxynitrite
+  3  CHEBI:FAD
+  3  GOBP:"leukocyte migration"
+  3  CHEBI:"prostaglandin I2"
+  3  HGNC:CDC23
+  3  HGNC:CDC16
+  3  CHEBI:amineptine
+  3  GOBP:vasculogenesis
+  3  SCHEM:U0126
+  3  HGNC:BCL2
+  3  GOBP:"muscle cell differentiation"
+  3  SCHEM:Mastoparan
+  3  MESHD:Adenocarcinoma
+  3  MESHPP:"Capillary Permeability"
+  3  MESHPP:"Cell Differentiation"
+  2  HGNC:IRS4
+  2  CHEBI:acetylcholine
+  2  HGNC:TAB2
+  2  SFAM:"HDAC Class II Family"
+  2  RGD:Igfbp5
+  2  HGNC:CDH5
+  2  CHEBI:antioxidant
+  2  HGNC:BAD
+  2  MESHD:"Colorectal Neoplasms"
+  2  HGNC:PGR
+  2  CHEBI:ethanol
+  2  HGNC:PELI2
+  2  CHEBIID:28229
+  2  SDIS:"VLDL secretion"
+  2  MGI:"Nkx2-5"
+  2  HGNC:PMAIP1
+  2  MGI:Lrig1
+  2  HGNC:CALM1
+  2  MGI:Tek
+  2  MGI:Vegfa
+  2  MESHPP:Lipolysis
+  2  HGNC:IKBKB
+  2  CHEBI:"angiotensin II"
+  2  HGNC:IGF2R
+  2  GOBP:"inflammatory response"
+  2  GOBP:"lung proximal/distal axis specification"
+  2  SCHEM:"Poly I-C"
+  2  HGNC:RAC1
+  2  GOBP:"blood vessel development"
+  2  GOBP:"regulation of macrophage activation"
+  2  HGNC:EDN3
+  2  HGNC:EDN2
+  2  MESHPP:"Wound Healing"
+  2  GOBP:"lung pattern specification process"
+  2  MGI:Ccl11
+  2  CHEBI:sorafenib
+  2  GOBP:"response to virus"
+  2  CHEBI:noradrenaline
+  2  SCHEM:"SU 6668"
+  2  GOBP:"cell-cell adhesion"
+  2  MGI:Jak2
+  2  GOBP:"response to UV-C"
+  2  GOBP:"epithelial tube formation"
+  2  CHEBI:sirolimus
+  2  HGNC:MYOCD
+  2  SFAM:"GSK3 Family"
+  2  SFAM:"HSPA Family"
+  2  HGNC:HSPB1
+  2  GOBP:"glucose import"
+  2  CHEBI:apocynin
+  2  HGNC:CXCR4
+  2  GOBP:aging
+  2  RGD:Bcl2
+  2  HGNC:CCND2
+  2  MGI:Myc
+  2  HGNC:CREB1
+  2  RGD:Bcl2l1
+  2  CHEBI:"phosphatidylinositol trisphosphate"
+  2  MESHPP:Pregnancy
+  2  SCHEM:"Ketone Body"
+  2  HGNC:PTEN
+  2  CHEBI:FADH2
+  2  SFAM:"ESR Family"
+  2  MESHPP:Eating
+  2  HGNC:MAP2K3
+  2  HGNC:MAP2K6
+  2  HGNC:TP53
+  2  HGNC:MYB
+  2  GOBP:"blood vessel endothelial cell migration"
+  2  GOBP:"cell death"
+  2  HGNC:NFKBIA
+  2  HGNC:EZH2
+  2  MGI:Irs2
+  2  MESHD:Hepatitis
+  2  GOBP:"cell aging"
+  2  HGNC:THBS1
+  2  MGI:Srf
+  2  MGI:Il5
+  2  HGNC:ANAPC5
+  2  HGNC:LRP6
+  2  HGNC:DDR1
+  2  RGD:Nfkbia
+  2  CHEBI:NADH
+  2  CHEBI:"3-nitro-L-tyrosine"
+  2  HGNC:G6PD
+  2  HGNC:CEBPB
+  2  CHEBI:NAD
+  2  GOBP:"stem cell division"
+  2  HGNC:BRAF
+  2  GOBP:"epidermal growth factor receptor signaling pathway"
+  2  MGI:Tsc2
+  2  MGI:Camk4
+  2  CHEBIID:52646
+  2  GOBP:"ATP synthesis coupled proton transport"
+  2  GOBP:"pyruvate oxidation"
+  2  MESHCS:"Cytoplasmic Granules"
+  2  MGI:Irak1
+  2  CHEBI:"N-acetyl-1,4-benzoquinone imine"
+  2  MGI:Irak3
+  2  CHEBI:"phorbol 13-acetate 12-myristate"
+  2  MESHD:"Insulin Resistance"
+  2  MESHD:"Pulmonary Fibrosis"
+  2  GOBP:"macrophage differentiation"
+  2  MESHD:"Plaque, Atherosclerotic"
+  2  GOBP:"lung smooth muscle development"
+  2  SCHEM:"7-Ketocholesterol"
+  2  HGNC:TGFB1
+  2  MGI:Pdgfrb
+  2  HGNC:JAK2
+  2  HGNC:BBC3
+  2  HGNC:CDKN2A
+  2  SCHEM:Rottlerin
+  2  HGNC:SIRT1
+  2  RGD:Jun
+  2  MESHD:"Neoplasm Invasiveness"
+  2  CHEBI:"valproic acid"
+  2  HGNC:FN1
+  1  HGNC:CAT
+  1  HGNC:TAB1
+  1  HGNC:TRAF6
+  1  GOBP:"response to ionizing radiation"
+  1  HGNC:IL2
+  1  MGI:Pias1
+  1  HGNC:MYOZ1
+  1  GOBP:anaphase
+  1  HGNC:IL4
+  1  HGNC:IL3
+  1  HGNC:HGF
+  1  MGI:Pias3
+  1  MESHD:Fever
+  1  RGD:Igfbp4
+  1  HGNC:SOD1
+  1  HGNC:PROS1
+  1  SCHEM:"Angiotensin ii"
+  1  GOBP:"type I interferon secretion"
+  1  HGNC:RELA
+  1  MESHD:Melanoma
+  1  MGI:Fgfr2
+  1  MGI:Kremen1
+  1  MESHD:"Liver Neoplasms"
+  1  GOBP:phagocytosis
+  1  GOBP:"blood vessel remodeling"
+  1  SCHEM:"4,17beta-Dihydroxy-4-androstene-3-one"
+  1  GOBP:"insulin receptor signaling pathway"
+  1  MESHD:"Endometrial Neoplasms"
+  1  HGNC:ICAM1
+  1  HGNC:ELK1
+  1  MESHPP:"DNA Replication"
+  1  HGNC:FLT4
+  1  GOBP:"cellular response to fluid shear stress"
+  1  HGNC:ALB
+  1  SCHEM:acetoacetate
+  1  SFAM:"BMP Family"
+  1  HGNC:IHH
+  1  CHEBI:serotonin
+  1  RGD:Tnf
+  1  MGI:Rps6kb2
+  1  MGI:Rps6kb1
+  1  MGI:Fgf10
+  1  HGNC:HBEGF
+  1  HGNC:SERPINA1
+  1  HGNC:SUZ12
+  1  HGNC:PELI1
+  1  RGD:Itgb4
+  1  HGNC:IL1A
+  1  MESHD:Rhabdomyolysis
+  1  SDIS:fibrosis
+  1  CHEBI:ADP
+  1  GOBP:"cellular response to stress"
+  1  HGNC:CYBB
+  1  SFAM:"PDE4 Long Family"
+  1  GOBP:"cellular respiration"
+  1  MESHD:"Thyroid Neoplasms"
+  1  SFAM:"GPX Family"
+  1  MGI:Nos2
+  1  MGI:Vegfb
+  1  MGI:Hras
+  1  GOBP:"cardiac vascular smooth muscle cell differentiation"
+  1  HGNC:BAG1
+  1  MESHD:Hypoglycemia
+  1  RGD:Birc3
+  1  HGNC:EFNB2
+  1  GOBP:"cell morphogenesis"
+  1  HGNC:WNT2B
+  1  HGNC:STAT1
+  1  CHEBI:GDP
+  1  GOBP:"epidermal cell differentiation"
+  1  HGNC:CXCL12
+  1  HGNC:STAT3
+  1  HGNC:BCL2L1
+  1  HGNC:HRAS
+  1  GOBP:"apoptotic DNA fragmentation"
+  1  HGNC:SOCS1
+  1  RGD:Ccnd1
+  1  MESHD:Hyperplasia
+  1  MESHD:"Leukemia, Myeloid"
+  1  CHEBI:indometacin
+  1  CHEBIID:16469
+  1  CHEBI:paracetamol
+  1  GOBP:"mitochondrial DNA replication"
+  1  HGNC:FOXO3
+  1  MESHPP:"Cell Survival"
+  1  CHEBI:perhexiline
+  1  SFAM:"EGFR Ligand Family"
+  1  HGNC:SOCS3
+  1  MESHD:"Prostatic Intraepithelial Neoplasia"
+  1  CHEBI:retinoid
+  1  MESHCS:"Mitochondrial Membranes"
+  1  HGNC:RPS6
+  1  HGNC:MPO
+  1  SDIS:"Lipid Droplet"
+  1  SCHEM:Trastuzumab
+  1  HGNC:FASLG
+  1  GOBP:"negative regulation of microtubule depolymerization"
+  1  MESHD:"Fatty Liver"
+  1  HGNC:SLC2A1
+  1  CHEBI:"acetyl-CoA"
+  1  GOBP:"type I interferon production"
+  1  CHEBI:thapsigargin
+  1  CHEBI:dexamethasone
+  1  MGI:Myocd
+  1  GOBP:"leukocyte cell-cell adhesion"
+  1  MESHD:"Carcinoid Tumor"
+  1  HGNC:PTPN11
+  1  MESHD:Inflammation
+  1  GOBP:"brown fat cell differentiation"
+  1  MESHD:Leukocytosis
+  1  GOBP:"skeletal muscle adaptation"
+  1  HGNC:EGR1
+  1  MGI:Cnn1
+  1  MESHCS:"Membrane Microdomains"
+  1  CHEBI:"N-acetyl-L-cysteine"
+  1  GOBP:"respiratory tube development"
+  1  MESHD:"Lung Neoplasms"
+  1  HGNC:IQGAP1
+  1  HGNC:MTOR
+  1  HGNC:IL2RA
+  1  MGI:Tnni1
+  1  GOBP:"response to UV"
+  1  GOBP:"integrin activation"
+  1  HGNC:IRF3
+  1  GOBP:"cell cycle"
+  1  GOBP:"cellular response to cytokine stimulus"
+  1  CHEBI:"vitamin C"
+  1  GOBP:"toll-like receptor 3 signaling pathway"
+  1  CHEBI:"bile salt"
+  1  HGNC:NCF1
+  1  GOBP:"lipid oxidation"
+  1  HGNC:MYCN
+  1  SFAM:"MAPK Erk1/2 Family"
+  1  SFAM:"CDC25 Family"
+  1  HGNC:PDGFB
+  1  HGNC:PDGFA
+  1  MESHD:"Carcinoma, Renal Cell"
+  1  HGNC:VTN
+  1  SCHEM:"Cholera toxin"
+  1  GOBP:"fatty acid oxidation"
+  1  HGNC:MAPKAP1
+  1  MGI:Ptpn11
+  1  SFAM:"RPS6KA Family"
+  1  HGNC:MMP9
+  1  HGNC:MMP2
+  1  GOBP:"energy derivation by oxidation of organic compounds"
+  1  HGNC:SELP
+  1  HGNC:ACP1
+  1  MGI:Kras
+  1  MGI:Mb
+  1  CHEBI:UTP
+  1  GOBP:"regulation of collagen binding"
+  1  GOBP:"insulin-like growth factor receptor signaling pathway"
+  1  GOBP:"neutrophil activation"
+  1  HGNC:PRPF6
+  1  CHEBIID:24875
+  1  GOBP:"epidermis development"
+  1  SCHEM:"Atrial natriuretic factor"
+  1  SFAM:"IRS Family"
+  1  HGNC:MAP2K7
+  1  GOBP:"stem cell development"
+  1  MESHPP:"Cell Hypoxia"
+  1  MESHD:"Hepatic Encephalopathy"
+  1  RGD:Ptprn
+  1  RGD:Slc2a4
+  1  MGI:Wnt7b
+  1  CHEBI:"calcium ion"
+  1  GOBP:"cell adhesion"
+  1  MESHD:"Small Cell Lung Carcinoma"
+  1  SFAM:"COL4 Family"
+  1  MESHD:"Neovascularization, Pathologic"
+  1  HGNC:AXIN2
+  1  MGI:Slc2a4
+  1  CHEBI:"L-arginine"
+  1  HGNC:TIMP3
+  1  HGNC:TIRAP
+  1  GOBP:"mitotic prometaphase"
+  1  HGNC:ERBB4
+  1  HGNC:AXIN1
+  1  MESHD:"Neoplasm Metastasis"
+  1  MESHD:"Adenocarcinoma, Bronchiolo-Alveolar"
+  1  CHEBIID:53490
+  1  MESHD:Hypertrophy
+  1  SPAC:P42771
+  1  MGI:Ticam1
+  1  GOBP:"platelet activation"
+  1  HGNC:ABCB1
+  1  GOBP:"establishment of cell polarity"
+  1  SFAM:"INS Family"
+  1  SDIS:Encephalopathy
+  1  GOBP:"sprouting angiogenesis"
+  1  GOBP:"extracellular matrix assembly"
+  1  HGNC:H1F0
+  1  SCHEM:Wortmannin
+  1  SCOMP:"Fibrinogen Complex"
+  1  HGNC:TICAM1
+  1  MGI:Pde4b
+  1  HGNC:DVL2
+  1  MESHD:Neuroblastoma
+  1  HGNC:TOLLIP
+  1  HGNC:MAPK14
+  1  HGNC:TNFRSF1A
+  1  HGNC:ITGB2
+  1  SCHEM:Colforsin
+  1  HGNC:CRP
+  1  SDIS:hypoglycemia
+  1  HGNC:SAA1
+  1  MGI:Kdr
+  1  GOBP:"regulation of cytoskeleton organization"
+  1  CHEBIID:28119
+  1  CHEBI:troglitazone
+  1  HGNC:CEBPA
+  1  GOBP:"toll-like receptor signaling pathway"
+  1  MESHPP:Glycolysis
+  1  HGNC:NDP
+  1  HGNC:TH
+  1  HGNC:TF
+  1  RGD:Xiap
+  1  MESHD:"Pancreatic Neoplasms"
+  1  HGNC:CSN2
+  1  GOBP:"respiratory electron transport chain"
+  1  HGNC:FZD10
+  1  SDIS:hemorrhage
+  1  MESHD:"Head and Neck Neoplasms"
+  1  CHEBI:"2,4-dinitrophenol"
+  1  MESHD:"Ovarian Neoplasms"
+  1  GOBP:coagulation
+  1  GOBP:"response to spindle checkpoint signaling"
+  1  CHEBI:"3-hydroxybutyrate"
+  1  GOBP:"cellular response to growth factor stimulus"
+  1  GOBP:"heat dissipation"
+  1  MGI:Ccnd1
+  1  CHEBI:"acetylsalicylic acid"
+  1  HGNC:RBL2
+  1  HGNC:PDE4B
+  1  HGNC:PDE4C
+  1  HGNC:PDE4D
+  1  HGNC:CDC20
+  1  MGI:Egf
+  1  HGNC:PTGS2
+  1  MGI:Mef2c
+  1  GOBP:"activation of cysteine-type endopeptidase activity"
+  1  MGI:Socs3
+  1  CHEBI:"phosphatidic acid"
+  1  GOBP:"protein oxidation"
+  1  MESHD:Retinoblastoma
+  1  MESHD:"Acidosis, Lactic"
+  1  CHEBI:progesterone
+  1  HGNC:RSPO1
+  1  MESHPP:Thermogenesis
+  1  SFAM:"RPS6KB Family"
+  1  MESHD:Emphysema
+  1  HGNC:EPAS1
+  1  HGNC:GP6
+  1  SDIS:"lipid peroxidation"
+  1  MESHD:"Pulmonary Atelectasis"
+  1  GOBP:"exit from mitosis"
+  1  HGNC:CDK4
+  1  SFAM:"14-3-3 Family"
+  1  CHEBI:"oxygen radical"
+  1  HGNC:SMARCA4
+  1  SFAM:"RAF Family"
+  1  MESHPP:"Neutrophil Infiltration"
+  1  MESHD:"Drug-Induced Liver Injury"
+  1  GOBP:"cell fate determination"
+  1  MESHPP:"Blood Pressure"
+  1  SFAM:"DVL Family"
+  1  HGNC:KLF4
+STATEMENT PATTERNS:
+  993  ... increases ...
+  353  p(...) increases ...
+  353  ... decreases ...
+  317  ... directlyIncreases ...
+  243  ... increases bp(...)
+  239  a(...) increases ...
+  191  a(...) decreases ...
+  169  ... increases p(...)
+  120  ... increases kin(...)
+  107  complex(...)
+  105  p(...) increases bp(...)
+  103  kin(...) directlyIncreases ...
+  103  ... directlyDecreases ...
+  100  ... directlyIncreases p(...)
+  96  p(...) decreases ...
+  88  ... increases r(...)
+  86  p(...) directlyIncreases ...
+  84  kin(...) increases ...
+  78  kin(...) directlyIncreases p(...)
+  77  bp(...) increases ...
+  74  ... positiveCorrelation ...
+  66  a(...) increases p(...)
+  61  ... decreases bp(...)
+  56  a(...) increases bp(...)
+  55  ... causesNoChange ...
+  54  ... directlyIncreases kin(...)
+  52  ... decreases p(...)
+  49  act(...) increases ...
+  48  ... directlyDecreases kin(...)
+  48  p(...) increases p(...)
+  48  gtp(...) increases ...
+  46  p(...) increases kin(...)
+  45  composite(...) increases ...
+  45  ... increases a(...)
+  40  ... increases path(...)
+  38  ... positiveCorrelation path(...)
+  36  p(...) increases r(...)
+  36  p(...) directlyDecreases ...
+  36  a(...) directlyDecreases ...
+  34  cat(...) directlyIncreases ...
+  33  ... increases cat(...)
+  33  p(...) positiveCorrelation ...
+  32  a(...) directlyIncreases ...
+  30  ... directlyIncreases cat(...)
+  30  tscript(...) directlyIncreases ...
+  30  ... increases complex(...)
+  28  a(...) decreases p(...)
+  28  kin(...) decreases ...
+  28  ... decreases kin(...)
+  28  p(...) directlyIncreases kin(...)
+  28  ... increases tscript(...)
+  26  a(...) directlyDecreases kin(...)
+  26  complex(...) increases ...
+  25  ... directlyIncreases complex(...)
+  24  p(...) decreases bp(...)
+  24  tscript(...) increases ...
+  24  ... negativeCorrelation ...
+  24  ... increases tloc(...)
+  24  a(...) directlyIncreases cat(...)
+  23  ... directlyIncreases r(...)
+  23  tscript(...) directlyIncreases r(...)
+  22  a(...) decreases bp(...)
+  22  ... directlyIncreases act(...)
+  21  a(...) increases r(...)
+  21  ... decreases r(...)
+  20  ... positiveCorrelation bp(...)
+  20  p(...) directlyIncreases complex(...)
+  20  gtp(...) increases kin(...)
+  19  p(...) causesNoChange ...
+  19  bp(...) increases p(...)
+  19  p(...) negativeCorrelation ...
+  18  ... increases gtp(...)
+  18  a(...) causesNoChange ...
+  18  a(...) increases kin(...)
+  18  ... increases surf(...)
+  18  ... directlyIncreases deg(...)
+  17  p(...) decreases p(...)
+  17  p(...) directlyIncreases act(...)
+  16  p(...) increases path(...)
+  16  kin(...) directlyIncreases kin(...)
+  16  p(...) positiveCorrelation path(...)
+  16  a(...) decreases kin(...)
+  16  ... decreases complex(...)
+  15  p(...) directlyDecreases kin(...)
+  15  ... causesNoChange kin(...)
+  15  cat(...) directlyIncreases p(...)
+  14  kin(...) increases bp(...)
+  14  a(...) increases cat(...)
+  14  kin(...) increases kin(...)
+  14  act(...) increases bp(...)
+  14  kin(...) increases p(...)
+  13  complex(...) increases bp(...)
+  13  ... increases pep(...)
+  13  a(...) increases a(...)
+  13  p(...) decreases r(...)
+  13  cat(...) increases ...
+  12  tscript(...) increases r(...)
+  12  ... directlyDecreases complex(...)
+  12  tloc(...) increases ...
+  12  bp(...) positiveCorrelation ...
+  11  bp(...) decreases ...
+  11  p(...) positiveCorrelation bp(...)
+  11  kin(...) directlyDecreases ...
+  11  kin(...) increases tscript(...)
+  11  a(...) increases surf(...)
+  11  ... decreases path(...)
+  11  bp(...) increases a(...)
+  11  p(...)
+  11  ... negativeCorrelation path(...)
+  11  ... directlyDecreases tscript(...)
+  10  ... association ...
+  10  complex(...) directlyIncreases ...
+  10  p(...) increases tscript(...)
+  10  ... decreases tscript(...)
+  10  ... directlyIncreases a(...)
+  10  ... increases sec(...)
+  10  p(...) increases cat(...)
+  10  a(...) causesNoChange kin(...)
+  9  a(...) decreases complex(...)
+  9  ... decreases act(...)
+  9  ... positiveCorrelation p(...)
+  9  p(...) negativeCorrelation path(...)
+  9  bp(...) increases r(...)
+  9  ... causesNoChange p(...)
+  9  p(...) increases complex(...)
+  9  p(...) directlyIncreases deg(...)
+  8  p(...) increases a(...)
+  8  p(...) directlyDecreases tscript(...)
+  8  gtp(...) directlyIncreases ...
+  8  p(...) directlyDecreases complex(...)
+  8  cat(...) directlyIncreases a(...)
+  8  ... directlyIncreases m(...)
+  8  ... negativeCorrelation p(...)
+  8  composite(...) increases bp(...)
+  8  act(...) directlyIncreases ...
+  8  act(...) increases kin(...)
+  8  composite(...) increases p(...)
+  7  complex(...) directlyDecreases ...
+  7  bp(...) increases bp(...)
+  7  bp(...) positiveCorrelation p(...)
+  7  ... causesNoChange r(...)
+  7  a(...) increases tloc(...)
+  7  composite(...) increases r(...)
+  7  kin(...) positiveCorrelation path(...)
+  7  bp(...) increases kin(...)
+  7  p(...) decreases kin(...)
+  7  a(...) increases pep(...)
+  7  ... directlyIncreases tscript(...)
+  7  ... causesNoChange bp(...)
+  7  kin(...) positiveCorrelation ...
+  6  composite(...) increases a(...)
+  6  tloc(...) increases bp(...)
+  6  kin(...) increases tloc(...)
+  6  ... directlyIncreases rxn(...)
+  6  gtp(...) directlyIncreases kin(...)
+  6  ... decreases surf(...)
+  6  p(...) negativeCorrelation p(...)
+  6  ... increases deg(...)
+  6  ... increases rxn(...)
+  6  tscript(...) directlyIncreases m(...)
+  6  cat(...) directlyIncreases rxn(...)
+  6  r(...) positiveCorrelation ...
+  6  ... directlyDecreases r(...)
+  5  pep(...) increases ...
+  5  path(...) positiveCorrelation ...
+  5  ... association path(...)
+  5  phos(...) increases ...
+  5  a(...) increases sec(...)
+  5  tloc(...) increases complex(...)
+  5  kin(...) decreases act(...)
+  5  kin(...) decreases complex(...)
+  5  tscript(...) increases bp(...)
+  5  a(...) increases complex(...)
+  5  ... directlyIncreases tloc(...)
+  5  kin(...) causesNoChange ...
+  5  m(...) positiveCorrelation ...
+  5  ... directlyDecreases act(...)
+  5  a(...) increases path(...)
+  5  p(...) decreases path(...)
+  4  r(...) positiveCorrelation path(...)
+  4  ... directlyDecreases p(...)
+  4  ... subProcessOf bp(...)
+  4  m(...) directlyDecreases ...
+  4  gtp(...) increases complex(...)
+  4  kin(...) directlyDecreases kin(...)
+  4  a(...) increases gtp(...)
+  4  p(...) directlyIncreases p(...)
+  4  bp(...) increases tloc(...)
+  4  tscript(...) increases p(...)
+  4  p(...) increases tloc(...)
+  4  path(...) association ...
+  4  path(...) increases ...
+  4  complex(...) decreases bp(...)
+  4  tscript(...) decreases ...
+  4  bp(...) increases path(...)
+  4  complex(...) decreases ...
+  4  a(...) directlyIncreases act(...)
+  4  complex(...) directlyDecreases complex(...)
+  4  bp(...) positiveCorrelation path(...)
+  4  a(...) decreases surf(...)
+  4  bp(...) increases complex(...)
+  4  kin(...) directlyDecreases act(...)
+  4  ... subProcessOf ...
+  4  p(...) causesNoChange kin(...)
+  4  m(...) increases ...
+  4  p(...) causesNoChange bp(...)
+  4  p(...) increases sec(...)
+  4  gtp(...) increases bp(...)
+  4  cat(...) directlyIncreases deg(...)
+  4  m(...) decreases ...
+  4  p(...) association ...
+  4  a(...) directlyDecreases phos(...)
+  4  ... directlyDecreases phos(...)
+  4  p(...) increases gtp(...)
+  4  ... increases m(...)
+  4  ... increases act(...)
+  4  a(...) decreases path(...)
+  4  cat(...) increases a(...)
+  4  a(...) decreases tscript(...)
+  4  act(...) causesNoChange ...
+  4  ... directlyDecreases cat(...)
+  3  ... causesNoChange act(...)
+  3  p(...) decreases tscript(...)
+  3  cat(...) increases rxn(...)
+  3  pep(...) directlyIncreases ...
+  3  composite(...) causesNoChange ...
+  3  a(...) decreases r(...)
+  3  tscript(...) directlyDecreases r(...)
+  3  bp(...) decreases bp(...)
+  3  a(...) increases act(...)
+  3  ... positiveCorrelation complex(...)
+  3  ... causesNoChange complex(...)
+  3  phos(...) directlyDecreases ...
+  3  complex(...) increases kin(...)
+  3  p(...) causesNoChange p(...)
+  3  bp(...) increases gtp(...)
+  3  gtp(...) decreases ...
+  3  complex(...) directlyIncreases tscript(...)
+  3  kin(...) directlyIncreases cat(...)
+  3  act(...) increases path(...)
+  3  cat(...) increases bp(...)
+  3  p(...) negativeCorrelation bp(...)
+  3  bp(...) increases cat(...)
+  3  ... association bp(...)
+  3  p(...) causesNoChange r(...)
+  3  ... negativeCorrelation bp(...)
+  3  a(...) causesNoChange bp(...)
+  3  p(...) increases deg(...)
+  3  path(...) association path(...)
+  3  pep(...) increases pep(...)
+  3  bp(...) increases rxn(...)
+  3  a(...) directlyDecreases cat(...)
+  3  p(...) causesNoChange act(...)
+  3  m(...) positiveCorrelation bp(...)
+  3  act(...) directlyIncreases deg(...)
+  3  kin(...) decreases kin(...)
+  3  tscript(...) directlyDecreases ...
+  3  a(...) directlyIncreases kin(...)
+  3  path(...) increases path(...)
+  3  p(...) increases surf(...)
+  3  gtp(...) positiveCorrelation path(...)
+  3  ... decreases a(...)
+  3  gtp(...) increases gtp(...)
+  3  act(...) directlyIncreases complex(...)
+  3  ... causesNoChange surf(...)
+  3  ... decreases deg(...)
+  3  composite(...) causesNoChange surf(...)
+  3  path(...) positiveCorrelation path(...)
+  3  gtp(...) positiveCorrelation ...
+  3  composite(...) increases kin(...)
+  3  act(...) increases p(...)
+  2  g(...) association ...
+  2  phos(...) directlyDecreases p(...)
+  2  ... decreases cat(...)
+  2  gtp(...) increases p(...)
+  2  ... prognosticBiomarkerFor ...
+  2  ... hasComponent p(...)
+  2  bp(...) causesNoChange tloc(...)
+  2  tscript(...) increases path(...)
+  2  ... association r(...)
+  2  bp(...) causesNoChange ...
+  2  p(...) directlyIncreases tscript(...)
+  2  a(...) decreases a(...)
+  2  ... causesNoChange cat(...)
+  2  m(...) negativeCorrelation ...
+  2  act(...) causesNoChange complex(...)
+  2  ... decreases tloc(...)
+  2  tscript(...) decreases r(...)
+  2  p(...) association bp(...)
+  2  bp(...) decreases p(...)
+  2  complex(...) increases path(...)
+  2  act(...) decreases ...
+  2  m(...) increases bp(...)
+  2  sec(...)
+  2  complex(...) directlyIncreases p(...)
+  2  composite(...) directlyIncreases m(...)
+  2  kin(...) increases cat(...)
+  2  kin(...) increases r(...)
+  2  p(...) positiveCorrelation complex(...)
+  2  m(...) directlyDecreases p(...)
+  2  a(...) decreases act(...)
+  2  composite(...) increases m(...)
+  2  ... hasComponent ...
+  2  pep(...) directlyIncreases pep(...)
+  2  kin(...) increases complex(...)
+  2  m(...) causesNoChange p(...)
+  2  act(...) decreases act(...)
+  2  act(...) directlyIncreases tloc(...)
+  2  p(...) positiveCorrelation kin(...)
+  2  g(...) positiveCorrelation ...
+  2  rxn(...) subProcessOf bp(...)
+  2  m(...) negativeCorrelation path(...)
+  2  bp(...) decreases path(...)
+  2  a(...) isA a(...)
+  2  ... prognosticBiomarkerFor path(...)
+  2  m(...) directlyDecreases r(...)
+  2  p(...) association path(...)
+  2  act(...) increases surf(...)
+  2  p(...) prognosticBiomarkerFor ...
+  2  p(...) directlyIncreases cat(...)
+  2  composite(...) directlyIncreases ...
+  2  ... directlyIncreases pep(...)
+  2  m(...) causesNoChange ...
+  2  pep(...) decreases ...
+  2  kin(...) increases path(...)
+  2  cat(...) decreases ...
+  2  p(...) positiveCorrelation p(...)
+  2  r(...) increases ...
+  2  ... isA a(...)
+  2  ... positiveCorrelation r(...)
+  2  r(...) increases p(...)
+  2  p(...) decreases complex(...)
+  2  gtp(...) increases tloc(...)
+  2  ... isA ...
+  2  path(...) decreases ...
+  2  rxn(...) subProcessOf ...
+  2  kin(...) directlyIncreases complex(...)
+  2  path(...) decreases m(...)
+  2  m(...) decreases bp(...)
+  2  ... increases phos(...)
+  2  kin(...) negativeCorrelation ...
+  2  complex(...) increases pep(...)
+  2  g(...) association r(...)
+  2  pep(...) decreases p(...)
+  2  rxn(...)
+  2  p(...) prognosticBiomarkerFor path(...)
+  2  a(...) causesNoChange p(...)
+  2  p(...) increases m(...)
+  2  kin(...) negativeCorrelation p(...)
+  2  complex(...) hasComponent p(...)
+  2  a(...) decreases cat(...)
+  2  m(...) increases p(...)
+  2  complex(...) hasComponent ...
+  2  act(...) increases a(...)
+  2  act(...) directlyDecreases ...
+  2  r(...) positiveCorrelation bp(...)
+  2  a(...) isA ...
+  2  ... positiveCorrelation kin(...)
+  2  m(...) positiveCorrelation r(...)
+  2  composite(...) increases tscript(...)
+  2  ... causesNoChange tloc(...)
+  2  act(...) increases gtp(...)
+  2  composite(...) decreases ...
+  2  tscript(...) decreases bp(...)
+  2  ... decreases m(...)
+  2  kin(...) directlyDecreases tscript(...)
+  2  path(...) positiveCorrelation bp(...)
+  2  kin(...) decreases r(...)
