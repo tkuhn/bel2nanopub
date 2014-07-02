@@ -5,14 +5,21 @@
 
 CLASS=ch.tkuhn.bel2nanopub.CreateIdTables
 
-DIR=`pwd`
+WORKINGDIR=`pwd`
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 cd ..
-BEL2NANOPUBJAVADIR=`pwd`
+PROJECTDIR=`pwd`
 
 # for Cygwin:
-BEL2NANOPUBJAVADIR=${BEL2NANOPUBJAVADIR#/cygdrive/?}
+PROJECTDIR=${PROJECTDIR#/cygdrive/?}
 
-cd $DIR
+if [ ! -f classpath.txt ]; then
+  echo "classpath.txt not found: Run 'mvn clean package' first."
+  exit 1
+fi
 
-mvn -q -e -f $BEL2NANOPUBJAVADIR/pom.xml exec:java -Dexec.mainClass="$CLASS" -Dexec.args="$*"
+CP=$PROJECTDIR/target/classes:$(cat classpath.txt)
+
+cd $WORKINGDIR
+
+java -cp $CP $JAVA_OPTS $CLASS "$@"
