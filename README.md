@@ -2,8 +2,8 @@ BEL2nanopub
 ===========
 
 This code base transforms BEL documents into nanopublications. In contrast to the mapping to RDF
-defined by bel.rb (https://github.com/OpenBEL/bel.rb), we are here trying to use as much as
-possible standard URIs of existing vocabularies and ontologies.
+defined by bel.rb (https://github.com/OpenBEL/bel.rb), we are here trying to use standard URIs of
+existing vocabularies and ontologies.
 
 
 Execution
@@ -89,6 +89,35 @@ In nanopubs using PROV:
     }
 
 
+### Document Metadata
+
+Original BEL document:
+
+    SET DOCUMENT Name = "My Document"
+    SET DOCUMENT Description = "This is an example"
+    SET DOCUMENT Version = "1.0"
+    SET DOCUMENT Copyright = "Copyright (c) 2014, John Doe"
+    SET DOCUMENT ContactInfo = "john.doe@example.org"
+    SET DOCUMENT Authors = "John Doe"
+    SET DOCUMENT Licenses = "Public Domain"
+
+In nanopubs:
+
+    sub:provenance {
+        sub:_1 dce:title "My Document" ;
+            dce:description "This is an example" ;
+            pav:version "1.0" ;
+            dce:rights "Copyright (c) 2014, John Doe" ;
+            pav:authoredBy sub:_2 ;
+            dct:license "Public Domain" .
+    
+        sub:_2 rdfs:comment "john.doe@example.org" ;
+            rdfs:label "John Doe" .
+    
+        sub:assertion prov:wasDerivedFrom sub:_1 .
+    }
+
+
 ### Third-Party Vocabularies
 
 The mapping to identifiers of third-party vocabularies is defined in
@@ -96,11 +125,24 @@ The mapping to identifiers of third-party vocabularies is defined in
 [tables directory](tables).
 
 
-### Identifiers with BEL Namespace
+### General BEL Relations
 
 The general relations defined by BEL like 'directlyIncreases' are currently not mapped to other
-existing vocabularies or ontologies, but we are using URIs in the BEL namespace (the same ones used
-by bel.rb, except for some cases where we had to make up new ones).
+existing vocabularies or ontologies, and therefore we are using URIs in the BEL namespace (the same
+ones used by bel.rb, except for some cases where we had to make up new ones):
+
+    http://www.selventa.com/vocabulary/directlyIncreases
+
+
+### To Do
+
+The following BEL language features are currently not yet properly mapped:
+
+- Transformation functions (see http://wiki.openbel.org/display/BLD/Transformations)
+- Protein modifications and variants (see http://wiki.openbel.org/display/BLD/Modifications)
+
+For these structures, made-up URIs in the BEL namespace are used at the moment. In the future,
+these should be mapped to standard ontologies and vocabularies too.
 
 
 License
