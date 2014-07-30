@@ -9,7 +9,9 @@ scripts/exec-class.sh org.nanopub.extra.server.PublishNanopub \
   output/index.small_corpus-1.0.nanopubs.trig \
   output/large_corpus-1.0.nanopubs.trig \
   output/index.large_corpus-1.0.nanopubs.trig \
+  output/index.corpora-1.0.nanopubs.trig \
   output/small_corpus-20131211.nanopubs.trig \
   output/index.small_corpus-20131211.nanopubs.trig \
   output/large_corpus-20131211.nanopubs.trig \
-  output/index.large_corpus-20131211.nanopubs.trig
+  output/index.large_corpus-20131211.nanopubs.trig \
+  output/index.corpora-20131211.nanopubs.trig
